@@ -1242,9 +1242,9 @@ SAVE_GAME_BLOCK_UNKNOWN0:
 	STA $12
 	LDA $08
 	STA $14
-	LDA #$023A
+	LDA #.SIZEOF(char_struct) * 6
 	JSL MEMCPY24
-	LDA #$023A
+	LDA #.SIZEOF(char_struct) * 6
 	LDX $1C
 	STX $06
 	LDX $1E

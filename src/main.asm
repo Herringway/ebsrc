@@ -1,6 +1,7 @@
 .INCLUDE "macros.asm"
 .INCLUDE "registers.asm"
 .INCLUDE "enums.asm"
+.INCLUDE "structs.asm"
 .SMART
 .INCLUDE "ram/ram.asm"
 .INCLUDE "bank00.asm"
