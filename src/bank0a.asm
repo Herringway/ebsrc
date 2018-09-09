@@ -1,0 +1,7 @@
+.SEGMENT "BANK0A"
+.ORG $CA0000
+
+.INCBIN "bin/bank0a.bin"
+
+.ORG $CADCA1
+BG_DATA_TABLE:

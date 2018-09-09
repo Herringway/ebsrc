@@ -1,0 +1,7 @@
+.SEGMENT "BANK0C"
+.ORG $CC0000
+
+.INCBIN "bin/bank0c.bin"
+
+.ORG $CCF04D
+PSI_ANIM_CFG: ;$CCF04D

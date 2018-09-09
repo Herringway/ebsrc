@@ -1,0 +1,4 @@
+.SEGMENT "BANK12"
+.ORG $D20000
+
+.INCBIN "bin/bank12.bin"
