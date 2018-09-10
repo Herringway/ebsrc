@@ -3,7 +3,7 @@
 
 
 SPRITE_GROUP_PALETTES: ;$C30000
-	.INCBIN "src/bin/C30000.bin"
+	.INCBIN "src/bin/unknowns/C30000.bin"
 
 DISPLAY_ANTI_PIRACY_SCREEN: ;$C30100
 	REP #%00110001
@@ -70,7 +70,7 @@ NESS_PAJAMA_FLAG: ;$C30186
 	.WORD $02ED
 
 UNKNOWN_C30188: ;$C30188
-	.INCBIN "src/bin/C30188.bin"
+	.INCBIN "src/bin/unknowns/C30188.bin"
 
 MOVEMENT_221: ;$C30195
 	.INCBIN "src/bin/movements/221.bin"
@@ -85,7 +85,7 @@ MOVEMENT_224: ;$C30260
 	.INCBIN "src/bin/movements/224.bin"
 
 UNKNOWN_C30295: ;$C30295
-	.INCBIN "src/bin/C30295.bin"
+	.INCBIN "src/bin/unknowns/C30295.bin"
 
 MOVEMENT_225_226_227: ;$C302AC
 	.INCBIN "src/bin/movements/225_226_227.bin"
@@ -106,7 +106,7 @@ MOVEMENT_232: ;$C3032B
 	.INCBIN "src/bin/movements/232.bin"
 
 UNKNOWN_C3033F: ;$C3033F
-	.INCBIN "src/bin/C3033F.bin"
+	.INCBIN "src/bin/unknowns/C3033F.bin"
 
 MOVEMENT_233_234_235_236_237: ;$C3036F
 	.INCBIN "src/bin/movements/233_234_235_236_237.bin"
@@ -121,13 +121,13 @@ MOVEMENT_240: ;$C303E5
 	.INCBIN "src/bin/movements/240.bin"
 
 UNKNOWN_C30440: ;$C30440
-	.INCBIN "src/bin/C30440.bin"
+	.INCBIN "src/bin/unknowns/C30440.bin"
 
 UNKNOWN_C30467: ;$C30467
-	.INCBIN "src/bin/C30467.bin"
+	.INCBIN "src/bin/unknowns/C30467.bin"
 
 UNKNOWN_C3046C: ;$C3046C
-	.INCBIN "src/bin/C3046C.bin"
+	.INCBIN "src/bin/unknowns/C3046C.bin"
 
 MOVEMENT_241: ;$C30478
 	.INCBIN "src/bin/movements/241.bin"
@@ -199,7 +199,7 @@ MOVEMENT_265: ;$C30979
 	.INCBIN "src/bin/movements/265.bin"
 
 UNKNOWN_C3098B: ;$C3098B
-	.INCBIN "src/bin/C3098B.bin"
+	.INCBIN "src/bin/unknowns/C3098B.bin"
 
 MOVEMENT_266: ;$C30993
 	.INCBIN "src/bin/movements/266.bin"
@@ -208,7 +208,7 @@ MOVEMENT_267: ;$C309B0
 	.INCBIN "src/bin/movements/267.bin"
 
 UNKNOWN_C30A1F: ;$C30A1F
-	.INCBIN "src/bin/C30A1F.bin"
+	.INCBIN "src/bin/unknowns/C30A1F.bin"
 
 MOVEMENT_268: ;$C30A32
 	.INCBIN "src/bin/movements/268.bin"
@@ -253,10 +253,10 @@ MOVEMENT_283: ;$C30C4F
 	.INCBIN "src/bin/movements/283.bin"
 
 UNKNOWN_C30C55: ;$C30C55
-	.INCBIN "src/bin/C30C55.bin"
+	.INCBIN "src/bin/unknowns/C30C55.bin"
 
 UNKNOWN_C30C67: ;$C30C67
-	.INCBIN "src/bin/C30C67.bin"
+	.INCBIN "src/bin/unknowns/C30C67.bin"
 
 MOVEMENT_284: ;$C30CE2
 	.INCBIN "src/bin/movements/284.bin"
@@ -265,7 +265,7 @@ MOVEMENT_285: ;$C30D1E
 	.INCBIN "src/bin/movements/285.bin"
 
 UNKNOWN_C30D3C: ;$C30D3C
-	.INCBIN "src/bin/C30D3C.bin"
+	.INCBIN "src/bin/unknowns/C30D3C.bin"
 
 MOVEMENT_286: ;$C30DB6
 	.INCBIN "src/bin/movements/286.bin"
@@ -295,7 +295,7 @@ MOVEMENT_294: ;$C30F9C
 	.INCBIN "src/bin/movements/294.bin"
 
 UNKNOWN_C31055: ;$C31055
-	.INCBIN "src/bin/C31055.bin"
+	.INCBIN "src/bin/unknowns/C31055.bin"
 
 MOVEMENT_295: ;$C31068
 	.INCBIN "src/bin/movements/295.bin"
@@ -367,7 +367,7 @@ MOVEMENT_317: ;$C31452
 	.INCBIN "src/bin/movements/317.bin"
 
 UNKNOWN_C31476: ;$C31476
-	.INCBIN "src/bin/C31476.bin"
+	.INCBIN "src/bin/unknowns/C31476.bin"
 
 MOVEMENT_318: ;$C31485
 	.INCBIN "src/bin/movements/318.bin"
@@ -382,7 +382,7 @@ MOVEMENT_321: ;$C3155C
 	.INCBIN "src/bin/movements/321.bin"
 
 UNKNOWN_C31566: ;$C31566
-	.INCBIN "src/bin/C31566.bin"
+	.INCBIN "src/bin/unknowns/C31566.bin"
 
 MOVEMENT_322: ;$C315CC
 	.INCBIN "src/bin/movements/322.bin"
@@ -442,16 +442,16 @@ MOVEMENT_340: ;$C318FD
 	.INCBIN "src/bin/movements/340.bin"
 
 UNKNOWN_C31931: ;$C31931
-	.INCBIN "src/bin/C31931.bin"
+	.INCBIN "src/bin/unknowns/C31931.bin"
 
 UNKNOWN_C31957: ;$C31957
-	.INCBIN "src/bin/C31957.bin"
+	.INCBIN "src/bin/unknowns/C31957.bin"
 
 UNKNOWN_C3199E: ;$C3199E
-	.INCBIN "src/bin/C3199E.bin"
+	.INCBIN "src/bin/unknowns/C3199E.bin"
 
 UNKNOWN_C31A17: ;$C31A17
-	.INCBIN "src/bin/C31A17.bin"
+	.INCBIN "src/bin/unknowns/C31A17.bin"
 
 MOVEMENT_341: ;$C31A42
 	.INCBIN "src/bin/movements/341.bin"
@@ -472,7 +472,7 @@ MOVEMENT_346: ;$C31B4B
 	.INCBIN "src/bin/movements/346.bin"
 
 UNKNOWN_C31BD9: ;$C31BD9
-	.INCBIN "src/bin/C31BD9.bin"
+	.INCBIN "src/bin/unknowns/C31BD9.bin"
 
 MOVEMENT_347: ;$C31BED
 	.INCBIN "src/bin/movements/347.bin"
@@ -487,7 +487,7 @@ MOVEMENT_351: ;$C31C49
 	.INCBIN "src/bin/movements/351.bin"
 
 UNKNOWN_C31C90: ;$C31C90
-	.INCBIN "src/bin/C31C90.bin"
+	.INCBIN "src/bin/unknowns/C31C90.bin"
 
 MOVEMENT_352: ;$C31CA4
 	.INCBIN "src/bin/movements/352.bin"
@@ -499,13 +499,13 @@ MOVEMENT_354: ;$C31D15
 	.INCBIN "src/bin/movements/354.bin"
 
 UNKNOWN_C31D2D: ;$C31D2D
-	.INCBIN "src/bin/C31D2D.bin"
+	.INCBIN "src/bin/unknowns/C31D2D.bin"
 
 UNKNOWN_C31D4A: ;$C31D4A
-	.INCBIN "src/bin/C31D4A.bin"
+	.INCBIN "src/bin/unknowns/C31D4A.bin"
 
 UNKNOWN_C31D4F: ;$C31D4F
-	.INCBIN "src/bin/C31D4F.bin"
+	.INCBIN "src/bin/unknowns/C31D4F.bin"
 
 MOVEMENT_355: ;$C31D61
 	.INCBIN "src/bin/movements/355.bin"
@@ -520,16 +520,16 @@ MOVEMENT_369: ;$C31DB5
 	.INCBIN "src/bin/movements/369.bin"
 
 UNKNOWN_C31DF4: ;$C31DF4
-	.INCBIN "src/bin/C31DF4.bin"
+	.INCBIN "src/bin/unknowns/C31DF4.bin"
 
 UNKNOWN_C31E14: ;$C31E14
-	.INCBIN "src/bin/C31E14.bin"
+	.INCBIN "src/bin/unknowns/C31E14.bin"
 
 UNKNOWN_C31E2D: ;$C31E2D
-	.INCBIN "src/bin/C31E2D.bin"
+	.INCBIN "src/bin/unknowns/C31E2D.bin"
 
 UNKNOWN_C31E4D: ;$C31E4D
-	.INCBIN "src/bin/C31E4D.bin"
+	.INCBIN "src/bin/unknowns/C31E4D.bin"
 
 MOVEMENT_360: ;$C31E66
 	.INCBIN "src/bin/movements/360.bin"
@@ -553,19 +553,19 @@ MOVEMENT_364: ;$C31EB8
 	.INCBIN "src/bin/movements/364.bin"
 
 UNKNOWN_C31EC1: ;$C31EC1
-	.INCBIN "src/bin/C31EC1.bin"
+	.INCBIN "src/bin/unknowns/C31EC1.bin"
 
 UNKNOWN_C31ED8: ;$C31ED8
-	.INCBIN "src/bin/C31ED8.bin"
+	.INCBIN "src/bin/unknowns/C31ED8.bin"
 
 UNKNOWN_C31EEF: ;$C31EEF
-	.INCBIN "src/bin/C31EEF.bin"
+	.INCBIN "src/bin/unknowns/C31EEF.bin"
 
 MOVEMENT_368: ;$C31FE8
 	.INCBIN "src/bin/movements/368.bin"
 
 UNKNOWN_C32138: ;$C32138
-	.INCBIN "src/bin/C32138.bin"
+	.INCBIN "src/bin/unknowns/C32138.bin"
 
 MOVEMENT_365: ;$C32149
 	.INCBIN "src/bin/movements/365.bin"
@@ -661,7 +661,7 @@ MOVEMENT_396: ;$C32CBA
 	.INCBIN "src/bin/movements/396.bin"
 
 UNKNOWN_C32CD2: ;$C32CD2
-	.INCBIN "src/bin/C32CD2.bin"
+	.INCBIN "src/bin/unknowns/C32CD2.bin"
 
 MOVEMENT_399: ;$C32CF0
 	.INCBIN "src/bin/movements/399.bin"
@@ -748,19 +748,19 @@ MOVEMENT_431_432_433_434: ;$C3338F
 	.INCBIN "src/bin/movements/431_432_433_434.bin"
 
 UNKNOWN_C33399: ;$C33399
-	.INCBIN "src/bin/C33399.bin"
+	.INCBIN "src/bin/unknowns/C33399.bin"
 
 UNKNOWN_C333AA: ;$C333AA
-	.INCBIN "src/bin/C333AA.bin"
+	.INCBIN "src/bin/unknowns/C333AA.bin"
 
 UNKNOWN_C333BB: ;$C333BB
-	.INCBIN "src/bin/C333BB.bin"
+	.INCBIN "src/bin/unknowns/C333BB.bin"
 
 UNKNOWN_C333CC: ;$C333CC
-	.INCBIN "src/bin/C333CC.bin"
+	.INCBIN "src/bin/unknowns/C333CC.bin"
 
 UNKNOWN_C333DD: ;$C333DD
-	.INCBIN "src/bin/C333DD.bin"
+	.INCBIN "src/bin/unknowns/C333DD.bin"
 
 MOVEMENT_435: ;$C33424
 	.INCBIN "src/bin/movements/435.bin"
@@ -775,7 +775,7 @@ MOVEMENT_439: ;$C33535
 	.INCBIN "src/bin/movements/439.bin"
 
 UNKNOWN_C33549: ;$C33549
-	.INCBIN "src/bin/C33549.bin"
+	.INCBIN "src/bin/unknowns/C33549.bin"
 
 MOVEMENT_440: ;$C33572
 	.INCBIN "src/bin/movements/440.bin"
@@ -805,7 +805,7 @@ MOVEMENT_448: ;$C33B0F
 	.INCBIN "src/bin/movements/448.bin"
 
 UNKNOWN_C33B77: ;$C33B77
-	.INCBIN "src/bin/C33B77.bin"
+	.INCBIN "src/bin/unknowns/C33B77.bin"
 
 MOVEMENT_449: ;$C33B8B
 	.INCBIN "src/bin/movements/449.bin"
@@ -820,13 +820,13 @@ MOVEMENT_452: ;$C33BB7
 	.INCBIN "src/bin/movements/452.bin"
 
 UNKNOWN_C33BFB: ;$C33BFB
-	.INCBIN "src/bin/C33BFB.bin"
+	.INCBIN "src/bin/unknowns/C33BFB.bin"
 
 UNKNOWN_C33C18: ;$C33C18
-	.INCBIN "src/bin/C33C18.bin"
+	.INCBIN "src/bin/unknowns/C33C18.bin"
 
 UNKNOWN_C33C1D: ;$C33C1D
-	.INCBIN "src/bin/C33C1D.bin"
+	.INCBIN "src/bin/unknowns/C33C1D.bin"
 
 MOVEMENT_467: ;$C33C30
 	.INCBIN "src/bin/movements/467.bin"
@@ -838,31 +838,31 @@ MOVEMENT_466: ;$C33CDA
 	.INCBIN "src/bin/movements/466.bin"
 
 UNKNOWN_C33DBE: ;$C33DBE
-	.INCBIN "src/bin/C33DBE.bin"
+	.INCBIN "src/bin/unknowns/C33DBE.bin"
 
 MOVEMENT_479: ;$C33DD4
 	.INCBIN "src/bin/movements/479.bin"
 
 UNKNOWN_C33E30: ;$C33E30
-	.INCBIN "src/bin/C33E30.bin"
+	.INCBIN "src/bin/unknowns/C33E30.bin"
 
 MOVEMENT_481: ;$C33E42
 	.INCBIN "src/bin/movements/481.bin"
 
 UNKNOWN_C33EB6: ;$C33EB6
-	.INCBIN "src/bin/C33EB6.bin"
+	.INCBIN "src/bin/unknowns/C33EB6.bin"
 
 MOVEMENT_482: ;$C33EC4
 	.INCBIN "src/bin/movements/482.bin"
 
 UNKNOWN_C33EFF: ;$C33EFF
-	.INCBIN "src/bin/C33EFF.bin"
+	.INCBIN "src/bin/unknowns/C33EFF.bin"
 
 MOVEMENT_480: ;$C33F0C
 	.INCBIN "src/bin/movements/480.bin"
 
 UNKNOWN_C34014: ;$C34014
-	.INCBIN "src/bin/C34014.bin"
+	.INCBIN "src/bin/unknowns/C34014.bin"
 
 MOVEMENT_483: ;$C34029
 	.INCBIN "src/bin/movements/483.bin"
@@ -904,10 +904,10 @@ MOVEMENT_495: ;$C341CC
 	.INCBIN "src/bin/movements/495.bin"
 
 UNKNOWN_C341E9: ;$C341E9
-	.INCBIN "src/bin/C341E9.bin"
+	.INCBIN "src/bin/unknowns/C341E9.bin"
 
 UNKNOWN_C34233: ;$C34233
-	.INCBIN "src/bin/C34233.bin"
+	.INCBIN "src/bin/unknowns/C34233.bin"
 
 MOVEMENT_496: ;$C34249
 	.INCBIN "src/bin/movements/496.bin"
@@ -925,10 +925,10 @@ MOVEMENT_531: ;$C34301
 	.INCBIN "src/bin/movements/531.bin"
 
 UNKNOWN_C3430E: ;$C3430E
-	.INCBIN "src/bin/C3430E.bin"
+	.INCBIN "src/bin/unknowns/C3430E.bin"
 
 UNKNOWN_C3436D: ;$C3436D
-	.INCBIN "src/bin/C3436D.bin"
+	.INCBIN "src/bin/unknowns/C3436D.bin"
 
 MOVEMENT_532: ;$C34378
 	.INCBIN "src/bin/movements/532.bin"
@@ -937,13 +937,13 @@ MOVEMENT_533: ;$C34385
 	.INCBIN "src/bin/movements/533.bin"
 
 UNKNOWN_C34392: ;$C34392
-	.INCBIN "src/bin/C34392.bin"
+	.INCBIN "src/bin/unknowns/C34392.bin"
 
 UNKNOWN_C343AE: ;$C343AE
-	.INCBIN "src/bin/C343AE.bin"
+	.INCBIN "src/bin/unknowns/C343AE.bin"
 
 UNKNOWN_C343DB: ;$C343DB
-	.INCBIN "src/bin/C343DB.bin"
+	.INCBIN "src/bin/unknowns/C343DB.bin"
 
 MOVEMENT_500: ;$C34402
 	.INCBIN "src/bin/movements/500.bin"
@@ -952,34 +952,34 @@ MOVEMENT_499: ;$C3441A
 	.INCBIN "src/bin/movements/499.bin"
 
 UNKNOWN_C3443E: ;$C3443E
-	.INCBIN "src/bin/C3443E.bin"
+	.INCBIN "src/bin/unknowns/C3443E.bin"
 
 UNKNOWN_C34457: ;$C34457
-	.INCBIN "src/bin/C34457.bin"
+	.INCBIN "src/bin/unknowns/C34457.bin"
 
 UNKNOWN_C3447A: ;$C3447A
-	.INCBIN "src/bin/C3447A.bin"
+	.INCBIN "src/bin/unknowns/C3447A.bin"
 
 UNKNOWN_C34488: ;$C34488
-	.INCBIN "src/bin/C34488.bin"
+	.INCBIN "src/bin/unknowns/C34488.bin"
 
 UNKNOWN_C344A8: ;$C344A8
-	.INCBIN "src/bin/C344A8.bin"
+	.INCBIN "src/bin/unknowns/C344A8.bin"
 
 UNKNOWN_C344D2: ;$C344D2
-	.INCBIN "src/bin/C344D2.bin"
+	.INCBIN "src/bin/unknowns/C344D2.bin"
 
 UNKNOWN_C344DE: ;$C344DE
-	.INCBIN "src/bin/C344DE.bin"
+	.INCBIN "src/bin/unknowns/C344DE.bin"
 
 UNKNOWN_C344FF: ;$C344FF
-	.INCBIN "src/bin/C344FF.bin"
+	.INCBIN "src/bin/unknowns/C344FF.bin"
 
 MOVEMENT_547: ;$C34508
 	.INCBIN "src/bin/movements/547.bin"
 
 UNKNOWN_C34555: ;$C34555
-	.INCBIN "src/bin/C34555.bin"
+	.INCBIN "src/bin/unknowns/C34555.bin"
 
 MOVEMENT_550: ;$C3456F
 	.INCBIN "src/bin/movements/550.bin"
@@ -1018,19 +1018,19 @@ MOVEMENT_556: ;$C3486A
 	.INCBIN "src/bin/movements/556.bin"
 
 UNKNOWN_C348C4: ;$C348C4
-	.INCBIN "src/bin/C348C4.bin"
+	.INCBIN "src/bin/unknowns/C348C4.bin"
 
 MOVEMENT_563: ;$C348FC
 	.INCBIN "src/bin/movements/563.bin"
 
 UNKNOWN_C34964: ;$C34964
-	.INCBIN "src/bin/C34964.bin"
+	.INCBIN "src/bin/unknowns/C34964.bin"
 
 MOVEMENT_562: ;$C34975
 	.INCBIN "src/bin/movements/562.bin"
 
 UNKNOWN_C34A61: ;$C34A61
-	.INCBIN "src/bin/C34A61.bin"
+	.INCBIN "src/bin/unknowns/C34A61.bin"
 
 MOVEMENT_561: ;$C34A6C
 	.INCBIN "src/bin/movements/561.bin"
@@ -1039,7 +1039,7 @@ MOVEMENT_560: ;$C34AF6
 	.INCBIN "src/bin/movements/560.bin"
 
 UNKNOWN_C34B62: ;$C34B62
-	.INCBIN "src/bin/C34B62.bin"
+	.INCBIN "src/bin/unknowns/C34B62.bin"
 
 MOVEMENT_564: ;$C34BAB
 	.INCBIN "src/bin/movements/564.bin"
@@ -1060,7 +1060,7 @@ MOVEMENT_569: ;$C34CE0
 	.INCBIN "src/bin/movements/569.bin"
 
 UNKNOWN_C34D39: ;$C34D39
-	.INCBIN "src/bin/C34D39.bin"
+	.INCBIN "src/bin/unknowns/C34D39.bin"
 
 MOVEMENT_570: ;$C34D5C
 	.INCBIN "src/bin/movements/570.bin"
@@ -1105,10 +1105,10 @@ MOVEMENT_583: ;$C34DEA
 	.INCBIN "src/bin/movements/583.bin"
 
 UNKNOWN_C34E66: ;$C34E66
-	.INCBIN "src/bin/C34E66.bin"
+	.INCBIN "src/bin/unknowns/C34E66.bin"
 
 UNKNOWN_C34E73: ;$C34E73
-	.INCBIN "src/bin/C34E73.bin"
+	.INCBIN "src/bin/unknowns/C34E73.bin"
 
 MOVEMENT_535: ;$C34E85
 	.INCBIN "src/bin/movements/535.bin"
@@ -1132,7 +1132,7 @@ MOVEMENT_541: ;$C3500E
 	.INCBIN "src/bin/movements/541.bin"
 
 UNKNOWN_C3504A: ;$C3504A
-	.INCBIN "src/bin/C3504A.bin"
+	.INCBIN "src/bin/unknowns/C3504A.bin"
 
 MOVEMENT_542: ;$C35056
 	.INCBIN "src/bin/movements/542.bin"
@@ -1156,19 +1156,19 @@ MOVEMENT_800: ;$C35214
 	.INCBIN "src/bin/movements/800.bin"
 
 UNKNOWN_C35231: ;$C35231
-	.INCBIN "src/bin/C35231.bin"
+	.INCBIN "src/bin/unknowns/C35231.bin"
 
 MOVEMENT_801: ;$C3523F
 	.INCBIN "src/bin/movements/801.bin"
 
 UNKNOWN_C35F8B: ;$C35F8B
-	.INCBIN "src/bin/C35F8B.bin"
+	.INCBIN "src/bin/unknowns/C35F8B.bin"
 
 UNKNOWN_C35FB6: ;$C35FB6
-	.INCBIN "src/bin/C35FB6.bin"
+	.INCBIN "src/bin/unknowns/C35FB6.bin"
 
 UNKNOWN_C35FCD: ;$C35FCD
-	.INCBIN "src/bin/C35FCD.bin"
+	.INCBIN "src/bin/unknowns/C35FCD.bin"
 
 MOVEMENT_802: ;$C35FE2
 	.INCBIN "src/bin/movements/802.bin"
@@ -1228,7 +1228,7 @@ MOVEMENT_825: ;$C3629F
 	.INCBIN "src/bin/movements/825.bin"
 
 UNKNOWN_C362C0: ;$C362C0
-	.INCBIN "src/bin/C362C0.bin"
+	.INCBIN "src/bin/unknowns/C362C0.bin"
 
 MOVEMENT_826: ;$C362E1
 	.INCBIN "src/bin/movements/826.bin"
@@ -1303,7 +1303,7 @@ MOVEMENT_844: ;$C36814
 	.INCBIN "src/bin/movements/844.bin"
 
 UNKNOWN_C36834: ;$C36834
-	.INCBIN "src/bin/C36834.bin"
+	.INCBIN "src/bin/unknowns/C36834.bin"
 
 MOVEMENT_845: ;$C3683F
 	.INCBIN "src/bin/movements/845.bin"
@@ -1348,10 +1348,10 @@ MOVEMENT_858: ;$C36A2A
 	.INCBIN "src/bin/movements/858.bin"
 
 UNKNOWN_C36A3E: ;$C36A3E
-	.INCBIN "src/bin/C36A3E.bin"
+	.INCBIN "src/bin/unknowns/C36A3E.bin"
 
 UNKNOWN_C36A41: ;$C36A41
-	.INCBIN "src/bin/C36A41.bin"
+	.INCBIN "src/bin/unknowns/C36A41.bin"
 
 MOVEMENT_584: ;$C36A53
 	.INCBIN "src/bin/movements/584.bin"
@@ -1375,16 +1375,16 @@ MOVEMENT_590: ;$C36B4B
 	.INCBIN "src/bin/movements/590.bin"
 
 UNKNOWN_C36B60: ;$C36B60
-	.INCBIN "src/bin/C36B60.bin"
+	.INCBIN "src/bin/unknowns/C36B60.bin"
 
 UNKNOWN_C36BB4: ;$C36BB4
-	.INCBIN "src/bin/C36BB4.bin"
+	.INCBIN "src/bin/unknowns/C36BB4.bin"
 
 MOVEMENT_591: ;$C36BC6
 	.INCBIN "src/bin/movements/591.bin"
 
 UNKNOWN_C36BEA: ;$C36BEA
-	.INCBIN "src/bin/C36BEA.bin"
+	.INCBIN "src/bin/unknowns/C36BEA.bin"
 
 MOVEMENT_592: ;$C36BEB
 	.INCBIN "src/bin/movements/592.bin"
@@ -1402,7 +1402,7 @@ MOVEMENT_596: ;$C36CDB
 	.INCBIN "src/bin/movements/596.bin"
 
 UNKNOWN_C36D18: ;$C36D18
-	.INCBIN "src/bin/C36D18.bin"
+	.INCBIN "src/bin/unknowns/C36D18.bin"
 
 MOVEMENT_597: ;$C36D29
 	.INCBIN "src/bin/movements/597.bin"
@@ -1429,7 +1429,7 @@ MOVEMENT_604: ;$C36DD9
 	.INCBIN "src/bin/movements/604.bin"
 
 UNKNOWN_C36DF6: ;$C36DF6
-	.INCBIN "src/bin/C36DF6.bin"
+	.INCBIN "src/bin/unknowns/C36DF6.bin"
 
 MOVEMENT_605: ;$C36E19
 	.INCBIN "src/bin/movements/605.bin"
@@ -1438,7 +1438,7 @@ MOVEMENT_606: ;$C36E2D
 	.INCBIN "src/bin/movements/606.bin"
 
 UNKNOWN_C36E41: ;$C36E41
-	.INCBIN "src/bin/C36E41.bin"
+	.INCBIN "src/bin/unknowns/C36E41.bin"
 
 MOVEMENT_607: ;$C36E52
 	.INCBIN "src/bin/movements/607.bin"
@@ -1486,7 +1486,7 @@ MOVEMENT_621: ;$C37098
 	.INCBIN "src/bin/movements/621.bin"
 
 UNKNOWN_C370A2: ;$C370A2
-	.INCBIN "src/bin/C370A2.bin"
+	.INCBIN "src/bin/unknowns/C370A2.bin"
 
 MOVEMENT_622: ;$C370FD
 	.INCBIN "src/bin/movements/622.bin"
@@ -1513,7 +1513,7 @@ MOVEMENT_629: ;$C372B0
 	.INCBIN "src/bin/movements/629.bin"
 
 UNKNOWN_C37377: ;$C37377
-	.INCBIN "src/bin/C37377.bin"
+	.INCBIN "src/bin/unknowns/C37377.bin"
 
 MOVEMENT_630: ;$C373C2
 	.INCBIN "src/bin/movements/630.bin"
@@ -1525,7 +1525,7 @@ MOVEMENT_632: ;$C3740F
 	.INCBIN "src/bin/movements/632.bin"
 
 UNKNOWN_C37439: ;$C37439
-	.INCBIN "src/bin/C37439.bin"
+	.INCBIN "src/bin/unknowns/C37439.bin"
 
 MOVEMENT_633: ;$C37456
 	.INCBIN "src/bin/movements/633.bin"
@@ -1543,10 +1543,10 @@ MOVEMENT_637: ;$C374E4
 	.INCBIN "src/bin/movements/637.bin"
 
 UNKNOWN_C37545: ;$C37545
-	.INCBIN "src/bin/C37545.bin"
+	.INCBIN "src/bin/unknowns/C37545.bin"
 
 UNKNOWN_C37559: ;$C37559
-	.INCBIN "src/bin/C37559.bin"
+	.INCBIN "src/bin/unknowns/C37559.bin"
 
 MOVEMENT_638: ;$C3756D
 	.INCBIN "src/bin/movements/638.bin"
@@ -1630,7 +1630,7 @@ MOVEMENT_664: ;$C37A66
 	.INCBIN "src/bin/movements/664.bin"
 
 UNKNOWN_C37A7C: ;$C37A7C
-	.INCBIN "src/bin/C37A7C.bin"
+	.INCBIN "src/bin/unknowns/C37A7C.bin"
 
 MOVEMENT_665: ;$C37A8A
 	.INCBIN "src/bin/movements/665.bin"
@@ -1651,10 +1651,10 @@ MOVEMENT_670: ;$C37BFE
 	.INCBIN "src/bin/movements/670.bin"
 
 UNKNOWN_C37CD8: ;$C37CD8
-	.INCBIN "src/bin/C37CD8.bin"
+	.INCBIN "src/bin/unknowns/C37CD8.bin"
 
 UNKNOWN_C37CEA: ;$C37CEA
-	.INCBIN "src/bin/C37CEA.bin"
+	.INCBIN "src/bin/unknowns/C37CEA.bin"
 
 MOVEMENT_671: ;$C37CFD
 	.INCBIN "src/bin/movements/671.bin"
@@ -1669,19 +1669,19 @@ MOVEMENT_674: ;$C37DF1
 	.INCBIN "src/bin/movements/674.bin"
 
 UNKNOWN_C37E50: ;$C37E50
-	.INCBIN "src/bin/C37E50.bin"
+	.INCBIN "src/bin/unknowns/C37E50.bin"
 
 UNKNOWN_C37E66: ;$C37E66
-	.INCBIN "src/bin/C37E66.bin"
+	.INCBIN "src/bin/unknowns/C37E66.bin"
 
 UNKNOWN_C37EAE: ;$C37EAE
-	.INCBIN "src/bin/C37EAE.bin"
+	.INCBIN "src/bin/unknowns/C37EAE.bin"
 
 MOVEMENT_675: ;$C37EC1
 	.INCBIN "src/bin/movements/675.bin"
 
 UNKNOWN_C37F1F: ;$C37F1F
-	.INCBIN "src/bin/C37F1F.bin"
+	.INCBIN "src/bin/unknowns/C37F1F.bin"
 
 MOVEMENT_676: ;$C37F65
 	.INCBIN "src/bin/movements/676.bin"
@@ -1693,10 +1693,10 @@ MOVEMENT_678: ;$C37F7D
 	.INCBIN "src/bin/movements/678.bin"
 
 UNKNOWN_C37F89: ;$C37F89
-	.INCBIN "src/bin/C37F89.bin"
+	.INCBIN "src/bin/unknowns/C37F89.bin"
 
 UNKNOWN_C37FA5: ;$C37FA5
-	.INCBIN "src/bin/C37FA5.bin"
+	.INCBIN "src/bin/unknowns/C37FA5.bin"
 
 MOVEMENT_679: ;$C37FCD
 	.INCBIN "src/bin/movements/679.bin"
@@ -1714,22 +1714,22 @@ MOVEMENT_683: ;$C380C0
 	.INCBIN "src/bin/movements/683.bin"
 
 UNKNOWN_C38106: ;$C38106
-	.INCBIN "src/bin/C38106.bin"
+	.INCBIN "src/bin/unknowns/C38106.bin"
 
 UNKNOWN_C3811A: ;$C3811A
-	.INCBIN "src/bin/C3811A.bin"
+	.INCBIN "src/bin/unknowns/C3811A.bin"
 
 UNKNOWN_C38135: ;$C38135
-	.INCBIN "src/bin/C38135.bin"
+	.INCBIN "src/bin/unknowns/C38135.bin"
 
 MOVEMENT_684: ;$C38146
 	.INCBIN "src/bin/movements/684.bin"
 
 UNKNOWN_C3818C: ;$C3818C
-	.INCBIN "src/bin/C3818C.bin"
+	.INCBIN "src/bin/unknowns/C3818C.bin"
 
 UNKNOWN_C381A7: ;$C381A7
-	.INCBIN "src/bin/C381A7.bin"
+	.INCBIN "src/bin/unknowns/C381A7.bin"
 
 MOVEMENT_685: ;$C381B8
 	.INCBIN "src/bin/movements/685.bin"
@@ -1756,22 +1756,22 @@ MOVEMENT_692: ;$C38309
 	.INCBIN "src/bin/movements/692.bin"
 
 UNKNOWN_C3835D: ;$C3835D
-	.INCBIN "src/bin/C3835D.bin"
+	.INCBIN "src/bin/unknowns/C3835D.bin"
 
 UNKNOWN_C38370: ;$C38370
-	.INCBIN "src/bin/C38370.bin"
+	.INCBIN "src/bin/unknowns/C38370.bin"
 
 UNKNOWN_C38383: ;$C38383
-	.INCBIN "src/bin/C38383.bin"
+	.INCBIN "src/bin/unknowns/C38383.bin"
 
 UNKNOWN_C38396: ;$C38396
-	.INCBIN "src/bin/C38396.bin"
+	.INCBIN "src/bin/unknowns/C38396.bin"
 
 UNKNOWN_C383A9: ;$C383A9
-	.INCBIN "src/bin/C383A9.bin"
+	.INCBIN "src/bin/unknowns/C383A9.bin"
 
 UNKNOWN_C383BC: ;$C383BC
-	.INCBIN "src/bin/C383BC.bin"
+	.INCBIN "src/bin/unknowns/C383BC.bin"
 
 MOVEMENT_693: ;$C383D2
 	.INCBIN "src/bin/movements/693.bin"
@@ -1792,7 +1792,7 @@ MOVEMENT_698: ;$C384EE
 	.INCBIN "src/bin/movements/698.bin"
 
 UNKNOWN_C384F9: ;$C384F9
-	.INCBIN "src/bin/C384F9.bin"
+	.INCBIN "src/bin/unknowns/C384F9.bin"
 
 MOVEMENT_699: ;$C38515
 	.INCBIN "src/bin/movements/699.bin"
@@ -1801,7 +1801,7 @@ MOVEMENT_700: ;$C38544
 	.INCBIN "src/bin/movements/700.bin"
 
 UNKNOWN_C385D7: ;$C385D7
-	.INCBIN "src/bin/C385D7.bin"
+	.INCBIN "src/bin/unknowns/C385D7.bin"
 
 MOVEMENT_701: ;$C385E2
 	.INCBIN "src/bin/movements/701.bin"
@@ -1822,7 +1822,7 @@ MOVEMENT_706: ;$C386FA
 	.INCBIN "src/bin/movements/706.bin"
 
 UNKNOWN_C38751: ;$C38751
-	.INCBIN "src/bin/C38751.bin"
+	.INCBIN "src/bin/unknowns/C38751.bin"
 
 MOVEMENT_707: ;$C38771
 	.INCBIN "src/bin/movements/707.bin"
@@ -1837,7 +1837,7 @@ MOVEMENT_710: ;$C3878C
 	.INCBIN "src/bin/movements/710.bin"
 
 UNKNOWN_C38795: ;$C38795
-	.INCBIN "src/bin/C38795.bin"
+	.INCBIN "src/bin/unknowns/C38795.bin"
 
 MOVEMENT_712: ;$C387B6
 	.INCBIN "src/bin/movements/712.bin"
@@ -1852,16 +1852,16 @@ MOVEMENT_714: ;$C38939
 	.INCBIN "src/bin/movements/714.bin"
 
 UNKNOWN_C38978: ;$C38978
-	.INCBIN "src/bin/C38978.bin"
+	.INCBIN "src/bin/unknowns/C38978.bin"
 
 UNKNOWN_C3898C: ;$C3898C
-	.INCBIN "src/bin/C3898C.bin"
+	.INCBIN "src/bin/unknowns/C3898C.bin"
 
 UNKNOWN_C38992: ;$C38992
-	.INCBIN "src/bin/C38992.bin"
+	.INCBIN "src/bin/unknowns/C38992.bin"
 
 UNKNOWN_C3899E: ;$C3899E
-	.INCBIN "src/bin/C3899E.bin"
+	.INCBIN "src/bin/unknowns/C3899E.bin"
 
 MOVEMENT_715: ;$C389BD
 	.INCBIN "src/bin/movements/715.bin"
@@ -1879,7 +1879,7 @@ MOVEMENT_719: ;$C38ADC
 	.INCBIN "src/bin/movements/719.bin"
 
 UNKNOWN_C38B29: ;$C38B29
-	.INCBIN "src/bin/C38B29.bin"
+	.INCBIN "src/bin/unknowns/C38B29.bin"
 
 MOVEMENT_720: ;$C38B3A
 	.INCBIN "src/bin/movements/720.bin"
@@ -1945,7 +1945,7 @@ MOVEMENT_740: ;$C38EFF
 	.INCBIN "src/bin/movements/740.bin"
 
 UNKNOWN_C38F06: ;$C38F06
-	.INCBIN "src/bin/C38F06.bin"
+	.INCBIN "src/bin/unknowns/C38F06.bin"
 
 MOVEMENT_741: ;$C38F1B
 	.INCBIN "src/bin/movements/741.bin"
@@ -1954,13 +1954,13 @@ MOVEMENT_742: ;$C38F39
 	.INCBIN "src/bin/movements/742.bin"
 
 UNKNOWN_C38F86: ;$C38F86
-	.INCBIN "src/bin/C38F86.bin"
+	.INCBIN "src/bin/unknowns/C38F86.bin"
 
 MOVEMENT_743: ;$C38F91
 	.INCBIN "src/bin/movements/743.bin"
 
 UNKNOWN_C38FCE: ;$C38FCE
-	.INCBIN "src/bin/C38FCE.bin"
+	.INCBIN "src/bin/unknowns/C38FCE.bin"
 
 MOVEMENT_744: ;$C38FDF
 	.INCBIN "src/bin/movements/744.bin"
@@ -2005,7 +2005,7 @@ MOVEMENT_757: ;$C39213
 	.INCBIN "src/bin/movements/757.bin"
 
 UNKNOWN_C39244: ;$C39244
-	.INCBIN "src/bin/C39244.bin"
+	.INCBIN "src/bin/unknowns/C39244.bin"
 
 MOVEMENT_758: ;$C3924D
 	.INCBIN "src/bin/movements/758.bin"
@@ -2029,7 +2029,7 @@ MOVEMENT_764: ;$C39440
 	.INCBIN "src/bin/movements/764.bin"
 
 UNKNOWN_C39481: ;$C39481
-	.INCBIN "src/bin/C39481.bin"
+	.INCBIN "src/bin/unknowns/C39481.bin"
 
 MOVEMENT_862: ;$C3949B
 	.INCBIN "src/bin/movements/862.bin"
@@ -2128,10 +2128,10 @@ MOVEMENT_893: ;$C39A8A
 	.INCBIN "src/bin/movements/893.bin"
 
 UNKNOWN_C39ABB: ;$C39ABB
-	.INCBIN "src/bin/C39ABB.bin"
+	.INCBIN "src/bin/unknowns/C39ABB.bin"
 
 UNKNOWN_C39AC7: ;$C39AC7
-	.INCBIN "src/bin/C39AC7.bin"
+	.INCBIN "src/bin/unknowns/C39AC7.bin"
 
 MOVEMENT_765: ;$C39AD9
 	.INCBIN "src/bin/movements/765.bin"
@@ -2158,10 +2158,10 @@ MOVEMENT_772: ;$C39DCF
 	.INCBIN "src/bin/movements/772.bin"
 
 UNKNOWN_C39E01: ;$C39E01
-	.INCBIN "src/bin/C39E01.bin"
+	.INCBIN "src/bin/unknowns/C39E01.bin"
 
 UNKNOWN_C39E0E: ;$C39E0E
-	.INCBIN "src/bin/C39E0E.bin"
+	.INCBIN "src/bin/unknowns/C39E0E.bin"
 
 MOVEMENT_773: ;$C39E13
 	.INCBIN "src/bin/movements/773.bin"
@@ -2173,7 +2173,7 @@ MOVEMENT_775: ;$C39E50
 	.INCBIN "src/bin/movements/775.bin"
 
 UNKNOWN_C39E78: ;$C39E78
-	.INCBIN "src/bin/C39E78.bin"
+	.INCBIN "src/bin/unknowns/C39E78.bin"
 
 MOVEMENT_777: ;$C39E7B
 	.INCBIN "src/bin/movements/777.bin"
@@ -2197,16 +2197,16 @@ MOVEMENT_782: ;$C39EF2
 	.INCBIN "src/bin/movements/782.bin"
 
 UNKNOWN_C39F3F: ;$C39F3F
-	.INCBIN "src/bin/C39F3F.bin"
+	.INCBIN "src/bin/unknowns/C39F3F.bin"
 
 UNKNOWN_C39F67: ;$C39F67
-	.INCBIN "src/bin/C39F67.bin"
+	.INCBIN "src/bin/unknowns/C39F67.bin"
 
 UNKNOWN_C39F7A: ;$C39F7A
-	.INCBIN "src/bin/C39F7A.bin"
+	.INCBIN "src/bin/unknowns/C39F7A.bin"
 
 UNKNOWN_C39F8D: ;$C39F8D
-	.INCBIN "src/bin/C39F8D.bin"
+	.INCBIN "src/bin/unknowns/C39F8D.bin"
 
 MOVEMENT_783: ;$C39FA0
 	.INCBIN "src/bin/movements/783.bin"
@@ -2232,7 +2232,7 @@ UNKNOWN_C39FF2: ;$C39FF2
 	.WORD $A038
 
 UNKNOWN_C3A010: ;$C3A010
-	.INCBIN "src/bin/C3A010.bin"
+	.INCBIN "src/bin/unknowns/C3A010.bin"
 
 MOVEMENT_1: ;$C3A043
 	.INCBIN "src/bin/movements/1.bin"
@@ -2241,7 +2241,7 @@ MOVEMENT_2: ;$C3A05E
 	.INCBIN "src/bin/movements/2.bin"
 
 UNKNOWN_C3A07F: ;$C3A07F
-	.INCBIN "src/bin/C3A07F.bin"
+	.INCBIN "src/bin/unknowns/C3A07F.bin"
 
 MOVEMENT_3: ;$C3A080
 	.INCBIN "src/bin/movements/3.bin"
@@ -2250,79 +2250,79 @@ MOVEMENT_894: ;$C3A099
 	.INCBIN "src/bin/movements/894.bin"
 
 UNKNOWN_C3A09F: ;$C3A09F
-	.INCBIN "src/bin/C3A09F.bin"
+	.INCBIN "src/bin/unknowns/C3A09F.bin"
 
 UNKNOWN_C3A0B2: ;$C3A0B2
-	.INCBIN "src/bin/C3A0B2.bin"
+	.INCBIN "src/bin/unknowns/C3A0B2.bin"
 
 UNKNOWN_C3A0C5: ;$C3A0C5
-	.INCBIN "src/bin/C3A0C5.bin"
+	.INCBIN "src/bin/unknowns/C3A0C5.bin"
 
 UNKNOWN_C3A0D8: ;$C3A0D8
-	.INCBIN "src/bin/C3A0D8.bin"
+	.INCBIN "src/bin/unknowns/C3A0D8.bin"
 
 UNKNOWN_C3A12E: ;$C3A12E
-	.INCBIN "src/bin/C3A12E.bin"
+	.INCBIN "src/bin/unknowns/C3A12E.bin"
 
 UNKNOWN_C3A159: ;$C3A159
-	.INCBIN "src/bin/C3A159.bin"
+	.INCBIN "src/bin/unknowns/C3A159.bin"
 
 UNKNOWN_C3A15E: ;$C3A15E
-	.INCBIN "src/bin/C3A15E.bin"
+	.INCBIN "src/bin/unknowns/C3A15E.bin"
 
 UNKNOWN_C3A17B: ;$C3A17B
-	.INCBIN "src/bin/C3A17B.bin"
+	.INCBIN "src/bin/unknowns/C3A17B.bin"
 
 UNKNOWN_C3A18F: ;$C3A18F
-	.INCBIN "src/bin/C3A18F.bin"
+	.INCBIN "src/bin/unknowns/C3A18F.bin"
 
 UNKNOWN_C3A1A3: ;$C3A1A3
-	.INCBIN "src/bin/C3A1A3.bin"
+	.INCBIN "src/bin/unknowns/C3A1A3.bin"
 
 UNKNOWN_C3A1B7: ;$C3A1B7
-	.INCBIN "src/bin/C3A1B7.bin"
+	.INCBIN "src/bin/unknowns/C3A1B7.bin"
 
 UNKNOWN_C3A1CB: ;$C3A1CB
-	.INCBIN "src/bin/C3A1CB.bin"
+	.INCBIN "src/bin/unknowns/C3A1CB.bin"
 
 UNKNOWN_C3A1DF: ;$C3A1DF
-	.INCBIN "src/bin/C3A1DF.bin"
+	.INCBIN "src/bin/unknowns/C3A1DF.bin"
 
 UNKNOWN_C3A1F3: ;$C3A1F3
-	.INCBIN "src/bin/C3A1F3.bin"
+	.INCBIN "src/bin/unknowns/C3A1F3.bin"
 
 MOVEMENT_35: ;$C3A204
 	.INCBIN "src/bin/movements/35.bin"
 
 UNKNOWN_C3A209: ;$C3A209
-	.INCBIN "src/bin/C3A209.bin"
+	.INCBIN "src/bin/unknowns/C3A209.bin"
 
 UNKNOWN_C3A20E: ;$C3A20E
-	.INCBIN "src/bin/C3A20E.bin"
+	.INCBIN "src/bin/unknowns/C3A20E.bin"
 
 UNKNOWN_C3A222: ;$C3A222
-	.INCBIN "src/bin/C3A222.bin"
+	.INCBIN "src/bin/unknowns/C3A222.bin"
 
 UNKNOWN_C3A22C: ;$C3A22C
-	.INCBIN "src/bin/C3A22C.bin"
+	.INCBIN "src/bin/unknowns/C3A22C.bin"
 
 UNKNOWN_C3A23D: ;$C3A23D
-	.INCBIN "src/bin/C3A23D.bin"
+	.INCBIN "src/bin/unknowns/C3A23D.bin"
 
 UNKNOWN_C3A24E: ;$C3A24E
-	.INCBIN "src/bin/C3A24E.bin"
+	.INCBIN "src/bin/unknowns/C3A24E.bin"
 
 UNKNOWN_C3A25F: ;$C3A25F
-	.INCBIN "src/bin/C3A25F.bin"
+	.INCBIN "src/bin/unknowns/C3A25F.bin"
 
 UNKNOWN_C3A262: ;$C3A262
-	.INCBIN "src/bin/C3A262.bin"
+	.INCBIN "src/bin/unknowns/C3A262.bin"
 
 UNKNOWN_C3A271: ;$C3A271
-	.INCBIN "src/bin/C3A271.bin"
+	.INCBIN "src/bin/unknowns/C3A271.bin"
 
 UNKNOWN_C3A272: ;$C3A272
-	.INCBIN "src/bin/C3A272.bin"
+	.INCBIN "src/bin/unknowns/C3A272.bin"
 
 MOVEMENT_4: ;$C3A273
 	.INCBIN "src/bin/movements/4.bin"
@@ -2364,31 +2364,31 @@ MOVEMENT_18: ;$C3A381
 	.INCBIN "src/bin/movements/18.bin"
 
 UNKNOWN_C3A3A1: ;$C3A3A1
-	.INCBIN "src/bin/C3A3A1.bin"
+	.INCBIN "src/bin/unknowns/C3A3A1.bin"
 
 UNKNOWN_C3A3B7: ;$C3A3B7
-	.INCBIN "src/bin/C3A3B7.bin"
+	.INCBIN "src/bin/unknowns/C3A3B7.bin"
 
 UNKNOWN_C3A3C9: ;$C3A3C9
-	.INCBIN "src/bin/C3A3C9.bin"
+	.INCBIN "src/bin/unknowns/C3A3C9.bin"
 
 UNKNOWN_C3A401: ;$C3A401
-	.INCBIN "src/bin/C3A401.bin"
+	.INCBIN "src/bin/unknowns/C3A401.bin"
 
 UNKNOWN_C3A426: ;$C3A426
-	.INCBIN "src/bin/C3A426.bin"
+	.INCBIN "src/bin/unknowns/C3A426.bin"
 
 UNKNOWN_C3A42D: ;$C3A42D
-	.INCBIN "src/bin/C3A42D.bin"
+	.INCBIN "src/bin/unknowns/C3A42D.bin"
 
 UNKNOWN_C3A434: ;$C3A434
-	.INCBIN "src/bin/C3A434.bin"
+	.INCBIN "src/bin/unknowns/C3A434.bin"
 
 UNKNOWN_C3A448: ;$C3A448
-	.INCBIN "src/bin/C3A448.bin"
+	.INCBIN "src/bin/unknowns/C3A448.bin"
 
 UNKNOWN_C3A45C: ;$C3A45C
-	.INCBIN "src/bin/C3A45C.bin"
+	.INCBIN "src/bin/unknowns/C3A45C.bin"
 
 MOVEMENT_5: ;$C3A481
 	.INCBIN "src/bin/movements/5.bin"
@@ -2397,61 +2397,61 @@ MOVEMENT_19: ;$C3A48A
 	.INCBIN "src/bin/movements/19.bin"
 
 UNKNOWN_C3A4AC: ;$C3A4AC
-	.INCBIN "src/bin/C3A4AC.bin"
+	.INCBIN "src/bin/unknowns/C3A4AC.bin"
 
 MOVEMENT_20: ;$C3A4C9
 	.INCBIN "src/bin/movements/20.bin"
 
 UNKNOWN_C3A500: ;$C3A500
-	.INCBIN "src/bin/C3A500.bin"
+	.INCBIN "src/bin/unknowns/C3A500.bin"
 
 UNKNOWN_C3A528: ;$C3A528
-	.INCBIN "src/bin/C3A528.bin"
+	.INCBIN "src/bin/unknowns/C3A528.bin"
 
 MOVEMENT_21: ;$C3A549
 	.INCBIN "src/bin/movements/21.bin"
 
 UNKNOWN_C3A592: ;$C3A592
-	.INCBIN "src/bin/C3A592.bin"
+	.INCBIN "src/bin/unknowns/C3A592.bin"
 
 UNKNOWN_C3A59F: ;$C3A59F
-	.INCBIN "src/bin/C3A59F.bin"
+	.INCBIN "src/bin/unknowns/C3A59F.bin"
 
 MOVEMENT_22: ;$C3A5C9
 	.INCBIN "src/bin/movements/22.bin"
 
 UNKNOWN_C3A606: ;$C3A606
-	.INCBIN "src/bin/C3A606.bin"
+	.INCBIN "src/bin/unknowns/C3A606.bin"
 
 UNKNOWN_C3A61F: ;$C3A61F
-	.INCBIN "src/bin/C3A61F.bin"
+	.INCBIN "src/bin/unknowns/C3A61F.bin"
 
 MOVEMENT_23: ;$C3A643
 	.INCBIN "src/bin/movements/23.bin"
 
 UNKNOWN_C3A677: ;$C3A677
-	.INCBIN "src/bin/C3A677.bin"
+	.INCBIN "src/bin/unknowns/C3A677.bin"
 
 UNKNOWN_C3A68D: ;$C3A68D
-	.INCBIN "src/bin/C3A68D.bin"
+	.INCBIN "src/bin/unknowns/C3A68D.bin"
 
 UNKNOWN_C3A6B1: ;$C3A6B1
-	.INCBIN "src/bin/C3A6B1.bin"
+	.INCBIN "src/bin/unknowns/C3A6B1.bin"
 
 MOVEMENT_24: ;$C3A6C4
 	.INCBIN "src/bin/movements/24.bin"
 
 UNKNOWN_C3A6F0: ;$C3A6F0
-	.INCBIN "src/bin/C3A6F0.bin"
+	.INCBIN "src/bin/unknowns/C3A6F0.bin"
 
 MOVEMENT_25: ;$C3A714
 	.INCBIN "src/bin/movements/25.bin"
 
 UNKNOWN_C3A749: ;$C3A749
-	.INCBIN "src/bin/C3A749.bin"
+	.INCBIN "src/bin/unknowns/C3A749.bin"
 
 UNKNOWN_C3A76D: ;$C3A76D
-	.INCBIN "src/bin/C3A76D.bin"
+	.INCBIN "src/bin/unknowns/C3A76D.bin"
 
 MOVEMENT_26: ;$C3A780
 	.INCBIN "src/bin/movements/26.bin"
@@ -2460,115 +2460,115 @@ MOVEMENT_27: ;$C3A7F8
 	.INCBIN "src/bin/movements/27.bin"
 
 UNKNOWN_C3A830: ;$C3A830
-	.INCBIN "src/bin/C3A830.bin"
+	.INCBIN "src/bin/unknowns/C3A830.bin"
 
 UNKNOWN_C3A83D: ;$C3A83D
-	.INCBIN "src/bin/C3A83D.bin"
+	.INCBIN "src/bin/unknowns/C3A83D.bin"
 
 UNKNOWN_C3A851: ;$C3A851
-	.INCBIN "src/bin/C3A851.bin"
+	.INCBIN "src/bin/unknowns/C3A851.bin"
 
 MOVEMENT_28: ;$C3A874
 	.INCBIN "src/bin/movements/28.bin"
 
 UNKNOWN_C3A8AC: ;$C3A8AC
-	.INCBIN "src/bin/C3A8AC.bin"
+	.INCBIN "src/bin/unknowns/C3A8AC.bin"
 
 MOVEMENT_29: ;$C3A8D2
 	.INCBIN "src/bin/movements/29.bin"
 
 UNKNOWN_C3A922: ;$C3A922
-	.INCBIN "src/bin/C3A922.bin"
+	.INCBIN "src/bin/unknowns/C3A922.bin"
 
 UNKNOWN_C3A92B: ;$C3A92B
-	.INCBIN "src/bin/C3A92B.bin"
+	.INCBIN "src/bin/unknowns/C3A92B.bin"
 
 MOVEMENT_30: ;$C3A953
 	.INCBIN "src/bin/movements/30.bin"
 
 UNKNOWN_C3A9A9: ;$C3A9A9
-	.INCBIN "src/bin/C3A9A9.bin"
+	.INCBIN "src/bin/unknowns/C3A9A9.bin"
 
 MOVEMENT_31: ;$C3A9DA
 	.INCBIN "src/bin/movements/31.bin"
 
 UNKNOWN_C3A9FF: ;$C3A9FF
-	.INCBIN "src/bin/C3A9FF.bin"
+	.INCBIN "src/bin/unknowns/C3A9FF.bin"
 
 UNKNOWN_C3AA1E: ;$C3AA1E
-	.INCBIN "src/bin/C3AA1E.bin"
+	.INCBIN "src/bin/unknowns/C3AA1E.bin"
 
 UNKNOWN_C3AA2B: ;$C3AA2B
-	.INCBIN "src/bin/C3AA2B.bin"
+	.INCBIN "src/bin/unknowns/C3AA2B.bin"
 
 UNKNOWN_C3AA38: ;$C3AA38
-	.INCBIN "src/bin/C3AA38.bin"
+	.INCBIN "src/bin/unknowns/C3AA38.bin"
 
 UNKNOWN_C3AA46: ;$C3AA46
-	.INCBIN "src/bin/C3AA46.bin"
+	.INCBIN "src/bin/unknowns/C3AA46.bin"
 
 UNKNOWN_C3AA5A: ;$C3AA5A
-	.INCBIN "src/bin/C3AA5A.bin"
+	.INCBIN "src/bin/unknowns/C3AA5A.bin"
 
 UNKNOWN_C3AA6E: ;$C3AA6E
-	.INCBIN "src/bin/C3AA6E.bin"
+	.INCBIN "src/bin/unknowns/C3AA6E.bin"
 
 UNKNOWN_C3AA82: ;$C3AA82
-	.INCBIN "src/bin/C3AA82.bin"
+	.INCBIN "src/bin/unknowns/C3AA82.bin"
 
 UNKNOWN_C3AA96: ;$C3AA96
-	.INCBIN "src/bin/C3AA96.bin"
+	.INCBIN "src/bin/unknowns/C3AA96.bin"
 
 UNKNOWN_C3AAAA: ;$C3AAAA
-	.INCBIN "src/bin/C3AAAA.bin"
+	.INCBIN "src/bin/unknowns/C3AAAA.bin"
 
 UNKNOWN_C3AAB8: ;$C3AAB8
-	.INCBIN "src/bin/C3AAB8.bin"
+	.INCBIN "src/bin/unknowns/C3AAB8.bin"
 
 UNKNOWN_C3AAC2: ;$C3AAC2
-	.INCBIN "src/bin/C3AAC2.bin"
+	.INCBIN "src/bin/unknowns/C3AAC2.bin"
 
 UNKNOWN_C3AAD6: ;$C3AAD6
-	.INCBIN "src/bin/C3AAD6.bin"
+	.INCBIN "src/bin/unknowns/C3AAD6.bin"
 
 UNKNOWN_C3AAEA: ;$C3AAEA
-	.INCBIN "src/bin/C3AAEA.bin"
+	.INCBIN "src/bin/unknowns/C3AAEA.bin"
 
 UNKNOWN_C3AAFE: ;$C3AAFE
-	.INCBIN "src/bin/C3AAFE.bin"
+	.INCBIN "src/bin/unknowns/C3AAFE.bin"
 
 UNKNOWN_C3AB12: ;$C3AB12
-	.INCBIN "src/bin/C3AB12.bin"
+	.INCBIN "src/bin/unknowns/C3AB12.bin"
 
 UNKNOWN_C3AB26: ;$C3AB26
-	.INCBIN "src/bin/C3AB26.bin"
+	.INCBIN "src/bin/unknowns/C3AB26.bin"
 
 UNKNOWN_C3AB37: ;$C3AB37
-	.INCBIN "src/bin/C3AB37.bin"
+	.INCBIN "src/bin/unknowns/C3AB37.bin"
 
 UNKNOWN_C3AB44: ;$C3AB44
-	.INCBIN "src/bin/C3AB44.bin"
+	.INCBIN "src/bin/unknowns/C3AB44.bin"
 
 UNKNOWN_C3AB59: ;$C3AB59
-	.INCBIN "src/bin/C3AB59.bin"
+	.INCBIN "src/bin/unknowns/C3AB59.bin"
 
 UNKNOWN_C3AB67: ;$C3AB67
-	.INCBIN "src/bin/C3AB67.bin"
+	.INCBIN "src/bin/unknowns/C3AB67.bin"
 
 UNKNOWN_C3AB8A: ;$C3AB8A
-	.INCBIN "src/bin/C3AB8A.bin"
+	.INCBIN "src/bin/unknowns/C3AB8A.bin"
 
 UNKNOWN_C3AB94: ;$C3AB94
-	.INCBIN "src/bin/C3AB94.bin"
+	.INCBIN "src/bin/unknowns/C3AB94.bin"
 
 UNKNOWN_C3AB9E: ;$C3AB9E
-	.INCBIN "src/bin/C3AB9E.bin"
+	.INCBIN "src/bin/unknowns/C3AB9E.bin"
 
 UNKNOWN_C3ABAC: ;$C3ABAC
-	.INCBIN "src/bin/C3ABAC.bin"
+	.INCBIN "src/bin/unknowns/C3ABAC.bin"
 
 UNKNOWN_C3ABE0: ;$C3ABE0
-	.INCBIN "src/bin/C3ABE0.bin"
+	.INCBIN "src/bin/unknowns/C3ABE0.bin"
 
 MOVEMENT_476: ;$C3ABED
 	.INCBIN "src/bin/movements/476.bin"
@@ -2586,7 +2586,7 @@ MOVEMENT_37: ;$C3AD7A
 	.INCBIN "src/bin/movements/37.bin"
 
 UNKNOWN_C3ADC6: ;$C3ADC6
-	.INCBIN "src/bin/C3ADC6.bin"
+	.INCBIN "src/bin/unknowns/C3ADC6.bin"
 
 MOVEMENT_43: ;$C3ADE1
 	.INCBIN "src/bin/movements/43.bin"
@@ -2601,7 +2601,7 @@ MOVEMENT_38: ;$C3AE1E
 	.INCBIN "src/bin/movements/38.bin"
 
 UNKNOWN_C3AE68: ;$C3AE68
-	.INCBIN "src/bin/C3AE68.bin"
+	.INCBIN "src/bin/unknowns/C3AE68.bin"
 
 MOVEMENT_39: ;$C3AE78
 	.INCBIN "src/bin/movements/39.bin"
@@ -2619,7 +2619,7 @@ MOVEMENT_46: ;$C3AF4E
 	.INCBIN "src/bin/movements/46.bin"
 
 UNKNOWN_C3AFA3: ;$C3AFA3
-	.INCBIN "src/bin/C3AFA3.bin"
+	.INCBIN "src/bin/unknowns/C3AFA3.bin"
 
 MOVEMENT_55: ;$C3AFAC
 	.INCBIN "src/bin/movements/55.bin"
@@ -2640,13 +2640,13 @@ MOVEMENT_51: ;$C3B06D
 	.INCBIN "src/bin/movements/51.bin"
 
 UNKNOWN_C3B0B6: ;$C3B0B6
-	.INCBIN "src/bin/C3B0B6.bin"
+	.INCBIN "src/bin/unknowns/C3B0B6.bin"
 
 MOVEMENT_50: ;$C3B0EC
 	.INCBIN "src/bin/movements/50.bin"
 
 UNKNOWN_C3B135: ;$C3B135
-	.INCBIN "src/bin/C3B135.bin"
+	.INCBIN "src/bin/unknowns/C3B135.bin"
 
 MOVEMENT_54: ;$C3B13E
 	.INCBIN "src/bin/movements/54.bin"
@@ -2679,7 +2679,7 @@ MOVEMENT_63: ;$C3B3C8
 	.INCBIN "src/bin/movements/63.bin"
 
 UNKNOWN_C3B431: ;$C3B431
-	.INCBIN "src/bin/C3B431.bin"
+	.INCBIN "src/bin/unknowns/C3B431.bin"
 
 MOVEMENT_64: ;$C3B445
 	.INCBIN "src/bin/movements/64.bin"
@@ -2694,7 +2694,7 @@ MOVEMENT_67: ;$C3B4FB
 	.INCBIN "src/bin/movements/67.bin"
 
 UNKNOWN_C3B52A: ;$C3B52A
-	.INCBIN "src/bin/C3B52A.bin"
+	.INCBIN "src/bin/unknowns/C3B52A.bin"
 
 MOVEMENT_69: ;$C3B538
 	.INCBIN "src/bin/movements/69.bin"
@@ -2712,7 +2712,7 @@ MOVEMENT_72: ;$C3B6D4
 	.INCBIN "src/bin/movements/72.bin"
 
 UNKNOWN_C3B70C: ;$C3B70C
-	.INCBIN "src/bin/C3B70C.bin"
+	.INCBIN "src/bin/unknowns/C3B70C.bin"
 
 MOVEMENT_73: ;$C3B757
 	.INCBIN "src/bin/movements/73.bin"
@@ -2784,22 +2784,22 @@ MOVEMENT_98: ;$C3BA70
 	.INCBIN "src/bin/movements/98.bin"
 
 UNKNOWN_C3BA9C: ;$C3BA9C
-	.INCBIN "src/bin/C3BA9C.bin"
+	.INCBIN "src/bin/unknowns/C3BA9C.bin"
 
 UNKNOWN_C3BAA3: ;$C3BAA3
-	.INCBIN "src/bin/C3BAA3.bin"
+	.INCBIN "src/bin/unknowns/C3BAA3.bin"
 
 UNKNOWN_C3BAC4: ;$C3BAC4
-	.INCBIN "src/bin/C3BAC4.bin"
+	.INCBIN "src/bin/unknowns/C3BAC4.bin"
 
 UNKNOWN_C3BAD7: ;$C3BAD7
-	.INCBIN "src/bin/C3BAD7.bin"
+	.INCBIN "src/bin/unknowns/C3BAD7.bin"
 
 MOVEMENT_91: ;$C3BAEA
 	.INCBIN "src/bin/movements/91.bin"
 
 UNKNOWN_C3BB06: ;$C3BB06
-	.INCBIN "src/bin/C3BB06.bin"
+	.INCBIN "src/bin/unknowns/C3BB06.bin"
 
 MOVEMENT_92: ;$C3BB17
 	.INCBIN "src/bin/movements/92.bin"
@@ -2811,10 +2811,10 @@ MOVEMENT_100: ;$C3BB4C
 	.INCBIN "src/bin/movements/100.bin"
 
 UNKNOWN_C3BB5C: ;$C3BB5C
-	.INCBIN "src/bin/C3BB5C.bin"
+	.INCBIN "src/bin/unknowns/C3BB5C.bin"
 
 UNKNOWN_C3BB73: ;$C3BB73
-	.INCBIN "src/bin/C3BB73.bin"
+	.INCBIN "src/bin/unknowns/C3BB73.bin"
 
 MOVEMENT_93: ;$C3BB94
 	.INCBIN "src/bin/movements/93.bin"
@@ -2832,7 +2832,7 @@ MOVEMENT_106: ;$C3BCB0
 	.INCBIN "src/bin/movements/106.bin"
 
 UNKNOWN_C3BD03: ;$C3BD03
-	.INCBIN "src/bin/C3BD03.bin"
+	.INCBIN "src/bin/unknowns/C3BD03.bin"
 
 MOVEMENT_102: ;$C3BD0E
 	.INCBIN "src/bin/movements/102.bin"
@@ -2865,10 +2865,10 @@ MOVEMENT_114: ;$C3BE80
 	.INCBIN "src/bin/movements/114.bin"
 
 UNKNOWN_C3BEA4: ;$C3BEA4
-	.INCBIN "src/bin/C3BEA4.bin"
+	.INCBIN "src/bin/unknowns/C3BEA4.bin"
 
 UNKNOWN_C3BED4: ;$C3BED4
-	.INCBIN "src/bin/C3BED4.bin"
+	.INCBIN "src/bin/unknowns/C3BED4.bin"
 
 MOVEMENT_115: ;$C3BEEE
 	.INCBIN "src/bin/movements/115.bin"
@@ -2886,7 +2886,7 @@ MOVEMENT_119: ;$C3C07C
 	.INCBIN "src/bin/movements/119.bin"
 
 UNKNOWN_C3C0E4: ;$C3C0E4
-	.INCBIN "src/bin/C3C0E4.bin"
+	.INCBIN "src/bin/unknowns/C3C0E4.bin"
 
 MOVEMENT_468: ;$C3C0F3
 	.INCBIN "src/bin/movements/468.bin"
@@ -2904,7 +2904,7 @@ MOVEMENT_472: ;$C3C12E
 	.INCBIN "src/bin/movements/472.bin"
 
 UNKNOWN_C3C143: ;$C3C143
-	.INCBIN "src/bin/C3C143.bin"
+	.INCBIN "src/bin/unknowns/C3C143.bin"
 
 MOVEMENT_473: ;$C3C167
 	.INCBIN "src/bin/movements/473.bin"
@@ -2916,13 +2916,13 @@ MOVEMENT_475: ;$C3C1A8
 	.INCBIN "src/bin/movements/475.bin"
 
 UNKNOWN_C3C1E0: ;$C3C1E0
-	.INCBIN "src/bin/C3C1E0.bin"
+	.INCBIN "src/bin/unknowns/C3C1E0.bin"
 
 UNKNOWN_C3C20F: ;$C3C20F
-	.INCBIN "src/bin/C3C20F.bin"
+	.INCBIN "src/bin/unknowns/C3C20F.bin"
 
 UNKNOWN_C3C227: ;$C3C227
-	.INCBIN "src/bin/C3C227.bin"
+	.INCBIN "src/bin/unknowns/C3C227.bin"
 
 MOVEMENT_120: ;$C3C236
 	.INCBIN "src/bin/movements/120.bin"
@@ -2949,7 +2949,7 @@ MOVEMENT_126: ;$C3C2E3
 	.INCBIN "src/bin/movements/126.bin"
 
 UNKNOWN_C3C2EF: ;$C3C2EF
-	.INCBIN "src/bin/C3C2EF.bin"
+	.INCBIN "src/bin/unknowns/C3C2EF.bin"
 
 MOVEMENT_127: ;$C3C326
 	.INCBIN "src/bin/movements/127.bin"
@@ -2967,7 +2967,7 @@ MOVEMENT_131: ;$C3C351
 	.INCBIN "src/bin/movements/131.bin"
 
 UNKNOWN_C3C35D: ;$C3C35D
-	.INCBIN "src/bin/C3C35D.bin"
+	.INCBIN "src/bin/unknowns/C3C35D.bin"
 
 MOVEMENT_133: ;$C3C394
 	.INCBIN "src/bin/movements/133.bin"
@@ -2997,7 +2997,7 @@ MOVEMENT_140: ;$C3C5C6
 	.INCBIN "src/bin/movements/140.bin"
 
 UNKNOWN_C3C5E5: ;$C3C5E5
-	.INCBIN "src/bin/C3C5E5.bin"
+	.INCBIN "src/bin/unknowns/C3C5E5.bin"
 
 MOVEMENT_141: ;$C3C5F0
 	.INCBIN "src/bin/movements/141.bin"
@@ -3024,16 +3024,16 @@ MOVEMENT_165: ;$C3C7AE
 	.INCBIN "src/bin/movements/165.bin"
 
 UNKNOWN_C3C810: ;$C3C810
-	.INCBIN "src/bin/C3C810.bin"
+	.INCBIN "src/bin/unknowns/C3C810.bin"
 
 UNKNOWN_C3C81A: ;$C3C81A
-	.INCBIN "src/bin/C3C81A.bin"
+	.INCBIN "src/bin/unknowns/C3C81A.bin"
 
 UNKNOWN_C3C824: ;$C3C824
-	.INCBIN "src/bin/C3C824.bin"
+	.INCBIN "src/bin/unknowns/C3C824.bin"
 
 UNKNOWN_C3C872: ;$C3C872
-	.INCBIN "src/bin/C3C872.bin"
+	.INCBIN "src/bin/unknowns/C3C872.bin"
 
 MOVEMENT_147: ;$C3C8A3
 	.INCBIN "src/bin/movements/147.bin"
@@ -3054,13 +3054,13 @@ MOVEMENT_152: ;$C3C8EE
 	.INCBIN "src/bin/movements/152.bin"
 
 UNKNOWN_C3C8FD: ;$C3C8FD
-	.INCBIN "src/bin/C3C8FD.bin"
+	.INCBIN "src/bin/unknowns/C3C8FD.bin"
 
 UNKNOWN_C3C90C: ;$C3C90C
-	.INCBIN "src/bin/C3C90C.bin"
+	.INCBIN "src/bin/unknowns/C3C90C.bin"
 
 UNKNOWN_C3C94E: ;$C3C94E
-	.INCBIN "src/bin/C3C94E.bin"
+	.INCBIN "src/bin/unknowns/C3C94E.bin"
 
 MOVEMENT_153: ;$C3C990
 	.INCBIN "src/bin/movements/153.bin"
@@ -3087,16 +3087,16 @@ MOVEMENT_160: ;$C3CBD5
 	.INCBIN "src/bin/movements/160.bin"
 
 UNKNOWN_C3CC24: ;$C3CC24
-	.INCBIN "src/bin/C3CC24.bin"
+	.INCBIN "src/bin/unknowns/C3CC24.bin"
 
 UNKNOWN_C3CC5C: ;$C3CC5C
-	.INCBIN "src/bin/C3CC5C.bin"
+	.INCBIN "src/bin/unknowns/C3CC5C.bin"
 
 UNKNOWN_C3CC94: ;$C3CC94
-	.INCBIN "src/bin/C3CC94.bin"
+	.INCBIN "src/bin/unknowns/C3CC94.bin"
 
 UNKNOWN_C3CCA8: ;$C3CCA8
-	.INCBIN "src/bin/C3CCA8.bin"
+	.INCBIN "src/bin/unknowns/C3CCA8.bin"
 
 MOVEMENT_161: ;$C3CCB5
 	.INCBIN "src/bin/movements/161.bin"
@@ -3105,10 +3105,10 @@ MOVEMENT_164: ;$C3CDF0
 	.INCBIN "src/bin/movements/164.bin"
 
 UNKNOWN_C3CEA2: ;$C3CEA2
-	.INCBIN "src/bin/C3CEA2.bin"
+	.INCBIN "src/bin/unknowns/C3CEA2.bin"
 
 UNKNOWN_C3CEB9: ;$C3CEB9
-	.INCBIN "src/bin/C3CEB9.bin"
+	.INCBIN "src/bin/unknowns/C3CEB9.bin"
 
 MOVEMENT_163: ;$C3CEC7
 	.INCBIN "src/bin/movements/163.bin"
@@ -3132,7 +3132,7 @@ MOVEMENT_171: ;$C3D04D
 	.INCBIN "src/bin/movements/171.bin"
 
 UNKNOWN_C3D0A4: ;$C3D0A4
-	.INCBIN "src/bin/C3D0A4.bin"
+	.INCBIN "src/bin/unknowns/C3D0A4.bin"
 
 MOVEMENT_172: ;$C3D0C5
 	.INCBIN "src/bin/movements/172.bin"
@@ -3249,7 +3249,7 @@ MOVEMENT_210: ;$C3D8E4
 	.INCBIN "src/bin/movements/210.bin"
 
 UNKNOWN_C3D913: ;$C3D913
-	.INCBIN "src/bin/C3D913.bin"
+	.INCBIN "src/bin/unknowns/C3D913.bin"
 
 MOVEMENT_211: ;$C3D91C
 	.INCBIN "src/bin/movements/211.bin"
@@ -3282,7 +3282,7 @@ MOVEMENT_219: ;$C3DB19
 	.INCBIN "src/bin/movements/219.bin"
 
 UNKNOWN_C3DB7A: ;$C3DB7A
-	.INCBIN "src/bin/C3DB7A.bin"
+	.INCBIN "src/bin/unknowns/C3DB7A.bin"
 
 MOVEMENT_453: ;$C3DBA0
 	.INCBIN "src/bin/movements/453.bin"
@@ -3291,7 +3291,7 @@ MOVEMENT_454: ;$C3DBCC
 	.INCBIN "src/bin/movements/454.bin"
 
 UNKNOWN_C3DBDB: ;$C3DBDB
-	.INCBIN "src/bin/C3DBDB.bin"
+	.INCBIN "src/bin/unknowns/C3DBDB.bin"
 
 MOVEMENT_455: ;$C3DBF2
 	.INCBIN "src/bin/movements/455.bin"
@@ -3327,37 +3327,37 @@ MOVEMENT_32: ;$C3DE01
 	.INCBIN "src/bin/movements/32.bin"
 
 UNKNOWN_C3DE32: ;$C3DE32
-	.INCBIN "src/bin/C3DE32.bin"
+	.INCBIN "src/bin/unknowns/C3DE32.bin"
 
 UNKNOWN_C3DE39: ;$C3DE39
-	.INCBIN "src/bin/C3DE39.bin"
+	.INCBIN "src/bin/unknowns/C3DE39.bin"
 
 UNKNOWN_C3DE5E: ;$C3DE5E
-	.INCBIN "src/bin/C3DE5E.bin"
+	.INCBIN "src/bin/unknowns/C3DE5E.bin"
 
 UNKNOWN_C3DE7B: ;$C3DE7B
-	.INCBIN "src/bin/C3DE7B.bin"
+	.INCBIN "src/bin/unknowns/C3DE7B.bin"
 
 UNKNOWN_C3DE94: ;$C3DE94
-	.INCBIN "src/bin/C3DE94.bin"
+	.INCBIN "src/bin/unknowns/C3DE94.bin"
 
 UNKNOWN_C3DE9C: ;$C3DE9C
-	.INCBIN "src/bin/C3DE9C.bin"
+	.INCBIN "src/bin/unknowns/C3DE9C.bin"
 
 UNKNOWN_C3DEB8: ;$C3DEB8
-	.INCBIN "src/bin/C3DEB8.bin"
+	.INCBIN "src/bin/unknowns/C3DEB8.bin"
 
 UNKNOWN_C3DECC: ;$C3DECC
-	.INCBIN "src/bin/C3DECC.bin"
+	.INCBIN "src/bin/unknowns/C3DECC.bin"
 
 UNKNOWN_C3DEE5: ;$C3DEE5
-	.INCBIN "src/bin/C3DEE5.bin"
+	.INCBIN "src/bin/unknowns/C3DEE5.bin"
 
 UNKNOWN_C3DEED: ;$C3DEED
-	.INCBIN "src/bin/C3DEED.bin"
+	.INCBIN "src/bin/unknowns/C3DEED.bin"
 
 UNKNOWN_C3DF01: ;$C3DF01
-	.INCBIN "src/bin/C3DF01.bin"
+	.INCBIN "src/bin/unknowns/C3DF01.bin"
 
 MOVEMENT_34: ;$C3DF1E
 	.INCBIN "src/bin/movements/34.bin"
@@ -3366,37 +3366,37 @@ MOVEMENT_33: ;$C3DF72
 	.INCBIN "src/bin/movements/33.bin"
 
 UNKNOWN_C3DF90: ;$C3DF90
-	.INCBIN "src/bin/C3DF90.bin"
+	.INCBIN "src/bin/unknowns/C3DF90.bin"
 
 UNKNOWN_C3DFB5: ;$C3DFB5
-	.INCBIN "src/bin/C3DFB5.bin"
+	.INCBIN "src/bin/unknowns/C3DFB5.bin"
 
 UNKNOWN_C3DFD4: ;$C3DFD4
-	.INCBIN "src/bin/C3DFD4.bin"
+	.INCBIN "src/bin/unknowns/C3DFD4.bin"
 
 UNKNOWN_C3DFE8: ;$C3DFE8
-	.INCBIN "src/bin/C3DFE8.bin"
+	.INCBIN "src/bin/unknowns/C3DFE8.bin"
 
 UNKNOWN_C3E12C: ;$C3E12C
-	.INCBIN "src/bin/C3E12C.bin"
+	.INCBIN "src/bin/unknowns/C3E12C.bin"
 
 UNKNOWN_C3E148: ;$C3E148
-	.INCBIN "src/bin/C3E148.bin"
+	.INCBIN "src/bin/unknowns/C3E148.bin"
 
 UNKNOWN_C3E158: ;$C3E158
-	.INCBIN "src/bin/C3E158.bin"
+	.INCBIN "src/bin/unknowns/C3E158.bin"
 
 UNKNOWN_C3E168: ;$C3E168
-	.INCBIN "src/bin/C3E168.bin"
+	.INCBIN "src/bin/unknowns/C3E168.bin"
 
 UNKNOWN_C3E178: ;$C3E178
-	.INCBIN "src/bin/C3E178.bin"
+	.INCBIN "src/bin/unknowns/C3E178.bin"
 
 UNKNOWN_C3E230: ;$C3E230
-	.INCBIN "src/bin/C3E230.bin"
+	.INCBIN "src/bin/unknowns/C3E230.bin"
 
 UNKNOWN_C3E240: ;$C3E240
-	.INCBIN "src/bin/C3E240.bin"
+	.INCBIN "src/bin/unknowns/C3E240.bin"
 
 WINDOW_CONFIGURATION_TABLE: ;$C3E250
 	.WORD $0001, $0001, $000D, $0008
@@ -3454,7 +3454,7 @@ WINDOW_CONFIGURATION_TABLE: ;$C3E250
 	.WORD $0007, $0009, $0012, $0012
 
 UNKNOWN_C3E3F8: ;$C3E3F8
-	.INCBIN "src/bin/C3E3F8.bin"
+	.INCBIN "src/bin/unknowns/C3E3F8.bin"
 
 UNKNOWN_C3E450: ;$C3E450
 	REP #%00110001
@@ -3983,19 +3983,19 @@ UNKNOWN_C3E7E3_UNKNOWN2:
 	RTL
 
 UNKNOWN_C3E84E: ;$C3E84E
-	.INCBIN "src/bin/C3E84E.bin"
+	.INCBIN "src/bin/unknowns/C3E84E.bin"
 
 DEBUG_MENU_TEXT: ;$C3E874
-	.INCBIN "src/bin/C3E874.bin"
+	.INCBIN "src/bin/unknowns/C3E874.bin"
 
 DEBUG_MENU_ELEMENT_SPACING_DATA: ;$C3E964
-	.INCBIN "src/bin/C3E964.bin"
+	.INCBIN "src/bin/unknowns/C3E964.bin"
 
 DEBUG_ON_TEXT: ;$C3E970
-	.INCBIN "src/bin/C3E970.bin"
+	.INCBIN "src/bin/unknowns/C3E970.bin"
 
 DEBUG_OFF_TEXT: ;$C3E973
-	.INCBIN "src/bin/C3E973.bin"
+	.INCBIN "src/bin/unknowns/C3E973.bin"
 
 UNKNOWN_C3E977: ;$C3E977
 	REP #%00110001
@@ -4791,7 +4791,7 @@ DO_ABSOLUTELY_NOTHING_3486862: ;$C3EF23
 	RTL
 
 UNKNOWN_C3EF26: ;$C3EF26
-	.INCBIN "src/bin/C3EF26.bin"
+	.INCBIN "src/bin/unknowns/C3EF26.bin"
 
 FONT_PTR_TABLE: ;$C3F054
 	; Main font
@@ -4821,10 +4821,10 @@ FONT_PTR_TABLE: ;$C3F054
 	.WORD 16
 
 UNKNOWN_C3F090: ;$C3F090
-	.INCBIN "src/bin/C3F090.bin"
+	.INCBIN "src/bin/unknowns/C3F090.bin"
 
 PSI_TARGET_TEXT: ;$C3F0B0
-	.INCBIN "src/bin/C3F0B0.bin"
+	.INCBIN "src/bin/unknowns/C3F0B0.bin"
 
 UNKNOWN_C3F1EC: ;$C3F1EC
 	REP #%00110001
@@ -4930,7 +4930,7 @@ UNKNOWN_C3F1EC_UNKNOWN6:
 	RTL
 
 UNKNOWN_C3F2B1: ;$C3F2B1
-	.INCBIN "src/bin/C3F2B1.bin"
+	.INCBIN "src/bin/unknowns/C3F2B1.bin"
 
 PLAYABLE_CHAR_GFX_TABLE: ;$C3F2B5
 	.WORD $0001
@@ -5603,7 +5603,7 @@ UNKNOWN_C3F7FB: ;$C3F7FB
 	RTL
 
 UNKNOWN_C3F819: ;$C3F819
-	.INCBIN "src/bin/C3F819.bin"
+	.INCBIN "src/bin/unknowns/C3F819.bin"
 
 UNKNOWN_C3F951: ;$C3F951
 	.BYTE 31,0,0
@@ -5836,16 +5836,16 @@ UNKNOWN_C3FB1F: ;$C3FB1F
 	.WORD 4096,1
 
 UNKNOWN_C3FB2B: ;$C3FB2B
-	.INCBIN "src/bin/C3FB2B.bin"
+	.INCBIN "src/bin/unknowns/C3FB2B.bin"
 
 UNKNOWN_C3FC49: ;$C3FC49
-	.INCBIN "src/bin/C3FC49.bin"
+	.INCBIN "src/bin/unknowns/C3FC49.bin"
 
 UNKNOWN_C3FD2D: ;$C3FD2D
-	.INCBIN "src/bin/C3FD2D.bin"
+	.INCBIN "src/bin/unknowns/C3FD2D.bin"
 
 UNKNOWN_C3FD65: ;$C3FD65
-	.INCBIN "src/bin/C3FD65.bin"
+	.INCBIN "src/bin/unknowns/C3FD65.bin"
 
 ATTRACT_MODE_TXT: ;$C3FD8D
 	.DWORD $C5E5BC
@@ -5860,7 +5860,7 @@ ATTRACT_MODE_TXT: ;$C3FD8D
 	.DWORD $C5E6F4
 
 UNKNOWN_C3FDB5: ;$C3FDB5
-	.INCBIN "src/bin/C3FDB5.bin"
+	.INCBIN "src/bin/unknowns/C3FDB5.bin"
 
 UNUSED_FORSALE_SIGN_SPRITE_TABLE: ;$C3FDBD
 	.WORD 55

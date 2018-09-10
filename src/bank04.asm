@@ -1069,28 +1069,28 @@ UNKNOWN_C40B75_UNKNOWN0:
 	BRA UNKNOWN_C40B75_UNKNOWN0
 
 FOOTSTEP_SOUND_TABLE: ;$C40BD4
-	.INCBIN "src/bin/C40BD4.bin"
+	.INCBIN "src/bin/unknowns/C40BD4.bin"
 
 UNKNOWN_C40DF3: ;$C40DF3
-	.INCBIN "src/bin/C40DF3.bin"
+	.INCBIN "src/bin/unknowns/C40DF3.bin"
 
 MOVEMENT_785: ;$C40E24
 	.INCBIN "src/bin/movements/785.bin"
 
 UNKNOWN_C40E31: ;$C40E31
-	.INCBIN "src/bin/C40E31.bin"
+	.INCBIN "src/bin/unknowns/C40E31.bin"
 
 UNKNOWN_C40F18: ;$C40F18
-	.INCBIN "src/bin/C40F18.bin"
+	.INCBIN "src/bin/unknowns/C40F18.bin"
 
 UNKNOWN_C40F45: ;$C40F45
-	.INCBIN "src/bin/C40F45.bin"
+	.INCBIN "src/bin/unknowns/C40F45.bin"
 
 UNKNOWN_C40F4A: ;$C40F4A
-	.INCBIN "src/bin/C40F4A.bin"
+	.INCBIN "src/bin/unknowns/C40F4A.bin"
 
 UNKNOWN_C40F59: ;$C40F59
-	.INCBIN "src/bin/C40F59.bin"
+	.INCBIN "src/bin/unknowns/C40F59.bin"
 
 MOVEMENT_502: ;$C40F68
 	.INCBIN "src/bin/movements/502.bin"
@@ -1183,88 +1183,88 @@ MOVEMENT_534: ;$C41020
 	.INCBIN "src/bin/movements/534.bin"
 
 UNKNOWN_C41036: ;$C41036
-	.INCBIN "src/bin/C41036.bin"
+	.INCBIN "src/bin/unknowns/C41036.bin"
 
 UNKNOWN_C4116C: ;$C4116C
-	.INCBIN "src/bin/C4116C.bin"
+	.INCBIN "src/bin/unknowns/C4116C.bin"
 
 UNKNOWN_C4119D: ;$C4119D
-	.INCBIN "src/bin/C4119D.bin"
+	.INCBIN "src/bin/unknowns/C4119D.bin"
 
 UNKNOWN_C411EB: ;$C411EB
-	.INCBIN "src/bin/C411EB.bin"
+	.INCBIN "src/bin/unknowns/C411EB.bin"
 
 UNKNOWN_C4121F: ;$C4121F
-	.INCBIN "src/bin/C4121F.bin"
+	.INCBIN "src/bin/unknowns/C4121F.bin"
 
 UNKNOWN_C41253: ;$C41253
-	.INCBIN "src/bin/C41253.bin"
+	.INCBIN "src/bin/unknowns/C41253.bin"
 
 UNKNOWN_C41382: ;$C41382
-	.INCBIN "src/bin/C41382.bin"
+	.INCBIN "src/bin/unknowns/C41382.bin"
 
 UNKNOWN_C413D6: ;$C413D6
-	.INCBIN "src/bin/C413D6.bin"
+	.INCBIN "src/bin/unknowns/C413D6.bin"
 
 UNKNOWN_C41402: ;$C41402
-	.INCBIN "src/bin/C41402.bin"
+	.INCBIN "src/bin/unknowns/C41402.bin"
 
 UNKNOWN_C4144C: ;$C4144C
-	.INCBIN "src/bin/C4144C.bin"
+	.INCBIN "src/bin/unknowns/C4144C.bin"
 
 UNKNOWN_C4152A: ;$C4152A
-	.INCBIN "src/bin/C4152A.bin"
+	.INCBIN "src/bin/unknowns/C4152A.bin"
 
 UNKNOWN_C4154E: ;$C4154E
-	.INCBIN "src/bin/C4154E.bin"
+	.INCBIN "src/bin/unknowns/C4154E.bin"
 
 UNKNOWN_C4158A: ;$C4158A
-	.INCBIN "src/bin/C4158A.bin"
+	.INCBIN "src/bin/unknowns/C4158A.bin"
 
 UNKNOWN_C415BA: ;$C415BA
-	.INCBIN "src/bin/C415BA.bin"
+	.INCBIN "src/bin/unknowns/C415BA.bin"
 
 UNKNOWN_C415E7: ;$C415E7
-	.INCBIN "src/bin/C415E7.bin"
+	.INCBIN "src/bin/unknowns/C415E7.bin"
 
 UNKNOWN_C4160A: ;$C4160A
-	.INCBIN "src/bin/C4160A.bin"
+	.INCBIN "src/bin/unknowns/C4160A.bin"
 
 UNKNOWN_C4163F: ;$C4163F
-	.INCBIN "src/bin/C4163F.bin"
+	.INCBIN "src/bin/unknowns/C4163F.bin"
 
 UNKNOWN_C416AC: ;$C416AC
-	.INCBIN "src/bin/C416AC.bin"
+	.INCBIN "src/bin/unknowns/C416AC.bin"
 
 UNKNOWN_C4170E: ;$C4170E
-	.INCBIN "src/bin/C4170E.bin"
+	.INCBIN "src/bin/unknowns/C4170E.bin"
 
 UNKNOWN_C41822: ;$C41822
-	.INCBIN "src/bin/C41822.bin"
+	.INCBIN "src/bin/unknowns/C41822.bin"
 
 UNKNOWN_C41900: ;$C41900
-	.INCBIN "src/bin/C41900.bin"
+	.INCBIN "src/bin/unknowns/C41900.bin"
 
 UNKNOWN_C41938: ;$C41938
-	.INCBIN "src/bin/C41938.bin"
+	.INCBIN "src/bin/unknowns/C41938.bin"
 
 UNKNOWN_C41974: ;$C41974
-	.INCBIN "src/bin/C41974.bin"
+	.INCBIN "src/bin/unknowns/C41974.bin"
 
 UNKNOWN_C4198D: ;$C4198D
-	.INCBIN "src/bin/C4198D.bin"
+	.INCBIN "src/bin/unknowns/C4198D.bin"
 
 UNKNOWN_C419B2: ;$C419B2
-	.INCBIN "src/bin/C419B2.bin"
+	.INCBIN "src/bin/unknowns/C419B2.bin"
 
 UNKNOWN_C419BF: ;$C419BF
-	.INCBIN "src/bin/C419BF.bin"
+	.INCBIN "src/bin/unknowns/C419BF.bin"
 
 UNKNOWN_C41A2A: ;$C41A2A
-	.INCBIN "src/bin/C41A2A.bin"
+	.INCBIN "src/bin/unknowns/C41A2A.bin"
 
 UNKNOWN_C41A7D: ;$C41A7D
-	.INCBIN "src/bin/C41A7D.bin"
+	.INCBIN "src/bin/unknowns/C41A7D.bin"
 
 DECOMP: ;$C41A9E
 	LDA $0E
@@ -1911,13 +1911,13 @@ UNKNOWN_C41DB6_UNKNOWN4:
 	RTL
 
 UNKNOWN_C41EB9: ;$C41EB9
-	.INCBIN "src/bin/C41EB9.bin"
+	.INCBIN "src/bin/unknowns/C41EB9.bin"
 
 UNKNOWN_C41EC9: ;$C41EC9
-	.INCBIN "src/bin/C41EC9.bin"
+	.INCBIN "src/bin/unknowns/C41EC9.bin"
 
 UNKNOWN_C41ED9: ;$C41ED9
-	.INCBIN "src/bin/C41ED9.bin"
+	.INCBIN "src/bin/unknowns/C41ED9.bin"
 
 UNKNOWN_C41EE9: ;$C41EE9
 	LDA $0A
@@ -2059,10 +2059,10 @@ UNKNOWN_C41EFF_UNKNOWN16:
 	RTL
 
 UNKNOWN_C41FC5: ;$C41FC5
-	.INCBIN "src/bin/C41FC5.bin"
+	.INCBIN "src/bin/unknowns/C41FC5.bin"
 
 UNKNOWN_C41FDF: ;$C41FDF
-	.INCBIN "src/bin/C41FDF.bin"
+	.INCBIN "src/bin/unknowns/C41FDF.bin"
 
 UNKNOWN_C41FFF: ;$C41FFF
 	REP #%00100000
@@ -2126,7 +2126,7 @@ UNKNOWN_C41FFF_UNKNOWN6:
 	RTL
 
 UNKNOWN_C4205D: ;$C4205D
-	.INCBIN "src/bin/C4205D.bin"
+	.INCBIN "src/bin/unknowns/C4205D.bin"
 
 UNKNOWN_C42144: ;$C42144
 	SEP #%00100000
@@ -2162,7 +2162,7 @@ MOVEMENT_789: ;$C4222A
 	.INCBIN "src/bin/movements/789.bin"
 
 UNKNOWN_C42235: ;$C42235
-	.INCBIN "src/bin/C42235.bin"
+	.INCBIN "src/bin/unknowns/C42235.bin"
 
 MOVEMENT_788: ;$C42290
 	.INCBIN "src/bin/movements/788.bin"
@@ -2623,19 +2623,19 @@ MOVEMENT_859: ;$C4279F
 	.INCBIN "src/bin/movements/859.bin"
 
 UNKNOWN_C427A1: ;$C427A1
-	.INCBIN "src/bin/C427A1.bin"
+	.INCBIN "src/bin/unknowns/C427A1.bin"
 
 UNKNOWN_C427E0: ;$C427E0
-	.INCBIN "src/bin/C427E0.bin"
+	.INCBIN "src/bin/unknowns/C427E0.bin"
 
 UNKNOWN_C42802: ;$C42802
-	.INCBIN "src/bin/C42802.bin"
+	.INCBIN "src/bin/unknowns/C42802.bin"
 
 UNKNOWN_C42815: ;$C42815
-	.INCBIN "src/bin/C42815.bin"
+	.INCBIN "src/bin/unknowns/C42815.bin"
 
 UNKNOWN_C42828: ;$C42828
-	.INCBIN "src/bin/C42828.bin"
+	.INCBIN "src/bin/unknowns/C42828.bin"
 
 UNKNOWN_C4283F: ;$C4283F
 	REP #%00100000
@@ -2815,7 +2815,7 @@ UNKNOWN_C428FC_UNKNOWN1:
 	RTL
 
 UNKNOWN_C42955: ;$C42955
-	.INCBIN "src/bin/C42955.bin"
+	.INCBIN "src/bin/unknowns/C42955.bin"
 
 UNKNOWN_C42965: ;$C42965
 	REP #%00100000
@@ -2915,13 +2915,13 @@ UNKNOWN_C429E8: ;$C429E8
 	RTL
 
 UNKNOWN_C42A1F: ;$C42A1F
-	.INCBIN "src/bin/C42A1F.bin"
+	.INCBIN "src/bin/unknowns/C42A1F.bin"
 
 UNKNOWN_C42A41: ;$C42A41
-	.INCBIN "src/bin/C42A41.bin"
+	.INCBIN "src/bin/unknowns/C42A41.bin"
 
 UNKNOWN_C42AEB: ;$C42AEB
-	.INCBIN "src/bin/C42AEB.bin"
+	.INCBIN "src/bin/unknowns/C42AEB.bin"
 
 UNKNOWN_C42B0D: ;$C42B0D
 	.DWORD $C42B51
@@ -2943,7 +2943,7 @@ UNKNOWN_C42B0D: ;$C42B0D
 	.DWORD $C42E7B
 
 UNKNOWN_C42B51: ;$C42B51
-	.INCBIN "src/bin/C42B51.bin"
+	.INCBIN "src/bin/unknowns/C42B51.bin"
 
 UNKNOWN_C42F45: ;$C42F45
 	ASL
@@ -2965,10 +2965,10 @@ UNKNOWN_C42F45_UNKNOWN0:
 	RTL
 
 UNKNOWN_C42F64: ;$C42F64
-	.INCBIN "src/bin/C42F64.bin"
+	.INCBIN "src/bin/unknowns/C42F64.bin"
 
 UNKNOWN_C42F8C: ;$C42F8C
-.INCBIN "src/bin/C42F8C.bin"
+	.INCBIN "src/bin/unknowns/C42F8C.bin"
 
 
 VELOCITY_STORE: ;$C430EC
@@ -4089,7 +4089,7 @@ PRINT_NEWLINE_UNKNOWN3:
 	RTL
 
 UNKNOWN_C43915: ;$C43915
-	.INCBIN "src/bin/C43915.bin"
+	.INCBIN "src/bin/unknowns/C43915.bin"
 
 UNKNOWN_C43B15: ;$C43B15
 	REP #%00110001
@@ -6161,7 +6161,7 @@ UNKNOWN_C44963_RETURN:
 	RTL
 
 UNKNOWN_C44AD7: ;$C44AD7
-	.INCBIN "src/bin/C44AD7.bin"
+	.INCBIN "src/bin/unknowns/C44AD7.bin"
 
 UNKNOWN_C44AF7: ;$C44AF7
 	REP #%00110001
@@ -7517,7 +7517,7 @@ BATTLE_BACK_ROW_TEXT: ;$C45502
 	.BYTE $A4, $98, $95, $50, $72, $91, $93, $9B, $50, $82, $9F, $A7, $00
 
 CC_1C_01_TABLE: ;$C4550F
-	.INCBIN "src/bin/C4550F.bin"
+	.INCBIN "src/bin/unknowns/C4550F.bin"
 
 POWERS_OF_TWO_AGAIN: ;$C4562F
 	.BYTE $01
@@ -8559,7 +8559,7 @@ RAND_MOD: ;$C45F7B
 	RTL
 
 UNKNOWN_C45F96: ;$C45F96
-	.INCBIN "src/bin/C45F96.bin"
+	.INCBIN "src/bin/unknowns/C45F96.bin"
 
 UNKNOWN_C45FA8: ;$C45FA8
 	REP #%00110001
@@ -10137,7 +10137,7 @@ UNKNOWN_C469F1_UNKNOWN0:
 	RTL
 
 UNKNOWN_C46A5E: ;$C46A5E
-	.INCBIN "src/bin/C46A5E.bin"
+	.INCBIN "src/bin/unknowns/C46A5E.bin"
 
 UNKNOWN_C46A6E: ;$C46A6E
 	REP #%00110001
@@ -10148,7 +10148,7 @@ UNKNOWN_C46A6E: ;$C46A6E
 	RTL
 
 UNKNOWN_C46A7A: ;$C46A7A
-	.INCBIN "src/bin/C46A7A.bin"
+	.INCBIN "src/bin/unknowns/C46A7A.bin"
 
 UNKNOWN_C46A9A: ;$C46A9A
 	REP #%00110001
@@ -10255,7 +10255,7 @@ UNKNOWN_C46B37: ;$C46B37
 	RTL
 
 UNKNOWN_C46B41: ;$C46B41
-	.INCBIN "src/bin/C46B41.bin"
+	.INCBIN "src/bin/unknowns/C46B41.bin"
 
 UNKNOWN_C46B51: ;$C46B51
 	REP #%00110001
@@ -11676,7 +11676,7 @@ UNKNOWN_C474A8_UNKNOWN7:
 	RTL
 
 UNKNOWN_C474F6: ;$C474F6
-	.INCBIN "src/bin/C474F6.bin"
+	.INCBIN "src/bin/unknowns/C474F6.bin"
 
 UNKNOWN_C47501: ;$C47501
 	REP #%00110001
@@ -14707,7 +14707,7 @@ UNKNOWN_C48C3E: ;$C48C3E
 	RTL
 
 UNKNOWN_C48C59: ;$C48C59
-	.INCBIN "src/bin/C48C59.bin"
+	.INCBIN "src/bin/unknowns/C48C59.bin"
 
 UNKNOWN_C48C69: ;$C48C69
 	REP #%00110001
@@ -14829,7 +14829,7 @@ UNKNOWN_C48C97_UNKNOWN4:
 	RTL
 
 UNKNOWN_C48D38: ;$C48D38
-	.INCBIN "src/bin/C48D38.bin"
+	.INCBIN "src/bin/unknowns/C48D38.bin"
 
 UNKNOWN_C48D58: ;$C48D58
 	REP #%00110001
@@ -17667,7 +17667,7 @@ PRAYER_TEXT_PTRS: ;$C4A309
 	.DWORD $C8F992
 
 UNKNOWN_C4A331: ;$C4A331
-	.INCBIN "src/bin/C4A331.bin"
+	.INCBIN "src/bin/unknowns/C4A331.bin"
 
 UNKNOWN_C4A377: ;$C4A377
 	REP #%00110001
@@ -17923,7 +17923,7 @@ UNKNOWN_C4A377_UNKNOWN1:
 	RTL
 
 UNKNOWN_C4A591: ;$C4A591
-	.INCBIN "src/bin/C4A591.bin"
+	.INCBIN "src/bin/unknowns/C4A591.bin"
 
 UNKNOWN_C4A67E: ;$C4A67E
 	.DEFINE OPTIONS $02
@@ -18617,10 +18617,10 @@ UNKNOWN_C4A7B0_UNKNOWN34:
 	RTL
 
 UNKNOWN_C4AC57: ;$C4AC57
-	.INCBIN "src/bin/C4AC57.bin"
+	.INCBIN "src/bin/unknowns/C4AC57.bin"
 
 UNKNOWN_C4AC58: ;$C4AC58
-	.INCBIN "src/bin/C4AC58.bin"
+	.INCBIN "src/bin/unknowns/C4AC58.bin"
 
 SOUND_STONE_UNKNOWN: ;$C4AC7B
 	.BYTE $80
@@ -21320,7 +21320,7 @@ UNKNOWN_C4BF7F_UNKNOWN6:
 	RTS
 
 FILE_SELECT_TEXT: ;$C4C05E
-	.INCBIN "src/bin/C4C05E.bin"
+	.INCBIN "src/bin/unknowns/C4C05E.bin"
 
 UNKNOWN_C4C2DE: ;$C4C2DE
 	REP #%00110001
@@ -24828,7 +24828,7 @@ DECOMP_NINTENDO_PRESENTATION: ;$C4DDD0
 	RTL
 
 UNKNOWN_C4DE78: ;$C4DE78
-	.INCBIN "src/bin/C4DE78.bin"
+	.INCBIN "src/bin/unknowns/C4DE78.bin"
 
 UNKNOWN_C4DE9A: ;$C4DE9A
 	PHD
