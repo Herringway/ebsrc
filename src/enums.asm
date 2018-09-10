@@ -1,3 +1,5 @@
+.INCLUDE "constants/music.asm"
+
 .DEFINE OUT_OF_BATTLE 0
 .DEFINE IN_BATTLE 1
 
