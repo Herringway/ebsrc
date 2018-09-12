@@ -46,3 +46,57 @@
 	unknown6 .byte ;93
 	unknown7 .byte ;94
 .ENDSTRUCT
+
+.STRUCT game_state
+	mother2_playername .byte 12 ;0
+	earthbound_playername .byte 24 ;12
+	pet_name .byte 6 ;36
+	favourite_food .byte 6 ;42
+	favourite_thing .byte 12 ;48
+	money_carried .dword ;60
+	bank_balance .dword ;64
+	party_psi .byte ;68
+	party_npc_1 .byte ;69
+	party_npc_2 .byte ;70
+	party_npc_1_hp .word ;71
+	party_npc_2_hp .word ;73
+	unknown1 .byte ;75
+	party_status .byte ;76
+	unknown2 .byte ;77
+	unknown3 .word ;78
+	unknown4 .word ;80
+	wallet_backup .dword ;82
+	escargo_express_items .byte 36 ;86
+	unknown5 .byte 6 ;122
+	unknown6 .word ;128
+	leader_x_coord .word ;130
+	unknown7 .word ;132
+	leader_y_coord .word ;134
+	unknown8 .word ;136
+	leader_direction .word ;138
+	trodden_tile_type .word ;140
+	walking_style .word ;142
+	unknown9 .word ;144
+	unknown10 .word ;146
+	current_party_members .word ;148
+	unknown11 .byte 6 ;150
+	player_controlled_party_members .byte ;156
+	unknown12 .byte 5 ;157
+	unknown13 .byte 12 ;162
+	party_count .byte ;174
+	player_controlled_party_count .byte ;175
+	unknown14 .word ;176
+	unknown15 .word ; 178
+	unknown16 .byte 8 ;180
+	auto_fight_enable .byte ;188
+	exit_mouse_x_coord .word ;189
+	exit_mouse_y_coord .word ;191
+	text_speed .byte ;193
+	sound_setting .byte ;194
+	unknown17 .byte 5 ;195
+	unknown18 .byte 12 ;200
+	unknown19 .word ;212
+	unknown20 .byte 254 ;214
+	timer .dword ;468
+	text_flavour .byte ;472
+.ENDSTRUCT
