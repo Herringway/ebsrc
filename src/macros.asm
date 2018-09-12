@@ -8,9 +8,14 @@
 .endmacro
 
 .macro DISPLAY_TEXT_PTR addr
-	LDA #.LOWORD(addr)
-	STA $0E
-	LDA #.HIWORD(addr)
-	STA $10
+	LOADPTR addr, $0E
 	JSL DISPLAY_TEXT
+.endmacro
+
+
+.macro LOADPTR ptr, var
+	LDA #.LOWORD(ptr)
+	STA var
+	LDA #.HIWORD(ptr)
+	STA var+2
 .endmacro
