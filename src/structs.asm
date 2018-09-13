@@ -100,3 +100,54 @@
 	timer .dword ;468
 	text_flavour .byte ;472
 .ENDSTRUCT
+
+.STRUCT enemy_data
+	the_flag .byte ;0
+	name .byte 25 ;1
+	gender .byte ;26
+	type .byte ;27
+	battle_sprite .word ;28
+	overworld_sprite .word ;30
+	run_flag .byte ;32
+	hp .word ;33
+	pp .word ;35
+	exp .dword ;37
+	money .word ;41
+	movement_pattern .word ;43
+	encounter_text_ptr .dword ;45
+	death_text_ptr .dword ;49
+	battle_sprite_palette .byte ;53
+	level .byte ;54
+	music .byte ;55
+	offense .word ;56
+	defense .word ;58
+	speed .byte ;60
+	guts .byte ;61
+	luck .byte ;62
+	fire_vulnerability .byte ;63
+	freeze_vulnerability .byte ;64
+	flash_vulnerability .byte ;65
+	paralysis_vulnerability .byte ;66
+	hypnosis_brainshock_vulnerability .byte ;67
+	miss_rate .byte ;68
+	action_order .byte ;69
+	action_1 .word ;70
+	action_2 .word ;72
+	action_3 .word ;74
+	action_4 .word ;76
+	final_action .word ;78
+	action_1_arg .byte ;80
+	action_2_arg .byte ;81
+	action_3_arg .byte ;82
+	action_4_arg .byte ;83
+	final_action_arg .byte ;84
+	iq .byte ;85
+	boss .byte ;86
+	item_drop_rate .byte ;87
+	item_dropped .byte ;88
+	initial_status .byte ;89
+	death_type .byte ;90
+	row .byte ;91
+	max_called .byte ;92
+	mirror_success .byte ;93
+.ENDSTRUCT
