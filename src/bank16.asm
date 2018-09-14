@@ -1,4 +1,5 @@
 .SEGMENT "BANK16"
 .ORG $D60000
 
-.INCBIN "bin/bank16.bin"
+MAP_DATA_TILE_TABLE_BANK_1: ;$D60000
+	.INCBIN "bin/unknowns/D60000.bin"

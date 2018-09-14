@@ -1,4 +1,14 @@
 .SEGMENT "BANK1A"
 .ORG $DA0000
 
-.INCBIN "bin/bank1a.bin"
+MAP_DATA_TILE_ARRANGEMENT_BLOCK_3: ;$DA0000
+	.INCBIN "bin/maptile_arrangements/2.bin"
+
+MAP_DATA_PALETTES: ;$DA7CA7
+	.INCBIN "bin/unknowns/DA7CA7.bin"
+
+MAP_DATA_UNKNOWN_PALETTE_PTR_TABLE: ;$DAFAA7
+	.INCBIN "bin/unknowns/DAFAA7.bin"
+
+AUDIO_PACK_111: ;$DAFB07
+	.INCBIN "bin/audiopacks/111.bin"

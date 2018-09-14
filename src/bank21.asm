@@ -1,139 +1,179 @@
 .SEGMENT "BANK21"
 .ORG $E10000
 
-.INCBIN "bin/bank21.bin"
-
-.ORG $E10000
 COFFEE_SEQUENCE_TEXT: ;$E10000
+	.INCBIN "bin/unknowns/E10000.bin"
 
-.ORG $E10652
 TEA_SEQUENCE_TEXT: ;$E10652
+	.INCBIN "bin/unknowns/E10652.bin"
 
-.ORG $E12EFA
+MOVEMENT_TEXT_STRINGS: ;$E10B86
+	.INCBIN "bin/unknowns/E10B86.bin"
+
+MAIN_FONT_DATA: ;$E10C7A
+	.INCBIN "bin/unknowns/E10C7A.bin"
+
+MAIN_FONT_GFX: ;$E10CDA
+	.INCBIN "bin/unknowns/E10CDA.bin"
+
+BATTLE_FONT_DATA: ;$E118DA
+	.INCBIN "bin/unknowns/E118DA.bin"
+
+BATTLE_FONT_GFX: ;$E1193A
+	.INCBIN "bin/unknowns/E1193A.bin"
+
+TINY_FONT_DATA: ;$E11F3A
+	.INCBIN "bin/unknowns/E11F3A.bin"
+
+TINY_FONT_GFX: ;$E11F9A
+	.INCBIN "bin/unknowns/E11F9A.bin"
+
+LARGE_FONT_DATA: ;$E1229A
+	.INCBIN "bin/unknowns/E1229A.bin"
+
+LARGE_FONT_GFX: ;$E122FA
+	.INCBIN "bin/unknowns/E122FA.bin"
+
 CAST_SEQUENCE_FORMATTING: ;$E12EFA
+	.INCBIN "bin/unknowns/E12EFA.bin"
 
-.ORG $E12F8A
 PHOTOGRAPHER_CFG_TABLE: ;$E12F8A
+	.INCBIN "bin/unknowns/E12F8A.bin"
 
-.ORG $E1374A
 COMPRESSED_PALETTE_UNKNOWN: ;$E1374A
+	.INCBIN "bin/unknowns/E1374A.bin"
 
-.ORG $E14DE8
+STAFF_TEXT: ;$E1413F
+	.INCBIN "bin/unknowns/E1413F.bin"
+
 UNKNOWN_E14DE8: ;$E14DE8
+	.INCBIN "bin/unknowns/E14DE8.bin"
 
-.ORG $E14EC1
 APE_ARRANGEMENT: ;$E14EC1
+	.INCBIN "bin/intro/logos/ape/arrangement.bin"
 
-.ORG $E14F2A
 APE_GRAPHICS: ;$E14F2A
+	.INCBIN "bin/intro/logos/ape/graphics.bin"
 
-.ORG $E15130
 APE_PALETTE: ;$E15130
+	.INCBIN "bin/intro/logos/ape/palette.bin"
 
-.ORG $E15174
 HALKEN_ARRANGEMENT: ;$E15174
+	.INCBIN "bin/intro/logos/halken/arrangement.bin"
 
-.ORG $E151E8
 HALKEN_GRAPHICS: ;$E151E8
+	.INCBIN "bin/intro/logos/halken/graphics.bin"
 
-.ORG $E153B8
 HALKEN_PALETTE: ;$E153B8
+	.INCBIN "bin/intro/logos/halken/palette.bin"
 
-.ORG $E15455
 NINTENDO_ARRANGEMENT: ;$E15455
+	.INCBIN "bin/intro/logos/nintendo/arrangement.bin"
 
-.ORG $E1549E
 NINTENDO_GRAPHICS: ;$E1549E
+	.INCBIN "bin/intro/logos/nintendo/graphics.bin"
 
-.ORG $E1558F
 NINTENDO_PALETTE: ;$E1558F
+	.INCBIN "bin/intro/logos/nintendo/palette.bin"
 
-.ORG $E155D3
 GAS_STATION_ARRANGEMENT: ;$E155D3
+	.INCBIN "bin/intro/gas_station/arrangement.bin"
 
-.ORG $E15B33
 GAS_STATION_GRAPHICS: ;$E15B33
+	.INCBIN "bin/intro/gas_station/graphics.bin"
 
-.ORG $E1A9B7
 GAS_STATION_PALETTE: ;$E1A9B7
+	.INCBIN "bin/intro/gas_station/palette.bin"
 
-.ORG $E1AA5D
 GAS_STATION_PALETTE_2: ;$E1AA5D
+	.INCBIN "bin/intro/gas_station/palette2.bin"
 
-.ORG $E1AADF
 PRODUCED_ITOI_ARRANGEMENT: ;$E1AADF
+	.INCBIN "bin/intro/attract/produced_by_itoi/arrangement.bin"
 
-.ORG $E1AB4B
 PRODUCED_ITOI_GRAPHICS: ;$E1AB4B
+	.INCBIN "bin/intro/attract/produced_by_itoi/graphics.bin"
 
-.ORG $E1AD01
 NINTENDO_PRESENTATION_PALETTE: ;$E1AD01
+	.INCBIN "bin/intro/attract/nintendo_presentation/arrangement.bin"
 
-.ORG $E1AD4E
 NINTENDO_PRESENTATION_GRAPHICS: ;$E1AD4E
+	.INCBIN "bin/intro/attract/nintendo_presentation/graphics.bin"
 
-.ORG $E1AE6F
 NINTENDO_ITOI_PALETTE: ;$E1AE6F
+	.INCBIN "bin/intro/attract/nintendo_itoi_shared_palette.bin"
 
-.ORG $E1AE7C
 UNKNOWN_E1AE7C: ;$E1AE7C
+	.INCBIN "bin/unknowns/E1AE7C.bin"
 
-.ORG $E1AE83
 UNKNOWN_E1AE83: ;$E1AE83
+	.INCBIN "bin/unknowns/E1AE83.bin"
 
-.ORG $E1AEFD
 UNKNOWN_E1AEFD: ;$E1AEFD
+	.INCBIN "bin/unknowns/E1AEFD.bin"
 
-.ORG $E1AF7D
 TITLE_SCREEN_ARRANGEMENT: ;$E1AF7D
+	.INCBIN "bin/intro/title_screen/arrangement.bin"
 
-.ORG $E1B211
 TITLE_SCREEN_GRAPHICS: ;$E1B211
+	.INCBIN "bin/intro/title_screen/graphics.bin"
 
-.ORG $E1C6E5
 UNKNOWN_E1C6E5: ;$E1C6E5
+	.INCBIN "bin/unknowns/E1C6E5.bin"
 
-.ORG $E1CDE1
 TITLE_SCREEN_PALETTE: ;$E1CDE1
+	.INCBIN "bin/intro/title_screen/palette.bin"
 
-.ORG $E1CFAF
+UNKNOWN_E1CE08: ;$E1CE08
+	.INCBIN "bin/unknowns/E1CE08.bin"
+
 UNKNOWN_E1CFAF: ;$E1CFAF
+	.INCBIN "bin/unknowns/E1CFAF.bin"
 
-.ORG $E1D4F4
 UNKNOWN_E1D4F4: ;$E1D4F4
+	.INCBIN "bin/unknowns/E1D4F4.bin"
 
-.ORG $E1D5E8
 UNKNOWN_E1D5E8: ;$E1D5E8
+	.INCBIN "bin/unknowns/E1D5E8.bin"
 
-.ORG $E1D6E1
 UNKNOWN_E1D6E1: ;$E1D6E1
+	.INCBIN "bin/unknowns/E1D6E1.bin"
 
-.ORG $E1D815
 UNKNOWN_E1D815: ;$E1D815
+	.INCBIN "bin/unknowns/E1D815.bin"
 
-.ORG $E1D835
 UNKNOWN_E1D835: ;$E1D835
+	.INCBIN "bin/unknowns/E1D835.bin"
 
-.ORG $E1E528
+UNKNOWN_E1E4E7: ;$E1E4E7
+	.INCBIN "bin/unknowns/E1E4E7.bin"
+
 STAFF_CREDITS_FONT_GRAPHICS: ;$E1E528
+	.INCBIN "bin/unknowns/E1E528.bin"
 
-.ORG $E1E914
 STAFF_CREDITS_FONT_PALETTE: ;$E1E914
+	.INCBIN "bin/unknowns/E1E914.bin"
 
-.ORG $E1E924
 UNKNOWN_E1E924: ;$E1E924
+	.INCBIN "bin/unknowns/E1E924.bin"
 
-.ORG $E1E94A
 UNKNOWN_E1E94A: ;$E1E94A
+	.INCBIN "bin/unknowns/E1E94A.bin"
 
-.ORG $E1EA50
 TOWN_MAP_LABEL_GFX: ;$E1EA50
+	.INCBIN "bin/unknowns/E1EA50.bin"
 
-.ORG $E1F1C3
 TOWN_MAP_ICON_PALETTE: ;$E1F1C3
+	.INCBIN "bin/unknowns/E1F1C3.bin"
 
-.ORG $E1F203
 UNKNOWN_E1F203: ;$E1F203
+	.INCBIN "bin/unknowns/E1F203.bin"
 
-.ORG $E1F491
 TOWN_MAP_ICON_PLACEMENT_PTR_TABLE: ;$E1F491
+	.INCBIN "bin/unknowns/E1F491.bin"
+
+TOWN_MAP_ICON_PLACEMENT_DATA: ;$E1F4A9
+	.INCBIN "bin/unknowns/E1F4A9.bin"
+
+AUDIO_PACK_123: ;$E1F581
+	.INCBIN "bin/audiopacks/123.bin"

@@ -1,4 +1,14 @@
 .SEGMENT "BANK0B"
 .ORG $CB0000
 
-.INCBIN "bin/bank0b.bin"
+BATTLEBGS_SECONDARY_DATA: ;$CB0000
+	.INCBIN "bin/unknowns/CB0000.bin"
+
+BTL_ENTRY_BG_TABLE: ;$CBD89A
+	.INCBIN "bin/unknowns/CBD89A.bin"
+
+AUDIO_PACK_66: ;$CBE02A
+	.INCBIN "bin/audiopacks/66.bin"
+
+AUDIO_PACK_59: ;$CBFEE2
+	.INCBIN "bin/audiopacks/59.bin"

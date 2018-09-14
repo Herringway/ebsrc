@@ -1,4 +1,5 @@
 .SEGMENT "BANK06"
 .ORG $C60000
 
-.INCBIN "bin/bank06.bin"
+TEXT_DATA_BANK_2: ;$C60000
+	.INCBIN "bin/text_data/1.bin"

@@ -1,4 +1,5 @@
 .SEGMENT "BANK13"
 .ORG $D30000
 
-.INCBIN "bin/bank13.bin"
+OVERWORLD_SPRITES_BANK3:
+	.INCBIN "bin/overworld_sprites/2.bin"

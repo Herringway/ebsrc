@@ -1,4 +1,5 @@
 .SEGMENT "BANK0D"
 .ORG $CD0000
 
-.INCBIN "bin/bank0d.bin"
+BATTLE_SPRITES_BLOCK_1: ;$CD0000
+	.INCBIN "bin/unknowns/CD0000.bin"
