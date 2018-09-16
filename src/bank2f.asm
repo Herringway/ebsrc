@@ -2791,14 +2791,53 @@ SPRITE_GROUPING_PTR_TABLE: ;$EF133F
 SPRITE_GROUPING_DATA: ;$EF1A7F
 	.INCBIN "src/bin/unknowns/EF1A7F.bin"
 
-TEXT_DATA_EF4A40: ;$EF4A40
+UNKNOWN_EF4A40: ;$EF4A40
 	.INCBIN "src/bin/unknowns/EF4A40.bin"
 
+TEXT_DATA_EF4A40: ;$EF4A40
+	.INCLUDE "bin/text_data/6.ebtxt"
+
 CMD_WINDOW_TEXT: ;$EFA37A
-	.INCBIN "src/bin/unknowns/EFA37A.bin"
+	EBTEXT "Talk to"
+	.BYTE $00, $00, $00
+	EBTEXT "Goods"
+	.BYTE $00, $00, $00, $00, $00
+	EBTEXT "PSI"
+	.BYTE $00, $00, $00, $00, $00, $00, $00
+	EBTEXT "Equip"
+	.BYTE $00, $00, $00, $00, $00
+	EBTEXT "Check"
+	.BYTE $00, $00, $00, $00, $00
+	EBTEXT "Status"
+	.BYTE $00, $00, $00, $00
 
 STATUS_WINDOW_TEXT: ;$EFA3B6
-	.INCBIN "src/bin/unknowns/EFA3B6.bin"
+	.BYTE $18, $05, $08, $00
+	EBTEXT "Level:"
+	.BYTE $18, $05, $2C, $03
+	EBTEXT "Hit Points:"
+	.BYTE $18, $05, $17, $04
+	EBTEXT "Psychic Points:"
+	.BYTE $18, $05, $0A, $05
+	EBTEXT "Experience Points:"
+	.BYTE $18, $05, $39, $06
+	EBTEXT "Exp. for next level."
+	.BYTE $18, $05, $9C, $00
+	EBTEXT "Offense:"
+	.BYTE $18, $05, $9B, $01
+	EBTEXT "Defense:"
+	.BYTE $18, $05, $A4, $02
+	EBTEXT "Speed:"
+	.BYTE $18, $05, $AA, $03
+	EBTEXT "Guts:"
+	.BYTE $18, $05, $9F, $04
+	EBTEXT "Vitality:"
+	.BYTE $18, $05, $B6, $05
+	EBTEXT "IQ:"
+	.BYTE $18, $05, $AA, $06
+	EBTEXT "Luck:"
+	.BYTE $02
+	.BYTE $18, $01, $09, $18, $01, $0B, $02
 
 NAME_INPUT_WINDOW_SELECTION_LAYOUT: ;$EFA460
 	.INCBIN "src/bin/unknowns/EFA460.bin"

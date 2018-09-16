@@ -3,7 +3,7 @@
 .ORG $C80000
 
 TEXT_DATA_BANK_4: ;$C80000
-	.INCBIN "bin/text_data/3.bin"
+	.INCLUDE "bin/text_data/3.ebtxt"
 
 COMPRESSED_TEXT_DATA: ;$C8BC2D
 	.INCBIN "bin/unknowns/C8BC2D.bin"
@@ -12,4 +12,4 @@ COMPRESSED_TEXT_PTRS: ;$C8CDED
 	.INCBIN "bin/unknowns/C8CDED.bin"
 
 TEXT_DATA_BANK_5: ;$C8D9ED
-	.INCBIN "bin/text_data/4.bin"
+	.INCLUDE "bin/text_data/4.ebtxt"

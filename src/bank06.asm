@@ -3,4 +3,4 @@
 .ORG $C60000
 
 TEXT_DATA_BANK_2: ;$C60000
-	.INCBIN "bin/text_data/1.bin"
+	.INCLUDE "bin/text_data/1.ebtxt"

@@ -7425,13 +7425,14 @@ UNKNOWN_C451FA_UNKNOWN24:
 	RTL
 
 BATTLE_TO_TEXT: ;$C454F2
-	.BYTE $84, $9F, $50
+	EBTEXT "To "
 
 BATTLE_FRONT_ROW_TEXT: ;$C454F5
-	.BYTE $A4, $98, $95, $50, $76, $A2, $9F, $9E, $A4, $50, $82, $9F, $A7
+	EBTEXT "the Front Row"
 
 BATTLE_BACK_ROW_TEXT: ;$C45502
-	.BYTE $A4, $98, $95, $50, $72, $91, $93, $9B, $50, $82, $9F, $A7, $00
+	EBTEXT "the Back Row"
+	.BYTE $00
 
 CC_1C_01_TABLE: ;$C4550F
 	.INCBIN "src/bin/unknowns/C4550F.bin"
