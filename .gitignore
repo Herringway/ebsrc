@@ -1,2 +1,4 @@
 *.o
 *.sfc
+bin
+jpn_bin
