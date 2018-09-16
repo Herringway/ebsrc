@@ -1,4 +1,5 @@
 .SEGMENT "BANK26"
+.INCLUDE "common.asm"
 .ORG $E60000
 
 AUDIO_PACK_1: ;$E60000
