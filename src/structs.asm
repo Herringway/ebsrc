@@ -151,3 +151,57 @@
 	max_called .byte ;92
 	mirror_success .byte ;93
 .ENDSTRUCT
+
+.STRUCT battler
+	id .byte ;0
+	unknown0 .byte ;1
+	sprite .byte ;2
+	unknown1 .byte ;3
+	current_action .word ;4
+	action_order_var .word ;6
+	current_action_argument .word ;8
+	current_target .byte ;10
+	the_flag .byte ;11
+	consciousness .byte ;12
+	unknown2 .byte ;13
+	ally_or_enemy .byte ;14
+	npc_id .byte ;15
+	unknown3 .byte ;16
+	hp .word ;17
+	hp_target .word ;19
+	hp_max .word ;21
+	pp .word ;23
+	pp_target .word ;25
+	pp_max .word ;27
+	afflictions .byte 6 ;29
+	shield .byte ;35
+	guarding .byte ;36
+	shield_hp .byte ;37
+	offense .word ;38
+	defense .word ;40
+	speed .word ;42
+	guts .word ;44
+	luck .word ;46
+	vitality .byte ;48
+	iq .byte ;49
+	base_offense .byte ;50
+	base_defense .byte ;51
+	base_speed .byte ;52
+	base_guts .byte ;53
+	base_luck .byte ;54
+	paralysis_resist .byte ;55
+	freeze_resist .byte ;56
+	flash_resist .byte ;57
+	fire_resist .byte ;58
+	brainshock_resist .byte ;59
+	hypnosis_resist .byte ;60
+	money .word ;61
+	exp .word ;63
+	vram_sprite_index .byte ;65
+	sprite_x .byte ;66
+	sprite_y .byte ;67
+	initiative .word ;68
+	unknown4 .byte 5 ;70
+	id2 .byte ;75
+	unknown5 .byte 2;76
+.ENDSTRUCT
