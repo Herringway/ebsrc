@@ -204,7 +204,32 @@
 	sprite_y .byte ;67
 	initiative .byte ;68
 	unknown6 .byte ;69
-	unknown7 .byte 5 ;70
+	unknown7 .byte 4 ;70
+	unknown8 .byte ;74
 	id2 .byte ;75
-	unknown8 .byte 2;76
+	unknown9 .byte 2;76
+.ENDSTRUCT
+
+.STRUCT window_stats
+	unknown0 .byte 4 ;0
+	id .word ;4
+	window_x .word ;6
+	window_y .word ;8
+	width .word ;10
+	height .word ;12
+	text_x .word ;14
+	text_y .word ;16
+	text_width .word ;18
+	text_height .word ;20
+	unknown1 .byte ;22
+	unknown2 .byte ;23
+	unknown3 .byte ;24
+	font .byte ;25
+	working_memory .byte 4 ;26
+	argument_memory .byte 4 ;30
+	secondary_memory .byte 4 ;34
+	working_memory_storage .byte 4 ;38
+	argument_memory_storage .byte 4 ;42
+	secondary_memory_storage .byte 4 ;46
+	unknown4 .byte 32 ;50
 .ENDSTRUCT
