@@ -15,10 +15,17 @@
 .endmacro
 
 .macro LOADPTR ptr, var
-	LDA #.LOWORD(ptr)
-	STA var
-	LDA #.HIWORD(ptr)
-	STA var+2
+    LDA #.LOWORD(ptr)
+    STA var
+    LDA #.HIWORD(ptr)
+    STA var+2
+.endmacro
+
+.macro LOADPTRPTR ptr, var
+    LDA .LOWORD(ptr)
+    STA var
+    LDA .LOWORD(ptr)+2
+    STA var+2
 .endmacro
 
 .macro EBTEXT str
