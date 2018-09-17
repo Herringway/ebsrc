@@ -1,3 +1,11 @@
+.INCLUDE "bin/text_data/0.symbols.asm"
+.INCLUDE "bin/text_data/1.symbols.asm"
+.INCLUDE "bin/text_data/2.symbols.asm"
+.INCLUDE "bin/text_data/3.symbols.asm"
+.INCLUDE "bin/text_data/4.symbols.asm"
+.INCLUDE "bin/text_data/5.symbols.asm"
+.INCLUDE "bin/text_data/6.symbols.asm"
+
 .GLOBAL UNKNOWN_C00013: far
 .GLOBAL UNKNOWN_C0004B: far
 .GLOBAL UNKNOWN_C00085: far
