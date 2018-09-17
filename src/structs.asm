@@ -158,15 +158,17 @@
 	sprite .byte ;2
 	unknown1 .byte ;3
 	current_action .word ;4
-	action_order_var .word ;6
-	current_action_argument .word ;8
+	action_order_var .byte ;6
+	unknown2 .byte ;7
+	current_action_argument .byte ;8
+	unknown3 .byte ;9
 	current_target .byte ;10
 	the_flag .byte ;11
 	consciousness .byte ;12
-	unknown2 .byte ;13
+	unknown4 .byte ;13
 	ally_or_enemy .byte ;14
 	npc_id .byte ;15
-	unknown3 .byte ;16
+	unknown5 .byte ;16
 	hp .word ;17
 	hp_target .word ;19
 	hp_max .word ;21
@@ -200,8 +202,9 @@
 	vram_sprite_index .byte ;65
 	sprite_x .byte ;66
 	sprite_y .byte ;67
-	initiative .word ;68
-	unknown4 .byte 5 ;70
+	initiative .byte ;68
+	unknown6 .byte ;69
+	unknown7 .byte 5 ;70
 	id2 .byte ;75
-	unknown5 .byte 2;76
+	unknown8 .byte 2;76
 .ENDSTRUCT
