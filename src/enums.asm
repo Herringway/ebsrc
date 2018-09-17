@@ -1,5 +1,7 @@
 .INCLUDE "constants/music.asm"
 .INCLUDE "constants/sfx.asm"
+.INCLUDE "constants/enemies.asm"
+.INCLUDE "constants/battle.asm"
 
 .DEFINE DEBUG_BUILD 0
 
