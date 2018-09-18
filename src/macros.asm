@@ -217,3 +217,10 @@
         .endif
     .endrepeat
 .endmacro
+
+.MACRO PADDEDEBTEXT str, len
+    EBTEXT str
+    .REPEAT len-.STRLEN(str)
+        .BYTE $00
+    .ENDREPEAT
+.ENDMACRO
