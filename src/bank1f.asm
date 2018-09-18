@@ -2,8 +2,23 @@
 .INCLUDE "common.asm"
 .ORG $DF0000
 
-MAP_DATA_TILE_GRAPHICS_BLOCK_5: ;$DF0000
-	.INCBIN "bin/maptile_gfx/4.bin"
+MAP_DATA_TILE_SET_GRAPHICS_12: ;$DF0000
+	.INCBIN "bin/maptile_gfx/12.bin"
+
+MAP_DATA_TILE_SET_GRAPHICS_16: ;$DF2938
+	.INCBIN "bin/maptile_gfx/16.bin"
+
+MAP_DATA_TILE_SET_GRAPHICS_17: ;$DF512A
+	.INCBIN "bin/maptile_gfx/17.bin"
+
+MAP_DATA_TILE_SET_GRAPHICS_18: ;$DF6BE8
+	.INCBIN "bin/maptile_gfx/18.bin"
+
+MAP_DATA_TILE_SET_GRAPHICS_19: ;$DF818B
+	.INCBIN "bin/maptile_gfx/19.bin"
+
+MAP_DATA_TILE_SET_GRAPHICS_15: ;$DF9F57
+	.INCBIN "bin/maptile_gfx/15.bin"
 
 MAP_DATA_ANIMATED_TILE_GFX_BLOCK_2: ;$DFC243
 	.INCBIN "bin/maptile_anim_gfx/1.bin"
