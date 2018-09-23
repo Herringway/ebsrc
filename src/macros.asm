@@ -224,3 +224,8 @@
         .BYTE $00
     .ENDREPEAT
 .ENDMACRO
+
+.MACRO EBTEXTZ str
+    EBTEXT str
+    .BYTE $00
+.ENDMACRO
