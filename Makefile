@@ -1,7 +1,62 @@
 all: earthbound.sfc
 
-earthbound.sfc: src/bank00.o src/bank01.o src/bank02.o src/bank03.o src/bank04.o src/bank05.o src/bank06.o src/bank07.o src/bank08.o src/bank09.o src/bank0a.o src/bank0b.o src/bank0c.o src/bank0d.o src/bank0e.o src/bank0f.o src/bank10.o src/bank11.o src/bank12.o src/bank13.o src/bank14.o src/bank15.o src/bank16.o src/bank17.o src/bank18.o src/bank19.o src/bank1a.o src/bank1b.o src/bank1c.o src/bank1d.o src/bank1e.o src/bank1f.o src/bank20.o src/bank21.o src/bank22.o src/bank23.o src/bank24.o src/bank25.o src/bank26.o src/bank27.o src/bank28.o src/bank29.o src/bank2a.o src/bank2b.o src/bank2c.o src/bank2d.o src/bank2e.o src/bank2f.o src/ram.o
+earthbound.sfc: $(wildcard src/bank*.o) src/ram.o
 	ld65 -o $@ -C snes.cfg $^
+
+src/bank00.o: src/bank00.asm $(wildcard src/bin/unknowns/C0*.bin)
+
+src/bank01.o: src/bank01.asm $(wildcard src/bin/unknowns/C1*.bin)
+
+src/bank02.o: src/bank02.asm $(wildcard src/bin/unknowns/C2*.bin)
+
+src/bank03.o: src/bank03.asm $(wildcard src/bin/unknowns/C3*.bin)
+
+src/bank04.o: src/bank04.asm src/music/packtables.asm $(wildcard src/bin/unknowns/C4*.bin)
+
+src/bank05.o: src/bank05.asm src/bin/unknowns/C50000.bin src/bin/text_data/0.ebtxt
+
+src/bank06.o: src/bank06.asm src/bin/text_data/1.ebtxt
+
+src/bank07.o: src/bank07.asm src/bin/text_data/2.ebtxt
+
+src/bank08.o: src/bank08.asm src/bin/text_data/3.ebtxt src/bin/text_data/4.ebtxt $(wildcard src/bin/unknowns/C8*.bin)
+
+src/bank09.o: src/bank09.asm src/bin/text_data/5.ebtxt
+
+src/bank0a.o: src/bank0a.asm $(wildcard src/bin/unknowns/CA*.bin)
+
+src/bank0b.o: src/bank0b.asm $(wildcard src/bin/unknowns/CB*.bin)
+
+src/bank0c.o: src/bank0c.asm $(wildcard src/bin/unknowns/CC*.bin)
+
+src/bank0d.o: src/bank0d.asm
+
+src/bank0e.o: src/bank0e.asm $(wildcard src/bin/unknowns/CE*.bin)
+
+src/bank0f.o: src/bank0f.asm $(wildcard src/bin/unknowns/CF*.bin)
+
+src/bank10.o: src/bank10.asm src/enemies/placement.asm $(wildcard src/bin/unknowns/D0*.bin)
+
+src/bank15.o: src/bank15.asm $(wildcard src/bin/unknowns/D5*.bin)
+
+src/bank16.o: src/bank16.asm $(wildcard src/bin/unknowns/D6*.bin)
+
+src/bank17.o: src/bank17.asm $(wildcard src/bin/unknowns/D7*.bin)
+
+src/bank18.o: src/bank18.asm $(wildcard src/map_data/tile_collision_pointers_*.asm) $(wildcard src/bin/unknowns/D8*.bin)
+
+src/bank1a.o: src/bank1a.asm $(wildcard src/bin/unknowns/DA*.bin)
+
+src/bank1c.o: src/bank1c.asm $(wildcard src/bin/unknowns/DC*.bin)
+
+src/bank1f.o: src/bank1f.asm $(wildcard src/bin/unknowns/DF*.bin)
+
+src/bank20.o: src/bank20.asm $(wildcard src/bin/unknowns/E0*.bin)
+
+src/bank21.o: src/bank21.asm $(wildcard src/bin/unknowns/E1*.bin)
+
+src/bank2f.o: src/bank2f.asm $(wildcard src/bin/unknowns/EF*.bin)
+
 
 extract:
 	dub run ebbinex -- "donor.sfc" "src/bin"
