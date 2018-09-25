@@ -1,9 +1,10 @@
 all: earthbound.sfc
 
-earthbound.sfc: $(wildcard src/bank*.o) src/ram.o
+earthbound.sfc: $(wildcard src/bank*.o) src/bank00-1.o src/bank00-2.o src/ram.o
 	ld65 -o $@ -C snes.cfg $^
 
-src/bank00.o: src/bank00.asm $(wildcard src/bin/unknowns/C0*.bin)
+src/bank00-1.o: src/bank00-1.asm $(wildcard src/bin/unknowns/C0*.bin)
+src/bank00-2.o: src/bank00-2.asm $(wildcard src/bin/unknowns/C0*.bin)
 
 src/bank01.o: src/bank01.asm $(wildcard src/bin/unknowns/C1*.bin)
 
