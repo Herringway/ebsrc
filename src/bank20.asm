@@ -20,7 +20,7 @@ MRSATURN_FONT_GFX: ;$E013B9
 	.INCBIN "bin/unknowns/E013B9.bin"
 
 TEXT_WINDOW_PROPERTIES: ;$E01FB9
-	.INCBIN "bin/unknowns/E01FB9.bin"
+	.BYTE $00, $00, $01, $40, $00, $08, $80, $00, $08, $C0, $00, $08, $00, $01, $08
 
 TEXT_WINDOW_FLAVOUR_PALETTES: ;$E01FC8
 	.INCBIN "bin/unknowns/E01FC8.bin"
