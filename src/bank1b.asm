@@ -1,6 +1,5 @@
 .SEGMENT "BANK1B"
 .INCLUDE "common.asm"
-.ORG $DB0000
 
 MAP_DATA_TILE_ARRANGEMENT_8: ;$DB0000
 	.INCBIN "src/bin/maps/arrangements/8.bin"

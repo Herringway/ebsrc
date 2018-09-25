@@ -1,6 +1,5 @@
 .SEGMENT "BANK0F"
 .INCLUDE "common.asm"
-.ORG $CF0000
 
 DOOR_DEST_TABLE_1: ;$CF0000
 	.INCBIN "bin/unknowns/CF0000.bin"

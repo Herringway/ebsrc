@@ -1,6 +1,5 @@
 .SEGMENT "BANK1F"
 .INCLUDE "common.asm"
-.ORG $DF0000
 
 MAP_DATA_TILE_SET_GRAPHICS_12: ;$DF0000
 	.INCBIN "bin/maps/gfx/12.bin"

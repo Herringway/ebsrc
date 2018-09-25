@@ -1,6 +1,5 @@
 .SEGMENT "BANK15"
 .INCLUDE "common.asm"
-.ORG $D50000
 
 OVERWORLD_SPRITES_BANK5:
 	.INCBIN "bin/overworld_sprites/4.bin"

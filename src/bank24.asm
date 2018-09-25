@@ -1,6 +1,5 @@
 .SEGMENT "BANK24"
 .INCLUDE "common.asm"
-.ORG $E40000
 
 AUDIO_PACK_64: ;$E40000
 	.INCBIN "src/bin/audiopacks/64.bin"

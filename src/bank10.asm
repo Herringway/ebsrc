@@ -1,6 +1,5 @@
 .SEGMENT "BANK10"
 .INCLUDE "common.asm"
-.ORG $D00000
 
 DOOR_POINTER_TABLE: ;$D00000
 	.INCBIN "bin/unknowns/D00000.bin"

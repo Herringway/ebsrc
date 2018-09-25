@@ -1,6 +1,5 @@
 .SEGMENT "BANK20"
 .INCLUDE "common.asm"
-.ORG $E00000
 
 TEXT_WINDOW_GFX: ;$E00000
 	.INCBIN "bin/unknowns/E00000.bin"

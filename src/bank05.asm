@@ -1,6 +1,5 @@
 .SEGMENT "BANK05"
 .INCLUDE "common.asm"
-.ORG $C50000
 
 SRE_POINTER_TABLE: ;$C50000
 	.INCBIN "bin/unknowns/C50000.bin"

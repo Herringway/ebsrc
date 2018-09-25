@@ -1,6 +1,5 @@
 .SEGMENT "BANK0B"
 .INCLUDE "common.asm"
-.ORG $CB0000
 
 BATTLE_BACKGROUND_ARR_43: ;$CB0000
 	.INCBIN"bin/battle_bgs/arrangements/43.bin"

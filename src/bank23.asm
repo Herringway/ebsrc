@@ -1,6 +1,5 @@
 .SEGMENT "BANK23"
 .INCLUDE "common.asm"
-.ORG $E30000
 
 AUDIO_PACK_3: ;$E30000
 	.INCBIN "src/bin/audiopacks/3.bin"

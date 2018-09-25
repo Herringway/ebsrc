@@ -1,6 +1,5 @@
 .SEGMENT "BANK0D"
 .INCLUDE "common.asm"
-.ORG $CD0000
 
 BATTLE_SPRITE_107: ;$CD0000
 	.INCBIN"bin/battle_sprites/107.bin"

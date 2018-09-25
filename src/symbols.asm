@@ -6,6 +6,7 @@
 .INCLUDE "bin/text_data/5.symbols.asm"
 .INCLUDE "bin/text_data/6.symbols.asm"
 
+.GLOBAL CLEAR_UNKNOWN_30X2_TABLE23: far
 .GLOBAL UNKNOWN_C00013: far
 .GLOBAL UNKNOWN_C0004B: far
 .GLOBAL UNKNOWN_C00085: far

@@ -1,6 +1,5 @@
 .SEGMENT "BANK16"
 .INCLUDE "common.asm"
-.ORG $D60000
 
 MAP_DATA_TILE_TABLE_BANK_1: ;$D60000
 	.INCBIN "bin/unknowns/D60000.bin"

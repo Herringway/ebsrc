@@ -1,6 +1,5 @@
 .SEGMENT "BANK2E"
 .INCLUDE "common.asm"
-.ORG $EE0000
 
 AUDIO_PACK_136: ;$EE0000
 	.INCBIN "src/bin/audiopacks/136.bin"
