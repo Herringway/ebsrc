@@ -62,7 +62,7 @@ src/bank2f.o: src/bank2f.asm $(wildcard src/bin/unknowns/EF*.bin)
 extract:
 	dub run ebbinex -- "donor.sfc" "src/bin"
 
-%.o: %.asm src/enums.asm src/macros.asm src/common.asm src/registers.asm src/structs.asm
+%.o: %.asm src/enums.asm src/macros.asm src/common.asm src/hardware.asm src/structs.asm
 	ca65 -t none --cpu 65816 -o $@ $<
 
 %.bin: %.uncompressed
