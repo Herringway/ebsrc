@@ -1,5 +1,7 @@
 .SEGMENT "BANK03"
 .INCLUDE "common.asm"
+.INCLUDE "config.asm"
+.INCLUDE "structs.asm"
 
 SPRITE_GROUP_PALETTES: ;$C30000
 	.INCBIN "src/bin/unknowns/C30000.bin"

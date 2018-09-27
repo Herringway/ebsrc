@@ -1,5 +1,7 @@
 .SEGMENT "BANK00"
 .INCLUDE "common.asm"
+.INCLUDE "config.asm"
+.INCLUDE "structs.asm"
 
 CLEAR_UNKNOWN_30X2_TABLE23: ;$C00000
 	.A16

@@ -1,5 +1,7 @@
 .SEGMENT "BANK01"
 .INCLUDE "common.asm"
+.INCLUDE "config.asm"
+.INCLUDE "structs.asm"
 
 UNKNOWN_C10000: ;$C10000
 	JSR a:.LOWORD(HIDE_HPPP_WINDOWS)

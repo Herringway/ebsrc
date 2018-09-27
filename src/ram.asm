@@ -1,4 +1,5 @@
 .SEGMENT "RAM"
+.INCLUDE "config.asm"
 .INCLUDE "enums.asm"
 .INCLUDE "structs.asm"
 .INCLUDE "symbols.asm"

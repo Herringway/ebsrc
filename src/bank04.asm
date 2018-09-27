@@ -1,5 +1,7 @@
 .SEGMENT "BANK04"
 .INCLUDE "common.asm"
+.INCLUDE "config.asm"
+.INCLUDE "structs.asm"
 
 UNKNOWN_C40000: ;$C40000
 	PHP

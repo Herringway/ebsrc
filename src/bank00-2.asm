@@ -1,5 +1,7 @@
 .SEGMENT "BANK00B"
 .INCLUDE "common.asm"
+.INCLUDE "config.asm"
+.INCLUDE "structs.asm"
 
 RESET: ;$C08000
 	.A8
