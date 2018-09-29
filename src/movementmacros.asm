@@ -103,6 +103,44 @@
 	.ENDIF
 .ENDMACRO
 
+.MACRO EBMOVE_SWITCH_CALL_TEMPVAR arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12
+	.BYTE $11
+	.BYTE .PARAMCOUNT
+	.IF(.PARAMCOUNT > 0)
+		.WORD arg1
+	.ENDIF
+	.IF(.PARAMCOUNT > 1)
+		.WORD arg2
+	.ENDIF
+	.IF(.PARAMCOUNT > 2)
+		.WORD arg3
+	.ENDIF
+	.IF(.PARAMCOUNT > 3)
+		.WORD arg4
+	.ENDIF
+	.IF(.PARAMCOUNT > 4)
+		.WORD arg5
+	.ENDIF
+	.IF(.PARAMCOUNT > 5)
+		.WORD arg6
+	.ENDIF
+	.IF(.PARAMCOUNT > 6)
+		.WORD arg7
+	.ENDIF
+	.IF(.PARAMCOUNT > 7)
+		.WORD arg8
+	.ENDIF
+	.IF(.PARAMCOUNT > 8)
+		.WORD arg9
+	.ENDIF
+	.IF(.PARAMCOUNT > 9)
+		.WORD arg10
+	.ENDIF
+	.IF(.PARAMCOUNT > 10)
+		.WORD arg11
+	.ENDIF
+.ENDMACRO
+
 .MACRO EBMOVE_WRITE_BYTE_WRAM arg1, arg2
 	.BYTE $12
 	.WORD arg1
