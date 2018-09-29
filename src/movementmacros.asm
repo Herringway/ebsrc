@@ -395,6 +395,74 @@
 	.ENDIF
 .ENDMACRO
 
+.MACRO EBMOVE_EX_CALLROUTINE ex, arg, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17, arg18, arg19, arg20, arg21, arg22
+	.BYTE $F0+ex
+	PTR3 arg
+	.IF(.PARAMCOUNT > 2)
+		.BYTE arg2
+	.ENDIF
+	.IF(.PARAMCOUNT > 3)
+		.BYTE arg3
+	.ENDIF
+	.IF(.PARAMCOUNT > 4)
+		.BYTE arg4
+	.ENDIF
+	.IF(.PARAMCOUNT > 5)
+		.BYTE arg5
+	.ENDIF
+	.IF(.PARAMCOUNT > 6)
+		.BYTE arg6
+	.ENDIF
+	.IF(.PARAMCOUNT > 7)
+		.BYTE arg7
+	.ENDIF
+	.IF(.PARAMCOUNT > 8)
+		.BYTE arg8
+	.ENDIF
+	.IF(.PARAMCOUNT > 9)
+		.BYTE arg9
+	.ENDIF
+	.IF(.PARAMCOUNT > 10)
+		.BYTE arg10
+	.ENDIF
+	.IF(.PARAMCOUNT > 11)
+		.BYTE arg11
+	.ENDIF
+	.IF(.PARAMCOUNT > 12)
+		.BYTE arg12
+	.ENDIF
+	.IF(.PARAMCOUNT > 13)
+		.BYTE arg13
+	.ENDIF
+	.IF(.PARAMCOUNT > 14)
+		.BYTE arg14
+	.ENDIF
+	.IF(.PARAMCOUNT > 15)
+		.BYTE arg15
+	.ENDIF
+	.IF(.PARAMCOUNT > 16)
+		.BYTE arg16
+	.ENDIF
+	.IF(.PARAMCOUNT > 17)
+		.BYTE arg17
+	.ENDIF
+	.IF(.PARAMCOUNT > 18)
+		.BYTE arg18
+	.ENDIF
+	.IF(.PARAMCOUNT > 19)
+		.BYTE arg19
+	.ENDIF
+	.IF(.PARAMCOUNT > 20)
+		.BYTE arg20
+	.ENDIF
+	.IF(.PARAMCOUNT > 21)
+		.BYTE arg21
+	.ENDIF
+	.IF(.PARAMCOUNT > 22)
+		.BYTE arg22
+	.ENDIF
+.ENDMACRO
+
 .MACRO EBMOVE_UNKNOWN_43 arg
 	.BYTE $43, arg
 .ENDMACRO
