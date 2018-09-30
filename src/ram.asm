@@ -3,7 +3,6 @@
 .INCLUDE "enums.asm"
 .INCLUDE "structs.asm"
 .INCLUDE "symbols.asm"
-.ORG $7E0000
 
 UNKNOWN_7E0000: ;$7E0000
 	.RES 1
