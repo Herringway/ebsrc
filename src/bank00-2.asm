@@ -2132,7 +2132,8 @@ UNKNOWN_C08F8B_UNKNOWN0:
 	RTL
 
 UNKNOWN_C08F98: ;$C08F98
-	.INCBIN "src/bin/unknowns/C08F98.bin"
+	.BYTE $80, $FE, $00, $01, $00, $02, $00, $00, $00, $00, $00, $01, $00, $03, $80, $00, $00, $00, $00, $02, $00, $02, $00, $00
+
 
 DMA_TABLE: ;$C08FB0
 	.BYTE $01, $18, $80
