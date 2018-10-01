@@ -2,6 +2,7 @@
 .INCLUDE "constants/sfx.asm"
 .INCLUDE "constants/enemies.asm"
 .INCLUDE "constants/battle.asm"
+.INCLUDE "constants/event_flags.asm"
 
 .DEFINE NULL 0
 
