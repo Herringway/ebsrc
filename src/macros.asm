@@ -14,6 +14,11 @@
 	JSL DISPLAY_TEXT
 .endmacro
 
+.macro DISPLAY_BATTLE_TEXT_PTR addr
+    LOADPTR addr, $0E
+    JSL DISPLAY_IN_BATTLE_TEXT
+.endmacro
+
 .macro LOADPTR ptr, var
     LDA #.LOWORD(ptr)
     STA var
