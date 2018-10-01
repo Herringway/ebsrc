@@ -11,28 +11,28 @@ MOVEMENT_TEXT_STRINGS: ;$E10B86
 	.INCBIN "bin/unknowns/E10B86.bin"
 
 MAIN_FONT_DATA: ;$E10C7A
-	.INCBIN "bin/unknowns/E10C7A.bin"
+	.INCBIN "bin/fonts/main.bin"
 
 MAIN_FONT_GFX: ;$E10CDA
-	.INCBIN "bin/unknowns/E10CDA.bin"
+	.INCBIN "bin/fonts/main.gfx"
 
 BATTLE_FONT_DATA: ;$E118DA
-	.INCBIN "bin/unknowns/E118DA.bin"
+	.INCBIN "bin/fonts/battle.bin"
 
 BATTLE_FONT_GFX: ;$E1193A
-	.INCBIN "bin/unknowns/E1193A.bin"
+	.INCBIN "bin/fonts/battle.gfx"
 
 TINY_FONT_DATA: ;$E11F3A
-	.INCBIN "bin/unknowns/E11F3A.bin"
+	.INCBIN "bin/fonts/tiny.bin"
 
 TINY_FONT_GFX: ;$E11F9A
-	.INCBIN "bin/unknowns/E11F9A.bin"
+	.INCBIN "bin/fonts/tiny.gfx"
 
 LARGE_FONT_DATA: ;$E1229A
-	.INCBIN "bin/unknowns/E1229A.bin"
+	.INCBIN "bin/fonts/large.bin"
 
 LARGE_FONT_GFX: ;$E122FA
-	.INCBIN "bin/unknowns/E122FA.bin"
+	.INCBIN "bin/fonts/large.gfx"
 
 CAST_SEQUENCE_FORMATTING: ;$E12EFA
 	.INCBIN "bin/unknowns/E12EFA.bin"

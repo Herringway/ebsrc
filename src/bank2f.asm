@@ -2448,17 +2448,17 @@ STATUS_WINDOW_TEXT: ;$EFA3B6
 	.BYTE $18, $01, $09, $18, $01, $0B, $02
 
 NAME_INPUT_WINDOW_SELECTION_LAYOUT_0: ;$EFA460
-	.INCBIN "src/bin/unknowns/EFA460.bin"
+	.INCBIN "bin/name_input_layouts/0.bin"
 NAME_INPUT_WINDOW_SELECTION_LAYOUT_1: ;$EFA4E3
-	.INCBIN "src/bin/unknowns/EFA4E3.bin"
+	.INCBIN "bin/name_input_layouts/1.bin"
 NAME_INPUT_WINDOW_SELECTION_LAYOUT_2: ;$EFA566
-	.INCBIN "src/bin/unknowns/EFA566.bin"
+	.INCBIN "bin/name_input_layouts/2.bin"
 NAME_INPUT_WINDOW_SELECTION_LAYOUT_3: ;$EFA5E9
-	.INCBIN "src/bin/unknowns/EFA5E9.bin"
+	.INCBIN "bin/name_input_layouts/3.bin"
 NAME_INPUT_WINDOW_SELECTION_LAYOUT_4: ;$EFA66C
-	.INCBIN "src/bin/unknowns/EFA66C.bin"
+	.INCBIN "bin/name_input_layouts/4.bin"
 NAME_INPUT_WINDOW_SELECTION_LAYOUT_5: ;$EFA6A7
-	.INCBIN "src/bin/unknowns/EFA6A7.bin"
+	.INCBIN "bin/name_input_layouts/5.bin"
 
 NAME_INPUT_WINDOW_SELECTION_LAYOUT_POINTERS: ;$EFA6D3
 	.DWORD NAME_INPUT_WINDOW_SELECTION_LAYOUT_0
@@ -5015,13 +5015,13 @@ UNKNOWN_EFEB5F: ;$EFEB5F
 	.BYTE $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
 
 DEBUG_MENU_FONT: ;$EFEB70
-	.INCBIN "src/bin/unknowns/EFEB70.bin"
+	.INCBIN "src/bin/fonts/debug.gfx"
 
 UNKNOWN_EFEF70: ;$EFEF70
 	.INCBIN "src/bin/unknowns/EFEF70.bin"
 
-KIRBY: ;$EFEF70
-	.INCBIN "src/bin/unknowns/EFEFB7.bin"
+KIRBY: ;$EFEFB7
+	.INCBIN "src/bin/kirby.gfx"
 
 UNKNOWN_EFF0D7: ;$EFF0D7
 	.INCBIN "src/bin/unknowns/EFF0D7.bin"
