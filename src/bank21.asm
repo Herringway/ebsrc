@@ -3,10 +3,10 @@
 .INCLUDE "flyovermacros.asm"
 
 COFFEE_SEQUENCE_TEXT: ;$E10000
-	.INCBIN "bin/unknowns/E10000.bin"
+	.INCLUDE "bin/coffee.flyover"
 
 TEA_SEQUENCE_TEXT: ;$E10652
-	.INCBIN "bin/unknowns/E10652.bin"
+	.INCLUDE "bin/tea.flyover"
 
 ;$E10B86
 	.INCLUDE "bin/flyovers.flyover"
