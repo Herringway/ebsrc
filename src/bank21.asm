@@ -1,5 +1,6 @@
 .SEGMENT "BANK21"
 .INCLUDE "common.asm"
+.INCLUDE "flyovermacros.asm"
 
 COFFEE_SEQUENCE_TEXT: ;$E10000
 	.INCBIN "bin/unknowns/E10000.bin"
@@ -7,8 +8,8 @@ COFFEE_SEQUENCE_TEXT: ;$E10000
 TEA_SEQUENCE_TEXT: ;$E10652
 	.INCBIN "bin/unknowns/E10652.bin"
 
-MOVEMENT_TEXT_STRINGS: ;$E10B86
-	.INCBIN "bin/unknowns/E10B86.bin"
+;$E10B86
+	.INCLUDE "bin/flyovers.flyover"
 
 MAIN_FONT_DATA: ;$E10C7A
 	.INCBIN "bin/fonts/main.bin"
