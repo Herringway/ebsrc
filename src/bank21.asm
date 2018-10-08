@@ -51,58 +51,58 @@ UNKNOWN_E14DE8: ;$E14DE8
 	.INCBIN "bin/unknowns/E14DE8.bin"
 
 APE_ARRANGEMENT: ;$E14EC1
-	.INCBIN "bin/intro/logos/ape/arrangement.bin"
+	.INCBIN "bin/intro/logos/ape.arr"
 
 APE_GRAPHICS: ;$E14F2A
-	.INCBIN "bin/intro/logos/ape/graphics.bin"
+	.INCBIN "bin/intro/logos/ape.gfx"
 
 APE_PALETTE: ;$E15130
-	.INCBIN "bin/intro/logos/ape/palette.bin"
+	.INCBIN "bin/intro/logos/ape.pal"
 
 HALKEN_ARRANGEMENT: ;$E15174
-	.INCBIN "bin/intro/logos/halken/arrangement.bin"
+	.INCBIN "bin/intro/logos/halken.arr"
 
 HALKEN_GRAPHICS: ;$E151E8
-	.INCBIN "bin/intro/logos/halken/graphics.bin"
+	.INCBIN "bin/intro/logos/halken.gfx"
 
 HALKEN_PALETTE: ;$E153B8
-	.INCBIN "bin/intro/logos/halken/palette.bin"
+	.INCBIN "bin/intro/logos/halken.pal"
 
 NINTENDO_ARRANGEMENT: ;$E15455
-	.INCBIN "bin/intro/logos/nintendo/arrangement.bin"
+	.INCBIN "bin/intro/logos/nintendo.arr"
 
 NINTENDO_GRAPHICS: ;$E1549E
-	.INCBIN "bin/intro/logos/nintendo/graphics.bin"
+	.INCBIN "bin/intro/logos/nintendo.gfx"
 
 NINTENDO_PALETTE: ;$E1558F
-	.INCBIN "bin/intro/logos/nintendo/palette.bin"
+	.INCBIN "bin/intro/logos/nintendo.pal"
 
 GAS_STATION_ARRANGEMENT: ;$E155D3
-	.INCBIN "bin/intro/gas_station/arrangement.bin"
+	.INCBIN "bin/intro/gas_station.arr"
 
 GAS_STATION_GRAPHICS: ;$E15B33
-	.INCBIN "bin/intro/gas_station/graphics.bin"
+	.INCBIN "bin/intro/gas_station.gfx"
 
 GAS_STATION_PALETTE: ;$E1A9B7
-	.INCBIN "bin/intro/gas_station/palette.bin"
+	.INCBIN "bin/intro/gas_station.pal"
 
 GAS_STATION_PALETTE_2: ;$E1AA5D
-	.INCBIN "bin/intro/gas_station/palette2.bin"
+	.INCBIN "bin/intro/gas_station2.pal"
 
 PRODUCED_ITOI_ARRANGEMENT: ;$E1AADF
-	.INCBIN "bin/intro/attract/produced_by_itoi/arrangement.bin"
+	.INCBIN "bin/intro/attract/produced_by_itoi.arr"
 
 PRODUCED_ITOI_GRAPHICS: ;$E1AB4B
-	.INCBIN "bin/intro/attract/produced_by_itoi/graphics.bin"
+	.INCBIN "bin/intro/attract/produced_by_itoi.gfx"
 
 NINTENDO_PRESENTATION_ARRANGEMENT: ;$E1AD01
-	.INCBIN "bin/intro/attract/nintendo_presentation/arrangement.bin"
+	.INCBIN "bin/intro/attract/nintendo_presentation.arr"
 
 NINTENDO_PRESENTATION_GRAPHICS: ;$E1AD4E
-	.INCBIN "bin/intro/attract/nintendo_presentation/graphics.bin"
+	.INCBIN "bin/intro/attract/nintendo_presentation.gfx"
 
 NINTENDO_ITOI_PALETTE: ;$E1AE6F
-	.INCBIN "bin/intro/attract/nintendo_itoi_shared_palette.bin"
+	.INCBIN "bin/intro/attract/nintendo_itoi.pal"
 
 UNKNOWN_E1AE7C: ;$E1AE7C
 	.INCBIN "bin/unknowns/E1AE7C.bin"
@@ -114,16 +114,16 @@ UNKNOWN_E1AEFD: ;$E1AEFD
 	.INCBIN "bin/unknowns/E1AEFD.bin"
 
 TITLE_SCREEN_ARRANGEMENT: ;$E1AF7D
-	.INCBIN "bin/intro/title_screen/arrangement.bin"
+	.INCBIN "bin/intro/title_screen.arr"
 
 TITLE_SCREEN_GRAPHICS: ;$E1B211
-	.INCBIN "bin/intro/title_screen/graphics.bin"
+	.INCBIN "bin/intro/title_screen.gfx"
 
 UNKNOWN_E1C6E5: ;$E1C6E5
 	.INCBIN "bin/unknowns/E1C6E5.bin"
 
 TITLE_SCREEN_PALETTE: ;$E1CDE1
-	.INCBIN "bin/intro/title_screen/palette.bin"
+	.INCBIN "bin/intro/title_screen.pal"
 
 UNKNOWN_E1CE08: ;$E1CE08
 	.INCBIN "bin/unknowns/E1CE08.bin"
