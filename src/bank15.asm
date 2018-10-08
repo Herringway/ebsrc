@@ -48,8 +48,7 @@ STATS_GROWTH_VARS: ;$D5EA5B
 CONDIMENT_TABLE: ;$D5EA77
 	.INCBIN "bin/unknowns/D5EA77.bin"
 
-TELEPORT_DESTINATION_TABLE: ;$D5EBAB
-	.INCBIN "bin/unknowns/D5EBAB.bin"
+.INCLUDE "map_data/teleport_destinations.asm"
 
 .INCLUDE "map_data/hotspot_coordinates.asm"
 
