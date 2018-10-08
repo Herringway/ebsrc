@@ -3,10 +3,10 @@ all: earthbound.sfc
 earthbound.sfc: $(wildcard src/bank*.o) src/bank00-1.o src/bank00-2.o src/ram.o
 	ld65 -o $@ -C snes.cfg $^
 
-src/bank00-1.o: src/bank00-1.asm src/config.asm $(wildcard src/bin/unknowns/C0*.bin)
-src/bank00-2.o: src/bank00-2.asm src/config.asm src/movementmacros.asm $(wildcard src/bin/unknowns/C0*.bin)
+src/bank00-1.o: src/bank00-1.asm src/config.asm
+src/bank00-2.o: src/bank00-2.asm src/config.asm src/movementmacros.asm
 
-src/bank01.o: src/bank01.asm src/config.asm $(wildcard src/bin/unknowns/C1*.bin)
+src/bank01.o: src/bank01.asm src/config.asm
 
 src/bank02.o: src/bank02.asm src/config.asm src/movementmacros.asm $(wildcard src/bin/unknowns/C2*.bin)
 
@@ -14,7 +14,7 @@ src/bank03.o: src/bank03.asm src/config.asm src/movementmacros.asm $(wildcard sr
 
 src/bank04.o: src/bank04.asm src/config.asm src/movementmacros.asm src/music/packtables.asm $(wildcard src/bin/unknowns/C4*.bin)
 
-src/bank05.o: src/bank05.asm src/bin/unknowns/C50000.bin src/bin/text_data/0.ebtxt
+src/bank05.o: src/bank05.asm src/bin/text_data/0.ebtxt
 
 src/bank06.o: src/bank06.asm src/bin/text_data/1.ebtxt
 
