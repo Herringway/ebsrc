@@ -1,0 +1,3 @@
+
+ENEMY_CONFIGURATION_TABLE: ;$D59589
+	.INCBIN "bin/unknowns/D59589.bin"

@@ -37,8 +37,7 @@ NPC_AI_TABLE: ;$D58F23
 EXP_TABLE: ;$D58F49
 	.INCBIN "bin/unknowns/D58F49.bin"
 
-ENEMY_CONFIGURATION_TABLE: ;$D59589
-	.INCBIN "bin/unknowns/D59589.bin"
+.INCLUDE "enemies/configuration.asm"
 
 STATS_GROWTH_VARS: ;$D5EA5B
 	.INCBIN "bin/unknowns/D5EA5B.bin"
