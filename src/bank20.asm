@@ -8,16 +8,16 @@ FLAVOURED_TEXT_GFX: ;$E00754
 	.INCBIN "bin/unknowns/E00754.bin"
 
 MOTHER2_ROMAJI_FONT: ;$E007A0
-	.INCBIN "bin/unknowns/E007A0.bin"
+	.INCBIN "bin/fonts/romaji.gfx"
 
 COMPRESSED_SRAM: ;$E009B4
 	.INCBIN "bin/unknowns/E009B4.bin"
 
 MRSATURN_FONT_DATA: ;$E01359
-	.INCBIN "bin/unknowns/E01359.bin"
+	.INCBIN "bin/fonts/mrsaturn.bin"
 
 MRSATURN_FONT_GFX: ;$E013B9
-	.INCBIN "bin/unknowns/E013B9.bin"
+	.INCBIN "bin/fonts/mrsaturn.gfx"
 
 TEXT_WINDOW_PROPERTIES: ;$E01FB9
 	.BYTE $00, $00, $01, $40, $00, $08, $80, $00, $08, $C0, $00, $08, $00, $01, $08
