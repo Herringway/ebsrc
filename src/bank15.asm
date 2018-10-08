@@ -39,6 +39,7 @@ EXP_TABLE: ;$D58F49
 
 .INCLUDE "enemies/configuration.asm"
 
+	;Offense, Defense, Speed, Guts, Vitality, IQ, Luck
 STATS_GROWTH_VARS: ;$D5EA5B
 	.BYTE $12, $05, $04, $07, $05, $05, $06
 	.BYTE $0C, $03, $08, $05, $02, $07, $05
