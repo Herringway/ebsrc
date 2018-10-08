@@ -5,7 +5,14 @@
 .INCLUDE "structs.asm"
 
 SPRITE_GROUP_PALETTES: ;$C30000
-	.INCBIN "src/bin/unknowns/C30000.bin"
+	.INCBIN "bin/overworld_sprites/0.pal"
+	.INCBIN "bin/overworld_sprites/1.pal"
+	.INCBIN "bin/overworld_sprites/2.pal"
+	.INCBIN "bin/overworld_sprites/3.pal"
+	.INCBIN "bin/overworld_sprites/4.pal"
+	.INCBIN "bin/overworld_sprites/5.pal"
+	.INCBIN "bin/overworld_sprites/6.pal"
+	.INCBIN "bin/overworld_sprites/7.pal"
 
 DISPLAY_ANTI_PIRACY_SCREEN: ;$C30100
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
