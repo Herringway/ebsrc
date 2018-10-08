@@ -40,7 +40,10 @@ EXP_TABLE: ;$D58F49
 .INCLUDE "enemies/configuration.asm"
 
 STATS_GROWTH_VARS: ;$D5EA5B
-	.INCBIN "bin/unknowns/D5EA5B.bin"
+	.BYTE $12, $05, $04, $07, $05, $05, $06
+	.BYTE $0C, $03, $08, $05, $02, $07, $05
+	.BYTE $0A, $06, $05, $05, $03, $09, $04
+	.BYTE $15, $12, $07, $03, $04, $04, $03
 
 CONDIMENT_TABLE: ;$D5EA77
 	.INCBIN "bin/unknowns/D5EA77.bin"
