@@ -19461,17 +19461,29 @@ DEBUG_MENU_TEXT: ;$C3E874
 	PADDEDEBTEXT "Event", 10
 	PADDEDEBTEXT "Warp", 10
 	PADDEDEBTEXT "Tea", 10
-	.BYTE $E6, $EF, $FB, $00, $00, $00, $00, $00, $00, $00 ;テレポ
-	.BYTE $D4, $B6, $25, $2A, $00, $00, $00, $00, $00, $00 ;スターα
-	.BYTE $D4, $B6, $25, $2B, $00, $00, $00, $00, $00, $00 ;スターβ
-	.BYTE $DB, $EF, $25, $BD, $25, $30, $00, $00, $00, $00 ;プレーヤー0
-	.BYTE $DB, $EF, $25, $BD, $25, $31, $00, $00, $00, $00 ;プレーヤー1
+	.IF CLEAN_ROM
+		.BYTE $E6, $EF, $FB, $00, $00, $00, $00, $00, $00, $00 ;テレポ
+		.BYTE $D4, $B6, $25, $2A, $00, $00, $00, $00, $00, $00 ;スターα
+		.BYTE $D4, $B6, $25, $2B, $00, $00, $00, $00, $00, $00 ;スターβ
+		.BYTE $DB, $EF, $25, $BD, $25, $30, $00, $00, $00, $00 ;プレーヤー0
+		.BYTE $DB, $EF, $25, $BD, $25, $31, $00, $00, $00, $00 ;プレーヤー1
+	.ELSE
+		PADDEDEBTEXT "Teleport", 10
+		PADDEDEBTEXT "Star ~", 10
+		PADDEDEBTEXT "Star ^", 10
+		PADDEDEBTEXT "Player 0", 10
+		PADDEDEBTEXT "Player 1", 10
+	.ENDIF
 	PADDEDEBTEXT "GUIDE", 10
 	PADDEDEBTEXT "TRACK", 10
 	PADDEDEBTEXT "CAST", 10
 	PADDEDEBTEXT "STONE", 10
 	PADDEDEBTEXT "STAFF", 10
-	.BYTE $EC, $25, $B6, $25, $00, $00, $00, $00, $00, $00 ;メーター
+	.IF CLEAN_ROM
+		.BYTE $EC, $25, $B6, $25, $00, $00, $00, $00, $00, $00 ;メーター
+	.ELSE
+		PADDEDEBTEXT "Meter", 10
+	.ENDIF
 	PADDEDEBTEXT "REPLAY", 10
 	PADDEDEBTEXT "TEST1", 10
 	PADDEDEBTEXT "TEST2", 10
