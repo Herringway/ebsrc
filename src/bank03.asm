@@ -19451,6 +19451,7 @@ UNKNOWN_C3E7E3_UNKNOWN2:
 UNKNOWN_C3E84E: ;$C3E84E
 	.INCBIN "src/bin/unknowns/C3E84E.bin"
 
+; Some of this was left untranslated and remains in the same form as in Mother 2.
 DEBUG_MENU_TEXT: ;$C3E874
 	PADDEDEBTEXT "Flag", 10
 	PADDEDEBTEXT "Goods", 10
