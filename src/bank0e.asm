@@ -813,7 +813,7 @@ SOUND_STONE_GFX: ;$CEDD5D
 	.INCBIN "bin/unknowns/CEDD5D.bin"
 
 SOUND_STONE_PALETTE: ;$CEF806
-	.INCBIN "bin/unknowns/CEF806.bin"
+	.INCBIN "bin/sound_stone.pal"
 
 AUDIO_PACK_102: ;$CEF8C6
 	.INCBIN "bin/audiopacks/102.bin"
