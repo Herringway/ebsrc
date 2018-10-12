@@ -34,7 +34,7 @@ src/bank0d.o: src/bank0d.asm
 
 src/bank0e.o: src/bank0e.asm $(wildcard src/bin/unknowns/CE*.bin)
 
-src/bank0f.o: src/bank0f.asm $(wildcard src/bin/unknowns/CF*.bin)
+src/bank0f.o: src/bank0f.asm src/map_data/npc_config.asm $(wildcard src/bin/unknowns/CF*.bin)
 
 src/bank10.o: src/bank10.asm src/enemies/placement.asm $(wildcard src/bin/unknowns/D0*.bin)
 

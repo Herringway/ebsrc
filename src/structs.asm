@@ -233,3 +233,18 @@
 	secondary_memory_storage .byte 4 ;46
 	unknown4 .byte 32 ;50
 .ENDSTRUCT
+
+.STRUCT npc_config
+	type .byte ;0
+	sprite .word ;1
+	direction .byte ;3
+	movement .byte ;4
+	unknown .byte ;5
+	event_flag .word ;6
+	unknown2 .byte ;8
+	text_pointer .dword ;9
+	.UNION ;13
+		item .byte
+		text_pointer2 .dword
+	.ENDUNION
+.ENDSTRUCT

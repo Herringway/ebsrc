@@ -136,8 +136,7 @@ SPRITE_PLACEMENT_PTR_TABLE: ;$CF61E7
 SPRITE_PLACEMENT_TABLE: ;$CF6BE7
 	.INCBIN "bin/unknowns/CF6BE7.bin"
 
-NPC_CONFIG_TABLE: ;$CF8985
-	.INCBIN "bin/unknowns/CF8985.bin"
+.INCLUDE "map_data/npc_config.asm"
 
 AUDIO_PACK_94: ;$CFF2B5
 	.INCBIN "bin/audiopacks/94.bin"
