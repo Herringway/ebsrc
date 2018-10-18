@@ -21,13 +21,13 @@
 	base_iq .byte ;34
 	items .byte 14 ;35
 	equipment .byte 4 ;49
-	unknown1 .dword 2 ;53
+	.dword 2 ;53
 	position_index .word ;61
-	unknown2 .dword ;63
-	unknown3 .word ;67
+	.dword ;63
+	.word ;67
 	current_hp .word ;69
 	current_hp_target .word ;71
-	unknown4 .word ;73
+	.word ;73
 	current_pp .word ;75
 	current_pp_target .word ;77
 	hp_pp_window_options .word ;79
@@ -42,9 +42,9 @@
 	boosted_vitality .byte ;89
 	boosted_iq .byte ;90
 	boosted_luck .byte ;91
-	unknown5 .byte ;92
-	unknown6 .byte ;93
-	unknown7 .byte ;94
+	.byte ;92
+	.byte ;93
+	.byte ;94
 .ENDSTRUCT
 
 .STRUCT game_state
@@ -60,43 +60,46 @@
 	party_npc_2 .byte ;70
 	party_npc_1_hp .word ;71
 	party_npc_2_hp .word ;73
-	unknown1 .byte ;75
+	.byte ;75
 	party_status .byte ;76
-	unknown2 .byte ;77
-	unknown3 .word ;78
-	unknown4 .word ;80
+	.byte ;77
+	.word ;78
+	.word ;80
 	wallet_backup .dword ;82
 	escargo_express_items .byte 36 ;86
-	unknown5 .byte 6 ;122
-	unknown6 .word ;128
+	.byte 6 ;122
+	.word ;128
 	leader_x_coord .word ;130
-	unknown7 .word ;132
+	.word ;132
 	leader_y_coord .word ;134
-	unknown8 .word ;136
+	.word ;136
 	leader_direction .word ;138
 	trodden_tile_type .word ;140
 	walking_style .word ;142
-	unknown9 .word ;144
-	unknown10 .word ;146
+	.word ;144
+	.word ;146
 	current_party_members .word ;148
-	unknown11 .byte 6 ;150
+	.byte 6 ;150
 	player_controlled_party_members .byte ;156
-	unknown12 .byte 5 ;157
-	unknown13 .byte 12 ;162
+	.byte 5 ;157
+	.byte 12 ;162
 	party_count .byte ;174
 	player_controlled_party_count .byte ;175
-	unknown14 .word ;176
-	unknown15 .word ; 178
-	unknown16 .byte 8 ;180
+	.word ;176
+	.word ; 178
+	.byte 2 ;180
+	.byte 3 ;182
+	.byte 3 ;185
 	auto_fight_enable .byte ;188
 	exit_mouse_x_coord .word ;189
 	exit_mouse_y_coord .word ;191
 	text_speed .byte ;193
 	sound_setting .byte ;194
-	unknown17 .byte 5 ;195
-	unknown18 .byte 12 ;200
-	unknown19 .word ;212
-	unknown20 .byte 254 ;214
+	.byte ;195
+	.byte 4 ;196
+	.byte 12 ;200
+	.word ;212
+	.byte 254 ;214
 	timer .dword ;468
 	text_flavour .byte ;472
 .ENDSTRUCT
@@ -154,21 +157,21 @@
 
 .STRUCT battler
 	id .byte ;0
-	unknown0 .byte ;1
+	.byte ;1
 	sprite .byte ;2
-	unknown1 .byte ;3
+	.byte ;3
 	current_action .word ;4
 	action_order_var .byte ;6
-	unknown2 .byte ;7
+	.byte ;7
 	current_action_argument .byte ;8
-	unknown3 .byte ;9
+	.byte ;9
 	current_target .byte ;10
 	the_flag .byte ;11
 	consciousness .byte ;12
-	unknown4 .byte ;13
+	.byte ;13
 	ally_or_enemy .byte ;14
 	npc_id .byte ;15
-	unknown5 .byte ;16
+	.byte ;16
 	hp .word ;17
 	hp_target .word ;19
 	hp_max .word ;21
@@ -203,15 +206,15 @@
 	sprite_x .byte ;66
 	sprite_y .byte ;67
 	initiative .byte ;68
-	unknown6 .byte ;69
-	unknown7 .byte 4 ;70
-	unknown8 .byte ;74
+	.byte ;69
+	.byte 4 ;70
+	.byte ;74
 	id2 .byte ;75
-	unknown9 .byte 2;76
+	.byte 2;76
 .ENDSTRUCT
 
 .STRUCT window_stats
-	unknown0 .byte 4 ;0
+	.byte 4 ;0
 	id .word ;4
 	window_x .word ;6
 	window_y .word ;8
@@ -221,9 +224,9 @@
 	text_y .word ;16
 	text_width .word ;18
 	text_height .word ;20
-	unknown1 .byte ;22
-	unknown2 .byte ;23
-	unknown3 .byte ;24
+	.byte ;22
+	.byte ;23
+	.byte ;24
 	font .byte ;25
 	working_memory .byte 4 ;26
 	argument_memory .byte 4 ;30
@@ -231,7 +234,7 @@
 	working_memory_storage .byte 4 ;38
 	argument_memory_storage .byte 4 ;42
 	secondary_memory_storage .byte 4 ;46
-	unknown4 .byte 32 ;50
+	.byte 32 ;50
 .ENDSTRUCT
 
 .STRUCT npc_config
@@ -239,9 +242,9 @@
 	sprite .word ;1
 	direction .byte ;3
 	movement .byte ;4
-	unknown .byte ;5
+	.byte ;5
 	event_flag .word ;6
-	unknown2 .byte ;8
+	.byte ;8
 	text_pointer .dword ;9
 	.UNION ;13
 		item .byte
