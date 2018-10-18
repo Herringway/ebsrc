@@ -251,3 +251,14 @@
 		text_pointer2 .dword
 	.ENDUNION
 .ENDSTRUCT
+
+.STRUCT u89D4_entry
+	.word ;0
+	.word ;2
+	.word ;4
+	.word ;6
+	.byte 6 ;8
+	.word ;14
+	.byte 27 ;16
+	.word ;43
+.ENDSTRUCT
