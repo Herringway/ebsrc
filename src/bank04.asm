@@ -2644,13 +2644,13 @@ UNKNOWN_C41DB6_UNKNOWN4:
 	RTL
 
 UNKNOWN_C41EB9: ;$C41EB9
-	.INCBIN "src/bin/unknowns/C41EB9.bin"
+	.BYTE $FF, $FF, $7F, $7F, $3F, $3F, $1F, $1F, $0F, $0F, $07, $07, $03, $03, $01, $01
 
 UNKNOWN_C41EC9: ;$C41EC9
-	.INCBIN "src/bin/unknowns/C41EC9.bin"
+	.BYTE $F0, $F0, $F8, $F8, $FC, $FC, $FE, $FE, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
 
 UNKNOWN_C41ED9: ;$C41ED9
-	.INCBIN "src/bin/unknowns/C41ED9.bin"
+	.BYTE $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $80, $80, $C0, $C0, $E0, $E0
 
 UNKNOWN_C41EE9: ;$C41EE9
 	LDA $0A
