@@ -208,7 +208,7 @@ UNKNOWN_C100FE: ;$C100FE
 	PLD
 	RTS
 
-.INCLUDE "ccs/halt.asm"
+.INCLUDE "text/ccs/halt.asm"
 
 UNKNOWN_C102D0: ;$C102D0
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
@@ -1420,7 +1420,7 @@ UNKNOWN_C10BA1: ;$C10BA1
 	PLD
 	RTS
 
-.INCLUDE "ccs/clear_line.asm"
+.INCLUDE "text/ccs/clear_line.asm"
 
 REDIRECT_C1008E: ;$C10BF8
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
@@ -7943,181 +7943,181 @@ UNKNOWN_C14070: ;$C14070
 	PLD
 	RTS
 
-.INCLUDE "ccs/print_stat.asm"
+.INCLUDE "text/ccs/print_stat.asm"
 
-.INCLUDE "ccs/unknown_1C_11.asm"
+.INCLUDE "text/ccs/unknown_1C_11.asm"
 
-.INCLUDE "ccs/unknown_1C_09.asm"
+.INCLUDE "text/ccs/unknown_1C_09.asm"
 
-.INCLUDE "ccs/text_effects.asm"
+.INCLUDE "text/ccs/text_effects.asm"
 
-.INCLUDE "ccs/jump.asm"
+.INCLUDE "text/ccs/jump.asm"
 
-.INCLUDE "ccs/jump_multi.asm"
+.INCLUDE "text/ccs/jump_multi.asm"
 
-.INCLUDE "ccs/set_event_flag.asm"
+.INCLUDE "text/ccs/set_event_flag.asm"
 
-.INCLUDE "ccs/clear_event_flag.asm"
+.INCLUDE "text/ccs/clear_event_flag.asm"
 
-.INCLUDE "ccs/jump_event_flag.asm"
+.INCLUDE "text/ccs/jump_event_flag.asm"
 
-.INCLUDE "ccs/get_event_flag.asm"
+.INCLUDE "text/ccs/get_event_flag.asm"
 
-.INCLUDE "ccs/print_special_graphics.asm"
+.INCLUDE "text/ccs/print_special_graphics.asm"
 
-.INCLUDE "ccs/open_window.asm"
+.INCLUDE "text/ccs/open_window.asm"
 
-.INCLUDE "ccs/switch_to_window.asm"
+.INCLUDE "text/ccs/switch_to_window.asm"
 
-.INCLUDE "ccs/call.asm"
+.INCLUDE "text/ccs/call.asm"
 
-.INCLUDE "ccs/create_number_selector.asm"
+.INCLUDE "text/ccs/create_number_selector.asm"
 
-.INCLUDE "ccs/force_text_alignment.asm"
+.INCLUDE "text/ccs/force_text_alignment.asm"
 
-.INCLUDE "ccs/check_equal.asm"
+.INCLUDE "text/ccs/check_equal.asm"
 
-.INCLUDE "ccs/check_not_equal.asm"
+.INCLUDE "text/ccs/check_not_equal.asm"
 
-.INCLUDE "ccs/print_horizontal_strings.asm"
+.INCLUDE "text/ccs/print_horizontal_strings.asm"
 
-.INCLUDE "ccs/copy_to_argmem.asm"
+.INCLUDE "text/ccs/copy_to_argmem.asm"
 
-.INCLUDE "ccs/set_secmem.asm"
+.INCLUDE "text/ccs/set_secmem.asm"
 
-.INCLUDE "ccs/party_selection_menu_uncancellable.asm"
+.INCLUDE "text/ccs/party_selection_menu_uncancellable.asm"
 
-.INCLUDE "ccs/party_selection_menu.asm"
+.INCLUDE "text/ccs/party_selection_menu.asm"
 
-.INCLUDE "ccs/print_item_name.asm"
+.INCLUDE "text/ccs/print_item_name.asm"
 
-.INCLUDE "ccs/print_teleport_destination_name.asm"
+.INCLUDE "text/ccs/print_teleport_destination_name.asm"
 
-.INCLUDE "ccs/get_character_number.asm"
+.INCLUDE "text/ccs/get_character_number.asm"
 
-.INCLUDE "ccs/play_music.asm"
+.INCLUDE "text/ccs/play_music.asm"
 
-.INCLUDE "ccs/stop_music.asm"
+.INCLUDE "text/ccs/stop_music.asm"
 
-.INCLUDE "ccs/play_sfx.asm"
+.INCLUDE "text/ccs/play_sfx.asm"
 
-.INCLUDE "ccs/get_letter_from_character_name.asm"
+.INCLUDE "text/ccs/get_letter_from_character_name.asm"
 
-.INCLUDE "ccs/unknown_19_28.asm"
+.INCLUDE "text/ccs/unknown_19_28.asm"
 
-.INCLUDE "ccs/print_character.asm"
+.INCLUDE "text/ccs/print_character.asm"
 
-.INCLUDE "ccs/test_inventory_full.asm"
+.INCLUDE "text/ccs/test_inventory_full.asm"
 
-.INCLUDE "ccs/wallet_increase.asm"
+.INCLUDE "text/ccs/wallet_increase.asm"
 
-.INCLUDE "ccs/wallet_decrease.asm"
+.INCLUDE "text/ccs/wallet_decrease.asm"
 
-.INCLUDE "ccs/recover_hp_by_percent.asm"
+.INCLUDE "text/ccs/recover_hp_by_percent.asm"
 
-.INCLUDE "ccs/deplete_hp_by_percent.asm"
+.INCLUDE "text/ccs/deplete_hp_by_percent.asm"
 
-.INCLUDE "ccs/recover_hp_by_amount.asm"
+.INCLUDE "text/ccs/recover_hp_by_amount.asm"
 
-.INCLUDE "ccs/deplete_hp_by_amount.asm"
+.INCLUDE "text/ccs/deplete_hp_by_amount.asm"
 
-.INCLUDE "ccs/recover_pp_by_percent.asm"
+.INCLUDE "text/ccs/recover_pp_by_percent.asm"
 
-.INCLUDE "ccs/deplete_pp_by_percent.asm"
+.INCLUDE "text/ccs/deplete_pp_by_percent.asm"
 
-.INCLUDE "ccs/recover_pp_by_amount.asm"
+.INCLUDE "text/ccs/recover_pp_by_amount.asm"
 
-.INCLUDE "ccs/deplete_pp_by_amount.asm"
+.INCLUDE "text/ccs/deplete_pp_by_amount.asm"
 
-.INCLUDE "ccs/give_item_to_character.asm"
+.INCLUDE "text/ccs/give_item_to_character.asm"
 
-.INCLUDE "ccs/take_item_from_character.asm"
+.INCLUDE "text/ccs/take_item_from_character.asm"
 
-.INCLUDE "ccs/test_inventory_not_full.asm"
+.INCLUDE "text/ccs/test_inventory_not_full.asm"
 
-.INCLUDE "ccs/test_character_doesnt_have_item.asm"
+.INCLUDE "text/ccs/test_character_doesnt_have_item.asm"
 
-.INCLUDE "ccs/test_character_has_item.asm"
+.INCLUDE "text/ccs/test_character_has_item.asm"
 
-.INCLUDE "ccs/trigger_psi_teleport.asm"
+.INCLUDE "text/ccs/trigger_psi_teleport.asm"
 
-.INCLUDE "ccs/trigger_teleport.asm"
+.INCLUDE "text/ccs/trigger_teleport.asm"
 
-.INCLUDE "ccs/pause.asm"
+.INCLUDE "text/ccs/pause.asm"
 
-.INCLUDE "ccs/display_shop_menu.asm"
+.INCLUDE "text/ccs/display_shop_menu.asm"
 
-.INCLUDE "ccs/get_item_price.asm"
+.INCLUDE "text/ccs/get_item_price.asm"
 
-.INCLUDE "ccs/get_item_sell_price.asm"
+.INCLUDE "text/ccs/get_item_sell_price.asm"
 
-.INCLUDE "ccs/test_character_can_equip_item.asm"
+.INCLUDE "text/ccs/test_character_can_equip_item.asm"
 
-.INCLUDE "ccs/print_character_name.asm"
+.INCLUDE "text/ccs/print_character_name.asm"
 
-.INCLUDE "ccs/get_character_status.asm"
+.INCLUDE "text/ccs/get_character_status.asm"
 
-.INCLUDE "ccs/inflict_character_status.asm"
+.INCLUDE "text/ccs/inflict_character_status.asm"
 
-.INCLUDE "ccs/test_character_status.asm"
+.INCLUDE "text/ccs/test_character_status.asm"
 
-.INCLUDE "ccs/get_gender_etc.asm"
+.INCLUDE "text/ccs/get_gender_etc.asm"
 
-.INCLUDE "ccs/switch_gender_etc.asm"
+.INCLUDE "text/ccs/switch_gender_etc.asm"
 
-.INCLUDE "ccs/test_equality.asm"
+.INCLUDE "text/ccs/test_equality.asm"
 
-.INCLUDE "ccs/get_exp_for_next_level.asm"
+.INCLUDE "text/ccs/get_exp_for_next_level.asm"
 
-.INCLUDE "ccs/print_number.asm"
+.INCLUDE "text/ccs/print_number.asm"
 
-.INCLUDE "ccs/unknown_1F_60.asm"
+.INCLUDE "text/ccs/unknown_1F_60.asm"
 
-.INCLUDE "ccs/show_character_inventory.asm"
+.INCLUDE "text/ccs/show_character_inventory.asm"
 
-.INCLUDE "ccs/unknown_18_08.asm"
+.INCLUDE "text/ccs/unknown_18_08.asm"
 
-.INCLUDE "ccs/unknown_18_09.asm"
+.INCLUDE "text/ccs/unknown_18_09.asm"
 
-.INCLUDE "ccs/print_money_amount.asm"
+.INCLUDE "text/ccs/print_money_amount.asm"
 
-.INCLUDE "ccs/give_item_to_character_2.asm"
+.INCLUDE "text/ccs/give_item_to_character_2.asm"
 
-.INCLUDE "ccs/unknown_1D_0F.asm"
+.INCLUDE "text/ccs/unknown_1D_0F.asm"
 
-.INCLUDE "ccs/unknown_1D_10.asm"
+.INCLUDE "text/ccs/unknown_1D_10.asm"
 
-.INCLUDE "ccs/unknown_1D_11.asm"
+.INCLUDE "text/ccs/unknown_1D_11.asm"
 
-.INCLUDE "ccs/equip_character_from_inventory.asm"
+.INCLUDE "text/ccs/equip_character_from_inventory.asm"
 
-.INCLUDE "ccs/unknown_1D_12.asm"
+.INCLUDE "text/ccs/unknown_1D_12.asm"
 
-.INCLUDE "ccs/unknown_1D_13.asm"
+.INCLUDE "text/ccs/unknown_1D_13.asm"
 
-.INCLUDE "ccs/get_item_number.asm"
+.INCLUDE "text/ccs/get_item_number.asm"
 
-.INCLUDE "ccs/test_has_enough_money.asm"
+.INCLUDE "text/ccs/test_has_enough_money.asm"
 
-.INCLUDE "ccs/unknown_18_0D.asm"
+.INCLUDE "text/ccs/unknown_18_0D.asm"
 
-.INCLUDE "ccs/print_vertical_strings.asm"
+.INCLUDE "text/ccs/print_vertical_strings.asm"
 
-.INCLUDE "ccs/set_argmem.asm"
+.INCLUDE "text/ccs/set_argmem.asm"
 
-.INCLUDE "ccs/unknown_19_1B.asm"
+.INCLUDE "text/ccs/unknown_19_1B.asm"
 
-.INCLUDE "ccs/learn_special_psi.asm"
+.INCLUDE "text/ccs/learn_special_psi.asm"
 
-.INCLUDE "ccs/atm_increase.asm"
+.INCLUDE "text/ccs/atm_increase.asm"
 
-.INCLUDE "ccs/atm_decrease.asm"
+.INCLUDE "text/ccs/atm_decrease.asm"
 
-.INCLUDE "ccs/test_atm_has_enough_money.asm"
+.INCLUDE "text/ccs/test_atm_has_enough_money.asm"
 
-.INCLUDE "ccs/party_member_add.asm"
+.INCLUDE "text/ccs/party_member_add.asm"
 
-.INCLUDE "ccs/party_member_remove.asm"
+.INCLUDE "text/ccs/party_member_remove.asm"
 
 UNKNOWN_C15FB1: ;$C15FB1
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
@@ -8162,19 +8162,19 @@ UNKNOWN_C15FB1: ;$C15FB1
 	PLD
 	RTS
 
-.INCLUDE "ccs/unknown_19_1C.asm"
+.INCLUDE "text/ccs/unknown_19_1C.asm"
 
-.INCLUDE "ccs/unknown_19_1D.asm"
+.INCLUDE "text/ccs/unknown_19_1D.asm"
 
-.INCLUDE "ccs/escargo_express_store.asm"
+.INCLUDE "text/ccs/escargo_express_store.asm"
 
-.INCLUDE "ccs/test_item_is_drink.asm"
+.INCLUDE "text/ccs/test_item_is_drink.asm"
 
-.INCLUDE "ccs/test_party_enough_characters.asm"
+.INCLUDE "text/ccs/test_party_enough_characters.asm"
 
-.INCLUDE "ccs/print_psi_name.asm"
+.INCLUDE "text/ccs/print_psi_name.asm"
 
-.INCLUDE "ccs/get_random_number.asm"
+.INCLUDE "text/ccs/get_random_number.asm"
 
 UNKNOWN_C1621F: ;$C1621F
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
@@ -8297,123 +8297,123 @@ UNKNOWN_C1621F: ;$C1621F
 	PLD
 	RTS
 
-.INCLUDE "ccs/jump_multi2.asm"
+.INCLUDE "text/ccs/jump_multi2.asm"
 
-.INCLUDE "ccs/try_fixing_items.asm"
+.INCLUDE "text/ccs/try_fixing_items.asm"
 
-.INCLUDE "ccs/set_character_direction.asm"
+.INCLUDE "text/ccs/set_character_direction.asm"
 
-.INCLUDE "ccs/set_party_direction.asm"
+.INCLUDE "text/ccs/set_party_direction.asm"
 
-.INCLUDE "ccs/set_tpt_direction.asm"
+.INCLUDE "text/ccs/set_tpt_direction.asm"
 
-.INCLUDE "ccs/create_entity_tpt.asm"
+.INCLUDE "text/ccs/create_entity_tpt.asm"
 
-.INCLUDE "ccs/dummy_1F_18.asm"
+.INCLUDE "text/ccs/dummy_1F_18.asm"
 
-.INCLUDE "ccs/dummy_1F_19.asm"
+.INCLUDE "text/ccs/dummy_1F_19.asm"
 
-.INCLUDE "ccs/create_floating_sprite_at_tpt_entity.asm"
+.INCLUDE "text/ccs/create_floating_sprite_at_tpt_entity.asm"
 
-.INCLUDE "ccs/delete_floating_sprite_at_tpt_entity.asm"
+.INCLUDE "text/ccs/delete_floating_sprite_at_tpt_entity.asm"
 
-.INCLUDE "ccs/create_floating_sprite_at_character.asm"
+.INCLUDE "text/ccs/create_floating_sprite_at_character.asm"
 
-.INCLUDE "ccs/delete_floating_sprite_at_character.asm"
+.INCLUDE "text/ccs/delete_floating_sprite_at_character.asm"
 
-.INCLUDE "ccs/set_map_palette.asm"
+.INCLUDE "text/ccs/set_map_palette.asm"
 
-.INCLUDE "ccs/create_entity_sprite.asm"
+.INCLUDE "text/ccs/create_entity_sprite.asm"
 
-.INCLUDE "ccs/delete_entity_tpt.asm"
+.INCLUDE "text/ccs/delete_entity_tpt.asm"
 
-.INCLUDE "ccs/delete_entity_sprite.asm"
+.INCLUDE "text/ccs/delete_entity_sprite.asm"
 
-.INCLUDE "ccs/get_direction_from_character_to_entity.asm"
+.INCLUDE "text/ccs/get_direction_from_character_to_entity.asm"
 
-.INCLUDE "ccs/get_direction_from_tpt_entity_to_entity.asm"
+.INCLUDE "text/ccs/get_direction_from_tpt_entity_to_entity.asm"
 
-.INCLUDE "ccs/enable_blinking_triangle.asm"
+.INCLUDE "text/ccs/enable_blinking_triangle.asm"
 
-.INCLUDE "ccs/set_character_level.asm"
+.INCLUDE "text/ccs/set_character_level.asm"
 
-.INCLUDE "ccs/get_direction_from_sprite_entity_to_entity.asm"
+.INCLUDE "text/ccs/get_direction_from_sprite_entity_to_entity.asm"
 
-.INCLUDE "ccs/set_entity_direction_sprite.asm"
+.INCLUDE "text/ccs/set_entity_direction_sprite.asm"
 
-.INCLUDE "ccs/set_player_movement_lock.asm"
+.INCLUDE "text/ccs/set_player_movement_lock.asm"
 
-.INCLUDE "ccs/set_tpt_entity_delay.asm"
+.INCLUDE "text/ccs/set_tpt_entity_delay.asm"
 
-.INCLUDE "ccs/unknown_1F_E7.asm"
+.INCLUDE "text/ccs/unknown_1F_E7.asm"
 
-.INCLUDE "ccs/set_player_movement_lock_if_camera_refocused.asm"
+.INCLUDE "text/ccs/set_player_movement_lock_if_camera_refocused.asm"
 
-.INCLUDE "ccs/unknown_1F_E9.asm"
+.INCLUDE "text/ccs/unknown_1F_E9.asm"
 
-.INCLUDE "ccs/unknown_1F_EA.asm"
+.INCLUDE "text/ccs/unknown_1F_EA.asm"
 
-.INCLUDE "ccs/set_character_invisibility.asm"
+.INCLUDE "text/ccs/set_character_invisibility.asm"
 
-.INCLUDE "ccs/set_character_visibility.asm"
+.INCLUDE "text/ccs/set_character_visibility.asm"
 
-.INCLUDE "ccs/teleport_party_to_tpt_entity.asm"
+.INCLUDE "text/ccs/teleport_party_to_tpt_entity.asm"
 
-.INCLUDE "ccs/unknown_1F_EF.asm"
+.INCLUDE "text/ccs/unknown_1F_EF.asm"
 
-.INCLUDE "ccs/screen_reload_pointer.asm"
+.INCLUDE "text/ccs/screen_reload_pointer.asm"
 
-.INCLUDE "ccs/set_tpt_entity_movement.asm"
+.INCLUDE "text/ccs/set_tpt_entity_movement.asm"
 
-.INCLUDE "ccs/set_sprite_entity_movement.asm"
+.INCLUDE "text/ccs/set_sprite_entity_movement.asm"
 
-.INCLUDE "ccs/test_item_is_condiment.asm"
+.INCLUDE "text/ccs/test_item_is_condiment.asm"
 
-.INCLUDE "ccs/trigger_battle.asm"
+.INCLUDE "text/ccs/trigger_battle.asm"
 
-.INCLUDE "ccs/set_respawn_point.asm"
+.INCLUDE "text/ccs/set_respawn_point.asm"
 
-.INCLUDE "ccs/unknown_1D_0C.asm"
+.INCLUDE "text/ccs/unknown_1D_0C.asm"
 
-.INCLUDE "ccs/activate_hotspot.asm"
+.INCLUDE "text/ccs/activate_hotspot.asm"
 
-.INCLUDE "ccs/deactivate_hotspot.asm"
+.INCLUDE "text/ccs/deactivate_hotspot.asm"
 
-.INCLUDE "ccs/toggle_text_printing_sound.asm"
+.INCLUDE "text/ccs/toggle_text_printing_sound.asm"
 
-.INCLUDE "ccs/unknown_1D_24.asm"
+.INCLUDE "text/ccs/unknown_1D_24.asm"
 
-.INCLUDE "ccs/unknown_1F_40.asm"
+.INCLUDE "text/ccs/unknown_1F_40.asm"
 
-.INCLUDE "ccs/trigger_special_event.asm"
+.INCLUDE "text/ccs/trigger_special_event.asm"
 
-.INCLUDE "ccs/trigger_photographer_event.asm"
+.INCLUDE "text/ccs/trigger_photographer_event.asm"
 
-.INCLUDE "ccs/create_floating_sprite_at_sprite_entity.asm"
+.INCLUDE "text/ccs/create_floating_sprite_at_sprite_entity.asm"
 
-.INCLUDE "ccs/delete_floating_sprite_at_sprite_entity.asm"
+.INCLUDE "text/ccs/delete_floating_sprite_at_sprite_entity.asm"
 
-.INCLUDE "ccs/display_battle_animation.asm"
+.INCLUDE "text/ccs/display_battle_animation.asm"
 
-.INCLUDE "ccs/set_music_effect.asm"
+.INCLUDE "text/ccs/set_music_effect.asm"
 
-.INCLUDE "ccs/trigger_timed_event.asm"
+.INCLUDE "text/ccs/trigger_timed_event.asm"
 
-.INCLUDE "ccs/increase_character_experience.asm"
+.INCLUDE "text/ccs/increase_character_experience.asm"
 
-.INCLUDE "ccs/increase_character_iq.asm"
+.INCLUDE "text/ccs/increase_character_iq.asm"
 
-.INCLUDE "ccs/increase_character_guts.asm"
+.INCLUDE "text/ccs/increase_character_guts.asm"
 
-.INCLUDE "ccs/increase_character_speed.asm"
+.INCLUDE "text/ccs/increase_character_speed.asm"
 
-.INCLUDE "ccs/increase_character_vitality.asm"
+.INCLUDE "text/ccs/increase_character_vitality.asm"
 
-.INCLUDE "ccs/increase_character_luck.asm"
+.INCLUDE "text/ccs/increase_character_luck.asm"
 
-.INCLUDE "ccs/unknown_1D_23.asm"
+.INCLUDE "text/ccs/unknown_1D_23.asm"
 
-.INCLUDE "ccs/unknown_19_27.asm"
+.INCLUDE "text/ccs/unknown_19_27.asm"
 
 UNKNOWN_C17796: ;$C17796
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
@@ -8599,23 +8599,23 @@ UNKNOWN_C17889: ;$C17889
 	PLD
 	RTS
 
-.INCLUDE "ccs/load_string.asm"
+.INCLUDE "text/ccs/load_string.asm"
 
-.INCLUDE "ccs/tree_18.asm"
+.INCLUDE "text/ccs/tree_18.asm"
 
-.INCLUDE "ccs/tree_19.asm"
+.INCLUDE "text/ccs/tree_19.asm"
 
-.INCLUDE "ccs/tree_1A.asm"
+.INCLUDE "text/ccs/tree_1A.asm"
 
-.INCLUDE "ccs/tree_1B.asm"
+.INCLUDE "text/ccs/tree_1B.asm"
 
-.INCLUDE "ccs/tree_1C.asm"
+.INCLUDE "text/ccs/tree_1C.asm"
 
-.INCLUDE "ccs/tree_1D.asm"
+.INCLUDE "text/ccs/tree_1D.asm"
 
-.INCLUDE "ccs/tree_1E.asm"
+.INCLUDE "text/ccs/tree_1E.asm"
 
-.INCLUDE "ccs/tree_1F.asm"
+.INCLUDE "text/ccs/tree_1F.asm"
 
 UNKNOWN_C1866D: ;$C1866D
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
@@ -8660,562 +8660,7 @@ UNKNOWN_C1869D: ;$C1869D
 @UNKNOWN0:
 	RTS
 
-DISPLAY_TEXT: ;$C186B1
-	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
-	PHD
-	TDC
-	ADC #$FFDC
-	TCD
-	LDA $32
-	STA $06
-	LDA $34
-	STA $08
-	LDA $06
-	STA $20
-	LDA $08
-	STA $22
-	LDY #$0000
-	STY $1E
-	LOADPTR BATTLE_BACK_ROW_TEXT+12, $0A
-	LDA $0A
-	STA $1A
-	LDA $0C
-	STA $1C
-	LDA #$0000
-	STA $06
-	LDA #$0000
-	STA $08
-	LDA $06
-	STA $16
-	LDA $08
-	STA $18
-	LDA $06
-	STA $0A
-	LDA $08
-	STA $0C
-	LDA $20
-	STA $06
-	LDA $22
-	STA $08
-	CMP $0C
-	BNE @UNKNOWN0
-	LDA $06
-	CMP $0A
-@UNKNOWN0:
-	BNE @UNKNOWN1
-	LDA $20
-	STA $06
-	LDA $22
-	STA $08
-	LDA $06
-	STA $2A
-	LDA $08
-	STA $2C
-	JMP a:.LOWORD(@UNKNOWN74)
-@UNKNOWN1:
-	JSR a:.LOWORD(UNKNOWN_C14012)
-	STA $14
-	LDA $20
-	STA $06
-	LDA $22
-	STA $08
-	LDA $06
-	STA $0E
-	LDA $08
-	STA $10
-	LDA $14
-	JSR a:.LOWORD(UNKNOWN_C1866D)
-	STA $02
-	STA $12
-	LDA $02
-	BNE @UNKNOWN2
-	LDA $16
-	STA $06
-	LDA $18
-	STA $08
-	LDA $06
-	STA $2A
-	LDA $08
-	STA $2C
-	JMP a:.LOWORD(@UNKNOWN74)
-@UNKNOWN2:
-	LDA .LOWORD(UNKNOWN_7E5E6E)
-	BEQ @UNKNOWN4
-	LDY $1E
-	BNE @UNKNOWN4
-	LDA .LOWORD(UNKNOWN_7E9660)
-	BNE @UNKNOWN3
-	LDA $1A
-	STA $0A
-	LDA $1C
-	STA $0C
-	LDA $0A
-	STA $06
-	LDA $0C
-	STA $08
-	LDA $06
-	STA $0E
-	LDA $08
-	STA $10
-	LDA $12
-	STA $02
-	JSL UNKNOWN_C445E1
-	BRA @UNKNOWN4
-@UNKNOWN3:
-	DEC .LOWORD(UNKNOWN_7E9660)
-@UNKNOWN4:
-	LDA $1A
-	STA $0A
-	LDA $1C
-	STA $0C
-	LDA [$0A]
-	AND #$00FF
-	BEQ @UNKNOWN5
-	AND #$00FF
-	STA $14
-	INC $0A
-	LDA $0A
-	STA $1A
-	LDA $0C
-	STA $1C
-	BRA @UNKNOWN6
-@UNKNOWN5:
-	LDA $12
-	STA $02
-	LDX $02
-	TXY
-	LDA a:.LOWORD(RAM),Y
-	STA $06
-	LDA a:.LOWORD(RAM)+2,Y
-	STA $08
-	LDA [$06]
-	AND #$00FF
-	STA $14
-	INC $06
-	TXY
-	LDA $06
-	STA a:.LOWORD(RAM),Y
-	LDA $08
-	STA a:.LOWORD(RAM)+2,Y
-@UNKNOWN6:
-	LDY $1E
-	BEQ @UNKNOWN7
-	LDA $14
-	TAX
-	LDA $12
-	STA $02
-	STY $02
-	STA a:.LOWORD(UNKNOWN_7E00C0)
-	PEA $87E6
-	LDA $02
-	DEC
-	PHA
-	LDA a:.LOWORD(UNKNOWN_7E00C0)
-	RTS
-	TAY
-	STY $1E
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN7:
-	LDA $14
-	CMP #$0015
-	BEQ @COMPRESSION_BANK_ONE
-	CMP #$0016
-	BEQ @COMPRESSION_BANK_TWO
-	CMP #$0017
-	BNE @UNKNOWN8
-	JMP a:.LOWORD(@COMPRESSION_BANK_THREE)
-@UNKNOWN8:
-	JMP a:.LOWORD(@UNKNOWN12)
-@COMPRESSION_BANK_ONE:
-	LDA $12
-	STA $02
-	LDX $02
-	TXY
-	LDA a:.LOWORD(RAM),Y
-	STA $0A
-	LDA a:.LOWORD(RAM)+2,Y
-	STA $0C
-	LOADPTR COMPRESSED_TEXT_PTRS, $06
-	LDA [$0A]
-	AND #$00FF
-	ASL
-	ASL
-	CLC
-	ADC $06
-	STA $06
-	LDY #$0002
-	LDA [$06],Y
-	TAY
-	LDA [$06]
-	STA $06
-	STY $08
-	INC $0A
-	TXY
-	LDA $0A
-	STA a:.LOWORD(RAM),Y
-	LDA $0C
-	STA a:.LOWORD(RAM)+2,Y
-	LDA [$06]
-	AND #$00FF
-	LDX $06
-	STX $0A
-	LDX $08
-	STX $0C
-	INC $0A
-	LDX $0A
-	STX $1A
-	LDX $0C
-	STX $1C
-	JMP a:.LOWORD(@UNKNOWN12)
-@COMPRESSION_BANK_TWO:
-	LDA $12
-	STA $02
-	LDX $02
-	TXY
-	LDA a:.LOWORD(RAM),Y
-	STA $0A
-	LDA a:.LOWORD(RAM)+2,Y
-	STA $0C
-	LOADPTR COMPRESSED_TEXT_PTRS+1024, $06
-	LDA [$0A]
-	AND #$00FF
-	ASL
-	ASL
-	CLC
-	ADC $06
-	STA $06
-	LDY #$0002
-	LDA [$06],Y
-	TAY
-	LDA [$06]
-	STA $06
-	STY $08
-	INC $0A
-	TXY
-	LDA $0A
-	STA a:.LOWORD(RAM),Y
-	LDA $0C
-	STA a:.LOWORD(RAM)+2,Y
-	LDA [$06]
-	AND #$00FF
-	LDX $06
-	STX $0A
-	LDX $08
-	STX $0C
-	INC $0A
-	LDX $0A
-	STX $1A
-	LDX $0C
-	STX $1C
-	BRA @UNKNOWN12
-@COMPRESSION_BANK_THREE:
-	LDA $12
-	STA $02
-	LDX $02
-	TXY
-	LDA a:.LOWORD(RAM),Y
-	STA $0A
-	LDA a:.LOWORD(RAM)+2,Y
-	STA $0C
-	LOADPTR COMPRESSED_TEXT_PTRS+2048, $06
-	LDA [$0A]
-	AND #$00FF
-	ASL
-	ASL
-	CLC
-	ADC $06
-	STA $06
-	LDY #$0002
-	LDA [$06],Y
-	TAY
-	LDA [$06]
-	STA $06
-	STY $08
-	INC $0A
-	TXY
-	LDA $0A
-	STA a:.LOWORD(RAM),Y
-	LDA $0C
-	STA a:.LOWORD(RAM)+2,Y
-	LDA [$06]
-	AND #$00FF
-	LDX $06
-	STX $0A
-	LDX $08
-	STX $0C
-	INC $0A
-	LDX $0A
-	STX $1A
-	LDX $0C
-	STX $1C
-@UNKNOWN12:
-	CMP #$0020
-	BCC @UNKNOWN13
-	JMP a:.LOWORD(@UNKNOWN72)
-@UNKNOWN13:
-	STZ .LOWORD(CC_ARGUMENT_GATHERING_LOOP_COUNTER)
-	CMP #$0000
-	BNE @UNKNOWN14
-	JMP a:.LOWORD(@UNKNOWN43)
-@UNKNOWN14:
-	CMP #$0001
-	BNE @UNKNOWN15
-	JMP a:.LOWORD(@UNKNOWN44)
-@UNKNOWN15:
-	CMP #$0002
-	BNE @UNKNOWN16
-	JMP a:.LOWORD(@UNKNOWN73)
-@UNKNOWN16:
-	CMP #$0003
-	BNE @UNKNOWN17
-	JMP a:.LOWORD(@UNKNOWN46)
-@UNKNOWN17:
-	CMP #$0004
-	BNE @UNKNOWN18
-	JMP a:.LOWORD(@UNKNOWN47)
-@UNKNOWN18:
-	CMP #$0005
-	BNE @UNKNOWN19
-	JMP a:.LOWORD(@UNKNOWN48)
-@UNKNOWN19:
-	CMP #$0006
-	BNE @UNKNOWN20
-	JMP a:.LOWORD(@UNKNOWN49)
-@UNKNOWN20:
-	CMP #$0007
-	BNE @UNKNOWN21
-	JMP a:.LOWORD(@UNKNOWN50)
-@UNKNOWN21:
-	CMP #$0008
-	BNE @UNKNOWN22
-	JMP a:.LOWORD(@UNKNOWN51)
-@UNKNOWN22:
-	CMP #$0009
-	BNE @UNKNOWN23
-	JMP a:.LOWORD(@UNKNOWN52)
-@UNKNOWN23:
-	CMP #$000A
-	BNE @UNKNOWN24
-	JMP a:.LOWORD(@UNKNOWN53)
-@UNKNOWN24:
-	CMP #$000B
-	BNE @UNKNOWN25
-	JMP a:.LOWORD(@UNKNOWN54)
-@UNKNOWN25:
-	CMP #$000C
-	BNE @UNKNOWN26
-	JMP a:.LOWORD(@UNKNOWN55)
-@UNKNOWN26:
-	CMP #$000D
-	BNE @UNKNOWN27
-	JMP a:.LOWORD(@UNKNOWN56)
-@UNKNOWN27:
-	CMP #$000E
-	BNE @UNKNOWN28
-	JMP a:.LOWORD(@UNKNOWN57)
-@UNKNOWN28:
-	CMP #$000F
-	BNE @UNKNOWN29
-	JMP a:.LOWORD(@UNKNOWN58)
-@UNKNOWN29:
-	CMP #$0010
-	BNE @UNKNOWN30
-	JMP a:.LOWORD(@UNKNOWN59)
-@UNKNOWN30:
-	CMP #$0011
-	BNE @UNKNOWN31
-	JMP a:.LOWORD(@UNKNOWN60)
-@UNKNOWN31:
-	CMP #$0012
-	BNE @UNKNOWN32
-	JMP a:.LOWORD(@UNKNOWN61)
-@UNKNOWN32:
-	CMP #$0013
-	BNE @UNKNOWN33
-	JMP a:.LOWORD(@UNKNOWN62)
-@UNKNOWN33:
-	CMP #$0014
-	BNE @UNKNOWN34
-	JMP a:.LOWORD(@UNKNOWN63)
-@UNKNOWN34:
-	CMP #$0018
-	BNE @UNKNOWN35
-	JMP a:.LOWORD(@UNKNOWN64)
-@UNKNOWN35:
-	CMP #$0019
-	BNE @UNKNOWN36
-	JMP a:.LOWORD(@UNKNOWN65)
-@UNKNOWN36:
-	CMP #$001A
-	BNE @UNKNOWN37
-	JMP a:.LOWORD(@UNKNOWN66)
-@UNKNOWN37:
-	CMP #$001B
-	BNE @UNKNOWN38
-	JMP a:.LOWORD(@UNKNOWN67)
-@UNKNOWN38:
-	CMP #$001C
-	BNE @UNKNOWN39
-	JMP a:.LOWORD(@UNKNOWN68)
-@UNKNOWN39:
-	CMP #$001D
-	BNE @UNKNOWN40
-	JMP a:.LOWORD(@UNKNOWN69)
-@UNKNOWN40:
-	CMP #$001E
-	BNE @UNKNOWN41
-	JMP a:.LOWORD(@UNKNOWN70)
-@UNKNOWN41:
-	CMP #$001F
-	BNE @UNKNOWN42
-	JMP a:.LOWORD(@UNKNOWN71)
-@UNKNOWN42:
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN43:
-	JSL PRINT_NEWLINE
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN44:
-	JSR a:.LOWORD(GET_TEXT_X)
-	CMP #$0000
-	BNE @UNKNOWN45
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN45:
-	JSL PRINT_NEWLINE
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN46:
-	LDX #$0000
-	LDA #$0001
-	JSR a:.LOWORD(CC_13_14)
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN47:
-	LDY #.LOWORD(CC_04)
-	STY $1E
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN48:
-	LDY #.LOWORD(CC_05)
-	STY $1E
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN49:
-	LDY #.LOWORD(CC_06)
-	STY $1E
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN50:
-	LDY #.LOWORD(CC_07)
-	STY $1E
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN51:
-	LDY #.LOWORD(CC_08)
-	STY $1E
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN52:
-	LDY #.LOWORD(CC_09)
-	STY $1E
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN53:
-	LDY #.LOWORD(CC_0A)
-	STY $1E
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN54:
-	LDY #.LOWORD(CC_0B)
-	STY $1E
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN55:
-	LDY #.LOWORD(CC_0C)
-	STY $1E
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN56:
-	LDY #.LOWORD(CC_0D)
-	STY $1E
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN57:
-	LDY #.LOWORD(CC_0E)
-	STY $1E
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN58:
-	JSR a:.LOWORD(INCREMENT_SECONDARY_MEMORY)
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN59:
-	LDY #.LOWORD(CC_10)
-	STY $1E
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN60:
-	LDA #$0001
-	JSR a:.LOWORD(SELECTION_MENU)
-	STA $06
-	STZ $08
-	LDA $06
-	STA $0E
-	LDA $08
-	STA $10
-	JSR a:.LOWORD(SET_WORKING_MEMORY)
-	JSR a:.LOWORD(UNKNOWN_C11383)
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN61:
-	JSR a:.LOWORD(CC_12)
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN62:
-	LDX #$0000
-	TXA
-	JSR a:.LOWORD(CC_13_14)
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN63:
-	LDX #$0001
-	TXA
-	JSR a:.LOWORD(CC_13_14)
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN64:
-	LDY #.LOWORD(CC_18_TREE)
-	STY $1E
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN65:
-	LDY #.LOWORD(CC_19_TREE)
-	STY $1E
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN66:
-	LDY #.LOWORD(CC_1A_TREE)
-	STY $1E
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN67:
-	LDY #.LOWORD(CC_1B_TREE)
-	STY $1E
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN68:
-	LDY #.LOWORD(CC_1C_TREE)
-	STY $1E
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN69:
-	LDY #.LOWORD(CC_1D_TREE)
-	STY $1E
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN70:
-	LDY #.LOWORD(CC_1E_TREE)
-	STY $1E
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN71:
-	LDY #.LOWORD(CC_1F_TREE)
-	STY $1E
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN72:
-	JSR a:.LOWORD(PRINT_LETTER)
-	JMP a:.LOWORD(@UNKNOWN2)
-@UNKNOWN73:
-	LDA $12
-	STA $02
-	LDY $02
-	LDA a:.LOWORD(RAM),Y
-	STA $06
-	LDA a:.LOWORD(RAM)+2,Y
-	STA $08
-	LDA $02
-	JSR a:.LOWORD(UNKNOWN_C1869D)
-	JSR a:.LOWORD(UNKNOWN_C14049)
-	LDA $06
-	STA $2A
-	LDA $08
-	STA $2C
-@UNKNOWN74:
-	PLD
-	RTL
+.INCLUDE "text/display_text.asm"
 
 GIVE_ITEM_TO_SPECIFIC_CHARACTER: ;$C18B2C
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
