@@ -6,7 +6,7 @@ earthbound.sfc: $(wildcard src/bank*.o) src/bank00-1.o src/bank00-2.o src/ram.o
 src/bank00-1.o: src/bank00-1.asm src/config.asm
 src/bank00-2.o: src/bank00-2.asm src/config.asm src/movementmacros.asm
 
-src/bank01.o: src/bank01.asm src/config.asm
+src/bank01.o: src/bank01.asm src/config.asm $(wildcard src/ccs/*.asm)
 
 src/bank02.o: src/bank02.asm src/config.asm src/movementmacros.asm $(wildcard src/bin/unknowns/C2*.bin)
 
