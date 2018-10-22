@@ -20266,8 +20266,7 @@ UNKNOWN_C3EF26: ;$C3EF26
 
 .INCLUDE "data/font_pointer_table.asm"
 
-UNKNOWN_C3F090: ;$C3F090
-	.INCBIN "src/bin/unknowns/C3F090.bin"
+.INCLUDE "data/psi_categories.asm"
 
 UNKNOWN_C3F0B0: ;$C3F0B0
 	.INCBIN "src/bin/unknowns/C3F0B0.bin"
