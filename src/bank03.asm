@@ -20332,8 +20332,14 @@ FONT_PTR_TABLE: ;$C3F054
 UNKNOWN_C3F090: ;$C3F090
 	.INCBIN "src/bin/unknowns/C3F090.bin"
 
-PSI_TARGET_TEXT: ;$C3F0B0
+UNKNOWN_C3F0B0: ;$C3F0B0
 	.INCBIN "src/bin/unknowns/C3F0B0.bin"
+
+.INCLUDE "data/psi_suffixes.asm"
+
+.INCLUDE "data/pp_cost_text.asm"
+
+.INCLUDE "data/psi_target_text.asm"
 
 UNKNOWN_C3F1EC: ;$C3F1EC
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY

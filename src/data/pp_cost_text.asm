@@ -1,0 +1,3 @@
+
+PP_COST_TEXT: ;$C3F11C
+	EBTEXT "PP Cost:"
