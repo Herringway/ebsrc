@@ -262,3 +262,16 @@
 	.byte 27 ;16
 	.word ;43
 .ENDSTRUCT
+
+.STRUCT item
+	name .byte 25 ;0
+	type .byte ;25
+	cost .word ;26
+	flags .byte ;28
+	effect .word ;29
+	strength .byte ;31
+	epi .byte ;32
+	ep .byte ;33
+	special .byte ;34
+	help_text .dword ;35
+.ENDSTRUCT
