@@ -34,7 +34,7 @@ src/bank0d.o: src/bank0d.asm
 
 src/bank0e.o: src/bank0e.asm $(wildcard src/bin/unknowns/CE*.bin)
 
-src/bank0f.o: src/bank0f.asm src/map_data/npc_config.asm $(wildcard src/bin/unknowns/CF*.bin)
+src/bank0f.o: src/bank0f.asm src/data/map/npc_config.asm $(wildcard src/bin/unknowns/CF*.bin)
 
 src/bank10.o: src/bank10.asm src/enemies/placement.asm $(wildcard src/bin/unknowns/D0*.bin)
 
@@ -44,7 +44,7 @@ src/bank16.o: src/bank16.asm $(wildcard src/bin/unknowns/D6*.bin)
 
 src/bank17.o: src/bank17.asm $(wildcard src/bin/unknowns/D7*.bin)
 
-src/bank18.o: src/bank18.asm $(wildcard src/map_data/tile_collision_pointers_*.asm) $(wildcard src/bin/unknowns/D8*.bin)
+src/bank18.o: src/bank18.asm $(wildcard src/data/map/tile_collision_pointers_*.asm) $(wildcard src/bin/unknowns/D8*.bin)
 
 src/bank1a.o: src/bank1a.asm $(wildcard src/bin/unknowns/DA*.bin)
 

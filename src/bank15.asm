@@ -43,9 +43,9 @@ EXP_TABLE: ;$D58F49
 CONDIMENT_TABLE: ;$D5EA77
 	.INCBIN "bin/unknowns/D5EA77.bin"
 
-.INCLUDE "map_data/teleport_destinations.asm"
+.INCLUDE "data/map/teleport_destinations.asm"
 
-.INCLUDE "map_data/hotspot_coordinates.asm"
+.INCLUDE "data/map/hotspot_coordinates.asm"
 
 TIMED_ITEM_TRANSFORMATION_TABLE: ;$D5F4BB
 	.INCBIN "bin/unknowns/D5F4BB.bin"
