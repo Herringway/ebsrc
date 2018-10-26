@@ -457,6 +457,264 @@ BATTLE_BACKGROUND_GFX_57: ;$CBCBAF
 BATTLE_BACKGROUND_GFX_29: ;$CBCBD2
 	.INCBIN"bin/battle_bgs/graphics/29.bin"
 
+BATTLE_BACKGROUND_PALETTE_113: ;$CBCBF4
+	.INCBIN "bin/battle_bgs/palettes/113.pal"
+
+BATTLE_BACKGROUND_PALETTE_112: ;$CBCC14
+	.INCBIN "bin/battle_bgs/palettes/112.pal"
+
+BATTLE_BACKGROUND_PALETTE_111: ;$CBCC34
+	.INCBIN "bin/battle_bgs/palettes/111.pal"
+
+BATTLE_BACKGROUND_PALETTE_110: ;$CBCC54
+	.INCBIN "bin/battle_bgs/palettes/110.pal"
+
+BATTLE_BACKGROUND_PALETTE_109: ;$CBCC74
+	.INCBIN "bin/battle_bgs/palettes/109.pal"
+
+BATTLE_BACKGROUND_PALETTE_107: ;$CBCC94
+	.INCBIN "bin/battle_bgs/palettes/107.pal"
+
+BATTLE_BACKGROUND_PALETTE_106: ;$CBCCB4
+	.INCBIN "bin/battle_bgs/palettes/106.pal"
+
+BATTLE_BACKGROUND_PALETTE_105: ;$CBCCD4
+	.INCBIN "bin/battle_bgs/palettes/105.pal"
+
+BATTLE_BACKGROUND_PALETTE_104: ;$CBCCF4
+	.INCBIN "bin/battle_bgs/palettes/104.pal"
+
+BATTLE_BACKGROUND_PALETTE_103: ;$CBCD14
+	.INCBIN "bin/battle_bgs/palettes/103.pal"
+
+BATTLE_BACKGROUND_PALETTE_101: ;$CBCD34
+	.INCBIN "bin/battle_bgs/palettes/101.pal"
+
+BATTLE_BACKGROUND_PALETTE_100: ;$CBCD54
+	.INCBIN "bin/battle_bgs/palettes/100.pal"
+
+BATTLE_BACKGROUND_PALETTE_99: ;$CBCD74
+	.INCBIN "bin/battle_bgs/palettes/99.pal"
+
+BATTLE_BACKGROUND_PALETTE_98: ;$CBCD94
+	.INCBIN "bin/battle_bgs/palettes/98.pal"
+
+BATTLE_BACKGROUND_PALETTE_97: ;$CBCDB4
+	.INCBIN "bin/battle_bgs/palettes/97.pal"
+
+BATTLE_BACKGROUND_PALETTE_96: ;$CBCDD4
+	.INCBIN "bin/battle_bgs/palettes/96.pal"
+
+BATTLE_BACKGROUND_PALETTE_93: ;$CBCDF4
+	.INCBIN "bin/battle_bgs/palettes/93.pal"
+
+BATTLE_BACKGROUND_PALETTE_92: ;$CBCE14
+	.INCBIN "bin/battle_bgs/palettes/92.pal"
+
+BATTLE_BACKGROUND_PALETTE_91: ;$CBCE34
+	.INCBIN "bin/battle_bgs/palettes/91.pal"
+
+BATTLE_BACKGROUND_PALETTE_90: ;$CBCE54
+	.INCBIN "bin/battle_bgs/palettes/90.pal"
+
+BATTLE_BACKGROUND_PALETTE_89: ;$CBCE74
+	.INCBIN "bin/battle_bgs/palettes/89.pal"
+
+BATTLE_BACKGROUND_PALETTE_88: ;$CBCE94
+	.INCBIN "bin/battle_bgs/palettes/88.pal"
+
+BATTLE_BACKGROUND_PALETTE_87: ;$CBCEB4
+	.INCBIN "bin/battle_bgs/palettes/87.pal"
+
+BATTLE_BACKGROUND_PALETTE_86: ;$CBCED4
+	.INCBIN "bin/battle_bgs/palettes/86.pal"
+
+BATTLE_BACKGROUND_PALETTE_85: ;$CBCEF4
+	.INCBIN "bin/battle_bgs/palettes/85.pal"
+
+BATTLE_BACKGROUND_PALETTE_84: ;$CBCF14
+	.INCBIN "bin/battle_bgs/palettes/84.pal"
+
+BATTLE_BACKGROUND_PALETTE_83: ;$CBCF34
+	.INCBIN "bin/battle_bgs/palettes/83.pal"
+
+BATTLE_BACKGROUND_PALETTE_82: ;$CBCF54
+	.INCBIN "bin/battle_bgs/palettes/82.pal"
+
+BATTLE_BACKGROUND_PALETTE_79: ;$CBCF74
+	.INCBIN "bin/battle_bgs/palettes/79.pal"
+
+BATTLE_BACKGROUND_PALETTE_77: ;$CBCF94
+	.INCBIN "bin/battle_bgs/palettes/77.pal"
+
+BATTLE_BACKGROUND_PALETTE_73: ;$CBCFB4
+	.INCBIN "bin/battle_bgs/palettes/73.pal"
+
+BATTLE_BACKGROUND_PALETTE_70: ;$CBCFD4
+	.INCBIN "bin/battle_bgs/palettes/70.pal"
+
+BATTLE_BACKGROUND_PALETTE_55: ;$CBCFF4
+	.INCBIN "bin/battle_bgs/palettes/55.pal"
+
+BATTLE_BACKGROUND_PALETTE_54: ;$CBD014
+	.INCBIN "bin/battle_bgs/palettes/54.pal"
+
+BATTLE_BACKGROUND_PALETTE_53: ;$CBD034
+	.INCBIN "bin/battle_bgs/palettes/53.pal"
+
+BATTLE_BACKGROUND_PALETTE_52: ;$CBD054
+	.INCBIN "bin/battle_bgs/palettes/52.pal"
+
+BATTLE_BACKGROUND_PALETTE_51: ;$CBD074
+	.INCBIN "bin/battle_bgs/palettes/51.pal"
+
+BATTLE_BACKGROUND_PALETTE_50: ;$CBD094
+	.INCBIN "bin/battle_bgs/palettes/50.pal"
+
+BATTLE_BACKGROUND_PALETTE_49: ;$CBD0B4
+	.INCBIN "bin/battle_bgs/palettes/49.pal"
+
+BATTLE_BACKGROUND_PALETTE_48: ;$CBD0D4
+	.INCBIN "bin/battle_bgs/palettes/48.pal"
+
+BATTLE_BACKGROUND_PALETTE_47: ;$CBD0F4
+	.INCBIN "bin/battle_bgs/palettes/47.pal"
+
+BATTLE_BACKGROUND_PALETTE_46: ;$CBD114
+	.INCBIN "bin/battle_bgs/palettes/46.pal"
+
+BATTLE_BACKGROUND_PALETTE_45: ;$CBD134
+	.INCBIN "bin/battle_bgs/palettes/45.pal"
+
+BATTLE_BACKGROUND_PALETTE_44: ;$CBD154
+	.INCBIN "bin/battle_bgs/palettes/44.pal"
+
+BATTLE_BACKGROUND_PALETTE_43: ;$CBD174
+	.INCBIN "bin/battle_bgs/palettes/43.pal"
+
+BATTLE_BACKGROUND_PALETTE_42: ;$CBD194
+	.INCBIN "bin/battle_bgs/palettes/42.pal"
+
+BATTLE_BACKGROUND_PALETTE_41: ;$CBD1B4
+	.INCBIN "bin/battle_bgs/palettes/41.pal"
+
+BATTLE_BACKGROUND_PALETTE_40: ;$CBD1D4
+	.INCBIN "bin/battle_bgs/palettes/40.pal"
+
+BATTLE_BACKGROUND_PALETTE_39: ;$CBD1F4
+	.INCBIN "bin/battle_bgs/palettes/39.pal"
+
+BATTLE_BACKGROUND_PALETTE_38: ;$CBD214
+	.INCBIN "bin/battle_bgs/palettes/38.pal"
+
+BATTLE_BACKGROUND_PALETTE_37: ;$CBD234
+	.INCBIN "bin/battle_bgs/palettes/37.pal"
+
+BATTLE_BACKGROUND_PALETTE_36: ;$CBD254
+	.INCBIN "bin/battle_bgs/palettes/36.pal"
+
+BATTLE_BACKGROUND_PALETTE_35: ;$CBD274
+	.INCBIN "bin/battle_bgs/palettes/35.pal"
+
+BATTLE_BACKGROUND_PALETTE_34: ;$CBD294
+	.INCBIN "bin/battle_bgs/palettes/34.pal"
+
+BATTLE_BACKGROUND_PALETTE_33: ;$CBD2B4
+	.INCBIN "bin/battle_bgs/palettes/33.pal"
+
+BATTLE_BACKGROUND_PALETTE_32: ;$CBD2D4
+	.INCBIN "bin/battle_bgs/palettes/32.pal"
+
+BATTLE_BACKGROUND_PALETTE_31: ;$CBD2F4
+	.INCBIN "bin/battle_bgs/palettes/31.pal"
+
+BATTLE_BACKGROUND_PALETTE_30: ;$CBD314
+	.INCBIN "bin/battle_bgs/palettes/30.pal"
+
+BATTLE_BACKGROUND_PALETTE_29: ;$CBD334
+	.INCBIN "bin/battle_bgs/palettes/29.pal"
+
+BATTLE_BACKGROUND_PALETTE_28: ;$CBD354
+	.INCBIN "bin/battle_bgs/palettes/28.pal"
+
+BATTLE_BACKGROUND_PALETTE_27: ;$CBD374
+	.INCBIN "bin/battle_bgs/palettes/27.pal"
+
+BATTLE_BACKGROUND_PALETTE_26: ;$CBD394
+	.INCBIN "bin/battle_bgs/palettes/26.pal"
+
+BATTLE_BACKGROUND_PALETTE_25: ;$CBD3B4
+	.INCBIN "bin/battle_bgs/palettes/25.pal"
+
+BATTLE_BACKGROUND_PALETTE_24: ;$CBD3D4
+	.INCBIN "bin/battle_bgs/palettes/24.pal"
+
+BATTLE_BACKGROUND_PALETTE_23: ;$CBD3F4
+	.INCBIN "bin/battle_bgs/palettes/23.pal"
+
+BATTLE_BACKGROUND_PALETTE_21: ;$CBD414
+	.INCBIN "bin/battle_bgs/palettes/21.pal"
+
+BATTLE_BACKGROUND_PALETTE_20: ;$CBD434
+	.INCBIN "bin/battle_bgs/palettes/20.pal"
+
+BATTLE_BACKGROUND_PALETTE_19: ;$CBD454
+	.INCBIN "bin/battle_bgs/palettes/19.pal"
+
+BATTLE_BACKGROUND_PALETTE_18: ;$CBD474
+	.INCBIN "bin/battle_bgs/palettes/18.pal"
+
+BATTLE_BACKGROUND_PALETTE_17: ;$CBD494
+	.INCBIN "bin/battle_bgs/palettes/17.pal"
+
+BATTLE_BACKGROUND_PALETTE_16: ;$CBD4B4
+	.INCBIN "bin/battle_bgs/palettes/16.pal"
+
+BATTLE_BACKGROUND_PALETTE_15: ;$CBD4D4
+	.INCBIN "bin/battle_bgs/palettes/15.pal"
+
+BATTLE_BACKGROUND_PALETTE_14: ;$CBD4F4
+	.INCBIN "bin/battle_bgs/palettes/14.pal"
+
+BATTLE_BACKGROUND_PALETTE_13: ;$CBD514
+	.INCBIN "bin/battle_bgs/palettes/13.pal"
+
+BATTLE_BACKGROUND_PALETTE_12: ;$CBD534
+	.INCBIN "bin/battle_bgs/palettes/12.pal"
+
+BATTLE_BACKGROUND_PALETTE_11: ;$CBD554
+	.INCBIN "bin/battle_bgs/palettes/11.pal"
+
+BATTLE_BACKGROUND_PALETTE_10: ;$CBD574
+	.INCBIN "bin/battle_bgs/palettes/10.pal"
+
+BATTLE_BACKGROUND_PALETTE_9: ;$CBD594
+	.INCBIN "bin/battle_bgs/palettes/9.pal"
+
+BATTLE_BACKGROUND_PALETTE_8: ;$CBD5B4
+	.INCBIN "bin/battle_bgs/palettes/8.pal"
+
+BATTLE_BACKGROUND_PALETTE_7: ;$CBD5D4
+	.INCBIN "bin/battle_bgs/palettes/7.pal"
+
+BATTLE_BACKGROUND_PALETTE_6: ;$CBD5F4
+	.INCBIN "bin/battle_bgs/palettes/6.pal"
+
+BATTLE_BACKGROUND_PALETTE_5: ;$CBD614
+	.INCBIN "bin/battle_bgs/palettes/5.pal"
+
+BATTLE_BACKGROUND_PALETTE_4: ;$CBD634
+	.INCBIN "bin/battle_bgs/palettes/4.pal"
+
+BATTLE_BACKGROUND_PALETTE_3: ;$CBD654
+	.INCBIN "bin/battle_bgs/palettes/3.pal"
+
+BATTLE_BACKGROUND_PALETTE_2: ;$CBD674
+	.INCBIN "bin/battle_bgs/palettes/2.pal"
+
+BATTLE_BACKGROUND_PALETTE_1: ;$CBD694
+	.INCBIN "bin/battle_bgs/palettes/1.pal"
+
 BATTLE_BACKGROUND_GFX_48: ;$CBD6B4
 	.INCBIN"bin/battle_bgs/graphics/48.bin"
 
@@ -477,6 +735,90 @@ BATTLE_BACKGROUND_GFX_49: ;$CBD72E
 
 BATTLE_BACKGROUND_GFX_67: ;$CBD73D
 	.INCBIN"bin/battle_bgs/graphics/67.bin"
+
+BATTLE_BACKGROUND_PALETTE_108: ;$CBD74A
+	.INCBIN "bin/battle_bgs/palettes/108.pal"
+
+BATTLE_BACKGROUND_PALETTE_102: ;$CBD752
+	.INCBIN "bin/battle_bgs/palettes/102.pal"
+
+BATTLE_BACKGROUND_PALETTE_95: ;$CBD75A
+	.INCBIN "bin/battle_bgs/palettes/95.pal"
+
+BATTLE_BACKGROUND_PALETTE_94: ;$CBD762
+	.INCBIN "bin/battle_bgs/palettes/94.pal"
+
+BATTLE_BACKGROUND_PALETTE_81: ;$CBD76A
+	.INCBIN "bin/battle_bgs/palettes/81.pal"
+
+BATTLE_BACKGROUND_PALETTE_80: ;$CBD772
+	.INCBIN "bin/battle_bgs/palettes/80.pal"
+
+BATTLE_BACKGROUND_PALETTE_78: ;$CBD77A
+	.INCBIN "bin/battle_bgs/palettes/78.pal"
+
+BATTLE_BACKGROUND_PALETTE_76: ;$CBD782
+	.INCBIN "bin/battle_bgs/palettes/76.pal"
+
+BATTLE_BACKGROUND_PALETTE_75: ;$CBD78A
+	.INCBIN "bin/battle_bgs/palettes/75.pal"
+
+BATTLE_BACKGROUND_PALETTE_74: ;$CBD792
+	.INCBIN "bin/battle_bgs/palettes/74.pal"
+
+BATTLE_BACKGROUND_PALETTE_72: ;$CBD79A
+	.INCBIN "bin/battle_bgs/palettes/72.pal"
+
+BATTLE_BACKGROUND_PALETTE_71: ;$CBD7A2
+	.INCBIN "bin/battle_bgs/palettes/71.pal"
+
+BATTLE_BACKGROUND_PALETTE_69: ;$CBD7AA
+	.INCBIN "bin/battle_bgs/palettes/69.pal"
+
+BATTLE_BACKGROUND_PALETTE_68: ;$CBD7B2
+	.INCBIN "bin/battle_bgs/palettes/68.pal"
+
+BATTLE_BACKGROUND_PALETTE_67: ;$CBD7BA
+	.INCBIN "bin/battle_bgs/palettes/67.pal"
+
+BATTLE_BACKGROUND_PALETTE_66: ;$CBD7C2
+	.INCBIN "bin/battle_bgs/palettes/66.pal"
+
+BATTLE_BACKGROUND_PALETTE_65: ;$CBD7CA
+	.INCBIN "bin/battle_bgs/palettes/65.pal"
+
+BATTLE_BACKGROUND_PALETTE_64: ;$CBD7D2
+	.INCBIN "bin/battle_bgs/palettes/64.pal"
+
+BATTLE_BACKGROUND_PALETTE_63: ;$CBD7DA
+	.INCBIN "bin/battle_bgs/palettes/63.pal"
+
+BATTLE_BACKGROUND_PALETTE_62: ;$CBD7E2
+	.INCBIN "bin/battle_bgs/palettes/62.pal"
+
+BATTLE_BACKGROUND_PALETTE_61: ;$CBD7EA
+	.INCBIN "bin/battle_bgs/palettes/61.pal"
+
+BATTLE_BACKGROUND_PALETTE_60: ;$CBD7F2
+	.INCBIN "bin/battle_bgs/palettes/60.pal"
+
+BATTLE_BACKGROUND_PALETTE_59: ;$CBD7FA
+	.INCBIN "bin/battle_bgs/palettes/59.pal"
+
+BATTLE_BACKGROUND_PALETTE_58: ;$CBD802
+	.INCBIN "bin/battle_bgs/palettes/58.pal"
+
+BATTLE_BACKGROUND_PALETTE_57: ;$CBD80A
+	.INCBIN "bin/battle_bgs/palettes/57.pal"
+
+BATTLE_BACKGROUND_PALETTE_56: ;$CBD812
+	.INCBIN "bin/battle_bgs/palettes/56.pal"
+
+BATTLE_BACKGROUND_PALETTE_22: ;$CBD81A
+	.INCBIN "bin/battle_bgs/palettes/22.pal"
+
+BATTLE_BACKGROUND_PALETTE_0: ;$CBD822
+	.INCBIN "bin/battle_bgs/palettes/0.pal"
 
 BATTLE_BACKGROUND_GFX_73: ;$CBD82A
 	.INCBIN"bin/battle_bgs/graphics/73.bin"

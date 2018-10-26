@@ -106,8 +106,7 @@ MAP_DATA_PALETTE_30: ;$DAF267
 MAP_DATA_PALETTE_31: ;$DAF4A7
 	.INCBIN"bin/maps/palettes/31.bin"
 
-MAP_DATA_UNKNOWN_PALETTE_PTR_TABLE: ;$DAFAA7
-	.INCBIN "bin/unknowns/DAFAA7.bin"
+.INCLUDE "data/map/unknown_map_palette_pointer_table.asm"
 
 AUDIO_PACK_111: ;$DAFB07
 	.INCBIN "bin/audiopacks/111.bin"

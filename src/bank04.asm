@@ -23,7 +23,7 @@
 
 .INCLUDE "unknown/C40B75.asm"
 
-.INCLUDE "data/footstep_sound_table.asm"
+.INCLUDE "data/map/footstep_sound_table.asm"
 
 UNKNOWN_C40BE8: ;$C40BE8
 	.INCBIN "src/bin/unknowns/C40BE8.bin"
