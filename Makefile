@@ -34,7 +34,7 @@ src/bank0d.o: src/bank0d.asm
 
 src/bank0e.o: src/bank0e.asm $(wildcard src/bin/unknowns/CE*.bin)
 
-src/bank0f.o: src/bank0f.asm src/data/map/npc_config.asm $(wildcard src/bin/unknowns/CF*.bin) src/data/map/overworld_event_music_table.asm
+src/bank0f.o: src/bank0f.asm src/data/map/npc_config.asm $(wildcard src/bin/unknowns/CF*.bin) src/data/map/overworld_event_music_table.asm src/data/map/door_config_table.asm src/data/map/sprite_placement_table.asm src/data/map/sprite_placement_pointer_table.asm src/data/map/door_data.asm
 
 src/bank10.o: src/bank10.asm src/enemies/placement.asm $(wildcard src/bin/unknowns/D0*.bin)
 
