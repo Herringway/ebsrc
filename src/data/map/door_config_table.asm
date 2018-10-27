@@ -3945,11 +3945,10 @@ DOOR_CONFIG_ENTRY_1072:
 	.WORD $0002
 		.BYTE $15, $0D, $02, $D1, $1E
 		.BYTE $15, $0E, $02, $D1, $1E
-;One less entry than the count indicates?
+;Two fewer entries than the count indicates?
 DOOR_CONFIG_ENTRY_1073:
 	.WORD $0003
 		.BYTE $16, $1E, $02, $DC, $1E
-		.BYTE $00, $00, $00, $00, $00
 DOOR_CONFIG_ENTRY_1074:
 	.WORD $0000
 DOOR_CONFIG_ENTRY_1075:
