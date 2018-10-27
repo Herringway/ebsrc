@@ -1,11 +1,9 @@
 .SEGMENT "BANK10"
 .INCLUDE "common.asm"
 
-DOOR_POINTER_TABLE: ;$D00000
-	.INCBIN "bin/unknowns/D00000.bin"
+.INCLUDE "data/map/door_pointer_table.asm"
 
-SCREEN_TRANSITION_CONFIG_TABLE: ;$D01400
-	.INCBIN "bin/unknowns/D01400.bin"
+.INCLUDE "data/screen_transition_config_table.asm"
 
 .INCLUDE "data/event_control_ptr_table.asm"
 
