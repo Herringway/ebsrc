@@ -1,0 +1,10 @@
+
+MOVEMENT_CODE_03: ;$C0964D
+	LDA [$80],Y
+	TAX
+	INY
+	INY
+	LDA [$80],Y
+	STA $82
+	TXY
+	RTS

@@ -1,0 +1,5 @@
+
+MOVEMENT_CODE_19: ;$C09649
+	LDA [$80],Y
+	TAY
+	RTS
