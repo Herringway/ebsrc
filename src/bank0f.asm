@@ -1,8 +1,6 @@
 .SEGMENT "BANK0F"
 .INCLUDE "common.asm"
-
-DOOR_DEST_TABLE_1: ;$CF0000
-	.INCBIN "bin/unknowns/CF0000.bin"
+.INCLUDE "config.asm"
 
 .INCLUDE "data/map/door_data.asm"
 
