@@ -1,0 +1,6 @@
+
+UNKNOWN_C09ACC: ;$C09ACC
+	LDA ($8C)
+	ORA $90
+	STA ($8C)
+	RTS
