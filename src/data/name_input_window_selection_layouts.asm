@@ -1,0 +1,13 @@
+
+NAME_INPUT_WINDOW_SELECTION_LAYOUT_0: ;$EFA460
+	.INCBIN "bin/name_input_layouts/0.bin"
+NAME_INPUT_WINDOW_SELECTION_LAYOUT_1: ;$EFA4E3
+	.INCBIN "bin/name_input_layouts/1.bin"
+NAME_INPUT_WINDOW_SELECTION_LAYOUT_2: ;$EFA566
+	.INCBIN "bin/name_input_layouts/2.bin"
+NAME_INPUT_WINDOW_SELECTION_LAYOUT_3: ;$EFA5E9
+	.INCBIN "bin/name_input_layouts/3.bin"
+NAME_INPUT_WINDOW_SELECTION_LAYOUT_4: ;$EFA66C
+	.INCBIN "bin/name_input_layouts/4.bin"
+NAME_INPUT_WINDOW_SELECTION_LAYOUT_5: ;$EFA6A7
+	.INCBIN "bin/name_input_layouts/5.bin"

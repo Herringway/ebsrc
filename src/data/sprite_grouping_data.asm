@@ -1,0 +1,3 @@
+
+SPRITE_GROUPING_DATA: ;$EF1A7F
+	.INCBIN "src/bin/unknowns/EF1A7F.bin"

@@ -1,0 +1,5 @@
+
+TILESET_ANIMATION_PROPERTIES_7: ;$EF12C2
+	.BYTE 2
+	.BYTE $05, $31, $80, $02, $20, $00, $10, $00
+	.BYTE $04, $12, $20, $01, $A0, $0C, $50, $01

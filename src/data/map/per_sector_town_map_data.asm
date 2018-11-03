@@ -1,0 +1,3 @@
+
+MAP_DATA_PER_SECTOR_TOWN_MAP_DATA: ;$EFA70F
+	.INCBIN "src/bin/unknowns/EFA70F.bin"
