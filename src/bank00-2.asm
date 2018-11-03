@@ -14,7 +14,7 @@
 
 .INCLUDE "system/irq_nmi.asm"
 
-.INCLUDE "unknown/C08391.asm"
+.INCLUDE "system/test_sram_size.asm"
 
 .INCLUDE "unknown/C083B8.asm"
 
