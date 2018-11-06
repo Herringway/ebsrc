@@ -1,3 +1,3 @@
 
 UNKNOWN_C3FDB5: ;$C3FDB5
-	.INCBIN "src/bin/unknowns/C3FDB5.bin"
+	.BYTE $80, $01, $90, $01, $A0, $01, $B0, $01
