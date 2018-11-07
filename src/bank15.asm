@@ -36,19 +36,17 @@ NPC_AI_TABLE: ;$D58F23
 EXP_TABLE: ;$D58F49
 	.INCBIN "bin/unknowns/D58F49.bin"
 
-.INCLUDE "enemies/configuration.asm"
+.INCLUDE "data/battle/enemies.asm"
 
 .INCLUDE "data/stats_growth_vars.asm"
 
-CONDIMENT_TABLE: ;$D5EA77
-	.INCBIN "bin/unknowns/D5EA77.bin"
+.INCLUDE "data/condiment_table.asm"
 
 .INCLUDE "data/map/teleport_destinations.asm"
 
 .INCLUDE "data/map/hotspot_coordinates.asm"
 
-TIMED_ITEM_TRANSFORMATION_TABLE: ;$D5F4BB
-	.INCBIN "bin/unknowns/D5F4BB.bin"
+.INCLUDE "data/timed_item_transformation_table.asm"
 
 .INCLUDE "data/dont_care_names.asm"
 

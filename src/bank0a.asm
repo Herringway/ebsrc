@@ -61,14 +61,14 @@ BATTLE_BACKGROUND_GFX_56: ;$CAD755
 BATTLE_BACKGROUND_GFX_90: ;$CAD79E
 	.INCBIN"bin/battle_bgs/graphics/90.bin"
 
-.INCLUDE "data/battle_backgrounds/graphics_pointers.asm"
+.INCLUDE "data/battle/backgrounds/graphics_pointers.asm"
 
-.INCLUDE "data/battle_backgrounds/arrangement_pointers.asm"
+.INCLUDE "data/battle/backgrounds/arrangement_pointers.asm"
 
-.INCLUDE "data/battle_backgrounds/palette_pointers.asm"
+.INCLUDE "data/battle/backgrounds/palette_pointers.asm"
 
-.INCLUDE "data/battle_backgrounds/config_table.asm"
+.INCLUDE "data/battle/backgrounds/config_table.asm"
 
-.INCLUDE "data/battle_backgrounds/scrolling_table.asm"
+.INCLUDE "data/battle/backgrounds/scrolling_table.asm"
 
-.INCLUDE "data/battle_backgrounds/distortion_table.asm"
+.INCLUDE "data/battle/backgrounds/distortion_table.asm"

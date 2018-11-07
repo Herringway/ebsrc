@@ -32,6 +32,13 @@
     STA var+2
 .endmacro
 
+.macro LOADPTR_REVERSE ptr, var
+    LDA #.HIWORD(ptr)
+    STA var
+    LDA #.LOWORD(ptr)
+    STA var+2
+.endmacro
+
 .macro LOADPTRPTR ptr, var
     LDA .LOWORD(ptr)
     STA var

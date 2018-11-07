@@ -8,7 +8,7 @@ src/bank00-2.o: src/bank00-2.asm src/config.asm src/movementmacros.asm
 
 src/bank01.o: src/bank01.asm src/config.asm $(wildcard src/text/ccs/*.asm)
 
-src/bank02.o: src/bank02.asm src/config.asm src/movementmacros.asm $(wildcard src/bin/unknowns/C2*.bin)
+src/bank02.o: src/bank02.asm src/config.asm src/movementmacros.asm
 
 src/bank03.o: src/bank03.asm src/config.asm src/movementmacros.asm $(wildcard src/bin/unknowns/C3*.bin)
 
@@ -35,8 +35,6 @@ src/bank0d.o: src/bank0d.asm
 src/bank0e.o: src/bank0e.asm $(wildcard src/bin/unknowns/CE*.bin)
 
 src/bank0f.o: src/bank0f.asm src/data/map/npc_config.asm $(wildcard src/bin/unknowns/CF*.bin) src/data/map/overworld_event_music_table.asm src/data/map/door_config_table.asm src/data/map/sprite_placement_table.asm src/data/map/sprite_placement_pointer_table.asm src/data/map/door_data.asm
-
-src/bank10.o: src/bank10.asm src/enemies/placement.asm $(wildcard src/bin/unknowns/D0*.bin)
 
 src/bank15.o: src/bank15.asm $(wildcard src/bin/unknowns/D5*.bin)
 
