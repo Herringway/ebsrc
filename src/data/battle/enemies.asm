@@ -42,7 +42,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 0 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -91,7 +91,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $62 ;Item dropped
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -140,7 +140,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -189,7 +189,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
-  .BYTE $07 ;Item dropped
+  .BYTE ITEM::BROKEN_SPRAY_CAN ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -238,7 +238,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $7F ;Item dropped
+  .BYTE ITEM::WET_TOWEL ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -287,7 +287,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 1 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $05 ;Item drop rate
-  .BYTE $58 ;Item dropped
+  .BYTE ITEM::COOKIE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -336,7 +336,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
-  .BYTE $77 ;Item dropped
+  .BYTE ITEM::SUGAR_PACKET ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -385,7 +385,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 1 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
-  .BYTE $76 ;Item dropped
+  .BYTE ITEM::KETCHUP_PACKET ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -434,7 +434,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
-  .BYTE $96 ;Item dropped
+  .BYTE ITEM::RUST_PROMOTER ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -483,7 +483,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 1 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $66 ;Item dropped
+  .BYTE ITEM::CROISSANT ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -532,7 +532,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
-  .BYTE $7A ;Item dropped
+  .BYTE ITEM::SPRIG_OF_PARSLEY ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -581,7 +581,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $9F ;Item dropped
+  .BYTE ITEM::SUDDEN_GUTS_PILL ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -630,7 +630,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 1 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $5F ;Item dropped
+  .BYTE ITEM::PIZZA ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -679,7 +679,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
-  .BYTE $94 ;Item dropped
+  .BYTE ITEM::SUPER_BOMB ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -728,7 +728,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
-  .BYTE $94 ;Item dropped
+  .BYTE ITEM::SUPER_BOMB ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -777,7 +777,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
-  .BYTE $9C ;Item dropped
+  .BYTE ITEM::PHARAOHS_CURSE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -826,7 +826,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $9C ;Item dropped
+  .BYTE ITEM::PHARAOHS_CURSE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -875,7 +875,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $9F ;Item dropped
+  .BYTE ITEM::SUDDEN_GUTS_PILL ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -924,7 +924,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $6E ;Item dropped
+  .BYTE ITEM::BOTTLE_OF_WATER ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -973,7 +973,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $64 ;Item dropped
+  .BYTE ITEM::BRAIN_FOOD_LUNCH ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -1022,7 +1022,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $F5 ;Item dropped
+  .BYTE ITEM::LUXURY_JERKY ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -1071,7 +1071,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $01 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -1120,7 +1120,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $6C ;Item dropped
+  .BYTE ITEM::PROTEIN_DRINK ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -1169,7 +1169,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
-  .BYTE $6C ;Item dropped
+  .BYTE ITEM::PROTEIN_DRINK ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -1218,7 +1218,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
-  .BYTE $9A ;Item dropped
+  .BYTE ITEM::TOOTHBRUSH ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -1267,7 +1267,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
-  .BYTE $8C ;Item dropped
+  .BYTE ITEM::RULER ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -1316,7 +1316,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -1365,7 +1365,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -1414,7 +1414,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $02 ;Item dropped
+  .BYTE ITEM::TEDDY_BEAR ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -1463,7 +1463,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $03 ;Item dropped
+  .BYTE ITEM::SUPER_PLUSH_BEAR ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -1512,7 +1512,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $66 ;Item dropped
+  .BYTE ITEM::CROISSANT ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -1561,7 +1561,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $6E ;Item dropped
+  .BYTE ITEM::BOTTLE_OF_WATER ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -1610,7 +1610,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $9B ;Item dropped
+  .BYTE ITEM::HANDBAG_STRAP ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -1659,7 +1659,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
-  .BYTE $9B ;Item dropped
+  .BYTE ITEM::HANDBAG_STRAP ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -1708,7 +1708,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -1757,7 +1757,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $F5 ;Item dropped
+  .BYTE ITEM::LUXURY_JERKY ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -1806,7 +1806,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $21 ;Item dropped
+  .BYTE ITEM::MAGIC_FRY_PAN ;Item dropped
   .BYTE $04 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -1855,7 +1855,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -1904,7 +1904,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $E9 ;Item dropped
+  .BYTE ITEM::DOUBLE_BURGER ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -1953,7 +1953,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -2002,7 +2002,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -2051,7 +2051,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -2100,7 +2100,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $04 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -2149,7 +2149,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 1 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $06 ;Item drop rate
-  .BYTE $E8 ;Item dropped
+  .BYTE ITEM::CUP_OF_COFFEE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -2198,7 +2198,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 1 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $62 ;Item dropped
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -2247,7 +2247,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $93 ;Item dropped
+  .BYTE ITEM::BOMB ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -2296,7 +2296,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $92 ;Item dropped
+  .BYTE ITEM::MULTI_BOTTLE_ROCKET ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -2345,7 +2345,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 1 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
-  .BYTE $7B ;Item dropped
+  .BYTE ITEM::JAR_OF_HOT_SAUCE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -2394,7 +2394,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $F2 ;Item dropped
+  .BYTE ITEM::BEEF_JERKY ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -2443,7 +2443,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -2492,7 +2492,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $1A ;Item dropped
+  .BYTE ITEM::GUTSY_BAT ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -2541,7 +2541,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $FA ;Item dropped
+  .BYTE ITEM::METEORNIUM ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -2590,7 +2590,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $BA ;Item dropped
+  .BYTE ITEM::METEOTITE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -2639,7 +2639,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $BA ;Item dropped
+  .BYTE ITEM::METEOTITE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -2688,7 +2688,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $04 ;Item drop rate
-  .BYTE $5A ;Item dropped
+  .BYTE ITEM::HAMBURGER ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -2737,7 +2737,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $58 ;Item dropped
+  .BYTE ITEM::COOKIE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -2786,7 +2786,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
-  .BYTE $A8 ;Item dropped
+  .BYTE ITEM::CHICK ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -2835,7 +2835,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 1 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $7B ;Item dropped
+  .BYTE ITEM::JAR_OF_HOT_SAUCE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -2884,7 +2884,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $E9 ;Item dropped
+  .BYTE ITEM::DOUBLE_BURGER ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -2933,7 +2933,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $81 ;Item dropped
+  .BYTE ITEM::SECRET_HERB ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -2982,7 +2982,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
-  .BYTE $81 ;Item dropped
+  .BYTE ITEM::SECRET_HERB ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -3031,7 +3031,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 1 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $91 ;Item dropped
+  .BYTE ITEM::BIG_BOTTLE_ROCKET ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -3080,7 +3080,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $92 ;Item dropped
+  .BYTE ITEM::MULTI_BOTTLE_ROCKET ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -3129,7 +3129,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
-  .BYTE $92 ;Item dropped
+  .BYTE ITEM::MULTI_BOTTLE_ROCKET ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -3178,7 +3178,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $5F ;Item dropped
+  .BYTE ITEM::PIZZA ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -3227,7 +3227,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 1 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $70 ;Item dropped
+  .BYTE ITEM::VIAL_OF_SERUM ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -3276,7 +3276,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
-  .BYTE $76 ;Item dropped
+  .BYTE ITEM::KETCHUP_PACKET ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -3325,7 +3325,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $64 ;Item dropped
+  .BYTE ITEM::BRAIN_FOOD_LUNCH ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -3374,7 +3374,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $23 ;Item dropped
+  .BYTE ITEM::SWORD_OF_KINGS ;Item dropped
   .BYTE $02 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -3423,7 +3423,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $50 ;Item dropped
+  .BYTE ITEM::GODDESS_RIBBON ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -3472,7 +3472,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $FA ;Item dropped
+  .BYTE ITEM::METEORNIUM ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -3521,7 +3521,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $10 ;Item dropped
+  .BYTE ITEM::BROKEN_ANTENNA ;Item dropped
   .BYTE $01 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -3570,7 +3570,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $9F ;Item dropped
+  .BYTE ITEM::SUDDEN_GUTS_PILL ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -3619,7 +3619,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -3668,7 +3668,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $02 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -3717,7 +3717,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $62 ;Item dropped
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
   .BYTE $02 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -3766,7 +3766,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $5A ;Item dropped
+  .BYTE ITEM::HAMBURGER ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -3815,7 +3815,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $81 ;Item dropped
+  .BYTE ITEM::SECRET_HERB ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -3864,7 +3864,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $90 ;Item dropped
+  .BYTE ITEM::BOTTLE_ROCKET ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -3913,7 +3913,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $5B ;Item dropped
+  .BYTE ITEM::BOILED_EGG ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -3962,7 +3962,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $E9 ;Item dropped
+  .BYTE ITEM::DOUBLE_BURGER ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -4011,7 +4011,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $62 ;Item dropped
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -4060,7 +4060,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
-  .BYTE $C8 ;Item dropped
+  .BYTE ITEM::VIPER ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -4109,7 +4109,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $04 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -4158,7 +4158,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -4207,7 +4207,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $BA ;Item dropped
+  .BYTE ITEM::METEOTITE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -4256,7 +4256,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $BA ;Item dropped
+  .BYTE ITEM::METEOTITE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -4305,7 +4305,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
-  .BYTE $62 ;Item dropped
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -4354,7 +4354,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 0 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
-  .BYTE $5C ;Item dropped
+  .BYTE ITEM::FRESH_EGG ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -4403,7 +4403,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 1 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $62 ;Item dropped
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -4452,7 +4452,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -4501,7 +4501,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 1 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $9F ;Item dropped
+  .BYTE ITEM::SUDDEN_GUTS_PILL ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -4550,7 +4550,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $9F ;Item dropped
+  .BYTE ITEM::SUDDEN_GUTS_PILL ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -4599,7 +4599,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -4648,7 +4648,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $BA ;Item dropped
+  .BYTE ITEM::METEOTITE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -4697,7 +4697,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $07 ;Item drop rate
-  .BYTE $1B ;Item dropped
+  .BYTE ITEM::CASEY_BAT ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -4746,7 +4746,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $7E ;Item dropped
+  .BYTE ITEM::JAR_OF_DELISAUCE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -4795,7 +4795,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $82 ;Item dropped
+  .BYTE ITEM::HORN_OF_LIFE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -4844,7 +4844,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $62 ;Item dropped
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
   .BYTE $06 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -4893,7 +4893,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $62 ;Item dropped
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
   .BYTE $06 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -4942,7 +4942,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $62 ;Item dropped
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -4991,7 +4991,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
-  .BYTE $C7 ;Item dropped
+  .BYTE ITEM::SNAKE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -5040,7 +5040,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -5089,7 +5089,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $82 ;Item dropped
+  .BYTE ITEM::HORN_OF_LIFE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -5138,7 +5138,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $5D ;Item dropped
+  .BYTE ITEM::PICNIC_LUNCH ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -5187,7 +5187,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $F2 ;Item dropped
+  .BYTE ITEM::BEEF_JERKY ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -5236,7 +5236,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $62 ;Item dropped
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -5285,7 +5285,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $62 ;Item dropped
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -5334,7 +5334,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
-  .BYTE $09 ;Item dropped
+  .BYTE ITEM::BROKEN_IRON ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -5383,7 +5383,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $61 ;Item dropped
+  .BYTE ITEM::LARGE_PIZZA ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -5432,7 +5432,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -5481,7 +5481,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 1 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $93 ;Item dropped
+  .BYTE ITEM::BOMB ;Item dropped
   .BYTE $06 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -5530,7 +5530,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $05 ;Item drop rate
-  .BYTE $7C ;Item dropped
+  .BYTE ITEM::SALT_PACKET ;Item dropped
   .BYTE $06 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -5579,7 +5579,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 1 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $67 ;Item dropped
+  .BYTE ITEM::BREAD_ROLL ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -5628,7 +5628,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $97 ;Item dropped
+  .BYTE ITEM::RUST_PROMOTER_DX ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -5677,7 +5677,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $94 ;Item dropped
+  .BYTE ITEM::SUPER_BOMB ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -5726,7 +5726,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $02 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -5775,7 +5775,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
-  .BYTE $78 ;Item dropped
+  .BYTE ITEM::TIN_OF_COCOA ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -5824,7 +5824,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $80 ;Item dropped
+  .BYTE ITEM::REFRESHING_HERB ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -5873,7 +5873,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $F2 ;Item dropped
+  .BYTE ITEM::BEEF_JERKY ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -5922,7 +5922,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $82 ;Item dropped
+  .BYTE ITEM::HORN_OF_LIFE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -5971,7 +5971,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 1 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $67 ;Item dropped
+  .BYTE ITEM::BREAD_ROLL ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -6020,7 +6020,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $93 ;Item dropped
+  .BYTE ITEM::BOMB ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -6069,7 +6069,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $E9 ;Item dropped
+  .BYTE ITEM::DOUBLE_BURGER ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -6118,7 +6118,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 1 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $80 ;Item dropped
+  .BYTE ITEM::REFRESHING_HERB ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -6167,7 +6167,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $06 ;Item drop rate
-  .BYTE $8E ;Item dropped
+  .BYTE ITEM::MUMMY_WRAP ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -6216,7 +6216,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $06 ;Item drop rate
-  .BYTE $8E ;Item dropped
+  .BYTE ITEM::MUMMY_WRAP ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -6265,7 +6265,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
-  .BYTE $E1 ;Item dropped
+  .BYTE ITEM::SKIP_SANDWICH_DX ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -6314,7 +6314,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -6363,7 +6363,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $59 ;Item dropped
+  .BYTE ITEM::BAG_OF_FRIES ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -6412,7 +6412,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -6461,7 +6461,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -6510,7 +6510,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -6559,7 +6559,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -6608,7 +6608,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $07 ;Item drop rate
-  .BYTE $5A ;Item dropped
+  .BYTE ITEM::HAMBURGER ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -6657,7 +6657,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $05 ;Item drop rate
-  .BYTE $A8 ;Item dropped
+  .BYTE ITEM::CHICK ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -6706,7 +6706,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $89 ;Item dropped
+  .BYTE ITEM::XTERMINATOR_SPRAY ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -6755,7 +6755,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -6804,7 +6804,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $CF ;Item dropped
+  .BYTE ITEM::MAGIC_TART ;Item dropped
   .BYTE $06 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -6853,7 +6853,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 0 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $05 ;Item drop rate
-  .BYTE $58 ;Item dropped
+  .BYTE ITEM::COOKIE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -6902,7 +6902,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $91 ;Item dropped
+  .BYTE ITEM::BIG_BOTTLE_ROCKET ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -6951,7 +6951,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -7000,7 +7000,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $62 ;Item dropped
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -7049,7 +7049,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $3E ;Item dropped
+  .BYTE ITEM::STAR_PENDANT ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -7098,7 +7098,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $66 ;Item dropped
+  .BYTE ITEM::CROISSANT ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -7147,7 +7147,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
-  .BYTE $7C ;Item dropped
+  .BYTE ITEM::SALT_PACKET ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -7196,7 +7196,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $01 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -7245,7 +7245,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $BA ;Item dropped
+  .BYTE ITEM::METEOTITE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -7294,7 +7294,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $F4 ;Item dropped
+  .BYTE ITEM::SPICY_JERKY ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -7343,7 +7343,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $5D ;Item dropped
+  .BYTE ITEM::PICNIC_LUNCH ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -7392,7 +7392,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $E0 ;Item dropped
+  .BYTE ITEM::SKIP_SANDWICH ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -7441,7 +7441,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $E1 ;Item dropped
+  .BYTE ITEM::SKIP_SANDWICH_DX ;Item dropped
   .BYTE $03 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -7490,7 +7490,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
-  .BYTE $79 ;Item dropped
+  .BYTE ITEM::CARTON_OF_CREAM ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -7539,7 +7539,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $94 ;Item dropped
+  .BYTE ITEM::SUPER_BOMB ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -7588,7 +7588,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $FA ;Item dropped
+  .BYTE ITEM::METEORNIUM ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -7637,7 +7637,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $94 ;Item dropped
+  .BYTE ITEM::SUPER_BOMB ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -7686,7 +7686,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $03 ;Item dropped
+  .BYTE ITEM::SUPER_PLUSH_BEAR ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -7735,7 +7735,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 1 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $5B ;Item dropped
+  .BYTE ITEM::BOILED_EGG ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -7784,7 +7784,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $5F ;Item dropped
+  .BYTE ITEM::PIZZA ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -7833,7 +7833,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $07 ;Item drop rate
-  .BYTE $58 ;Item dropped
+  .BYTE ITEM::COOKIE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -7882,7 +7882,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 0 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -7931,7 +7931,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 0 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -7980,7 +7980,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 0 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -8029,7 +8029,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 0 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -8078,7 +8078,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 0 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -8127,7 +8127,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 0 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -8176,7 +8176,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 0 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -8225,7 +8225,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 0 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -8274,7 +8274,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 0 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -8323,7 +8323,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -8372,7 +8372,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 0 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $62 ;Item dropped
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -8421,7 +8421,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 0 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -8470,7 +8470,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -8519,7 +8519,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -8568,7 +8568,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -8617,7 +8617,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $21 ;Item dropped
+  .BYTE ITEM::MAGIC_FRY_PAN ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -8666,7 +8666,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -8715,7 +8715,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $E9 ;Item dropped
+  .BYTE ITEM::DOUBLE_BURGER ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -8764,7 +8764,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -8813,7 +8813,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -8862,7 +8862,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -8911,7 +8911,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -8960,7 +8960,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -9009,7 +9009,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $1A ;Item dropped
+  .BYTE ITEM::GUTSY_BAT ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -9058,7 +9058,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $64 ;Item dropped
+  .BYTE ITEM::BRAIN_FOOD_LUNCH ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -9107,7 +9107,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $23 ;Item dropped
+  .BYTE ITEM::SWORD_OF_KINGS ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -9156,7 +9156,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $50 ;Item dropped
+  .BYTE ITEM::GODDESS_RIBBON ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -9205,7 +9205,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -9254,7 +9254,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $62 ;Item dropped
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -9303,7 +9303,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $5A ;Item dropped
+  .BYTE ITEM::HAMBURGER ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -9352,7 +9352,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -9401,7 +9401,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -9450,7 +9450,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -9499,7 +9499,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $BA ;Item dropped
+  .BYTE ITEM::METEOTITE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -9548,7 +9548,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $07 ;Item drop rate
-  .BYTE $1B ;Item dropped
+  .BYTE ITEM::CASEY_BAT ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -9597,7 +9597,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $62 ;Item dropped
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -9646,7 +9646,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
-  .BYTE $C7 ;Item dropped
+  .BYTE ITEM::SNAKE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -9695,7 +9695,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -9744,7 +9744,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $82 ;Item dropped
+  .BYTE ITEM::HORN_OF_LIFE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -9793,7 +9793,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -9842,7 +9842,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -9891,7 +9891,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -9940,7 +9940,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -9989,7 +9989,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -10038,7 +10038,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -10087,7 +10087,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -10136,7 +10136,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $94 ;Item dropped
+  .BYTE ITEM::SUPER_BOMB ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -10185,7 +10185,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
-  .BYTE $62 ;Item dropped
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -10234,7 +10234,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
@@ -10283,7 +10283,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 1 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -10332,7 +10332,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 1 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $06 ;Item drop rate
-  .BYTE $58 ;Item dropped
+  .BYTE ITEM::COOKIE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -10381,7 +10381,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 1 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $06 ;Item drop rate
-  .BYTE $67 ;Item dropped
+  .BYTE ITEM::BREAD_ROLL ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -10430,7 +10430,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $07 ;Item drop rate
-  .BYTE $5D ;Item dropped
+  .BYTE ITEM::PICNIC_LUNCH ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -10479,7 +10479,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -10528,7 +10528,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -10577,7 +10577,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 0 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -10626,7 +10626,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 0 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -10675,7 +10675,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 0 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -10724,7 +10724,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -10773,7 +10773,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -10822,7 +10822,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -10871,7 +10871,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -10920,7 +10920,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 2 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
-  .BYTE $E0 ;Item dropped
+  .BYTE ITEM::SKIP_SANDWICH ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
@@ -10969,7 +10969,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 1 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -11018,7 +11018,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 1 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
-  .BYTE $BA ;Item dropped
+  .BYTE ITEM::METEOTITE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -11067,7 +11067,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 0 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -11116,7 +11116,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -11165,7 +11165,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 1 ;IQ
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -11214,7 +11214,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $02 ;Item drop rate
-  .BYTE $5B ;Item dropped
+  .BYTE ITEM::BOILED_EGG ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
@@ -11263,7 +11263,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
@@ -11312,7 +11312,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE 3 ;IQ
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
-  .BYTE $00 ;Item dropped
+  .BYTE ITEM::NONE ;Item dropped
   .BYTE $00 ;Initial status
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
