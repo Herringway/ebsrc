@@ -7664,7 +7664,7 @@ CHANGE_EQUIPPED_WEAPON: ;$C4577D
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT) + char_struct::equipment
+	ADC #.LOWORD(CHAR_STRUCT)+char_struct::equipment+EQUIPMENT_SLOT::WEAPON
 	TAX
 	LDA a:.LOWORD(RAM),X
 	AND #$00FF
@@ -7705,7 +7705,7 @@ CHANGE_EQUIPPED_BODY: ;$C457CA
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT) + char_struct::equipment + 1
+	ADC #.LOWORD(CHAR_STRUCT)+char_struct::equipment+EQUIPMENT_SLOT::BODY
 	TAX
 	LDA a:.LOWORD(RAM),X
 	AND #$00FF
@@ -7745,7 +7745,7 @@ CHANGE_EQUIPPED_ARMS: ;$C45815
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT) + char_struct::equipment + 2
+	ADC #.LOWORD(CHAR_STRUCT)+char_struct::equipment+EQUIPMENT_SLOT::ARMS
 	TAX
 	LDA a:.LOWORD(RAM),X
 	AND #$00FF
@@ -7785,7 +7785,7 @@ CHANGE_EQUIPPED_OTHER: ;$C45860
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT) + char_struct::equipment + 3
+	ADC #.LOWORD(CHAR_STRUCT)+char_struct::equipment+EQUIPMENT_SLOT::OTHER
 	TAX
 	LDA a:.LOWORD(RAM),X
 	AND #$00FF
