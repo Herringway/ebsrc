@@ -1,6 +1,8 @@
 all: earthbound.sfc
 
-earthbound.sfc: $(wildcard src/bank*.o) src/bank00-1.o src/bank00-2.o src/ram.o
+USSRCS = $(wildcard src/bank*.asm) src/bank00-1.asm src/bank00-2.asm src/ram.asm
+
+earthbound.sfc: $(patsubst %.asm, %.o, $(USSRCS))
 	ld65 -o $@ -C snes.cfg $^
 
 src/bank00-1.o: src/bank00-1.asm src/config.asm
