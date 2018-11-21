@@ -1,0 +1,5 @@
+
+RAND_0_7: ;$C0A63B
+	JSL RAND
+	AND #$0007
+	RTL
