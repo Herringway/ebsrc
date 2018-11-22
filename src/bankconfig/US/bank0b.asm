@@ -901,8 +901,7 @@ BATTLE_BACKGROUND_GFX_71: ;$CBD894
 BATTLE_BACKGROUND_GFX_0: ;$CBD897
 	.INCBIN"bin/battle_bgs/graphics/0.bin"
 
-BTL_ENTRY_BG_TABLE: ;$CBD89A
-	.INCBIN "bin/unknowns/CBD89A.bin"
+.INCLUDE "data/battle/background_layer_table.asm"
 
 AUDIO_PACK_66: ;$CBE02A
 	.INCBIN "bin/audiopacks/66.bin"

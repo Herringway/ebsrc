@@ -1,0 +1,3 @@
+
+UNKNOWN_E1AE7C: ;$E1AE7C
+	.BYTE $01, $00, $00, $4E, $FF, $7F, $FF

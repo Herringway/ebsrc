@@ -247,3 +247,10 @@
     EBTEXT str
     .BYTE $00
 .ENDMACRO
+
+.MACRO RGB red, green, blue
+    .assert red < 32, error, "Red out of range"
+    .assert green < 32, error, "Green out of range"
+    .assert blue < 32, error, "Blue out of range"
+    .WORD (blue<<10) | (green<<5) | red
+.ENDMACRO

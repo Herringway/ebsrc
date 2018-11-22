@@ -5,36 +5,27 @@ OVERWORLD_SPRITES_BANK5: ;$D50000
 	.INCBIN "bin/overworld_sprites/4.bin"
 
 UNKNOWN_D545C0: ;$D545C0
-	.INCBIN "bin/unknowns/D545C0.bin"
+	.REPEAT $A40
+		.BYTE 0 ;It's empty.
+	.ENDREPEAT
 
 .INCLUDE "data/items.asm"
 
-STORE_TABLE: ;$D576B2
-	.INCBIN "bin/unknowns/D576B2.bin"
+.INCLUDE "data/store_inventories.asm"
 
-PSI_TELEPORT_DEST_TABLE: ;$D57880
-	.INCBIN "bin/unknowns/D57880.bin"
+.INCLUDE "data/psi_teleport_destinations.asm"
 
-UNKNOWN_D57A70: ;$D57A70
-	.INCBIN "bin/unknowns/D57A70.bin"
+.INCLUDE "data/telephone_contacts.asm"
 
-TELEPHONE_CONTACTS_TABLE: ;$D57AAE
-	.INCBIN "bin/unknowns/D57AAE.bin"
+.INCLUDE "data/battle/action_table.asm"
 
-BATTLE_ACTION_TABLE: ;$D57B68
-	.INCBIN "bin/unknowns/D57B68.bin"
+.INCLUDE "data/battle/psi_abilities.asm"
 
-PSI_ABILITY_TABLE: ;$D58A50
-	.INCBIN "bin/unknowns/D58A50.bin"
+.INCLUDE "data/battle/psi_names.asm"
 
-PSI_NAME_TABLE: ;$D58D7A
-	.INCBIN "bin/unknowns/D58D7A.bin"
+.INCLUDE "data/battle/npc_ai_table.asm"
 
-NPC_AI_TABLE: ;$D58F23
-	.INCBIN "bin/unknowns/D58F23.bin"
-
-EXP_TABLE: ;$D58F49
-	.INCBIN "bin/unknowns/D58F49.bin"
+.INCLUDE "data/exp_table.asm"
 
 .INCLUDE "data/battle/enemies.asm"
 
@@ -50,8 +41,6 @@ EXP_TABLE: ;$D58F49
 
 .INCLUDE "data/dont_care_names.asm"
 
-INITIAL_STATS: ;$D5F5F5
-	.INCBIN "bin/unknowns/D5F5F5.bin"
+.INCLUDE "data/initial_stats.asm"
 
-TIMED_DELIVERY_TABLE: ;$D5F645
-	.INCBIN "bin/unknowns/D5F645.bin"
+.INCLUDE "data/timed_delivery_table.asm"

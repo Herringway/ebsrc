@@ -19,22 +19,13 @@ MRSATURN_FONT_DATA: ;$E01359
 MRSATURN_FONT_GFX: ;$E013B9
 	.INCBIN "bin/fonts/mrsaturn.gfx"
 
-TEXT_WINDOW_PROPERTIES: ;$E01FB9
-	.BYTE $00, $00, $01, $40, $00, $08, $80, $00, $08, $C0, $00, $08, $00, $01, $08
+.INCLUDE "data/text_window_properties.asm"
 
-TEXT_WINDOW_FLAVOUR_PALETTES: ;$E01FC8
-	.INCBIN "bin/unknowns/E01FC8.bin"
+.INCLUDE "data/text_window_flavour_palettes.asm"
 
-MOVEMENT_TEXT_STRING_PALETTE: ;$E02188
-	.INCBIN "bin/unknowns/E02188.bin"
+.INCLUDE "data/movement_text_string_palette.asm"
 
-TOWN_MAP_GFX_POINTER_TABLE: ;$E02190
-	.DWORD TOWN_MAP_ONETT
-	.DWORD TOWN_MAP_TWOSON
-	.DWORD TOWN_MAP_THREED
-	.DWORD TOWN_MAP_FOURSIDE
-	.DWORD TOWN_MAP_SCARABA
-	.DWORD TOWN_MAP_SUMMERS
+.INCLUDE "data/map/town_map_gfx_pointers.asm"
 
 TOWN_MAP_ONETT: ;$E021A8
 	.INCBIN "bin/town_maps/0.bin"

@@ -19,8 +19,7 @@ ANIMATIONDATA_ZOMBIES: ;$CC2C89
 ANIMATIONDATA_THE_END: ;$CC2CE1
 	.INCBIN "bin/unknowns/CC2CE1.bin"
 
-ANIMATION_SEQUENCE_POINTERS: ;$CC2DE1
-	.INCBIN "bin/unknowns/CC2DE1.bin"
+.INCLUDE "data/animation_sequence_pointers.asm"
 
 PSI_ARRANGEMENT_20: ;$CC2E19
 	.INCBIN "bin/psianims_arrangements/20.bin"

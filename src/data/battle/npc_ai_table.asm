@@ -1,0 +1,21 @@
+
+NPC_AI_TABLE: ;$D58F23
+	.BYTE $00, $00
+	.BYTE $00, $00
+	.BYTE $00, $00
+	.BYTE $00, $00
+	.BYTE $00, $00
+	.BYTE $01, $A1
+	.BYTE $01, $A2
+	.BYTE $01, $A0
+	.BYTE $01, $A3
+	.BYTE $01, $A4
+	.BYTE $01, $A5
+	.BYTE $07, $A6
+	.BYTE $07, $A6
+	.BYTE $07, $A6
+	.BYTE $07, $A6
+	.BYTE $07, $A6
+	.BYTE $06, $A7
+	.BYTE $06, $A8
+	.BYTE $00, $00

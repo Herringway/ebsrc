@@ -47,8 +47,7 @@ COMPRESSED_PALETTE_UNKNOWN: ;$E1374A
 STAFF_TEXT: ;$E1413F
 	.INCBIN "bin/unknowns/E1413F.bin"
 
-UNKNOWN_E14DE8: ;$E14DE8
-	.INCBIN "bin/unknowns/E14DE8.bin"
+.INCLUDE "data/unknown/E14DE8.asm"
 
 APE_ARRANGEMENT: ;$E14EC1
 	.INCBIN "bin/intro/logos/ape.arr"
@@ -104,14 +103,11 @@ NINTENDO_PRESENTATION_GRAPHICS: ;$E1AD4E
 NINTENDO_ITOI_PALETTE: ;$E1AE6F
 	.INCBIN "bin/intro/attract/nintendo_itoi.pal"
 
-UNKNOWN_E1AE7C: ;$E1AE7C
-	.INCBIN "bin/unknowns/E1AE7C.bin"
+.INCLUDE "data/unknown/E1AE7C.asm"
 
-UNKNOWN_E1AE83: ;$E1AE83
-	.INCBIN "bin/unknowns/E1AE83.bin"
+.INCLUDE "data/unknown/E1AE83.asm"
 
-UNKNOWN_E1AEFD: ;$E1AEFD
-	.INCBIN "bin/unknowns/E1AEFD.bin"
+.INCLUDE "data/unknown/E1AEFD.asm"
 
 TITLE_SCREEN_ARRANGEMENT: ;$E1AF7D
 	.INCBIN "bin/intro/title_screen.arr"
@@ -119,35 +115,26 @@ TITLE_SCREEN_ARRANGEMENT: ;$E1AF7D
 TITLE_SCREEN_GRAPHICS: ;$E1B211
 	.INCBIN "bin/intro/title_screen.gfx"
 
-UNKNOWN_E1C6E5: ;$E1C6E5
-	.INCBIN "bin/unknowns/E1C6E5.bin"
+.INCLUDE "data/unknown/E1C6E5.asm"
 
 TITLE_SCREEN_PALETTE: ;$E1CDE1
 	.INCBIN "bin/intro/title_screen.pal"
 
-UNKNOWN_E1CE08: ;$E1CE08
-	.INCBIN "bin/unknowns/E1CE08.bin"
+.INCLUDE "data/unknown/E1CE08.asm"
 
-UNKNOWN_E1CFAF: ;$E1CFAF
-	.INCBIN "bin/unknowns/E1CFAF.bin"
+.INCLUDE "data/unknown/E1CFAF.asm"
 
-UNKNOWN_E1D4F4: ;$E1D4F4
-	.INCBIN "bin/unknowns/E1D4F4.bin"
+.INCLUDE "data/unknown/E1D4F4.asm"
 
-UNKNOWN_E1D5E8: ;$E1D5E8
-	.INCBIN "bin/unknowns/E1D5E8.bin"
+.INCLUDE "data/unknown/E1D5E8.asm"
 
-UNKNOWN_E1D6E1: ;$E1D6E1
-	.INCBIN "bin/unknowns/E1D6E1.bin"
+.INCLUDE "data/unknown/E1D6E1.asm"
 
-UNKNOWN_E1D815: ;$E1D815
-	.INCBIN "bin/unknowns/E1D815.bin"
+.INCLUDE "data/unknown/E1D815.asm"
 
-UNKNOWN_E1D835: ;$E1D835
-	.INCBIN "bin/unknowns/E1D835.bin"
+.INCLUDE "data/unknown/E1D835.asm"
 
-UNKNOWN_E1E4E7: ;$E1E4E7
-	.INCBIN "bin/unknowns/E1E4E7.bin"
+.INCLUDE "data/unknown/E1E4E7.asm"
 
 STAFF_CREDITS_FONT_GRAPHICS: ;$E1E528
 	.INCBIN "bin/unknowns/E1E528.bin"
@@ -155,11 +142,9 @@ STAFF_CREDITS_FONT_GRAPHICS: ;$E1E528
 STAFF_CREDITS_FONT_PALETTE: ;$E1E914
 	.INCBIN "bin/unknowns/E1E914.bin"
 
-UNKNOWN_E1E924: ;$E1E924
-	.INCBIN "bin/unknowns/E1E924.bin"
+.INCLUDE "data/unknown/E1E924.asm"
 
-UNKNOWN_E1E94A: ;$E1E94A
-	.INCBIN "bin/unknowns/E1E94A.bin"
+.INCLUDE "data/unknown/E1E94A.asm"
 
 TOWN_MAP_LABEL_GFX: ;$E1EA50
 	.INCBIN "bin/unknowns/E1EA50.bin"
