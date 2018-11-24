@@ -25,19 +25,19 @@
 .INCLUDE "data/map/tile_collision_pointers_19.asm"
 
 ANTI_PIRACY_NOTICE_ARRANGEMENT: ;$D8F05E
-	.INCBIN "bin/unknowns/D8F05E.bin"
+	.INCBIN "bin/errors/antipiracy.arr"
 
 ANTI_PIRACY_NOTICE_GRAPHICS: ;$D8F20D
-	.INCBIN "bin/unknowns/D8F20D.bin"
+	.INCBIN "bin/errors/antipiracy.gfx"
 
 WARNING_PALETTE: ;$D8F3BE
-	.INCBIN "bin/unknowns/D8F3BE.bin"
+	.INCBIN "bin/errors/shared.pal"
 
 FAULTY_GAME_PAK_ARRANGEMENT: ;$D8F3C6
-	.INCBIN "bin/unknowns/D8F3C6.bin"
+	.INCBIN "bin/errors/faulty.arr"
 
 FAULTY_GAME_PAK_GRAPHICS: ;$D8F5C4
-	.INCBIN "bin/unknowns/D8F5C4.bin"
+	.INCBIN "bin/errors/faulty.gfx"
 
 AUDIO_PACK_61: ;$D8F6B7
 	.INCBIN "bin/audiopacks/61.bin"
