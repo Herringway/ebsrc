@@ -1,8 +1,7 @@
 .SEGMENT "BANK18"
 .INCLUDE "common.asm"
 
-MAP_DATA_TILE_COLLISION_ARRANGEMENT_TABLE: ;$D80000
-	.INCBIN "bin/unknowns/D80000.bin"
+.INCLUDE "data/map/tile_collision_data.asm"
 
 .INCLUDE "data/map/tile_collision_pointers_00.asm"
 .INCLUDE "data/map/tile_collision_pointers_01.asm"
