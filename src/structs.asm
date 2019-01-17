@@ -225,16 +225,16 @@
 	text_width .word ;18
 	text_height .word ;20
 	.byte ;22
-	.byte ;23
-	.byte ;24
+	wram_address .word ;23
 	font .byte ;25
-	working_memory .byte 4 ;26
-	argument_memory .byte 4 ;30
-	secondary_memory .byte 4 ;34
-	working_memory_storage .byte 4 ;38
-	argument_memory_storage .byte 4 ;42
-	secondary_memory_storage .byte 4 ;46
-	.byte 32 ;50
+	.byte ;26
+	argument_memory .byte 4 ;27
+	working_memory .byte 4 ;31
+	secondary_memory .byte 4 ;35
+	working_memory_storage .byte 4 ;39
+	argument_memory_storage .byte 4 ;43
+	secondary_memory_storage .byte 4 ;47
+	.byte 31 ;51
 .ENDSTRUCT
 
 .STRUCT npc_config
