@@ -38,7 +38,7 @@ src/bankconfig/US/bank0e.o: src/bankconfig/US/bank0e.asm $(wildcard src/bin/unkn
 
 src/bankconfig/US/bank0f.o: src/bankconfig/US/bank0f.asm src/data/map/npc_config.asm $(wildcard src/bin/unknowns/CF*.bin) src/data/map/overworld_event_music_table.asm src/data/map/door_config_table.asm src/data/map/sprite_placement_table.asm src/data/map/sprite_placement_pointer_table.asm src/data/map/door_data.asm
 
-src/bankconfig/US/bank15.o: src/bankconfig/US/bank15.asm $(wildcard src/bin/unknowns/D5*.bin)
+src/bankconfig/US/bank15.o: src/bankconfig/US/bank15.asm src/data/battle/action_table.asm
 
 src/bankconfig/US/bank16.o: src/bankconfig/US/bank16.asm $(wildcard src/bin/unknowns/D6*.bin)
 
@@ -52,11 +52,9 @@ src/bankconfig/US/bank1c.o: src/bankconfig/US/bank1c.asm $(wildcard src/bin/unkn
 
 src/bankconfig/US/bank1f.o: src/bankconfig/US/bank1f.asm $(wildcard src/bin/unknowns/DF*.bin)
 
-src/bankconfig/US/bank20.o: src/bankconfig/US/bank20.asm $(wildcard src/bin/unknowns/E0*.bin)
-
 src/bankconfig/US/bank21.o: src/bankconfig/US/bank21.asm $(wildcard src/bin/unknowns/E1*.bin)
 
-src/bankconfig/US/bank2f.o: src/bankconfig/US/bank2f.asm src/config.asm $(wildcard src/bin/unknowns/EF*.bin)
+src/bankconfig/US/bank2f.o: src/bankconfig/US/bank2f.asm src/config.asm
 
 src/ram.o: src/ram.asm src/config.asm
 
