@@ -2,16 +2,16 @@
 .INCLUDE "common.asm"
 
 TEXT_WINDOW_GFX: ;$E00000
-	.INCBIN "bin/unknowns/E00000.bin"
+	.INCBIN "bin/graphics/text_window.gfx"
 
 FLAVOURED_TEXT_GFX: ;$E00754
-	.INCBIN "bin/unknowns/E00754.bin"
+	.INCBIN "bin/graphics/flavoured_text.gfx"
 
 MOTHER2_ROMAJI_FONT: ;$E007A0
 	.INCBIN "bin/fonts/romaji.gfx"
 
 COMPRESSED_SRAM: ;$E009B4
-	.INCBIN "bin/unknowns/E009B4.bin"
+	.INCBIN "bin/mystery_sram.bin.lzhal"
 
 MRSATURN_FONT_DATA: ;$E01359
 	.INCBIN "bin/fonts/mrsaturn.bin"
