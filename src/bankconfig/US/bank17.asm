@@ -1,11 +1,17 @@
 .SEGMENT "BANK17"
 .INCLUDE "common.asm"
 
-MAP_DATA_TILE_TABLE_BANK_2: ;$D70000
-	.INCBIN "bin/unknowns/D70000.bin"
+MAP_DATA_TILE_TABLE_CHUNK_7: ;$D70000
+	.INCBIN "bin/maps/tiles/chunk_07.bin"
 
-MAP_DATA_LOCAL_TILESET_TABLE: ;$D75000
-	.INCBIN "bin/unknowns/D75000.bin"
+MAP_DATA_TILE_TABLE_CHUNK_8: ;$D72800
+	.INCBIN "bin/maps/tiles/chunk_08.bin"
+
+MAP_DATA_TILE_TABLE_CHUNK_9: ;$D75000
+	.INCBIN "bin/maps/tiles/chunk_09.bin"
+
+MAP_DATA_TILE_TABLE_CHUNK_10: ;$D78000
+	.INCBIN "bin/maps/tiles/chunk_10.bin"
 
 GLOBAL_MAP_TILESETPALETTE_DATA: ;$D7A800
 	.INCBIN "bin/unknowns/D7A800.bin"
