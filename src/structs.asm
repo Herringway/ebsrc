@@ -275,3 +275,8 @@
 	special .byte ;34
 	help_text .dword ;35
 .ENDSTRUCT
+
+.STRUCT photographer_config_entry
+	event_flag .word ;0
+	.byte 60 ;2
+.ENDSTRUCT
