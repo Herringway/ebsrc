@@ -35,11 +35,9 @@ LARGE_FONT_DATA: ;$E1229A
 LARGE_FONT_GFX: ;$E122FA
 	.INCBIN "bin/fonts/large.gfx"
 
-CAST_SEQUENCE_FORMATTING: ;$E12EFA
-	.INCBIN "bin/unknowns/E12EFA.bin"
+.INCLUDE "data/cast_sequence_formatting.asm"
 
-PHOTOGRAPHER_CFG_TABLE: ;$E12F8A
-	.INCBIN "bin/unknowns/E12F8A.bin"
+.INCLUDE "data/photographer_cfg.asm"
 
 COMPRESSED_PALETTE_UNKNOWN: ;$E1374A
 	.INCBIN "bin/unknowns/E1374A.bin"
