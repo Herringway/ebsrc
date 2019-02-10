@@ -14,7 +14,7 @@ src/bankconfig/US/bank02.o: src/bankconfig/US/bank02.asm src/config.asm src/move
 
 src/bankconfig/US/bank03.o: src/bankconfig/US/bank03.asm src/config.asm src/movementmacros.asm $(wildcard src/bin/unknowns/C3*.bin)
 
-src/bankconfig/US/bank04.o: src/bankconfig/US/bank04.asm src/config.asm src/movementmacros.asm src/music/packtables.asm $(wildcard src/bin/unknowns/C4*.bin)
+src/bankconfig/US/bank04.o: src/bankconfig/US/bank04.asm src/config.asm src/movementmacros.asm $(wildcard src/bin/unknowns/C4*.bin)
 
 src/bankconfig/US/bank05.o: src/bankconfig/US/bank05.asm src/bin/text_data/0.ebtxt
 
