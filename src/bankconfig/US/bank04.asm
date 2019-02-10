@@ -25,16 +25,13 @@
 
 .INCLUDE "data/map/footstep_sound_table.asm"
 
-UNKNOWN_C40BE8: ;$C40BE8
-	.INCBIN "src/bin/unknowns/C40BE8.bin"
+.INCLUDE "data/unknown/C40BE8.asm"
 
-UNKNOWN_C40DF3: ;$C40DF3
-	.INCBIN "src/bin/unknowns/C40DF3.bin"
+.INCLUDE "data/unknown/C40DF3.asm"
 
 .INCLUDE "data/movements/patterns/785.asm"
 
-UNKNOWN_C40E31: ;$C40E31
-	.INCBIN "src/bin/unknowns/C40E31.bin"
+.INCLUDE "data/unknown/C40E31.asm"
 
 .INCLUDE "data/movements/C40F18.asm"
 
@@ -102,8 +99,7 @@ UNKNOWN_C40E31: ;$C40E31
 
 .INCLUDE "data/movements/patterns/534.asm"
 
-UNKNOWN_C41036: ;$C41036
-	.INCBIN "src/bin/unknowns/C41036.bin"
+.INCLUDE "data/unknown/C41036.asm"
 
 .INCLUDE "data/movements/C4116C.asm"
 
