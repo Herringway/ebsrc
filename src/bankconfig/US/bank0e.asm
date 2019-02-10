@@ -178,7 +178,7 @@ SWIRL_PRIMARY_TABLE: ;$CEDD41
 	.BYTE $00, $00, $00, $00, $02, $00, $17, $00, $04, $17, $0F, $00, $03, $26, $16, $00, $04, $3C, $15, $00, $02, $51, $1C, $00, $03, $6D, $11, $00
 
 SOUND_STONE_GFX: ;$CEDD5D
-	.INCBIN "bin/unknowns/CEDD5D.bin"
+	.INCBIN "bin/graphics/sound_stone.gfx"
 
 SOUND_STONE_PALETTE: ;$CEF806
 	.INCBIN "bin/sound_stone.pal"
