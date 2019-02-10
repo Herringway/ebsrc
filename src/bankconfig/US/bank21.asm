@@ -40,7 +40,7 @@ LARGE_FONT_GFX: ;$E122FA
 .INCLUDE "data/photographer_cfg.asm"
 
 COMPRESSED_PALETTE_UNKNOWN: ;$E1374A
-	.INCBIN "bin/unknowns/E1374A.bin"
+	.INCBIN "bin/unknown_palette.pal.lzhal"
 
 STAFF_TEXT: ;$E1413F
 	.INCBIN "bin/unknowns/E1413F.bin"
@@ -135,23 +135,22 @@ TITLE_SCREEN_PALETTE: ;$E1CDE1
 .INCLUDE "data/unknown/E1E4E7.asm"
 
 STAFF_CREDITS_FONT_GRAPHICS: ;$E1E528
-	.INCBIN "bin/unknowns/E1E528.bin"
+	.INCBIN "bin/ending/credits_font.gfx.lzhal"
 
 STAFF_CREDITS_FONT_PALETTE: ;$E1E914
-	.INCBIN "bin/unknowns/E1E914.bin"
+	.INCBIN "bin/ending/credits_font.pal"
 
 .INCLUDE "data/unknown/E1E924.asm"
 
 .INCLUDE "data/unknown/E1E94A.asm"
 
 TOWN_MAP_LABEL_GFX: ;$E1EA50
-	.INCBIN "bin/unknowns/E1EA50.bin"
+	.INCBIN "bin/town_maps/label.gfx.lzhal"
 
 TOWN_MAP_ICON_PALETTE: ;$E1F1C3
-	.INCBIN "bin/unknowns/E1F1C3.bin"
+	.INCBIN "bin/town_maps/icon.pal"
 
-UNKNOWN_E1F203: ;$E1F203
-	.INCBIN "bin/unknowns/E1F203.bin"
+.INCLUDE "data/unknown/E1F203.asm"
 
 TOWN_MAP_ICON_PLACEMENT_PTR_TABLE: ;$E1F491
 	.DWORD TOWN_MAP_ICON_PLACEMENT_ENTRY_0
