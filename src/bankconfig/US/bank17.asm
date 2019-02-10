@@ -13,11 +13,9 @@ MAP_DATA_TILE_TABLE_CHUNK_9: ;$D75000
 MAP_DATA_TILE_TABLE_CHUNK_10: ;$D78000
 	.INCBIN "bin/maps/tiles/chunk_10.bin"
 
-GLOBAL_MAP_TILESETPALETTE_DATA: ;$D7A800
-	.INCBIN "bin/unknowns/D7A800.bin"
+.INCLUDE "data/map/global_tileset_palette_data.asm"
 
-MAP_DATA_PER_SECTOR_ATTRIBUTES_TABLE: ;$D7B200
-	.INCBIN "bin/unknowns/D7B200.bin"
+.INCLUDE "data/map/per-sector_attributes.asm"
 
 MAP_DATA_TILE_ARRANGEMENT_0: ;$D7C600
 	.INCBIN "bin/maps/arrangements/0.bin"
