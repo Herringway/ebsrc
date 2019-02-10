@@ -5,7 +5,7 @@
 .MACRO EBSTAFF_SMALLTEXT str
 	.BYTE $01
     .repeat .strlen(str), i
-        .if .strat(str, i) = '_'
+        .if .strat(str, i) = ' '
             .BYTE $40
         .elseif .strat(str, i) = 'A'
             .BYTE $42
@@ -59,7 +59,7 @@
             .BYTE $6E
         .elseif .strat(str, i) = 'Z'
             .BYTE $7E
-        .elseif .strat(str, i) = ' '
+        .elseif .strat(str, i) = '_'
             .BYTE $80
         .elseif .strat(str, i) = '.'
             .BYTE $AD
@@ -73,7 +73,7 @@
 .MACRO EBSTAFF_BIGTEXT str
 	.BYTE $02
     .repeat .strlen(str), i
-        .if .strat(str, i) = '_'
+        .if .strat(str, i) = ' '
             .BYTE $40
         .elseif .strat(str, i) = '!'
             .BYTE $41
@@ -111,7 +111,7 @@
             .BYTE $69
         .elseif .strat(str, i) = '?'
             .BYTE $6F
-        .elseif .strat(str, i) = ' '
+        .elseif .strat(str, i) = '_'
             .BYTE $80
         .elseif .strat(str, i) = 'A'
             .BYTE $81
