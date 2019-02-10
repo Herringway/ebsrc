@@ -42,8 +42,7 @@ LARGE_FONT_GFX: ;$E122FA
 COMPRESSED_PALETTE_UNKNOWN: ;$E1374A
 	.INCBIN "bin/unknown_palette.pal.lzhal"
 
-STAFF_TEXT: ;$E1413F
-	.INCBIN "bin/unknowns/E1413F.bin"
+.INCLUDE "data/credits.asm"
 
 .INCLUDE "data/unknown/E14DE8.asm"
 
