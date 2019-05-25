@@ -23595,4 +23595,4 @@ UNKNOWN_C2FF9A_MINISPRITES:
 UNKNOWN_C2FF9A_RETURN:
 	RTL
 
-.INCLUDE "data/movements/patterns/0.asm"
+.INCLUDE "data/movements/patterns/000.asm"
