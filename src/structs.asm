@@ -1,3 +1,4 @@
+
 .STRUCT char_struct
 	name .byte NAMELEN ;0
 	level .byte ;5
@@ -279,4 +280,10 @@
 .STRUCT photographer_config_entry
 	event_flag .word ;0
 	.byte 60 ;2
+.ENDSTRUCT
+
+.STRUCT packtable_entry
+	primarysamplepack .byte ;0
+	secondarysamplepack .byte ;1
+	sequencepack .byte ;2
 .ENDSTRUCT
