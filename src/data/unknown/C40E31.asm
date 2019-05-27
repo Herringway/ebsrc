@@ -1,3 +1,175 @@
 
 UNKNOWN_C40E31: ;$C40E31
-	.BYTE $04, $DB, $00, $00, $01, $E2, $00, $00, $FF, $5C, $01, $00, $FF, $5D, $01, $00, $FF, $F0, $60, $73, $EA, $80, $F0, $60, $63, $EA, $80, $F0, $62, $73, $EA, $80, $F0, $62, $63, $EA, $80, $F0, $60, $33, $04, $80, $F0, $60, $23, $04, $80, $F0, $62, $33, $04, $80, $F0, $62, $23, $04, $80, $E8, $64, $33, $F8, $80, $E8, $64, $23, $F8, $80, $FE, $66, $33, $F8, $80, $FE, $66, $23, $F8, $80, $FE, $66, $73, $F8, $80, $FE, $66, $63, $F8, $80, $F8, $68, $33, $F0, $00, $F8, $6A, $33, $00, $80, $F8, $68, $23, $F0, $00, $F8, $6A, $23, $00, $80, $F8, $6A, $73, $F0, $00, $F8, $68, $73, $00, $80, $F8, $6A, $63, $F0, $00, $F8, $68, $63, $00, $80, $01, $00, $42, $0E, $02, $00, $08, $00, $01, $00, $4C, $0E, $02, $00, $08, $00, $01, $00, $00, $00, $02, $00, $10, $00, $01, $00, $56, $0E, $02, $00, $08, $00, $01, $00, $60, $0E, $02, $00, $08, $00, $01, $00, $00, $00, $02, $00, $10, $00, $03, $00, $B0, $0E, $01, $00, $6A, $0E, $02, $00, $FF, $00, $03, $00, $E4, $0E, $01, $00, $74, $0E, $02, $00, $0C, $00, $01, $00, $7E, $0E, $02, $00, $0C, $00, $03, $00, $F0, $0E, $01, $00, $88, $0E, $02, $00, $0C, $00, $01, $00, $9C, $0E, $02, $00, $0C, $00, $03, $00, $04, $0F
+UNKNOWN_C40E31_1:
+	.BYTE $04
+
+UNKNOWN_C40E31_2:
+	;Sweating
+	.WORD $00DB ;Sprite ID
+	.BYTE $00
+	.BYTE $01
+
+	;Mushroomized
+	.WORD $00E2 ;Sprite ID
+	.BYTE $00
+	.BYTE $FF
+
+	;Small water ripple
+	.WORD $015C ;Sprite ID
+	.BYTE $00
+	.BYTE $FF
+
+	;Big water ripple
+	.WORD $015D ;Sprite ID
+	.BYTE $00
+	.BYTE $FF
+
+UNKNOWN_C40E31_3:
+;Sweating frame 1
+UNKNOWN_C40E31_3_1:
+	.BYTE $F0
+	.WORD $7360
+	.BYTE $EA
+	.BYTE $80
+
+	.BYTE $F0
+	.WORD $6360
+	.BYTE $EA
+	.BYTE $80
+;Sweating frame 2
+UNKNOWN_C40E31_3_2:
+	.BYTE $F0
+	.WORD $7362
+	.BYTE $EA
+	.BYTE $80
+
+	.BYTE $F0
+	.WORD $6362
+	.BYTE $EA
+	.BYTE $80
+;Sweating frame 3
+UNKNOWN_C40E31_3_3:
+	.BYTE $F0
+	.WORD $3360
+	.BYTE $04
+	.BYTE $80
+
+	.BYTE $F0
+	.WORD $2360
+	.BYTE $04
+	.BYTE $80
+;Sweating frame 4
+UNKNOWN_C40E31_3_4:
+	.BYTE $F0
+	.WORD $3362
+	.BYTE $04
+	.BYTE $80
+
+	.BYTE $F0
+	.WORD $2362
+	.BYTE $04
+	.BYTE $80
+;Mushroomized frame 1
+UNKNOWN_C40E31_3_5:
+	.BYTE $E8
+	.WORD $3364
+	.BYTE $F8
+	.BYTE $80
+
+	.BYTE $E8
+	.WORD $2364
+	.BYTE $F8
+	.BYTE $80
+;Small ripple frame 1
+UNKNOWN_C40E31_3_6:
+	.BYTE $FE
+	.WORD $3366
+	.BYTE $F8
+	.BYTE $80
+
+	.BYTE $FE
+	.WORD $2366
+	.BYTE $F8
+	.BYTE $80
+;Small ripple frame 2
+UNKNOWN_C40E31_3_7:
+	.BYTE $FE
+	.WORD $7366
+	.BYTE $F8
+	.BYTE $80
+
+	.BYTE $FE
+	.WORD $6366
+	.BYTE $F8
+	.BYTE $80
+;Big ripple frame 1
+UNKNOWN_C40E31_3_8:
+	.BYTE $F8
+	.WORD $3368
+	.BYTE $F0
+	.BYTE $00
+	.BYTE $F8
+	.WORD $336A
+	.BYTE $00
+	.BYTE $80
+
+	.BYTE $F8
+	.WORD $2368
+	.BYTE $F0
+	.BYTE $00
+	.BYTE $F8
+	.WORD $236A
+	.BYTE $00
+	.BYTE $80
+;Big ripple frame 2
+UNKNOWN_C40E31_3_9:
+	.BYTE $F8
+	.WORD $736A
+	.BYTE $F0
+	.BYTE $00
+	.BYTE $F8
+	.WORD $7368
+	.BYTE $00
+	.BYTE $80
+
+	.BYTE $F8
+	.WORD $636A
+	.BYTE $F0
+	.BYTE $00
+	.BYTE $F8
+	.WORD $6368
+	.BYTE $00
+	.BYTE $80
+UNKNOWN_C40E31_4:
+	.WORD $0001, .LOWORD(UNKNOWN_C40E31_3_1)
+	.WORD $0002, $0008
+	.WORD $0001, .LOWORD(UNKNOWN_C40E31_3_2)
+	.WORD $0002, $0008
+	.WORD $0001, $0000
+	.WORD $0002, $0010
+	.WORD $0001, .LOWORD(UNKNOWN_C40E31_3_3)
+	.WORD $0002, $0008
+	.WORD $0001, .LOWORD(UNKNOWN_C40E31_3_4)
+	.WORD $0002, $0008
+	.WORD $0001, $0000
+	.WORD $0002, $0010
+	.WORD $0003, .LOWORD(UNKNOWN_C40E31_4)
+
+UNKNOWN_C40E31_5:
+	.WORD $0001, .LOWORD(UNKNOWN_C40E31_3_5)
+	.WORD $0002, $00FF
+	.WORD $0003, .LOWORD(UNKNOWN_C40E31_5)
+
+UNKNOWN_C40E31_6:
+	.WORD $0001, .LOWORD(UNKNOWN_C40E31_3_6)
+	.WORD $0002, $000C
+	.WORD $0001, .LOWORD(UNKNOWN_C40E31_3_7)
+	.WORD $0002, $000C
+	.WORD $0003, .LOWORD(UNKNOWN_C40E31_6)
+
+UNKNOWN_C40E31_7:
+	.WORD $0001, .LOWORD(UNKNOWN_C40E31_3_8)
+	.WORD $0002, $000C
+	.WORD $0001, .LOWORD(UNKNOWN_C40E31_3_9)
+	.WORD $0002, $000C
+	.WORD $0003, .LOWORD(UNKNOWN_C40E31_7)

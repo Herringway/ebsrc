@@ -287,3 +287,14 @@
 	secondarysamplepack .byte ;1
 	sequencepack .byte ;2
 .ENDSTRUCT
+
+.STRUCT sprite_grouping
+	height .byte ;0
+	width .byte ;1
+	.byte ;2
+	palette .byte ;3
+	.byte 4 ;4
+	spritebank .byte ;8
+	;The number of sprite pointers varies.
+	spritepointerarray .word ;9
+.ENDSTRUCT

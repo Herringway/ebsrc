@@ -2,928 +2,7272 @@
 SPRITE_GROUPING_DATA: ;$EF1A7F
 SPRITE_GROUPING_0:
 SPRITE_GROUPING_1:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D1, $00, $CF, $01, $CF, $C1, $CF, $81, $D0, $40, $CE, $40, $D4, $C0, $CF, $80, $D0, $C1, $D2, $81, $D3, $41, $D1, $01, $D2, $40, $D1, $00, $D2, $C0, $D2, $80, $D3
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $CF00
+	.WORD $CF01
+	.WORD $CFC1
+	.WORD $D081
+	.WORD $CE40
+	.WORD $D440
+	.WORD $CFC0
+	.WORD $D080
+	.WORD $D2C1
+	.WORD $D381
+	.WORD $D141
+	.WORD $D201
+	.WORD $D140
+	.WORD $D200
+	.WORD $D2C0
+	.WORD $D380
 SPRITE_GROUPING_2:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D2, $C0, $0C, $C1, $0C, $81, $0D, $41, $0E, $00, $0C, $01, $0C, $80, $0D, $40, $0E, $81, $10, $41, $11, $01, $0F, $C1, $0F, $00, $0F, $C0, $0F, $80, $10, $40, $11
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $0CC0
+	.WORD $0CC1
+	.WORD $0D81
+	.WORD $0E41
+	.WORD $0C00
+	.WORD $0C01
+	.WORD $0D80
+	.WORD $0E40
+	.WORD $1081
+	.WORD $1141
+	.WORD $0F01
+	.WORD $0FC1
+	.WORD $0F00
+	.WORD $0FC0
+	.WORD $1080
+	.WORD $1140
 SPRITE_GROUPING_3:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D2, $C0, $06, $C1, $06, $81, $07, $41, $08, $00, $06, $01, $06, $80, $07, $40, $08, $81, $0A, $41, $0B, $01, $09, $C1, $09, $00, $09, $C0, $09, $80, $0A, $40, $0B
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $06C0
+	.WORD $06C1
+	.WORD $0781
+	.WORD $0841
+	.WORD $0600
+	.WORD $0601
+	.WORD $0780
+	.WORD $0840
+	.WORD $0A81
+	.WORD $0B41
+	.WORD $0901
+	.WORD $09C1
+	.WORD $0900
+	.WORD $09C0
+	.WORD $0A80
+	.WORD $0B40
 SPRITE_GROUPING_4:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D2, $C0, $00, $C1, $00, $81, $01, $41, $02, $00, $00, $01, $00, $80, $01, $40, $02, $81, $04, $41, $05, $01, $03, $C1, $03, $00, $03, $C0, $03, $80, $04, $40, $05
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $00C0
+	.WORD $00C1
+	.WORD $0181
+	.WORD $0241
+	.WORD $0000
+	.WORD $0001
+	.WORD $0180
+	.WORD $0240
+	.WORD $0481
+	.WORD $0541
+	.WORD $0301
+	.WORD $03C1
+	.WORD $0300
+	.WORD $03C0
+	.WORD $0480
+	.WORD $0540
 SPRITE_GROUPING_5:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D1, $40, $C8, $41, $C8, $01, $C9, $C1, $C9, $80, $C7, $80, $CD, $00, $C9, $C0, $C9, $01, $CC, $C1, $CC, $81, $CA, $41, $CB, $80, $CA, $40, $CB, $00, $CC, $C0, $CC
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $C840
+	.WORD $C841
+	.WORD $C901
+	.WORD $C9C1
+	.WORD $C780
+	.WORD $CD80
+	.WORD $C900
+	.WORD $C9C0
+	.WORD $CC01
+	.WORD $CCC1
+	.WORD $CA81
+	.WORD $CB41
+	.WORD $CA80
+	.WORD $CB40
+	.WORD $CC00
+	.WORD $CCC0
 SPRITE_GROUPING_6:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D1, $80, $C1, $81, $C1, $41, $C2, $01, $C3, $C0, $C0, $C0, $C6, $40, $C2, $00, $C3, $41, $C5, $01, $C6, $C1, $C3, $81, $C4, $C0, $C3, $80, $C4, $40, $C5, $00, $C6
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $C180
+	.WORD $C181
+	.WORD $C241
+	.WORD $C301
+	.WORD $C0C0
+	.WORD $C6C0
+	.WORD $C240
+	.WORD $C300
+	.WORD $C541
+	.WORD $C601
+	.WORD $C3C1
+	.WORD $C481
+	.WORD $C3C0
+	.WORD $C480
+	.WORD $C540
+	.WORD $C600
 SPRITE_GROUPING_7:
-		.BYTE $06, $40, $0C, $1A, $08, $10, $10, $08, $D1, $00, $03, $01, $03, $01, $06, $01, $09, $00, $00, $01, $00, $00, $06, $00, $09, $01, $12, $01, $15, $01, $0C, $01, $0F, $00, $0C, $00, $0F, $00, $12, $00, $15
+	.BYTE $06 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $0C ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $10, $10, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $0300
+	.WORD $0301
+	.WORD $0601
+	.WORD $0901
+	.WORD $0000
+	.WORD $0001
+	.WORD $0600
+	.WORD $0900
+	.WORD $1201
+	.WORD $1501
+	.WORD $0C01
+	.WORD $0F01
+	.WORD $0C00
+	.WORD $0F00
+	.WORD $1200
+	.WORD $1500
 SPRITE_GROUPING_8:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D4, $40, $35, $40, $35, $01, $36, $01, $36, $80, $34, $80, $34, $00, $36, $00, $36, $40, $35, $40, $35, $80, $34, $80, $34, $80, $34, $80, $34, $40, $35, $40, $35
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $3540
+	.WORD $3540
+	.WORD $3601
+	.WORD $3601
+	.WORD $3480
+	.WORD $3480
+	.WORD $3600
+	.WORD $3600
+	.WORD $3540
+	.WORD $3540
+	.WORD $3480
+	.WORD $3480
+	.WORD $3480
+	.WORD $3480
+	.WORD $3540
+	.WORD $3540
 SPRITE_GROUPING_9:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D4, $00, $33, $00, $33, $C1, $33, $C1, $33, $40, $32, $40, $32, $C0, $33, $C0, $33, $00, $33, $00, $33, $40, $32, $40, $32, $40, $32, $40, $32, $00, $33, $00, $33
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $3300
+	.WORD $3300
+	.WORD $33C1
+	.WORD $33C1
+	.WORD $3240
+	.WORD $3240
+	.WORD $33C0
+	.WORD $33C0
+	.WORD $3300
+	.WORD $3300
+	.WORD $3240
+	.WORD $3240
+	.WORD $3240
+	.WORD $3240
+	.WORD $3300
+	.WORD $3300
 SPRITE_GROUPING_10:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D4, $C0, $30, $C0, $30, $81, $31, $81, $31, $00, $30, $00, $30, $80, $31, $80, $31, $C0, $30, $C0, $30, $00, $30, $00, $30, $00, $30, $00, $30, $C0, $30, $C0, $30
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $30C0
+	.WORD $30C0
+	.WORD $3181
+	.WORD $3181
+	.WORD $3000
+	.WORD $3000
+	.WORD $3180
+	.WORD $3180
+	.WORD $30C0
+	.WORD $30C0
+	.WORD $3000
+	.WORD $3000
+	.WORD $3000
+	.WORD $3000
+	.WORD $30C0
+	.WORD $30C0
 SPRITE_GROUPING_11:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D4, $80, $2E, $80, $2E, $41, $2F, $41, $2F, $C0, $2D, $C0, $2D, $40, $2F, $40, $2F, $80, $2E, $80, $2E, $C0, $2D, $C0, $2D, $C0, $2D, $C0, $2D, $80, $2E, $80, $2E
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $2E80
+	.WORD $2E80
+	.WORD $2F41
+	.WORD $2F41
+	.WORD $2DC0
+	.WORD $2DC0
+	.WORD $2F40
+	.WORD $2F40
+	.WORD $2E80
+	.WORD $2E80
+	.WORD $2DC0
+	.WORD $2DC0
+	.WORD $2DC0
+	.WORD $2DC0
+	.WORD $2E80
+	.WORD $2E80
 SPRITE_GROUPING_12:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D4, $40, $2C, $40, $2C, $01, $2D, $01, $2D, $80, $2B, $80, $2B, $00, $2D, $00, $2D, $40, $2C, $40, $2C, $80, $2B, $80, $2B, $80, $2B, $80, $2B, $40, $2C, $40, $2C
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $2C40
+	.WORD $2C40
+	.WORD $2D01
+	.WORD $2D01
+	.WORD $2B80
+	.WORD $2B80
+	.WORD $2D00
+	.WORD $2D00
+	.WORD $2C40
+	.WORD $2C40
+	.WORD $2B80
+	.WORD $2B80
+	.WORD $2B80
+	.WORD $2B80
+	.WORD $2C40
+	.WORD $2C40
 SPRITE_GROUPING_13:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D5, $40, $2B, $40, $2B, $40, $2B, $40, $2B, $40, $2B, $40, $2B, $40, $2B, $40, $2B, $40, $2B, $40, $2B, $40, $2B, $40, $2B, $40, $2B, $40, $2B, $40, $2B, $40, $2B
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $2B40
+	.WORD $2B40
+	.WORD $2B40
+	.WORD $2B40
+	.WORD $2B40
+	.WORD $2B40
+	.WORD $2B40
+	.WORD $2B40
+	.WORD $2B40
+	.WORD $2B40
+	.WORD $2B40
+	.WORD $2B40
+	.WORD $2B40
+	.WORD $2B40
+	.WORD $2B40
+	.WORD $2B40
 SPRITE_GROUPING_14:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D5, $80, $2A, $80, $2A, $80, $2A, $80, $2A, $80, $2A, $80, $2A, $80, $2A, $80, $2A
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $2A80
+	.WORD $2A80
+	.WORD $2A80
+	.WORD $2A80
+	.WORD $2A80
+	.WORD $2A80
+	.WORD $2A80
+	.WORD $2A80
 SPRITE_GROUPING_15:
-		.BYTE $02, $40, $03, $1A, $10, $08, $10, $08, $D5, $00, $06, $00, $06, $00, $06, $00, $06, $00, $06, $00, $06, $00, $06, $00, $06
+	.BYTE $02 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $03 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $08, $10, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $0600
+	.WORD $0600
+	.WORD $0600
+	.WORD $0600
+	.WORD $0600
+	.WORD $0600
+	.WORD $0600
+	.WORD $0600
 SPRITE_GROUPING_16:
-		.BYTE $02, $30, $02, $1A, $0C, $08, $0C, $08, $D5, $C0, $29, $C0, $29, $C0, $29, $C0, $29, $C0, $29, $C0, $29, $C1, $29, $C1, $29
+	.BYTE $02 ;Height
+	.BYTE $30 ;Width (lower half) + ??? (upper half)
+	.BYTE $02 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $08, $0C, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $29C0
+	.WORD $29C0
+	.WORD $29C0
+	.WORD $29C0
+	.WORD $29C0
+	.WORD $29C0
+	.WORD $29C1
+	.WORD $29C1
 SPRITE_GROUPING_17:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D5, $00, $29, $01, $29, $00, $29, $01, $29, $00, $29, $01, $29, $00, $29, $01, $29
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $2900
+	.WORD $2901
+	.WORD $2900
+	.WORD $2901
+	.WORD $2900
+	.WORD $2901
+	.WORD $2900
+	.WORD $2901
 SPRITE_GROUPING_18:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D5, $40, $28, $41, $28, $40, $28, $41, $28, $40, $28, $41, $28, $40, $28, $41, $28
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $2840
+	.WORD $2841
+	.WORD $2840
+	.WORD $2841
+	.WORD $2840
+	.WORD $2841
+	.WORD $2840
+	.WORD $2841
 SPRITE_GROUPING_19:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D5, $80, $27, $81, $27, $80, $27, $81, $27, $80, $27, $81, $27, $80, $27, $81, $27
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $2780
+	.WORD $2781
+	.WORD $2780
+	.WORD $2781
+	.WORD $2780
+	.WORD $2781
+	.WORD $2780
+	.WORD $2781
 SPRITE_GROUPING_20:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D5, $C0, $26, $C1, $26, $C0, $26, $C1, $26, $C0, $26, $C1, $26, $C0, $26, $C1, $26
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $26C0
+	.WORD $26C1
+	.WORD $26C0
+	.WORD $26C1
+	.WORD $26C0
+	.WORD $26C1
+	.WORD $26C0
+	.WORD $26C1
 SPRITE_GROUPING_21:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D4, $E0, $BF, $A0, $C0, $E0, $BF, $A0, $C0, $E0, $BF, $A0, $C0, $E0, $BF, $A0, $C0
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $BFE0
+	.WORD $C0A0
+	.WORD $BFE0
+	.WORD $C0A0
+	.WORD $BFE0
+	.WORD $C0A0
+	.WORD $BFE0
+	.WORD $C0A0
 SPRITE_GROUPING_22:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D4, $60, $BE, $20, $BF, $60, $BE, $20, $BF, $60, $BE, $20, $BF, $60, $BE, $20, $BF
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $BE60
+	.WORD $BF20
+	.WORD $BE60
+	.WORD $BF20
+	.WORD $BE60
+	.WORD $BF20
+	.WORD $BE60
+	.WORD $BF20
 SPRITE_GROUPING_23:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D4, $E0, $BC, $A0, $BD, $E0, $BC, $A0, $BD, $E0, $BC, $A0, $BD, $E0, $BC, $A0, $BD
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $BCE0
+	.WORD $BDA0
+	.WORD $BCE0
+	.WORD $BDA0
+	.WORD $BCE0
+	.WORD $BDA0
+	.WORD $BCE0
+	.WORD $BDA0
 SPRITE_GROUPING_24:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D4, $60, $BB, $20, $BC, $60, $BB, $20, $BC, $60, $BB, $20, $BC, $60, $BB, $20, $BC
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $BB60
+	.WORD $BC20
+	.WORD $BB60
+	.WORD $BC20
+	.WORD $BB60
+	.WORD $BC20
+	.WORD $BB60
+	.WORD $BC20
 SPRITE_GROUPING_25:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D1, $C0, $F9, $C1, $F9, $81, $FA, $41, $FB, $00, $F9, $01, $F9, $80, $FA, $40, $FB, $81, $FD, $41, $FE, $01, $FC, $C1, $FC, $00, $FC, $C0, $FC, $80, $FD, $40, $FE
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $F9C0
+	.WORD $F9C1
+	.WORD $FA81
+	.WORD $FB41
+	.WORD $F900
+	.WORD $F901
+	.WORD $FA80
+	.WORD $FB40
+	.WORD $FD81
+	.WORD $FE41
+	.WORD $FC01
+	.WORD $FCC1
+	.WORD $FC00
+	.WORD $FCC0
+	.WORD $FD80
+	.WORD $FE40
 SPRITE_GROUPING_26:
-		.BYTE $02, $30, $02, $1A, $0C, $08, $0C, $08, $D5, $00, $26, $00, $26, $00, $26, $00, $26, $00, $26, $00, $26, $01, $26, $01, $26
+	.BYTE $02 ;Height
+	.BYTE $30 ;Width (lower half) + ??? (upper half)
+	.BYTE $02 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $08, $0C, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $2600
+	.WORD $2600
+	.WORD $2600
+	.WORD $2600
+	.WORD $2600
+	.WORD $2600
+	.WORD $2601
+	.WORD $2601
 SPRITE_GROUPING_27:
-		.BYTE $02, $20, $00, $1A, $03, $06, $03, $06, $D4, $E0, $B9, $E1, $B9, $61, $BA, $E1, $BA, $E0, $B9, $E1, $B9, $60, $BA, $E0, $BA, $E0, $B9, $E1, $B9, $E0, $B9, $E1, $B9, $E0, $B9, $E1, $B9, $E0, $B9, $E1, $B9
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $03, $06, $03, $06 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $B9E0
+	.WORD $B9E1
+	.WORD $BA61
+	.WORD $BAE1
+	.WORD $B9E0
+	.WORD $B9E1
+	.WORD $BA60
+	.WORD $BAE0
+	.WORD $B9E0
+	.WORD $B9E1
+	.WORD $B9E0
+	.WORD $B9E1
+	.WORD $B9E0
+	.WORD $B9E1
+	.WORD $B9E0
+	.WORD $B9E1
 SPRITE_GROUPING_28:
-		.BYTE $02, $20, $00, $1A, $03, $06, $03, $06, $D4, $60, $B8, $61, $B8, $E1, $B8, $61, $B9, $60, $B8, $61, $B8, $E0, $B8, $60, $B9, $60, $B8, $61, $B8, $60, $B8, $61, $B8, $60, $B8, $61, $B8, $60, $B8, $61, $B8
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $03, $06, $03, $06 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $B860
+	.WORD $B861
+	.WORD $B8E1
+	.WORD $B961
+	.WORD $B860
+	.WORD $B861
+	.WORD $B8E0
+	.WORD $B960
+	.WORD $B860
+	.WORD $B861
+	.WORD $B860
+	.WORD $B861
+	.WORD $B860
+	.WORD $B861
+	.WORD $B860
+	.WORD $B861
 SPRITE_GROUPING_29:
-		.BYTE $02, $20, $00, $1A, $03, $06, $03, $06, $D4, $E0, $B6, $E1, $B6, $61, $B7, $E1, $B7, $E0, $B6, $E1, $B6, $60, $B7, $E0, $B7, $E0, $B6, $E1, $B6, $E0, $B6, $E1, $B6, $E0, $B6, $E1, $B6, $E0, $B6, $E1, $B6
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $03, $06, $03, $06 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $B6E0
+	.WORD $B6E1
+	.WORD $B761
+	.WORD $B7E1
+	.WORD $B6E0
+	.WORD $B6E1
+	.WORD $B760
+	.WORD $B7E0
+	.WORD $B6E0
+	.WORD $B6E1
+	.WORD $B6E0
+	.WORD $B6E1
+	.WORD $B6E0
+	.WORD $B6E1
+	.WORD $B6E0
+	.WORD $B6E1
 SPRITE_GROUPING_30:
-		.BYTE $02, $20, $00, $1A, $03, $06, $03, $06, $D4, $60, $B5, $61, $B5, $E1, $B5, $61, $B6, $60, $B5, $61, $B5, $E0, $B5, $60, $B6, $60, $B5, $61, $B5, $60, $B5, $61, $B5, $60, $B5, $61, $B5, $60, $B5, $61, $B5
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $03, $06, $03, $06 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $B560
+	.WORD $B561
+	.WORD $B5E1
+	.WORD $B661
+	.WORD $B560
+	.WORD $B561
+	.WORD $B5E0
+	.WORD $B660
+	.WORD $B560
+	.WORD $B561
+	.WORD $B560
+	.WORD $B561
+	.WORD $B560
+	.WORD $B561
+	.WORD $B560
+	.WORD $B561
 SPRITE_GROUPING_31:
-		.BYTE $02, $20, $00, $1A, $03, $06, $03, $06, $D4, $E0, $B3, $E1, $B3, $61, $B4, $E1, $B4, $E0, $B3, $E1, $B3, $60, $B4, $E0, $B4
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $03, $06, $03, $06 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $B3E0
+	.WORD $B3E1
+	.WORD $B461
+	.WORD $B4E1
+	.WORD $B3E0
+	.WORD $B3E1
+	.WORD $B460
+	.WORD $B4E0
 SPRITE_GROUPING_32:
-		.BYTE $02, $20, $00, $1A, $03, $06, $03, $06, $D4, $60, $B2, $61, $B2, $E1, $B2, $61, $B3, $60, $B2, $61, $B2, $E0, $B2, $60, $B3
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $03, $06, $03, $06 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $B260
+	.WORD $B261
+	.WORD $B2E1
+	.WORD $B361
+	.WORD $B260
+	.WORD $B261
+	.WORD $B2E0
+	.WORD $B360
 SPRITE_GROUPING_33:
-		.BYTE $02, $20, $00, $1E, $03, $06, $03, $06, $D5, $80, $05, $80, $05, $80, $05, $80, $05, $00, $05, $00, $05, $00, $05, $00, $05
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $03, $06, $03, $06 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $0580
+	.WORD $0580
+	.WORD $0580
+	.WORD $0580
+	.WORD $0500
+	.WORD $0500
+	.WORD $0500
+	.WORD $0500
 SPRITE_GROUPING_34:
-		.BYTE $02, $20, $00, $1A, $03, $06, $03, $06, $D5, $00, $04, $00, $04, $81, $04, $81, $04, $00, $04, $00, $04, $80, $04, $80, $04, $00, $04, $01, $04, $00, $04, $01, $04, $00, $04, $01, $04, $00, $04, $01, $04
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $03, $06, $03, $06 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $0400
+	.WORD $0400
+	.WORD $0481
+	.WORD $0481
+	.WORD $0400
+	.WORD $0400
+	.WORD $0480
+	.WORD $0480
+	.WORD $0400
+	.WORD $0401
+	.WORD $0400
+	.WORD $0401
+	.WORD $0400
+	.WORD $0401
+	.WORD $0400
+	.WORD $0401
 SPRITE_GROUPING_35:
-		.BYTE $02, $20, $00, $1A, $03, $06, $03, $06, $D5, $00, $03, $00, $03, $80, $03, $80, $03, $00, $03, $00, $03, $81, $03, $81, $03, $00, $03, $00, $03, $00, $03, $00, $03, $00, $03, $00, $03, $00, $03, $00, $03
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $03, $06, $03, $06 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $0300
+	.WORD $0300
+	.WORD $0380
+	.WORD $0380
+	.WORD $0300
+	.WORD $0300
+	.WORD $0381
+	.WORD $0381
+	.WORD $0300
+	.WORD $0300
+	.WORD $0300
+	.WORD $0300
+	.WORD $0300
+	.WORD $0300
+	.WORD $0300
+	.WORD $0300
 SPRITE_GROUPING_36:
-		.BYTE $02, $20, $00, $1A, $03, $06, $03, $06, $D5, $40, $44, $40, $44, $40, $44, $40, $44, $40, $44, $40, $44, $40, $44, $40, $44, $40, $44, $40, $44, $40, $44, $40, $44, $40, $44, $40, $44, $40, $44, $40, $44
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $03, $06, $03, $06 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $4440
+	.WORD $4440
+	.WORD $4440
+	.WORD $4440
+	.WORD $4440
+	.WORD $4440
+	.WORD $4440
+	.WORD $4440
+	.WORD $4440
+	.WORD $4440
+	.WORD $4440
+	.WORD $4440
+	.WORD $4440
+	.WORD $4440
+	.WORD $4440
+	.WORD $4440
 SPRITE_GROUPING_37:
-		.BYTE $02, $20, $00, $1A, $03, $06, $03, $06, $D5, $C0, $43, $C0, $43, $C0, $43, $C0, $43, $C0, $43, $C0, $43, $C0, $43, $C0, $43, $C0, $43, $C0, $43, $C0, $43, $C0, $43, $C0, $43, $C0, $43, $C0, $43, $C0, $43
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $03, $06, $03, $06 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $43C0
+	.WORD $43C0
+	.WORD $43C0
+	.WORD $43C0
+	.WORD $43C0
+	.WORD $43C0
+	.WORD $43C0
+	.WORD $43C0
+	.WORD $43C0
+	.WORD $43C0
+	.WORD $43C0
+	.WORD $43C0
+	.WORD $43C0
+	.WORD $43C0
+	.WORD $43C0
+	.WORD $43C0
 SPRITE_GROUPING_38:
-		.BYTE $02, $20, $00, $1A, $03, $06, $03, $06, $D5, $40, $43, $40, $43, $40, $43, $40, $43, $40, $43, $40, $43, $40, $43, $40, $43
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $03, $06, $03, $06 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $4340
+	.WORD $4340
+	.WORD $4340
+	.WORD $4340
+	.WORD $4340
+	.WORD $4340
+	.WORD $4340
+	.WORD $4340
 SPRITE_GROUPING_39:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D4, $C0, $0C, $C1, $0C, $81, $0D, $41, $0E, $00, $0C, $01, $0C, $80, $0D, $40, $0E, $C0, $0C, $C1, $0C, $00, $0C, $01, $0C, $00, $0C, $01, $0C, $C0, $0C, $C1, $0C
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $0CC0
+	.WORD $0CC1
+	.WORD $0D81
+	.WORD $0E41
+	.WORD $0C00
+	.WORD $0C01
+	.WORD $0D80
+	.WORD $0E40
+	.WORD $0CC0
+	.WORD $0CC1
+	.WORD $0C00
+	.WORD $0C01
+	.WORD $0C00
+	.WORD $0C01
+	.WORD $0CC0
+	.WORD $0CC1
 SPRITE_GROUPING_40:
-		.BYTE $03, $30, $06, $1A, $0C, $08, $0C, $08, $D2, $A0, $29, $A1, $29, $C1, $2A, $E1, $2B, $80, $28, $81, $28, $C0, $2A, $E0, $2B, $A0, $29, $A1, $29, $80, $28, $81, $28, $80, $28, $81, $28, $A0, $29, $A1, $29
+	.BYTE $03 ;Height
+	.BYTE $30 ;Width (lower half) + ??? (upper half)
+	.BYTE $06 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $08, $0C, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $29A0
+	.WORD $29A1
+	.WORD $2AC1
+	.WORD $2BE1
+	.WORD $2880
+	.WORD $2881
+	.WORD $2AC0
+	.WORD $2BE0
+	.WORD $29A0
+	.WORD $29A1
+	.WORD $2880
+	.WORD $2881
+	.WORD $2880
+	.WORD $2881
+	.WORD $29A0
+	.WORD $29A1
 SPRITE_GROUPING_41:
-		.BYTE $0A, $80, $10, $16, $18, $18, $18, $18, $D1, $00, $48, $01, $48, $00, $48, $01, $48, $00, $48, $01, $48, $00, $48, $01, $48, $00, $48, $01, $48, $00, $48, $01, $48, $00, $48, $01, $48, $00, $48, $01, $48
+	.BYTE $0A ;Height
+	.BYTE $80 ;Width (lower half) + ??? (upper half)
+	.BYTE $10 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $18, $18, $18, $18 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $4800
+	.WORD $4801
+	.WORD $4800
+	.WORD $4801
+	.WORD $4800
+	.WORD $4801
+	.WORD $4800
+	.WORD $4801
+	.WORD $4800
+	.WORD $4801
+	.WORD $4800
+	.WORD $4801
+	.WORD $4800
+	.WORD $4801
+	.WORD $4800
+	.WORD $4801
 SPRITE_GROUPING_42:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D5, $00, $2F, $01, $2F, $00, $2F, $01, $2F, $00, $2F, $01, $2F, $00, $2F, $01, $2F
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $2F00
+	.WORD $2F01
+	.WORD $2F00
+	.WORD $2F01
+	.WORD $2F00
+	.WORD $2F01
+	.WORD $2F00
+	.WORD $2F01
 SPRITE_GROUPING_43:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D4, $E0, $CE, $A0, $CF, $E0, $CE, $A0, $CF, $E0, $CE, $A0, $CF, $E0, $CE, $A0, $CF
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $CEE0
+	.WORD $CFA0
+	.WORD $CEE0
+	.WORD $CFA0
+	.WORD $CEE0
+	.WORD $CFA0
+	.WORD $CEE0
+	.WORD $CFA0
 SPRITE_GROUPING_44:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D4, $C0, $09, $C1, $09, $81, $0A, $41, $0B, $00, $09, $01, $09, $80, $0A, $40, $0B, $C0, $09, $C1, $09, $00, $09, $01, $09, $00, $09, $01, $09, $C0, $09, $C1, $09
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $09C0
+	.WORD $09C1
+	.WORD $0A81
+	.WORD $0B41
+	.WORD $0900
+	.WORD $0901
+	.WORD $0A80
+	.WORD $0B40
+	.WORD $09C0
+	.WORD $09C1
+	.WORD $0900
+	.WORD $0901
+	.WORD $0900
+	.WORD $0901
+	.WORD $09C0
+	.WORD $09C1
 SPRITE_GROUPING_45:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D4, $C0, $06, $C1, $06, $81, $07, $41, $08, $00, $06, $01, $06, $80, $07, $40, $08, $C0, $06, $C1, $06, $00, $06, $01, $06, $00, $06, $01, $06, $C0, $06, $C1, $06
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $06C0
+	.WORD $06C1
+	.WORD $0781
+	.WORD $0841
+	.WORD $0600
+	.WORD $0601
+	.WORD $0780
+	.WORD $0840
+	.WORD $06C0
+	.WORD $06C1
+	.WORD $0600
+	.WORD $0601
+	.WORD $0600
+	.WORD $0601
+	.WORD $06C0
+	.WORD $06C1
 SPRITE_GROUPING_46:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D4, $C0, $03, $C1, $03, $81, $04, $41, $05, $00, $03, $01, $03, $80, $04, $40, $05, $C0, $03, $C1, $03, $00, $03, $01, $03, $00, $03, $01, $03, $C0, $03, $C1, $03
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $03C0
+	.WORD $03C1
+	.WORD $0481
+	.WORD $0541
+	.WORD $0300
+	.WORD $0301
+	.WORD $0480
+	.WORD $0540
+	.WORD $03C0
+	.WORD $03C1
+	.WORD $0300
+	.WORD $0301
+	.WORD $0300
+	.WORD $0301
+	.WORD $03C0
+	.WORD $03C1
 SPRITE_GROUPING_47:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D4, $60, $CD, $20, $CE, $60, $CD, $20, $CE, $60, $CD, $20, $CE, $60, $CD, $20, $CE, $60, $CD, $20, $CE, $60, $CD, $20, $CE, $60, $CD, $20, $CE, $60, $CD, $20, $CE
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $CD60
+	.WORD $CE20
+	.WORD $CD60
+	.WORD $CE20
+	.WORD $CD60
+	.WORD $CE20
+	.WORD $CD60
+	.WORD $CE20
+	.WORD $CD60
+	.WORD $CE20
+	.WORD $CD60
+	.WORD $CE20
+	.WORD $CD60
+	.WORD $CE20
+	.WORD $CD60
+	.WORD $CE20
 SPRITE_GROUPING_48:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D4, $C0, $00, $C1, $00, $81, $01, $41, $02, $00, $00, $01, $00, $80, $01, $40, $02, $C0, $00, $C1, $00, $00, $00, $01, $00, $00, $00, $01, $00, $C0, $00, $C1, $00
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $00C0
+	.WORD $00C1
+	.WORD $0181
+	.WORD $0241
+	.WORD $0000
+	.WORD $0001
+	.WORD $0180
+	.WORD $0240
+	.WORD $00C0
+	.WORD $00C1
+	.WORD $0000
+	.WORD $0001
+	.WORD $0000
+	.WORD $0001
+	.WORD $00C0
+	.WORD $00C1
 SPRITE_GROUPING_49:
-		.BYTE $04, $40, $08, $1A, $08, $08, $08, $08, $D2, $00, $49, $00, $49, $00, $4B, $00, $4B, $00, $4B, $00, $4B, $00, $49, $00, $49
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $4900
+	.WORD $4900
+	.WORD $4B00
+	.WORD $4B00
+	.WORD $4B00
+	.WORD $4B00
+	.WORD $4900
+	.WORD $4900
 SPRITE_GROUPING_50:
-		.BYTE $05, $30, $0A, $1A, $00, $00, $00, $00, $D4, $80, $8C, $80, $8C, $80, $8C, $80, $8C, $80, $8C, $80, $8C, $80, $8C, $80, $8C
+	.BYTE $05 ;Height
+	.BYTE $30 ;Width (lower half) + ??? (upper half)
+	.BYTE $0A ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $8C80
+	.WORD $8C80
+	.WORD $8C80
+	.WORD $8C80
+	.WORD $8C80
+	.WORD $8C80
+	.WORD $8C80
+	.WORD $8C80
 SPRITE_GROUPING_51:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D4, $40, $29, $40, $29, $C0, $2A, $C0, $2A, $00, $2A, $00, $2A, $C1, $2A, $C1, $2A, $40, $29, $40, $29, $00, $2A, $00, $2A, $00, $2A, $00, $2A, $40, $29, $40, $29
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $2940
+	.WORD $2940
+	.WORD $2AC0
+	.WORD $2AC0
+	.WORD $2A00
+	.WORD $2A00
+	.WORD $2AC1
+	.WORD $2AC1
+	.WORD $2940
+	.WORD $2940
+	.WORD $2A00
+	.WORD $2A00
+	.WORD $2A00
+	.WORD $2A00
+	.WORD $2940
+	.WORD $2940
 SPRITE_GROUPING_52:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $F9, $C1, $F9, $81, $FA, $41, $FB, $00, $F9, $01, $F9, $80, $FA, $40, $FB
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $F9C0
+	.WORD $F9C1
+	.WORD $FA81
+	.WORD $FB41
+	.WORD $F900
+	.WORD $F901
+	.WORD $FA80
+	.WORD $FB40
 SPRITE_GROUPING_53:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $F6, $C1, $F6, $81, $F7, $41, $F8, $00, $F6, $01, $F6, $80, $F7, $40, $F8
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $F6C0
+	.WORD $F6C1
+	.WORD $F781
+	.WORD $F841
+	.WORD $F600
+	.WORD $F601
+	.WORD $F780
+	.WORD $F840
 SPRITE_GROUPING_54:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $F3, $C1, $F3, $81, $F4, $41, $F5, $00, $F3, $01, $F3, $80, $F4, $40, $F5
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $F3C0
+	.WORD $F3C1
+	.WORD $F481
+	.WORD $F541
+	.WORD $F300
+	.WORD $F301
+	.WORD $F480
+	.WORD $F540
 SPRITE_GROUPING_55:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $F0, $C1, $F0, $81, $F1, $41, $F2, $00, $F0, $01, $F0, $80, $F1, $40, $F2
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $F0C0
+	.WORD $F0C1
+	.WORD $F181
+	.WORD $F241
+	.WORD $F000
+	.WORD $F001
+	.WORD $F180
+	.WORD $F240
 SPRITE_GROUPING_56:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $ED, $C1, $ED, $81, $EE, $41, $EF, $00, $ED, $01, $ED, $80, $EE, $40, $EF
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $EDC0
+	.WORD $EDC1
+	.WORD $EE81
+	.WORD $EF41
+	.WORD $ED00
+	.WORD $ED01
+	.WORD $EE80
+	.WORD $EF40
 SPRITE_GROUPING_57:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $EA, $C1, $EA, $81, $EB, $41, $EC, $00, $EA, $01, $EA, $80, $EB, $40, $EC
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $EAC0
+	.WORD $EAC1
+	.WORD $EB81
+	.WORD $EC41
+	.WORD $EA00
+	.WORD $EA01
+	.WORD $EB80
+	.WORD $EC40
 SPRITE_GROUPING_58:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $E7, $C1, $E7, $81, $E8, $41, $E9, $00, $E7, $01, $E7, $80, $E8, $40, $E9
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $E7C0
+	.WORD $E7C1
+	.WORD $E881
+	.WORD $E941
+	.WORD $E700
+	.WORD $E701
+	.WORD $E880
+	.WORD $E940
 SPRITE_GROUPING_59:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $E4, $C1, $E4, $81, $E5, $41, $E6, $00, $E4, $01, $E4, $80, $E5, $40, $E6
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $E4C0
+	.WORD $E4C1
+	.WORD $E581
+	.WORD $E641
+	.WORD $E400
+	.WORD $E401
+	.WORD $E580
+	.WORD $E640
 SPRITE_GROUPING_60:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D4, $00, $39, $C0, $39, $81, $3A, $81, $3A, $00, $39, $C0, $39, $80, $3A, $80, $3A
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $3900
+	.WORD $39C0
+	.WORD $3A81
+	.WORD $3A81
+	.WORD $3900
+	.WORD $39C0
+	.WORD $3A80
+	.WORD $3A80
 SPRITE_GROUPING_61:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $E1, $C1, $E1, $81, $E2, $41, $E3, $00, $E1, $01, $E1, $80, $E2, $40, $E3
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $E1C0
+	.WORD $E1C1
+	.WORD $E281
+	.WORD $E341
+	.WORD $E100
+	.WORD $E101
+	.WORD $E280
+	.WORD $E340
 SPRITE_GROUPING_62:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $DE, $C1, $DE, $81, $DF, $41, $E0, $00, $DE, $01, $DE, $80, $DF, $40, $E0
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $DEC0
+	.WORD $DEC1
+	.WORD $DF81
+	.WORD $E041
+	.WORD $DE00
+	.WORD $DE01
+	.WORD $DF80
+	.WORD $E040
 SPRITE_GROUPING_63:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $DB, $C1, $DB, $81, $DC, $41, $DD, $00, $DB, $01, $DB, $80, $DC, $40, $DD
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $DBC0
+	.WORD $DBC1
+	.WORD $DC81
+	.WORD $DD41
+	.WORD $DB00
+	.WORD $DB01
+	.WORD $DC80
+	.WORD $DD40
 SPRITE_GROUPING_64:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $D8, $C1, $D8, $81, $D9, $41, $DA, $00, $D8, $01, $D8, $80, $D9, $40, $DA
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $D8C0
+	.WORD $D8C1
+	.WORD $D981
+	.WORD $DA41
+	.WORD $D800
+	.WORD $D801
+	.WORD $D980
+	.WORD $DA40
 SPRITE_GROUPING_65:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $D5, $C1, $D5, $81, $D6, $41, $D7, $00, $D5, $01, $D5, $80, $D6, $40, $D7
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $D5C0
+	.WORD $D5C1
+	.WORD $D681
+	.WORD $D741
+	.WORD $D500
+	.WORD $D501
+	.WORD $D680
+	.WORD $D740
 SPRITE_GROUPING_66:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $D2, $C1, $D2, $81, $D3, $41, $D4, $00, $D2, $01, $D2, $80, $D3, $40, $D4
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $D2C0
+	.WORD $D2C1
+	.WORD $D381
+	.WORD $D441
+	.WORD $D200
+	.WORD $D201
+	.WORD $D380
+	.WORD $D440
 SPRITE_GROUPING_67:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $CF, $C1, $CF, $81, $D0, $41, $D1, $00, $CF, $01, $CF, $80, $D0, $40, $D1
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $CFC0
+	.WORD $CFC1
+	.WORD $D081
+	.WORD $D141
+	.WORD $CF00
+	.WORD $CF01
+	.WORD $D080
+	.WORD $D140
 SPRITE_GROUPING_68:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $CC, $C1, $CC, $81, $CD, $41, $CE, $00, $CC, $01, $CC, $80, $CD, $40, $CE
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $CCC0
+	.WORD $CCC1
+	.WORD $CD81
+	.WORD $CE41
+	.WORD $CC00
+	.WORD $CC01
+	.WORD $CD80
+	.WORD $CE40
 SPRITE_GROUPING_69:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $C9, $C1, $C9, $81, $CA, $41, $CB, $00, $C9, $01, $C9, $80, $CA, $40, $CB
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $C9C0
+	.WORD $C9C1
+	.WORD $CA81
+	.WORD $CB41
+	.WORD $C900
+	.WORD $C901
+	.WORD $CA80
+	.WORD $CB40
 SPRITE_GROUPING_70:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $C6, $C1, $C6, $81, $C7, $41, $C8, $00, $C6, $01, $C6, $80, $C7, $40, $C8
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $C6C0
+	.WORD $C6C1
+	.WORD $C781
+	.WORD $C841
+	.WORD $C600
+	.WORD $C601
+	.WORD $C780
+	.WORD $C840
 SPRITE_GROUPING_71:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $C3, $C1, $C3, $81, $C4, $41, $C5, $00, $C3, $01, $C3, $80, $C4, $40, $C5
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $C3C0
+	.WORD $C3C1
+	.WORD $C481
+	.WORD $C541
+	.WORD $C300
+	.WORD $C301
+	.WORD $C480
+	.WORD $C540
 SPRITE_GROUPING_72:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $C0, $C1, $C0, $81, $C1, $41, $C2, $00, $C0, $01, $C0, $80, $C1, $40, $C2
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $C0C0
+	.WORD $C0C1
+	.WORD $C181
+	.WORD $C241
+	.WORD $C000
+	.WORD $C001
+	.WORD $C180
+	.WORD $C240
 SPRITE_GROUPING_73:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $BA, $C1, $BA, $81, $BB, $41, $BC, $00, $BA, $01, $BA, $80, $BB, $40, $BC
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $BAC0
+	.WORD $BAC1
+	.WORD $BB81
+	.WORD $BC41
+	.WORD $BA00
+	.WORD $BA01
+	.WORD $BB80
+	.WORD $BC40
 SPRITE_GROUPING_74:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $B7, $C1, $B7, $81, $B8, $41, $B9, $00, $B7, $01, $B7, $80, $B8, $40, $B9
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $B7C0
+	.WORD $B7C1
+	.WORD $B881
+	.WORD $B941
+	.WORD $B700
+	.WORD $B701
+	.WORD $B880
+	.WORD $B940
 SPRITE_GROUPING_75:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $B4, $C1, $B4, $81, $B5, $41, $B6, $00, $B4, $01, $B4, $80, $B5, $40, $B6
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $B4C0
+	.WORD $B4C1
+	.WORD $B581
+	.WORD $B641
+	.WORD $B400
+	.WORD $B401
+	.WORD $B580
+	.WORD $B640
 SPRITE_GROUPING_76:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $B1, $C1, $B1, $81, $B2, $41, $B3, $00, $B1, $01, $B1, $80, $B2, $40, $B3
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $B1C0
+	.WORD $B1C1
+	.WORD $B281
+	.WORD $B341
+	.WORD $B100
+	.WORD $B101
+	.WORD $B280
+	.WORD $B340
 SPRITE_GROUPING_77:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $AE, $C1, $AE, $81, $AF, $41, $B0, $00, $AE, $01, $AE, $80, $AF, $40, $B0
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $AEC0
+	.WORD $AEC1
+	.WORD $AF81
+	.WORD $B041
+	.WORD $AE00
+	.WORD $AE01
+	.WORD $AF80
+	.WORD $B040
 SPRITE_GROUPING_78:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $AB, $C1, $AB, $81, $AC, $41, $AD, $00, $AB, $01, $AB, $80, $AC, $40, $AD
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $ABC0
+	.WORD $ABC1
+	.WORD $AC81
+	.WORD $AD41
+	.WORD $AB00
+	.WORD $AB01
+	.WORD $AC80
+	.WORD $AD40
 SPRITE_GROUPING_79:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $A8, $C1, $A8, $81, $A9, $41, $AA, $00, $A8, $01, $A8, $80, $A9, $40, $AA
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $A8C0
+	.WORD $A8C1
+	.WORD $A981
+	.WORD $AA41
+	.WORD $A800
+	.WORD $A801
+	.WORD $A980
+	.WORD $AA40
 SPRITE_GROUPING_80:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $A5, $C1, $A5, $81, $A6, $41, $A7, $00, $A5, $01, $A5, $80, $A6, $40, $A7
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $A5C0
+	.WORD $A5C1
+	.WORD $A681
+	.WORD $A741
+	.WORD $A500
+	.WORD $A501
+	.WORD $A680
+	.WORD $A740
 SPRITE_GROUPING_81:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $A2, $C1, $A2, $81, $A3, $41, $A4, $00, $A2, $01, $A2, $80, $A3, $40, $A4
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $A2C0
+	.WORD $A2C1
+	.WORD $A381
+	.WORD $A441
+	.WORD $A200
+	.WORD $A201
+	.WORD $A380
+	.WORD $A440
 SPRITE_GROUPING_82:
-		.BYTE $02, $20, $00, $1C, $08, $08, $08, $08, $D5, $00, $09, $00, $09, $81, $09, $81, $09, $00, $09, $00, $09, $80, $09, $80, $09
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $0900
+	.WORD $0900
+	.WORD $0981
+	.WORD $0981
+	.WORD $0900
+	.WORD $0900
+	.WORD $0980
+	.WORD $0980
 SPRITE_GROUPING_83:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $9F, $C1, $9F, $81, $A0, $41, $A1, $00, $9F, $01, $9F, $80, $A0, $40, $A1
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $9FC0
+	.WORD $9FC1
+	.WORD $A081
+	.WORD $A141
+	.WORD $9F00
+	.WORD $9F01
+	.WORD $A080
+	.WORD $A140
 SPRITE_GROUPING_84:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D4, $80, $37, $81, $37, $41, $38, $41, $38, $C0, $36, $C1, $36, $40, $38, $40, $38
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $3780
+	.WORD $3781
+	.WORD $3841
+	.WORD $3841
+	.WORD $36C0
+	.WORD $36C1
+	.WORD $3840
+	.WORD $3840
 SPRITE_GROUPING_85:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $9C, $C1, $9C, $81, $9D, $41, $9E, $00, $9C, $01, $9C, $80, $9D, $40, $9E
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $9CC0
+	.WORD $9CC1
+	.WORD $9D81
+	.WORD $9E41
+	.WORD $9C00
+	.WORD $9C01
+	.WORD $9D80
+	.WORD $9E40
 SPRITE_GROUPING_86:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $99, $C1, $99, $81, $9A, $41, $9B, $00, $99, $01, $99, $80, $9A, $40, $9B
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $99C0
+	.WORD $99C1
+	.WORD $9A81
+	.WORD $9B41
+	.WORD $9900
+	.WORD $9901
+	.WORD $9A80
+	.WORD $9B40
 SPRITE_GROUPING_87:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $96, $C1, $96, $81, $97, $41, $98, $00, $96, $01, $96, $80, $97, $40, $98
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $96C0
+	.WORD $96C1
+	.WORD $9781
+	.WORD $9841
+	.WORD $9600
+	.WORD $9601
+	.WORD $9780
+	.WORD $9840
 SPRITE_GROUPING_88:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $93, $C1, $93, $81, $94, $41, $95, $00, $93, $01, $93, $80, $94, $40, $95
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $93C0
+	.WORD $93C1
+	.WORD $9481
+	.WORD $9541
+	.WORD $9300
+	.WORD $9301
+	.WORD $9480
+	.WORD $9540
 SPRITE_GROUPING_89:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $90, $C1, $90, $81, $91, $41, $92, $00, $90, $01, $90, $80, $91, $40, $92
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $90C0
+	.WORD $90C1
+	.WORD $9181
+	.WORD $9241
+	.WORD $9000
+	.WORD $9001
+	.WORD $9180
+	.WORD $9240
 SPRITE_GROUPING_90:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $8D, $C1, $8D, $81, $8E, $41, $8F, $00, $8D, $01, $8D, $80, $8E, $40, $8F
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $8DC0
+	.WORD $8DC1
+	.WORD $8E81
+	.WORD $8F41
+	.WORD $8D00
+	.WORD $8D01
+	.WORD $8E80
+	.WORD $8F40
 SPRITE_GROUPING_91:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $8A, $C1, $8A, $81, $8B, $41, $8C, $00, $8A, $01, $8A, $80, $8B, $40, $8C
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $8AC0
+	.WORD $8AC1
+	.WORD $8B81
+	.WORD $8C41
+	.WORD $8A00
+	.WORD $8A01
+	.WORD $8B80
+	.WORD $8C40
 SPRITE_GROUPING_92:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $87, $C1, $87, $81, $88, $41, $89, $00, $87, $01, $87, $80, $88, $40, $89
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $87C0
+	.WORD $87C1
+	.WORD $8881
+	.WORD $8941
+	.WORD $8700
+	.WORD $8701
+	.WORD $8880
+	.WORD $8940
 SPRITE_GROUPING_93:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $84, $C1, $84, $81, $85, $41, $86, $00, $84, $01, $84, $80, $85, $40, $86
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $84C0
+	.WORD $84C1
+	.WORD $8581
+	.WORD $8641
+	.WORD $8400
+	.WORD $8401
+	.WORD $8580
+	.WORD $8640
 SPRITE_GROUPING_94:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $81, $C1, $81, $81, $82, $41, $83, $00, $81, $01, $81, $80, $82, $40, $83
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $81C0
+	.WORD $81C1
+	.WORD $8281
+	.WORD $8341
+	.WORD $8100
+	.WORD $8101
+	.WORD $8280
+	.WORD $8340
 SPRITE_GROUPING_95:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $7E, $C1, $7E, $81, $7F, $41, $80, $00, $7E, $01, $7E, $80, $7F, $40, $80
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $7EC0
+	.WORD $7EC1
+	.WORD $7F81
+	.WORD $8041
+	.WORD $7E00
+	.WORD $7E01
+	.WORD $7F80
+	.WORD $8040
 SPRITE_GROUPING_96:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D4, $60, $CA, $60, $CA, $21, $CB, $21, $CB, $60, $CA, $60, $CA, $20, $CB, $20, $CB
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $CA60
+	.WORD $CA60
+	.WORD $CB21
+	.WORD $CB21
+	.WORD $CA60
+	.WORD $CA60
+	.WORD $CB20
+	.WORD $CB20
 SPRITE_GROUPING_97:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $00, $7D, $01, $7D, $C1, $7D, $81, $7E, $40, $7C, $41, $7C, $C0, $7D, $80, $7E, $40, $7F
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $7D00
+	.WORD $7D01
+	.WORD $7DC1
+	.WORD $7E81
+	.WORD $7C40
+	.WORD $7C41
+	.WORD $7DC0
+	.WORD $7E80
+	.WORD $7F40
 SPRITE_GROUPING_98:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $40, $7D, $40, $7D, $81, $7C, $81, $7C, $00, $7B, $C0, $7B, $80, $7C, $80, $7C
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $7D40
+	.WORD $7D40
+	.WORD $7C81
+	.WORD $7C81
+	.WORD $7B00
+	.WORD $7BC0
+	.WORD $7C80
+	.WORD $7C80
 SPRITE_GROUPING_99:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $78, $C1, $78, $81, $79, $41, $7A, $00, $78, $01, $78, $80, $79, $40, $7A
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $78C0
+	.WORD $78C1
+	.WORD $7981
+	.WORD $7A41
+	.WORD $7800
+	.WORD $7801
+	.WORD $7980
+	.WORD $7A40
 SPRITE_GROUPING_100:
-		.BYTE $02, $20, $00, $1C, $08, $08, $08, $08, $D5, $00, $08, $80, $08, $00, $08, $80, $08, $00, $08, $80, $08, $00, $08, $80, $08
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $0800
+	.WORD $0880
+	.WORD $0800
+	.WORD $0880
+	.WORD $0800
+	.WORD $0880
+	.WORD $0800
+	.WORD $0880
 SPRITE_GROUPING_101:
-		.BYTE $03, $20, $05, $18, $08, $08, $08, $08, $D3, $C0, $75, $C1, $75, $81, $76, $41, $77, $00, $75, $01, $75, $80, $76, $40, $77
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $18 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $75C0
+	.WORD $75C1
+	.WORD $7681
+	.WORD $7741
+	.WORD $7500
+	.WORD $7501
+	.WORD $7680
+	.WORD $7740
 SPRITE_GROUPING_102:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D4, $E0, $C8, $A0, $C9, $E0, $C8, $A0, $C9, $E0, $C8, $A0, $C9, $E0, $C8, $A0, $C9
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $C8E0
+	.WORD $C9A0
+	.WORD $C8E0
+	.WORD $C9A0
+	.WORD $C8E0
+	.WORD $C9A0
+	.WORD $C8E0
+	.WORD $C9A0
 SPRITE_GROUPING_103:
-		.BYTE $02, $30, $02, $1C, $0C, $08, $0C, $08, $D5, $40, $2E, $40, $2E, $40, $2E, $40, $2E, $40, $2E, $40, $2E, $40, $2E, $40, $2E
+	.BYTE $02 ;Height
+	.BYTE $30 ;Width (lower half) + ??? (upper half)
+	.BYTE $02 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $08, $0C, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $2E40
+	.WORD $2E40
+	.WORD $2E40
+	.WORD $2E40
+	.WORD $2E40
+	.WORD $2E40
+	.WORD $2E40
+	.WORD $2E40
 SPRITE_GROUPING_104:
-		.BYTE $02, $30, $02, $1C, $0C, $08, $0C, $08, $D5, $80, $2D, $80, $2D, $80, $2D, $80, $2D, $80, $2D, $80, $2D, $80, $2D, $80, $2D
+	.BYTE $02 ;Height
+	.BYTE $30 ;Width (lower half) + ??? (upper half)
+	.BYTE $02 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $08, $0C, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $2D80
+	.WORD $2D80
+	.WORD $2D80
+	.WORD $2D80
+	.WORD $2D80
+	.WORD $2D80
+	.WORD $2D80
+	.WORD $2D80
 SPRITE_GROUPING_105:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $72, $C1, $72, $81, $73, $41, $74, $00, $72, $01, $72, $80, $73, $40, $74
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $72C0
+	.WORD $72C1
+	.WORD $7381
+	.WORD $7441
+	.WORD $7200
+	.WORD $7201
+	.WORD $7380
+	.WORD $7440
 SPRITE_GROUPING_106:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D5, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
 SPRITE_GROUPING_107:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $6F, $C1, $6F, $81, $70, $41, $71, $00, $6F, $01, $6F, $80, $70, $40, $71
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $6FC0
+	.WORD $6FC1
+	.WORD $7081
+	.WORD $7141
+	.WORD $6F00
+	.WORD $6F01
+	.WORD $7080
+	.WORD $7140
 SPRITE_GROUPING_108:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $6C, $C1, $6C, $81, $6D, $41, $6E, $00, $6C, $01, $6C, $80, $6D, $40, $6E
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $6CC0
+	.WORD $6CC1
+	.WORD $6D81
+	.WORD $6E41
+	.WORD $6C00
+	.WORD $6C01
+	.WORD $6D80
+	.WORD $6E40
 SPRITE_GROUPING_109:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $69, $C1, $69, $81, $6A, $41, $6B, $00, $69, $01, $69, $80, $6A, $40, $6B
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $69C0
+	.WORD $69C1
+	.WORD $6A81
+	.WORD $6B41
+	.WORD $6900
+	.WORD $6901
+	.WORD $6A80
+	.WORD $6B40
 SPRITE_GROUPING_110:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $66, $C0, $66, $40, $68, $40, $68, $00, $66, $00, $66, $80, $67, $80, $67
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $66C0
+	.WORD $66C0
+	.WORD $6840
+	.WORD $6840
+	.WORD $6600
+	.WORD $6600
+	.WORD $6780
+	.WORD $6780
 SPRITE_GROUPING_111:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D5, $01, $2C, $01, $2C, $01, $2C, $01, $2C, $00, $2C, $00, $2C, $00, $2C, $00, $2C
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $2C01
+	.WORD $2C01
+	.WORD $2C01
+	.WORD $2C01
+	.WORD $2C00
+	.WORD $2C00
+	.WORD $2C00
+	.WORD $2C00
 SPRITE_GROUPING_112:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $63, $C1, $63, $81, $64, $41, $65, $00, $63, $01, $63, $80, $64, $40, $65
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $63C0
+	.WORD $63C1
+	.WORD $6481
+	.WORD $6541
+	.WORD $6300
+	.WORD $6301
+	.WORD $6480
+	.WORD $6540
 SPRITE_GROUPING_113:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $60, $C1, $60, $81, $61, $41, $62, $00, $60, $01, $60, $80, $61, $40, $62
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $60C0
+	.WORD $60C1
+	.WORD $6181
+	.WORD $6241
+	.WORD $6000
+	.WORD $6001
+	.WORD $6180
+	.WORD $6240
 SPRITE_GROUPING_114:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $5D, $C1, $5D, $81, $5E, $41, $5F, $00, $5D, $01, $5D, $80, $5E, $40, $5F
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $5DC0
+	.WORD $5DC1
+	.WORD $5E81
+	.WORD $5F41
+	.WORD $5D00
+	.WORD $5D01
+	.WORD $5E80
+	.WORD $5F40
 SPRITE_GROUPING_115:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $5A, $C1, $5A, $81, $5B, $41, $5C, $00, $5A, $01, $5A, $80, $5B, $40, $5C
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $5AC0
+	.WORD $5AC1
+	.WORD $5B81
+	.WORD $5C41
+	.WORD $5A00
+	.WORD $5A01
+	.WORD $5B80
+	.WORD $5C40
 SPRITE_GROUPING_116:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $57, $C1, $57, $81, $58, $41, $59, $00, $57, $01, $57, $80, $58, $40, $59
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $57C0
+	.WORD $57C1
+	.WORD $5881
+	.WORD $5941
+	.WORD $5700
+	.WORD $5701
+	.WORD $5880
+	.WORD $5940
 SPRITE_GROUPING_117:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $54, $C1, $54, $81, $55, $41, $56, $00, $54, $01, $54, $80, $55, $40, $56
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $54C0
+	.WORD $54C1
+	.WORD $5581
+	.WORD $5641
+	.WORD $5400
+	.WORD $5401
+	.WORD $5580
+	.WORD $5640
 SPRITE_GROUPING_118:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $51, $C1, $51, $81, $52, $41, $53, $00, $51, $01, $51, $80, $52, $40, $53
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $51C0
+	.WORD $51C1
+	.WORD $5281
+	.WORD $5341
+	.WORD $5100
+	.WORD $5101
+	.WORD $5280
+	.WORD $5340
 SPRITE_GROUPING_119:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $4E, $C1, $4E, $81, $4F, $41, $50, $00, $4E, $01, $4E, $80, $4F, $40, $50
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $4EC0
+	.WORD $4EC1
+	.WORD $4F81
+	.WORD $5041
+	.WORD $4E00
+	.WORD $4E01
+	.WORD $4F80
+	.WORD $5040
 SPRITE_GROUPING_120:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $4B, $C1, $4B, $81, $4C, $41, $4D, $00, $4B, $01, $4B, $80, $4C, $40, $4D
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $4BC0
+	.WORD $4BC1
+	.WORD $4C81
+	.WORD $4D41
+	.WORD $4B00
+	.WORD $4B01
+	.WORD $4C80
+	.WORD $4D40
 SPRITE_GROUPING_121:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $48, $C1, $48, $81, $49, $41, $4A, $00, $48, $01, $48, $80, $49, $40, $4A
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $48C0
+	.WORD $48C1
+	.WORD $4981
+	.WORD $4A41
+	.WORD $4800
+	.WORD $4801
+	.WORD $4980
+	.WORD $4A40
 SPRITE_GROUPING_122:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $45, $C1, $45, $81, $46, $41, $47, $00, $45, $01, $45, $80, $46, $40, $47
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $45C0
+	.WORD $45C1
+	.WORD $4681
+	.WORD $4741
+	.WORD $4500
+	.WORD $4501
+	.WORD $4680
+	.WORD $4740
 SPRITE_GROUPING_123:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $42, $C1, $42, $81, $43, $41, $44, $00, $42, $01, $42, $80, $43, $40, $44
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $42C0
+	.WORD $42C1
+	.WORD $4381
+	.WORD $4441
+	.WORD $4200
+	.WORD $4201
+	.WORD $4380
+	.WORD $4440
 SPRITE_GROUPING_124:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $3F, $C1, $3F, $81, $40, $41, $41, $00, $3F, $01, $3F, $80, $40, $40, $41
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $3FC0
+	.WORD $3FC1
+	.WORD $4081
+	.WORD $4141
+	.WORD $3F00
+	.WORD $3F01
+	.WORD $4080
+	.WORD $4140
 SPRITE_GROUPING_125:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $3C, $C1, $3C, $81, $3D, $41, $3E, $00, $3C, $01, $3C, $80, $3D, $40, $3E
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $3CC0
+	.WORD $3CC1
+	.WORD $3D81
+	.WORD $3E41
+	.WORD $3C00
+	.WORD $3C01
+	.WORD $3D80
+	.WORD $3E40
 SPRITE_GROUPING_126:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $39, $C1, $39, $81, $3A, $41, $3B, $00, $39, $01, $39, $80, $3A, $40, $3B
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $39C0
+	.WORD $39C1
+	.WORD $3A81
+	.WORD $3B41
+	.WORD $3900
+	.WORD $3901
+	.WORD $3A80
+	.WORD $3B40
 SPRITE_GROUPING_127:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $36, $C1, $36, $81, $37, $41, $38, $00, $36, $01, $36, $80, $37, $40, $38
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $36C0
+	.WORD $36C1
+	.WORD $3781
+	.WORD $3841
+	.WORD $3600
+	.WORD $3601
+	.WORD $3780
+	.WORD $3840
 SPRITE_GROUPING_128:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $33, $C1, $33, $81, $34, $41, $35, $00, $33, $01, $33, $80, $34, $40, $35
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $33C0
+	.WORD $33C1
+	.WORD $3481
+	.WORD $3541
+	.WORD $3300
+	.WORD $3301
+	.WORD $3480
+	.WORD $3540
 SPRITE_GROUPING_129:
-		.BYTE $02, $20, $00, $1C, $07, $08, $07, $08, $D4, $00, $75, $01, $75, $81, $75, $01, $76, $80, $74, $81, $74, $80, $75, $00, $76
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $07, $08, $07, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $7500
+	.WORD $7501
+	.WORD $7581
+	.WORD $7601
+	.WORD $7480
+	.WORD $7481
+	.WORD $7580
+	.WORD $7600
 SPRITE_GROUPING_130:
-		.BYTE $03, $30, $06, $1C, $0A, $08, $0A, $08, $D2, $20, $25, $21, $25, $41, $26, $61, $27, $00, $24, $01, $24, $40, $26, $60, $27
+	.BYTE $03 ;Height
+	.BYTE $30 ;Width (lower half) + ??? (upper half)
+	.BYTE $06 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0A, $08, $0A, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $2520
+	.WORD $2521
+	.WORD $2641
+	.WORD $2761
+	.WORD $2400
+	.WORD $2401
+	.WORD $2640
+	.WORD $2760
 SPRITE_GROUPING_131:
-		.BYTE $03, $30, $06, $1C, $0A, $08, $0A, $08, $D2, $A0, $20, $A1, $20, $C1, $21, $E1, $22, $80, $1F, $81, $1F, $C0, $21, $E0, $22
+	.BYTE $03 ;Height
+	.BYTE $30 ;Width (lower half) + ??? (upper half)
+	.BYTE $06 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0A, $08, $0A, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $20A0
+	.WORD $20A1
+	.WORD $21C1
+	.WORD $22E1
+	.WORD $1F80
+	.WORD $1F81
+	.WORD $21C0
+	.WORD $22E0
 SPRITE_GROUPING_132:
-		.BYTE $03, $20, $05, $1C, $07, $08, $07, $08, $D4, $61, $C4, $21, $C5, $60, $C4, $20, $C5, $60, $C4, $20, $C5, $61, $C4, $21, $C5
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $07, $08, $07, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $C461
+	.WORD $C521
+	.WORD $C460
+	.WORD $C520
+	.WORD $C460
+	.WORD $C520
+	.WORD $C461
+	.WORD $C521
 SPRITE_GROUPING_133:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $30, $C1, $30, $81, $31, $41, $32, $00, $30, $01, $30, $80, $31, $40, $32
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $30C0
+	.WORD $30C1
+	.WORD $3181
+	.WORD $3241
+	.WORD $3000
+	.WORD $3001
+	.WORD $3180
+	.WORD $3240
 SPRITE_GROUPING_134:
-		.BYTE $04, $40, $08, $18, $0C, $0C, $0C, $0C, $D2, $00, $45, $00, $47, $01, $45, $01, $47, $00, $45, $00, $47, $00, $45, $00, $47
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $18 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $0C, $0C, $0C ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $4500
+	.WORD $4700
+	.WORD $4501
+	.WORD $4701
+	.WORD $4500
+	.WORD $4700
+	.WORD $4500
+	.WORD $4700
 SPRITE_GROUPING_135:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $2A, $C1, $2A, $81, $2B, $41, $2C, $00, $2A, $01, $2A, $80, $2B, $40, $2C
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $2AC0
+	.WORD $2AC1
+	.WORD $2B81
+	.WORD $2C41
+	.WORD $2A00
+	.WORD $2A01
+	.WORD $2B80
+	.WORD $2C40
 SPRITE_GROUPING_136:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $27, $C1, $27, $81, $28, $41, $29, $00, $27, $01, $27, $80, $28, $40, $29
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $27C0
+	.WORD $27C1
+	.WORD $2881
+	.WORD $2941
+	.WORD $2700
+	.WORD $2701
+	.WORD $2880
+	.WORD $2940
 SPRITE_GROUPING_137:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $24, $C1, $24, $81, $25, $41, $26, $00, $24, $01, $24, $80, $25, $40, $26
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $24C0
+	.WORD $24C1
+	.WORD $2581
+	.WORD $2641
+	.WORD $2400
+	.WORD $2401
+	.WORD $2580
+	.WORD $2640
 SPRITE_GROUPING_138:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $21, $C1, $21, $81, $22, $41, $23, $00, $21, $01, $21, $80, $22, $40, $23
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $21C0
+	.WORD $21C1
+	.WORD $2281
+	.WORD $2341
+	.WORD $2100
+	.WORD $2101
+	.WORD $2280
+	.WORD $2340
 SPRITE_GROUPING_139:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $1E, $C1, $1E, $81, $1F, $41, $20, $00, $1E, $01, $1E, $80, $1F, $40, $20
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $1EC0
+	.WORD $1EC1
+	.WORD $1F81
+	.WORD $2041
+	.WORD $1E00
+	.WORD $1E01
+	.WORD $1F80
+	.WORD $2040
 SPRITE_GROUPING_140:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $1B, $C1, $1B, $81, $1C, $41, $1D, $00, $1B, $01, $1B, $80, $1C, $40, $1D
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $1BC0
+	.WORD $1BC1
+	.WORD $1C81
+	.WORD $1D41
+	.WORD $1B00
+	.WORD $1B01
+	.WORD $1C80
+	.WORD $1D40
 SPRITE_GROUPING_141:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $18, $C1, $18, $81, $19, $41, $1A, $00, $18, $01, $18, $80, $19, $40, $1A
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $18C0
+	.WORD $18C1
+	.WORD $1981
+	.WORD $1A41
+	.WORD $1800
+	.WORD $1801
+	.WORD $1980
+	.WORD $1A40
 SPRITE_GROUPING_142:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $15, $C1, $15, $81, $16, $41, $17, $00, $15, $01, $15, $80, $16, $40, $17
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $15C0
+	.WORD $15C1
+	.WORD $1681
+	.WORD $1741
+	.WORD $1500
+	.WORD $1501
+	.WORD $1680
+	.WORD $1740
 SPRITE_GROUPING_143:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $12, $C1, $12, $81, $13, $41, $14, $00, $12, $01, $12, $80, $13, $40, $14
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $12C0
+	.WORD $12C1
+	.WORD $1381
+	.WORD $1441
+	.WORD $1200
+	.WORD $1201
+	.WORD $1380
+	.WORD $1440
 SPRITE_GROUPING_144:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $0F, $C1, $0F, $81, $10, $41, $11, $00, $0F, $01, $0F, $80, $10, $40, $11
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $0FC0
+	.WORD $0FC1
+	.WORD $1081
+	.WORD $1141
+	.WORD $0F00
+	.WORD $0F01
+	.WORD $1080
+	.WORD $1140
 SPRITE_GROUPING_145:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $0C, $C1, $0C, $81, $0D, $41, $0E, $00, $0C, $01, $0C, $80, $0D, $40, $0E
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $0CC0
+	.WORD $0CC1
+	.WORD $0D81
+	.WORD $0E41
+	.WORD $0C00
+	.WORD $0C01
+	.WORD $0D80
+	.WORD $0E40
 SPRITE_GROUPING_146:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $09, $C1, $09, $81, $0A, $41, $0B, $00, $09, $01, $09, $80, $0A, $40, $0B
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $09C0
+	.WORD $09C1
+	.WORD $0A81
+	.WORD $0B41
+	.WORD $0900
+	.WORD $0901
+	.WORD $0A80
+	.WORD $0B40
 SPRITE_GROUPING_147:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $06, $C1, $06, $81, $07, $41, $08, $00, $06, $01, $06, $80, $07, $40, $08
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $06C0
+	.WORD $06C1
+	.WORD $0781
+	.WORD $0841
+	.WORD $0600
+	.WORD $0601
+	.WORD $0780
+	.WORD $0840
 SPRITE_GROUPING_148:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $03, $C1, $03, $81, $04, $41, $05, $00, $03, $01, $03, $80, $04, $40, $05
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $03C0
+	.WORD $03C1
+	.WORD $0481
+	.WORD $0541
+	.WORD $0300
+	.WORD $0301
+	.WORD $0480
+	.WORD $0540
 SPRITE_GROUPING_149:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $00, $C1, $00, $81, $01, $41, $02, $00, $00, $01, $00, $80, $01, $40, $02, $C0, $00, $C1, $00, $00, $00, $01, $00, $00, $00, $01, $00, $C0, $00, $C1, $00
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $00C0
+	.WORD $00C1
+	.WORD $0181
+	.WORD $0241
+	.WORD $0000
+	.WORD $0001
+	.WORD $0180
+	.WORD $0240
+	.WORD $00C0
+	.WORD $00C1
+	.WORD $0000
+	.WORD $0001
+	.WORD $0000
+	.WORD $0001
+	.WORD $00C0
+	.WORD $00C1
 SPRITE_GROUPING_150:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $FD, $41, $FD, $01, $FE, $C1, $FE, $80, $FC, $81, $FC, $00, $FE, $C0, $FE, $40, $FD, $41, $FD, $80, $FC, $81, $FC, $80, $FC, $81, $FC, $40, $FD, $41, $FD
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $FD40
+	.WORD $FD41
+	.WORD $FE01
+	.WORD $FEC1
+	.WORD $FC80
+	.WORD $FC81
+	.WORD $FE00
+	.WORD $FEC0
+	.WORD $FD40
+	.WORD $FD41
+	.WORD $FC80
+	.WORD $FC81
+	.WORD $FC80
+	.WORD $FC81
+	.WORD $FD40
+	.WORD $FD41
 SPRITE_GROUPING_151:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $FA, $41, $FA, $01, $FB, $C1, $FB, $80, $F9, $81, $F9, $00, $FB, $C0, $FB
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $FA40
+	.WORD $FA41
+	.WORD $FB01
+	.WORD $FBC1
+	.WORD $F980
+	.WORD $F981
+	.WORD $FB00
+	.WORD $FBC0
 SPRITE_GROUPING_152:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $F7, $41, $F7, $01, $F8, $C1, $F8, $80, $F6, $81, $F6, $00, $F8, $C0, $F8
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $F740
+	.WORD $F741
+	.WORD $F801
+	.WORD $F8C1
+	.WORD $F680
+	.WORD $F681
+	.WORD $F800
+	.WORD $F8C0
 SPRITE_GROUPING_153:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $F4, $41, $F4, $01, $F5, $C1, $F5, $80, $F3, $81, $F3, $00, $F5, $C0, $F5
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $F440
+	.WORD $F441
+	.WORD $F501
+	.WORD $F5C1
+	.WORD $F380
+	.WORD $F381
+	.WORD $F500
+	.WORD $F5C0
 SPRITE_GROUPING_154:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D4, $60, $AF, $61, $AF, $21, $B0, $21, $B0, $60, $AF, $61, $AF, $20, $B0, $20, $B0
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $AF60
+	.WORD $AF61
+	.WORD $B021
+	.WORD $B021
+	.WORD $AF60
+	.WORD $AF61
+	.WORD $B020
+	.WORD $B020
 SPRITE_GROUPING_155:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $F1, $41, $F1, $01, $F2, $C1, $F2, $80, $F0, $81, $F0, $00, $F2, $C0, $F2
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $F140
+	.WORD $F141
+	.WORD $F201
+	.WORD $F2C1
+	.WORD $F080
+	.WORD $F081
+	.WORD $F200
+	.WORD $F2C0
 SPRITE_GROUPING_156:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $EE, $41, $EE, $01, $EF, $C1, $EF, $80, $ED, $81, $ED, $00, $EF, $C0, $EF
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $EE40
+	.WORD $EE41
+	.WORD $EF01
+	.WORD $EFC1
+	.WORD $ED80
+	.WORD $ED81
+	.WORD $EF00
+	.WORD $EFC0
 SPRITE_GROUPING_157:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $EB, $41, $EB, $01, $EC, $C1, $EC, $80, $EA, $81, $EA, $00, $EC, $C0, $EC
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $EB40
+	.WORD $EB41
+	.WORD $EC01
+	.WORD $ECC1
+	.WORD $EA80
+	.WORD $EA81
+	.WORD $EC00
+	.WORD $ECC0
 SPRITE_GROUPING_158:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D4, $E0, $AD, $E1, $AD, $A1, $AE, $A1, $AE, $E0, $AD, $E1, $AD, $A0, $AE, $A0, $AE
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $ADE0
+	.WORD $ADE1
+	.WORD $AEA1
+	.WORD $AEA1
+	.WORD $ADE0
+	.WORD $ADE1
+	.WORD $AEA0
+	.WORD $AEA0
 SPRITE_GROUPING_159:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $E8, $41, $E8, $01, $E9, $C1, $E9, $80, $E7, $81, $E7, $00, $E9, $C0, $E9
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $E840
+	.WORD $E841
+	.WORD $E901
+	.WORD $E9C1
+	.WORD $E780
+	.WORD $E781
+	.WORD $E900
+	.WORD $E9C0
 SPRITE_GROUPING_160:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $E5, $41, $E5, $01, $E6, $C1, $E6, $80, $E4, $81, $E4, $00, $E6, $C0, $E6
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $E540
+	.WORD $E541
+	.WORD $E601
+	.WORD $E6C1
+	.WORD $E480
+	.WORD $E481
+	.WORD $E600
+	.WORD $E6C0
 SPRITE_GROUPING_161:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $E2, $41, $E2, $01, $E3, $C1, $E3, $80, $E1, $81, $E1, $00, $E3, $C0, $E3
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $E240
+	.WORD $E241
+	.WORD $E301
+	.WORD $E3C1
+	.WORD $E180
+	.WORD $E181
+	.WORD $E300
+	.WORD $E3C0
 SPRITE_GROUPING_162:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $DF, $41, $DF, $01, $E0, $C1, $E0, $80, $DE, $81, $DE, $00, $E0, $C0, $E0
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $DF40
+	.WORD $DF41
+	.WORD $E001
+	.WORD $E0C1
+	.WORD $DE80
+	.WORD $DE81
+	.WORD $E000
+	.WORD $E0C0
 SPRITE_GROUPING_163:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $DC, $41, $DC, $01, $DD, $C1, $DD, $80, $DB, $81, $DB, $00, $DD, $C0, $DD
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $DC40
+	.WORD $DC41
+	.WORD $DD01
+	.WORD $DDC1
+	.WORD $DB80
+	.WORD $DB81
+	.WORD $DD00
+	.WORD $DDC0
 SPRITE_GROUPING_164:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $D9, $41, $D9, $01, $DA, $C1, $DA, $80, $D8, $81, $D8, $00, $DA, $C0, $DA
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $D940
+	.WORD $D941
+	.WORD $DA01
+	.WORD $DAC1
+	.WORD $D880
+	.WORD $D881
+	.WORD $DA00
+	.WORD $DAC0
 SPRITE_GROUPING_165:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $D6, $41, $D6, $01, $D7, $C1, $D7, $80, $D5, $81, $D5, $00, $D7, $C0, $D7
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $D640
+	.WORD $D641
+	.WORD $D701
+	.WORD $D7C1
+	.WORD $D580
+	.WORD $D581
+	.WORD $D700
+	.WORD $D7C0
 SPRITE_GROUPING_166:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $D3, $41, $D3, $01, $D4, $C1, $D4, $80, $D2, $81, $D2, $00, $D4, $C0, $D4
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $D340
+	.WORD $D341
+	.WORD $D401
+	.WORD $D4C1
+	.WORD $D280
+	.WORD $D281
+	.WORD $D400
+	.WORD $D4C0
 SPRITE_GROUPING_167:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D4, $60, $AC, $60, $AC, $21, $AD, $21, $AD, $60, $AC, $60, $AC, $20, $AD, $20, $AD
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $AC60
+	.WORD $AC60
+	.WORD $AD21
+	.WORD $AD21
+	.WORD $AC60
+	.WORD $AC60
+	.WORD $AD20
+	.WORD $AD20
 SPRITE_GROUPING_168:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D5, $00, $1A, $00, $1A, $00, $1A, $00, $1A, $00, $1A, $00, $1A, $00, $1A, $00, $1A
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $1A00
+	.WORD $1A00
+	.WORD $1A00
+	.WORD $1A00
+	.WORD $1A00
+	.WORD $1A00
+	.WORD $1A00
+	.WORD $1A00
 SPRITE_GROUPING_169:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D4, $E0, $AA, $E1, $AA, $A0, $AB, $A0, $AB, $A0, $AB, $A1, $AB, $E0, $AA, $E0, $AA
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $AAE0
+	.WORD $AAE1
+	.WORD $ABA0
+	.WORD $ABA0
+	.WORD $ABA0
+	.WORD $ABA1
+	.WORD $AAE0
+	.WORD $AAE0
 SPRITE_GROUPING_170:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $00, $D1, $00, $D1, $C1, $D1, $C1, $D1, $80, $CF, $40, $D0, $C0, $D1, $C0, $D1
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $D100
+	.WORD $D100
+	.WORD $D1C1
+	.WORD $D1C1
+	.WORD $CF80
+	.WORD $D040
+	.WORD $D1C0
+	.WORD $D1C0
 SPRITE_GROUPING_171:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $CD, $41, $CD, $01, $CE, $C1, $CE, $80, $CC, $81, $CC, $00, $CE, $C0, $CE
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $CD40
+	.WORD $CD41
+	.WORD $CE01
+	.WORD $CEC1
+	.WORD $CC80
+	.WORD $CC81
+	.WORD $CE00
+	.WORD $CEC0
 SPRITE_GROUPING_172:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $CA, $41, $CA, $01, $CB, $C1, $CB, $80, $C9, $81, $C9, $00, $CB, $C0, $CB
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $CA40
+	.WORD $CA41
+	.WORD $CB01
+	.WORD $CBC1
+	.WORD $C980
+	.WORD $C981
+	.WORD $CB00
+	.WORD $CBC0
 SPRITE_GROUPING_173:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $C7, $41, $C7, $01, $C8, $C1, $C8, $80, $C6, $81, $C6, $00, $C8, $C0, $C8
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $C740
+	.WORD $C741
+	.WORD $C801
+	.WORD $C8C1
+	.WORD $C680
+	.WORD $C681
+	.WORD $C800
+	.WORD $C8C0
 SPRITE_GROUPING_174:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $C4, $41, $C4, $01, $C5, $C1, $C5, $80, $C3, $81, $C3, $00, $C5, $C0, $C5
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $C440
+	.WORD $C441
+	.WORD $C501
+	.WORD $C5C1
+	.WORD $C380
+	.WORD $C381
+	.WORD $C500
+	.WORD $C5C0
 SPRITE_GROUPING_175:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $C1, $41, $C1, $01, $C2, $C1, $C2, $80, $C0, $81, $C0, $00, $C2, $C0, $C2
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $C140
+	.WORD $C141
+	.WORD $C201
+	.WORD $C2C1
+	.WORD $C080
+	.WORD $C081
+	.WORD $C200
+	.WORD $C2C0
 SPRITE_GROUPING_176:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $BE, $41, $BE, $01, $BF, $C1, $BF, $80, $BD, $81, $BD, $00, $BF, $C0, $BF
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $BE40
+	.WORD $BE41
+	.WORD $BF01
+	.WORD $BFC1
+	.WORD $BD80
+	.WORD $BD81
+	.WORD $BF00
+	.WORD $BFC0
 SPRITE_GROUPING_177:
-		.BYTE $04, $20, $07, $1C, $08, $08, $08, $08, $D4, $80, $70, $80, $71, $80, $70, $80, $71, $80, $70, $80, $71, $80, $70, $80, $71
+	.BYTE $04 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $07 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $7080
+	.WORD $7180
+	.WORD $7080
+	.WORD $7180
+	.WORD $7080
+	.WORD $7180
+	.WORD $7080
+	.WORD $7180
 SPRITE_GROUPING_178:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $BB, $41, $BB, $01, $BC, $C1, $BC, $80, $BA, $81, $BA, $00, $BC, $C0, $BC
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $BB40
+	.WORD $BB41
+	.WORD $BC01
+	.WORD $BCC1
+	.WORD $BA80
+	.WORD $BA81
+	.WORD $BC00
+	.WORD $BCC0
 SPRITE_GROUPING_179:
-		.BYTE $02, $20, $00, $1C, $08, $08, $08, $08, $D5, $40, $42, $40, $42, $40, $42, $40, $42, $40, $42, $40, $42, $40, $42, $40, $42
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $4240
+	.WORD $4240
+	.WORD $4240
+	.WORD $4240
+	.WORD $4240
+	.WORD $4240
+	.WORD $4240
+	.WORD $4240
 SPRITE_GROUPING_180:
-		.BYTE $02, $30, $02, $1C, $08, $08, $08, $08, $D5, $80, $18, $80, $18, $80, $18, $80, $18, $80, $18, $80, $18, $80, $18, $80, $18
+	.BYTE $02 ;Height
+	.BYTE $30 ;Width (lower half) + ??? (upper half)
+	.BYTE $02 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $1880
+	.WORD $1880
+	.WORD $1880
+	.WORD $1880
+	.WORD $1880
+	.WORD $1880
+	.WORD $1880
+	.WORD $1880
 SPRITE_GROUPING_181:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D4, $80, $28, $81, $28, $C1, $27, $C1, $27, $00, $27, $01, $27, $C0, $27, $C0, $27
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $2880
+	.WORD $2881
+	.WORD $27C1
+	.WORD $27C1
+	.WORD $2700
+	.WORD $2701
+	.WORD $27C0
+	.WORD $27C0
 SPRITE_GROUPING_182:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $B8, $41, $B8, $01, $B9, $C1, $B9, $80, $B7, $81, $B7, $00, $B9, $C0, $B9, $40, $B8, $41, $B8, $80, $B7, $81, $B7, $80, $B7, $81, $B7, $40, $B8, $41, $B8
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $B840
+	.WORD $B841
+	.WORD $B901
+	.WORD $B9C1
+	.WORD $B780
+	.WORD $B781
+	.WORD $B900
+	.WORD $B9C0
+	.WORD $B840
+	.WORD $B841
+	.WORD $B780
+	.WORD $B781
+	.WORD $B780
+	.WORD $B781
+	.WORD $B840
+	.WORD $B841
 SPRITE_GROUPING_183:
-		.BYTE $02, $40, $03, $1C, $08, $08, $08, $08, $D5, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
+	.BYTE $02 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $03 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $0000
+	.WORD $0000
+	.WORD $0000
+	.WORD $0000
+	.WORD $0000
+	.WORD $0000
+	.WORD $0000
+	.WORD $0000
 SPRITE_GROUPING_184:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D4, $60, $A9, $60, $A9, $61, $A9, $21, $AA, $20, $AA, $20, $AA, $60, $A9, $20, $AA
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $A960
+	.WORD $A960
+	.WORD $A961
+	.WORD $AA21
+	.WORD $AA20
+	.WORD $AA20
+	.WORD $A960
+	.WORD $AA20
 SPRITE_GROUPING_185:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $79, $41, $79, $01, $7A, $C1, $7A, $80, $78, $80, $7B, $00, $7A, $C0, $7A
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $7940
+	.WORD $7941
+	.WORD $7A01
+	.WORD $7AC1
+	.WORD $7880
+	.WORD $7B80
+	.WORD $7A00
+	.WORD $7AC0
 SPRITE_GROUPING_186:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $80, $75, $81, $75, $41, $76, $01, $77, $C0, $74, $C0, $77, $40, $76, $00, $77
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $7580
+	.WORD $7581
+	.WORD $7641
+	.WORD $7701
+	.WORD $74C0
+	.WORD $77C0
+	.WORD $7640
+	.WORD $7700
 SPRITE_GROUPING_187:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $C0, $71, $C1, $71, $81, $72, $41, $73, $00, $71, $00, $74, $80, $72, $40, $73
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $71C0
+	.WORD $71C1
+	.WORD $7281
+	.WORD $7341
+	.WORD $7100
+	.WORD $7400
+	.WORD $7280
+	.WORD $7340
 SPRITE_GROUPING_188:
-		.BYTE $02, $20, $00, $12, $08, $08, $08, $08, $D4, $00, $70, $00, $70, $81, $6F, $81, $6F, $80, $6E, $00, $6F, $80, $6F, $80, $6F
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $12 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $7000
+	.WORD $7000
+	.WORD $6F81
+	.WORD $6F81
+	.WORD $6E80
+	.WORD $6F00
+	.WORD $6F80
+	.WORD $6F80
 SPRITE_GROUPING_189:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $B5, $41, $B5, $01, $B6, $C1, $B6, $80, $B4, $81, $B4, $00, $B6, $C0, $B6
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $B540
+	.WORD $B541
+	.WORD $B601
+	.WORD $B6C1
+	.WORD $B480
+	.WORD $B481
+	.WORD $B600
+	.WORD $B6C0
 SPRITE_GROUPING_190:
-		.BYTE $02, $20, $01, $1E, $00, $00, $00, $00, $D5, $40, $41, $40, $41, $40, $41, $40, $41, $40, $41, $40, $41, $40, $41, $40, $41
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $01 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $4140
+	.WORD $4140
+	.WORD $4140
+	.WORD $4140
+	.WORD $4140
+	.WORD $4140
+	.WORD $4140
+	.WORD $4140
 SPRITE_GROUPING_191:
-		.BYTE $02, $20, $01, $1E, $00, $00, $00, $00, $D5, $C1, $40, $C1, $40, $C0, $40, $C0, $40, $C0, $40, $C0, $40, $C1, $40, $C1, $40
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $01 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $40C1
+	.WORD $40C1
+	.WORD $40C0
+	.WORD $40C0
+	.WORD $40C0
+	.WORD $40C0
+	.WORD $40C1
+	.WORD $40C1
 SPRITE_GROUPING_192:
-		.BYTE $02, $20, $01, $1E, $00, $00, $00, $00, $D5, $40, $40, $40, $40, $40, $40, $40, $40, $40, $40, $40, $40, $40, $40, $40, $40
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $01 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $4040
+	.WORD $4040
+	.WORD $4040
+	.WORD $4040
+	.WORD $4040
+	.WORD $4040
+	.WORD $4040
+	.WORD $4040
 SPRITE_GROUPING_193:
-		.BYTE $02, $20, $01, $1E, $00, $00, $00, $00, $D4, $60, $A3, $60, $A3, $E0, $A3, $E0, $A3, $60, $A4, $60, $A4, $60, $A3, $60, $A3
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $01 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $A360
+	.WORD $A360
+	.WORD $A3E0
+	.WORD $A3E0
+	.WORD $A460
+	.WORD $A460
+	.WORD $A360
+	.WORD $A360
 SPRITE_GROUPING_194:
-		.BYTE $02, $20, $01, $1E, $00, $00, $00, $00, $D5, $C0, $3F, $C0, $3F, $C0, $3F, $C0, $3F, $C0, $3F, $C0, $3F, $C0, $3F, $C0, $3F
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $01 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $3FC0
+	.WORD $3FC0
+	.WORD $3FC0
+	.WORD $3FC0
+	.WORD $3FC0
+	.WORD $3FC0
+	.WORD $3FC0
+	.WORD $3FC0
 SPRITE_GROUPING_195:
-		.BYTE $02, $20, $00, $1E, $08, $08, $08, $08, $D4, $82, $FE, $82, $FE, $82, $FE, $82, $FE, $02, $FE, $02, $FE, $02, $FE, $02, $FE
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $FE82
+	.WORD $FE82
+	.WORD $FE82
+	.WORD $FE82
+	.WORD $FE02
+	.WORD $FE02
+	.WORD $FE02
+	.WORD $FE02
 SPRITE_GROUPING_196:
-		.BYTE $02, $20, $01, $1E, $00, $00, $00, $00, $D5, $40, $3F, $40, $3F, $40, $3F, $40, $3F, $40, $3F, $40, $3F, $40, $3F, $40, $3F
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $01 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $3F40
+	.WORD $3F40
+	.WORD $3F40
+	.WORD $3F40
+	.WORD $3F40
+	.WORD $3F40
+	.WORD $3F40
+	.WORD $3F40
 SPRITE_GROUPING_197:
-		.BYTE $02, $40, $03, $1E, $10, $10, $10, $10, $D4, $80, $6C, $80, $6D, $80, $6C, $80, $6D, $80, $6C, $80, $6D, $80, $6C, $80, $6D
+	.BYTE $02 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $03 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $10, $10, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $6C80
+	.WORD $6D80
+	.WORD $6C80
+	.WORD $6D80
+	.WORD $6C80
+	.WORD $6D80
+	.WORD $6C80
+	.WORD $6D80
 SPRITE_GROUPING_198:
-		.BYTE $02, $40, $03, $1E, $0C, $08, $0C, $08, $D4, $00, $FD, $00, $FD, $00, $FD, $00, $FD, $00, $FD, $00, $FD, $00, $FD, $00, $FD
+	.BYTE $02 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $03 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $08, $0C, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $FD00
+	.WORD $FD00
+	.WORD $FD00
+	.WORD $FD00
+	.WORD $FD00
+	.WORD $FD00
+	.WORD $FD00
+	.WORD $FD00
 SPRITE_GROUPING_199:
-		.BYTE $02, $40, $03, $1E, $10, $08, $10, $08, $D4, $00, $FC, $00, $FC, $00, $FC, $00, $FC, $00, $FC, $00, $FC, $00, $FC, $00, $FC
+	.BYTE $02 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $03 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $08, $10, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $FC00
+	.WORD $FC00
+	.WORD $FC00
+	.WORD $FC00
+	.WORD $FC00
+	.WORD $FC00
+	.WORD $FC00
+	.WORD $FC00
 SPRITE_GROUPING_200:
-		.BYTE $04, $20, $07, $1E, $08, $08, $08, $08, $D4, $02, $FB, $02, $FB, $02, $FB, $02, $FB, $02, $FB, $02, $FB, $02, $FB, $02, $FB
+	.BYTE $04 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $07 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $FB02
+	.WORD $FB02
+	.WORD $FB02
+	.WORD $FB02
+	.WORD $FB02
+	.WORD $FB02
+	.WORD $FB02
+	.WORD $FB02
 SPRITE_GROUPING_201:
-		.BYTE $04, $20, $07, $1E, $04, $08, $04, $08, $D4, $00, $FA, $00, $FA, $00, $FA, $00, $FA, $00, $FA, $00, $FA, $00, $FA, $00, $FA
+	.BYTE $04 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $07 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $04, $08, $04, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $FA00
+	.WORD $FA00
+	.WORD $FA00
+	.WORD $FA00
+	.WORD $FA00
+	.WORD $FA00
+	.WORD $FA00
+	.WORD $FA00
 SPRITE_GROUPING_202:
-		.BYTE $04, $20, $07, $1E, $07, $08, $07, $08, $D4, $00, $F9, $00, $F9, $00, $F9, $00, $F9, $00, $F9, $00, $F9, $00, $F9, $00, $F9
+	.BYTE $04 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $07 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $07, $08, $07, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $F900
+	.WORD $F900
+	.WORD $F900
+	.WORD $F900
+	.WORD $F900
+	.WORD $F900
+	.WORD $F900
+	.WORD $F900
 SPRITE_GROUPING_203:
-		.BYTE $02, $60, $04, $1E, $00, $00, $00, $00, $D4, $E0, $A1, $E0, $A1, $E0, $A1, $E0, $A1, $E0, $A1, $E0, $A1, $E0, $A1, $E0, $A1
+	.BYTE $02 ;Height
+	.BYTE $60 ;Width (lower half) + ??? (upper half)
+	.BYTE $04 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $A1E0
+	.WORD $A1E0
+	.WORD $A1E0
+	.WORD $A1E0
+	.WORD $A1E0
+	.WORD $A1E0
+	.WORD $A1E0
+	.WORD $A1E0
 SPRITE_GROUPING_204:
-		.BYTE $06, $20, $0B, $1E, $04, $08, $04, $08, $D4, $60, $A0, $60, $A0, $60, $A0, $60, $A0, $60, $A0, $60, $A0, $60, $A0, $60, $A0
+	.BYTE $06 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $0B ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $04, $08, $04, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $A060
+	.WORD $A060
+	.WORD $A060
+	.WORD $A060
+	.WORD $A060
+	.WORD $A060
+	.WORD $A060
+	.WORD $A060
 SPRITE_GROUPING_205:
-		.BYTE $06, $80, $0E, $1E, $20, $18, $20, $18, $D1, $00, $30, $00, $30, $00, $36, $00, $36, $00, $2A, $00, $2A, $01, $36, $01, $36, $00, $30, $00, $30, $01, $2A, $01, $2A, $00, $2A, $00, $2A, $01, $30, $01, $30
+	.BYTE $06 ;Height
+	.BYTE $80 ;Width (lower half) + ??? (upper half)
+	.BYTE $0E ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $20, $18, $20, $18 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $3000
+	.WORD $3000
+	.WORD $3600
+	.WORD $3600
+	.WORD $2A00
+	.WORD $2A00
+	.WORD $3601
+	.WORD $3601
+	.WORD $3000
+	.WORD $3000
+	.WORD $2A01
+	.WORD $2A01
+	.WORD $2A00
+	.WORD $2A00
+	.WORD $3001
+	.WORD $3001
 SPRITE_GROUPING_206:
-		.BYTE $04, $60, $09, $1E, $18, $10, $18, $10, $D1, $00, $3F, $00, $3F, $00, $42, $00, $42, $00, $3C, $00, $3C, $00, $45, $00, $45, $00, $3F, $00, $3F, $01, $3C, $01, $3C, $00, $3C, $00, $3C, $01, $3F, $01, $3F
+	.BYTE $04 ;Height
+	.BYTE $60 ;Width (lower half) + ??? (upper half)
+	.BYTE $09 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $18, $10, $18, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $3F00
+	.WORD $3F00
+	.WORD $4200
+	.WORD $4200
+	.WORD $3C00
+	.WORD $3C00
+	.WORD $4500
+	.WORD $4500
+	.WORD $3F00
+	.WORD $3F00
+	.WORD $3C01
+	.WORD $3C01
+	.WORD $3C00
+	.WORD $3C00
+	.WORD $3F01
+	.WORD $3F01
 SPRITE_GROUPING_207:
-		.BYTE $06, $80, $0E, $1E, $20, $10, $20, $10, $D1, $00, $F3, $00, $F3, $00, $F3, $00, $F3, $00, $F3, $00, $F3, $01, $F3, $01, $F3
+	.BYTE $06 ;Height
+	.BYTE $80 ;Width (lower half) + ??? (upper half)
+	.BYTE $0E ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $20, $10, $20, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $F300
+	.WORD $F300
+	.WORD $F300
+	.WORD $F300
+	.WORD $F300
+	.WORD $F300
+	.WORD $F301
+	.WORD $F301
 SPRITE_GROUPING_208:
-		.BYTE $06, $80, $0E, $1E, $20, $10, $20, $10, $D1, $00, $ED, $00, $ED, $00, $ED, $00, $ED, $00, $ED, $00, $ED, $01, $ED, $01, $ED
+	.BYTE $06 ;Height
+	.BYTE $80 ;Width (lower half) + ??? (upper half)
+	.BYTE $0E ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $20, $10, $20, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $ED00
+	.WORD $ED00
+	.WORD $ED00
+	.WORD $ED00
+	.WORD $ED00
+	.WORD $ED00
+	.WORD $ED01
+	.WORD $ED01
 SPRITE_GROUPING_209:
-		.BYTE $06, $60, $0D, $14, $10, $10, $10, $10, $D2, $00, $1B, $00, $1B, $00, $1B, $00, $1B, $00, $1B, $00, $1B, $00, $1B, $00, $1B
+	.BYTE $06 ;Height
+	.BYTE $60 ;Width (lower half) + ??? (upper half)
+	.BYTE $0D ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $10, $10, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $1B00
+	.WORD $1B00
+	.WORD $1B00
+	.WORD $1B00
+	.WORD $1B00
+	.WORD $1B00
+	.WORD $1B00
+	.WORD $1B00
 SPRITE_GROUPING_210:
-		.BYTE $06, $60, $0D, $14, $10, $10, $10, $10, $D2, $80, $16, $80, $16, $81, $16, $81, $16, $80, $16, $80, $16, $80, $16, $80, $16
+	.BYTE $06 ;Height
+	.BYTE $60 ;Width (lower half) + ??? (upper half)
+	.BYTE $0D ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $10, $10, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $1680
+	.WORD $1680
+	.WORD $1681
+	.WORD $1681
+	.WORD $1680
+	.WORD $1680
+	.WORD $1680
+	.WORD $1680
 SPRITE_GROUPING_211:
-		.BYTE $04, $40, $08, $1C, $10, $08, $10, $08, $D4, $80, $6A, $80, $6A, $81, $6A, $81, $6A, $80, $6A, $80, $6A, $80, $6A, $80, $6A
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $08, $10, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $6A80
+	.WORD $6A80
+	.WORD $6A81
+	.WORD $6A81
+	.WORD $6A80
+	.WORD $6A80
+	.WORD $6A80
+	.WORD $6A80
 SPRITE_GROUPING_212:
-		.BYTE $06, $40, $0C, $1E, $00, $00, $00, $00, $D1, $00, $EA, $00, $EA, $00, $E7, $00, $EA, $00, $E7, $00, $EA, $00, $E7, $00, $EA
+	.BYTE $06 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $0C ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $EA00
+	.WORD $EA00
+	.WORD $E700
+	.WORD $EA00
+	.WORD $E700
+	.WORD $EA00
+	.WORD $E700
+	.WORD $EA00
 SPRITE_GROUPING_213:
-		.BYTE $02, $20, $00, $1E, $08, $08, $08, $08, $D5, $C0, $3E, $C0, $3E, $C0, $3E, $C0, $3E, $C0, $3E, $C0, $3E, $C0, $3E, $C0, $3E
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $3EC0
+	.WORD $3EC0
+	.WORD $3EC0
+	.WORD $3EC0
+	.WORD $3EC0
+	.WORD $3EC0
+	.WORD $3EC0
+	.WORD $3EC0
 SPRITE_GROUPING_214:
-		.BYTE $02, $20, $00, $1E, $08, $08, $08, $08, $D4, $80, $F8, $80, $F8, $80, $F8, $80, $F8, $00, $F8, $00, $F8, $00, $F8, $00, $F8
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $F880
+	.WORD $F880
+	.WORD $F880
+	.WORD $F880
+	.WORD $F800
+	.WORD $F800
+	.WORD $F800
+	.WORD $F800
 SPRITE_GROUPING_215:
-		.BYTE $03, $20, $05, $1E, $08, $08, $08, $08, $D2, $80, $AB, $80, $AB, $80, $AB, $40, $AC, $80, $AB, $00, $AD, $80, $AB, $C0, $AD
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $AB80
+	.WORD $AB80
+	.WORD $AB80
+	.WORD $AC40
+	.WORD $AB80
+	.WORD $AD00
+	.WORD $AB80
+	.WORD $ADC0
 SPRITE_GROUPING_216:
-		.BYTE $04, $40, $08, $1E, $08, $08, $08, $08, $D4, $80, $68, $80, $68, $80, $68, $80, $68, $80, $68, $80, $68, $80, $68, $80, $68
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $6880
+	.WORD $6880
+	.WORD $6880
+	.WORD $6880
+	.WORD $6880
+	.WORD $6880
+	.WORD $6880
+	.WORD $6880
 SPRITE_GROUPING_217:
-		.BYTE $02, $20, $01, $1E, $00, $00, $00, $00, $D5, $41, $3E, $41, $3E, $41, $3E, $41, $3E, $40, $3E, $40, $3E, $40, $3E, $40, $3E
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $01 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $3E41
+	.WORD $3E41
+	.WORD $3E41
+	.WORD $3E41
+	.WORD $3E40
+	.WORD $3E40
+	.WORD $3E40
+	.WORD $3E40
 SPRITE_GROUPING_218:
-		.BYTE $02, $20, $01, $1E, $00, $00, $00, $00, $D5, $C0, $3D, $C0, $3D, $C0, $3D, $C0, $3D, $C0, $3D, $C0, $3D, $C0, $3D, $C0, $3D
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $01 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $3DC0
+	.WORD $3DC0
+	.WORD $3DC0
+	.WORD $3DC0
+	.WORD $3DC0
+	.WORD $3DC0
+	.WORD $3DC0
+	.WORD $3DC0
 SPRITE_GROUPING_219:
-		.BYTE $02, $20, $01, $1E, $00, $00, $00, $00, $D4, $01, $F7, $81, $F7, $01, $F7, $81, $F7, $00, $F7, $80, $F7, $00, $F7, $80, $F7
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $01 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $F701
+	.WORD $F781
+	.WORD $F701
+	.WORD $F781
+	.WORD $F700
+	.WORD $F780
+	.WORD $F700
+	.WORD $F780
 SPRITE_GROUPING_220:
-		.BYTE $02, $20, $00, $1E, $00, $00, $00, $00, $D4, $00, $F6, $80, $F6, $00, $F6, $80, $F6, $00, $F6, $80, $F6, $00, $F6, $80, $F6
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $F600
+	.WORD $F680
+	.WORD $F600
+	.WORD $F680
+	.WORD $F600
+	.WORD $F680
+	.WORD $F600
+	.WORD $F680
 SPRITE_GROUPING_221:
-		.BYTE $04, $40, $08, $16, $10, $08, $10, $08, $D4, $80, $66, $80, $66, $80, $66, $80, $66, $80, $66, $80, $66, $80, $66, $80, $66
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $08, $10, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $6680
+	.WORD $6680
+	.WORD $6680
+	.WORD $6680
+	.WORD $6680
+	.WORD $6680
+	.WORD $6680
+	.WORD $6680
 SPRITE_GROUPING_222:
-		.BYTE $02, $20, $00, $1E, $00, $00, $00, $00, $D4, $80, $F5, $81, $F5, $80, $F5, $81, $F5, $00, $F5, $01, $F5, $00, $F5, $01, $F5
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $F580
+	.WORD $F581
+	.WORD $F580
+	.WORD $F581
+	.WORD $F500
+	.WORD $F501
+	.WORD $F500
+	.WORD $F501
 SPRITE_GROUPING_223:
-		.BYTE $02, $20, $00, $1E, $04, $08, $04, $08, $D5, $40, $3D, $40, $3D, $40, $3D, $40, $3D, $40, $3D, $40, $3D, $40, $3D, $40, $3D
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $04, $08, $04, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $3D40
+	.WORD $3D40
+	.WORD $3D40
+	.WORD $3D40
+	.WORD $3D40
+	.WORD $3D40
+	.WORD $3D40
+	.WORD $3D40
 SPRITE_GROUPING_224:
-		.BYTE $02, $20, $00, $1E, $04, $08, $04, $08, $D5, $C0, $3C, $C0, $3C, $C0, $3C, $C0, $3C, $C0, $3C, $C0, $3C, $C0, $3C, $C0, $3C
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $04, $08, $04, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $3CC0
+	.WORD $3CC0
+	.WORD $3CC0
+	.WORD $3CC0
+	.WORD $3CC0
+	.WORD $3CC0
+	.WORD $3CC0
+	.WORD $3CC0
 SPRITE_GROUPING_225:
-		.BYTE $02, $20, $00, $1E, $04, $08, $04, $08, $D5, $40, $3C, $40, $3C, $40, $3C, $40, $3C, $40, $3C, $40, $3C, $40, $3C, $40, $3C
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $04, $08, $04, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $3C40
+	.WORD $3C40
+	.WORD $3C40
+	.WORD $3C40
+	.WORD $3C40
+	.WORD $3C40
+	.WORD $3C40
+	.WORD $3C40
 SPRITE_GROUPING_226:
-		.BYTE $02, $20, $01, $1A, $00, $00, $00, $00, $D5, $C0, $3B, $C0, $3B, $C0, $3B, $C0, $3B, $C0, $3B, $C0, $3B, $C0, $3B, $C0, $3B
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $01 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $3BC0
+	.WORD $3BC0
+	.WORD $3BC0
+	.WORD $3BC0
+	.WORD $3BC0
+	.WORD $3BC0
+	.WORD $3BC0
+	.WORD $3BC0
 SPRITE_GROUPING_227:
-		.BYTE $02, $20, $00, $1E, $04, $08, $04, $08, $D4, $80, $F4, $80, $F4, $80, $F4, $80, $F4, $00, $F4, $00, $F4, $00, $F4, $00, $F4
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $04, $08, $04, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $F480
+	.WORD $F480
+	.WORD $F480
+	.WORD $F480
+	.WORD $F400
+	.WORD $F400
+	.WORD $F400
+	.WORD $F400
 SPRITE_GROUPING_228:
-		.BYTE $02, $40, $03, $1E, $10, $08, $10, $08, $D4, $00, $F3, $00, $F3, $00, $F3, $00, $F3, $00, $F3, $00, $F3, $00, $F3, $00, $F3
+	.BYTE $02 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $03 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $08, $10, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $F300
+	.WORD $F300
+	.WORD $F300
+	.WORD $F300
+	.WORD $F300
+	.WORD $F300
+	.WORD $F300
+	.WORD $F300
 SPRITE_GROUPING_229:
-		.BYTE $06, $40, $0C, $1E, $0C, $08, $0C, $08, $D2, $80, $A8, $80, $A8, $80, $A8, $80, $A8, $80, $A8, $80, $A8, $80, $A8, $80, $A8
+	.BYTE $06 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $0C ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $08, $0C, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $A880
+	.WORD $A880
+	.WORD $A880
+	.WORD $A880
+	.WORD $A880
+	.WORD $A880
+	.WORD $A880
+	.WORD $A880
 SPRITE_GROUPING_230:
-		.BYTE $02, $40, $03, $14, $10, $08, $10, $08, $D4, $00, $F2, $00, $F2, $00, $F2, $00, $F2, $00, $F2, $00, $F2, $00, $F2, $00, $F2
+	.BYTE $02 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $03 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $08, $10, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $F200
+	.WORD $F200
+	.WORD $F200
+	.WORD $F200
+	.WORD $F200
+	.WORD $F200
+	.WORD $F200
+	.WORD $F200
 SPRITE_GROUPING_231:
-		.BYTE $04, $20, $07, $1E, $08, $08, $08, $08, $D4, $00, $F1, $00, $F1, $00, $F1, $00, $F1, $00, $F1, $00, $F1, $00, $F1, $00, $F1
+	.BYTE $04 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $07 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $F100
+	.WORD $F100
+	.WORD $F100
+	.WORD $F100
+	.WORD $F100
+	.WORD $F100
+	.WORD $F100
+	.WORD $F100
 SPRITE_GROUPING_232:
-		.BYTE $02, $20, $01, $1E, $00, $00, $00, $00, $D5, $40, $3B, $40, $3B, $40, $3B, $40, $3B, $40, $3B, $40, $3B, $40, $3B, $40, $3B
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $01 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $3B40
+	.WORD $3B40
+	.WORD $3B40
+	.WORD $3B40
+	.WORD $3B40
+	.WORD $3B40
+	.WORD $3B40
+	.WORD $3B40
 SPRITE_GROUPING_233:
-		.BYTE $02, $20, $00, $1E, $08, $08, $08, $08, $D4, $80, $F0, $80, $F0, $80, $F0, $80, $F0, $00, $F0, $00, $F0, $00, $F0, $00, $F0
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $F080
+	.WORD $F080
+	.WORD $F080
+	.WORD $F080
+	.WORD $F000
+	.WORD $F000
+	.WORD $F000
+	.WORD $F000
 SPRITE_GROUPING_234:
-		.BYTE $04, $40, $08, $1E, $0C, $08, $0C, $08, $D4, $80, $64, $80, $64, $80, $64, $80, $64, $80, $64, $80, $64, $80, $64, $80, $64
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $08, $0C, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $6480
+	.WORD $6480
+	.WORD $6480
+	.WORD $6480
+	.WORD $6480
+	.WORD $6480
+	.WORD $6480
+	.WORD $6480
 SPRITE_GROUPING_235:
-		.BYTE $04, $20, $07, $1E, $08, $08, $08, $08, $D4, $00, $EF, $00, $EF, $00, $EF, $00, $EF, $00, $EF, $00, $EF, $00, $EF, $00, $EF
+	.BYTE $04 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $07 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $EF00
+	.WORD $EF00
+	.WORD $EF00
+	.WORD $EF00
+	.WORD $EF00
+	.WORD $EF00
+	.WORD $EF00
+	.WORD $EF00
 SPRITE_GROUPING_236:
-		.BYTE $02, $40, $03, $1E, $10, $08, $10, $08, $D4, $00, $EE, $00, $EE, $00, $EE, $00, $EE, $00, $EE, $00, $EE, $00, $EE, $00, $EE
+	.BYTE $02 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $03 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $08, $10, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $EE00
+	.WORD $EE00
+	.WORD $EE00
+	.WORD $EE00
+	.WORD $EE00
+	.WORD $EE00
+	.WORD $EE00
+	.WORD $EE00
 SPRITE_GROUPING_237:
-		.BYTE $02, $20, $00, $1E, $02, $04, $02, $04, $D5, $C0, $3A, $C0, $3A, $C0, $3A, $C0, $3A, $C0, $3A, $C0, $3A, $C0, $3A, $C0, $3A
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $02, $04, $02, $04 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $3AC0
+	.WORD $3AC0
+	.WORD $3AC0
+	.WORD $3AC0
+	.WORD $3AC0
+	.WORD $3AC0
+	.WORD $3AC0
+	.WORD $3AC0
 SPRITE_GROUPING_238:
-		.BYTE $02, $20, $00, $1E, $02, $04, $02, $04, $D5, $40, $3A, $40, $3A, $40, $3A, $40, $3A, $40, $3A, $40, $3A, $40, $3A, $40, $3A
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $02, $04, $02, $04 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $3A40
+	.WORD $3A40
+	.WORD $3A40
+	.WORD $3A40
+	.WORD $3A40
+	.WORD $3A40
+	.WORD $3A40
+	.WORD $3A40
 SPRITE_GROUPING_239:
-		.BYTE $02, $20, $00, $1E, $08, $08, $08, $08, $D5, $C0, $39, $C0, $39, $C0, $39, $C0, $39, $C0, $39, $C0, $39, $C0, $39, $C0, $39
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $39C0
+	.WORD $39C0
+	.WORD $39C0
+	.WORD $39C0
+	.WORD $39C0
+	.WORD $39C0
+	.WORD $39C0
+	.WORD $39C0
 SPRITE_GROUPING_240:
-		.BYTE $04, $60, $09, $14, $10, $10, $10, $10, $D2, $80, $A5, $80, $A5, $80, $A5, $80, $A5, $80, $A5, $80, $A5, $80, $A5, $80, $A5
+	.BYTE $04 ;Height
+	.BYTE $60 ;Width (lower half) + ??? (upper half)
+	.BYTE $09 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $10, $10, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $A580
+	.WORD $A580
+	.WORD $A580
+	.WORD $A580
+	.WORD $A580
+	.WORD $A580
+	.WORD $A580
+	.WORD $A580
 SPRITE_GROUPING_241:
-		.BYTE $02, $20, $01, $1E, $04, $08, $04, $08, $D5, $40, $39, $40, $39, $40, $39, $40, $39, $40, $39, $40, $39, $40, $39, $40, $39
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $01 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $04, $08, $04, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $3940
+	.WORD $3940
+	.WORD $3940
+	.WORD $3940
+	.WORD $3940
+	.WORD $3940
+	.WORD $3940
+	.WORD $3940
 SPRITE_GROUPING_242:
-		.BYTE $04, $40, $08, $14, $00, $00, $00, $00, $D1, $00, $5A, $00, $5A, $00, $5C, $00, $5C, $00, $5E, $00, $5E, $00, $60, $00, $60
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $5A00
+	.WORD $5A00
+	.WORD $5C00
+	.WORD $5C00
+	.WORD $5E00
+	.WORD $5E00
+	.WORD $6000
+	.WORD $6000
 SPRITE_GROUPING_243:
-		.BYTE $06, $80, $0E, $1C, $14, $18, $20, $10, $D1, $00, $1E, $00, $1E, $00, $24, $00, $24, $00, $18, $00, $18, $01, $24, $01, $24, $00, $1E, $00, $1E, $01, $18, $01, $18, $00, $18, $00, $18, $01, $1E, $01, $1E
+	.BYTE $06 ;Height
+	.BYTE $80 ;Width (lower half) + ??? (upper half)
+	.BYTE $0E ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $14, $18, $20, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $1E00
+	.WORD $1E00
+	.WORD $2400
+	.WORD $2400
+	.WORD $1800
+	.WORD $1800
+	.WORD $2401
+	.WORD $2401
+	.WORD $1E00
+	.WORD $1E00
+	.WORD $1801
+	.WORD $1801
+	.WORD $1800
+	.WORD $1800
+	.WORD $1E01
+	.WORD $1E01
 SPRITE_GROUPING_244:
-		.BYTE $04, $40, $08, $1C, $10, $10, $10, $10, $D4, $80, $62, $80, $62, $80, $62, $80, $62, $80, $62, $80, $62, $80, $62, $80, $62
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $10, $10, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $6280
+	.WORD $6280
+	.WORD $6280
+	.WORD $6280
+	.WORD $6280
+	.WORD $6280
+	.WORD $6280
+	.WORD $6280
 SPRITE_GROUPING_245:
-		.BYTE $02, $20, $00, $1C, $00, $00, $00, $00, $D4, $01, $ED, $81, $ED, $01, $ED, $81, $ED, $00, $ED, $80, $ED, $00, $ED, $80, $ED
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $ED01
+	.WORD $ED81
+	.WORD $ED01
+	.WORD $ED81
+	.WORD $ED00
+	.WORD $ED80
+	.WORD $ED00
+	.WORD $ED80
 SPRITE_GROUPING_246:
-		.BYTE $02, $40, $03, $12, $10, $08, $10, $08, $D4, $00, $EC, $00, $EC, $00, $EC, $00, $EC, $00, $EC, $00, $EC, $00, $EC, $00, $EC
+	.BYTE $02 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $03 ;Unknown
+	.BYTE $12 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $08, $10, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $EC00
+	.WORD $EC00
+	.WORD $EC00
+	.WORD $EC00
+	.WORD $EC00
+	.WORD $EC00
+	.WORD $EC00
+	.WORD $EC00
 SPRITE_GROUPING_247:
-		.BYTE $02, $20, $00, $16, $00, $00, $00, $00, $D5, $C0, $38, $C0, $38, $C0, $38, $C0, $38, $C0, $38, $C0, $38, $C0, $38, $C0, $38
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $38C0
+	.WORD $38C0
+	.WORD $38C0
+	.WORD $38C0
+	.WORD $38C0
+	.WORD $38C0
+	.WORD $38C0
+	.WORD $38C0
 SPRITE_GROUPING_248:
-		.BYTE $02, $20, $00, $1E, $06, $08, $06, $08, $D5, $40, $38, $40, $38, $40, $38, $40, $38, $40, $38, $40, $38, $40, $38, $40, $38
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $06, $08, $06, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $3840
+	.WORD $3840
+	.WORD $3840
+	.WORD $3840
+	.WORD $3840
+	.WORD $3840
+	.WORD $3840
+	.WORD $3840
 SPRITE_GROUPING_249:
-		.BYTE $04, $40, $08, $18, $0C, $08, $0C, $08, $D4, $80, $60, $80, $60, $80, $60, $80, $60, $80, $60, $80, $60, $80, $60, $80, $60
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $18 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $08, $0C, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $6080
+	.WORD $6080
+	.WORD $6080
+	.WORD $6080
+	.WORD $6080
+	.WORD $6080
+	.WORD $6080
+	.WORD $6080
 SPRITE_GROUPING_250:
-		.BYTE $02, $20, $01, $1C, $00, $00, $00, $00, $D4, $00, $EB, $00, $EB, $80, $EB, $80, $EB, $01, $EB, $01, $EB, $81, $EB, $81, $EB
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $01 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $EB00
+	.WORD $EB00
+	.WORD $EB80
+	.WORD $EB80
+	.WORD $EB01
+	.WORD $EB01
+	.WORD $EB81
+	.WORD $EB81
 SPRITE_GROUPING_251:
-		.BYTE $02, $60, $04, $14, $00, $00, $00, $00, $D4, $E0, $9E, $E1, $9E, $E0, $9E, $E1, $9E, $E0, $9E, $E1, $9E, $E0, $9E, $E1, $9E
+	.BYTE $02 ;Height
+	.BYTE $60 ;Width (lower half) + ??? (upper half)
+	.BYTE $04 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $9EE0
+	.WORD $9EE1
+	.WORD $9EE0
+	.WORD $9EE1
+	.WORD $9EE0
+	.WORD $9EE1
+	.WORD $9EE0
+	.WORD $9EE1
 SPRITE_GROUPING_252:
-		.BYTE $08, $80, $0F, $14, $10, $18, $10, $18, $D1, $00, $52, $00, $52, $00, $52, $00, $52, $00, $52, $00, $52, $00, $52, $00, $52
+	.BYTE $08 ;Height
+	.BYTE $80 ;Width (lower half) + ??? (upper half)
+	.BYTE $0F ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $18, $10, $18 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $5200
+	.WORD $5200
+	.WORD $5200
+	.WORD $5200
+	.WORD $5200
+	.WORD $5200
+	.WORD $5200
+	.WORD $5200
 SPRITE_GROUPING_253:
-		.BYTE $02, $20, $00, $1C, $04, $08, $04, $08, $D4, $00, $EA, $80, $EA, $00, $EA, $80, $EA, $00, $EA, $80, $EA, $00, $EA, $80, $EA
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $04, $08, $04, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $EA00
+	.WORD $EA80
+	.WORD $EA00
+	.WORD $EA80
+	.WORD $EA00
+	.WORD $EA80
+	.WORD $EA00
+	.WORD $EA80
 SPRITE_GROUPING_254:
-		.BYTE $06, $60, $0D, $1E, $18, $10, $18, $10, $D2, $00, $12, $00, $12, $00, $12, $00, $12, $00, $12, $00, $12, $01, $12, $01, $12
+	.BYTE $06 ;Height
+	.BYTE $60 ;Width (lower half) + ??? (upper half)
+	.BYTE $0D ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $18, $10, $18, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $1200
+	.WORD $1200
+	.WORD $1200
+	.WORD $1200
+	.WORD $1200
+	.WORD $1200
+	.WORD $1201
+	.WORD $1201
 SPRITE_GROUPING_255:
-		.BYTE $04, $60, $09, $1C, $18, $10, $18, $10, $D2, $80, $A2, $80, $A2, $80, $A2, $80, $A2, $80, $A2, $80, $A2, $80, $A2, $80, $A2
+	.BYTE $04 ;Height
+	.BYTE $60 ;Width (lower half) + ??? (upper half)
+	.BYTE $09 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $18, $10, $18, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $A280
+	.WORD $A280
+	.WORD $A280
+	.WORD $A280
+	.WORD $A280
+	.WORD $A280
+	.WORD $A280
+	.WORD $A280
 SPRITE_GROUPING_256:
-		.BYTE $04, $20, $07, $1E, $00, $00, $00, $00, $D2, $80, $9F, $80, $9F, $80, $A0, $80, $A0, $80, $A1, $80, $A1, $80, $A0, $80, $A0
+	.BYTE $04 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $07 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $9F80
+	.WORD $9F80
+	.WORD $A080
+	.WORD $A080
+	.WORD $A180
+	.WORD $A180
+	.WORD $A080
+	.WORD $A080
 SPRITE_GROUPING_257:
-		.BYTE $02, $20, $01, $1E, $00, $00, $00, $00, $D4, $60, $9D, $60, $9D, $E0, $9D, $E0, $9D, $60, $9E, $60, $9E, $E0, $9D, $E0, $9D
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $01 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $9D60
+	.WORD $9D60
+	.WORD $9DE0
+	.WORD $9DE0
+	.WORD $9E60
+	.WORD $9E60
+	.WORD $9DE0
+	.WORD $9DE0
 SPRITE_GROUPING_258:
-		.BYTE $02, $20, $01, $1E, $00, $00, $00, $00, $D4, $00, $E9, $80, $E9, $00, $E9, $80, $E9, $00, $E9, $80, $E9, $00, $E9, $80, $E9
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $01 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $E900
+	.WORD $E980
+	.WORD $E900
+	.WORD $E980
+	.WORD $E900
+	.WORD $E980
+	.WORD $E900
+	.WORD $E980
 SPRITE_GROUPING_259:
-		.BYTE $04, $40, $08, $1E, $0C, $08, $0C, $08, $D4, $81, $5E, $81, $5E, $81, $5E, $81, $5E, $80, $5E, $80, $5E, $80, $5E, $80, $5E
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $08, $0C, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $5E81
+	.WORD $5E81
+	.WORD $5E81
+	.WORD $5E81
+	.WORD $5E80
+	.WORD $5E80
+	.WORD $5E80
+	.WORD $5E80
 SPRITE_GROUPING_260:
-		.BYTE $04, $40, $08, $14, $0E, $10, $0E, $10, $D4, $80, $5C, $80, $5C, $80, $5C, $80, $5C, $80, $5C, $80, $5C, $80, $5C, $80, $5C
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0E, $10, $0E, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $5C80
+	.WORD $5C80
+	.WORD $5C80
+	.WORD $5C80
+	.WORD $5C80
+	.WORD $5C80
+	.WORD $5C80
+	.WORD $5C80
 SPRITE_GROUPING_261:
-		.BYTE $03, $20, $05, $1E, $00, $00, $00, $00, $D4, $A0, $9C, $A0, $9C, $E0, $9B, $A0, $9C, $E0, $9B, $A0, $9C, $E0, $9B, $A0, $9C
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $9CA0
+	.WORD $9CA0
+	.WORD $9BE0
+	.WORD $9CA0
+	.WORD $9BE0
+	.WORD $9CA0
+	.WORD $9BE0
+	.WORD $9CA0
 SPRITE_GROUPING_262:
-		.BYTE $04, $40, $08, $14, $0C, $0E, $0C, $0E, $D2, $00, $3B, $00, $3B, $00, $3B, $00, $3B, $00, $39, $00, $39, $00, $39, $00, $39
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $0E, $0C, $0E ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $3B00
+	.WORD $3B00
+	.WORD $3B00
+	.WORD $3B00
+	.WORD $3900
+	.WORD $3900
+	.WORD $3900
+	.WORD $3900
 SPRITE_GROUPING_263:
-		.BYTE $02, $20, $00, $1C, $00, $00, $00, $00, $D4, $00, $E8, $80, $E8, $01, $E8, $81, $E8, $00, $E8, $80, $E8, $00, $E8, $80, $E8
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $E800
+	.WORD $E880
+	.WORD $E801
+	.WORD $E881
+	.WORD $E800
+	.WORD $E880
+	.WORD $E800
+	.WORD $E880
 SPRITE_GROUPING_264:
-		.BYTE $02, $20, $01, $1E, $00, $00, $00, $00, $D5, $C0, $37, $C0, $37, $C1, $37, $C1, $37, $C0, $37, $C0, $37, $C0, $37, $C0, $37
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $01 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $37C0
+	.WORD $37C0
+	.WORD $37C1
+	.WORD $37C1
+	.WORD $37C0
+	.WORD $37C0
+	.WORD $37C0
+	.WORD $37C0
 SPRITE_GROUPING_265:
-		.BYTE $03, $20, $05, $14, $08, $08, $08, $08, $D4, $60, $9A, $20, $9B, $60, $9A, $20, $9B, $60, $9A, $20, $9B, $60, $9A, $20, $9B
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $9A60
+	.WORD $9B20
+	.WORD $9A60
+	.WORD $9B20
+	.WORD $9A60
+	.WORD $9B20
+	.WORD $9A60
+	.WORD $9B20
 SPRITE_GROUPING_266:
-		.BYTE $06, $20, $0B, $1E, $08, $08, $08, $08, $D4, $E0, $98, $E0, $98, $E0, $98, $E0, $98, $E0, $98, $E0, $98, $E0, $98, $E0, $98
+	.BYTE $06 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $0B ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $98E0
+	.WORD $98E0
+	.WORD $98E0
+	.WORD $98E0
+	.WORD $98E0
+	.WORD $98E0
+	.WORD $98E0
+	.WORD $98E0
 SPRITE_GROUPING_267:
-		.BYTE $04, $20, $07, $1E, $10, $08, $10, $08, $D4, $00, $E7, $00, $E7, $00, $E7, $00, $E7, $00, $E7, $00, $E7, $00, $E7, $00, $E7
+	.BYTE $04 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $07 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $08, $10, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $E700
+	.WORD $E700
+	.WORD $E700
+	.WORD $E700
+	.WORD $E700
+	.WORD $E700
+	.WORD $E700
+	.WORD $E700
 SPRITE_GROUPING_268:
-		.BYTE $02, $20, $00, $14, $08, $08, $08, $08, $D5, $40, $37, $40, $37, $40, $37, $40, $37, $40, $37, $40, $37, $40, $37, $40, $37
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $3740
+	.WORD $3740
+	.WORD $3740
+	.WORD $3740
+	.WORD $3740
+	.WORD $3740
+	.WORD $3740
+	.WORD $3740
 SPRITE_GROUPING_269:
-		.BYTE $02, $20, $00, $1E, $02, $04, $02, $04, $D4, $00, $E6, $80, $E6, $00, $E6, $80, $E6, $00, $E6, $80, $E6, $00, $E6, $80, $E6
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $02, $04, $02, $04 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $E600
+	.WORD $E680
+	.WORD $E600
+	.WORD $E680
+	.WORD $E600
+	.WORD $E680
+	.WORD $E600
+	.WORD $E680
 SPRITE_GROUPING_270:
-		.BYTE $02, $20, $00, $1E, $08, $08, $08, $08, $D5, $C0, $36, $C0, $36, $C0, $36, $C0, $36, $C0, $36, $C0, $36, $C0, $36, $C0, $36
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $36C0
+	.WORD $36C0
+	.WORD $36C0
+	.WORD $36C0
+	.WORD $36C0
+	.WORD $36C0
+	.WORD $36C0
+	.WORD $36C0
 SPRITE_GROUPING_271:
-		.BYTE $02, $40, $03, $1E, $00, $00, $00, $00, $D4, $01, $E5, $01, $E5, $01, $E5, $01, $E5, $00, $E5, $00, $E5, $00, $E5, $00, $E5
+	.BYTE $02 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $03 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $E501
+	.WORD $E501
+	.WORD $E501
+	.WORD $E501
+	.WORD $E500
+	.WORD $E500
+	.WORD $E500
+	.WORD $E500
 SPRITE_GROUPING_272:
-		.BYTE $04, $40, $08, $1E, $00, $00, $00, $00, $D4, $81, $5A, $81, $5A, $81, $5A, $81, $5A, $80, $5A, $80, $5A, $80, $5A, $80, $5A
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $5A81
+	.WORD $5A81
+	.WORD $5A81
+	.WORD $5A81
+	.WORD $5A80
+	.WORD $5A80
+	.WORD $5A80
+	.WORD $5A80
 SPRITE_GROUPING_273:
-		.BYTE $03, $20, $05, $1C, $04, $08, $04, $08, $D5, $C1, $14, $C1, $14, $C1, $14, $C1, $14, $C0, $14, $C0, $14, $C0, $14, $C0, $14
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $04, $08, $04, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $14C1
+	.WORD $14C1
+	.WORD $14C1
+	.WORD $14C1
+	.WORD $14C0
+	.WORD $14C0
+	.WORD $14C0
+	.WORD $14C0
 SPRITE_GROUPING_274:
-		.BYTE $02, $20, $00, $1C, $08, $08, $08, $08, $D4, $60, $DF, $E0, $DF, $60, $DF, $E0, $DF, $60, $DF, $E0, $DF, $60, $DF, $E0, $DF, $60, $E0
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $DF60
+	.WORD $DFE0
+	.WORD $DF60
+	.WORD $DFE0
+	.WORD $DF60
+	.WORD $DFE0
+	.WORD $DF60
+	.WORD $DFE0
+	.WORD $E060
 SPRITE_GROUPING_275:
-		.BYTE $02, $20, $00, $1C, $08, $0B, $08, $0B, $D5, $00, $13, $80, $13, $00, $13, $80, $13, $00, $13, $80, $13, $00, $13, $80, $13
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $0B, $08, $0B ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $1300
+	.WORD $1380
+	.WORD $1300
+	.WORD $1380
+	.WORD $1300
+	.WORD $1380
+	.WORD $1300
+	.WORD $1380
 SPRITE_GROUPING_276:
-		.BYTE $02, $20, $00, $1C, $08, $0B, $08, $0B, $D5, $00, $12, $80, $12, $01, $12, $81, $12, $00, $12, $80, $12, $00, $12, $80, $12
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $0B, $08, $0B ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $1200
+	.WORD $1280
+	.WORD $1201
+	.WORD $1281
+	.WORD $1200
+	.WORD $1280
+	.WORD $1200
+	.WORD $1280
 SPRITE_GROUPING_277:
-		.BYTE $02, $20, $00, $1C, $07, $08, $07, $08, $D5, $00, $11, $80, $11, $00, $11, $80, $11, $00, $11, $80, $11, $00, $11, $80, $11
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $07, $08, $07, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $1100
+	.WORD $1180
+	.WORD $1100
+	.WORD $1180
+	.WORD $1100
+	.WORD $1180
+	.WORD $1100
+	.WORD $1180
 SPRITE_GROUPING_278:
-		.BYTE $02, $20, $00, $1C, $08, $08, $07, $08, $D4, $00, $8B, $01, $8B, $81, $8B, $01, $8C, $80, $8A, $81, $8A, $80, $8B, $00, $8C
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $07, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $8B00
+	.WORD $8B01
+	.WORD $8B81
+	.WORD $8C01
+	.WORD $8A80
+	.WORD $8A81
+	.WORD $8B80
+	.WORD $8C00
 SPRITE_GROUPING_279:
-		.BYTE $02, $20, $00, $1C, $08, $0B, $08, $0B, $D5, $00, $10, $80, $10, $00, $10, $80, $10, $00, $10, $80, $10, $00, $10, $80, $10
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $0B, $08, $0B ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $1000
+	.WORD $1080
+	.WORD $1000
+	.WORD $1080
+	.WORD $1000
+	.WORD $1080
+	.WORD $1000
+	.WORD $1080
 SPRITE_GROUPING_280:
-		.BYTE $02, $20, $00, $1C, $07, $08, $07, $08, $D5, $00, $0F, $80, $0F, $00, $0F, $80, $0F, $00, $0F, $80, $0F, $00, $0F, $80, $0F
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $07, $08, $07, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $0F00
+	.WORD $0F80
+	.WORD $0F00
+	.WORD $0F80
+	.WORD $0F00
+	.WORD $0F80
+	.WORD $0F00
+	.WORD $0F80
 SPRITE_GROUPING_281:
-		.BYTE $02, $20, $00, $14, $05, $08, $05, $08, $D4, $00, $89, $01, $89, $81, $89, $01, $8A, $80, $88, $81, $88, $80, $89, $00, $8A
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $05, $08, $05, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $8900
+	.WORD $8901
+	.WORD $8981
+	.WORD $8A01
+	.WORD $8880
+	.WORD $8881
+	.WORD $8980
+	.WORD $8A00
 SPRITE_GROUPING_282:
-		.BYTE $03, $20, $05, $1C, $08, $0B, $08, $0B, $D4, $41, $44, $01, $45, $41, $44, $01, $45, $40, $44, $00, $45, $40, $44, $00, $45, $C0, $45
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $0B, $08, $0B ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $4441
+	.WORD $4501
+	.WORD $4441
+	.WORD $4501
+	.WORD $4440
+	.WORD $4500
+	.WORD $4440
+	.WORD $4500
+	.WORD $45C0
 SPRITE_GROUPING_283:
-		.BYTE $03, $20, $05, $1C, $06, $08, $07, $08, $D4, $C0, $24, $C0, $24, $81, $25, $41, $26, $00, $24, $00, $24, $80, $25, $40, $26
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $06, $08, $07, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $24C0
+	.WORD $24C0
+	.WORD $2581
+	.WORD $2641
+	.WORD $2400
+	.WORD $2400
+	.WORD $2580
+	.WORD $2640
 SPRITE_GROUPING_284:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D4, $C0, $21, $C1, $21, $81, $22, $41, $23, $00, $21, $01, $21, $80, $22, $40, $23
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $21C0
+	.WORD $21C1
+	.WORD $2281
+	.WORD $2341
+	.WORD $2100
+	.WORD $2101
+	.WORD $2280
+	.WORD $2340
 SPRITE_GROUPING_285:
-		.BYTE $03, $20, $05, $1C, $08, $0B, $08, $0B, $D2, $80, $84, $81, $84, $41, $85, $01, $86, $C0, $83, $C1, $83, $40, $85, $00, $86, $C0, $86
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $0B, $08, $0B ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $8480
+	.WORD $8481
+	.WORD $8541
+	.WORD $8601
+	.WORD $83C0
+	.WORD $83C1
+	.WORD $8540
+	.WORD $8600
+	.WORD $86C0
 SPRITE_GROUPING_286:
-		.BYTE $03, $20, $05, $1C, $07, $08, $07, $08, $D4, $00, $42, $C0, $42, $00, $42, $C0, $42, $00, $42, $C0, $42, $00, $42, $C0, $42, $80, $43
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $07, $08, $07, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $4200
+	.WORD $42C0
+	.WORD $4200
+	.WORD $42C0
+	.WORD $4200
+	.WORD $42C0
+	.WORD $4200
+	.WORD $42C0
+	.WORD $4380
 SPRITE_GROUPING_287:
-		.BYTE $03, $20, $05, $1C, $07, $08, $08, $08, $D4, $C0, $1E, $C1, $1E, $81, $1F, $41, $20, $00, $1E, $01, $1E, $80, $1F, $40, $20
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $07, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $1EC0
+	.WORD $1EC1
+	.WORD $1F81
+	.WORD $2041
+	.WORD $1E00
+	.WORD $1E01
+	.WORD $1F80
+	.WORD $2040
 SPRITE_GROUPING_288:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D4, $C0, $1B, $C1, $1B, $81, $1C, $41, $1D, $00, $1B, $01, $1B, $80, $1C, $40, $1D
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $1BC0
+	.WORD $1BC1
+	.WORD $1C81
+	.WORD $1D41
+	.WORD $1B00
+	.WORD $1B01
+	.WORD $1C80
+	.WORD $1D40
 SPRITE_GROUPING_289:
-		.BYTE $04, $40, $08, $1C, $0E, $10, $10, $10, $D1, $00, $B4, $01, $B4, $01, $B6, $01, $B8, $00, $B2, $01, $B2, $00, $B6, $00, $B8
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0E, $10, $10, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $B400
+	.WORD $B401
+	.WORD $B601
+	.WORD $B801
+	.WORD $B200
+	.WORD $B201
+	.WORD $B600
+	.WORD $B800
 SPRITE_GROUPING_290:
-		.BYTE $04, $40, $08, $1C, $10, $10, $10, $10, $D2, $00, $6D, $00, $6F, $00, $6D, $00, $6F, $00, $6D, $00, $6F, $00, $6D, $00, $6F
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $10, $10, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $6D00
+	.WORD $6F00
+	.WORD $6D00
+	.WORD $6F00
+	.WORD $6D00
+	.WORD $6F00
+	.WORD $6D00
+	.WORD $6F00
 SPRITE_GROUPING_291:
-		.BYTE $02, $20, $00, $12, $07, $08, $07, $08, $D4, $80, $86, $81, $86, $01, $87, $81, $87, $80, $86, $81, $86, $00, $87, $80, $87, $00, $88
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $12 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $07, $08, $07, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $8680
+	.WORD $8681
+	.WORD $8701
+	.WORD $8781
+	.WORD $8680
+	.WORD $8681
+	.WORD $8700
+	.WORD $8780
+	.WORD $8800
 SPRITE_GROUPING_292:
-		.BYTE $03, $20, $05, $12, $08, $08, $08, $08, $D4, $C0, $18, $C1, $18, $81, $19, $41, $1A, $00, $18, $01, $18, $80, $19, $40, $1A
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $12 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $18C0
+	.WORD $18C1
+	.WORD $1981
+	.WORD $1A41
+	.WORD $1800
+	.WORD $1801
+	.WORD $1980
+	.WORD $1A40
 SPRITE_GROUPING_293:
-		.BYTE $04, $40, $08, $12, $09, $08, $09, $08, $D2, $00, $69, $00, $6B, $00, $69, $00, $6B, $00, $69, $00, $6B, $00, $69, $00, $6B
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $12 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $09, $08, $09, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $6900
+	.WORD $6B00
+	.WORD $6900
+	.WORD $6B00
+	.WORD $6900
+	.WORD $6B00
+	.WORD $6900
+	.WORD $6B00
 SPRITE_GROUPING_294:
-		.BYTE $04, $40, $08, $12, $08, $10, $0D, $08, $D1, $00, $A4, $01, $A4, $01, $A6, $01, $A8, $00, $A2, $01, $A2, $00, $A6, $00, $A8
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $12 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $10, $0D, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $A400
+	.WORD $A401
+	.WORD $A601
+	.WORD $A801
+	.WORD $A200
+	.WORD $A201
+	.WORD $A600
+	.WORD $A800
 SPRITE_GROUPING_295:
-		.BYTE $04, $40, $08, $12, $0D, $0B, $0D, $0B, $D2, $02, $65, $02, $67, $03, $65, $03, $67, $02, $65, $02, $67, $02, $65, $02, $67
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $12 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0D, $0B, $0D, $0B ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $6502
+	.WORD $6702
+	.WORD $6503
+	.WORD $6703
+	.WORD $6502
+	.WORD $6702
+	.WORD $6502
+	.WORD $6702
 SPRITE_GROUPING_296:
-		.BYTE $04, $40, $08, $12, $08, $08, $0E, $08, $D1, $00, $9C, $01, $9C, $01, $9E, $01, $A0, $00, $9A, $01, $9A, $00, $9E, $00, $A0
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $12 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $0E, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $9C00
+	.WORD $9C01
+	.WORD $9E01
+	.WORD $A001
+	.WORD $9A00
+	.WORD $9A01
+	.WORD $9E00
+	.WORD $A000
 SPRITE_GROUPING_297:
-		.BYTE $04, $40, $08, $18, $0C, $0B, $0C, $0B, $D2, $00, $61, $00, $63, $00, $61, $00, $63, $00, $61, $00, $63, $00, $61, $00, $63
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $18 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $0B, $0C, $0B ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $6100
+	.WORD $6300
+	.WORD $6100
+	.WORD $6300
+	.WORD $6100
+	.WORD $6300
+	.WORD $6100
+	.WORD $6300
 SPRITE_GROUPING_298:
-		.BYTE $04, $40, $08, $12, $09, $10, $0E, $08, $D1, $00, $94, $01, $94, $01, $96, $01, $98, $00, $92, $01, $92, $00, $96, $00, $98
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $12 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $09, $10, $0E, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $9400
+	.WORD $9401
+	.WORD $9601
+	.WORD $9801
+	.WORD $9200
+	.WORD $9201
+	.WORD $9600
+	.WORD $9800
 SPRITE_GROUPING_299:
-		.BYTE $04, $40, $08, $12, $0F, $10, $0F, $10, $D2, $00, $5D, $00, $5F, $01, $5D, $01, $5F, $00, $5D, $00, $5F, $00, $5D, $00, $5F
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $12 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0F, $10, $0F, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $5D00
+	.WORD $5F00
+	.WORD $5D01
+	.WORD $5F01
+	.WORD $5D00
+	.WORD $5F00
+	.WORD $5D00
+	.WORD $5F00
 SPRITE_GROUPING_300:
-		.BYTE $04, $40, $08, $12, $0B, $04, $0B, $04, $D4, $80, $84, $80, $84, $80, $84, $80, $84, $80, $84, $80, $84, $80, $84, $80, $84
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $12 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0B, $04, $0B, $04 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $8480
+	.WORD $8480
+	.WORD $8480
+	.WORD $8480
+	.WORD $8480
+	.WORD $8480
+	.WORD $8480
+	.WORD $8480
 SPRITE_GROUPING_301:
-		.BYTE $02, $20, $00, $14, $08, $04, $08, $04, $D5, $00, $0E, $80, $0E, $01, $0E, $81, $0E, $00, $0E, $80, $0E, $00, $0E, $80, $0E
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $04, $08, $04 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $0E00
+	.WORD $0E80
+	.WORD $0E01
+	.WORD $0E81
+	.WORD $0E00
+	.WORD $0E80
+	.WORD $0E00
+	.WORD $0E80
 SPRITE_GROUPING_302:
-		.BYTE $03, $20, $05, $16, $08, $0B, $08, $0B, $D4, $E0, $DD, $A0, $DE, $E0, $DD, $A0, $DE, $E0, $DD, $A0, $DE, $E0, $DD, $A0, $DE
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $0B, $08, $0B ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $DDE0
+	.WORD $DEA0
+	.WORD $DDE0
+	.WORD $DEA0
+	.WORD $DDE0
+	.WORD $DEA0
+	.WORD $DDE0
+	.WORD $DEA0
 SPRITE_GROUPING_303:
-		.BYTE $03, $20, $05, $14, $08, $08, $08, $08, $D4, $60, $DC, $20, $DD, $60, $DC, $20, $DD, $60, $DC, $20, $DD, $60, $DC, $20, $DD
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $DC60
+	.WORD $DD20
+	.WORD $DC60
+	.WORD $DD20
+	.WORD $DC60
+	.WORD $DD20
+	.WORD $DC60
+	.WORD $DD20
 SPRITE_GROUPING_304:
-		.BYTE $03, $20, $05, $14, $08, $0B, $08, $0B, $D4, $E0, $DA, $A0, $DB, $E1, $DA, $A1, $DB, $E0, $DA, $A0, $DB, $E0, $DA, $A0, $DB
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $0B, $08, $0B ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $DAE0
+	.WORD $DBA0
+	.WORD $DAE1
+	.WORD $DBA1
+	.WORD $DAE0
+	.WORD $DBA0
+	.WORD $DAE0
+	.WORD $DBA0
 SPRITE_GROUPING_305:
-		.BYTE $03, $20, $05, $14, $08, $08, $08, $08, $D4, $C0, $15, $C1, $15, $81, $16, $41, $17, $00, $15, $01, $15, $80, $16, $40, $17
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $15C0
+	.WORD $15C1
+	.WORD $1681
+	.WORD $1741
+	.WORD $1500
+	.WORD $1501
+	.WORD $1680
+	.WORD $1740
 SPRITE_GROUPING_306:
-		.BYTE $03, $20, $05, $14, $08, $0B, $08, $0B, $D4, $60, $D9, $20, $DA, $60, $D9, $20, $DA, $60, $D9, $20, $DA, $60, $D9, $20, $DA
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $0B, $08, $0B ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $D960
+	.WORD $DA20
+	.WORD $D960
+	.WORD $DA20
+	.WORD $D960
+	.WORD $DA20
+	.WORD $D960
+	.WORD $DA20
 SPRITE_GROUPING_307:
-		.BYTE $03, $20, $05, $14, $08, $08, $08, $08, $D2, $C0, $80, $C1, $80, $81, $81, $41, $82, $00, $80, $01, $80, $80, $81, $40, $82, $00, $83
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $80C0
+	.WORD $80C1
+	.WORD $8181
+	.WORD $8241
+	.WORD $8000
+	.WORD $8001
+	.WORD $8180
+	.WORD $8240
+	.WORD $8300
 SPRITE_GROUPING_308:
-		.BYTE $03, $20, $05, $14, $08, $08, $08, $08, $D4, $C0, $12, $C1, $12, $81, $13, $41, $14, $00, $12, $01, $12, $80, $13, $40, $14
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $12C0
+	.WORD $12C1
+	.WORD $1381
+	.WORD $1441
+	.WORD $1200
+	.WORD $1201
+	.WORD $1380
+	.WORD $1440
 SPRITE_GROUPING_309:
-		.BYTE $03, $20, $05, $14, $08, $08, $08, $08, $D5, $80, $30, $80, $30, $80, $30, $80, $30, $80, $30, $80, $30, $80, $30, $80, $30, $80, $30
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $3080
+	.WORD $3080
+	.WORD $3080
+	.WORD $3080
+	.WORD $3080
+	.WORD $3080
+	.WORD $3080
+	.WORD $3080
+	.WORD $3080
 SPRITE_GROUPING_310:
-		.BYTE $03, $20, $05, $14, $08, $08, $08, $08, $D4, $80, $40, $81, $40, $41, $41, $41, $41, $C0, $3F, $C1, $3F, $40, $41, $40, $41
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $4080
+	.WORD $4081
+	.WORD $4141
+	.WORD $4141
+	.WORD $3FC0
+	.WORD $3FC1
+	.WORD $4140
+	.WORD $4140
 SPRITE_GROUPING_311:
-		.BYTE $04, $40, $08, $16, $0B, $0C, $0E, $08, $D1, $00, $8C, $01, $8C, $01, $8E, $01, $90, $00, $8A, $01, $8A, $00, $8E, $00, $90
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0B, $0C, $0E, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $8C00
+	.WORD $8C01
+	.WORD $8E01
+	.WORD $9001
+	.WORD $8A00
+	.WORD $8A01
+	.WORD $8E00
+	.WORD $9000
 SPRITE_GROUPING_312:
-		.BYTE $04, $40, $08, $14, $09, $10, $0C, $0C, $D1, $00, $84, $01, $84, $01, $86, $01, $88, $00, $82, $01, $82, $00, $86, $00, $88
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $09, $10, $0C, $0C ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $8400
+	.WORD $8401
+	.WORD $8601
+	.WORD $8801
+	.WORD $8200
+	.WORD $8201
+	.WORD $8600
+	.WORD $8800
 SPRITE_GROUPING_313:
-		.BYTE $02, $20, $00, $12, $08, $08, $08, $08, $D4, $00, $83, $01, $83, $81, $83, $01, $84, $80, $82, $81, $82, $80, $83, $00, $84
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $12 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $8300
+	.WORD $8301
+	.WORD $8381
+	.WORD $8401
+	.WORD $8280
+	.WORD $8281
+	.WORD $8380
+	.WORD $8400
 SPRITE_GROUPING_314:
-		.BYTE $02, $20, $00, $16, $03, $04, $03, $04, $D5, $02, $0D, $82, $0D, $03, $0D, $83, $0D, $02, $0D, $82, $0D, $02, $0D, $82, $0D
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $03, $04, $03, $04 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $0D02
+	.WORD $0D82
+	.WORD $0D03
+	.WORD $0D83
+	.WORD $0D02
+	.WORD $0D82
+	.WORD $0D02
+	.WORD $0D82
 SPRITE_GROUPING_315:
-		.BYTE $02, $20, $00, $16, $08, $08, $08, $08, $D5, $00, $0C, $80, $0C, $00, $0C, $80, $0C, $00, $0C, $80, $0C, $00, $0C, $80, $0C
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $0C00
+	.WORD $0C80
+	.WORD $0C00
+	.WORD $0C80
+	.WORD $0C00
+	.WORD $0C80
+	.WORD $0C00
+	.WORD $0C80
 SPRITE_GROUPING_316:
-		.BYTE $02, $20, $00, $16, $02, $04, $02, $04, $D5, $02, $0B, $82, $0B, $03, $0B, $83, $0B, $02, $0B, $82, $0B, $02, $0B, $82, $0B
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $02, $04, $02, $04 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $0B02
+	.WORD $0B82
+	.WORD $0B03
+	.WORD $0B83
+	.WORD $0B02
+	.WORD $0B82
+	.WORD $0B02
+	.WORD $0B82
 SPRITE_GROUPING_317:
-		.BYTE $02, $20, $00, $16, $08, $08, $08, $08, $D4, $E0, $D7, $E1, $D7, $61, $D8, $E1, $D8, $E0, $D7, $E1, $D7, $60, $D8, $E0, $D8, $60, $D8
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $D7E0
+	.WORD $D7E1
+	.WORD $D861
+	.WORD $D8E1
+	.WORD $D7E0
+	.WORD $D7E1
+	.WORD $D860
+	.WORD $D8E0
+	.WORD $D860
 SPRITE_GROUPING_318:
-		.BYTE $02, $20, $00, $16, $02, $04, $02, $04, $D5, $00, $0A, $80, $0A, $01, $0A, $81, $0A, $00, $0A, $80, $0A, $00, $0A, $80, $0A
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $02, $04, $02, $04 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $0A00
+	.WORD $0A80
+	.WORD $0A01
+	.WORD $0A81
+	.WORD $0A00
+	.WORD $0A80
+	.WORD $0A00
+	.WORD $0A80
 SPRITE_GROUPING_319:
-		.BYTE $02, $20, $00, $16, $08, $08, $08, $08, $D4, $00, $81, $01, $81, $81, $81, $01, $82, $80, $80, $81, $80, $80, $81, $00, $82
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $8100
+	.WORD $8101
+	.WORD $8181
+	.WORD $8201
+	.WORD $8080
+	.WORD $8081
+	.WORD $8180
+	.WORD $8200
 SPRITE_GROUPING_320:
-		.BYTE $02, $20, $00, $16, $08, $04, $08, $04, $D4, $60, $D6, $E0, $D6, $61, $D6, $E1, $D6, $60, $D6, $E0, $D6, $60, $D6, $E0, $D6, $60, $D7
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $04, $08, $04 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $D660
+	.WORD $D6E0
+	.WORD $D661
+	.WORD $D6E1
+	.WORD $D660
+	.WORD $D6E0
+	.WORD $D660
+	.WORD $D6E0
+	.WORD $D760
 SPRITE_GROUPING_321:
-		.BYTE $02, $20, $00, $16, $07, $08, $07, $08, $D4, $00, $7F, $01, $7F, $81, $7F, $01, $80, $80, $7E, $81, $7E, $80, $7F, $00, $80
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $07, $08, $07, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $7F00
+	.WORD $7F01
+	.WORD $7F81
+	.WORD $8001
+	.WORD $7E80
+	.WORD $7E81
+	.WORD $7F80
+	.WORD $8000
 SPRITE_GROUPING_322:
-		.BYTE $03, $20, $05, $16, $07, $08, $07, $08, $D4, $A0, $D5, $A0, $D5, $A0, $D5, $A0, $D5, $E0, $D4, $E0, $D4, $E0, $D4, $E0, $D4, $E0, $D4
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $07, $08, $07, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $D5A0
+	.WORD $D5A0
+	.WORD $D5A0
+	.WORD $D5A0
+	.WORD $D4E0
+	.WORD $D4E0
+	.WORD $D4E0
+	.WORD $D4E0
+	.WORD $D4E0
 SPRITE_GROUPING_323:
-		.BYTE $03, $20, $05, $16, $04, $08, $04, $08, $D4, $60, $D3, $20, $D4, $61, $D3, $21, $D4, $60, $D3, $20, $D4, $60, $D3, $20, $D4
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $04, $08, $04, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $D360
+	.WORD $D420
+	.WORD $D361
+	.WORD $D421
+	.WORD $D360
+	.WORD $D420
+	.WORD $D360
+	.WORD $D420
 SPRITE_GROUPING_324:
-		.BYTE $03, $20, $05, $16, $07, $08, $07, $08, $D4, $E0, $D1, $A0, $D2, $E0, $D1, $A0, $D2, $E0, $D1, $A0, $D2, $E0, $D1, $A0, $D2
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $07, $08, $07, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $D1E0
+	.WORD $D2A0
+	.WORD $D1E0
+	.WORD $D2A0
+	.WORD $D1E0
+	.WORD $D2A0
+	.WORD $D1E0
+	.WORD $D2A0
 SPRITE_GROUPING_325:
-		.BYTE $03, $20, $05, $16, $08, $08, $08, $08, $D4, $80, $3D, $40, $3E, $81, $3D, $41, $3E, $80, $3D, $40, $3E, $80, $3D, $40, $3E, $00, $3F
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $3D80
+	.WORD $3E40
+	.WORD $3D81
+	.WORD $3E41
+	.WORD $3D80
+	.WORD $3E40
+	.WORD $3D80
+	.WORD $3E40
+	.WORD $3F00
 SPRITE_GROUPING_326:
-		.BYTE $03, $20, $05, $16, $08, $08, $08, $08, $D4, $60, $D0, $20, $D1, $60, $D0, $20, $D1, $60, $D0, $20, $D1, $60, $D0, $20, $D1
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $D060
+	.WORD $D120
+	.WORD $D060
+	.WORD $D120
+	.WORD $D060
+	.WORD $D120
+	.WORD $D060
+	.WORD $D120
 SPRITE_GROUPING_327:
-		.BYTE $04, $40, $08, $16, $0E, $10, $0E, $10, $D2, $00, $59, $00, $5B, $01, $59, $01, $5B, $00, $59, $00, $5B, $00, $59, $00, $5B
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0E, $10, $0E, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $5900
+	.WORD $5B00
+	.WORD $5901
+	.WORD $5B01
+	.WORD $5900
+	.WORD $5B00
+	.WORD $5900
+	.WORD $5B00
 SPRITE_GROUPING_328:
-		.BYTE $04, $40, $08, $16, $0F, $10, $0F, $10, $D2, $00, $55, $00, $57, $01, $55, $01, $57, $00, $55, $00, $57, $00, $55, $00, $57
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0F, $10, $0F, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $5500
+	.WORD $5700
+	.WORD $5501
+	.WORD $5701
+	.WORD $5500
+	.WORD $5700
+	.WORD $5500
+	.WORD $5700
 SPRITE_GROUPING_329:
-		.BYTE $04, $40, $08, $16, $0C, $0C, $0B, $0C, $D1, $00, $7C, $01, $7C, $01, $7E, $01, $80, $00, $7A, $01, $7A, $00, $7E, $00, $80
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $0C, $0B, $0C ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $7C00
+	.WORD $7C01
+	.WORD $7E01
+	.WORD $8001
+	.WORD $7A00
+	.WORD $7A01
+	.WORD $7E00
+	.WORD $8000
 SPRITE_GROUPING_330:
-		.BYTE $04, $40, $08, $16, $07, $08, $09, $08, $D1, $00, $74, $01, $74, $01, $76, $01, $78, $00, $72, $01, $72, $00, $76, $00, $78
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $07, $08, $09, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $7400
+	.WORD $7401
+	.WORD $7601
+	.WORD $7801
+	.WORD $7200
+	.WORD $7201
+	.WORD $7600
+	.WORD $7800
 SPRITE_GROUPING_331:
-		.BYTE $04, $40, $08, $16, $0A, $0B, $0A, $0C, $D1, $00, $6C, $01, $6C, $01, $6E, $01, $70, $00, $6A, $01, $6A, $00, $6E, $00, $70
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0A, $0B, $0A, $0C ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $6C00
+	.WORD $6C01
+	.WORD $6E01
+	.WORD $7001
+	.WORD $6A00
+	.WORD $6A01
+	.WORD $6E00
+	.WORD $7000
 SPRITE_GROUPING_332:
-		.BYTE $04, $40, $08, $16, $09, $0B, $0A, $0C, $D1, $00, $64, $01, $64, $01, $66, $01, $68, $00, $62, $01, $62, $00, $66, $00, $68
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $09, $0B, $0A, $0C ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $6400
+	.WORD $6401
+	.WORD $6601
+	.WORD $6801
+	.WORD $6200
+	.WORD $6201
+	.WORD $6600
+	.WORD $6800
 SPRITE_GROUPING_333:
-		.BYTE $04, $40, $08, $1E, $10, $10, $10, $10, $D2, $00, $51, $00, $51, $00, $53, $00, $53, $01, $51, $01, $51, $01, $53, $01, $53, $00, $51
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $10, $10, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $5100
+	.WORD $5100
+	.WORD $5300
+	.WORD $5300
+	.WORD $5101
+	.WORD $5101
+	.WORD $5301
+	.WORD $5301
+	.WORD $5100
 SPRITE_GROUPING_334:
-		.BYTE $02, $30, $02, $14, $0C, $08, $0C, $08, $D4, $60, $C7, $20, $C8, $60, $C7, $20, $C8, $60, $C7, $20, $C8, $60, $C7, $20, $C8
+	.BYTE $02 ;Height
+	.BYTE $30 ;Width (lower half) + ??? (upper half)
+	.BYTE $02 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $08, $0C, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $C760
+	.WORD $C820
+	.WORD $C760
+	.WORD $C820
+	.WORD $C760
+	.WORD $C820
+	.WORD $C760
+	.WORD $C820
 SPRITE_GROUPING_335:
-		.BYTE $03, $20, $05, $1A, $00, $00, $00, $00, $D5, $40, $25, $40, $25, $40, $25, $40, $25, $40, $25, $40, $25, $40, $25, $40, $25
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $2540
+	.WORD $2540
+	.WORD $2540
+	.WORD $2540
+	.WORD $2540
+	.WORD $2540
+	.WORD $2540
+	.WORD $2540
 SPRITE_GROUPING_336:
-		.BYTE $03, $20, $05, $1A, $00, $00, $00, $00, $D5, $80, $24, $80, $24, $80, $24, $80, $24, $80, $24, $80, $24, $80, $24, $80, $24
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $2480
+	.WORD $2480
+	.WORD $2480
+	.WORD $2480
+	.WORD $2480
+	.WORD $2480
+	.WORD $2480
+	.WORD $2480
 SPRITE_GROUPING_337:
-		.BYTE $03, $20, $05, $1A, $00, $00, $00, $00, $D5, $C0, $23, $C0, $23, $C0, $23, $C0, $23, $C0, $23, $C0, $23, $C0, $23, $C0, $23
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $23C0
+	.WORD $23C0
+	.WORD $23C0
+	.WORD $23C0
+	.WORD $23C0
+	.WORD $23C0
+	.WORD $23C0
+	.WORD $23C0
 SPRITE_GROUPING_338:
-		.BYTE $03, $20, $05, $1A, $00, $00, $00, $00, $D5, $00, $23, $00, $23, $00, $23, $00, $23, $00, $23, $00, $23, $00, $23, $00, $23
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $2300
+	.WORD $2300
+	.WORD $2300
+	.WORD $2300
+	.WORD $2300
+	.WORD $2300
+	.WORD $2300
+	.WORD $2300
 SPRITE_GROUPING_339:
-		.BYTE $03, $20, $05, $1A, $00, $00, $00, $00, $D5, $C0, $1D, $C0, $1D, $C0, $1D, $C0, $1D, $C0, $1D, $C0, $1D, $C0, $1D, $C0, $1D
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $1DC0
+	.WORD $1DC0
+	.WORD $1DC0
+	.WORD $1DC0
+	.WORD $1DC0
+	.WORD $1DC0
+	.WORD $1DC0
+	.WORD $1DC0
 SPRITE_GROUPING_340:
-		.BYTE $03, $20, $05, $1A, $00, $00, $00, $00, $D5, $00, $1D, $00, $1D, $00, $1D, $00, $1D, $00, $1D, $00, $1D, $00, $1D, $00, $1D
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $1D00
+	.WORD $1D00
+	.WORD $1D00
+	.WORD $1D00
+	.WORD $1D00
+	.WORD $1D00
+	.WORD $1D00
+	.WORD $1D00
 SPRITE_GROUPING_341:
-		.BYTE $03, $20, $05, $1A, $00, $00, $00, $00, $D5, $40, $1C, $40, $1C, $40, $1C, $40, $1C, $40, $1C, $40, $1C, $40, $1C, $40, $1C
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $1C40
+	.WORD $1C40
+	.WORD $1C40
+	.WORD $1C40
+	.WORD $1C40
+	.WORD $1C40
+	.WORD $1C40
+	.WORD $1C40
 SPRITE_GROUPING_342:
-		.BYTE $03, $20, $05, $1A, $00, $00, $00, $00, $D5, $80, $1B, $80, $1B, $80, $1B, $80, $1B, $80, $1B, $80, $1B, $80, $1B, $80, $1B
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $1B80
+	.WORD $1B80
+	.WORD $1B80
+	.WORD $1B80
+	.WORD $1B80
+	.WORD $1B80
+	.WORD $1B80
+	.WORD $1B80
 SPRITE_GROUPING_343:
-		.BYTE $03, $20, $05, $1A, $00, $00, $00, $00, $D5, $C0, $1A, $C0, $1A, $C0, $1A, $C0, $1A, $C0, $1A, $C0, $1A, $C0, $1A, $C0, $1A
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $1AC0
+	.WORD $1AC0
+	.WORD $1AC0
+	.WORD $1AC0
+	.WORD $1AC0
+	.WORD $1AC0
+	.WORD $1AC0
+	.WORD $1AC0
 SPRITE_GROUPING_344:
-		.BYTE $02, $20, $00, $1A, $00, $00, $00, $00, $D5, $C0, $42, $C0, $42, $C0, $42, $C0, $42, $C0, $42, $C0, $42, $C0, $42, $C0, $42
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $42C0
+	.WORD $42C0
+	.WORD $42C0
+	.WORD $42C0
+	.WORD $42C0
+	.WORD $42C0
+	.WORD $42C0
+	.WORD $42C0
 SPRITE_GROUPING_345:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D5, $40, $19, $40, $19, $40, $19, $40, $19, $40, $19, $40, $19, $40, $19, $40, $19
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $1940
+	.WORD $1940
+	.WORD $1940
+	.WORD $1940
+	.WORD $1940
+	.WORD $1940
+	.WORD $1940
+	.WORD $1940
 SPRITE_GROUPING_346:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D4, $E0, $A7, $A0, $A8, $E0, $A7, $A0, $A8, $E0, $A7, $A0, $A8, $E0, $A7, $A0, $A8
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $A7E0
+	.WORD $A8A0
+	.WORD $A7E0
+	.WORD $A8A0
+	.WORD $A7E0
+	.WORD $A8A0
+	.WORD $A7E0
+	.WORD $A8A0
 SPRITE_GROUPING_347:
-		.BYTE $02, $20, $00, $1A, $04, $08, $04, $08, $D4, $01, $FF, $81, $FF, $01, $FF, $81, $FF, $00, $FF, $80, $FF, $00, $FF, $80, $FF
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $04, $08, $04, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $FF01
+	.WORD $FF81
+	.WORD $FF01
+	.WORD $FF81
+	.WORD $FF00
+	.WORD $FF80
+	.WORD $FF00
+	.WORD $FF80
 SPRITE_GROUPING_348:
-		.BYTE $02, $20, $00, $1A, $00, $00, $00, $00, $D4, $00, $E4, $01, $E4, $01, $E4, $81, $E4, $00, $E4, $01, $E4, $00, $E4, $80, $E4
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $E400
+	.WORD $E401
+	.WORD $E401
+	.WORD $E481
+	.WORD $E400
+	.WORD $E401
+	.WORD $E400
+	.WORD $E480
 SPRITE_GROUPING_349:
-		.BYTE $02, $40, $03, $1A, $00, $00, $00, $00, $D4, $81, $58, $81, $59, $81, $58, $81, $59, $80, $58, $80, $59, $80, $58, $80, $59
+	.BYTE $02 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $03 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $5881
+	.WORD $5981
+	.WORD $5881
+	.WORD $5981
+	.WORD $5880
+	.WORD $5980
+	.WORD $5880
+	.WORD $5980
 SPRITE_GROUPING_350:
-		.BYTE $06, $40, $0C, $18, $00, $00, $00, $00, $D1, $00, $E4, $00, $E4, $00, $E4, $00, $E4, $00, $E1, $00, $E1, $00, $E1, $00, $E1
+	.BYTE $06 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $0C ;Unknown
+	.BYTE $18 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $E400
+	.WORD $E400
+	.WORD $E400
+	.WORD $E400
+	.WORD $E100
+	.WORD $E100
+	.WORD $E100
+	.WORD $E100
 SPRITE_GROUPING_351:
-		.BYTE $02, $20, $00, $1C, $00, $00, $00, $00, $D4, $80, $E3, $80, $E3, $00, $E3, $80, $E3, $00, $E3, $80, $E3, $00, $E3, $80, $E3
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $E380
+	.WORD $E380
+	.WORD $E300
+	.WORD $E380
+	.WORD $E300
+	.WORD $E380
+	.WORD $E300
+	.WORD $E380
 SPRITE_GROUPING_352:
-		.BYTE $02, $20, $00, $1C, $00, $00, $00, $00, $D5, $40, $36, $40, $36, $40, $36, $40, $36, $40, $36, $40, $36, $40, $36, $40, $36
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $3640
+	.WORD $3640
+	.WORD $3640
+	.WORD $3640
+	.WORD $3640
+	.WORD $3640
+	.WORD $3640
+	.WORD $3640
 SPRITE_GROUPING_353:
-		.BYTE $02, $20, $00, $1E, $08, $08, $08, $08, $D5, $C0, $35, $C0, $35, $C0, $35, $C0, $35, $C0, $35, $C0, $35, $C0, $35, $C0, $35
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $35C0
+	.WORD $35C0
+	.WORD $35C0
+	.WORD $35C0
+	.WORD $35C0
+	.WORD $35C0
+	.WORD $35C0
+	.WORD $35C0
 SPRITE_GROUPING_354:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D5, $C0, $17, $C0, $17, $C0, $17, $C0, $17, $C0, $17, $C0, $17, $C0, $17, $C0, $17
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $17C0
+	.WORD $17C0
+	.WORD $17C0
+	.WORD $17C0
+	.WORD $17C0
+	.WORD $17C0
+	.WORD $17C0
+	.WORD $17C0
 SPRITE_GROUPING_355:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D4, $20, $A7, $20, $A7, $60, $A6, $20, $A7, $60, $A6, $20, $A7, $60, $A6, $20, $A7
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $A720
+	.WORD $A720
+	.WORD $A660
+	.WORD $A720
+	.WORD $A660
+	.WORD $A720
+	.WORD $A660
+	.WORD $A720
 SPRITE_GROUPING_356:
-		.BYTE $02, $30, $02, $18, $00, $00, $00, $00, $D5, $00, $14, $00, $14, $00, $14, $00, $14, $00, $14, $00, $14, $00, $14, $00, $14
+	.BYTE $02 ;Height
+	.BYTE $30 ;Width (lower half) + ??? (upper half)
+	.BYTE $02 ;Unknown
+	.BYTE $18 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $1400
+	.WORD $1400
+	.WORD $1400
+	.WORD $1400
+	.WORD $1400
+	.WORD $1400
+	.WORD $1400
+	.WORD $1400
 SPRITE_GROUPING_357:
-		.BYTE $02, $30, $02, $1C, $0C, $08, $0C, $08, $D5, $00, $17, $00, $17, $00, $17, $00, $17, $00, $17, $00, $17, $00, $17, $00, $17
+	.BYTE $02 ;Height
+	.BYTE $30 ;Width (lower half) + ??? (upper half)
+	.BYTE $02 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $08, $0C, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $1700
+	.WORD $1700
+	.WORD $1700
+	.WORD $1700
+	.WORD $1700
+	.WORD $1700
+	.WORD $1700
+	.WORD $1700
 SPRITE_GROUPING_358:
-		.BYTE $02, $20, $00, $18, $00, $00, $00, $00, $D5, $40, $35, $40, $35, $40, $35, $40, $35, $40, $35, $40, $35, $40, $35, $40, $35
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $18 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $3540
+	.WORD $3540
+	.WORD $3540
+	.WORD $3540
+	.WORD $3540
+	.WORD $3540
+	.WORD $3540
+	.WORD $3540
 SPRITE_GROUPING_359:
-		.BYTE $03, $30, $06, $1A, $0C, $08, $0C, $08, $D4, $40, $3B, $60, $3C, $40, $3B, $60, $3C, $40, $3B, $60, $3C, $40, $3B, $60, $3C
+	.BYTE $03 ;Height
+	.BYTE $30 ;Width (lower half) + ??? (upper half)
+	.BYTE $06 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $08, $0C, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $3B40
+	.WORD $3C60
+	.WORD $3B40
+	.WORD $3C60
+	.WORD $3B40
+	.WORD $3C60
+	.WORD $3B40
+	.WORD $3C60
 SPRITE_GROUPING_360:
-		.BYTE $04, $40, $08, $14, $0E, $10, $0E, $10, $D4, $80, $56, $80, $56, $80, $56, $80, $56, $80, $56, $80, $56, $80, $56, $80, $56
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0E, $10, $0E, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $5680
+	.WORD $5680
+	.WORD $5680
+	.WORD $5680
+	.WORD $5680
+	.WORD $5680
+	.WORD $5680
+	.WORD $5680
 SPRITE_GROUPING_361:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D3, $C0, $BD, $C1, $BD, $81, $BE, $41, $BF, $00, $BD, $01, $BD, $80, $BE, $40, $BF
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $BDC0
+	.WORD $BDC1
+	.WORD $BE81
+	.WORD $BF41
+	.WORD $BD00
+	.WORD $BD01
+	.WORD $BE80
+	.WORD $BF40
 SPRITE_GROUPING_362:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D4, $A0, $B1, $A0, $B1, $A0, $B1, $A0, $B1, $E0, $B0, $E0, $B0, $E0, $B0, $E0, $B0
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $B1A0
+	.WORD $B1A0
+	.WORD $B1A0
+	.WORD $B1A0
+	.WORD $B0E0
+	.WORD $B0E0
+	.WORD $B0E0
+	.WORD $B0E0
 SPRITE_GROUPING_363:
-		.BYTE $03, $30, $06, $1C, $0B, $08, $0B, $08, $D4, $E0, $E0, $E0, $E0, $E0, $E0, $E0, $E0, $E0, $E0, $E0, $E0, $E0, $E0, $E0, $E0
+	.BYTE $03 ;Height
+	.BYTE $30 ;Width (lower half) + ??? (upper half)
+	.BYTE $06 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0B, $08, $0B, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $E0E0
+	.WORD $E0E0
+	.WORD $E0E0
+	.WORD $E0E0
+	.WORD $E0E0
+	.WORD $E0E0
+	.WORD $E0E0
+	.WORD $E0E0
 SPRITE_GROUPING_364:
-		.BYTE $04, $40, $08, $1C, $06, $08, $0C, $08, $D1, $00, $AC, $01, $AC, $01, $AE, $01, $B0, $00, $AA, $01, $AA, $00, $AE, $00, $B0
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $06, $08, $0C, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $AC00
+	.WORD $AC01
+	.WORD $AE01
+	.WORD $B001
+	.WORD $AA00
+	.WORD $AA01
+	.WORD $AE00
+	.WORD $B000
 SPRITE_GROUPING_365:
-		.BYTE $06, $40, $0C, $1C, $00, $00, $00, $00, $D2, $80, $B1, $80, $B1, $80, $B1, $80, $B1, $80, $B1, $80, $B1, $80, $B1, $80, $B1
+	.BYTE $06 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $0C ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $B180
+	.WORD $B180
+	.WORD $B180
+	.WORD $B180
+	.WORD $B180
+	.WORD $B180
+	.WORD $B180
+	.WORD $B180
 SPRITE_GROUPING_366:
-		.BYTE $03, $20, $05, $1C, $00, $00, $00, $00, $D4, $60, $97, $20, $98, $60, $97, $20, $98, $60, $97, $20, $98, $60, $97, $20, $98
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $9760
+	.WORD $9820
+	.WORD $9760
+	.WORD $9820
+	.WORD $9760
+	.WORD $9820
+	.WORD $9760
+	.WORD $9820
 SPRITE_GROUPING_367:
-		.BYTE $02, $20, $00, $16, $00, $00, $00, $00, $D5, $C0, $34, $C0, $34, $C0, $34, $C0, $34, $C0, $34, $C0, $34, $C0, $34, $C0, $34
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $34C0
+	.WORD $34C0
+	.WORD $34C0
+	.WORD $34C0
+	.WORD $34C0
+	.WORD $34C0
+	.WORD $34C0
+	.WORD $34C0
 SPRITE_GROUPING_368:
-		.BYTE $02, $60, $04, $18, $00, $00, $00, $00, $D4, $E0, $95, $E1, $95, $E0, $95, $E1, $95, $E0, $95, $E1, $95, $E0, $95, $E1, $95
+	.BYTE $02 ;Height
+	.BYTE $60 ;Width (lower half) + ??? (upper half)
+	.BYTE $04 ;Unknown
+	.BYTE $18 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $95E0
+	.WORD $95E1
+	.WORD $95E0
+	.WORD $95E1
+	.WORD $95E0
+	.WORD $95E1
+	.WORD $95E0
+	.WORD $95E1
 SPRITE_GROUPING_369:
-		.BYTE $02, $60, $04, $18, $00, $00, $00, $00, $D4, $60, $94, $61, $94, $60, $94, $61, $94, $60, $94, $61, $94, $60, $94, $61, $94
+	.BYTE $02 ;Height
+	.BYTE $60 ;Width (lower half) + ??? (upper half)
+	.BYTE $04 ;Unknown
+	.BYTE $18 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $9460
+	.WORD $9461
+	.WORD $9460
+	.WORD $9461
+	.WORD $9460
+	.WORD $9461
+	.WORD $9460
+	.WORD $9461
 SPRITE_GROUPING_370:
-		.BYTE $02, $20, $00, $18, $00, $00, $00, $00, $D4, $80, $54, $80, $54, $00, $55, $00, $55, $80, $55, $80, $55, $00, $56, $00, $56
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $18 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $5480
+	.WORD $5480
+	.WORD $5500
+	.WORD $5500
+	.WORD $5580
+	.WORD $5580
+	.WORD $5600
+	.WORD $5600
 SPRITE_GROUPING_371:
-		.BYTE $02, $60, $04, $18, $00, $00, $00, $00, $D4, $E0, $92, $E0, $92, $E0, $92, $E0, $92, $E0, $92, $E0, $92, $E0, $92, $E0, $92
+	.BYTE $02 ;Height
+	.BYTE $60 ;Width (lower half) + ??? (upper half)
+	.BYTE $04 ;Unknown
+	.BYTE $18 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $92E0
+	.WORD $92E0
+	.WORD $92E0
+	.WORD $92E0
+	.WORD $92E0
+	.WORD $92E0
+	.WORD $92E0
+	.WORD $92E0
 SPRITE_GROUPING_372:
-		.BYTE $02, $20, $00, $1E, $00, $00, $00, $00, $D5, $40, $34, $40, $34, $40, $34, $40, $34, $40, $34, $40, $34, $40, $34, $40, $34
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $3440
+	.WORD $3440
+	.WORD $3440
+	.WORD $3440
+	.WORD $3440
+	.WORD $3440
+	.WORD $3440
+	.WORD $3440
 SPRITE_GROUPING_373:
-		.BYTE $06, $40, $0C, $18, $00, $00, $00, $00, $D2, $80, $9C, $80, $9C, $80, $9C, $80, $9C, $80, $9C, $80, $9C, $80, $9C, $80, $9C
+	.BYTE $06 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $0C ;Unknown
+	.BYTE $18 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $9C80
+	.WORD $9C80
+	.WORD $9C80
+	.WORD $9C80
+	.WORD $9C80
+	.WORD $9C80
+	.WORD $9C80
+	.WORD $9C80
 SPRITE_GROUPING_374:
-		.BYTE $06, $40, $0C, $18, $00, $00, $00, $00, $D2, $80, $99, $80, $99, $80, $99, $80, $99, $80, $99, $80, $99, $80, $99, $80, $99
+	.BYTE $06 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $0C ;Unknown
+	.BYTE $18 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $9980
+	.WORD $9980
+	.WORD $9980
+	.WORD $9980
+	.WORD $9980
+	.WORD $9980
+	.WORD $9980
+	.WORD $9980
 SPRITE_GROUPING_375:
-		.BYTE $06, $40, $0C, $18, $00, $00, $00, $00, $D2, $81, $96, $81, $96, $81, $96, $81, $96, $80, $96, $80, $96, $80, $96, $80, $96
+	.BYTE $06 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $0C ;Unknown
+	.BYTE $18 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $9681
+	.WORD $9681
+	.WORD $9681
+	.WORD $9681
+	.WORD $9680
+	.WORD $9680
+	.WORD $9680
+	.WORD $9680
 SPRITE_GROUPING_376:
-		.BYTE $02, $20, $00, $1C, $08, $08, $08, $08, $D5, $C0, $33, $C0, $33, $C0, $33, $C0, $33, $C0, $33, $C0, $33, $C0, $33, $C0, $33
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $33C0
+	.WORD $33C0
+	.WORD $33C0
+	.WORD $33C0
+	.WORD $33C0
+	.WORD $33C0
+	.WORD $33C0
+	.WORD $33C0
 SPRITE_GROUPING_377:
-		.BYTE $04, $60, $09, $14, $10, $10, $10, $10, $D1, $00, $DB, $00, $DE, $00, $DB, $00, $DE, $01, $DB, $01, $DE, $01, $DB, $01, $DE
+	.BYTE $04 ;Height
+	.BYTE $60 ;Width (lower half) + ??? (upper half)
+	.BYTE $09 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $10, $10, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $DB00
+	.WORD $DE00
+	.WORD $DB00
+	.WORD $DE00
+	.WORD $DB01
+	.WORD $DE01
+	.WORD $DB01
+	.WORD $DE01
 SPRITE_GROUPING_378:
-		.BYTE $02, $20, $00, $1A, $00, $00, $00, $00, $D5, $00, $02, $80, $02, $00, $02, $80, $02, $00, $02, $80, $02, $00, $02, $80, $02
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $0200
+	.WORD $0280
+	.WORD $0200
+	.WORD $0280
+	.WORD $0200
+	.WORD $0280
+	.WORD $0200
+	.WORD $0280
 SPRITE_GROUPING_379:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D5, $40, $19, $40, $19, $40, $19, $40, $19, $40, $19, $40, $19, $40, $19, $40, $19
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $1940
+	.WORD $1940
+	.WORD $1940
+	.WORD $1940
+	.WORD $1940
+	.WORD $1940
+	.WORD $1940
+	.WORD $1940
 SPRITE_GROUPING_380:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D5, $40, $19, $40, $19, $40, $19, $40, $19, $40, $19, $40, $19, $40, $19, $40, $19
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $1940
+	.WORD $1940
+	.WORD $1940
+	.WORD $1940
+	.WORD $1940
+	.WORD $1940
+	.WORD $1940
+	.WORD $1940
 SPRITE_GROUPING_381:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D5, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
 SPRITE_GROUPING_382:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D4, $E0, $CB, $A0, $CC, $E0, $CB, $A0, $CC, $E0, $CB, $A0, $CC, $E0, $CB, $A0, $CC
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $CBE0
+	.WORD $CCA0
+	.WORD $CBE0
+	.WORD $CCA0
+	.WORD $CBE0
+	.WORD $CCA0
+	.WORD $CBE0
+	.WORD $CCA0
 SPRITE_GROUPING_383:
-		.BYTE $02, $20, $00, $1A, $00, $00, $00, $00, $D5, $00, $01, $80, $01, $00, $01, $80, $01, $00, $01, $80, $01, $00, $01, $80, $01
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $0100
+	.WORD $0180
+	.WORD $0100
+	.WORD $0180
+	.WORD $0100
+	.WORD $0180
+	.WORD $0100
+	.WORD $0180
 SPRITE_GROUPING_384:
-		.BYTE $02, $20, $01, $1E, $00, $00, $00, $00, $D5, $40, $33, $40, $33, $40, $33, $40, $33, $40, $33, $40, $33, $40, $33, $40, $33
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $01 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $3340
+	.WORD $3340
+	.WORD $3340
+	.WORD $3340
+	.WORD $3340
+	.WORD $3340
+	.WORD $3340
+	.WORD $3340
 SPRITE_GROUPING_385:
-		.BYTE $04, $40, $08, $1E, $08, $08, $08, $08, $D4, $81, $68, $81, $68, $81, $68, $81, $68, $81, $68, $81, $68, $81, $68, $81, $68
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $6881
+	.WORD $6881
+	.WORD $6881
+	.WORD $6881
+	.WORD $6881
+	.WORD $6881
+	.WORD $6881
+	.WORD $6881
 SPRITE_GROUPING_386:
-		.BYTE $03, $20, $05, $10, $08, $08, $08, $08, $D3, $C0, $B7, $C1, $B7, $81, $B8, $41, $B9, $00, $B7, $01, $B7, $80, $B8, $40, $B9
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $10 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $B7C0
+	.WORD $B7C1
+	.WORD $B881
+	.WORD $B941
+	.WORD $B700
+	.WORD $B701
+	.WORD $B880
+	.WORD $B940
 SPRITE_GROUPING_387:
-		.BYTE $03, $20, $05, $10, $08, $08, $08, $08, $D3, $C0, $B4, $C1, $B4, $81, $B5, $41, $B6, $00, $B4, $01, $B4, $80, $B5, $40, $B6
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $10 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $B4C0
+	.WORD $B4C1
+	.WORD $B581
+	.WORD $B641
+	.WORD $B400
+	.WORD $B401
+	.WORD $B580
+	.WORD $B640
 SPRITE_GROUPING_388:
-		.BYTE $03, $20, $05, $10, $08, $08, $08, $08, $D3, $C0, $C9, $C1, $C9, $81, $CA, $41, $CB, $00, $C9, $01, $C9, $80, $CA, $40, $CB
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $10 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $C9C0
+	.WORD $C9C1
+	.WORD $CA81
+	.WORD $CB41
+	.WORD $C900
+	.WORD $C901
+	.WORD $CA80
+	.WORD $CB40
 SPRITE_GROUPING_389:
-		.BYTE $03, $20, $05, $10, $08, $08, $08, $08, $D3, $C0, $BD, $C1, $BD, $81, $BE, $41, $BF, $00, $BD, $01, $BD, $80, $BE, $40, $BF
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $10 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $BDC0
+	.WORD $BDC1
+	.WORD $BE81
+	.WORD $BF41
+	.WORD $BD00
+	.WORD $BD01
+	.WORD $BE80
+	.WORD $BF40
 SPRITE_GROUPING_390:
-		.BYTE $03, $20, $05, $10, $08, $08, $08, $08, $D3, $C0, $C3, $C1, $C3, $81, $C4, $41, $C5, $00, $C3, $01, $C3, $80, $C4, $40, $C5
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $10 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $C3C0
+	.WORD $C3C1
+	.WORD $C481
+	.WORD $C541
+	.WORD $C300
+	.WORD $C301
+	.WORD $C480
+	.WORD $C540
 SPRITE_GROUPING_391:
-		.BYTE $03, $20, $05, $10, $08, $08, $08, $08, $D3, $C0, $ED, $C1, $ED, $81, $EE, $41, $EF, $00, $ED, $01, $ED, $80, $EE, $40, $EF
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $10 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $EDC0
+	.WORD $EDC1
+	.WORD $EE81
+	.WORD $EF41
+	.WORD $ED00
+	.WORD $ED01
+	.WORD $EE80
+	.WORD $EF40
 SPRITE_GROUPING_392:
-		.BYTE $03, $20, $05, $10, $08, $08, $08, $08, $D3, $C0, $EA, $C1, $EA, $81, $EB, $41, $EC, $00, $EA, $01, $EA, $80, $EB, $40, $EC
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $10 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $EAC0
+	.WORD $EAC1
+	.WORD $EB81
+	.WORD $EC41
+	.WORD $EA00
+	.WORD $EA01
+	.WORD $EB80
+	.WORD $EC40
 SPRITE_GROUPING_393:
-		.BYTE $02, $30, $02, $1A, $0C, $08, $0C, $08, $D5, $40, $22, $40, $22, $40, $22, $40, $22, $40, $22, $40, $22, $41, $22, $41, $22
+	.BYTE $02 ;Height
+	.BYTE $30 ;Width (lower half) + ??? (upper half)
+	.BYTE $02 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $08, $0C, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $2240
+	.WORD $2240
+	.WORD $2240
+	.WORD $2240
+	.WORD $2240
+	.WORD $2240
+	.WORD $2241
+	.WORD $2241
 SPRITE_GROUPING_394:
-		.BYTE $02, $30, $02, $1A, $0C, $08, $0C, $08, $D5, $80, $21, $80, $21, $80, $21, $80, $21, $80, $21, $80, $21, $81, $21, $81, $21
+	.BYTE $02 ;Height
+	.BYTE $30 ;Width (lower half) + ??? (upper half)
+	.BYTE $02 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $08, $0C, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $2180
+	.WORD $2180
+	.WORD $2180
+	.WORD $2180
+	.WORD $2180
+	.WORD $2180
+	.WORD $2181
+	.WORD $2181
 SPRITE_GROUPING_395:
-		.BYTE $02, $30, $02, $1A, $0C, $08, $0C, $08, $D5, $C0, $20, $C0, $20, $C0, $20, $C0, $20, $C0, $20, $C0, $20, $C1, $20, $C1, $20
+	.BYTE $02 ;Height
+	.BYTE $30 ;Width (lower half) + ??? (upper half)
+	.BYTE $02 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $08, $0C, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $20C0
+	.WORD $20C0
+	.WORD $20C0
+	.WORD $20C0
+	.WORD $20C0
+	.WORD $20C0
+	.WORD $20C1
+	.WORD $20C1
 SPRITE_GROUPING_396:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D2, $40, $AF, $41, $AF, $01, $B0, $C1, $B0, $80, $AE, $81, $AE, $00, $B0, $C0, $B0
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $AF40
+	.WORD $AF41
+	.WORD $B001
+	.WORD $B0C1
+	.WORD $AE80
+	.WORD $AE81
+	.WORD $B000
+	.WORD $B0C0
 SPRITE_GROUPING_397:
-		.BYTE $03, $20, $05, $1C, $00, $00, $00, $00, $D5, $40, $16, $40, $16, $40, $16, $40, $16, $40, $16, $40, $16, $40, $16, $40, $16
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $1640
+	.WORD $1640
+	.WORD $1640
+	.WORD $1640
+	.WORD $1640
+	.WORD $1640
+	.WORD $1640
+	.WORD $1640
 SPRITE_GROUPING_398:
-		.BYTE $02, $20, $00, $1C, $03, $06, $03, $06, $D4, $E0, $C2, $E1, $C2, $61, $C3, $E1, $C3, $E0, $C2, $E1, $C2, $60, $C3, $E0, $C3
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $03, $06, $03, $06 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $C2E0
+	.WORD $C2E1
+	.WORD $C361
+	.WORD $C3E1
+	.WORD $C2E0
+	.WORD $C2E1
+	.WORD $C360
+	.WORD $C3E0
 SPRITE_GROUPING_399:
-		.BYTE $02, $20, $00, $14, $08, $08, $08, $08, $D4, $00, $73, $01, $73, $81, $73, $01, $74, $80, $72, $81, $72, $80, $73, $00, $74
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $7300
+	.WORD $7301
+	.WORD $7381
+	.WORD $7401
+	.WORD $7280
+	.WORD $7281
+	.WORD $7380
+	.WORD $7400
 SPRITE_GROUPING_400:
-		.BYTE $02, $20, $00, $16, $04, $08, $04, $08, $D5, $01, $07, $81, $07, $01, $07, $81, $07, $00, $07, $80, $07, $00, $07, $80, $07
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $04, $08, $04, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $0701
+	.WORD $0781
+	.WORD $0701
+	.WORD $0781
+	.WORD $0700
+	.WORD $0780
+	.WORD $0700
+	.WORD $0780
 SPRITE_GROUPING_401:
-		.BYTE $04, $40, $08, $16, $10, $08, $10, $08, $D4, $80, $52, $80, $52, $80, $52, $80, $52, $80, $52, $80, $52, $80, $52, $80, $52
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $08, $10, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $5280
+	.WORD $5280
+	.WORD $5280
+	.WORD $5280
+	.WORD $5280
+	.WORD $5280
+	.WORD $5280
+	.WORD $5280
 SPRITE_GROUPING_402:
-		.BYTE $04, $20, $07, $1C, $00, $00, $00, $00, $D2, $80, $94, $81, $94, $80, $95, $81, $95, $80, $93, $81, $93, $80, $95, $81, $95
+	.BYTE $04 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $07 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $9480
+	.WORD $9481
+	.WORD $9580
+	.WORD $9581
+	.WORD $9380
+	.WORD $9381
+	.WORD $9580
+	.WORD $9581
 SPRITE_GROUPING_403:
-		.BYTE $04, $40, $08, $1E, $10, $08, $10, $08, $D4, $80, $50, $80, $50, $80, $50, $80, $50, $80, $50, $80, $50, $80, $50, $80, $50
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $08, $10, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $5080
+	.WORD $5080
+	.WORD $5080
+	.WORD $5080
+	.WORD $5080
+	.WORD $5080
+	.WORD $5080
+	.WORD $5080
 SPRITE_GROUPING_404:
-		.BYTE $04, $40, $08, $1E, $10, $08, $10, $08, $D4, $80, $4E, $80, $4E, $80, $4E, $80, $4E, $80, $4E, $80, $4E, $80, $4E, $80, $4E
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $08, $10, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $4E80
+	.WORD $4E80
+	.WORD $4E80
+	.WORD $4E80
+	.WORD $4E80
+	.WORD $4E80
+	.WORD $4E80
+	.WORD $4E80
 SPRITE_GROUPING_405:
-		.BYTE $02, $20, $00, $1E, $08, $08, $08, $08, $D5, $C0, $32, $C0, $32, $C0, $32, $C0, $32, $C0, $32, $C0, $32, $C0, $32, $C0, $32
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $32C0
+	.WORD $32C0
+	.WORD $32C0
+	.WORD $32C0
+	.WORD $32C0
+	.WORD $32C0
+	.WORD $32C0
+	.WORD $32C0
 SPRITE_GROUPING_406:
-		.BYTE $04, $40, $08, $14, $0C, $08, $0C, $08, $D2, $00, $35, $00, $35, $00, $35, $00, $35, $00, $37, $00, $37, $00, $37, $00, $37
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $08, $0C, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $3500
+	.WORD $3500
+	.WORD $3500
+	.WORD $3500
+	.WORD $3700
+	.WORD $3700
+	.WORD $3700
+	.WORD $3700
 SPRITE_GROUPING_407:
-		.BYTE $03, $20, $05, $14, $08, $08, $08, $08, $D4, $60, $91, $20, $92, $60, $91, $20, $92, $60, $91, $20, $92, $60, $91, $20, $92
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $9160
+	.WORD $9220
+	.WORD $9160
+	.WORD $9220
+	.WORD $9160
+	.WORD $9220
+	.WORD $9160
+	.WORD $9220
 SPRITE_GROUPING_408:
-		.BYTE $02, $20, $00, $1E, $08, $08, $08, $08, $D5, $40, $32, $40, $32, $40, $32, $40, $32, $40, $32, $40, $32, $40, $32, $40, $32
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $3240
+	.WORD $3240
+	.WORD $3240
+	.WORD $3240
+	.WORD $3240
+	.WORD $3240
+	.WORD $3240
+	.WORD $3240
 SPRITE_GROUPING_409:
-		.BYTE $04, $40, $08, $1E, $0E, $12, $0E, $12, $D2, $00, $31, $00, $33, $00, $31, $00, $33, $00, $31, $00, $33, $00, $31, $00, $33
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0E, $12, $0E, $12 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $3100
+	.WORD $3300
+	.WORD $3100
+	.WORD $3300
+	.WORD $3100
+	.WORD $3300
+	.WORD $3100
+	.WORD $3300
 SPRITE_GROUPING_410:
-		.BYTE $04, $60, $09, $1C, $18, $10, $18, $10, $D1, $01, $D5, $01, $D5, $01, $D5, $01, $D5, $00, $D5, $00, $D5, $00, $D5, $00, $D8
+	.BYTE $04 ;Height
+	.BYTE $60 ;Width (lower half) + ??? (upper half)
+	.BYTE $09 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $18, $10, $18, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $D501
+	.WORD $D501
+	.WORD $D501
+	.WORD $D501
+	.WORD $D500
+	.WORD $D500
+	.WORD $D500
+	.WORD $D800
 SPRITE_GROUPING_411:
-		.BYTE $04, $60, $09, $1C, $14, $10, $14, $10, $D2, $81, $90, $81, $90, $81, $90, $81, $90, $80, $90, $80, $90, $80, $90, $80, $90
+	.BYTE $04 ;Height
+	.BYTE $60 ;Width (lower half) + ??? (upper half)
+	.BYTE $09 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $14, $10, $14, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $9081
+	.WORD $9081
+	.WORD $9081
+	.WORD $9081
+	.WORD $9080
+	.WORD $9080
+	.WORD $9080
+	.WORD $9080
 SPRITE_GROUPING_412:
-		.BYTE $04, $20, $07, $1C, $08, $08, $08, $08, $D4, $80, $4C, $80, $4D, $80, $4C, $80, $4D, $80, $4C, $80, $4D, $80, $4C, $80, $4D
+	.BYTE $04 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $07 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $4C80
+	.WORD $4D80
+	.WORD $4C80
+	.WORD $4D80
+	.WORD $4C80
+	.WORD $4D80
+	.WORD $4C80
+	.WORD $4D80
 SPRITE_GROUPING_413:
-		.BYTE $02, $20, $00, $1C, $04, $08, $04, $08, $D4, $01, $E2, $81, $E2, $01, $E2, $81, $E2, $00, $E2, $80, $E2, $00, $E2, $80, $E2
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $04, $08, $04, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $E201
+	.WORD $E281
+	.WORD $E201
+	.WORD $E281
+	.WORD $E200
+	.WORD $E280
+	.WORD $E200
+	.WORD $E280
 SPRITE_GROUPING_414:
-		.BYTE $04, $40, $08, $1E, $10, $10, $10, $10, $D4, $80, $4A, $80, $4A, $80, $4A, $80, $4A, $80, $4A, $80, $4A, $80, $4A, $80, $4A
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $10, $10, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $4A80
+	.WORD $4A80
+	.WORD $4A80
+	.WORD $4A80
+	.WORD $4A80
+	.WORD $4A80
+	.WORD $4A80
+	.WORD $4A80
 SPRITE_GROUPING_415:
-		.BYTE $02, $20, $00, $16, $07, $08, $07, $08, $D4, $00, $7D, $01, $7D, $81, $7D, $01, $7E, $80, $7C, $81, $7C, $80, $7D, $00, $7E
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $07, $08, $07, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $7D00
+	.WORD $7D01
+	.WORD $7D81
+	.WORD $7E01
+	.WORD $7C80
+	.WORD $7C81
+	.WORD $7D80
+	.WORD $7E00
 SPRITE_GROUPING_416:
-		.BYTE $02, $20, $00, $1C, $05, $08, $05, $08, $D4, $00, $7B, $01, $7B, $81, $7B, $01, $7C, $80, $7A, $81, $7A, $80, $7B, $00, $7C
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $05, $08, $05, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $7B00
+	.WORD $7B01
+	.WORD $7B81
+	.WORD $7C01
+	.WORD $7A80
+	.WORD $7A81
+	.WORD $7B80
+	.WORD $7C00
 SPRITE_GROUPING_417:
-		.BYTE $02, $20, $00, $1E, $04, $08, $08, $08, $D4, $00, $79, $01, $79, $81, $79, $01, $7A, $80, $78, $81, $78, $80, $79, $00, $7A
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $04, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $7900
+	.WORD $7901
+	.WORD $7981
+	.WORD $7A01
+	.WORD $7880
+	.WORD $7881
+	.WORD $7980
+	.WORD $7A00
 SPRITE_GROUPING_418:
-		.BYTE $03, $20, $05, $14, $07, $08, $07, $08, $D5, $C0, $2F, $C0, $2F, $C0, $2F, $C0, $2F, $C0, $2F, $C0, $2F, $C0, $2F, $C0, $2F
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $07, $08, $07, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $2FC0
+	.WORD $2FC0
+	.WORD $2FC0
+	.WORD $2FC0
+	.WORD $2FC0
+	.WORD $2FC0
+	.WORD $2FC0
+	.WORD $2FC0
 SPRITE_GROUPING_419:
-		.BYTE $04, $40, $08, $14, $0C, $0C, $0C, $0C, $D4, $80, $76, $81, $76, $80, $76, $81, $76, $80, $76, $81, $76, $80, $76, $81, $76
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $0C, $0C, $0C ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $7680
+	.WORD $7681
+	.WORD $7680
+	.WORD $7681
+	.WORD $7680
+	.WORD $7681
+	.WORD $7680
+	.WORD $7681
 SPRITE_GROUPING_420:
-		.BYTE $02, $40, $03, $1C, $00, $00, $00, $00, $D2, $80, $8D, $80, $8E, $81, $8D, $81, $8E, $80, $8F, $80, $8F, $80, $8D, $80, $8E
+	.BYTE $02 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $03 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $8D80
+	.WORD $8E80
+	.WORD $8D81
+	.WORD $8E81
+	.WORD $8F80
+	.WORD $8F80
+	.WORD $8D80
+	.WORD $8E80
 SPRITE_GROUPING_421:
-		.BYTE $02, $20, $00, $1E, $00, $00, $00, $00, $D5, $C0, $31, $C0, $31, $C0, $31, $C0, $31, $C0, $31, $C0, $31, $C0, $31, $C0, $31
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $31C0
+	.WORD $31C0
+	.WORD $31C0
+	.WORD $31C0
+	.WORD $31C0
+	.WORD $31C0
+	.WORD $31C0
+	.WORD $31C0
 SPRITE_GROUPING_422:
-		.BYTE $02, $20, $00, $18, $08, $08, $08, $08, $D5, $40, $31, $40, $31, $40, $31, $40, $31, $40, $31, $40, $31, $40, $31, $40, $31
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $18 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $3140
+	.WORD $3140
+	.WORD $3140
+	.WORD $3140
+	.WORD $3140
+	.WORD $3140
+	.WORD $3140
+	.WORD $3140
 SPRITE_GROUPING_423:
-		.BYTE $06, $40, $0C, $18, $00, $00, $00, $00, $D2, $80, $8A, $80, $8A, $80, $8A, $80, $8A, $80, $8A, $80, $8A, $80, $8A, $80, $8A
+	.BYTE $06 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $0C ;Unknown
+	.BYTE $18 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $8A80
+	.WORD $8A80
+	.WORD $8A80
+	.WORD $8A80
+	.WORD $8A80
+	.WORD $8A80
+	.WORD $8A80
+	.WORD $8A80
 SPRITE_GROUPING_424:
-		.BYTE $02, $20, $00, $1C, $00, $00, $00, $00, $D4, $E0, $8F, $60, $90, $E1, $8F, $61, $90, $E0, $90, $E0, $90, $E0, $8F, $60, $90
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $8FE0
+	.WORD $9060
+	.WORD $8FE1
+	.WORD $9061
+	.WORD $90E0
+	.WORD $90E0
+	.WORD $8FE0
+	.WORD $9060
 SPRITE_GROUPING_425:
-		.BYTE $02, $20, $00, $1A, $00, $00, $00, $00, $D5, $40, $45, $40, $45, $40, $45, $40, $45, $40, $45, $40, $45, $40, $45, $40, $45
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $4540
+	.WORD $4540
+	.WORD $4540
+	.WORD $4540
+	.WORD $4540
+	.WORD $4540
+	.WORD $4540
+	.WORD $4540
 SPRITE_GROUPING_426:
-		.BYTE $04, $20, $07, $18, $00, $00, $00, $00, $D2, $80, $94, $81, $94, $80, $95, $81, $95, $80, $93, $81, $93, $80, $95, $81, $95
+	.BYTE $04 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $07 ;Unknown
+	.BYTE $18 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $9480
+	.WORD $9481
+	.WORD $9580
+	.WORD $9581
+	.WORD $9380
+	.WORD $9381
+	.WORD $9580
+	.WORD $9581
 SPRITE_GROUPING_427:
-		.BYTE $02, $20, $00, $1C, $04, $08, $04, $08, $D5, $C0, $44, $C0, $44, $C0, $44, $C0, $44, $C0, $44, $C0, $44, $C0, $44, $C0, $44
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $04, $08, $04, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $44C0
+	.WORD $44C0
+	.WORD $44C0
+	.WORD $44C0
+	.WORD $44C0
+	.WORD $44C0
+	.WORD $44C0
+	.WORD $44C0
 SPRITE_GROUPING_428:
-		.BYTE $03, $20, $05, $16, $04, $08, $04, $08, $D4, $62, $C1, $22, $C2, $62, $C1, $22, $C2, $62, $C1, $22, $C2, $62, $C1, $22, $C2
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $04, $08, $04, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $C162
+	.WORD $C222
+	.WORD $C162
+	.WORD $C222
+	.WORD $C162
+	.WORD $C222
+	.WORD $C162
+	.WORD $C222
 SPRITE_GROUPING_429:
-		.BYTE $06, $40, $0C, $14, $0C, $10, $0C, $10, $D2, $80, $87, $80, $87, $80, $87, $80, $87, $80, $87, $80, $87, $80, $87, $80, $87
+	.BYTE $06 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $0C ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $10, $0C, $10 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $8780
+	.WORD $8780
+	.WORD $8780
+	.WORD $8780
+	.WORD $8780
+	.WORD $8780
+	.WORD $8780
+	.WORD $8780
 SPRITE_GROUPING_430:
-		.BYTE $06, $20, $0B, $18, $00, $00, $00, $00, $D4, $60, $8E, $60, $8E, $60, $8E, $60, $8E, $60, $8E, $60, $8E, $60, $8E, $60, $8E
+	.BYTE $06 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $0B ;Unknown
+	.BYTE $18 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $8E60
+	.WORD $8E60
+	.WORD $8E60
+	.WORD $8E60
+	.WORD $8E60
+	.WORD $8E60
+	.WORD $8E60
+	.WORD $8E60
 SPRITE_GROUPING_431:
-		.BYTE $02, $20, $00, $18, $00, $00, $00, $00, $D2, $80, $FF, $80, $FF, $80, $FF, $80, $FF, $80, $FF, $80, $FF, $80, $FF, $80, $FF
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $18 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $FF80
+	.WORD $FF80
+	.WORD $FF80
+	.WORD $FF80
+	.WORD $FF80
+	.WORD $FF80
+	.WORD $FF80
+	.WORD $FF80
 SPRITE_GROUPING_432:
-		.BYTE $02, $20, $00, $1C, $00, $00, $00, $00, $D3, $01, $FF, $81, $FF, $01, $FF, $81, $FF, $00, $FF, $80, $FF, $00, $FF, $80, $FF
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $FF01
+	.WORD $FF81
+	.WORD $FF01
+	.WORD $FF81
+	.WORD $FF00
+	.WORD $FF80
+	.WORD $FF00
+	.WORD $FF80
 SPRITE_GROUPING_433:
-		.BYTE $04, $40, $08, $1E, $10, $08, $10, $08, $D4, $80, $48, $80, $48, $80, $48, $80, $48, $80, $48, $80, $48, $80, $48, $80, $48
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $08, $10, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $4880
+	.WORD $4880
+	.WORD $4880
+	.WORD $4880
+	.WORD $4880
+	.WORD $4880
+	.WORD $4880
+	.WORD $4880
 SPRITE_GROUPING_434:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D4, $E0, $A4, $E0, $A4, $E1, $A4, $A1, $A5, $A0, $A5, $A0, $A5, $E0, $A4, $A0, $A5
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $A4E0
+	.WORD $A4E0
+	.WORD $A4E1
+	.WORD $A5A1
+	.WORD $A5A0
+	.WORD $A5A0
+	.WORD $A4E0
+	.WORD $A5A0
 SPRITE_GROUPING_435:
-		.BYTE $03, $20, $05, $18, $08, $08, $08, $08, $D1, $00, $CF, $01, $CF, $C1, $CF, $81, $D0, $40, $CE, $40, $D4, $C0, $CF, $80, $D0, $C1, $D2, $81, $D3, $41, $D1, $01, $D2, $40, $D1, $00, $D2, $C0, $D2, $80, $D3
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $18 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $CF00
+	.WORD $CF01
+	.WORD $CFC1
+	.WORD $D081
+	.WORD $CE40
+	.WORD $D440
+	.WORD $CFC0
+	.WORD $D080
+	.WORD $D2C1
+	.WORD $D381
+	.WORD $D141
+	.WORD $D201
+	.WORD $D140
+	.WORD $D200
+	.WORD $D2C0
+	.WORD $D380
 SPRITE_GROUPING_436:
-		.BYTE $03, $20, $05, $1C, $05, $08, $05, $08, $D3, $C0, $2D, $C1, $2D, $81, $2E, $41, $2F, $00, $2D, $01, $2D, $80, $2E, $40, $2F
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $05, $08, $05, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $2DC0
+	.WORD $2DC1
+	.WORD $2E81
+	.WORD $2F41
+	.WORD $2D00
+	.WORD $2D01
+	.WORD $2E80
+	.WORD $2F40
 SPRITE_GROUPING_437:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D1, $C0, $BA, $C1, $BA, $81, $BB, $41, $BC, $00, $BA, $00, $C0, $80, $BB, $40, $BC, $81, $BE, $41, $BF, $01, $BD, $C1, $BD, $00, $BD, $C0, $BD, $80, $BE, $40, $BF
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $BAC0
+	.WORD $BAC1
+	.WORD $BB81
+	.WORD $BC41
+	.WORD $BA00
+	.WORD $C000
+	.WORD $BB80
+	.WORD $BC40
+	.WORD $BE81
+	.WORD $BF41
+	.WORD $BD01
+	.WORD $BDC1
+	.WORD $BD00
+	.WORD $BDC0
+	.WORD $BE80
+	.WORD $BF40
 SPRITE_GROUPING_438:
-		.BYTE $02, $30, $02, $14, $0C, $08, $0C, $08, $D4, $21, $C8, $61, $C7, $21, $C8, $61, $C7, $21, $C8, $61, $C7, $21, $C8, $61, $C7
+	.BYTE $02 ;Height
+	.BYTE $30 ;Width (lower half) + ??? (upper half)
+	.BYTE $02 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $08, $0C, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $C821
+	.WORD $C761
+	.WORD $C821
+	.WORD $C761
+	.WORD $C821
+	.WORD $C761
+	.WORD $C821
+	.WORD $C761
 SPRITE_GROUPING_439:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D5, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
 SPRITE_GROUPING_440:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D5, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
 SPRITE_GROUPING_441:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D5, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
 SPRITE_GROUPING_442:
-		.BYTE $04, $40, $08, $1E, $10, $08, $10, $08, $D4, $80, $46, $80, $46, $80, $46, $80, $46, $80, $46, $80, $46, $80, $46, $80, $46
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $10, $08, $10, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $4680
+	.WORD $4680
+	.WORD $4680
+	.WORD $4680
+	.WORD $4680
+	.WORD $4680
+	.WORD $4680
+	.WORD $4680
 SPRITE_GROUPING_443:
-		.BYTE $04, $40, $08, $16, $08, $08, $08, $08, $D2, $00, $41, $00, $43, $00, $41, $00, $43, $00, $41, $00, $43, $00, $41, $00, $43
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $4100
+	.WORD $4300
+	.WORD $4100
+	.WORD $4300
+	.WORD $4100
+	.WORD $4300
+	.WORD $4100
+	.WORD $4300
 SPRITE_GROUPING_444:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D4, $C0, $0F, $C1, $0F, $81, $10, $41, $11, $00, $0F, $01, $0F, $80, $10, $40, $11
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $0FC0
+	.WORD $0FC1
+	.WORD $1081
+	.WORD $1141
+	.WORD $0F00
+	.WORD $0F01
+	.WORD $1080
+	.WORD $1140
 SPRITE_GROUPING_445:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D5, $80, $15, $80, $15, $80, $15, $80, $15, $80, $15, $80, $15, $80, $15, $80, $15
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $1580
+	.WORD $1580
+	.WORD $1580
+	.WORD $1580
+	.WORD $1580
+	.WORD $1580
+	.WORD $1580
+	.WORD $1580
 SPRITE_GROUPING_446:
-		.BYTE $04, $40, $08, $1C, $08, $08, $08, $08, $D2, $00, $3D, $00, $3F, $00, $3D, $00, $3F, $00, $3D, $00, $3F, $00, $3D, $00, $3F
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $3D00
+	.WORD $3F00
+	.WORD $3D00
+	.WORD $3F00
+	.WORD $3D00
+	.WORD $3F00
+	.WORD $3D00
+	.WORD $3F00
 SPRITE_GROUPING_447:
-		.BYTE $04, $40, $08, $18, $0C, $08, $0C, $08, $D2, $00, $2D, $00, $2F, $00, $2D, $00, $2F, $00, $2D, $00, $2F, $00, $2D, $00, $2F
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $18 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $08, $0C, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $2D00
+	.WORD $2F00
+	.WORD $2D00
+	.WORD $2F00
+	.WORD $2D00
+	.WORD $2F00
+	.WORD $2D00
+	.WORD $2F00
 SPRITE_GROUPING_448:
-		.BYTE $02, $20, $00, $1C, $00, $00, $00, $00, $D5, $C0, $41, $C0, $41, $C0, $41, $C0, $41, $C0, $41, $C0, $41, $C0, $41, $C0, $41
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $41C0
+	.WORD $41C0
+	.WORD $41C0
+	.WORD $41C0
+	.WORD $41C0
+	.WORD $41C0
+	.WORD $41C0
+	.WORD $41C0
 SPRITE_GROUPING_449:
-		.BYTE $04, $20, $07, $1E, $08, $08, $08, $08, $D1, $00, $FF, $00, $FF, $00, $FF, $00, $FF, $00, $FF, $00, $FF, $00, $FF, $00, $FF
+	.BYTE $04 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $07 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $FF00
+	.WORD $FF00
+	.WORD $FF00
+	.WORD $FF00
+	.WORD $FF00
+	.WORD $FF00
+	.WORD $FF00
+	.WORD $FF00
 SPRITE_GROUPING_450:
-		.BYTE $03, $20, $05, $18, $08, $08, $08, $08, $D3, $C0, $54, $C1, $54, $81, $55, $41, $56, $00, $54, $01, $54, $80, $55, $40, $56
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $18 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $54C0
+	.WORD $54C1
+	.WORD $5581
+	.WORD $5641
+	.WORD $5400
+	.WORD $5401
+	.WORD $5580
+	.WORD $5640
 SPRITE_GROUPING_451:
-		.BYTE $02, $20, $00, $1E, $05, $08, $05, $08, $D4, $00, $89, $01, $89, $81, $89, $01, $8A, $80, $88, $81, $88, $80, $89, $00, $8A
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $05, $08, $05, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $8900
+	.WORD $8901
+	.WORD $8981
+	.WORD $8A01
+	.WORD $8880
+	.WORD $8881
+	.WORD $8980
+	.WORD $8A00
 SPRITE_GROUPING_452:
-		.BYTE $03, $20, $05, $1C, $08, $08, $08, $08, $D4, $E0, $C5, $A0, $C6, $E0, $C5, $A0, $C6, $E0, $C5, $A0, $C6, $E0, $C5, $A0, $C6
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $C5E0
+	.WORD $C6A0
+	.WORD $C5E0
+	.WORD $C6A0
+	.WORD $C5E0
+	.WORD $C6A0
+	.WORD $C5E0
+	.WORD $C6A0
 SPRITE_GROUPING_453:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D5, $00, $20, $00, $20, $01, $20, $01, $20, $00, $20, $00, $20, $00, $20, $00, $20
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $2000
+	.WORD $2000
+	.WORD $2001
+	.WORD $2001
+	.WORD $2000
+	.WORD $2000
+	.WORD $2000
+	.WORD $2000
 SPRITE_GROUPING_454:
-		.BYTE $03, $20, $05, $1A, $08, $08, $08, $08, $D5, $40, $1F, $40, $1F, $41, $1F, $41, $1F, $40, $1F, $40, $1F, $40, $1F, $40, $1F
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $1F40
+	.WORD $1F40
+	.WORD $1F41
+	.WORD $1F41
+	.WORD $1F40
+	.WORD $1F40
+	.WORD $1F40
+	.WORD $1F40
 SPRITE_GROUPING_455:
-		.BYTE $04, $40, $08, $1C, $08, $08, $08, $08, $D2, $00, $4D, $01, $4D, $01, $4F, $01, $4F, $00, $4D, $01, $4D, $00, $4F, $00, $4F
+	.BYTE $04 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $08 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK2
+	.WORD $4D00
+	.WORD $4D01
+	.WORD $4F01
+	.WORD $4F01
+	.WORD $4D00
+	.WORD $4D01
+	.WORD $4F00
+	.WORD $4F00
 SPRITE_GROUPING_456:
-		.BYTE $03, $20, $05, $1C, $08, $40, $08, $40, $D5, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C, $C0, $2C
+	.BYTE $03 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $05 ;Unknown
+	.BYTE $1C ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $08, $40, $08, $40 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
+	.WORD $2CC0
 SPRITE_GROUPING_457:
-		.BYTE $02, $30, $02, $1A, $0C, $08, $0C, $08, $D5, $80, $1E, $80, $1E, $80, $1E, $80, $1E, $80, $1E, $80, $1E, $81, $1E, $81, $1E
+	.BYTE $02 ;Height
+	.BYTE $30 ;Width (lower half) + ??? (upper half)
+	.BYTE $02 ;Unknown
+	.BYTE $1A ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $0C, $08, $0C, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK5
+	.WORD $1E80
+	.WORD $1E80
+	.WORD $1E80
+	.WORD $1E80
+	.WORD $1E80
+	.WORD $1E80
+	.WORD $1E81
+	.WORD $1E81
 SPRITE_GROUPING_458:
-		.BYTE $06, $40, $0C, $16, $00, $00, $00, $00, $D3, $00, $FC, $00, $FC, $00, $FC, $00, $FC, $00, $FC, $00, $FC, $00, $FC, $00, $FC
+	.BYTE $06 ;Height
+	.BYTE $40 ;Width (lower half) + ??? (upper half)
+	.BYTE $0C ;Unknown
+	.BYTE $16 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK3
+	.WORD $FC00
+	.WORD $FC00
+	.WORD $FC00
+	.WORD $FC00
+	.WORD $FC00
+	.WORD $FC00
+	.WORD $FC00
+	.WORD $FC00
 SPRITE_GROUPING_459:
-		.BYTE $06, $80, $0E, $1E, $20, $20, $20, $20, $D1, $00, $F3, $00, $F3, $00, $F3, $00, $F3, $00, $F3, $00, $F3, $01, $F3, $01, $F3
+	.BYTE $06 ;Height
+	.BYTE $80 ;Width (lower half) + ??? (upper half)
+	.BYTE $0E ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $20, $20, $20, $20 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $F300
+	.WORD $F300
+	.WORD $F300
+	.WORD $F300
+	.WORD $F300
+	.WORD $F300
+	.WORD $F301
+	.WORD $F301
 SPRITE_GROUPING_460:
-		.BYTE $06, $80, $0E, $1E, $20, $20, $20, $20, $D1, $00, $ED, $00, $ED, $00, $ED, $00, $ED, $00, $ED, $00, $ED, $01, $ED, $01, $ED
+	.BYTE $06 ;Height
+	.BYTE $80 ;Width (lower half) + ??? (upper half)
+	.BYTE $0E ;Unknown
+	.BYTE $1E ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $20, $20, $20, $20 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK1
+	.WORD $ED00
+	.WORD $ED00
+	.WORD $ED00
+	.WORD $ED00
+	.WORD $ED00
+	.WORD $ED00
+	.WORD $ED01
+	.WORD $ED01
 SPRITE_GROUPING_461:
-		.BYTE $02, $20, $00, $12, $04, $08, $08, $08, $D4, $00, $79, $01, $79, $81, $79, $01, $7A, $80, $78, $81, $78, $80, $79, $00, $7A
+	.BYTE $02 ;Height
+	.BYTE $20 ;Width (lower half) + ??? (upper half)
+	.BYTE $00 ;Unknown
+	.BYTE $12 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $04, $08, $08, $08 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $7900
+	.WORD $7901
+	.WORD $7981
+	.WORD $7A01
+	.WORD $7880
+	.WORD $7881
+	.WORD $7980
+	.WORD $7A00
 SPRITE_GROUPING_462:
-		.BYTE $02, $60, $04, $14, $00, $00, $00, $00, $D4, $E0, $95, $E1, $95, $E0, $95, $E1, $95, $E0, $95, $E1, $95, $E0, $95, $E1, $95
+	.BYTE $02 ;Height
+	.BYTE $60 ;Width (lower half) + ??? (upper half)
+	.BYTE $04 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $95E0
+	.WORD $95E1
+	.WORD $95E0
+	.WORD $95E1
+	.WORD $95E0
+	.WORD $95E1
+	.WORD $95E0
+	.WORD $95E1
 SPRITE_GROUPING_463:
-		.BYTE $02, $60, $04, $14, $00, $00, $00, $00, $D4, $60, $94, $61, $94, $60, $94, $61, $94, $60, $94, $61, $94, $60, $94, $61, $94
+	.BYTE $02 ;Height
+	.BYTE $60 ;Width (lower half) + ??? (upper half)
+	.BYTE $04 ;Unknown
+	.BYTE $14 ;??? (bit 0) + Palette (bits 1-3) + ??? (bits 4-7)
+	.BYTE $00, $00, $00, $00 ;Unknown
+	.BANKBYTES OVERWORLD_SPRITES_BANK4
+	.WORD $9460
+	.WORD $9461
+	.WORD $9460
+	.WORD $9461
+	.WORD $9460
+	.WORD $9461
+	.WORD $9460
+	.WORD $9461
