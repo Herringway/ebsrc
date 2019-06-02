@@ -1,11 +1,16 @@
 
 .INCLUDE "spriteoverlaymacros.asm"
 
-SPRITE_OVERLAY_DATA: ;$C40E31
-SPRITE_OVERLAY_COUNT:
+.ENUM ORIENTATION
+	VERTICAL = $8000
+	HORIZONTAL = $4000
+.ENDENUM
+
+SPRITE_OVERLAY_DATA:
+SPRITE_OVERLAY_COUNT: ;$C40E31
 	.BYTE $04
 
-SPRITE_OVERLAY_SPRITES:
+SPRITE_OVERLAY_SPRITES: ;$C40E32
 	;Sweating
 	.WORD OVERWORLD_SPRITE::SWEAT
 	.BYTE $00
@@ -26,120 +31,119 @@ SPRITE_OVERLAY_SPRITES:
 	.BYTE $00
 	.BYTE $FF
 
-;Sweating frame 1
-SPRITE_OVERLAY_SWEATING_FRAME_1:
-	.BYTE $F0
-	.WORD $7360
-	.BYTE $EA
+SPRITE_OVERLAY_SWEATING_FRAME_1: ;$C40E42
+	.BYTE $F0 ;Y Position, relative to sprite
+	.WORD $3360 | ORIENTATION::HORIZONTAL
+	.BYTE $EA ;X Position, relative to sprite
 	.BYTE $80
 
-	.BYTE $F0
-	.WORD $6360
-	.BYTE $EA
-	.BYTE $80
-;Sweating frame 2
-SPRITE_OVERLAY_SWEATING_FRAME_2:
-	.BYTE $F0
-	.WORD $7362
-	.BYTE $EA
+	.BYTE $F0 ;Y Position, relative to sprite
+	.WORD $2360 | ORIENTATION::HORIZONTAL
+	.BYTE $EA ;X Position, relative to sprite
 	.BYTE $80
 
-	.BYTE $F0
-	.WORD $6362
-	.BYTE $EA
+SPRITE_OVERLAY_SWEATING_FRAME_2: ;$C40E4C
+	.BYTE $F0 ;Y Position, relative to sprite
+	.WORD $3362 | ORIENTATION::HORIZONTAL
+	.BYTE $EA ;X Position, relative to sprite
 	.BYTE $80
-;Sweating frame 3
-SPRITE_OVERLAY_SWEATING_FRAME_3:
-	.BYTE $F0
+
+	.BYTE $F0 ;Y Position, relative to sprite
+	.WORD $2362 | ORIENTATION::HORIZONTAL
+	.BYTE $EA ;X Position, relative to sprite
+	.BYTE $80
+
+SPRITE_OVERLAY_SWEATING_FRAME_3: ;$C40E56
+	.BYTE $F0 ;Y Position, relative to sprite
 	.WORD $3360
-	.BYTE $04
+	.BYTE $04 ;X Position, relative to sprite
 	.BYTE $80
 
-	.BYTE $F0
+	.BYTE $F0 ;Y Position, relative to sprite
 	.WORD $2360
-	.BYTE $04
+	.BYTE $04 ;X Position, relative to sprite
 	.BYTE $80
-;Sweating frame 4
-SPRITE_OVERLAY_SWEATING_FRAME_4:
-	.BYTE $F0
+
+SPRITE_OVERLAY_SWEATING_FRAME_4: ;$C40E60
+	.BYTE $F0 ;Y Position, relative to sprite
 	.WORD $3362
-	.BYTE $04
+	.BYTE $04 ;X Position, relative to sprite
 	.BYTE $80
 
-	.BYTE $F0
+	.BYTE $F0 ;Y Position, relative to sprite
 	.WORD $2362
-	.BYTE $04
+	.BYTE $04 ;X Position, relative to sprite
 	.BYTE $80
-;Mushroomized frame 1
+
 SPRITE_OVERLAY_MUSHROOMIZED_FRAME_1:
-	.BYTE $E8
+	.BYTE $E8 ;Y Position, relative to sprite
 	.WORD $3364
-	.BYTE $F8
+	.BYTE $F8 ;X Position, relative to sprite
 	.BYTE $80
 
-	.BYTE $E8
+	.BYTE $E8 ;Y Position, relative to sprite
 	.WORD $2364
-	.BYTE $F8
+	.BYTE $F8 ;X Position, relative to sprite
 	.BYTE $80
-;Small ripple frame 1
+
 SPRITE_OVERLAY_RIPPLE_FRAME_1:
-	.BYTE $FE
+	.BYTE $FE ;Y Position, relative to sprite
 	.WORD $3366
-	.BYTE $F8
+	.BYTE $F8 ;X Position, relative to sprite
 	.BYTE $80
 
-	.BYTE $FE
+	.BYTE $FE ;Y Position, relative to sprite
 	.WORD $2366
-	.BYTE $F8
+	.BYTE $F8 ;X Position, relative to sprite
 	.BYTE $80
-;Small ripple frame 2
+
 SPRITE_OVERLAY_RIPPLE_FRAME_2:
-	.BYTE $FE
-	.WORD $7366
-	.BYTE $F8
+	.BYTE $FE ;Y Position, relative to sprite
+	.WORD $3366 | ORIENTATION::HORIZONTAL
+	.BYTE $F8 ;X Position, relative to sprite
 	.BYTE $80
 
-	.BYTE $FE
-	.WORD $6366
-	.BYTE $F8
+	.BYTE $FE ;Y Position, relative to sprite
+	.WORD $2366 | ORIENTATION::HORIZONTAL
+	.BYTE $F8 ;X Position, relative to sprite
 	.BYTE $80
-;Big ripple frame 1
+
 SPRITE_OVERLAY_BIG_RIPPLE_FRAME_1:
-	.BYTE $F8
+	.BYTE $F8 ;Y Position, relative to sprite
 	.WORD $3368
-	.BYTE $F0
+	.BYTE $F0 ;X Position, relative to sprite
 	.BYTE $00
-	.BYTE $F8
+	.BYTE $F8 ;Y Position, relative to sprite
 	.WORD $336A
-	.BYTE $00
+	.BYTE $00 ;X Position, relative to sprite
 	.BYTE $80
 
-	.BYTE $F8
+	.BYTE $F8 ;Y Position, relative to sprite
 	.WORD $2368
-	.BYTE $F0
+	.BYTE $F0 ;X Position, relative to sprite
 	.BYTE $00
-	.BYTE $F8
+	.BYTE $F8 ;Y Position, relative to sprite
 	.WORD $236A
-	.BYTE $00
-	.BYTE $80
-;Big ripple frame 2
-SPRITE_OVERLAY_BIG_RIPPLE_FRAME_2:
-	.BYTE $F8
-	.WORD $736A
-	.BYTE $F0
-	.BYTE $00
-	.BYTE $F8
-	.WORD $7368
-	.BYTE $00
+	.BYTE $00 ;X Position, relative to sprite
 	.BYTE $80
 
-	.BYTE $F8
-	.WORD $636A
-	.BYTE $F0
+SPRITE_OVERLAY_BIG_RIPPLE_FRAME_2:
+	.BYTE $F8 ;Y Position, relative to sprite
+	.WORD $336A | ORIENTATION::HORIZONTAL
+	.BYTE $F0 ;X Position, relative to sprite
 	.BYTE $00
-	.BYTE $F8
-	.WORD $6368
+	.BYTE $F8 ;Y Position, relative to sprite
+	.WORD $3368 | ORIENTATION::HORIZONTAL
+	.BYTE $00 ;X Position, relative to sprite
+	.BYTE $80
+
+	.BYTE $F8 ;Y Position, relative to sprite
+	.WORD $236A | ORIENTATION::HORIZONTAL
+	.BYTE $F0 ;X Position, relative to sprite
 	.BYTE $00
+	.BYTE $F8 ;Y Position, relative to sprite
+	.WORD $2368 | ORIENTATION::HORIZONTAL
+	.BYTE $00 ;X Position, relative to sprite
 	.BYTE $80
 
 ; Format:
@@ -148,7 +152,6 @@ SPRITE_OVERLAY_BIG_RIPPLE_FRAME_2:
 ;   01 = Show frame described at $YYYY ($0000 for nothing)
 ;   02 = Wait YYYY frames
 ;   03 = Jump to $YYYY
-; Sweating script
 SPRITE_OVERLAY_SWEATING:
 	SHOWFRAME .LOWORD(SPRITE_OVERLAY_SWEATING_FRAME_1)
 	DELAYNEXTFRAME $0008
@@ -164,13 +167,11 @@ SPRITE_OVERLAY_SWEATING:
 	DELAYNEXTFRAME $0010
 	JUMPTO .LOWORD(SPRITE_OVERLAY_SWEATING)
 
-; Mushroomized script
 SPRITE_OVERLAY_MUSHROOMIZED:
 	SHOWFRAME .LOWORD(SPRITE_OVERLAY_MUSHROOMIZED_FRAME_1)
 	DELAYNEXTFRAME $00FF
 	JUMPTO .LOWORD(SPRITE_OVERLAY_MUSHROOMIZED)
 
-; Small ripple script
 SPRITE_OVERLAY_RIPPLE:
 	SHOWFRAME .LOWORD(SPRITE_OVERLAY_RIPPLE_FRAME_1)
 	DELAYNEXTFRAME $000C
@@ -178,7 +179,6 @@ SPRITE_OVERLAY_RIPPLE:
 	DELAYNEXTFRAME $000C
 	JUMPTO .LOWORD(SPRITE_OVERLAY_RIPPLE)
 
-; Big ripple script
 SPRITE_OVERLAY_BIG_RIPPLE:
 	SHOWFRAME .LOWORD(SPRITE_OVERLAY_BIG_RIPPLE_FRAME_1)
 	DELAYNEXTFRAME $000C
