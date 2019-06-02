@@ -1,36 +1,443 @@
 
 SCREEN_TRANSITION_CONFIG_TABLE: ;$D01400
-	.BYTE $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-	.BYTE $14, $00, $00, $00, $00, $00, $00, $00, $14, $00, $00, $00
-	.BYTE $14, $00, $00, $64, $00, $00, $00, $00, $3C, $00, $00, $00
-	.BYTE $14, $00, $00, $00, $00, $00, $00, $00, $14, $00, $00, $00
-	.BYTE $14, $00, $00, $00, $00, $00, $00, $00, $14, $00, $00, $09
-	.BYTE $1E, $00, $00, $00, $00, $00, $10, $11, $14, $00, $00, $2E
-	.BYTE $14, $00, $00, $00, $00, $00, $00, $00, $14, $00, $00, $70
-	.BYTE $14, $00, $00, $00, $00, $00, $00, $08, $14, $00, $00, $09
-	.BYTE $14, $00, $00, $00, $00, $00, $00, $08, $3C, $00, $00, $09
-	.BYTE $14, $00, $00, $00, $00, $00, $00, $08, $3C, $00, $00, $09
-	.BYTE $14, $00, $00, $00, $00, $00, $00, $08, $14, $00, $00, $00
-	.BYTE $64, $05, $00, $31, $00, $00, $00, $00, $64, $05, $00, $00
-	.BYTE $14, $00, $00, $00, $00, $00, $00, $70, $14, $00, $00, $00
-	.BYTE $14, $00, $00, $00, $00, $00, $00, $70, $14, $00, $00, $70
-	.BYTE $14, $00, $00, $64, $00, $00, $00, $00, $14, $00, $00, $00
-	.BYTE $14, $00, $00, $00, $00, $00, $00, $12, $14, $00, $00, $00
-	.BYTE $FF, $02, $80, $64, $00, $00, $00, $00, $3C, $02, $01, $00
-	.BYTE $3C, $00, $00, $00, $26, $00, $0C, $0C, $14, $00, $00, $00
-	.BYTE $3C, $00, $00, $00, $07, $00, $0C, $0C, $14, $00, $00, $00
-	.BYTE $3C, $00, $00, $00, $3B, $00, $0C, $0C, $14, $00, $00, $00
-	.BYTE $3C, $00, $00, $00, $3D, $00, $0C, $0C, $14, $00, $00, $00
-	.BYTE $3C, $00, $00, $00, $3D, $00, $0C, $0C, $14, $00, $00, $00
-	.BYTE $3C, $00, $00, $00, $07, $00, $0C, $0C, $14, $00, $00, $00
-	.BYTE $3C, $00, $00, $00, $05, $00, $0C, $0C, $14, $00, $00, $00
-	.BYTE $3C, $00, $00, $00, $30, $00, $0C, $0C, $14, $00, $00, $00
-	.BYTE $3C, $00, $00, $00, $16, $00, $0C, $0C, $14, $00, $00, $00
-	.BYTE $3C, $00, $00, $00, $26, $00, $0C, $0C, $14, $00, $00, $00
-	.BYTE $3C, $00, $00, $00, $1B, $00, $0C, $0C, $14, $00, $00, $00
-	.BYTE $14, $00, $00, $00, $00, $00, $00, $0C, $14, $00, $00, $00
-	.BYTE $78, $00, $00, $64, $00, $00, $00, $00, $64, $00, $00, $00
-	.BYTE $64, $00, $00, $64, $00, $00, $00, $64, $3C, $00, $00, $00
-	.BYTE $64, $00, $00, $00, $10, $E8, $07, $60, $14, $00, $00, $53
-	.BYTE $64, $00, $00, $00, $30, $E8, $07, $60, $14, $00, $00, $53
-	.BYTE $1E, $00, $00, $00, $00, $00, $10, $11, $14, $00, $00, $00
+	.BYTE $00 ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $00 ;Direction
+	.BYTE $00
+	.BYTE $00 ;Slide speed
+	.BYTE SFX::NONE ;Sound effect to play at beginning
+	.BYTE $00 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $14 ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $00 ;Direction
+	.BYTE $00
+	.BYTE $00 ;Slide speed
+	.BYTE SFX::NONE ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $14 ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $64 ;Fade style
+	.BYTE $00 ;Direction
+	.BYTE $00
+	.BYTE $00 ;Slide speed
+	.BYTE SFX::NONE ;Sound effect to play at beginning
+	.BYTE $3C ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $14 ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $00 ;Direction
+	.BYTE $00
+	.BYTE $00 ;Slide speed
+	.BYTE SFX::NONE ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $14 ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $00 ;Direction
+	.BYTE $00
+	.BYTE $00 ;Slide speed
+	.BYTE SFX::NONE ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::DOOR_CLOSE ;Sound effect to play at end
+
+	.BYTE $1E ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $00 ;Direction
+	.BYTE $00
+	.BYTE $10 ;Slide speed
+	.BYTE $11 ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE $2E ;Sound effect to play at end
+
+	.BYTE $14 ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $00 ;Direction
+	.BYTE $00
+	.BYTE $00 ;Slide speed
+	.BYTE SFX::NONE ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE $70 ;Sound effect to play at end
+
+	.BYTE $14 ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $00 ;Direction
+	.BYTE $00
+	.BYTE $00 ;Slide speed
+	.BYTE SFX::DOOR_OPEN ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::DOOR_CLOSE ;Sound effect to play at end
+
+	.BYTE $14 ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $00 ;Direction
+	.BYTE $00
+	.BYTE $00 ;Slide speed
+	.BYTE SFX::DOOR_OPEN ;Sound effect to play at beginning
+	.BYTE $3C ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::DOOR_CLOSE ;Sound effect to play at end
+
+	.BYTE $14 ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $00 ;Direction
+	.BYTE $00
+	.BYTE $00 ;Slide speed
+	.BYTE SFX::DOOR_OPEN ;Sound effect to play at beginning
+	.BYTE $3C ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::DOOR_CLOSE ;Sound effect to play at end
+
+	.BYTE $14 ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $00 ;Direction
+	.BYTE $00
+	.BYTE $00 ;Slide speed
+	.BYTE SFX::DOOR_OPEN ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $64 ;Duration
+	.BYTE $05 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $31 ;Fade style
+	.BYTE $00 ;Direction
+	.BYTE $00
+	.BYTE $00 ;Slide speed
+	.BYTE SFX::NONE ;Sound effect to play at beginning
+	.BYTE $64 ;Secondary duration
+	.BYTE $05 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $14 ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $00 ;Direction
+	.BYTE $00
+	.BYTE $00 ;Slide speed
+	.BYTE $70 ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $14 ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $00 ;Direction
+	.BYTE $00
+	.BYTE $00 ;Slide speed
+	.BYTE $70 ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE $70 ;Sound effect to play at end
+
+	.BYTE $14 ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $64 ;Fade style
+	.BYTE $00 ;Direction
+	.BYTE $00
+	.BYTE $00 ;Slide speed
+	.BYTE SFX::NONE ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $14 ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $00 ;Direction
+	.BYTE $00
+	.BYTE $00 ;Slide speed
+	.BYTE $12 ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $FF ;Duration
+	.BYTE $02 ;Animation ID
+	.BYTE $80 ;Animation flags
+	.BYTE $64 ;Fade style
+	.BYTE $00 ;Direction
+	.BYTE $00
+	.BYTE $00 ;Slide speed
+	.BYTE SFX::NONE ;Sound effect to play at beginning
+	.BYTE $3C ;Secondary duration
+	.BYTE $02 ;Secondary animation ID
+	.BYTE $01 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $3C ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $26 ;Direction
+	.BYTE $00
+	.BYTE $0C ;Slide speed
+	.BYTE $0C ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $3C ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $07 ;Direction
+	.BYTE $00
+	.BYTE $0C ;Slide speed
+	.BYTE $0C ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $3C ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $3B ;Direction
+	.BYTE $00
+	.BYTE $0C ;Slide speed
+	.BYTE $0C ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $3C ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $3D ;Direction
+	.BYTE $00
+	.BYTE $0C ;Slide speed
+	.BYTE $0C ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $3C ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $3D ;Direction
+	.BYTE $00
+	.BYTE $0C ;Slide speed
+	.BYTE $0C ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $3C ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $07 ;Direction
+	.BYTE $00
+	.BYTE $0C ;Slide speed
+	.BYTE $0C ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $3C ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $05 ;Direction
+	.BYTE $00
+	.BYTE $0C ;Slide speed
+	.BYTE $0C ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $3C ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $30 ;Direction
+	.BYTE $00
+	.BYTE $0C ;Slide speed
+	.BYTE $0C ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $3C ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $16 ;Direction
+	.BYTE $00
+	.BYTE $0C ;Slide speed
+	.BYTE $0C ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $3C ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $26 ;Direction
+	.BYTE $00
+	.BYTE $0C ;Slide speed
+	.BYTE $0C ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $3C ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $1B ;Direction
+	.BYTE $00
+	.BYTE $0C ;Slide speed
+	.BYTE $0C ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $14 ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $00 ;Direction
+	.BYTE $00
+	.BYTE $00 ;Slide speed
+	.BYTE $0C ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $78 ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $64 ;Fade style
+	.BYTE $00 ;Direction
+	.BYTE $00
+	.BYTE $00 ;Slide speed
+	.BYTE SFX::NONE ;Sound effect to play at beginning
+	.BYTE $64 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $64 ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $64 ;Fade style
+	.BYTE $00 ;Direction
+	.BYTE $00
+	.BYTE $00 ;Slide speed
+	.BYTE $64 ;Sound effect to play at beginning
+	.BYTE $3C ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
+
+	.BYTE $64 ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $10 ;Direction
+	.BYTE $E8
+	.BYTE $07 ;Slide speed
+	.BYTE $60 ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE $53 ;Sound effect to play at end
+
+	.BYTE $64 ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $30 ;Direction
+	.BYTE $E8
+	.BYTE $07 ;Slide speed
+	.BYTE $60 ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE $53 ;Sound effect to play at end
+
+	.BYTE $1E ;Duration
+	.BYTE $00 ;Animation ID
+	.BYTE $00 ;Animation flags
+	.BYTE $00 ;Fade style
+	.BYTE $00 ;Direction
+	.BYTE $00
+	.BYTE $10 ;Slide speed
+	.BYTE $11 ;Sound effect to play at beginning
+	.BYTE $14 ;Secondary duration
+	.BYTE $00 ;Secondary animation ID
+	.BYTE $00 ;Secondary animation flags
+	.BYTE SFX::NONE ;Sound effect to play at end
