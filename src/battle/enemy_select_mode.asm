@@ -280,7 +280,7 @@ ENEMY_SELECT_MODE: ;$C1E1A5
 	CLC
 	ADC $0A
 	STA $0A
-	LDY #$0002
+	LDY #battle_entry_ptr_entry::pointer+2
 	LDA [$0A],Y
 	TAY
 	LDA [$0A]

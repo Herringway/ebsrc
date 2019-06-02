@@ -298,3 +298,10 @@
 	;The number of sprite pointers varies.
 	spritepointerarray .word ;9
 .ENDSTRUCT
+
+.STRUCT battle_entry_ptr_entry
+	pointer .dword ;0
+	run_away_flag .word ;4
+	run_away_flag_state .byte ;6
+	letterbox_style .byte ;7
+.ENDSTRUCT

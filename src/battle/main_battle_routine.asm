@@ -37,9 +37,9 @@ BATTLE_ROUTINE: ;$C24821
 	LDA #$0001
 	STA .LOWORD(ENEMIES_IN_BATTLE)
 	STA .LOWORD(CURRENT_BATTLE_GROUP)
-	LDA f:BTL_ENTRY_PTR_TABLE+8
+	LDA f:BTL_ENTRY_PTR_TABLE+.SIZEOF(battle_entry_ptr_entry)+battle_entry_ptr_entry::pointer
 	STA $06
-	LDA f:BTL_ENTRY_PTR_TABLE+10
+	LDA f:BTL_ENTRY_PTR_TABLE+.SIZEOF(battle_entry_ptr_entry)+battle_entry_ptr_entry::pointer+2
 	STA $08
 	LDY #$0001
 	LDA [$06],Y
@@ -79,7 +79,7 @@ BATTLE_ROUTINE: ;$C24821
 	ASL
 	ASL
 	CLC
-	ADC #$0007
+	ADC #battle_entry_ptr_entry::letterbox_style
 	TAX
 	LDA f:BTL_ENTRY_PTR_TABLE,X
 	AND #$00FF
@@ -410,7 +410,7 @@ BATTLE_ROUTINE: ;$C24821
 	ASL
 	ASL
 	CLC
-	ADC #$0007
+	ADC #battle_entry_ptr_entry::letterbox_style
 	TAX
 	LDA f:BTL_ENTRY_PTR_TABLE,X
 	AND #$00FF
