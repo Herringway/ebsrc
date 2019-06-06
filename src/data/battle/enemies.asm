@@ -29,11 +29,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0000 ;Action 1
-  .WORD $0000 ;Action 2
-  .WORD $0000 ;Action 3
-  .WORD $0000 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -78,11 +78,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00D7 ;Action 1
-  .WORD $003E ;Action 2
-  .WORD $00D7 ;Action 3
-  .WORD $00D7 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_215
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_215
+  .WORD BATTLE_ACTIONS::ACTION_215
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $01 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -127,11 +127,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $03 ;Action order
-  .WORD $0012 ;Action 1
-  .WORD $000E ;Action 2
-  .WORD $0020 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_018
+  .WORD BATTLE_ACTIONS::ACTION_014
+  .WORD BATTLE_ACTIONS::ACTION_032
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $09 ;Action 1 argument
   .BYTE $05 ;Action 2 argument
   .BYTE $17 ;Action 3 argument
@@ -176,11 +176,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $005F ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_095
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -225,11 +225,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $00DB ;Action 1
-  .WORD $006E ;Action 2
-  .WORD $00DB ;Action 3
-  .WORD $00EB ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_219
+  .WORD BATTLE_ACTIONS::ACTION_110
+  .WORD BATTLE_ACTIONS::ACTION_219
+  .WORD BATTLE_ACTIONS::ACTION_235
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -274,11 +274,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $003E ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $0020 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_032
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $05 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -323,11 +323,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $003E ;Action 2
-  .WORD $006F ;Action 3
-  .WORD $0032 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_111
+  .WORD BATTLE_ACTIONS::ACTION_050
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $06 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -372,11 +372,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $004B ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_075
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -421,11 +421,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $03 ;Action order
-  .WORD $004B ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $00ED ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_075
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_237
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -470,11 +470,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0036 ;Action 2
-  .WORD $003F ;Action 3
-  .WORD $0020 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_054
+  .WORD BATTLE_ACTIONS::ACTION_063
+  .WORD BATTLE_ACTIONS::ACTION_032
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $2D ;Action 2 argument
   .BYTE $09 ;Action 3 argument
@@ -519,11 +519,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $003F ;Action 2
-  .WORD $0036 ;Action 3
-  .WORD $0020 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_063
+  .WORD BATTLE_ACTIONS::ACTION_054
+  .WORD BATTLE_ACTIONS::ACTION_032
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $0A ;Action 2 argument
   .BYTE $2D ;Action 3 argument
@@ -568,11 +568,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0076 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0076 ;Action 3
-  .WORD $0076 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_118
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_118
+  .WORD BATTLE_ACTIONS::ACTION_118
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -617,11 +617,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $03 ;Action order
-  .WORD $00E2 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0020 ;Action 3
-  .WORD $00E2 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_226
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_032
+  .WORD BATTLE_ACTIONS::ACTION_226
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $17 ;Action 3 argument
@@ -666,11 +666,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0063 ;Action 1
-  .WORD $00DE ;Action 2
-  .WORD $0063 ;Action 3
-  .WORD $0063 ;Action 4
-  .WORD $0040 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_099
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_099
+  .WORD BATTLE_ACTIONS::ACTION_099
+  .WORD BATTLE_ACTIONS::ACTION_064 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -715,11 +715,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0063 ;Action 1
-  .WORD $00DE ;Action 2
-  .WORD $0063 ;Action 3
-  .WORD $0063 ;Action 4
-  .WORD $0040 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_099
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_099
+  .WORD BATTLE_ACTIONS::ACTION_099
+  .WORD BATTLE_ACTIONS::ACTION_064 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -764,11 +764,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $03 ;Action order
-  .WORD $00D5 ;Action 1
-  .WORD $0016 ;Action 2
-  .WORD $001A ;Action 3
-  .WORD $0017 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_213
+  .WORD BATTLE_ACTIONS::ACTION_022
+  .WORD BATTLE_ACTIONS::ACTION_026
+  .WORD BATTLE_ACTIONS::ACTION_023
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $0D ;Action 2 argument
   .BYTE $11 ;Action 3 argument
@@ -813,11 +813,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $00EE ;Action 1
-  .WORD $006F ;Action 2
-  .WORD $006F ;Action 3
-  .WORD $00F2 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_111
+  .WORD BATTLE_ACTIONS::ACTION_111
+  .WORD BATTLE_ACTIONS::ACTION_242
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -862,11 +862,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $02 ;Action order
-  .WORD $0084 ;Action 1
-  .WORD $00CA ;Action 2
-  .WORD $00CA ;Action 3
-  .WORD $00E2 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_132
+  .WORD BATTLE_ACTIONS::ACTION_202
+  .WORD BATTLE_ACTIONS::ACTION_202
+  .WORD BATTLE_ACTIONS::ACTION_226
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -911,11 +911,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $001A ;Action 1
-  .WORD $001B ;Action 2
-  .WORD $0016 ;Action 3
-  .WORD $0017 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_026
+  .WORD BATTLE_ACTIONS::ACTION_027
+  .WORD BATTLE_ACTIONS::ACTION_022
+  .WORD BATTLE_ACTIONS::ACTION_023
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $11 ;Action 1 argument
   .BYTE $12 ;Action 2 argument
   .BYTE $0D ;Action 3 argument
@@ -960,11 +960,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $001A ;Action 1
-  .WORD $001B ;Action 2
-  .WORD $0017 ;Action 3
-  .WORD $0018 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_026
+  .WORD BATTLE_ACTIONS::ACTION_027
+  .WORD BATTLE_ACTIONS::ACTION_023
+  .WORD BATTLE_ACTIONS::ACTION_024
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $11 ;Action 1 argument
   .BYTE $12 ;Action 2 argument
   .BYTE $0E ;Action 3 argument
@@ -1009,11 +1009,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0055 ;Action 2
-  .WORD $004C ;Action 3
-  .WORD $0004 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_085
+  .WORD BATTLE_ACTIONS::ACTION_076
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -1058,11 +1058,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00F5 ;Action 1
-  .WORD $000A ;Action 2
-  .WORD $00C9 ;Action 3
-  .WORD $0029 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_010
+  .WORD BATTLE_ACTIONS::ACTION_201
+  .WORD BATTLE_ACTIONS::ACTION_041
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $AC ;Action 1 argument
   .BYTE $01 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -1107,11 +1107,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $06 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $00E5 ;Action 2
-  .WORD $0080 ;Action 3
-  .WORD $0081 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_229
+  .WORD BATTLE_ACTIONS::ACTION_128
+  .WORD BATTLE_ACTIONS::ACTION_129
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -1156,11 +1156,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $06 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00E5 ;Action 1
-  .WORD $00E6 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $0080 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_229
+  .WORD BATTLE_ACTIONS::ACTION_230
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_128
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -1205,11 +1205,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $00D2 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_210
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -1254,11 +1254,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0060 ;Action 2
-  .WORD $00AE ;Action 3
-  .WORD $00BA ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_096
+  .WORD BATTLE_ACTIONS::ACTION_174
+  .WORD BATTLE_ACTIONS::ACTION_186
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $9A ;Action 3 argument
@@ -1303,11 +1303,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $02 ;Action order
-  .WORD $005C ;Action 1
-  .WORD $0020 ;Action 2
-  .WORD $00D7 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_092
+  .WORD BATTLE_ACTIONS::ACTION_032
+  .WORD BATTLE_ACTIONS::ACTION_215
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $17 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -1352,11 +1352,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0068 ;Action 1
-  .WORD $00F5 ;Action 2
-  .WORD $0085 ;Action 3
-  .WORD $00EE ;Action 4
-  .WORD $0122 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_104
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_133
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_290 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $AE ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -1401,11 +1401,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $03 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0070 ;Action 1
-  .WORD $006F ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $0004 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_112
+  .WORD BATTLE_ACTIONS::ACTION_111
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -1450,11 +1450,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $03 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0070 ;Action 1
-  .WORD $006F ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $0004 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_112
+  .WORD BATTLE_ACTIONS::ACTION_111
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -1499,11 +1499,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $004E ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $0004 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_078
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -1548,11 +1548,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0016 ;Action 1
-  .WORD $0016 ;Action 2
-  .WORD $0017 ;Action 3
-  .WORD $0017 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_022
+  .WORD BATTLE_ACTIONS::ACTION_022
+  .WORD BATTLE_ACTIONS::ACTION_023
+  .WORD BATTLE_ACTIONS::ACTION_023
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $0D ;Action 1 argument
   .BYTE $0D ;Action 2 argument
   .BYTE $0E ;Action 3 argument
@@ -1597,11 +1597,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0073 ;Action 2
-  .WORD $00E7 ;Action 3
-  .WORD $0082 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_115
+  .WORD BATTLE_ACTIONS::ACTION_231
+  .WORD BATTLE_ACTIONS::ACTION_130
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -1646,11 +1646,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00E7 ;Action 1
-  .WORD $0066 ;Action 2
-  .WORD $0073 ;Action 3
-  .WORD $0053 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_231
+  .WORD BATTLE_ACTIONS::ACTION_102
+  .WORD BATTLE_ACTIONS::ACTION_115
+  .WORD BATTLE_ACTIONS::ACTION_083
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -1695,11 +1695,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $0004 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -1744,11 +1744,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $03 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $00E0 ;Action 1
-  .WORD $0071 ;Action 2
-  .WORD $006F ;Action 3
-  .WORD $00D3 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_224
+  .WORD BATTLE_ACTIONS::ACTION_113
+  .WORD BATTLE_ACTIONS::ACTION_111
+  .WORD BATTLE_ACTIONS::ACTION_211
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -1793,11 +1793,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $000E ;Action 1
-  .WORD $000F ;Action 2
-  .WORD $0071 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_014
+  .WORD BATTLE_ACTIONS::ACTION_015
+  .WORD BATTLE_ACTIONS::ACTION_113
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $05 ;Action 1 argument
   .BYTE $06 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -1842,11 +1842,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $00F5 ;Action 1
-  .WORD $00EE ;Action 2
-  .WORD $0032 ;Action 3
-  .WORD $0036 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_050
+  .WORD BATTLE_ACTIONS::ACTION_054
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $B0 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $29 ;Action 3 argument
@@ -1891,11 +1891,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0036 ;Action 1
-  .WORD $0048 ;Action 2
-  .WORD $00EE ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_054
+  .WORD BATTLE_ACTIONS::ACTION_072
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $2D ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -1940,11 +1940,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $02 ;Action order
-  .WORD $004B ;Action 1
-  .WORD $0020 ;Action 2
-  .WORD $00ED ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_075
+  .WORD BATTLE_ACTIONS::ACTION_032
+  .WORD BATTLE_ACTIONS::ACTION_237
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $17 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -1989,11 +1989,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0064 ;Action 1
-  .WORD $00F5 ;Action 2
-  .WORD $006F ;Action 3
-  .WORD $0004 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_100
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_111
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $B3 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -2038,11 +2038,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0020 ;Action 1
-  .WORD $006E ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_032
+  .WORD BATTLE_ACTIONS::ACTION_110
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $17 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -2087,11 +2087,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0070 ;Action 1
-  .WORD $00F5 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $0029 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_112
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_041
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $B5 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -2136,11 +2136,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0059 ;Action 1
-  .WORD $0059 ;Action 2
-  .WORD $0059 ;Action 3
-  .WORD $0059 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_089
+  .WORD BATTLE_ACTIONS::ACTION_089
+  .WORD BATTLE_ACTIONS::ACTION_089
+  .WORD BATTLE_ACTIONS::ACTION_089
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -2185,11 +2185,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $003E ;Action 1
-  .WORD $003E ;Action 2
-  .WORD $003E ;Action 3
-  .WORD $003E ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $73 ;Action 1 argument
   .BYTE $85 ;Action 2 argument
   .BYTE $97 ;Action 3 argument
@@ -2234,11 +2234,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0057 ;Action 1
-  .WORD $003E ;Action 2
-  .WORD $0050 ;Action 3
-  .WORD $0004 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_087
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_080
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $2D ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -2283,11 +2283,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $003E ;Action 2
-  .WORD $0050 ;Action 3
-  .WORD $0057 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_080
+  .WORD BATTLE_ACTIONS::ACTION_087
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $2E ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -2332,11 +2332,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0052 ;Action 3
-  .WORD $0048 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_082
+  .WORD BATTLE_ACTIONS::ACTION_072
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -2381,11 +2381,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0048 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $0052 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_072
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_082
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -2430,11 +2430,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $005E ;Action 1
-  .WORD $00F8 ;Action 2
-  .WORD $005C ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_094
+  .WORD BATTLE_ACTIONS::ACTION_248
+  .WORD BATTLE_ACTIONS::ACTION_092
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -2479,11 +2479,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0075 ;Action 1
-  .WORD $005C ;Action 2
-  .WORD $005E ;Action 3
-  .WORD $00F8 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_117
+  .WORD BATTLE_ACTIONS::ACTION_092
+  .WORD BATTLE_ACTIONS::ACTION_094
+  .WORD BATTLE_ACTIONS::ACTION_248
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -2528,11 +2528,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $03 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00DE ;Action 1
-  .WORD $00DE ;Action 2
-  .WORD $00F1 ;Action 3
-  .WORD $0028 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_241
+  .WORD BATTLE_ACTIONS::ACTION_040
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -2577,11 +2577,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $03 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $00DE ;Action 1
-  .WORD $00F1 ;Action 2
-  .WORD $00F7 ;Action 3
-  .WORD $0028 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_241
+  .WORD BATTLE_ACTIONS::ACTION_247
+  .WORD BATTLE_ACTIONS::ACTION_040
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $C3 ;Action 3 argument
@@ -2626,11 +2626,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $03 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $00DE ;Action 1
-  .WORD $00DE ;Action 2
-  .WORD $0055 ;Action 3
-  .WORD $0029 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_085
+  .WORD BATTLE_ACTIONS::ACTION_041
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -2675,11 +2675,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $006A ;Action 1
-  .WORD $006A ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $0004 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_106
+  .WORD BATTLE_ACTIONS::ACTION_106
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -2724,11 +2724,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $00EE ;Action 1
-  .WORD $00EE ;Action 2
-  .WORD $00EE ;Action 3
-  .WORD $00F2 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_242
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -2773,11 +2773,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0064 ;Action 1
-  .WORD $00EE ;Action 2
-  .WORD $00EE ;Action 3
-  .WORD $00F2 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_100
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_242
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -2822,11 +2822,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0056 ;Action 2
-  .WORD $00D2 ;Action 3
-  .WORD $0056 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_086
+  .WORD BATTLE_ACTIONS::ACTION_210
+  .WORD BATTLE_ACTIONS::ACTION_086
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -2871,11 +2871,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0056 ;Action 2
-  .WORD $00D2 ;Action 3
-  .WORD $006F ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_086
+  .WORD BATTLE_ACTIONS::ACTION_210
+  .WORD BATTLE_ACTIONS::ACTION_111
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -2920,11 +2920,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $00EB ;Action 2
-  .WORD $00E8 ;Action 3
-  .WORD $00D1 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_235
+  .WORD BATTLE_ACTIONS::ACTION_232
+  .WORD BATTLE_ACTIONS::ACTION_209
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -2969,11 +2969,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $00EB ;Action 2
-  .WORD $0066 ;Action 3
-  .WORD $00D1 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_235
+  .WORD BATTLE_ACTIONS::ACTION_102
+  .WORD BATTLE_ACTIONS::ACTION_209
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -3018,11 +3018,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0038 ;Action 3
-  .WORD $0034 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_056
+  .WORD BATTLE_ACTIONS::ACTION_052
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $2F ;Action 3 argument
@@ -3067,11 +3067,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $00DE ;Action 1
-  .WORD $00DE ;Action 2
-  .WORD $002C ;Action 3
-  .WORD $001A ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_044
+  .WORD BATTLE_ACTIONS::ACTION_026
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $23 ;Action 3 argument
@@ -3116,11 +3116,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00DE ;Action 1
-  .WORD $00DE ;Action 2
-  .WORD $002D ;Action 3
-  .WORD $001B ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_045
+  .WORD BATTLE_ACTIONS::ACTION_027
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $25 ;Action 3 argument
@@ -3165,11 +3165,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $00E3 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $003E ;Action 3
-  .WORD $003E ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_227
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $81 ;Action 3 argument
@@ -3214,11 +3214,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0048 ;Action 2
-  .WORD $0079 ;Action 3
-  .WORD $0016 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_072
+  .WORD BATTLE_ACTIONS::ACTION_121
+  .WORD BATTLE_ACTIONS::ACTION_022
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -3263,11 +3263,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0048 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0016 ;Action 3
-  .WORD $0017 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_072
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_022
+  .WORD BATTLE_ACTIONS::ACTION_023
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $0D ;Action 3 argument
@@ -3312,11 +3312,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00DE ;Action 1
-  .WORD $0067 ;Action 2
-  .WORD $0036 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_103
+  .WORD BATTLE_ACTIONS::ACTION_054
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $2D ;Action 3 argument
@@ -3361,11 +3361,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00DE ;Action 1
-  .WORD $003E ;Action 2
-  .WORD $0067 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_103
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $43 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -3410,11 +3410,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $02 ;Action order
-  .WORD $001E ;Action 1
-  .WORD $0077 ;Action 2
-  .WORD $007A ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_030
+  .WORD BATTLE_ACTIONS::ACTION_119
+  .WORD BATTLE_ACTIONS::ACTION_122
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $15 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -3459,11 +3459,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $000E ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $00CF ;Action 4
-  .WORD $0040 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_014
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_207
+  .WORD BATTLE_ACTIONS::ACTION_064 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $05 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -3508,11 +3508,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $000E ;Action 2
-  .WORD $000F ;Action 3
-  .WORD $00CF ;Action 4
-  .WORD $0040 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_014
+  .WORD BATTLE_ACTIONS::ACTION_015
+  .WORD BATTLE_ACTIONS::ACTION_207
+  .WORD BATTLE_ACTIONS::ACTION_064 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $05 ;Action 2 argument
   .BYTE $06 ;Action 3 argument
@@ -3557,11 +3557,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $00D8 ;Action 1
-  .WORD $00D8 ;Action 2
-  .WORD $00E2 ;Action 3
-  .WORD $00EA ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_216
+  .WORD BATTLE_ACTIONS::ACTION_216
+  .WORD BATTLE_ACTIONS::ACTION_226
+  .WORD BATTLE_ACTIONS::ACTION_234
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -3606,11 +3606,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00D8 ;Action 1
-  .WORD $005F ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_216
+  .WORD BATTLE_ACTIONS::ACTION_095
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -3655,11 +3655,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00F5 ;Action 1
-  .WORD $00DE ;Action 2
-  .WORD $001E ;Action 3
-  .WORD $003E ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_030
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $BB ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $15 ;Action 3 argument
@@ -3704,11 +3704,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $03 ;Action order
-  .WORD $0029 ;Action 1
-  .WORD $003B ;Action 2
-  .WORD $001E ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_041
+  .WORD BATTLE_ACTIONS::ACTION_059
+  .WORD BATTLE_ACTIONS::ACTION_030
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $21 ;Action 1 argument
   .BYTE $32 ;Action 2 argument
   .BYTE $15 ;Action 3 argument
@@ -3753,11 +3753,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0078 ;Action 2
-  .WORD $004A ;Action 3
-  .WORD $0054 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_120
+  .WORD BATTLE_ACTIONS::ACTION_074
+  .WORD BATTLE_ACTIONS::ACTION_084
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -3802,11 +3802,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $03 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $00CC ;Action 2
-  .WORD $003E ;Action 3
-  .WORD $004C ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_204
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_076
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $4D ;Action 3 argument
@@ -3851,11 +3851,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $00EE ;Action 1
-  .WORD $0085 ;Action 2
-  .WORD $00EE ;Action 3
-  .WORD $0064 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_133
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_100
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -3900,11 +3900,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $006B ;Action 1
-  .WORD $00D8 ;Action 2
-  .WORD $0067 ;Action 3
-  .WORD $0060 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_107
+  .WORD BATTLE_ACTIONS::ACTION_216
+  .WORD BATTLE_ACTIONS::ACTION_103
+  .WORD BATTLE_ACTIONS::ACTION_096
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -3949,11 +3949,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $006B ;Action 1
-  .WORD $00D8 ;Action 2
-  .WORD $0067 ;Action 3
-  .WORD $0060 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_107
+  .WORD BATTLE_ACTIONS::ACTION_216
+  .WORD BATTLE_ACTIONS::ACTION_103
+  .WORD BATTLE_ACTIONS::ACTION_096
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -3998,11 +3998,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $003A ;Action 3
-  .WORD $0062 ;Action 4
-  .WORD $0041 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_058
+  .WORD BATTLE_ACTIONS::ACTION_098
+  .WORD BATTLE_ACTIONS::ACTION_065 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $31 ;Action 3 argument
@@ -4047,11 +4047,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $003A ;Action 3
-  .WORD $0036 ;Action 4
-  .WORD $0041 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_058
+  .WORD BATTLE_ACTIONS::ACTION_054
+  .WORD BATTLE_ACTIONS::ACTION_065 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $31 ;Action 3 argument
@@ -4096,11 +4096,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00EE ;Action 1
-  .WORD $00F5 ;Action 2
-  .WORD $0029 ;Action 3
-  .WORD $00C9 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_041
+  .WORD BATTLE_ACTIONS::ACTION_201
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $BE ;Action 2 argument
   .BYTE $21 ;Action 3 argument
@@ -4145,11 +4145,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $00DE ;Action 1
-  .WORD $00DE ;Action 2
-  .WORD $0042 ;Action 3
-  .WORD $00F2 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_066
+  .WORD BATTLE_ACTIONS::ACTION_242
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -4194,11 +4194,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00DE ;Action 1
-  .WORD $00DE ;Action 2
-  .WORD $0042 ;Action 3
-  .WORD $00F2 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_066
+  .WORD BATTLE_ACTIONS::ACTION_242
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -4243,11 +4243,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00DE ;Action 1
-  .WORD $00DE ;Action 2
-  .WORD $0042 ;Action 3
-  .WORD $0045 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_066
+  .WORD BATTLE_ACTIONS::ACTION_069
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -4292,11 +4292,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00DE ;Action 1
-  .WORD $0045 ;Action 2
-  .WORD $0042 ;Action 3
-  .WORD $0045 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_069
+  .WORD BATTLE_ACTIONS::ACTION_066
+  .WORD BATTLE_ACTIONS::ACTION_069
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -4341,11 +4341,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $05 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0055 ;Action 1
-  .WORD $007D ;Action 2
-  .WORD $005F ;Action 3
-  .WORD $00DA ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_085
+  .WORD BATTLE_ACTIONS::ACTION_125
+  .WORD BATTLE_ACTIONS::ACTION_095
+  .WORD BATTLE_ACTIONS::ACTION_218
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -4390,11 +4390,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0043 ;Action 1
-  .WORD $0043 ;Action 2
-  .WORD $0043 ;Action 3
-  .WORD $0086 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_067
+  .WORD BATTLE_ACTIONS::ACTION_067
+  .WORD BATTLE_ACTIONS::ACTION_067
+  .WORD BATTLE_ACTIONS::ACTION_134
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -4439,11 +4439,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $00F5 ;Action 2
-  .WORD $001A ;Action 3
-  .WORD $0038 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_026
+  .WORD BATTLE_ACTIONS::ACTION_056
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $BF ;Action 2 argument
   .BYTE $11 ;Action 3 argument
@@ -4488,11 +4488,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $00CA ;Action 1
-  .WORD $005A ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $00CA ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_202
+  .WORD BATTLE_ACTIONS::ACTION_090
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_202
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -4537,11 +4537,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00EE ;Action 1
-  .WORD $0085 ;Action 2
-  .WORD $00EE ;Action 3
-  .WORD $0064 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_133
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_100
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -4586,11 +4586,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $02 ;Action order
-  .WORD $0047 ;Action 1
-  .WORD $0047 ;Action 2
-  .WORD $003E ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_071
+  .WORD BATTLE_ACTIONS::ACTION_071
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $2D ;Action 3 argument
@@ -4635,11 +4635,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0057 ;Action 2
-  .WORD $0050 ;Action 3
-  .WORD $0047 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_087
+  .WORD BATTLE_ACTIONS::ACTION_080
+  .WORD BATTLE_ACTIONS::ACTION_071
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -4684,11 +4684,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0047 ;Action 1
-  .WORD $0066 ;Action 2
-  .WORD $0057 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $00F4 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_071
+  .WORD BATTLE_ACTIONS::ACTION_102
+  .WORD BATTLE_ACTIONS::ACTION_087
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_244 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -4733,11 +4733,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0049 ;Action 3
-  .WORD $0004 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_073
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -4782,11 +4782,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0049 ;Action 1
-  .WORD $0049 ;Action 2
-  .WORD $0049 ;Action 3
-  .WORD $0049 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_073
+  .WORD BATTLE_ACTIONS::ACTION_073
+  .WORD BATTLE_ACTIONS::ACTION_073
+  .WORD BATTLE_ACTIONS::ACTION_073
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -4831,11 +4831,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $007E ;Action 2
-  .WORD $003A ;Action 3
-  .WORD $0036 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_126
+  .WORD BATTLE_ACTIONS::ACTION_058
+  .WORD BATTLE_ACTIONS::ACTION_054
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $31 ;Action 3 argument
@@ -4880,11 +4880,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $04 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $00A1 ;Action 2
-  .WORD $003A ;Action 3
-  .WORD $0036 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_161
+  .WORD BATTLE_ACTIONS::ACTION_058
+  .WORD BATTLE_ACTIONS::ACTION_054
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $87 ;Action 2 argument
   .BYTE $31 ;Action 3 argument
@@ -4929,11 +4929,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00CA ;Action 1
-  .WORD $00CA ;Action 2
-  .WORD $00CA ;Action 3
-  .WORD $00CA ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_202
+  .WORD BATTLE_ACTIONS::ACTION_202
+  .WORD BATTLE_ACTIONS::ACTION_202
+  .WORD BATTLE_ACTIONS::ACTION_202
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -4978,11 +4978,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $00D0 ;Action 2
-  .WORD $00CD ;Action 3
-  .WORD $00D0 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_208
+  .WORD BATTLE_ACTIONS::ACTION_205
+  .WORD BATTLE_ACTIONS::ACTION_208
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -5027,11 +5027,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $00B7 ;Action 2
-  .WORD $0051 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_183
+  .WORD BATTLE_ACTIONS::ACTION_081
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $A1 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -5076,11 +5076,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0064 ;Action 1
-  .WORD $00E4 ;Action 2
-  .WORD $00A0 ;Action 3
-  .WORD $0034 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_100
+  .WORD BATTLE_ACTIONS::ACTION_228
+  .WORD BATTLE_ACTIONS::ACTION_160
+  .WORD BATTLE_ACTIONS::ACTION_052
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $84 ;Action 3 argument
@@ -5125,11 +5125,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $04 ;Miss rate
   .BYTE $03 ;Action order
-  .WORD $0082 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $00EA ;Action 3
-  .WORD $0004 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_130
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_234
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -5174,11 +5174,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $04 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0082 ;Action 2
-  .WORD $00EA ;Action 3
-  .WORD $00E2 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_130
+  .WORD BATTLE_ACTIONS::ACTION_234
+  .WORD BATTLE_ACTIONS::ACTION_226
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -5223,11 +5223,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0012 ;Action 1
-  .WORD $0013 ;Action 2
-  .WORD $0034 ;Action 3
-  .WORD $0044 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_018
+  .WORD BATTLE_ACTIONS::ACTION_019
+  .WORD BATTLE_ACTIONS::ACTION_052
+  .WORD BATTLE_ACTIONS::ACTION_068
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $09 ;Action 1 argument
   .BYTE $0A ;Action 2 argument
   .BYTE $2B ;Action 3 argument
@@ -5272,11 +5272,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0013 ;Action 1
-  .WORD $000E ;Action 2
-  .WORD $0020 ;Action 3
-  .WORD $0044 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_019
+  .WORD BATTLE_ACTIONS::ACTION_014
+  .WORD BATTLE_ACTIONS::ACTION_032
+  .WORD BATTLE_ACTIONS::ACTION_068
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $0A ;Action 1 argument
   .BYTE $05 ;Action 2 argument
   .BYTE $17 ;Action 3 argument
@@ -5321,11 +5321,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0082 ;Action 2
-  .WORD $0020 ;Action 3
-  .WORD $00E8 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_130
+  .WORD BATTLE_ACTIONS::ACTION_032
+  .WORD BATTLE_ACTIONS::ACTION_232
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $17 ;Action 3 argument
@@ -5370,11 +5370,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0082 ;Action 2
-  .WORD $004C ;Action 3
-  .WORD $00E8 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_130
+  .WORD BATTLE_ACTIONS::ACTION_076
+  .WORD BATTLE_ACTIONS::ACTION_232
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -5419,11 +5419,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00EB ;Action 1
-  .WORD $0042 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_235
+  .WORD BATTLE_ACTIONS::ACTION_066
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -5468,11 +5468,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0079 ;Action 3
-  .WORD $0034 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_121
+  .WORD BATTLE_ACTIONS::ACTION_052
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -5517,11 +5517,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0062 ;Action 3
-  .WORD $0034 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_098
+  .WORD BATTLE_ACTIONS::ACTION_052
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -5566,11 +5566,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $03 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $00EE ;Action 1
-  .WORD $00EE ;Action 2
-  .WORD $00EE ;Action 3
-  .WORD $00EE ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -5615,11 +5615,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $03 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0064 ;Action 1
-  .WORD $00EE ;Action 2
-  .WORD $00EE ;Action 3
-  .WORD $00EE ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_100
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -5664,11 +5664,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00A7 ;Action 1
-  .WORD $00A7 ;Action 2
-  .WORD $00A7 ;Action 3
-  .WORD $00A8 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_167
+  .WORD BATTLE_ACTIONS::ACTION_167
+  .WORD BATTLE_ACTIONS::ACTION_167
+  .WORD BATTLE_ACTIONS::ACTION_168
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $93 ;Action 1 argument
   .BYTE $93 ;Action 2 argument
   .BYTE $93 ;Action 3 argument
@@ -5713,11 +5713,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $00CA ;Action 1
-  .WORD $00F5 ;Action 2
-  .WORD $00CA ;Action 3
-  .WORD $00B0 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_202
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_202
+  .WORD BATTLE_ACTIONS::ACTION_176
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $C8 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -5762,11 +5762,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0081 ;Action 2
-  .WORD $0034 ;Action 3
-  .WORD $003A ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_129
+  .WORD BATTLE_ACTIONS::ACTION_052
+  .WORD BATTLE_ACTIONS::ACTION_058
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $2B ;Action 3 argument
@@ -5811,11 +5811,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0081 ;Action 2
-  .WORD $0032 ;Action 3
-  .WORD $0020 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_129
+  .WORD BATTLE_ACTIONS::ACTION_050
+  .WORD BATTLE_ACTIONS::ACTION_032
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $29 ;Action 3 argument
@@ -5860,11 +5860,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $00DF ;Action 1
-  .WORD $00DF ;Action 2
-  .WORD $00DF ;Action 3
-  .WORD $00DF ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_223
+  .WORD BATTLE_ACTIONS::ACTION_223
+  .WORD BATTLE_ACTIONS::ACTION_223
+  .WORD BATTLE_ACTIONS::ACTION_223
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -5909,11 +5909,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0034 ;Action 1
-  .WORD $0038 ;Action 2
-  .WORD $0013 ;Action 3
-  .WORD $0027 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_052
+  .WORD BATTLE_ACTIONS::ACTION_056
+  .WORD BATTLE_ACTIONS::ACTION_019
+  .WORD BATTLE_ACTIONS::ACTION_039
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $2B ;Action 1 argument
   .BYTE $2F ;Action 2 argument
   .BYTE $0A ;Action 3 argument
@@ -5958,11 +5958,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0085 ;Action 1
-  .WORD $00EE ;Action 2
-  .WORD $0085 ;Action 3
-  .WORD $00EE ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_133
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_133
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -6007,11 +6007,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00DD ;Action 1
-  .WORD $00DD ;Action 2
-  .WORD $00DD ;Action 3
-  .WORD $0082 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_221
+  .WORD BATTLE_ACTIONS::ACTION_221
+  .WORD BATTLE_ACTIONS::ACTION_221
+  .WORD BATTLE_ACTIONS::ACTION_130
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -6056,11 +6056,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $00E9 ;Action 1
-  .WORD $0074 ;Action 2
-  .WORD $00E9 ;Action 3
-  .WORD $0074 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_233
+  .WORD BATTLE_ACTIONS::ACTION_116
+  .WORD BATTLE_ACTIONS::ACTION_233
+  .WORD BATTLE_ACTIONS::ACTION_116
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -6105,11 +6105,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $0034 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_052
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -6154,11 +6154,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0072 ;Action 2
-  .WORD $00D4 ;Action 3
-  .WORD $00CC ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_114
+  .WORD BATTLE_ACTIONS::ACTION_212
+  .WORD BATTLE_ACTIONS::ACTION_204
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -6203,11 +6203,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0066 ;Action 2
-  .WORD $00D4 ;Action 3
-  .WORD $00CC ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_102
+  .WORD BATTLE_ACTIONS::ACTION_212
+  .WORD BATTLE_ACTIONS::ACTION_204
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -6252,11 +6252,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $006E ;Action 1
-  .WORD $0072 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $0004 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_110
+  .WORD BATTLE_ACTIONS::ACTION_114
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -6301,11 +6301,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $02 ;Action order
-  .WORD $005C ;Action 1
-  .WORD $0083 ;Action 2
-  .WORD $0069 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_092
+  .WORD BATTLE_ACTIONS::ACTION_131
+  .WORD BATTLE_ACTIONS::ACTION_105
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -6350,11 +6350,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $03 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00E1 ;Action 1
-  .WORD $00E1 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $0078 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_225
+  .WORD BATTLE_ACTIONS::ACTION_225
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_120
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -6399,11 +6399,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $02 ;Action order
-  .WORD $007F ;Action 1
-  .WORD $00DC ;Action 2
-  .WORD $007F ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_127
+  .WORD BATTLE_ACTIONS::ACTION_220
+  .WORD BATTLE_ACTIONS::ACTION_127
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -6448,11 +6448,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $006D ;Action 1
-  .WORD $00D8 ;Action 2
-  .WORD $0061 ;Action 3
-  .WORD $006D ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_109
+  .WORD BATTLE_ACTIONS::ACTION_216
+  .WORD BATTLE_ACTIONS::ACTION_097
+  .WORD BATTLE_ACTIONS::ACTION_109
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -6497,11 +6497,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00DE ;Action 1
-  .WORD $00DE ;Action 2
-  .WORD $00DE ;Action 3
-  .WORD $0020 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_032
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -6546,11 +6546,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00DE ;Action 1
-  .WORD $00DE ;Action 2
-  .WORD $00DE ;Action 3
-  .WORD $0020 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_032
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -6595,11 +6595,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $04 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00E2 ;Action 1
-  .WORD $00E2 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $007D ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_226
+  .WORD BATTLE_ACTIONS::ACTION_226
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_125
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -6644,11 +6644,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00D8 ;Action 1
-  .WORD $00D8 ;Action 2
-  .WORD $00D8 ;Action 3
-  .WORD $0060 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_216
+  .WORD BATTLE_ACTIONS::ACTION_216
+  .WORD BATTLE_ACTIONS::ACTION_216
+  .WORD BATTLE_ACTIONS::ACTION_096
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -6693,11 +6693,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $006C ;Action 1
-  .WORD $006C ;Action 2
-  .WORD $00CE ;Action 3
-  .WORD $00CE ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_108
+  .WORD BATTLE_ACTIONS::ACTION_108
+  .WORD BATTLE_ACTIONS::ACTION_206
+  .WORD BATTLE_ACTIONS::ACTION_206
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -6742,11 +6742,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $03 ;Action order
-  .WORD $0036 ;Action 1
-  .WORD $0038 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_054
+  .WORD BATTLE_ACTIONS::ACTION_056
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $2D ;Action 1 argument
   .BYTE $2F ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -6791,11 +6791,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0016 ;Action 1
-  .WORD $001A ;Action 2
-  .WORD $000E ;Action 3
-  .WORD $0012 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_022
+  .WORD BATTLE_ACTIONS::ACTION_026
+  .WORD BATTLE_ACTIONS::ACTION_014
+  .WORD BATTLE_ACTIONS::ACTION_018
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $0D ;Action 1 argument
   .BYTE $11 ;Action 2 argument
   .BYTE $05 ;Action 3 argument
@@ -6840,11 +6840,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0056 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $003E ;Action 3
-  .WORD $0004 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_086
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $8B ;Action 3 argument
@@ -6889,11 +6889,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00DE ;Action 1
-  .WORD $0086 ;Action 2
-  .WORD $003E ;Action 3
-  .WORD $00A3 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_134
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_163
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $8C ;Action 3 argument
@@ -6938,11 +6938,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $000F ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_015
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $06 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -6987,11 +6987,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $000E ;Action 1
-  .WORD $000F ;Action 2
-  .WORD $000E ;Action 3
-  .WORD $000F ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_014
+  .WORD BATTLE_ACTIONS::ACTION_015
+  .WORD BATTLE_ACTIONS::ACTION_014
+  .WORD BATTLE_ACTIONS::ACTION_015
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $05 ;Action 1 argument
   .BYTE $06 ;Action 2 argument
   .BYTE $05 ;Action 3 argument
@@ -7036,11 +7036,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $03 ;Action order
-  .WORD $000F ;Action 1
-  .WORD $002F ;Action 2
-  .WORD $0038 ;Action 3
-  .WORD $0010 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_015
+  .WORD BATTLE_ACTIONS::ACTION_047
+  .WORD BATTLE_ACTIONS::ACTION_056
+  .WORD BATTLE_ACTIONS::ACTION_016
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $06 ;Action 1 argument
   .BYTE $26 ;Action 2 argument
   .BYTE $2F ;Action 3 argument
@@ -7085,11 +7085,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $03 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $00D9 ;Action 1
-  .WORD $0056 ;Action 2
-  .WORD $007E ;Action 3
-  .WORD $0070 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_217
+  .WORD BATTLE_ACTIONS::ACTION_086
+  .WORD BATTLE_ACTIONS::ACTION_126
+  .WORD BATTLE_ACTIONS::ACTION_112
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -7134,11 +7134,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00DB ;Action 1
-  .WORD $00DB ;Action 2
-  .WORD $00DB ;Action 3
-  .WORD $006E ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_219
+  .WORD BATTLE_ACTIONS::ACTION_219
+  .WORD BATTLE_ACTIONS::ACTION_219
+  .WORD BATTLE_ACTIONS::ACTION_110
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -7183,11 +7183,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $05 ;Miss rate
   .BYTE $03 ;Action order
-  .WORD $013A ;Action 1
-  .WORD $013B ;Action 2
-  .WORD $0065 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $00F3 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_314
+  .WORD BATTLE_ACTIONS::ACTION_315
+  .WORD BATTLE_ACTIONS::ACTION_101
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_243 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -7232,11 +7232,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0079 ;Action 1
-  .WORD $005E ;Action 2
-  .WORD $0068 ;Action 3
-  .WORD $005D ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_121
+  .WORD BATTLE_ACTIONS::ACTION_094
+  .WORD BATTLE_ACTIONS::ACTION_104
+  .WORD BATTLE_ACTIONS::ACTION_093
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -7281,11 +7281,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0079 ;Action 1
-  .WORD $005B ;Action 2
-  .WORD $0079 ;Action 3
-  .WORD $00CB ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_121
+  .WORD BATTLE_ACTIONS::ACTION_091
+  .WORD BATTLE_ACTIONS::ACTION_121
+  .WORD BATTLE_ACTIONS::ACTION_203
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -7330,11 +7330,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $03 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0028 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $004D ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_040
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_077
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $1F ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -7379,11 +7379,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $00DE ;Action 1
-  .WORD $00DE ;Action 2
-  .WORD $00F1 ;Action 3
-  .WORD $00DE ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_241
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -7428,11 +7428,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $00DE ;Action 1
-  .WORD $00DE ;Action 2
-  .WORD $0055 ;Action 3
-  .WORD $002C ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_085
+  .WORD BATTLE_ACTIONS::ACTION_044
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -7477,11 +7477,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $004F ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_079
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -7526,11 +7526,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $02 ;Action order
-  .WORD $007A ;Action 1
-  .WORD $007B ;Action 2
-  .WORD $007C ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_122
+  .WORD BATTLE_ACTIONS::ACTION_123
+  .WORD BATTLE_ACTIONS::ACTION_124
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -7575,11 +7575,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0079 ;Action 2
-  .WORD $006F ;Action 3
-  .WORD $0071 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_121
+  .WORD BATTLE_ACTIONS::ACTION_111
+  .WORD BATTLE_ACTIONS::ACTION_113
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -7624,11 +7624,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0079 ;Action 2
-  .WORD $006F ;Action 3
-  .WORD $0071 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_121
+  .WORD BATTLE_ACTIONS::ACTION_111
+  .WORD BATTLE_ACTIONS::ACTION_113
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -7673,11 +7673,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $006F ;Action 3
-  .WORD $0071 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_111
+  .WORD BATTLE_ACTIONS::ACTION_113
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -7722,11 +7722,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0061 ;Action 3
-  .WORD $0004 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_097
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -7771,11 +7771,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0061 ;Action 3
-  .WORD $0004 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_097
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -7820,11 +7820,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00DA ;Action 1
-  .WORD $00DA ;Action 2
-  .WORD $0082 ;Action 3
-  .WORD $0042 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_218
+  .WORD BATTLE_ACTIONS::ACTION_218
+  .WORD BATTLE_ACTIONS::ACTION_130
+  .WORD BATTLE_ACTIONS::ACTION_066
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -7869,11 +7869,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00EE ;Action 1
-  .WORD $0072 ;Action 2
-  .WORD $00E2 ;Action 3
-  .WORD $0108 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_114
+  .WORD BATTLE_ACTIONS::ACTION_226
+  .WORD BATTLE_ACTIONS::ACTION_264
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -7918,11 +7918,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0104 ;Action 1
-  .WORD $0104 ;Action 2
-  .WORD $0104 ;Action 3
-  .WORD $0104 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_260
+  .WORD BATTLE_ACTIONS::ACTION_260
+  .WORD BATTLE_ACTIONS::ACTION_260
+  .WORD BATTLE_ACTIONS::ACTION_260
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -7967,11 +7967,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $0109 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_265
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -8016,11 +8016,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $010A ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_266
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -8065,11 +8065,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $010B ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_267
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -8114,11 +8114,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $00D4 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_212
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -8163,11 +8163,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00DC ;Action 1
-  .WORD $00DC ;Action 2
-  .WORD $00E2 ;Action 3
-  .WORD $00E2 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_220
+  .WORD BATTLE_ACTIONS::ACTION_220
+  .WORD BATTLE_ACTIONS::ACTION_226
+  .WORD BATTLE_ACTIONS::ACTION_226
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -8212,11 +8212,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0000 ;Action 1
-  .WORD $0000 ;Action 2
-  .WORD $0000 ;Action 3
-  .WORD $0000 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -8261,11 +8261,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0000 ;Action 1
-  .WORD $0000 ;Action 2
-  .WORD $0000 ;Action 3
-  .WORD $0000 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -8310,11 +8310,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0101 ;Action 1
-  .WORD $0101 ;Action 2
-  .WORD $0101 ;Action 3
-  .WORD $0101 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_257
+  .WORD BATTLE_ACTIONS::ACTION_257
+  .WORD BATTLE_ACTIONS::ACTION_257
+  .WORD BATTLE_ACTIONS::ACTION_257
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -8359,11 +8359,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0000 ;Action 1
-  .WORD $0000 ;Action 2
-  .WORD $0000 ;Action 3
-  .WORD $0000 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -8408,11 +8408,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $03 ;Action order
-  .WORD $0037 ;Action 1
-  .WORD $003A ;Action 2
-  .WORD $0012 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_055
+  .WORD BATTLE_ACTIONS::ACTION_058
+  .WORD BATTLE_ACTIONS::ACTION_018
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $2E ;Action 1 argument
   .BYTE $31 ;Action 2 argument
   .BYTE $09 ;Action 3 argument
@@ -8457,11 +8457,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $02 ;Action order
-  .WORD $000A ;Action 1
-  .WORD $0021 ;Action 2
-  .WORD $000D ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_010
+  .WORD BATTLE_ACTIONS::ACTION_033
+  .WORD BATTLE_ACTIONS::ACTION_013
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $01 ;Action 1 argument
   .BYTE $18 ;Action 2 argument
   .BYTE $04 ;Action 3 argument
@@ -8506,11 +8506,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $02 ;Action order
-  .WORD $005C ;Action 1
-  .WORD $002C ;Action 2
-  .WORD $00D7 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_092
+  .WORD BATTLE_ACTIONS::ACTION_044
+  .WORD BATTLE_ACTIONS::ACTION_215
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $23 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -8555,11 +8555,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $005D ;Action 1
-  .WORD $00F5 ;Action 2
-  .WORD $00E2 ;Action 3
-  .WORD $0085 ;Action 4
-  .WORD $0122 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_093
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_226
+  .WORD BATTLE_ACTIONS::ACTION_133
+  .WORD BATTLE_ACTIONS::ACTION_290 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $1B ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -8604,11 +8604,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $00E0 ;Action 1
-  .WORD $00F5 ;Action 2
-  .WORD $000F ;Action 3
-  .WORD $0010 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_224
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_015
+  .WORD BATTLE_ACTIONS::ACTION_016
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $24 ;Action 2 argument
   .BYTE $06 ;Action 3 argument
@@ -8653,11 +8653,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $00F5 ;Action 1
-  .WORD $00EE ;Action 2
-  .WORD $006F ;Action 3
-  .WORD $0028 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_111
+  .WORD BATTLE_ACTIONS::ACTION_040
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $25 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -8702,11 +8702,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0038 ;Action 1
-  .WORD $0077 ;Action 2
-  .WORD $003E ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_056
+  .WORD BATTLE_ACTIONS::ACTION_119
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $2F ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $26 ;Action 3 argument
@@ -8751,11 +8751,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $004B ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0055 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_075
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_085
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -8800,11 +8800,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $00F5 ;Action 2
-  .WORD $0082 ;Action 3
-  .WORD $0004 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_130
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $28 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -8849,11 +8849,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $002C ;Action 1
-  .WORD $0030 ;Action 2
-  .WORD $0070 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_044
+  .WORD BATTLE_ACTIONS::ACTION_048
+  .WORD BATTLE_ACTIONS::ACTION_112
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $23 ;Action 1 argument
   .BYTE $27 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -8898,11 +8898,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $006E ;Action 1
-  .WORD $00F5 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $0020 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_110
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_032
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $2A ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -8947,11 +8947,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $03 ;Action order
-  .WORD $001B ;Action 1
-  .WORD $005E ;Action 2
-  .WORD $0075 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_027
+  .WORD BATTLE_ACTIONS::ACTION_094
+  .WORD BATTLE_ACTIONS::ACTION_117
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $12 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -8996,11 +8996,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0000 ;Action 1
-  .WORD $0000 ;Action 2
-  .WORD $0000 ;Action 3
-  .WORD $0000 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -9045,11 +9045,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0028 ;Action 1
-  .WORD $00DE ;Action 2
-  .WORD $00B6 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_040
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_182
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $1F ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $9F ;Action 3 argument
@@ -9094,11 +9094,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $002D ;Action 1
-  .WORD $0027 ;Action 2
-  .WORD $00DE ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_045
+  .WORD BATTLE_ACTIONS::ACTION_039
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $25 ;Action 1 argument
   .BYTE $1E ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -9143,11 +9143,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $02 ;Action order
-  .WORD $007B ;Action 1
-  .WORD $007C ;Action 2
-  .WORD $001F ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_123
+  .WORD BATTLE_ACTIONS::ACTION_124
+  .WORD BATTLE_ACTIONS::ACTION_031
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $16 ;Action 3 argument
@@ -9192,11 +9192,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00F5 ;Action 1
-  .WORD $00DE ;Action 2
-  .WORD $002D ;Action 3
-  .WORD $003E ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_222
+  .WORD BATTLE_ACTIONS::ACTION_045
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $4A ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $25 ;Action 3 argument
@@ -9241,11 +9241,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $03 ;Action order
-  .WORD $001F ;Action 1
-  .WORD $0077 ;Action 2
-  .WORD $0027 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_031
+  .WORD BATTLE_ACTIONS::ACTION_119
+  .WORD BATTLE_ACTIONS::ACTION_039
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $16 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $1E ;Action 3 argument
@@ -9290,11 +9290,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0000 ;Action 1
-  .WORD $0000 ;Action 2
-  .WORD $0000 ;Action 3
-  .WORD $0000 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -9339,11 +9339,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $006F ;Action 1
-  .WORD $00F5 ;Action 2
-  .WORD $0085 ;Action 3
-  .WORD $00E4 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_111
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_133
+  .WORD BATTLE_ACTIONS::ACTION_228
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $53 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -9388,11 +9388,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $002C ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0044 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_044
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_068
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $23 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -9437,11 +9437,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0047 ;Action 1
-  .WORD $0066 ;Action 2
-  .WORD $003E ;Action 3
-  .WORD $0079 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_071
+  .WORD BATTLE_ACTIONS::ACTION_102
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_121
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $2D ;Action 3 argument
@@ -9486,11 +9486,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0000 ;Action 1
-  .WORD $0000 ;Action 2
-  .WORD $0000 ;Action 3
-  .WORD $0000 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -9535,11 +9535,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $003E ;Action 1
-  .WORD $0066 ;Action 2
-  .WORD $0047 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $00F4 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_102
+  .WORD BATTLE_ACTIONS::ACTION_071
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_244 ;Final action
   .BYTE $2E ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -9584,11 +9584,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $003E ;Action 1
-  .WORD $003E ;Action 2
-  .WORD $003E ;Action 3
-  .WORD $003E ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_062
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $11 ;Action 1 argument
   .BYTE $63 ;Action 2 argument
   .BYTE $47 ;Action 3 argument
@@ -9633,11 +9633,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0000 ;Action 1
-  .WORD $0000 ;Action 2
-  .WORD $0000 ;Action 3
-  .WORD $0000 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -9682,11 +9682,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $03 ;Action order
-  .WORD $00F8 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $001A ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_248
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_026
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $11 ;Action 3 argument
@@ -9731,11 +9731,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0000 ;Action 1
-  .WORD $0000 ;Action 2
-  .WORD $0000 ;Action 3
-  .WORD $0000 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -9780,11 +9780,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0082 ;Action 2
-  .WORD $00EE ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_130
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -9829,11 +9829,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $03 ;Action order
-  .WORD $00F7 ;Action 1
-  .WORD $00A0 ;Action 2
-  .WORD $00CA ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_247
+  .WORD BATTLE_ACTIONS::ACTION_160
+  .WORD BATTLE_ACTIONS::ACTION_202
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $C3 ;Action 1 argument
   .BYTE $84 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -9878,11 +9878,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $03 ;Action order
-  .WORD $0058 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $005C ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_088
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_092
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -9927,11 +9927,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $03 ;Action order
-  .WORD $006E ;Action 1
-  .WORD $00DC ;Action 2
-  .WORD $007F ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_110
+  .WORD BATTLE_ACTIONS::ACTION_220
+  .WORD BATTLE_ACTIONS::ACTION_127
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -9976,11 +9976,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $03 ;Action order
-  .WORD $00F8 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $00C9 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_248
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_201
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -10025,11 +10025,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $02 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -10074,11 +10074,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $05 ;Miss rate
   .BYTE $02 ;Action order
-  .WORD $0046 ;Action 1
-  .WORD $013C ;Action 2
-  .WORD $0139 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $00F3 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_070
+  .WORD BATTLE_ACTIONS::ACTION_316
+  .WORD BATTLE_ACTIONS::ACTION_313
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_243 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -10123,11 +10123,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $02 ;Action order
-  .WORD $00A7 ;Action 1
-  .WORD $0063 ;Action 2
-  .WORD $0086 ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_167
+  .WORD BATTLE_ACTIONS::ACTION_099
+  .WORD BATTLE_ACTIONS::ACTION_134
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $93 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -10172,11 +10172,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0000 ;Action 1
-  .WORD $0000 ;Action 2
-  .WORD $0000 ;Action 3
-  .WORD $0000 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -10221,11 +10221,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $00E2 ;Action 2
-  .WORD $00EA ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_226
+  .WORD BATTLE_ACTIONS::ACTION_234
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -10270,11 +10270,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $03 ;Action order
-  .WORD $0020 ;Action 1
-  .WORD $0020 ;Action 2
-  .WORD $0020 ;Action 3
-  .WORD $0020 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_032
+  .WORD BATTLE_ACTIONS::ACTION_032
+  .WORD BATTLE_ACTIONS::ACTION_032
+  .WORD BATTLE_ACTIONS::ACTION_032
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $17 ;Action 1 argument
   .BYTE $17 ;Action 2 argument
   .BYTE $17 ;Action 3 argument
@@ -10319,11 +10319,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $007E ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $0004 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_126
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -10368,11 +10368,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0085 ;Action 1
-  .WORD $00EE ;Action 2
-  .WORD $00EE ;Action 3
-  .WORD $006F ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_133
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_238
+  .WORD BATTLE_ACTIONS::ACTION_111
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -10417,11 +10417,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $08 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $0004 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -10466,11 +10466,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $04 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $00CC ;Action 1
-  .WORD $00CC ;Action 2
-  .WORD $0004 ;Action 3
-  .WORD $0004 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_204
+  .WORD BATTLE_ACTIONS::ACTION_204
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -10515,11 +10515,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $000F ;Action 1
-  .WORD $0067 ;Action 2
-  .WORD $0012 ;Action 3
-  .WORD $000E ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_015
+  .WORD BATTLE_ACTIONS::ACTION_103
+  .WORD BATTLE_ACTIONS::ACTION_018
+  .WORD BATTLE_ACTIONS::ACTION_014
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $06 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $09 ;Action 3 argument
@@ -10564,11 +10564,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $03 ;Action order
-  .WORD $002E ;Action 1
-  .WORD $002E ;Action 2
-  .WORD $00E2 ;Action 3
-  .WORD $0004 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_046
+  .WORD BATTLE_ACTIONS::ACTION_046
+  .WORD BATTLE_ACTIONS::ACTION_226
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $24 ;Action 1 argument
   .BYTE $24 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -10613,11 +10613,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $03 ;Action order
-  .WORD $0111 ;Action 1
-  .WORD $0111 ;Action 2
-  .WORD $00E2 ;Action 3
-  .WORD $006E ;Action 4
-  .WORD $0113 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_273
+  .WORD BATTLE_ACTIONS::ACTION_273
+  .WORD BATTLE_ACTIONS::ACTION_226
+  .WORD BATTLE_ACTIONS::ACTION_110
+  .WORD BATTLE_ACTIONS::ACTION_275 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -10662,11 +10662,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0111 ;Action 1
-  .WORD $0114 ;Action 2
-  .WORD $00E2 ;Action 3
-  .WORD $006E ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_273
+  .WORD BATTLE_ACTIONS::ACTION_276
+  .WORD BATTLE_ACTIONS::ACTION_226
+  .WORD BATTLE_ACTIONS::ACTION_110
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -10711,11 +10711,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $000A ;Action 1
-  .WORD $000B ;Action 2
-  .WORD $000A ;Action 3
-  .WORD $000B ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_010
+  .WORD BATTLE_ACTIONS::ACTION_011
+  .WORD BATTLE_ACTIONS::ACTION_010
+  .WORD BATTLE_ACTIONS::ACTION_011
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $01 ;Action 1 argument
   .BYTE $02 ;Action 2 argument
   .BYTE $01 ;Action 3 argument
@@ -10760,11 +10760,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $02 ;Action order
-  .WORD $0000 ;Action 1
-  .WORD $0000 ;Action 2
-  .WORD $0000 ;Action 3
-  .WORD $0115 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_277
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -10809,11 +10809,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0112 ;Action 1
-  .WORD $012C ;Action 2
-  .WORD $012D ;Action 3
-  .WORD $0138 ;Action 4
-  .WORD $0116 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_274
+  .WORD BATTLE_ACTIONS::ACTION_300
+  .WORD BATTLE_ACTIONS::ACTION_301
+  .WORD BATTLE_ACTIONS::ACTION_312
+  .WORD BATTLE_ACTIONS::ACTION_278 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -10858,11 +10858,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $012E ;Action 1
-  .WORD $012F ;Action 2
-  .WORD $0130 ;Action 3
-  .WORD $0134 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_302
+  .WORD BATTLE_ACTIONS::ACTION_303
+  .WORD BATTLE_ACTIONS::ACTION_304
+  .WORD BATTLE_ACTIONS::ACTION_308
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -10907,11 +10907,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0004 ;Action 1
-  .WORD $0078 ;Action 2
-  .WORD $004A ;Action 3
-  .WORD $0054 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_120
+  .WORD BATTLE_ACTIONS::ACTION_074
+  .WORD BATTLE_ACTIONS::ACTION_084
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -10956,11 +10956,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $000E ;Action 1
-  .WORD $000E ;Action 2
-  .WORD $000E ;Action 3
-  .WORD $000E ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_014
+  .WORD BATTLE_ACTIONS::ACTION_014
+  .WORD BATTLE_ACTIONS::ACTION_014
+  .WORD BATTLE_ACTIONS::ACTION_014
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $05 ;Action 1 argument
   .BYTE $05 ;Action 2 argument
   .BYTE $05 ;Action 3 argument
@@ -11005,11 +11005,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $003B ;Action 1
-  .WORD $0044 ;Action 2
-  .WORD $0039 ;Action 3
-  .WORD $0004 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_059
+  .WORD BATTLE_ACTIONS::ACTION_068
+  .WORD BATTLE_ACTIONS::ACTION_057
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $32 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $30 ;Action 3 argument
@@ -11054,11 +11054,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0000 ;Action 1
-  .WORD $0000 ;Action 2
-  .WORD $0000 ;Action 3
-  .WORD $0000 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -11103,11 +11103,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $01 ;Action order
-  .WORD $0057 ;Action 1
-  .WORD $0004 ;Action 2
-  .WORD $00E8 ;Action 3
-  .WORD $0050 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_087
+  .WORD BATTLE_ACTIONS::ACTION_004
+  .WORD BATTLE_ACTIONS::ACTION_232
+  .WORD BATTLE_ACTIONS::ACTION_080
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -11152,11 +11152,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Weakness to hypnosis/brainshock
   .BYTE $00 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $000F ;Action 1
-  .WORD $000E ;Action 2
-  .WORD $000E ;Action 3
-  .WORD $000E ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_015
+  .WORD BATTLE_ACTIONS::ACTION_014
+  .WORD BATTLE_ACTIONS::ACTION_014
+  .WORD BATTLE_ACTIONS::ACTION_014
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $06 ;Action 1 argument
   .BYTE $05 ;Action 2 argument
   .BYTE $05 ;Action 3 argument
@@ -11201,11 +11201,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Weakness to hypnosis/brainshock
   .BYTE $02 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $006B ;Action 1
-  .WORD $00D8 ;Action 2
-  .WORD $0067 ;Action 3
-  .WORD $0060 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_107
+  .WORD BATTLE_ACTIONS::ACTION_216
+  .WORD BATTLE_ACTIONS::ACTION_103
+  .WORD BATTLE_ACTIONS::ACTION_096
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -11250,11 +11250,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $03 ;Weakness to hypnosis/brainshock
   .BYTE $01 ;Miss rate
   .BYTE $00 ;Action order
-  .WORD $0131 ;Action 1
-  .WORD $0132 ;Action 2
-  .WORD $0133 ;Action 3
-  .WORD $0135 ;Action 4
-  .WORD $0000 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_305
+  .WORD BATTLE_ACTIONS::ACTION_306
+  .WORD BATTLE_ACTIONS::ACTION_307
+  .WORD BATTLE_ACTIONS::ACTION_309
+  .WORD BATTLE_ACTIONS::ACTION_000 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
@@ -11299,11 +11299,11 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $02 ;Weakness to hypnosis/brainshock
   .BYTE $05 ;Miss rate
   .BYTE $03 ;Action order
-  .WORD $0081 ;Action 1
-  .WORD $0080 ;Action 2
-  .WORD $013D ;Action 3
-  .WORD $00F5 ;Action 4
-  .WORD $00F3 ;Final action
+  .WORD BATTLE_ACTIONS::ACTION_129
+  .WORD BATTLE_ACTIONS::ACTION_128
+  .WORD BATTLE_ACTIONS::ACTION_317
+  .WORD BATTLE_ACTIONS::ACTION_245
+  .WORD BATTLE_ACTIONS::ACTION_243 ;Final action
   .BYTE $00 ;Action 1 argument
   .BYTE $00 ;Action 2 argument
   .BYTE $00 ;Action 3 argument
