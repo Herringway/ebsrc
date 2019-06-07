@@ -305,3 +305,12 @@
 	run_away_flag_state .byte ;6
 	letterbox_style .byte ;7
 .ENDSTRUCT
+
+.STRUCT battle_action
+	direction .byte ;0
+	target .byte ;1
+	type .byte ;2
+	pp_cost .byte ;3
+	description_text_pointer .dword ;4
+	battle_function_pointer .dword ;8
+.ENDSTRUCT

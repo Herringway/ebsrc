@@ -254,3 +254,47 @@
     .assert blue < 32, error, "Blue out of range"
     .WORD (blue<<10) | (green<<5) | red
 .ENDMACRO
+
+.MACRO OPTIMIZED_MULT scratch, amount
+    .IF amount = 1
+    .ELSEIF amount = 2
+        ASL
+    .ELSEIF amount = 3
+        STA scratch
+        ASL
+        ADC scratch
+    .ELSEIF amount = 4
+        ASL
+        ASL
+    .ELSEIF amount = 10
+        STA scratch
+        ASL
+        ASL
+        ADC scratch
+        ASL
+    .ELSEIF amount = 12
+        STA scratch
+        ASL
+        ADC scratch
+        ASL
+        ASL
+    .ELSEIF amount = 17
+        STA scratch
+        ASL
+        ASL
+        ASL
+        ASL
+        ADC scratch
+    .ELSEIF amount = 27
+        STA scratch
+        ASL
+        ADC scratch
+        ASL
+        ASL
+        ADC scratch
+        ASL
+        ADC scratch
+    .ELSE
+        .ASSERT 0, error, "Unsupported multiplication amount"
+    .ENDIF
+.ENDMACRO
