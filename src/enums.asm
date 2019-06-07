@@ -38,6 +38,10 @@
 
 .DEFINE MAX_MAP_ENTITIES 30
 
+; Map width and height, measured in number of 64x64 tiles
+.DEFINE MAP_WIDTH_TILES 128
+.DEFINE MAP_HEIGHT_TILES 160
+
  ;This group has special behaviour
 .DEFINE MAGIC_BUTTERFLY_BATTLEGROUP 481
 
