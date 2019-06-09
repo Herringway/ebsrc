@@ -94,10 +94,10 @@ LOAD_MAP_PAL: ;$C007B6
 	LDA $08
 	STA $0C
 	LDA .LOWORD(CUR_PHOTO_DISPLAY)
-	LDY #$003E
+	LDY #.SIZEOF(photographer_config_entry)
 	JSL MULT168
 	CLC
-	ADC #$0006
+	ADC #photographer_config_entry::credits_map_palettes_offset
 	TAX
 	LDA f:PHOTOGRAPHER_CFG_TABLE,X
 	STA MAPPAL

@@ -279,8 +279,16 @@
 
 .STRUCT photographer_config_entry
 	event_flag .word ;0
-	.byte 60 ;2
-.ENDSTRUCT
+	;Coordinates for something
+	.word ;2
+	.word ;4
+	credits_map_palettes_offset .word ;6
+	.byte ;8
+	.byte ;9
+	photographer_x .word ;10
+	photographer_y .word ;12
+	.byte 48 ;14
+.ENDSTRUCT ;62
 
 .STRUCT packtable_entry
 	primarysamplepack .byte ;0

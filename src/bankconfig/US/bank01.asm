@@ -3246,7 +3246,7 @@ UNKNOWN_C14070: ;$C14070
 
 .INCLUDE "text/ccs/print_stat.asm"
 
-.INCLUDE "text/ccs/unknown_1C_11.asm"
+.INCLUDE "text/ccs/print_party_or_hint_new_line.asm"
 
 .INCLUDE "text/ccs/unknown_1C_09.asm"
 
@@ -3304,7 +3304,7 @@ UNKNOWN_C14070: ;$C14070
 
 .INCLUDE "text/ccs/get_letter_from_character_name.asm"
 
-.INCLUDE "text/ccs/unknown_19_28.asm"
+.INCLUDE "text/ccs/get_letter_from_stat.asm"
 
 .INCLUDE "text/ccs/print_character.asm"
 
@@ -3384,7 +3384,7 @@ UNKNOWN_C14070: ;$C14070
 
 .INCLUDE "text/ccs/give_item_to_character_2.asm"
 
-.INCLUDE "text/ccs/unknown_1D_0F.asm"
+.INCLUDE "text/ccs/take_item_from_character_2.asm"
 
 .INCLUDE "text/ccs/unknown_1D_10.asm"
 
