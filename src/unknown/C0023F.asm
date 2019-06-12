@@ -25,7 +25,7 @@ UNKNOWN_C0023F: ;$C0023F
 	STA $0A
 	STY $0C
 	SEP #PROC_FLAGS::ACCUM8
-	LDY #$0004
+	LDY #map_palette_animation_entry::count
 	LDA [$0A],Y
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF
@@ -61,7 +61,7 @@ UNKNOWN_C0023F: ;$C0023F
 @UNKNOWN3:
 	CMP #$0009
 	BCC @UNKNOWN2
-	LDA #$0005
+	LDA #map_palette_animation_entry::entries
 	LDX $0A
 	STX $06
 	LDX $0C
@@ -84,7 +84,7 @@ UNKNOWN_C0023F: ;$C0023F
 	STA $16
 @UNKNOWN5:
 	SEP #PROC_FLAGS::ACCUM8
-	LDY #$0004
+	LDY #map_palette_animation_entry::count
 	LDA [$0A],Y
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF

@@ -314,3 +314,9 @@
 	description_text_pointer .dword ;4
 	battle_function_pointer .dword ;8
 .ENDSTRUCT
+
+.STRUCT map_palette_animation_entry
+	ptr .dword ;0
+	count .byte ;4
+	entries .byte ;5 - not always here, actual size varies
+.ENDSTRUCT
