@@ -5,7 +5,7 @@
 	exp .dword ;6
 	max_hp .word ;10
 	max_pp .word ;12
-	afflictions .byte 7 ;14
+	afflictions .byte AFFLICTION_GROUP_COUNT ;14
 	offense .byte ;21
 	defense .byte ;22
 	speed .byte ;23
@@ -173,15 +173,14 @@
 	.byte ;13
 	ally_or_enemy .byte ;14
 	npc_id .byte ;15
-	.byte ;16
+	row .byte ;16
 	hp .word ;17
 	hp_target .word ;19
 	hp_max .word ;21
 	pp .word ;23
 	pp_target .word ;25
 	pp_max .word ;27
-	afflictions .byte 6 ;29
-	shield .byte ;35
+	afflictions .byte AFFLICTION_GROUP_COUNT ;29
 	guarding .byte ;36
 	shield_hp .byte ;37
 	offense .word ;38
