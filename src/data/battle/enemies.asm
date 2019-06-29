@@ -43,7 +43,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -92,7 +92,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::PSI_CARAMEL ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $03 ;Max number of allies called
@@ -141,7 +141,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -190,7 +190,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
   .BYTE ITEM::BROKEN_SPRAY_CAN ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -239,7 +239,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::WET_TOWEL ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -288,7 +288,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $05 ;Item drop rate
   .BYTE ITEM::COOKIE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $03 ;Max number of allies called
@@ -337,7 +337,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
   .BYTE ITEM::SUGAR_PACKET ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $03 ;Max number of allies called
@@ -386,7 +386,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
   .BYTE ITEM::KETCHUP_PACKET ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -435,7 +435,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
   .BYTE ITEM::RUST_PROMOTER ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -484,7 +484,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::CROISSANT ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $03 ;Max number of allies called
@@ -533,7 +533,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
   .BYTE ITEM::SPRIG_OF_PARSLEY ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $03 ;Max number of allies called
@@ -582,7 +582,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::SUDDEN_GUTS_PILL ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -631,7 +631,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::PIZZA ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -680,7 +680,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
   .BYTE ITEM::SUPER_BOMB ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -729,7 +729,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
   .BYTE ITEM::SUPER_BOMB ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -778,7 +778,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
   .BYTE ITEM::PHARAOHS_CURSE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -827,7 +827,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::PHARAOHS_CURSE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -876,7 +876,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::SUDDEN_GUTS_PILL ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $04 ;Max number of allies called
@@ -925,7 +925,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::BOTTLE_OF_WATER ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -974,7 +974,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::BRAIN_FOOD_LUNCH ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -1023,7 +1023,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::LUXURY_JERKY ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -1072,7 +1072,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $01 ;Initial status
+  .BYTE INITIAL_STATUS::PSI_SHIELD
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -1121,7 +1121,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::PROTEIN_DRINK ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -1170,7 +1170,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
   .BYTE ITEM::PROTEIN_DRINK ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -1219,7 +1219,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
   .BYTE ITEM::TOOTHBRUSH ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -1268,7 +1268,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
   .BYTE ITEM::RULER ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -1317,7 +1317,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -1366,7 +1366,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -1415,7 +1415,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::TEDDY_BEAR ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -1464,7 +1464,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::SUPER_PLUSH_BEAR ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $02 ;Max number of allies called
@@ -1513,7 +1513,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::CROISSANT ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -1562,7 +1562,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::BOTTLE_OF_WATER ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -1611,7 +1611,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::HANDBAG_STRAP ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -1660,7 +1660,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
   .BYTE ITEM::HANDBAG_STRAP ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -1709,7 +1709,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -1758,7 +1758,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::LUXURY_JERKY ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -1807,7 +1807,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::MAGIC_FRY_PAN ;Item dropped
-  .BYTE $04 ;Initial status
+  .BYTE INITIAL_STATUS::SHIELD_POWER
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -1856,7 +1856,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -1905,7 +1905,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::DOUBLE_BURGER ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $02 ;Max number of allies called
@@ -1954,7 +1954,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -2003,7 +2003,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -2052,7 +2052,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -2101,7 +2101,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $04 ;Initial status
+  .BYTE INITIAL_STATUS::SHIELD_POWER
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -2150,7 +2150,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $06 ;Item drop rate
   .BYTE ITEM::CUP_OF_COFFEE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -2199,7 +2199,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::PSI_CARAMEL ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $03 ;Max number of allies called
@@ -2248,7 +2248,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::BOMB ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $04 ;Max number of allies called
@@ -2297,7 +2297,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::MULTI_BOTTLE_ROCKET ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $03 ;Max number of allies called
@@ -2346,7 +2346,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
   .BYTE ITEM::JAR_OF_HOT_SAUCE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -2395,7 +2395,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::BEEF_JERKY ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -2444,7 +2444,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -2493,7 +2493,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::GUTSY_BAT ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -2542,7 +2542,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::METEORNIUM ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -2591,7 +2591,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::METEOTITE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -2640,7 +2640,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::METEOTITE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $04 ;Max number of allies called
@@ -2689,7 +2689,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $04 ;Item drop rate
   .BYTE ITEM::HAMBURGER ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $03 ;Max number of allies called
@@ -2738,7 +2738,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::COOKIE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -2787,7 +2787,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
   .BYTE ITEM::CHICK ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -2836,7 +2836,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::JAR_OF_HOT_SAUCE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -2885,7 +2885,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::DOUBLE_BURGER ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $03 ;Max number of allies called
@@ -2934,7 +2934,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::SECRET_HERB ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $02 ;Max number of allies called
@@ -2983,7 +2983,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
   .BYTE ITEM::SECRET_HERB ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -3032,7 +3032,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::BIG_BOTTLE_ROCKET ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -3081,7 +3081,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::MULTI_BOTTLE_ROCKET ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -3130,7 +3130,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
   .BYTE ITEM::MULTI_BOTTLE_ROCKET ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -3179,7 +3179,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::PIZZA ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $02 ;Max number of allies called
@@ -3228,7 +3228,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::VIAL_OF_SERUM ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -3277,7 +3277,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
   .BYTE ITEM::KETCHUP_PACKET ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -3326,7 +3326,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::BRAIN_FOOD_LUNCH ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $02 ;Max number of allies called
@@ -3375,7 +3375,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::SWORD_OF_KINGS ;Item dropped
-  .BYTE $02 ;Initial status
+  .BYTE INITIAL_STATUS::PSI_SHIELD_POWER
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $02 ;Max number of allies called
@@ -3424,7 +3424,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::GODDESS_RIBBON ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $02 ;Max number of allies called
@@ -3473,7 +3473,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::METEORNIUM ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $02 ;Max number of allies called
@@ -3522,7 +3522,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::BROKEN_ANTENNA ;Item dropped
-  .BYTE $01 ;Initial status
+  .BYTE INITIAL_STATUS::PSI_SHIELD
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -3571,7 +3571,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::SUDDEN_GUTS_PILL ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -3620,7 +3620,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -3669,7 +3669,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $02 ;Initial status
+  .BYTE INITIAL_STATUS::PSI_SHIELD_POWER
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $02 ;Max number of allies called
@@ -3718,7 +3718,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::PSI_CARAMEL ;Item dropped
-  .BYTE $02 ;Initial status
+  .BYTE INITIAL_STATUS::PSI_SHIELD_POWER
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -3767,7 +3767,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::HAMBURGER ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $02 ;Max number of allies called
@@ -3816,7 +3816,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::SECRET_HERB ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $02 ;Max number of allies called
@@ -3865,7 +3865,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::BOTTLE_ROCKET ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -3914,7 +3914,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::BOILED_EGG ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $03 ;Max number of allies called
@@ -3963,7 +3963,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::DOUBLE_BURGER ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -4012,7 +4012,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::PSI_CARAMEL ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -4061,7 +4061,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
   .BYTE ITEM::VIPER ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $03 ;Max number of allies called
@@ -4110,7 +4110,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $04 ;Initial status
+  .BYTE INITIAL_STATUS::SHIELD_POWER
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -4159,7 +4159,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -4208,7 +4208,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::METEOTITE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -4257,7 +4257,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::METEOTITE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $02 ;Max number of allies called
@@ -4306,7 +4306,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
   .BYTE ITEM::PSI_CARAMEL ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $02 ;Max number of allies called
@@ -4355,7 +4355,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
   .BYTE ITEM::FRESH_EGG ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $04 ;Max number of allies called
@@ -4404,7 +4404,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::PSI_CARAMEL ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -4453,7 +4453,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $03 ;Max number of allies called
@@ -4502,7 +4502,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::SUDDEN_GUTS_PILL ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -4551,7 +4551,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::SUDDEN_GUTS_PILL ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -4600,7 +4600,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $03 ;Max number of allies called
@@ -4649,7 +4649,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::METEOTITE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -4698,7 +4698,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $07 ;Item drop rate
   .BYTE ITEM::CASEY_BAT ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $03 ;Max number of allies called
@@ -4747,7 +4747,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::JAR_OF_DELISAUCE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -4796,7 +4796,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::HORN_OF_LIFE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -4845,7 +4845,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::PSI_CARAMEL ;Item dropped
-  .BYTE $06 ;Initial status
+  .BYTE INITIAL_STATUS::CANT_CONCENTRATE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -4894,7 +4894,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::PSI_CARAMEL ;Item dropped
-  .BYTE $06 ;Initial status
+  .BYTE INITIAL_STATUS::CANT_CONCENTRATE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $04 ;Max number of allies called
@@ -4943,7 +4943,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::PSI_CARAMEL ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $04 ;Max number of allies called
@@ -4992,7 +4992,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
   .BYTE ITEM::SNAKE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -5041,7 +5041,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -5090,7 +5090,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::HORN_OF_LIFE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -5139,7 +5139,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::PICNIC_LUNCH ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -5188,7 +5188,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::BEEF_JERKY ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -5237,7 +5237,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::PSI_CARAMEL ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -5286,7 +5286,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::PSI_CARAMEL ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $02 ;Max number of allies called
@@ -5335,7 +5335,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
   .BYTE ITEM::BROKEN_IRON ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -5384,7 +5384,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::LARGE_PIZZA ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -5433,7 +5433,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -5482,7 +5482,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::BOMB ;Item dropped
-  .BYTE $06 ;Initial status
+  .BYTE INITIAL_STATUS::CANT_CONCENTRATE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -5531,7 +5531,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $05 ;Item drop rate
   .BYTE ITEM::SALT_PACKET ;Item dropped
-  .BYTE $06 ;Initial status
+  .BYTE INITIAL_STATUS::CANT_CONCENTRATE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -5580,7 +5580,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::BREAD_ROLL ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -5629,7 +5629,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::RUST_PROMOTER_DX ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $02 ;Max number of allies called
@@ -5678,7 +5678,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::SUPER_BOMB ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $04 ;Max number of allies called
@@ -5727,7 +5727,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $02 ;Initial status
+  .BYTE INITIAL_STATUS::PSI_SHIELD_POWER
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -5776,7 +5776,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
   .BYTE ITEM::TIN_OF_COCOA ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -5825,7 +5825,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::REFRESHING_HERB ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $02 ;Max number of allies called
@@ -5874,7 +5874,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::BEEF_JERKY ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -5923,7 +5923,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::HORN_OF_LIFE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $02 ;Max number of allies called
@@ -5972,7 +5972,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::BREAD_ROLL ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -6021,7 +6021,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::BOMB ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -6070,7 +6070,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::DOUBLE_BURGER ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -6119,7 +6119,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::REFRESHING_HERB ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -6168,7 +6168,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $06 ;Item drop rate
   .BYTE ITEM::MUMMY_WRAP ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -6217,7 +6217,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $06 ;Item drop rate
   .BYTE ITEM::MUMMY_WRAP ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -6266,7 +6266,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
   .BYTE ITEM::SKIP_SANDWICH_DX ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -6315,7 +6315,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -6364,7 +6364,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::BAG_OF_FRIES ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $02 ;Max number of allies called
@@ -6413,7 +6413,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -6462,7 +6462,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -6511,7 +6511,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -6560,7 +6560,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $04 ;Max number of allies called
@@ -6609,7 +6609,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $07 ;Item drop rate
   .BYTE ITEM::HAMBURGER ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $02 ;Max number of allies called
@@ -6658,7 +6658,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $05 ;Item drop rate
   .BYTE ITEM::CHICK ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -6707,7 +6707,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::XTERMINATOR_SPRAY ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -6756,7 +6756,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -6805,7 +6805,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::MAGIC_TART ;Item dropped
-  .BYTE $06 ;Initial status
+  .BYTE INITIAL_STATUS::CANT_CONCENTRATE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $06 ;Max number of allies called
@@ -6854,7 +6854,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $05 ;Item drop rate
   .BYTE ITEM::COOKIE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $02 ;Max number of allies called
@@ -6903,7 +6903,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::BIG_BOTTLE_ROCKET ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $02 ;Max number of allies called
@@ -6952,7 +6952,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -7001,7 +7001,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::PSI_CARAMEL ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -7050,7 +7050,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::STAR_PENDANT ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -7099,7 +7099,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::CROISSANT ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $03 ;Max number of allies called
@@ -7148,7 +7148,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
   .BYTE ITEM::SALT_PACKET ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -7197,7 +7197,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $01 ;Initial status
+  .BYTE INITIAL_STATUS::PSI_SHIELD
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -7246,7 +7246,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::METEOTITE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -7295,7 +7295,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::SPICY_JERKY ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $02 ;Max number of allies called
@@ -7344,7 +7344,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::PICNIC_LUNCH ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -7393,7 +7393,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::SKIP_SANDWICH ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $02 ;Max number of allies called
@@ -7442,7 +7442,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::SKIP_SANDWICH_DX ;Item dropped
-  .BYTE $03 ;Initial status
+  .BYTE INITIAL_STATUS::SHIELD
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $04 ;Max number of allies called
@@ -7491,7 +7491,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
   .BYTE ITEM::CARTON_OF_CREAM ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -7540,7 +7540,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::SUPER_BOMB ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -7589,7 +7589,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::METEORNIUM ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -7638,7 +7638,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::SUPER_BOMB ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -7687,7 +7687,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::SUPER_PLUSH_BEAR ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -7736,7 +7736,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::BOILED_EGG ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $02 ;Max number of allies called
@@ -7785,7 +7785,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::PIZZA ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -7834,7 +7834,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $07 ;Item drop rate
   .BYTE ITEM::COOKIE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -7883,7 +7883,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -7932,7 +7932,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -7981,7 +7981,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -8030,7 +8030,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -8079,7 +8079,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -8128,7 +8128,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -8177,7 +8177,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -8226,7 +8226,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -8275,7 +8275,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -8324,7 +8324,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $03 ;Max number of allies called
@@ -8373,7 +8373,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::PSI_CARAMEL ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $03 ;Max number of allies called
@@ -8422,7 +8422,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -8471,7 +8471,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -8520,7 +8520,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -8569,7 +8569,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -8618,7 +8618,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::MAGIC_FRY_PAN ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -8667,7 +8667,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -8716,7 +8716,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::DOUBLE_BURGER ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $02 ;Max number of allies called
@@ -8765,7 +8765,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -8814,7 +8814,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -8863,7 +8863,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -8912,7 +8912,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -8961,7 +8961,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -9010,7 +9010,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::GUTSY_BAT ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -9059,7 +9059,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::BRAIN_FOOD_LUNCH ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $02 ;Max number of allies called
@@ -9108,7 +9108,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::SWORD_OF_KINGS ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $02 ;Max number of allies called
@@ -9157,7 +9157,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::GODDESS_RIBBON ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -9206,7 +9206,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $02 ;Max number of allies called
@@ -9255,7 +9255,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::PSI_CARAMEL ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -9304,7 +9304,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::HAMBURGER ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $02 ;Max number of allies called
@@ -9353,7 +9353,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -9402,7 +9402,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $03 ;Max number of allies called
@@ -9451,7 +9451,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $03 ;Max number of allies called
@@ -9500,7 +9500,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::METEOTITE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $03 ;Max number of allies called
@@ -9549,7 +9549,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $07 ;Item drop rate
   .BYTE ITEM::CASEY_BAT ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $03 ;Max number of allies called
@@ -9598,7 +9598,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::PSI_CARAMEL ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -9647,7 +9647,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $04 ;Item drop rate
   .BYTE ITEM::SNAKE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -9696,7 +9696,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -9745,7 +9745,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::HORN_OF_LIFE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -9794,7 +9794,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -9843,7 +9843,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -9892,7 +9892,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -9941,7 +9941,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -9990,7 +9990,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -10039,7 +10039,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -10088,7 +10088,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -10137,7 +10137,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::SUPER_BOMB ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -10186,7 +10186,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $01 ;Item drop rate
   .BYTE ITEM::PSI_CARAMEL ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -10235,7 +10235,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -10284,7 +10284,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $03 ;Max number of allies called
@@ -10333,7 +10333,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $06 ;Item drop rate
   .BYTE ITEM::COOKIE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -10382,7 +10382,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $06 ;Item drop rate
   .BYTE ITEM::BREAD_ROLL ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -10431,7 +10431,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $07 ;Item drop rate
   .BYTE ITEM::PICNIC_LUNCH ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -10480,7 +10480,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -10529,7 +10529,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -10578,7 +10578,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -10627,7 +10627,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -10676,7 +10676,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -10725,7 +10725,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -10774,7 +10774,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -10823,7 +10823,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -10872,7 +10872,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -10921,7 +10921,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
   .BYTE ITEM::SKIP_SANDWICH ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $01 ;Row
   .BYTE $02 ;Max number of allies called
@@ -10970,7 +10970,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -11019,7 +11019,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $03 ;Item drop rate
   .BYTE ITEM::METEOTITE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -11068,7 +11068,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -11117,7 +11117,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -11166,7 +11166,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $00 ;Max number of allies called
@@ -11215,7 +11215,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $02 ;Item drop rate
   .BYTE ITEM::BOILED_EGG ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $00 ;Death style
   .BYTE $00 ;Row
   .BYTE $03 ;Max number of allies called
@@ -11264,7 +11264,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
@@ -11313,7 +11313,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Boss flag
   .BYTE $00 ;Item drop rate
   .BYTE ITEM::NONE ;Item dropped
-  .BYTE $00 ;Initial status
+  .BYTE INITIAL_STATUS::NONE
   .BYTE $01 ;Death style
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
