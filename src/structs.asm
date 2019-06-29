@@ -234,9 +234,11 @@
 	working_memory .byte 4 ;31
 	secondary_memory .byte 4 ;35
 	working_memory_storage .byte 4 ;39
-	argument_memory_storage .byte 4 ;43
+	argument_memory_storage .byte 4 ;43 - may actually be a pair of $7E89D4 entries
 	secondary_memory_storage .byte 4 ;47
-	.byte 31 ;51
+	.byte 4 ;51
+	.dword ;55 - a pointer for something
+	.byte 23 ;59
 .ENDSTRUCT
 
 .STRUCT npc_config
@@ -259,9 +261,13 @@
 	.word ;2
 	.word ;4
 	.word ;6
-	.byte 6 ;8
-	.word ;14
-	.byte 27 ;16
+	.word ;8
+	.word ;10
+	.word ;12
+	.byte ;14 - seems to be a sound effect id
+	.byte ;15
+	.byte 3 ;16
+	.byte 24 ;19
 	.word ;43
 .ENDSTRUCT
 
