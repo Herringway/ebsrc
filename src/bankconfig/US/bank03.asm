@@ -19225,7 +19225,7 @@ DO_ABSOLUTELY_NOTHING_3486862: ;$C3EF23
 
 .INCLUDE "data/psi_target_text.asm"
 
-.INCLUDE "unknown/C3F1EC.asm"
+.INCLUDE "unknown/C3/C3F1EC.asm"
 
 .INCLUDE "data/unknown/C3F2B1.asm"
 
@@ -19233,23 +19233,23 @@ DO_ABSOLUTELY_NOTHING_3486862: ;$C3EF23
 
 .INCLUDE "intro/show_title_screen.asm"
 
-.INCLUDE "unknown/C3F5F9.asm"
+.INCLUDE "unknown/C3/C3F5F9.asm"
 
-.INCLUDE "unknown/C3F67D.asm"
+.INCLUDE "unknown/C3/C3F67D.asm"
 
-.INCLUDE "unknown/C3F705.asm"
+.INCLUDE "unknown/C3/C3F705.asm"
 
-.INCLUDE "unknown/C3F7FB.asm"
+.INCLUDE "unknown/C3/C3F7FB.asm"
 
 .INCLUDE "data/unknown/C3F819.asm"
 
 .INCLUDE "data/unknown/C3F951.asm"
 
-.INCLUDE "unknown/C3F981.asm"
+.INCLUDE "unknown/C3/C3F981.asm"
 
-.INCLUDE "unknown/C3FAC9.asm"
+.INCLUDE "unknown/C3/C3FAC9.asm"
 
-.INCLUDE "unknown/C3FB09.asm"
+.INCLUDE "unknown/C3/C3FB09.asm"
 
 .INCLUDE "data/unknown/C3FB1F.asm"
 
@@ -19267,6 +19267,6 @@ DO_ABSOLUTELY_NOTHING_3486862: ;$C3EF23
 
 .INCLUDE "data/unused_for_sale_sign_sprite_table.asm"
 
-.INCLUDE "unknown/C3FDC5.asm"
+.INCLUDE "unknown/C3/C3FDC5.asm"
 
 .INCLUDE "data/antipiracy_checksum_2.asm"

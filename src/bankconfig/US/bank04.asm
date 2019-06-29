@@ -5,23 +5,23 @@
 .INCLUDE "structs.asm"
 .INCLUDE "bin/flyovers.symbols.asm"
 
-.INCLUDE "unknown/C40000.asm"
+.INCLUDE "unknown/C4/C40000.asm"
 
-.INCLUDE "unknown/C40009.asm"
+.INCLUDE "unknown/C4/C40009.asm"
 
-.INCLUDE "unknown/C40015.asm"
+.INCLUDE "unknown/C4/C40015.asm"
 
-.INCLUDE "unknown/C40023.asm"
+.INCLUDE "unknown/C4/C40023.asm"
 
-.INCLUDE "unknown/C4002F.asm"
+.INCLUDE "unknown/C4/C4002F.asm"
 
-.INCLUDE "unknown/C40085.asm"
+.INCLUDE "unknown/C4/C40085.asm"
 
 .INCLUDE "data/movement_pattern_pointers.asm"
 
-.INCLUDE "unknown/C40B51.asm"
+.INCLUDE "unknown/C4/C40B51.asm"
 
-.INCLUDE "unknown/C40B75.asm"
+.INCLUDE "unknown/C4/C40B75.asm"
 
 .INCLUDE "data/map/footstep_sound_table.asm"
 
@@ -157,7 +157,7 @@
 
 .INCLUDE "system/decomp.asm"
 
-.INCLUDE "unknown/C41DB6.asm"
+.INCLUDE "unknown/C4/C41DB6.asm"
 
 .INCLUDE "data/unknown/C41EB9.asm"
 
@@ -165,21 +165,21 @@
 
 .INCLUDE "data/unknown/C41ED9.asm"
 
-.INCLUDE "unknown/C41EE9.asm"
+.INCLUDE "unknown/C4/C41EE9.asm"
 
-.INCLUDE "unknown/C41EF4.asm"
+.INCLUDE "unknown/C4/C41EF4.asm"
 
-.INCLUDE "unknown/C41EFF.asm"
+.INCLUDE "unknown/C4/C41EFF.asm"
 
 .INCLUDE "data/unknown/C41FC5.asm"
 
 .INCLUDE "data/unknown/C41FDF.asm"
 
-.INCLUDE "unknown/C41FFF.asm"
+.INCLUDE "unknown/C4/C41FFF.asm"
 
 .INCLUDE "data/unknown/C4205D.asm"
 
-.INCLUDE "unknown/C42144.asm"
+.INCLUDE "unknown/C4/C42144.asm"
 
 .INCLUDE "data/movements/patterns/787.asm"
 
@@ -211,47 +211,47 @@
 
 .INCLUDE "data/movements/patterns/798.asm"
 
-.INCLUDE "unknown/C423DC.asm"
+.INCLUDE "unknown/C4/C423DC.asm"
 
-.INCLUDE "unknown/C4240A.asm"
+.INCLUDE "unknown/C4/C4240A.asm"
 
-.INCLUDE "unknown/C42439.asm"
+.INCLUDE "unknown/C4/C42439.asm"
 
-.INCLUDE "unknown/C4245D.asm"
+.INCLUDE "unknown/C4/C4245D.asm"
 
-.INCLUDE "unknown/C4248A.asm"
+.INCLUDE "unknown/C4/C4248A.asm"
 
-.INCLUDE "unknown/C4249A.asm"
+.INCLUDE "unknown/C4/C4249A.asm"
 
-.INCLUDE "unknown/C424D1.asm"
+.INCLUDE "unknown/C4/C424D1.asm"
 
-.INCLUDE "unknown/C42509.asm"
+.INCLUDE "unknown/C4/C42509.asm"
 
-.INCLUDE "unknown/C42542.asm"
+.INCLUDE "unknown/C4/C42542.asm"
 
-.INCLUDE "unknown/C42569.asm"
+.INCLUDE "unknown/C4/C42569.asm"
 
-.INCLUDE "unknown/C42574.asm"
+.INCLUDE "unknown/C4/C42574.asm"
 
-.INCLUDE "unknown/C4257F.asm"
+.INCLUDE "unknown/C4/C4257F.asm"
 
-.INCLUDE "unknown/C4258C.asm"
+.INCLUDE "unknown/C4/C4258C.asm"
 
-.INCLUDE "unknown/C425CC.asm"
+.INCLUDE "unknown/C4/C425CC.asm"
 
-.INCLUDE "unknown/C425F3.asm"
+.INCLUDE "unknown/C4/C425F3.asm"
 
-.INCLUDE "unknown/C425FD.asm"
+.INCLUDE "unknown/C4/C425FD.asm"
 
-.INCLUDE "unknown/C42624.asm"
+.INCLUDE "unknown/C4/C42624.asm"
 
-.INCLUDE "unknown/C42631.asm"
+.INCLUDE "unknown/C4/C42631.asm"
 
-.INCLUDE "unknown/C4268A.asm"
+.INCLUDE "unknown/C4/C4268A.asm"
 
-.INCLUDE "unknown/C426C7.asm"
+.INCLUDE "unknown/C4/C426C7.asm"
 
-.INCLUDE "unknown/C426ED.asm"
+.INCLUDE "unknown/C4/C426ED.asm"
 
 .INCLUDE "data/movements/patterns/859.asm"
 
@@ -265,21 +265,21 @@
 
 .INCLUDE "data/unknown/C42828.asm"
 
-.INCLUDE "unknown/C4283F.asm"
+.INCLUDE "unknown/C4/C4283F.asm"
 
-.INCLUDE "unknown/C42884.asm"
+.INCLUDE "unknown/C4/C42884.asm"
 
-.INCLUDE "unknown/C428D1.asm"
+.INCLUDE "unknown/C4/C428D1.asm"
 
-.INCLUDE "unknown/C428FC.asm"
+.INCLUDE "unknown/C4/C428FC.asm"
 
 .INCLUDE "data/unknown/C42955.asm"
 
-.INCLUDE "unknown/C42965.asm"
+.INCLUDE "unknown/C4/C42965.asm"
 
-.INCLUDE "unknown/C429AE.asm"
+.INCLUDE "unknown/C4/C429AE.asm"
 
-.INCLUDE "unknown/C429E8.asm"
+.INCLUDE "unknown/C4/C429E8.asm"
 
 .INCLUDE "data/unknown/C42A1F.asm"
 
@@ -321,7 +321,7 @@
 
 .INCLUDE "data/unknown/C42E7B.asm"
 
-.INCLUDE "unknown/C42F45.asm"
+.INCLUDE "unknown/C4/C42F45.asm"
 
 .INCLUDE "data/map/tile_table_chunks_table.asm"
 
@@ -331,13 +331,13 @@
 
 .INCLUDE "overworld/velocity_store.asm"
 
-.INCLUDE "unknown/C432B1.asm"
+.INCLUDE "unknown/C4/C432B1.asm"
 
-.INCLUDE "unknown/C43317.asm"
+.INCLUDE "unknown/C4/C43317.asm"
 
-.INCLUDE "unknown/C43344.asm"
+.INCLUDE "unknown/C4/C43344.asm"
 
-.INCLUDE "unknown/C4334A.asm"
+.INCLUDE "unknown/C4/C4334A.asm"
 
 UNKNOWN_C4343E: ;$C4343E
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
@@ -23544,15 +23544,15 @@ UNKNOWN_C4EFC4: ;$C4EFC4
 	PLD
 	RTL
 
-.INCLUDE "unknown/C4F01D.asm"
+.INCLUDE "unknown/C4/C4F01D.asm"
 
-.INCLUDE "unknown/C4F07D.asm"
+.INCLUDE "unknown/C4/C4F07D.asm"
 
-.INCLUDE "unknown/C4F264.asm"
+.INCLUDE "unknown/C4/C4F264.asm"
 
 .INCLUDE "ending/count_photo_flags.asm"
 
-.INCLUDE "unknown/C4F46F.asm"
+.INCLUDE "unknown/C4/C4F46F.asm"
 
 .INCLUDE "ending/play_credits.asm"
 
@@ -23560,12 +23560,12 @@ UNKNOWN_C4EFC4: ;$C4EFC4
 
 .INCLUDE "data/music/pack_pointer_table.asm"
 
-.INCLUDE "unknown/C4FB42.asm"
+.INCLUDE "unknown/C4/C4FB42.asm"
 
 .INCLUDE "audio/initialize_spc700.asm"
 
 .INCLUDE "audio/change_music.asm"
 
-.INCLUDE "unknown/C4FD18.asm"
+.INCLUDE "unknown/C4/C4FD18.asm"
 
 .INCLUDE "overworld/set_boundary_behavior.asm"

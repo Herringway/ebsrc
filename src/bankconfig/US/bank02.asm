@@ -8,19 +8,19 @@
 
 .INCLUDE "data/unknown/C200B9.asm"
 
-.INCLUDE "unknown/C200D9.asm"
+.INCLUDE "unknown/C2/C200D9.asm"
 
-.INCLUDE "unknown/C20266.asm"
+.INCLUDE "unknown/C2/C20266.asm"
 
-.INCLUDE "unknown/C20293.asm"
+.INCLUDE "unknown/C2/C20293.asm"
 
-.INCLUDE "unknown/C202AC.asm"
+.INCLUDE "unknown/C2/C202AC.asm"
 
 .INCLUDE "text/read_name.asm"
 
-.INCLUDE "unknown/C2038B.asm"
+.INCLUDE "unknown/C2/C2038B.asm"
 
-.INCLUDE "unknown/C203C3.asm"
+.INCLUDE "unknown/C2/C203C3.asm"
 
 UNKNOWN_C2077D: ;$C2077D
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
@@ -6275,15 +6275,15 @@ CHOOSE_TARGET_UNKNOWN27:
 	PLD
 	RTL
 
-.INCLUDE "unknown/C24703.asm"
+.INCLUDE "unknown/C2/C24703.asm"
 
 .INCLUDE "battle/main_battle_routine.asm"
 
-.INCLUDE "unknown/C26189.asm"
+.INCLUDE "unknown/C2/C26189.asm"
 
 .INCLUDE "battle/instant_win_handler.asm"
 
-.INCLUDE "unknown/C2654C.asm"
+.INCLUDE "unknown/C2/C2654C.asm"
 
 .INCLUDE "battle/instant_win_check.asm"
 
@@ -21410,12 +21410,12 @@ UNKNOWN_C2FB35: ;$C2FB35
 	PLD
 	RTL
 
-.INCLUDE "unknown/C2FCA6.asm"
+.INCLUDE "unknown/C2/C2FCA6.asm"
 
-.INCLUDE "unknown/C2FD99.asm"
+.INCLUDE "unknown/C2/C2FD99.asm"
 
-.INCLUDE "unknown/C2FEF9.asm"
+.INCLUDE "unknown/C2/C2FEF9.asm"
 
-.INCLUDE "unknown/C2FF9A.asm"
+.INCLUDE "unknown/C2/C2FF9A.asm"
 
 .INCLUDE "data/movements/patterns/000.asm"

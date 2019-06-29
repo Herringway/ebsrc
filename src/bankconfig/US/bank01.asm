@@ -3,9 +3,9 @@
 .INCLUDE "config.asm"
 .INCLUDE "structs.asm"
 
-.INCLUDE "unknown/C10000.asm"
+.INCLUDE "unknown/C1/C10000.asm"
 
-.INCLUDE "unknown/C10004.asm"
+.INCLUDE "unknown/C1/C10004.asm"
 
 .INCLUDE "text/enable_blinking_triangle.asm"
 
@@ -13,9 +13,9 @@
 
 .INCLUDE "text/get_blinking_prompt.asm"
 
-.INCLUDE "unknown/C10048.asm"
+.INCLUDE "unknown/C1/C10048.asm"
 
-.INCLUDE "unknown/C1004E.asm"
+.INCLUDE "unknown/C1/C1004E.asm"
 
 .INCLUDE "text/get_window_focus.asm"
 
@@ -23,19 +23,19 @@
 
 .INCLUDE "text/close_focus_window.asm"
 
-.INCLUDE "unknown/C1008E.asm"
+.INCLUDE "unknown/C1/C1008E.asm"
 
 .INCLUDE "text/lock_input.asm"
 
 .INCLUDE "text/unlock_input.asm"
 
-.INCLUDE "unknown/C100D6.asm"
+.INCLUDE "unknown/C1/C100D6.asm"
 
-.INCLUDE "unknown/C100FE.asm"
+.INCLUDE "unknown/C1/C100FE.asm"
 
 .INCLUDE "text/ccs/halt.asm"
 
-.INCLUDE "unknown/C102D0.asm"
+.INCLUDE "unknown/C1/C102D0.asm"
 
 .INCLUDE "text/get_active_window_address.asm"
 
@@ -63,23 +63,23 @@
 
 .INCLUDE "text/create_window.asm"
 
-.INCLUDE "unknown/C1078D.asm"
+.INCLUDE "unknown/C1/C1078D.asm"
 
-.INCLUDE "unknown/C107AF.asm"
+.INCLUDE "unknown/C1/C107AF.asm"
 
 .INCLUDE "text/show_hppp_windows.asm"
 
 .INCLUDE "text/hide_hppp_windows.asm"
 
-.INCLUDE "unknown/C10A85.asm"
+.INCLUDE "unknown/C1/C10A85.asm"
 
-.INCLUDE "unknown/C10BA1.asm"
+.INCLUDE "unknown/C1/C10BA1.asm"
 
 .INCLUDE "text/ccs/clear_line.asm"
 
-.INCLUDE "unknown/C1008E_redirect.asm"
+.INCLUDE "unknown/C1/C1008E_redirect.asm"
 
-.INCLUDE "unknown/C10BFE.asm"
+.INCLUDE "unknown/C1/C10BFE.asm"
 
 REDIRECT_C1138D: ;$C10C49
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
@@ -2002,7 +2002,7 @@ UNKNOWN_C1242E: ;$C1242E
 	PLD
 	RTS
 
-.INCLUDE "unknown/C1244C.asm"
+.INCLUDE "unknown/C1/C1244C.asm"
 
 .INCLUDE "text/character_select_prompt.asm"
 
@@ -6728,7 +6728,7 @@ UNKNOWN_C19F29: ;$C19F29
 	PLD
 	RTS
 
-.INCLUDE "unknown/C1A1D8.asm"
+.INCLUDE "unknown/C1/C1A1D8.asm"
 
 UNKNOWN_C1A778: ;$C1A778
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
@@ -6749,7 +6749,7 @@ UNKNOWN_C1A778: ;$C1A778
 	PLD
 	RTL
 
-.INCLUDE "unknown/C1A795.asm"
+.INCLUDE "unknown/C1/C1A795.asm"
 
 UNKNOWN_C1AA18: ;$C1AA18
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
@@ -7211,7 +7211,7 @@ UNKNOWN_C1AD7D: ;$C1AD7D
 
 .INCLUDE "overworld/use_item.asm"
 
-.INCLUDE "unknown/C1B5B6.asm"
+.INCLUDE "unknown/C1/C1B5B6.asm"
 
 UNKNOWN_C1BB06: ;$C1BB06
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
@@ -7976,11 +7976,11 @@ UNKNOWN_C1C046: ;$C1C046
 	PLD
 	RTS
 
-.INCLUDE "unknown/C1C165.asm"
+.INCLUDE "unknown/C1/C1C165.asm"
 
-.INCLUDE "unknown/C1C1BA.asm"
+.INCLUDE "unknown/C1/C1C1BA.asm"
 
-.INCLUDE "unknown/C1C32A.asm"
+.INCLUDE "unknown/C1/C1C32A.asm"
 
 UNKNOWN_C1C367: ;$C1C367
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
@@ -9815,9 +9815,9 @@ REDIRECT_BATTLE_PSI_MENU: ;$C1DE3D
 
 .INCLUDE "battle/enemy_select_mode.asm"
 
-.INCLUDE "unknown/C1E48D.asm"
+.INCLUDE "unknown/C1/C1E48D.asm"
 
-.INCLUDE "unknown/C1E4BE.asm"
+.INCLUDE "unknown/C1/C1E4BE.asm"
 
 .INCLUDE "text/text_input_dialog.asm"
 
@@ -9825,37 +9825,37 @@ REDIRECT_BATTLE_PSI_MENU: ;$C1DE3D
 
 .INCLUDE "intro/name_a_character.asm"
 
-.INCLUDE "unknown/C1EC8F.asm"
+.INCLUDE "unknown/C1/C1EC8F.asm"
 
-.INCLUDE "unknown/C1ECD1.asm"
+.INCLUDE "unknown/C1/C1ECD1.asm"
 
 .INCLUDE "system/saves/corruption_check.asm"
 
 .INCLUDE "intro/file_select_menu.asm"
 
-.INCLUDE "unknown/C1F07E.asm"
+.INCLUDE "unknown/C1/C1F07E.asm"
 
-.INCLUDE "unknown/C1F14F.asm"
+.INCLUDE "unknown/C1/C1F14F.asm"
 
-.INCLUDE "unknown/C1F2A8.asm"
+.INCLUDE "unknown/C1/C1F2A8.asm"
 
 .INCLUDE "intro/file_select/open_text_speed_menu.asm"
 
-.INCLUDE "unknown/C1F497.asm"
+.INCLUDE "unknown/C1/C1F497.asm"
 
 .INCLUDE "intro/file_select/open_sound_menu.asm"
 
-.INCLUDE "unknown/C1F616.asm"
+.INCLUDE "unknown/C1/C1F616.asm"
 
 .INCLUDE "intro/file_select/open_flavour_menu.asm"
 
 .INCLUDE "intro/file_select_menu_loop.asm"
 
-.INCLUDE "unknown/C1FF2C.asm"
+.INCLUDE "unknown/C1/C1FF2C.asm"
 
-.INCLUDE "unknown/C1FF6B.asm"
+.INCLUDE "unknown/C1/C1FF6B.asm"
 
-.INCLUDE "unknown/C1FF99.asm"
+.INCLUDE "unknown/C1/C1FF99.asm"
 
 .INCLUDE "system/antipiracy/sram_check_routine_checksum.asm"
 

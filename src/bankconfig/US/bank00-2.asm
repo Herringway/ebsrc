@@ -16,93 +16,93 @@
 
 .INCLUDE "system/test_sram_size.asm"
 
-.INCLUDE "unknown/C083B8.asm"
+.INCLUDE "unknown/C0/C083B8.asm"
 
-.INCLUDE "unknown/C083C1.asm"
+.INCLUDE "unknown/C0/C083C1.asm"
 
-.INCLUDE "unknown/C083E3.asm"
+.INCLUDE "unknown/C0/C083E3.asm"
 
 .INCLUDE "system/read_joypad2.asm"
 
-.INCLUDE "unknown/C08456.asm"
+.INCLUDE "unknown/C0/C08456.asm"
 
-.INCLUDE "unknown/C08496.asm"
+.INCLUDE "unknown/C0/C08496.asm"
 
-.INCLUDE "unknown/C08501.asm"
+.INCLUDE "unknown/C0/C08501.asm"
 
-.INCLUDE "unknown/C08518.asm"
+.INCLUDE "unknown/C0/C08518.asm"
 
-.INCLUDE "unknown/C0851C.asm"
+.INCLUDE "unknown/C0/C0851C.asm"
 
-.INCLUDE "unknown/C08522.asm"
+.INCLUDE "unknown/C0/C08522.asm"
 
-.INCLUDE "unknown/C08529.asm"
+.INCLUDE "unknown/C0/C08529.asm"
 
-.INCLUDE "unknown/C0856B.asm"
+.INCLUDE "unknown/C0/C0856B.asm"
 
-.INCLUDE "unknown/C08573.asm"
+.INCLUDE "unknown/C0/C08573.asm"
 
 .INCLUDE "system/transfer_to_vram.asm"
 
-.INCLUDE "unknown/C08616.asm"
+.INCLUDE "unknown/C0/C08616.asm"
 
 .INCLUDE "system/copy_to_vram_redirect.asm"
 
 .INCLUDE "system/copy_to_vram.asm"
 
-.INCLUDE "unknown/C086DE.asm"
+.INCLUDE "unknown/C0/C086DE.asm"
 
 .INCLUDE "system/enable_nmi_joypad.asm"
 
-.INCLUDE "unknown/C08726.asm"
+.INCLUDE "unknown/C0/C08726.asm"
 
-.INCLUDE "unknown/C08744.asm"
+.INCLUDE "unknown/C0/C08744.asm"
 
 .INCLUDE "system/read_joypad.asm"
 
-.INCLUDE "unknown/C0878B.asm"
+.INCLUDE "unknown/C0/C0878B.asm"
 
-.INCLUDE "unknown/C0879D_redirect.asm"
+.INCLUDE "unknown/C0/C0879D_redirect.asm"
 
-.INCLUDE "unknown/C0879D.asm"
+.INCLUDE "unknown/C0/C0879D.asm"
 
-.INCLUDE "unknown/C087AB_redirect.asm"
+.INCLUDE "unknown/C0/C087AB_redirect.asm"
 
-.INCLUDE "unknown/C087AB.asm"
+.INCLUDE "unknown/C0/C087AB.asm"
 
-.INCLUDE "unknown/C087CE.asm"
+.INCLUDE "unknown/C0/C087CE.asm"
 
-.INCLUDE "unknown/C08814.asm"
+.INCLUDE "unknown/C0/C08814.asm"
 
-.INCLUDE "unknown/C0886C.asm"
+.INCLUDE "unknown/C0/C0886C.asm"
 
-.INCLUDE "unknown/C0887A.asm"
+.INCLUDE "unknown/C0/C0887A.asm"
 
-.INCLUDE "unknown/C0888B.asm"
+.INCLUDE "unknown/C0/C0888B.asm"
 
-.INCLUDE "unknown/C088A5.asm"
+.INCLUDE "unknown/C0/C088A5.asm"
 
 .INCLUDE "system/oam_clear.asm"
 
-.INCLUDE "unknown/C08B19.asm"
+.INCLUDE "unknown/C0/C08B19.asm"
 
-.INCLUDE "unknown/C08B8E.asm"
+.INCLUDE "unknown/C0/C08B8E.asm"
 
-.INCLUDE "unknown/C08C53.asm"
+.INCLUDE "unknown/C0/C08C53.asm"
 
-.INCLUDE "unknown/C08C54.asm"
+.INCLUDE "unknown/C0/C08C54.asm"
 
-.INCLUDE "unknown/C08C58.asm"
+.INCLUDE "unknown/C0/C08C58.asm"
 
-.INCLUDE "unknown/C08C87.asm"
+.INCLUDE "unknown/C0/C08C87.asm"
 
-.INCLUDE "unknown/C08CA1.asm"
+.INCLUDE "unknown/C0/C08CA1.asm"
 
-.INCLUDE "unknown/C08CBB.asm"
+.INCLUDE "unknown/C0/C08CBB.asm"
 
-.INCLUDE "unknown/C08CD5.asm"
+.INCLUDE "unknown/C0/C08CD5.asm"
 
-.INCLUDE "unknown/C08D79.asm"
+.INCLUDE "unknown/C0/C08D79.asm"
 
 .INCLUDE "system/set_oam_size.asm"
 
@@ -128,11 +128,11 @@
 
 .INCLUDE "system/strcmp.asm"
 
-.INCLUDE "unknown/C08F42.asm"
+.INCLUDE "unknown/C0/C08F42.asm"
 
-.INCLUDE "unknown/C08F68.asm"
+.INCLUDE "unknown/C0/C08F68.asm"
 
-.INCLUDE "unknown/C08F8B.asm"
+.INCLUDE "unknown/C0/C08F8B.asm"
 
 .INCLUDE "data/unknown/C08F98.asm"
 
@@ -182,21 +182,21 @@
 
 .INCLUDE "system/math/asr32.asm"
 
-.INCLUDE "unknown/C09279.asm"
+.INCLUDE "unknown/C0/C09279.asm"
 
-.INCLUDE "unknown/C0927C.asm"
+.INCLUDE "unknown/C0/C0927C.asm"
 
-.INCLUDE "unknown/C092F5.asm"
+.INCLUDE "unknown/C0/C092F5.asm"
 
-.INCLUDE "unknown/C0943C.asm"
+.INCLUDE "unknown/C0/C0943C.asm"
 
-.INCLUDE "unknown/C09451.asm"
+.INCLUDE "unknown/C0/C09451.asm"
 
-.INCLUDE "unknown/C09466.asm"
+.INCLUDE "unknown/C0/C09466.asm"
 
-.INCLUDE "unknown/C094D0.asm"
+.INCLUDE "unknown/C0/C094D0.asm"
 
-.INCLUDE "unknown/C09506.asm"
+.INCLUDE "unknown/C0/C09506.asm"
 
 .INCLUDE "data/movement_control_codes_pointer_table.asm"
 
@@ -266,7 +266,7 @@
 
 .INCLUDE "overworld/movement_codes/39.asm"
 
-.INCLUDE "unknown/C09907.asm"
+.INCLUDE "unknown/C0/C09907.asm"
 
 .INCLUDE "overworld/movement_codes/3A.asm"
 
@@ -308,11 +308,11 @@
 
 .INCLUDE "data/unknown/C09ABD.asm"
 
-.INCLUDE "unknown/C09ACC.asm"
+.INCLUDE "unknown/C0/C09ACC.asm"
 
-.INCLUDE "unknown/C09AD3.asm"
+.INCLUDE "unknown/C0/C09AD3.asm"
 
-.INCLUDE "unknown/C09ADB.asm"
+.INCLUDE "unknown/C0/C09ADB.asm"
 
 .INCLUDE "overworld/movement_codes/0E.asm"
 
@@ -350,35 +350,35 @@
 
 .INCLUDE "overworld/movement_codes/25.asm"
 
-.INCLUDE "unknown/C09C02.asm"
+.INCLUDE "unknown/C0/C09C02.asm"
 
-.INCLUDE "unknown/C09C35.asm"
+.INCLUDE "unknown/C0/C09C35.asm"
 
-.INCLUDE "unknown/C09C3B.asm"
+.INCLUDE "unknown/C0/C09C3B.asm"
 
-.INCLUDE "unknown/C09C57.asm"
+.INCLUDE "unknown/C0/C09C57.asm"
 
-.INCLUDE "unknown/C09C73.asm"
+.INCLUDE "unknown/C0/C09C73.asm"
 
-.INCLUDE "unknown/C09C8F.asm"
+.INCLUDE "unknown/C0/C09C8F.asm"
 
-.INCLUDE "unknown/C09C99.asm"
+.INCLUDE "unknown/C0/C09C99.asm"
 
-.INCLUDE "unknown/C09CB5.asm"
+.INCLUDE "unknown/C0/C09CB5.asm"
 
-.INCLUDE "unknown/C09CD7.asm"
+.INCLUDE "unknown/C0/C09CD7.asm"
 
-.INCLUDE "unknown/C09D03.asm"
+.INCLUDE "unknown/C0/C09D03.asm"
 
-.INCLUDE "unknown/C09D12.asm"
+.INCLUDE "unknown/C0/C09D12.asm"
 
-.INCLUDE "unknown/C09D1F.asm"
+.INCLUDE "unknown/C0/C09D1F.asm"
 
-.INCLUDE "unknown/C09D3E.asm"
+.INCLUDE "unknown/C0/C09D3E.asm"
 
-.INCLUDE "unknown/C09D60.asm"
+.INCLUDE "unknown/C0/C09D60.asm"
 
-.INCLUDE "unknown/C09D78.asm"
+.INCLUDE "unknown/C0/C09D78.asm"
 
 .INCLUDE "overworld/movement_data_read8.asm"
 
@@ -390,97 +390,97 @@
 
 .INCLUDE "overworld/jump_to_loaded_movement_pointer.asm"
 
-.INCLUDE "unknown/C09DA1.asm"
+.INCLUDE "unknown/C0/C09DA1.asm"
 
-.INCLUDE "unknown/C09DAE.asm"
+.INCLUDE "unknown/C0/C09DAE.asm"
 
-.INCLUDE "unknown/C09E71.asm"
+.INCLUDE "unknown/C0/C09E71.asm"
 
-.INCLUDE "unknown/C09E79.asm"
+.INCLUDE "unknown/C0/C09E79.asm"
 
-.INCLUDE "unknown/C09E98.asm"
+.INCLUDE "unknown/C0/C09E98.asm"
 
-.INCLUDE "unknown/C09EAC.asm"
+.INCLUDE "unknown/C0/C09EAC.asm"
 
-.INCLUDE "unknown/C09ECE.asm"
+.INCLUDE "unknown/C0/C09ECE.asm"
 
-.INCLUDE "unknown/C09EFF.asm"
+.INCLUDE "unknown/C0/C09EFF.asm"
 
-.INCLUDE "unknown/C09F3B.asm"
+.INCLUDE "unknown/C0/C09F3B.asm"
 
-.INCLUDE "unknown/C09F71.asm"
+.INCLUDE "unknown/C0/C09F71.asm"
 
-.INCLUDE "unknown/C09F82.asm"
+.INCLUDE "unknown/C0/C09F82.asm"
 
-.INCLUDE "unknown/C09FA8.asm"
+.INCLUDE "unknown/C0/C09FA8.asm"
 
-.INCLUDE "unknown/C09FAE.asm"
+.INCLUDE "unknown/C0/C09FAE.asm"
 
-.INCLUDE "unknown/C09FF1.asm"
+.INCLUDE "unknown/C0/C09FF1.asm"
 
-.INCLUDE "unknown/C0A00C.asm"
+.INCLUDE "unknown/C0/C0A00C.asm"
 
-.INCLUDE "unknown/C0A023.asm"
+.INCLUDE "unknown/C0/C0A023.asm"
 
-.INCLUDE "unknown/C0A03A.asm"
+.INCLUDE "unknown/C0/C0A03A.asm"
 
-.INCLUDE "unknown/C0A055.asm"
+.INCLUDE "unknown/C0/C0A055.asm"
 
-.INCLUDE "unknown/C0A06C.asm"
+.INCLUDE "unknown/C0/C0A06C.asm"
 
-.INCLUDE "unknown/C0A089.asm"
+.INCLUDE "unknown/C0/C0A089.asm"
 
-.INCLUDE "unknown/C0A0A0.asm"
+.INCLUDE "unknown/C0/C0A0A0.asm"
 
-.INCLUDE "unknown/C0A0BB.asm"
+.INCLUDE "unknown/C0/C0A0BB.asm"
 
-.INCLUDE "unknown/C0A0CA.asm"
+.INCLUDE "unknown/C0/C0A0CA.asm"
 
-.INCLUDE "unknown/C0A0E3.asm"
+.INCLUDE "unknown/C0/C0A0E3.asm"
 
-.INCLUDE "unknown/C0A0FA.asm"
+.INCLUDE "unknown/C0/C0A0FA.asm"
 
 .INCLUDE "system/check_hardware.asm"
 
-.INCLUDE "unknown/C0A156_redirect.asm"
+.INCLUDE "unknown/C0/C0A156_redirect.asm"
 
-.INCLUDE "unknown/C0A156.asm"
+.INCLUDE "unknown/C0/C0A156.asm"
 
 .INCLUDE "data/unknown/C0A1AE.asm"
 
-.INCLUDE "unknown/C0A1CE.asm"
+.INCLUDE "unknown/C0/C0A1CE.asm"
 
-.INCLUDE "unknown/C0A1F2.asm"
+.INCLUDE "unknown/C0/C0A1F2.asm"
 
 .INCLUDE "data/unknown/C0A20C.asm"
 
-.INCLUDE "unknown/C0A21C.asm"
+.INCLUDE "unknown/C0/C0A21C.asm"
 
-.INCLUDE "unknown/C0A230.asm"
+.INCLUDE "unknown/C0/C0A230.asm"
 
-.INCLUDE "unknown/C0A254.asm"
+.INCLUDE "unknown/C0/C0A254.asm"
 
-.INCLUDE "unknown/C0A26B.asm"
+.INCLUDE "unknown/C0/C0A26B.asm"
 
 .INCLUDE "data/unknown/C0A2AB.asm"
 
-.INCLUDE "unknown/C0A2B7.asm"
+.INCLUDE "unknown/C0/C0A2B7.asm"
 
-.INCLUDE "unknown/C0A2E1.asm"
+.INCLUDE "unknown/C0/C0A2E1.asm"
 
 .INCLUDE "data/unknown/C0A30B.asm"
 
-.INCLUDE "unknown/C0A317.asm"
+.INCLUDE "unknown/C0/C0A317.asm"
 
 .INCLUDE "data/unknown/C0A350.asm"
 
-.INCLUDE "unknown/C0A360.asm"
+.INCLUDE "unknown/C0/C0A360.asm"
 
-.INCLUDE "unknown/C0A384.asm"
+.INCLUDE "unknown/C0/C0A384.asm"
 
-.INCLUDE "unknown/C0A3A4.asm"
+.INCLUDE "unknown/C0/C0A3A4.asm"
 
-.INCLUDE "unknown/C0A56E.asm"
+.INCLUDE "unknown/C0/C0A56E.asm"
 
 .INCLUDE "data/unknown/C0A60B.asm"
 
@@ -488,155 +488,155 @@
 
 .INCLUDE "system/math/rand_0_7.asm"
 
-.INCLUDE "unknown/C0A643.asm"
+.INCLUDE "unknown/C0/C0A643.asm"
 
-.INCLUDE "unknown/C0A651.asm"
+.INCLUDE "unknown/C0/C0A651.asm"
 
-.INCLUDE "unknown/C0A65F.asm"
+.INCLUDE "unknown/C0/C0A65F.asm"
 
-.INCLUDE "unknown/C0A66D.asm"
+.INCLUDE "unknown/C0/C0A66D.asm"
 
-.INCLUDE "unknown/C0A673.asm"
+.INCLUDE "unknown/C0/C0A673.asm"
 
-.INCLUDE "unknown/C0A679.asm"
+.INCLUDE "unknown/C0/C0A679.asm"
 
-.INCLUDE "unknown/C0A685.asm"
+.INCLUDE "unknown/C0/C0A685.asm"
 
-.INCLUDE "unknown/C0A691.asm"
+.INCLUDE "unknown/C0/C0A691.asm"
 
-.INCLUDE "unknown/C0A697.asm"
+.INCLUDE "unknown/C0/C0A697.asm"
 
-.INCLUDE "unknown/C0A6A2.asm"
+.INCLUDE "unknown/C0/C0A6A2.asm"
 
-.INCLUDE "unknown/C0A6AD.asm"
+.INCLUDE "unknown/C0/C0A6AD.asm"
 
-.INCLUDE "unknown/C0A6B8.asm"
+.INCLUDE "unknown/C0/C0A6B8.asm"
 
-.INCLUDE "unknown/C0A6C5.asm"
+.INCLUDE "unknown/C0/C0A6C5.asm"
 
-.INCLUDE "unknown/C0A6CB.asm"
+.INCLUDE "unknown/C0/C0A6CB.asm"
 
-.INCLUDE "unknown/C0A6D1.asm"
+.INCLUDE "unknown/C0/C0A6D1.asm"
 
-.INCLUDE "unknown/C0A6DA.asm"
+.INCLUDE "unknown/C0/C0A6DA.asm"
 
-.INCLUDE "unknown/C0A6E3.asm"
+.INCLUDE "unknown/C0/C0A6E3.asm"
 
-.INCLUDE "unknown/C0A780.asm"
+.INCLUDE "unknown/C0/C0A780.asm"
 
-.INCLUDE "unknown/C0A794.asm"
+.INCLUDE "unknown/C0/C0A794.asm"
 
-.INCLUDE "unknown/C0A82F.asm"
+.INCLUDE "unknown/C0/C0A82F.asm"
 
-.INCLUDE "unknown/C0A838.asm"
+.INCLUDE "unknown/C0/C0A838.asm"
 
-.INCLUDE "unknown/C0A841.asm"
+.INCLUDE "unknown/C0/C0A841.asm"
 
-.INCLUDE "unknown/C0A84C.asm"
+.INCLUDE "unknown/C0/C0A84C.asm"
 
-.INCLUDE "unknown/C0A857.asm"
+.INCLUDE "unknown/C0/C0A857.asm"
 
-.INCLUDE "unknown/C0A864.asm"
+.INCLUDE "unknown/C0/C0A864.asm"
 
-.INCLUDE "unknown/C0A86F.asm"
+.INCLUDE "unknown/C0/C0A86F.asm"
 
-.INCLUDE "unknown/C0A87A.asm"
+.INCLUDE "unknown/C0/C0A87A.asm"
 
-.INCLUDE "unknown/C0A88D.asm"
+.INCLUDE "unknown/C0/C0A88D.asm"
 
-.INCLUDE "unknown/C0A8A0.asm"
+.INCLUDE "unknown/C0/C0A8A0.asm"
 
-.INCLUDE "unknown/C0A8B3.asm"
+.INCLUDE "unknown/C0/C0A8B3.asm"
 
-.INCLUDE "unknown/C0A8C6.asm"
+.INCLUDE "unknown/C0/C0A8C6.asm"
 
-.INCLUDE "unknown/C0A8D1.asm"
+.INCLUDE "unknown/C0/C0A8D1.asm"
 
-.INCLUDE "unknown/C0A8DC.asm"
+.INCLUDE "unknown/C0/C0A8DC.asm"
 
-.INCLUDE "unknown/C0A8E7.asm"
+.INCLUDE "unknown/C0/C0A8E7.asm"
 
-.INCLUDE "unknown/C0A8EF.asm"
+.INCLUDE "unknown/C0/C0A8EF.asm"
 
-.INCLUDE "unknown/C0A8F7.asm"
+.INCLUDE "unknown/C0/C0A8F7.asm"
 
-.INCLUDE "unknown/C0A8FF.asm"
+.INCLUDE "unknown/C0/C0A8FF.asm"
 
-.INCLUDE "unknown/C0A907.asm"
+.INCLUDE "unknown/C0/C0A907.asm"
 
-.INCLUDE "unknown/C0A912.asm"
+.INCLUDE "unknown/C0/C0A912.asm"
 
-.INCLUDE "unknown/C0A92D.asm"
+.INCLUDE "unknown/C0/C0A92D.asm"
 
-.INCLUDE "unknown/C0A938.asm"
+.INCLUDE "unknown/C0/C0A938.asm"
 
-.INCLUDE "unknown/C0A943.asm"
+.INCLUDE "unknown/C0/C0A943.asm"
 
-.INCLUDE "unknown/C0A94E.asm"
+.INCLUDE "unknown/C0/C0A94E.asm"
 
-.INCLUDE "unknown/C0A959.asm"
+.INCLUDE "unknown/C0/C0A959.asm"
 
-.INCLUDE "unknown/C0A964.asm"
+.INCLUDE "unknown/C0/C0A964.asm"
 
 .INCLUDE "battle/load_battlebg_movement.asm"
 
-.INCLUDE "unknown/C0A98B.asm"
+.INCLUDE "unknown/C0/C0A98B.asm"
 
-.INCLUDE "unknown/C0A99F.asm"
+.INCLUDE "unknown/C0/C0A99F.asm"
 
-.INCLUDE "unknown/C0A9B3.asm"
+.INCLUDE "unknown/C0/C0A9B3.asm"
 
-.INCLUDE "unknown/C0A9CF.asm"
+.INCLUDE "unknown/C0/C0A9CF.asm"
 
-.INCLUDE "unknown/C0A9EB.asm"
+.INCLUDE "unknown/C0/C0A9EB.asm"
 
-.INCLUDE "unknown/C0AA07.asm"
+.INCLUDE "unknown/C0/C0AA07.asm"
 
-.INCLUDE "unknown/C0AA23.asm"
+.INCLUDE "unknown/C0/C0AA23.asm"
 
-.INCLUDE "unknown/C0AA3F.asm"
+.INCLUDE "unknown/C0/C0AA3F.asm"
 
-.INCLUDE "unknown/C0AA6E.asm"
+.INCLUDE "unknown/C0/C0AA6E.asm"
 
-.INCLUDE "unknown/C0AAAC.asm"
+.INCLUDE "unknown/C0/C0AAAC.asm"
 
-.INCLUDE "unknown/C0AAB5.asm"
+.INCLUDE "unknown/C0/C0AAB5.asm"
 
-.INCLUDE "unknown/C0AACD.asm"
+.INCLUDE "unknown/C0/C0AACD.asm"
 
-.INCLUDE "unknown/C0AAD1.asm"
+.INCLUDE "unknown/C0/C0AAD1.asm"
 
-.INCLUDE "unknown/C0AAD5.asm"
+.INCLUDE "unknown/C0/C0AAD5.asm"
 
-.INCLUDE "unknown/C0AAFD.asm"
+.INCLUDE "unknown/C0/C0AAFD.asm"
 
 .INCLUDE "audio/load_spc700_data.asm"
 
 .INCLUDE "audio/wait_for_spc700.asm"
 
-.INCLUDE "unknown/C0ABBD.asm"
+.INCLUDE "unknown/C0/C0ABBD.asm"
 
 .INCLUDE "audio/stop_music.asm"
 
 .INCLUDE "audio/play_sound.asm"
 
-.INCLUDE "unknown/C0AC0C.asm"
+.INCLUDE "unknown/C0/C0AC0C.asm"
 
-.INCLUDE "unknown/C0AC20.asm"
+.INCLUDE "unknown/C0/C0AC20.asm"
 
 .INCLUDE "data/stereo_mono_data.asm"
 
-.INCLUDE "unknown/C0AC3A.asm"
+.INCLUDE "unknown/C0/C0AC3A.asm"
 
-.INCLUDE "unknown/C0AC43.asm"
+.INCLUDE "unknown/C0/C0AC43.asm"
 
-.INCLUDE "unknown/C0AD56.asm"
+.INCLUDE "unknown/C0/C0AD56.asm"
 
 .INCLUDE "data/movements/patterns/786.asm"
 
-.INCLUDE "unknown/C0AD9F.asm"
+.INCLUDE "unknown/C0/C0AD9F.asm"
 
-.INCLUDE "unknown/C0ADB2.asm"
+.INCLUDE "unknown/C0/C0ADB2.asm"
 
 .INCLUDE "data/unknown/C0AE16.asm"
 
@@ -646,13 +646,13 @@
 
 .INCLUDE "data/unknown/C0AE2D.asm"
 
-.INCLUDE "unknown/C0AE34.asm"
+.INCLUDE "unknown/C0/C0AE34.asm"
 
 .INCLUDE "data/unknown/C0AE44.asm"
 
-.INCLUDE "unknown/C0AE5A.asm"
+.INCLUDE "unknown/C0/C0AE5A.asm"
 
-.INCLUDE "unknown/C0AFCD.asm"
+.INCLUDE "unknown/C0/C0AFCD.asm"
 
 .INCLUDE "data/unknown/C0AFF1.asm"
 
@@ -664,13 +664,13 @@
 
 .INCLUDE "data/unknown/C0B0A6.asm"
 
-.INCLUDE "unknown/C0B0AA.asm"
+.INCLUDE "unknown/C0/C0B0AA.asm"
 
-.INCLUDE "unknown/C0B0B8.asm"
+.INCLUDE "unknown/C0/C0B0B8.asm"
 
-.INCLUDE "unknown/C0B0EF.asm"
+.INCLUDE "unknown/C0/C0B0EF.asm"
 
-.INCLUDE "unknown/C0B149.asm"
+.INCLUDE "unknown/C0/C0B149.asm"
 
 .INCLUDE "data/unknown/C0B2FF.asm"
 
@@ -682,9 +682,9 @@
 
 .INCLUDE "system/file_select_init.asm"
 
-.INCLUDE "unknown/C0B65F.asm"
+.INCLUDE "unknown/C0/C0B65F.asm"
 
-.INCLUDE "unknown/C0B67F.asm"
+.INCLUDE "unknown/C0/C0B67F.asm"
 
 .INCLUDE "battle/init_overworld.asm"
 
@@ -692,219 +692,219 @@
 
 .INCLUDE "system/game_init.asm"
 
-.INCLUDE "unknown/C0B9BC.asm"
+.INCLUDE "unknown/C0/C0B9BC.asm"
 
-.INCLUDE "unknown/C0BA35.asm"
+.INCLUDE "unknown/C0/C0BA35.asm"
 
-.INCLUDE "unknown/C0BC74.asm"
+.INCLUDE "unknown/C0/C0BC74.asm"
 
-.INCLUDE "unknown/C0BD96.asm"
+.INCLUDE "unknown/C0/C0BD96.asm"
 
-.INCLUDE "unknown/C0BF72.asm"
+.INCLUDE "unknown/C0/C0BF72.asm"
 
-.INCLUDE "unknown/C0C0B4.asm"
+.INCLUDE "unknown/C0/C0C0B4.asm"
 
-.INCLUDE "unknown/C0C19B.asm"
+.INCLUDE "unknown/C0/C0C19B.asm"
 
-.INCLUDE "unknown/C0C251.asm"
+.INCLUDE "unknown/C0/C0C251.asm"
 
-.INCLUDE "unknown/C0C30C.asm"
+.INCLUDE "unknown/C0/C0C30C.asm"
 
-.INCLUDE "unknown/C0C353.asm"
+.INCLUDE "unknown/C0/C0C353.asm"
 
-.INCLUDE "unknown/C0C35D.asm"
+.INCLUDE "unknown/C0/C0C35D.asm"
 
-.INCLUDE "unknown/C0C363.asm"
+.INCLUDE "unknown/C0/C0C363.asm"
 
-.INCLUDE "unknown/C0C3F9.asm"
+.INCLUDE "unknown/C0/C0C3F9.asm"
 
-.INCLUDE "unknown/C0C48F.asm"
+.INCLUDE "unknown/C0/C0C48F.asm"
 
-.INCLUDE "unknown/C0C4AF.asm"
+.INCLUDE "unknown/C0/C0C4AF.asm"
 
 .INCLUDE "data/unknown/C0C4CF.asm"
 
 .INCLUDE "data/unknown/C0C4E7.asm"
 
-.INCLUDE "unknown/C0C4F7.asm"
+.INCLUDE "unknown/C0/C0C4F7.asm"
 
-.INCLUDE "unknown/C0C524.asm"
+.INCLUDE "unknown/C0/C0C524.asm"
 
-.INCLUDE "unknown/C0C608.asm"
+.INCLUDE "unknown/C0/C0C608.asm"
 
-.INCLUDE "unknown/C0C615.asm"
+.INCLUDE "unknown/C0/C0C615.asm"
 
-.INCLUDE "unknown/C0C62B.asm"
+.INCLUDE "unknown/C0/C0C62B.asm"
 
-.INCLUDE "unknown/C0C682.asm"
+.INCLUDE "unknown/C0/C0C682.asm"
 
-.INCLUDE "unknown/C0C69E.asm"
+.INCLUDE "unknown/C0/C0C69E.asm"
 
-.INCLUDE "unknown/C0C6B6.asm"
+.INCLUDE "unknown/C0/C0C6B6.asm"
 
-.INCLUDE "unknown/C0C711.asm"
+.INCLUDE "unknown/C0/C0C711.asm"
 
-.INCLUDE "unknown/C0C760.asm"
+.INCLUDE "unknown/C0/C0C760.asm"
 
-.INCLUDE "unknown/C0C7AC.asm"
+.INCLUDE "unknown/C0/C0C7AC.asm"
 
-.INCLUDE "unknown/C0C7DB.asm"
+.INCLUDE "unknown/C0/C0C7DB.asm"
 
-.INCLUDE "unknown/C0C808.asm"
+.INCLUDE "unknown/C0/C0C808.asm"
 
-.INCLUDE "unknown/C0C83B.asm"
+.INCLUDE "unknown/C0/C0C83B.asm"
 
-.INCLUDE "unknown/C0CA4E.asm"
+.INCLUDE "unknown/C0/C0CA4E.asm"
 
-.INCLUDE "unknown/C0CBD3.asm"
+.INCLUDE "unknown/C0/C0CBD3.asm"
 
-.INCLUDE "unknown/C0CC11.asm"
+.INCLUDE "unknown/C0/C0CC11.asm"
 
-.INCLUDE "unknown/C0CCCC.asm"
+.INCLUDE "unknown/C0/C0CCCC.asm"
 
-.INCLUDE "unknown/C0CD50.asm"
+.INCLUDE "unknown/C0/C0CD50.asm"
 
-.INCLUDE "unknown/C0CEBE.asm"
+.INCLUDE "unknown/C0/C0CEBE.asm"
 
 .INCLUDE "data/unknown/C0CF58.asm"
 
-.INCLUDE "unknown/C0CF97.asm"
+.INCLUDE "unknown/C0/C0CF97.asm"
 
-.INCLUDE "unknown/C0D0D9.asm"
+.INCLUDE "unknown/C0/C0D0D9.asm"
 
-.INCLUDE "unknown/C0D0E6.asm"
+.INCLUDE "unknown/C0/C0D0E6.asm"
 
-.INCLUDE "unknown/C0D15C.asm"
+.INCLUDE "unknown/C0/C0D15C.asm"
 
-.INCLUDE "unknown/C0D195.asm"
+.INCLUDE "unknown/C0/C0D195.asm"
 
-.INCLUDE "unknown/C0D19B.asm"
+.INCLUDE "unknown/C0/C0D19B.asm"
 
-.INCLUDE "unknown/C0D4DE.asm"
+.INCLUDE "unknown/C0/C0D4DE.asm"
 
-.INCLUDE "unknown/C0D59B.asm"
+.INCLUDE "unknown/C0/C0D59B.asm"
 
-.INCLUDE "unknown/C0D5B0.asm"
+.INCLUDE "unknown/C0/C0D5B0.asm"
 
-.INCLUDE "unknown/C0D77F.asm"
+.INCLUDE "unknown/C0/C0D77F.asm"
 
-.INCLUDE "unknown/C0D7B3.asm"
+.INCLUDE "unknown/C0/C0D7B3.asm"
 
-.INCLUDE "unknown/C0D7C7.asm"
+.INCLUDE "unknown/C0/C0D7C7.asm"
 
-.INCLUDE "unknown/C0D7E0.asm"
+.INCLUDE "unknown/C0/C0D7E0.asm"
 
-.INCLUDE "unknown/C0D7F7.asm"
+.INCLUDE "unknown/C0/C0D7F7.asm"
 
-.INCLUDE "unknown/C0D98F.asm"
+.INCLUDE "unknown/C0/C0D98F.asm"
 
-.INCLUDE "unknown/C0DA31.asm"
+.INCLUDE "unknown/C0/C0DA31.asm"
 
-.INCLUDE "unknown/C0DB0F.asm"
+.INCLUDE "unknown/C0/C0DB0F.asm"
 
-.INCLUDE "unknown/C0DBE6.asm"
+.INCLUDE "unknown/C0/C0DBE6.asm"
 
-.INCLUDE "unknown/C0DC38.asm"
+.INCLUDE "unknown/C0/C0DC38.asm"
 
-.INCLUDE "unknown/C0DC4E.asm"
+.INCLUDE "unknown/C0/C0DC4E.asm"
 
 .INCLUDE "overworld/load_dad_phone.asm"
 
-.INCLUDE "unknown/C0DD0F.asm"
+.INCLUDE "unknown/C0/C0DD0F.asm"
 
-.INCLUDE "unknown/C0DD2C.asm"
+.INCLUDE "unknown/C0/C0DD2C.asm"
 
 .INCLUDE "overworld/set_teleport_state.asm"
 
-.INCLUDE "unknown/C0DD79.asm"
+.INCLUDE "unknown/C0/C0DD79.asm"
 
-.INCLUDE "unknown/C0DE16.asm"
+.INCLUDE "unknown/C0/C0DE16.asm"
 
-.INCLUDE "unknown/C0DE46.asm"
+.INCLUDE "unknown/C0/C0DE46.asm"
 
-.INCLUDE "unknown/C0DE7C.asm"
+.INCLUDE "unknown/C0/C0DE7C.asm"
 
-.INCLUDE "unknown/C0DED9.asm"
+.INCLUDE "unknown/C0/C0DED9.asm"
 
-.INCLUDE "unknown/C0DF22.asm"
+.INCLUDE "unknown/C0/C0DF22.asm"
 
-.INCLUDE "unknown/C0E196.asm"
+.INCLUDE "unknown/C0/C0E196.asm"
 
-.INCLUDE "unknown/C0E214.asm"
+.INCLUDE "unknown/C0/C0E214.asm"
 
-.INCLUDE "unknown/C0E254.asm"
+.INCLUDE "unknown/C0/C0E254.asm"
 
-.INCLUDE "unknown/C0E28F.asm"
+.INCLUDE "unknown/C0/C0E28F.asm"
 
-.INCLUDE "unknown/C0E3C1.asm"
+.INCLUDE "unknown/C0/C0E3C1.asm"
 
-.INCLUDE "unknown/C0E44D.asm"
+.INCLUDE "unknown/C0/C0E44D.asm"
 
-.INCLUDE "unknown/C0E48A.asm"
+.INCLUDE "unknown/C0/C0E48A.asm"
 
-.INCLUDE "unknown/C0E516.asm"
+.INCLUDE "unknown/C0/C0E516.asm"
 
-.INCLUDE "unknown/C0E674.asm"
+.INCLUDE "unknown/C0/C0E674.asm"
 
-.INCLUDE "unknown/C0E6FE.asm"
+.INCLUDE "unknown/C0/C0E6FE.asm"
 
-.INCLUDE "unknown/C0E776.asm"
+.INCLUDE "unknown/C0/C0E776.asm"
 
-.INCLUDE "unknown/C0E815.asm"
+.INCLUDE "unknown/C0/C0E815.asm"
 
-.INCLUDE "unknown/C0E897.asm"
+.INCLUDE "unknown/C0/C0E897.asm"
 
-.INCLUDE "unknown/C0E979.asm"
+.INCLUDE "unknown/C0/C0E979.asm"
 
-.INCLUDE "unknown/C0E97C.asm"
+.INCLUDE "unknown/C0/C0E97C.asm"
 
-.INCLUDE "unknown/C0E9BA.asm"
+.INCLUDE "unknown/C0/C0E9BA.asm"
 
-.INCLUDE "unknown/C0EA3E.asm"
+.INCLUDE "unknown/C0/C0EA3E.asm"
 
-.INCLUDE "unknown/C0EA68.asm"
+.INCLUDE "unknown/C0/C0EA68.asm"
 
-.INCLUDE "unknown/C0EA99.asm"
+.INCLUDE "unknown/C0/C0EA99.asm"
 
-.INCLUDE "unknown/C0EBE0.asm"
+.INCLUDE "unknown/C0/C0EBE0.asm"
 
-.INCLUDE "unknown/C0EC77.asm"
+.INCLUDE "unknown/C0/C0EC77.asm"
 
-.INCLUDE "unknown/C0ECB7.asm"
+.INCLUDE "unknown/C0/C0ECB7.asm"
 
-.INCLUDE "unknown/C0ED14.asm"
+.INCLUDE "unknown/C0/C0ED14.asm"
 
-.INCLUDE "unknown/C0ED39.asm"
+.INCLUDE "unknown/C0/C0ED39.asm"
 
-.INCLUDE "unknown/C0ED5C.asm"
+.INCLUDE "unknown/C0/C0ED5C.asm"
 
-.INCLUDE "unknown/C0EDD1.asm"
+.INCLUDE "unknown/C0/C0EDD1.asm"
 
-.INCLUDE "unknown/C0EDDA.asm"
+.INCLUDE "unknown/C0/C0EDDA.asm"
 
-.INCLUDE "unknown/C0EE47.asm"
+.INCLUDE "unknown/C0/C0EE47.asm"
 
-.INCLUDE "unknown/C0EE53.asm"
+.INCLUDE "unknown/C0/C0EE53.asm"
 
 .INCLUDE "intro/logo_screen_load.asm"
 
-.INCLUDE "unknown/C0EFE1.asm"
+.INCLUDE "unknown/C0/C0EFE1.asm"
 
 .INCLUDE "intro/logo_screen.asm"
 
 .INCLUDE "intro/gas_station_load.asm"
 
-.INCLUDE "unknown/C0F1D2.asm"
+.INCLUDE "unknown/C0/C0F1D2.asm"
 
-.INCLUDE "unknown/C0F21E.asm"
+.INCLUDE "unknown/C0/C0F21E.asm"
 
 .INCLUDE "intro/gas_station.asm"
 
-.INCLUDE "unknown/C0F3B2.asm"
+.INCLUDE "unknown/C0/C0F3B2.asm"
 
-.INCLUDE "unknown/C0F3E8.asm"
+.INCLUDE "unknown/C0/C0F3E8.asm"
 
-.INCLUDE "unknown/C0F41E.asm"
+.INCLUDE "unknown/C0/C0F41E.asm"
 
 .SEGMENT "HEADER"
 snes_header:

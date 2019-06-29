@@ -7,29 +7,29 @@
 
 .INCLUDE "battle/enemy_flashing_on.asm"
 
-.INCLUDE "unknown/EF00BB.asm"
+.INCLUDE "unknown/EF/EF00BB.asm"
 
-.INCLUDE "unknown/EF00E6.asm"
+.INCLUDE "unknown/EF/EF00E6.asm"
 
-.INCLUDE "unknown/EF0115.asm"
+.INCLUDE "unknown/EF/EF0115.asm"
 
-.INCLUDE "unknown/EF016F.asm"
+.INCLUDE "unknown/EF/EF016F.asm"
 
-.INCLUDE "unknown/EF01D2.asm"
+.INCLUDE "unknown/EF/EF01D2.asm"
 
 .INCLUDE "audio/pause_music.asm"
 
-.INCLUDE "unknown/EF0262.asm"
+.INCLUDE "unknown/EF/EF0262.asm"
 
 .INCLUDE "audio/resume_music.asm"
 
-.INCLUDE "unknown/EF027D.asm"
+.INCLUDE "unknown/EF/EF027D.asm"
 
-.INCLUDE "unknown/EF02C4.asm"
+.INCLUDE "unknown/EF/EF02C4.asm"
 
-.INCLUDE "unknown/EF031E.asm"
+.INCLUDE "unknown/EF/EF031E.asm"
 
-.INCLUDE "unknown/EF04DC.asm"
+.INCLUDE "unknown/EF/EF04DC.asm"
 
 .INCLUDE "data/sram_signature.asm"
 
@@ -63,37 +63,37 @@
 
 .INCLUDE "system/saves/copy_save_slot.asm"
 
-.INCLUDE "unknown/EF0C3D.asm"
+.INCLUDE "unknown/EF/EF0C3D.asm"
 
-.INCLUDE "unknown/EF0C87.asm"
+.INCLUDE "unknown/EF/EF0C87.asm"
 
-.INCLUDE "unknown/EF0C97.asm"
+.INCLUDE "unknown/EF/EF0C97.asm"
 
-.INCLUDE "unknown/EF0CA7.asm"
+.INCLUDE "unknown/EF/EF0CA7.asm"
 
-.INCLUDE "unknown/EF0D23.asm"
+.INCLUDE "unknown/EF/EF0D23.asm"
 
-.INCLUDE "unknown/EF0D46.asm"
+.INCLUDE "unknown/EF/EF0D46.asm"
 
-.INCLUDE "unknown/EF0D73.asm"
+.INCLUDE "unknown/EF/EF0D73.asm"
 
-.INCLUDE "unknown/EF0D8D.asm"
+.INCLUDE "unknown/EF/EF0D8D.asm"
 
-.INCLUDE "unknown/EF0DFA.asm"
+.INCLUDE "unknown/EF/EF0DFA.asm"
 
-.INCLUDE "unknown/EF0E67.asm"
+.INCLUDE "unknown/EF/EF0E67.asm"
 
-.INCLUDE "unknown/EF0E8A.asm"
+.INCLUDE "unknown/EF/EF0E8A.asm"
 
-.INCLUDE "unknown/EF0EAD.asm"
+.INCLUDE "unknown/EF/EF0EAD.asm"
 
-.INCLUDE "unknown/EF0EE8.asm"
+.INCLUDE "unknown/EF/EF0EE8.asm"
 
-.INCLUDE "unknown/EF0F60.asm"
+.INCLUDE "unknown/EF/EF0F60.asm"
 
-.INCLUDE "unknown/EF0FDB.asm"
+.INCLUDE "unknown/EF/EF0FDB.asm"
 
-.INCLUDE "unknown/EF0FF6.asm"
+.INCLUDE "unknown/EF/EF0FF6.asm"
 
 .INCLUDE "data/map/tileset_table.asm"
 
@@ -173,43 +173,43 @@
 
 .INCLUDE "data/debug/sound_menu_option_strings.asm"
 
-.INCLUDE "unknown/EFD56F.asm"
+.INCLUDE "unknown/EF/EFD56F.asm"
 
-.INCLUDE "unknown/EFD5D9.asm"
+.INCLUDE "unknown/EF/EFD5D9.asm"
 
-.INCLUDE "unknown/EFD6D4.asm"
+.INCLUDE "unknown/EF/EFD6D4.asm"
 
 .INCLUDE "data/debug/menu_option_strings.asm"
 
-.INCLUDE "unknown/EFD95E.asm"
+.INCLUDE "unknown/EF/EFD95E.asm"
 
-.INCLUDE "unknown/EFD9F3.asm"
+.INCLUDE "unknown/EF/EFD9F3.asm"
 
-.INCLUDE "unknown/EFDA05.asm"
+.INCLUDE "unknown/EF/EFDA05.asm"
 
-.INCLUDE "unknown/EFDABD.asm"
+.INCLUDE "unknown/EF/EFDABD.asm"
 
 .INCLUDE "system/debug/display_menu_options.asm"
 
-.INCLUDE "unknown/EFDB95.asm"
+.INCLUDE "unknown/EF/EFDB95.asm"
 
-.INCLUDE "unknown/EFDBF0.asm"
+.INCLUDE "unknown/EF/EFDBF0.asm"
 
-.INCLUDE "unknown/EFDC69.asm"
+.INCLUDE "unknown/EF/EFDC69.asm"
 
-.INCLUDE "unknown/EFDCBC.asm"
+.INCLUDE "unknown/EF/EFDCBC.asm"
 
-.INCLUDE "unknown/EFDE1A.asm"
+.INCLUDE "unknown/EF/EFDE1A.asm"
 
-.INCLUDE "unknown/EFDF0B.asm"
+.INCLUDE "unknown/EF/EFDF0B.asm"
 
-.INCLUDE "unknown/EFDFC4.asm"
+.INCLUDE "unknown/EF/EFDFC4.asm"
 
-.INCLUDE "unknown/EFE07C.asm"
+.INCLUDE "unknown/EF/EFE07C.asm"
 
-.INCLUDE "unknown/EFE133.asm"
+.INCLUDE "unknown/EF/EFE133.asm"
 
-.INCLUDE "unknown/EFE175.asm"
+.INCLUDE "unknown/EF/EFE175.asm"
 
 .INCLUDE "system/debug/load_kirby_sprite.asm"
 
@@ -219,37 +219,37 @@
 
 .INCLUDE "system/debug/load_menu.asm"
 
-.INCLUDE "unknown/EFE6CF.asm"
+.INCLUDE "unknown/EF/EFE6CF.asm"
 
-.INCLUDE "unknown/EFE6E2.asm"
+.INCLUDE "unknown/EF/EFE6E2.asm"
 
-.INCLUDE "unknown/EFE708.asm"
+.INCLUDE "unknown/EF/EFE708.asm"
 
 .INCLUDE "system/debug/check_view_character_mode.asm"
 
-.INCLUDE "unknown/EFE759.asm"
+.INCLUDE "unknown/EF/EFE759.asm"
 
-.INCLUDE "unknown/EFE771.asm"
+.INCLUDE "unknown/EF/EFE771.asm"
 
-.INCLUDE "unknown/EFE873.asm"
+.INCLUDE "unknown/EF/EFE873.asm"
 
-.INCLUDE "unknown/EFE895.asm"
+.INCLUDE "unknown/EF/EFE895.asm"
 
-.INCLUDE "unknown/EFE8C7.asm"
+.INCLUDE "unknown/EF/EFE8C7.asm"
 
-.INCLUDE "unknown/EFEA23.asm"
+.INCLUDE "unknown/EF/EFEA23.asm"
 
-.INCLUDE "unknown/EFEA4A.asm"
+.INCLUDE "unknown/EF/EFEA4A.asm"
 
-.INCLUDE "unknown/EFEA9E.asm"
+.INCLUDE "unknown/EF/EFEA9E.asm"
 
-.INCLUDE "unknown/EFEAA4.asm"
+.INCLUDE "unknown/EF/EFEAA4.asm"
 
-.INCLUDE "unknown/EFEAC8.asm"
+.INCLUDE "unknown/EF/EFEAC8.asm"
 
 .INCLUDE "data/unknown/EFEB1D.asm"
 
-.INCLUDE "unknown/EFEB2A.asm"
+.INCLUDE "unknown/EF/EFEB2A.asm"
 
 .INCLUDE "data/unknown/EFEB3D.asm"
 
