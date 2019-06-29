@@ -396,6 +396,8 @@
 
 .INCLUDE "unknown/C09E71.asm"
 
+.INCLUDE "unknown/C09E79.asm"
+
 .INCLUDE "unknown/C09E98.asm"
 
 .INCLUDE "unknown/C09EAC.asm"
