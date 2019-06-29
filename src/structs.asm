@@ -68,7 +68,8 @@
 	.word ;80
 	wallet_backup .dword ;82
 	escargo_express_items .byte 36 ;86
-	.byte 6 ;122
+	.word ;122
+	.byte 4 ;124
 	.word ;128
 	leader_x_coord .word ;130
 	.word ;132
