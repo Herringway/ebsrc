@@ -10,7 +10,7 @@ INFLICT_STATUS_BATTLE: ;$C2724A
 	STX $02
 	TAX
 	STX $0E
-	LDA a:.LOWORD(RAM)+battler::npc_id,X
+	LDA a:battler::npc_id,X
 	AND #$00FF
 	BEQ @UNKNOWN0
 	LDA #$0000
@@ -20,7 +20,7 @@ INFLICT_STATUS_BATTLE: ;$C2724A
 	CLC
 	ADC $02
 	TAX
-	LDA a:.LOWORD(RAM)+battler::afflictions,X
+	LDA a:battler::afflictions,X
 	AND #$00FF
 	BEQ @UNKNOWN1
 	STY $04
@@ -35,7 +35,7 @@ INFLICT_STATUS_BATTLE: ;$C2724A
 	TAX
 	TYA
 	SEP #PROC_FLAGS::ACCUM8
-	STA a:.LOWORD(RAM)+battler::afflictions,X
+	STA a:battler::afflictions,X
 	REP #PROC_FLAGS::ACCUM8
 	LDA #$0001
 	BRA @UNKNOWN3

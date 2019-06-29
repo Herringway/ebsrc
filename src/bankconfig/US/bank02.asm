@@ -4912,12 +4912,12 @@ FIX_ATTACKER_NAME: ;$C23BCF
 	LDA #$A983
 	JSL MEMSET16
 	LDX .LOWORD(CURRENT_ATTACKER)
-	LDA a:.LOWORD(RAM)+battler::ally_or_enemy,X
+	LDA a:battler::ally_or_enemy,X
 	AND #$00FF
 	CMP #$0001
 	BEQ @UNKNOWN0
 	LDX .LOWORD(CURRENT_ATTACKER)
-	LDA a:.LOWORD(RAM)+battler::npc_id,X
+	LDA a:battler::npc_id,X
 	AND #$00FF
 	BNE @UNKNOWN0
 	JMP a:.LOWORD(@UNKNOWN4)
@@ -4940,14 +4940,14 @@ FIX_ATTACKER_NAME: ;$C23BCF
 	TAX
 	STX $14
 	LDX .LOWORD(CURRENT_ATTACKER)
-	LDA a:.LOWORD(RAM)+battler::ally_or_enemy,X
+	LDA a:battler::ally_or_enemy,X
 	AND #$00FF
 	CMP #$0001
 	BNE @UNKNOWN2
 	LDY $16
 	BNE @UNKNOWN2
 	LDX .LOWORD(CURRENT_ATTACKER)
-	LDA a:.LOWORD(RAM)+battler::the_flag,X
+	LDA a:battler::the_flag,X
 	AND #$00FF
 	CMP #$0001
 	BNE @UNKNOWN1
@@ -4968,7 +4968,7 @@ FIX_ATTACKER_NAME: ;$C23BCF
 	LDA #$0001
 	STA .LOWORD(UNKNOWN_7E5E77)
 	LDX .LOWORD(CURRENT_ATTACKER)
-	LDA a:.LOWORD(RAM)+battler::the_flag,X
+	LDA a:battler::the_flag,X
 	CLC
 	ADC #$0070
 	LDX $16
@@ -5041,12 +5041,12 @@ FIX_TARGET_NAME: ;$C23D05
 	LDA #$A99E
 	JSL MEMSET16
 	LDX .LOWORD(CURRENT_TARGET)
-	LDA a:.LOWORD(RAM)+battler::ally_or_enemy,X
+	LDA a:battler::ally_or_enemy,X
 	AND #$00FF
 	CMP #$0001
 	BEQ @UNKNOWN0
 	LDX .LOWORD(CURRENT_TARGET)
-	LDA a:.LOWORD(RAM)+battler::npc_id,X
+	LDA a:battler::npc_id,X
 	AND #$00FF
 	BNE @UNKNOWN0
 	JMP a:.LOWORD(@UNKNOWN4)
@@ -5069,12 +5069,12 @@ FIX_TARGET_NAME: ;$C23D05
 	TAX
 	STX $14
 	LDX .LOWORD(CURRENT_TARGET)
-	LDA a:.LOWORD(RAM)+battler::ally_or_enemy,X
+	LDA a:battler::ally_or_enemy,X
 	AND #$00FF
 	CMP #$0001
 	BNE @UNKNOWN2
 	LDX .LOWORD(CURRENT_TARGET)
-	LDA a:.LOWORD(RAM)+battler::the_flag,X
+	LDA a:battler::the_flag,X
 	AND #$00FF
 	CMP #$0001
 	BNE @UNKNOWN1
@@ -5095,7 +5095,7 @@ FIX_TARGET_NAME: ;$C23D05
 	LDA #$0001
 	STA .LOWORD(UNKNOWN_7E5E78)
 	LDX .LOWORD(CURRENT_TARGET)
-	LDA a:.LOWORD(RAM)+battler::the_flag,X
+	LDA a:battler::the_flag,X
 	CLC
 	ADC #$0070
 	LDX $12
@@ -13372,17 +13372,17 @@ COUNT_CHARS: ;$C2BAC5
 	TAY
 	BRA @UNKNOWN2
 @UNKNOWN0:
-	LDA a:.LOWORD(RAM)+battler::consciousness,X
+	LDA a:battler::consciousness,X
 	AND #$00FF
 	BEQ @UNKNOWN1
-	LDA a:.LOWORD(RAM)+battler::ally_or_enemy,X
+	LDA a:battler::ally_or_enemy,X
 	AND #$00FF
 	CMP $04
 	BNE @UNKNOWN1
-	LDA a:.LOWORD(RAM)+battler::npc_id,X
+	LDA a:battler::npc_id,X
 	AND #$00FF
 	BNE @UNKNOWN1
-	LDA a:.LOWORD(RAM)+battler::afflictions,X
+	LDA a:battler::afflictions,X
 	AND #$00FF
 	CMP #$0001
 	BEQ @UNKNOWN1
@@ -14245,21 +14245,21 @@ BTLACT_FLY_HONEY: ;$C2C1BD
 	LDY #$0008
 	BRA @STARTLOOP
 @NEXTBATTLER:
-	LDA a:.LOWORD(RAM)+battler::consciousness,X
+	LDA a:battler::consciousness,X
 	AND #$00FF
 	BEQ @BATTLERNOTBELCH
-	LDA a:.LOWORD(RAM)+battler::ally_or_enemy,X
+	LDA a:battler::ally_or_enemy,X
 	AND #$00FF
 	CMP #$0001
 	BNE @BATTLERNOTBELCH
-	LDA a:.LOWORD(RAM)+battler::id,X
+	LDA a:battler::id,X
 	CMP #ENEMY::MASTER_BELCH_3
 	BEQ @BATTLERISBELCH
 	CMP #ENEMY::MASTER_BELCH_1
 	BNE @BATTLERNOTBELCH
 @BATTLERISBELCH:
 	LDA #ENEMY::MASTER_BELCH_2
-	STA a:.LOWORD(RAM)+battler::id,X
+	STA a:battler::id,X
 	DISPLAY_BATTLE_TEXT_PTR TEXT_BLOCK_C8F8C0
 	BRA @RETURN
 @BATTLERNOTBELCH:

@@ -9,7 +9,7 @@ BTLACT_POSSESS: ;$C28BFD
 	CMP #$0000
 	BNE @UNKNOWN1
 	LDX .LOWORD(CURRENT_TARGET)
-	LDA a:.LOWORD(RAM)+battler::ally_or_enemy,X
+	LDA a:battler::ally_or_enemy,X
 	AND #$00FF
 	BNE @UNKNOWN0
 	LDY #STATUS_1::POSSESSED
