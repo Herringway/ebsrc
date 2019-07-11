@@ -8,6 +8,7 @@
 .INCLUDE "constants/battlebgs.asm"
 .INCLUDE "constants/items.asm"
 .INCLUDE "constants/event_flags.asm"
+.INCLUDE "constants/windows.asm"
 
 .DEFINE NULL 0
 
