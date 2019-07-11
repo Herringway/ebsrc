@@ -26,9 +26,13 @@
 .endmacro
 
 .macro LOADPTR ptr, var
-    LDA #.LOWORD(ptr)
+    LOADINT32 ptr, var
+.endmacro
+
+.macro LOADINT32 val, var
+    LDA #.LOWORD(val)
     STA var
-    LDA #.HIWORD(ptr)
+    LDA #.HIWORD(val)
     STA var+2
 .endmacro
 
