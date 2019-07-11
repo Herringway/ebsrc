@@ -335,3 +335,10 @@
 	count .byte ;4
 	entries .byte ;5 - not always here, actual size varies
 .ENDSTRUCT
+
+.STRUCT psi_teleport_destination
+	name .byte 25 ;0
+	event_flag .word ;25
+	dest_x .word ;27
+	dest_y .word ;29
+.ENDSTRUCT

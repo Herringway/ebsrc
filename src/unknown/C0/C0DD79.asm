@@ -23,11 +23,11 @@ UNKNOWN_C0DD79: ;$C0DD79
 	BEQ @UNKNOWN0
 	LOADPTR PSI_TELEPORT_DEST_TABLE, $06
 	LDA $02
-	LDY #$001F
+	LDY #.SIZEOF(psi_teleport_destination)
 	JSL MULT168
 	STA $10
 	CLC
-	ADC #$001B
+	ADC #psi_teleport_destination::dest_x
 	LDX $06
 	STX $0A
 	LDX $08
@@ -40,7 +40,7 @@ UNKNOWN_C0DD79: ;$C0DD79
 	STX .LOWORD(UNKNOWN_7E438A)
 	LDA $10
 	CLC
-	ADC #$001D
+	ADC #psi_teleport_destination::dest_y
 	CLC
 	ADC $06
 	STA $06
