@@ -302,3 +302,13 @@
         .ASSERT 0, error, "Unsupported multiplication amount"
     .ENDIF
 .ENDMACRO
+
+.MACRO CREATE_WINDOW_NEAR arg
+    LDA arg
+    JSR a:.LOWORD(CREATE_WINDOW)
+.ENDMACRO
+
+.MACRO CREATE_WINDOW_FAR arg
+    LDA arg
+    JSL REDIRECT_CREATE_WINDOW
+.ENDMACRO
