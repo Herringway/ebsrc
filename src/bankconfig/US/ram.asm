@@ -1218,7 +1218,7 @@ UNKNOWN_7E9E58: ;$7E9E58
 UNKNOWN_7E9F18: ;$7E9F18
 	.RES 2
 UNKNOWN_7E9F1A: ;$7E9F1A
-	.RES 2 * 1 ;unknown size
+	.RES 2 * 1 ;Unknown. there's an SFX id in here
 
 .ORG $7E9F1D
 UNKNOWN_7E9F1D: ;$7E9F1D
