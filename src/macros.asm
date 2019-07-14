@@ -270,6 +270,26 @@
     .ELSEIF amount = 4
         ASL
         ASL
+    .ELSEIF amount = 5
+        STA scratch
+        ASL
+        ASL
+        ADC scratch
+    .ELSEIF amount = 6
+        STA scratch
+        ASL
+        ADC scratch
+        ASL
+    .ELSEIF amount = 7
+        STA scratch
+        ASL
+        ADC scratch
+        ASL
+        ADC scratch
+    .ELSEIF amount = 8
+        ASL
+        ASL
+        ASL
     .ELSEIF amount = 10
         STA scratch
         ASL
@@ -282,6 +302,18 @@
         ADC scratch
         ASL
         ASL
+    .ELSEIF amount = 14
+        STA scratch
+        ASL
+        ADC scratch
+        ASL
+        ADC scratch
+        ASL
+    .ELSEIF amount = 16
+        ASL
+        ASL
+        ASL
+        ASL
     .ELSEIF amount = 17
         STA scratch
         ASL
@@ -289,6 +321,13 @@
         ASL
         ASL
         ADC scratch
+    .ELSEIF amount = 24
+        STA scratch
+        ASL
+        ADC scratch
+        ASL
+        ASL
+        ASL
     .ELSEIF amount = 27
         STA scratch
         ASL
@@ -298,6 +337,36 @@
         ADC scratch
         ASL
         ADC scratch
+    .ELSEIF amount = 32
+        ASL
+        ASL
+        ASL
+        ASL
+        ASL
+    .ELSEIF amount = 48
+        STA scratch
+        ASL
+        ADC scratch
+        ASL
+        ASL
+        ASL
+        ASL
+    .ELSEIF amount = 64
+        ASL
+        ASL
+        ASL
+        ASL
+        ASL
+        ASL
+    .ELSEIF amount = 80
+        STA scratch
+        ASL
+        ASL
+        ADC scratch
+        ASL
+        ASL
+        ASL
+        ASL
     .ELSE
         .ASSERT 0, error, "Unsupported multiplication amount"
     .ENDIF
