@@ -5,7 +5,7 @@ UNKNOWN_C0E196: ;$C0E196
 	TDC
 	ADC #$FFEA
 	TCD
-	LDA #$987D
+	LDA #.LOWORD(GAME_STATE) + 136
 	STA $04
 	STA $14
 	LDX $04
@@ -18,13 +18,13 @@ UNKNOWN_C0E196: ;$C0E196
 	CLC
 	ADC #$5156
 	STA $02
-	LDA #$9877
+	LDA #.LOWORD(GAME_STATE) + game_state::leader_x_coord
 	STA $12
 	TAX
 	LDA a:.LOWORD(RAM),X
 	LDX $02
 	STA a:.LOWORD(RAM),X
-	LDX #$987B
+	LDX #.LOWORD(GAME_STATE) + game_state::leader_y_coord
 	STX $10
 	LDA a:.LOWORD(RAM),X
 	LDX $02

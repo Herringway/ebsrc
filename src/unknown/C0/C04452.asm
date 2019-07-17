@@ -12,7 +12,7 @@ UNKNOWN_C04452: ;$C04452
 	STA $10
 	CMP #$FFFF
 	BEQ @UNKNOWN0
-	LDX #$9889
+	LDX #.LOWORD(GAME_STATE) + game_state::current_party_members
 	STX $0E
 	LDA a:.LOWORD(RAM),X
 	ASL

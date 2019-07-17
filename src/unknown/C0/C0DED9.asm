@@ -17,7 +17,7 @@ UNKNOWN_C0DED9: ;$C0DED9
 	LDA #$0000
 	BRA @UNKNOWN1
 @UNKNOWN0:
-	LDA #$9889
+	LDA #.LOWORD(GAME_STATE) + game_state::current_party_members
 	STA $02
 	LDX $02
 	LDA a:.LOWORD(RAM),X

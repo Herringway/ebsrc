@@ -17,9 +17,9 @@ UNKNOWN_C018F3: ;$C018F3
 	JSL UNKNOWN_C08726
 	LDA #$FFFF
 	STA .LOWORD(UNKNOWN_7E5DD4)
-	LDA #$9877
+	LDA #.LOWORD(GAME_STATE) + game_state::leader_x_coord
 	STA $04
-	LDA #$987B
+	LDA #.LOWORD(GAME_STATE) + game_state::leader_y_coord
 	STA $02
 	LDX $02
 	LDA a:.LOWORD(RAM),X

@@ -13,7 +13,7 @@ DISPLAY_TEXT_WAIT: ;$C1DC66
 	STA $0A
 	LDA $22
 	STA $0C
-	LDX #$98B1
+	LDX #.LOWORD(GAME_STATE) + game_state::auto_fight_enable
 	LDA a:.LOWORD(RAM),X
 	AND #$00FF
 	BEQ @UNKNOWN0
