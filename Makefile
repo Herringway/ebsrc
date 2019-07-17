@@ -5,16 +5,16 @@ USSRCS = $(wildcard src/bankconfig/US/*.asm)
 earthbound.sfc: $(patsubst %.asm, %.o, $(USSRCS))
 	ld65 -o $@ -C snes.cfg $^
 
-src/bankconfig/US/bank00-1.o: src/bankconfig/US/bank00-1.asm src/config.asm
-src/bankconfig/US/bank00-2.o: src/bankconfig/US/bank00-2.asm src/config.asm src/movementmacros.asm
+src/bankconfig/US/bank00-1.o: src/bankconfig/US/bank00-1.asm src/config.asm $(wildcard src/unknown/C0/*.asm)
+src/bankconfig/US/bank00-2.o: src/bankconfig/US/bank00-2.asm src/config.asm src/movementmacros.asm $(wildcard src/unknown/C0/*.asm)
 
-src/bankconfig/US/bank01.o: src/bankconfig/US/bank01.asm src/config.asm $(wildcard src/text/ccs/*.asm)
+src/bankconfig/US/bank01.o: src/bankconfig/US/bank01.asm src/config.asm $(wildcard src/text/ccs/*.asm) $(wildcard src/unknown/C1/*.asm)
 
-src/bankconfig/US/bank02.o: src/bankconfig/US/bank02.asm src/config.asm src/movementmacros.asm
+src/bankconfig/US/bank02.o: src/bankconfig/US/bank02.asm src/config.asm src/movementmacros.asm $(wildcard src/unknown/C2/*.asm)
 
-src/bankconfig/US/bank03.o: src/bankconfig/US/bank03.asm src/config.asm src/movementmacros.asm
+src/bankconfig/US/bank03.o: src/bankconfig/US/bank03.asm src/config.asm src/movementmacros.asm $(wildcard src/unknown/C3/*.asm)
 
-src/bankconfig/US/bank04.o: src/bankconfig/US/bank04.asm src/config.asm src/movementmacros.asm $(wildcard src/bin/unknowns/C4*.bin)
+src/bankconfig/US/bank04.o: src/bankconfig/US/bank04.asm src/config.asm src/movementmacros.asm $(wildcard src/unknown/C4/*.asm) $(wildcard src/bin/unknowns/C4*.bin)
 
 src/bankconfig/US/bank05.o: src/bankconfig/US/bank05.asm src/bin/text_data/0.ebtxt
 
@@ -34,7 +34,7 @@ src/bankconfig/US/bank18.o: src/bankconfig/US/bank18.asm $(wildcard src/data/map
 
 src/bankconfig/US/bank1c.o: src/bankconfig/US/bank1c.asm $(wildcard src/bin/unknowns/DC*.bin)
 
-src/bankconfig/US/bank2f.o: src/bankconfig/US/bank2f.asm src/config.asm
+src/bankconfig/US/bank2f.o: src/bankconfig/US/bank2f.asm src/config.asm $(wildcard src/unknown/EF/*.asm)
 
 src/ram.o: src/ram.asm src/config.asm
 
