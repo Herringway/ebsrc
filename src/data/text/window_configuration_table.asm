@@ -1,24 +1,24 @@
 
 WINDOW_CONFIGURATION_TABLE: ;$C3E250
 	.WORD $0001, $0001, $000D, $0008
-	.WORD $000C, $0001, $0013, $0008
-	.WORD $0007, $0001, $0018, $0010
-	.WORD $0001, $0001, $0006, $000A
+	.WORD $000C, $0001, $0013, $0008 ; Out-of-battle text
+	.WORD $0007, $0001, $0018, $0010 ; Main inventory window
+	.WORD $0001, $0001, $0006, $000A ; Inventory menu
 	.WORD $0001, $0003, $000B, $0006
-	.WORD $0014, $0001, $000B, $0010
-	.WORD $0008, $0001, $0014, $000A
-	.WORD $0012, $0001, $000D, $0010
-	.WORD $0001, $0001, $001E, $0012
+	.WORD $0014, $0001, $000B, $0010 ; Phone menu
+	.WORD $0008, $0001, $0014, $000A ; Equip menu
+	.WORD $0012, $0001, $000D, $0010 ; Item list for equip menu
+	.WORD $0001, $0001, $001E, $0012 ; Status menu
 	.WORD $000C, $0001, $0013, $0012 ; Used by status screen?
-	.WORD $0001, $000A, $0008, $0004
+	.WORD $0001, $000A, $0008, $0004 ; Carried money window
 	.WORD $0001, $000F, $000B, $0004 ; Used by status screen?
 	.WORD $000C, $0001, $0013, $0010
 	.WORD $0007, $0001, $0018, $0010
-	.WORD $0004, $0001, $0018, $0006
-	.WORD $0001, $0001, $0015, $0006
+	.WORD $0004, $0001, $0018, $0006 ; In-battle text
+	.WORD $0001, $0001, $0015, $0006 ; Normal battle menu
 	.WORD $0004, $0001, $0008, $0008
 	.WORD $000C, $0001, $000C, $0004
-	.WORD $0001, $0001, $000E, $0006
+	.WORD $0001, $0001, $000E, $0006 ; Jeff' s Battle menu
 	.WORD $0001, $0002, $001E, $0008 ; File Select
 	.WORD $0005, $0009, $0016, $0004 ; Overworld Menu
 	.WORD $000A, $0010, $000C, $0008 ; Copy Menu (2 choices)
@@ -50,6 +50,6 @@ WINDOW_CONFIGURATION_TABLE: ;$C3E250
 	.WORD $0001, $0009, $001E, $000A
 	.WORD $0001, $0001, $001C, $0006
 	.WORD $000A, $0004, $0014, $0004
-	.WORD $000E, $000B, $000F, $0010
+	.WORD $000E, $000B, $000F, $0010 ; File select: flavour selection
 	.WORD $0016, $0008, $0009, $0004
 	.WORD $0007, $0009, $0012, $0012

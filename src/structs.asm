@@ -1,6 +1,6 @@
 
 .STRUCT char_struct
-	name .byte NAMELEN ;0
+	name .byte 5 ;0
 	level .byte ;5
 	exp .dword ;6
 	max_hp .word ;10
