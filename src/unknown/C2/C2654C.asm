@@ -83,7 +83,7 @@ UNKNOWN_C2654C: ;$C2654C
 	JSL MULT168
 	STA $18
 	CLC
-	ADC #$9A1B
+	ADC #.LOWORD(CHAR_STRUCT) + char_struct::current_pp_target
 	TAY
 	LDA a:.LOWORD(RAM),Y
 	CLC
