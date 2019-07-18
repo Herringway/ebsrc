@@ -381,3 +381,10 @@
     LDA arg
     JSL REDIRECT_CREATE_WINDOW
 .ENDMACRO
+
+.MACRO MOVE_INT src, dest
+    LDA src
+    STA dest
+    LDA src+2
+    STA dest+2
+.ENDMACRO
