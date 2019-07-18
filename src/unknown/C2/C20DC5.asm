@@ -38,7 +38,7 @@ UNKNOWN_C20DC5: ;$C20DC5
 	CLC
 	ADC $02
 	CLC
-	ADC #.LOWORD(UNKNOWN_7E8969) + (HPPP_WINDOW_WIDTH - 5)*2
+	ADC #.LOWORD(HPPP_WINDOW_BUFFER) + .SIZEOF(hp_pp_window_buffer::hp1) - (1 * 2)
 	TAX
 	LDA .LOWORD(UNKNOWN_7E8968)
 	AND #$00FF
@@ -68,11 +68,11 @@ UNKNOWN_C20DC5: ;$C20DC5
 	CLC
 	ADC #$2600
 	STA $02
-	STA a:.LOWORD(RAM),X
+	STA a:.LOWORD(RAM) + hp_pp_window_buffer::hp1,X
 	LDA $02
 	CLC
 	ADC #$0010
-	STA a:.LOWORD(RAM) + (HPPP_WINDOW_WIDTH - 4) * 2,X
+	STA a:.LOWORD(RAM) + hp_pp_window_buffer::hp2,X
 	TXA
 	DEC
 	DEC
@@ -122,7 +122,7 @@ UNKNOWN_C20DC5: ;$C20DC5
 	CLC
 	ADC #$0010
 	LDX $02
-	STA a:.LOWORD(RAM) + (HPPP_WINDOW_WIDTH - 4) * 2,X
+	STA a:.LOWORD(RAM) + hp_pp_window_buffer::hp2,X
 	LDA $02
 	DEC
 	DEC
@@ -169,7 +169,7 @@ UNKNOWN_C20DC5: ;$C20DC5
 	LDA $0E
 	TAX
 	PLA
-	STA a:.LOWORD(RAM),X
+	STA a:.LOWORD(RAM) + hp_pp_window_buffer::hp1,X
 	LDA $0E
 	PHA
 	LDX $12
@@ -177,6 +177,6 @@ UNKNOWN_C20DC5: ;$C20DC5
 	CLC
 	ADC #$0010
 	PLX
-	STA a:.LOWORD(RAM) + (HPPP_WINDOW_WIDTH - 4) * 2,X
+	STA a:.LOWORD(RAM) + hp_pp_window_buffer::hp2,X
 	PLD
 	RTS

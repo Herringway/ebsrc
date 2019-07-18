@@ -342,3 +342,10 @@
 	dest_x .word ;27
 	dest_y .word ;29
 .ENDSTRUCT
+
+.STRUCT hp_pp_window_buffer
+	hp1 .word (HPPP_WINDOW_WIDTH - 4) ;0
+	hp2 .word (HPPP_WINDOW_WIDTH - 4) ;6
+	pp1 .word (HPPP_WINDOW_WIDTH - 4) ;12
+	pp2 .word (HPPP_WINDOW_WIDTH - 4) ;18
+.ENDSTRUCT
