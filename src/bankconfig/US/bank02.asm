@@ -20,13 +20,13 @@
 
 .INCLUDE "unknown/C2/C2038B.asm"
 
-.INCLUDE "unknown/C2/C203C3.asm"
+.INCLUDE "text/draw_hp_pp_window.asm"
 
 .INCLUDE "unknown/C2/C2077D.asm"
 
 .INCLUDE "unknown/C2/C207B6.asm"
 
-.INCLUDE "unknown/C2/C207E1.asm"
+.INCLUDE "text/undraw_hp_pp_window.asm"
 
 .INCLUDE "unknown/C2/C2087C.asm"
 
@@ -50,7 +50,7 @@
 
 .INCLUDE "unknown/C2/C20D89.asm"
 
-.INCLUDE "unknown/C2/C20DC5.asm"
+.INCLUDE "text/fill_hp_pp_tile_buffer.asm"
 
 .INCLUDE "unknown/C2/C20F08.asm"
 
@@ -78,7 +78,7 @@ UNKNOWN_C20F26: ;$C20F26
 	LDY $0E
 	LDX #$0001
 	LDA $02
-	JSR a:.LOWORD(UNKNOWN_C20DC5)
+	JSR a:.LOWORD(FILL_HP_PP_TILE_BUFFER)
 @UNKNOWN1:
 	PLD
 	RTS
@@ -16292,7 +16292,7 @@ UNKNOWN_C2DB3F: ;$C2DB3F
 	AND #$0001
 	BEQ @UNKNOWN27
 	LDA .LOWORD(HP_PP_BOX_BLINK_TARGET)
-	JSL UNKNOWN_C207E1
+	JSL UNDRAW_HP_PP_WINDOW
 	BRA @UNKNOWN28
 @UNKNOWN27:
 	LDA .LOWORD(HP_PP_BOX_BLINK_TARGET)
