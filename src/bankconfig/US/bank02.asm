@@ -20,13 +20,13 @@
 
 .INCLUDE "unknown/C2/C2038B.asm"
 
-.INCLUDE "text/draw_hp_pp_window.asm"
+.INCLUDE "text/hp_pp_window/draw.asm"
 
 .INCLUDE "unknown/C2/C2077D.asm"
 
 .INCLUDE "unknown/C2/C207B6.asm"
 
-.INCLUDE "text/undraw_hp_pp_window.asm"
+.INCLUDE "text/hp_pp_window/undraw.asm"
 
 .INCLUDE "unknown/C2/C2087C.asm"
 
@@ -46,42 +46,15 @@
 
 .INCLUDE "unknown/C2/C20B65.asm"
 
-.INCLUDE "unknown/C2/C20D3F.asm"
+.INCLUDE "text/hp_pp_window/separate_decimal_digits.asm"
 
-.INCLUDE "unknown/C2/C20D89.asm"
+.INCLUDE "text/hp_pp_window/fill_tile_buffer_x.asm"
 
-.INCLUDE "text/fill_hp_pp_tile_buffer.asm"
+.INCLUDE "text/hp_pp_window/fill_tile_buffer.asm"
 
-.INCLUDE "unknown/C2/C20F08.asm"
+.INCLUDE "text/hp_pp_window/fill_character_hp_tile_buffer.asm"
 
-UNKNOWN_C20F26: ;$C20F26
-	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
-	PHD
-	PHA
-	TDC
-	ADC #$FFF0
-	TCD
-	PLA
-	STY $04
-	STA $02
-	LDY $1E
-	STY $0E
-	LDA a:.LOWORD(RAM)+4,X
-	AND #$00FF
-	BEQ @UNKNOWN0
-	LDA $02
-	JSR a:.LOWORD(UNKNOWN_C20D89)
-	BRA @UNKNOWN1
-@UNKNOWN0:
-	LDA $04
-	JSR a:.LOWORD(UNKNOWN_C20D3F)
-	LDY $0E
-	LDX #$0001
-	LDA $02
-	JSR a:.LOWORD(FILL_HP_PP_TILE_BUFFER)
-@UNKNOWN1:
-	PLD
-	RTS
+.INCLUDE "text/hp_pp_window/fill_character_pp_tile_buffer.asm"
 
 UNKNOWN_C20F58: ;$C20F58
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
@@ -755,7 +728,7 @@ UNKNOWN_C213AC: ;$C213AC
 	TAX
 	LDA $20
 	LDY $14
-	JSR a:.LOWORD(UNKNOWN_C20F08)
+	JSR a:.LOWORD(FILL_CHARACTER_HP_TILE_BUFFER)
 	LDA $20
 	OPTIMIZED_MULT $04, 24
 	CLC
@@ -865,7 +838,7 @@ UNKNOWN_C213AC: ;$C213AC
 	ADC #$000E
 	TAX
 	LDA $20
-	JSR a:.LOWORD(UNKNOWN_C20F26)
+	JSR a:.LOWORD(FILL_CHARACTER_PP_TILE_BUFFER)
 	LDA $20
 	OPTIMIZED_MULT $04, 24
 	CLC
