@@ -388,3 +388,56 @@
     LDA src+2
     STA dest+2
 .ENDMACRO
+
+.MACRO COPY_TO_VRAM1 src, dest, size, unk
+    LOADPTR src, $0E
+    COPY_TO_VRAM1COMMON dest, size, unk
+.ENDMACRO
+
+.MACRO COPY_TO_VRAM1P src, dest, size, unk
+    MOVE_INT src, $0E
+    COPY_TO_VRAM1COMMON dest, size, unk
+.ENDMACRO
+
+.MACRO COPY_TO_VRAM1COMMON dest, size, unk
+    LDY #dest
+    .IF size = dest
+        TYX
+    .ELSE
+        LDX #size
+    .ENDIF
+    SEP #PROC_FLAGS::ACCUM8
+    .IF unk = dest
+        TYA
+    .ELSE
+        LDA #unk
+    .ENDIF
+    JSL PREPARE_VRAM_COPY
+.ENDMACRO
+
+.MACRO COPY_TO_VRAM1OFFSET src, dest, size, offset, unk
+    MOVE_INT src, $0E
+    LDA dest
+    CLC
+    ADC #offset
+    TAY
+    LDX #size
+    SEP #PROC_FLAGS::ACCUM8
+    LDA #unk
+    JSL PREPARE_VRAM_COPY
+.ENDMACRO
+
+.MACRO COPY_TO_VRAM2 src, dest, size, unk
+    LDA #.HIWORD(src)
+    STA $0E
+    LDA #dest
+    STA $10
+    LDY #.LOWORD(src)
+    LDX #size
+    SEP #PROC_FLAGS::ACCUM8
+    .IF <dest = unk
+    .ELSE
+        LDA #unk
+    .ENDIF
+    JSL PREPARE_VRAM_COPY_ENTRY_B
+.ENDMACRO

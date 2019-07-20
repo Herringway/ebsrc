@@ -44,7 +44,7 @@
 
 .INCLUDE "system/transfer_to_vram.asm"
 
-.INCLUDE "unknown/C0/C08616.asm"
+.INCLUDE "system/prepare_vram_copy.asm"
 
 .INCLUDE "system/copy_to_vram_redirect.asm"
 
