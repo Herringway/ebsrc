@@ -389,6 +389,69 @@
     STA dest+2
 .ENDMACRO
 
+.MACRO MOVE_INT_CONSTANT constant, dest
+    LDA #.LOWORD(constant)
+    STA dest
+    LDA #.HIWORD(constant)
+    STA dest+2
+.ENDMACRO
+
+.MACRO MOVE_INT_XPTRDEST src, dest
+    LDA src
+    STA dest, X
+    LDA src+2
+    STA dest+2, X
+.ENDMACRO
+
+.MACRO MOVE_INT_YPTRDEST src, dest
+    LDA src
+    STA dest, Y
+    LDA src+2
+    STA dest+2, Y
+.ENDMACRO
+
+.MACRO MOVE_INT_CONSTANT_XPTRDEST constant, dest
+    LDA #.LOWORD(constant)
+    STA dest, Y
+    LDA #.HIWORD(constant)
+    STA dest+2, Y
+.ENDMACRO
+
+.MACRO MOVE_INT_CONSTANT_YPTRDEST constant, dest
+    LDA #.LOWORD(constant)
+    STA dest, Y
+    LDA #.HIWORD(constant)
+    STA dest+2, Y
+.ENDMACRO
+
+.MACRO MOVE_INT_XPTRSRC src, dest
+    LDA src, X
+    STA dest
+    LDA src+2, X
+    STA dest+2
+.ENDMACRO
+
+.MACRO MOVE_INT_YPTRSRC src, dest
+    LDA src, Y
+    STA dest
+    LDA src+2, Y
+    STA dest+2
+.ENDMACRO
+
+.MACRO MOVE_INT_XPTRSRC_YPTRDEST src, dest
+    LDA src, X
+    STA dest, Y
+    LDA src+2, X
+    STA dest+2, Y
+.ENDMACRO
+
+.MACRO MOVE_INT_YPTRSRC_XPTRDEST src, dest
+    LDA src, Y
+    STA dest, X
+    LDA src+2, Y
+    STA dest+2, X
+.ENDMACRO
+
 .MACRO COPY_TO_VRAM1 src, dest, size, unk
     LOADPTR src, $0E
     COPY_TO_VRAM1COMMON dest, size, unk

@@ -9,13 +9,7 @@ GET_ARGUMENT_MEMORY: ;$C103DC
 	CLC
 	ADC #window_stats::argument_memory
 	TAY
-	LDA a:.LOWORD(RAM),Y
-	STA $06
-	LDA a:.LOWORD(RAM)+2,Y
-	STA $08
-	LDA $06
-	STA $14
-	LDA $08
-	STA $16
+	MOVE_INT_YPTRSRC a:.LOWORD(RAM), $06
+	MOVE_INT $06, $14
 	PLD
 	RTS
