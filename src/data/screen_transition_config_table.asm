@@ -72,11 +72,11 @@ SCREEN_TRANSITION_CONFIG_TABLE: ;$D01400
 	.BYTE $00 ;Direction
 	.BYTE $00
 	.BYTE $10 ;Slide speed
-	.BYTE SFX::UNKNOWN11 ;Sound effect to play at beginning
+	.BYTE SFX::FALLING ;Sound effect to play at beginning
 	.BYTE $14 ;Secondary duration
 	.BYTE $00 ;Secondary animation ID
 	.BYTE $00 ;Secondary animation flags
-	.BYTE SFX::UNKNOWN2E ;Sound effect to play at end
+	.BYTE SFX::TOOK_DAMAGE ;Sound effect to play at end
 
 	.BYTE $14 ;Duration
 	.BYTE $00 ;Animation ID
@@ -397,7 +397,7 @@ SCREEN_TRANSITION_CONFIG_TABLE: ;$D01400
 	.BYTE $00 ;Direction
 	.BYTE $00
 	.BYTE $00 ;Slide speed
-	.BYTE SFX::UNKNOWN64 ;Sound effect to play at beginning
+	.BYTE SFX::MYSTERIOUS_TRANSPORT ;Sound effect to play at beginning
 	.BYTE $3C ;Secondary duration
 	.BYTE $00 ;Secondary animation ID
 	.BYTE $00 ;Secondary animation flags
@@ -410,11 +410,11 @@ SCREEN_TRANSITION_CONFIG_TABLE: ;$D01400
 	.BYTE $10 ;Direction
 	.BYTE $E8
 	.BYTE $07 ;Slide speed
-	.BYTE SFX::UNKNOWN60 ;Sound effect to play at beginning
+	.BYTE SFX::GHOST ;Sound effect to play at beginning
 	.BYTE $14 ;Secondary duration
 	.BYTE $00 ;Secondary animation ID
 	.BYTE $00 ;Secondary animation flags
-	.BYTE SFX::UNKNOWN53 ;Sound effect to play at end
+	.BYTE SFX::AFFLICTED ;Sound effect to play at end
 
 	.BYTE $64 ;Duration
 	.BYTE $00 ;Animation ID
@@ -423,11 +423,11 @@ SCREEN_TRANSITION_CONFIG_TABLE: ;$D01400
 	.BYTE $30 ;Direction
 	.BYTE $E8
 	.BYTE $07 ;Slide speed
-	.BYTE SFX::UNKNOWN60 ;Sound effect to play at beginning
+	.BYTE SFX::GHOST ;Sound effect to play at beginning
 	.BYTE $14 ;Secondary duration
 	.BYTE $00 ;Secondary animation ID
 	.BYTE $00 ;Secondary animation flags
-	.BYTE SFX::UNKNOWN53 ;Sound effect to play at end
+	.BYTE SFX::AFFLICTED ;Sound effect to play at end
 
 	.BYTE $1E ;Duration
 	.BYTE $00 ;Animation ID
@@ -436,7 +436,7 @@ SCREEN_TRANSITION_CONFIG_TABLE: ;$D01400
 	.BYTE $00 ;Direction
 	.BYTE $00
 	.BYTE $10 ;Slide speed
-	.BYTE SFX::UNKNOWN11 ;Sound effect to play at beginning
+	.BYTE SFX::FALLING ;Sound effect to play at beginning
 	.BYTE $14 ;Secondary duration
 	.BYTE $00 ;Secondary animation ID
 	.BYTE $00 ;Secondary animation flags
