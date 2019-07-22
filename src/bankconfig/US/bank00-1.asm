@@ -179,7 +179,7 @@
 
 .INCLUDE "unknown/C0/C041E3.asm"
 
-.INCLUDE "unknown/C0/C04279.asm"
+.INCLUDE "overworld/find_nearby_checkable_tpt_entry.asm"
 
 .INCLUDE "unknown/C0/C042C2.asm"
 
@@ -187,7 +187,7 @@
 
 .INCLUDE "unknown/C0/C043BC.asm"
 
-.INCLUDE "unknown/C0/C04452.asm"
+.INCLUDE "overworld/find_nearby_talkable_tpt_entry.asm"
 
 .INCLUDE "unknown/C0/C0449B.asm"
 
