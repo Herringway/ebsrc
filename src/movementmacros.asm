@@ -156,6 +156,22 @@
 	.WORD arg3
 .ENDMACRO
 
+.MACRO EBMOVE_AND_9AF9 entry, operand
+	EBMOVE_BINOP_9AF9 entry, $00, operand
+.ENDMACRO
+
+.MACRO EBMOVE_OR_9AF9 entry, operand
+	EBMOVE_BINOP_9AF9 entry, $01, operand
+.ENDMACRO
+
+.MACRO EBMOVE_ADD_9AF9 entry, operand
+	EBMOVE_BINOP_9AF9 entry, $02, operand
+.ENDMACRO
+
+.MACRO EBMOVE_XOR_9AF9 entry, operand
+	EBMOVE_BINOP_9AF9 entry, $03, operand
+.ENDMACRO
+
 .MACRO EBMOVE_WRITE_WORD_WRAM arg1, arg2
 	.BYTE $15
 	.WORD arg1
@@ -176,6 +192,22 @@
 	.BYTE $18
 	.WORD arg1
 	.BYTE arg2, arg3
+.ENDMACRO
+
+.MACRO EBMOVE_AND_WRAM address, operand
+	EBMOVE_BINOP_WRAM address, $00, operand
+.ENDMACRO
+
+.MACRO EBMOVE_OR_WRAM address, operand
+	EBMOVE_BINOP_WRAM address, $01, operand
+.ENDMACRO
+
+.MACRO EBMOVE_ADD_WRAM address, operand
+	EBMOVE_BINOP_WRAM address, $02, operand
+.ENDMACRO
+
+.MACRO EBMOVE_XOR_WRAM address, operand
+	EBMOVE_BINOP_WRAM address, $03, operand
 .ENDMACRO
 
 .MACRO EBMOVE_SHORTJUMP arg
@@ -245,6 +277,22 @@
 .MACRO EBMOVE_BINOP_TEMPVAR arg, arg2
 	.BYTE $27,  arg
 	.WORD arg2
+.ENDMACRO
+
+.MACRO EBMOVE_AND_TEMPVAR operand
+	EBMOVE_BINOP_TEMPVAR $00, operand
+.ENDMACRO
+
+.MACRO EBMOVE_OR_TEMPVAR operand
+	EBMOVE_BINOP_TEMPVAR $01, operand
+.ENDMACRO
+
+.MACRO EBMOVE_ADD_TEMPVAR operand
+	EBMOVE_BINOP_TEMPVAR $02, operand
+.ENDMACRO
+
+.MACRO EBMOVE_XOR_TEMPVAR operand
+	EBMOVE_BINOP_TEMPVAR $03, operand
 .ENDMACRO
 
 .MACRO EBMOVE_SET_X arg
