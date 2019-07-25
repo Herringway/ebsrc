@@ -290,6 +290,12 @@
         ASL
         ASL
         ASL
+    .ELSEIF amount = 9
+        STA scratch
+        ASL
+        ASL
+        ASL
+        ADC scratch
     .ELSEIF amount = 10
         STA scratch
         ASL
@@ -309,6 +315,14 @@
         ASL
         ADC scratch
         ASL
+    .ELSEIF amount = 15
+        STA scratch
+        ASL
+        ADC scratch
+        ASL
+        ADC scratch
+        ASL
+        ADC scratch
     .ELSEIF amount = 16
         ASL
         ASL

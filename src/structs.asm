@@ -208,7 +208,8 @@
 	sprite_y .byte ;67
 	initiative .byte ;68
 	.byte ;69
-	.byte 3 ;70
+	.byte 2 ;70
+	.byte ;72
 	.byte ;73
 	.byte ;74
 	id2 .byte ;75

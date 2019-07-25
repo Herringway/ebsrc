@@ -60,6 +60,14 @@
 .DEFINE CHANCE_OF_BODY_MOVING_AGAIN 15 ;In percentage
 .DEFINE CHANCE_OF_WAKING_UP_WHEN_ATTACKED 128 ;As X/255
 
+.DEFINE GUTS_FLOOR_FOR_SMAAAASH_CHANCE 25 ;Allies will be treated as having this much guts or more for SMAAAASH attack chances
+.DEFINE SMAAAASH_FLASH_DURATION 1*SECOND ;Duration (in frames) for the screen flashes that come with SMAAAASH attacks
+
+.DEFINE DAMAGE_TAKEN_SCREEN_SHAKE_DURATION_REGULAR 1*SECOND ;Duration in frames for the screen shaking that occurs when taking damage
+.DEFINE DAMAGE_TAKEN_SCREEN_SHAKE_DURATION_REGULAR_UNKNOWN 7*MILLISECONDS ;Ditto, but conditions for triggering are unknown
+.DEFINE DAMAGE_TAKEN_SCREEN_SHAKE_DURATION_MORTAL 1*SECOND ;Duration in frames for the screen shaking that occurs when taking mortal damage
+.DEFINE DAMAGE_TAKEN_SCREEN_SHAKE_DURATION_MORTAL_HOLD 1*FIFTH_OF_A_SECOND ;Ditto, but for the hold periods of each shake - for intensifying
+
 .DEFINE DEFAULT_MIRROR_TURN_COUNT 16 ;Number of turns that mirror lasts for
 
 .DEFINE ATM_ACCOUNT_LIMIT 9999999
