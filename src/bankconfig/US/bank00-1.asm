@@ -173,7 +173,7 @@
 
 .INCLUDE "unknown/C0/C04049.asm"
 
-.INCLUDE "unknown/C0/C0404F.asm"
+.INCLUDE "overworld/map_input_to_direction.asm"
 
 .INCLUDE "unknown/C0/C04116.asm"
 

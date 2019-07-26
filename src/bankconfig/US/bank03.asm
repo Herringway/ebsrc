@@ -17463,7 +17463,7 @@ MOVEMENT_34: ;$C3DF1E
 
 .INCLUDE "data/unknown/C3DFE8.asm"
 
-.INCLUDE "data/unknown/C3E12C.asm"
+.INCLUDE "data/map/allowed_input_directions.asm"
 
 .INCLUDE "data/unknown/C3E148.asm"
 
