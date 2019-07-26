@@ -302,6 +302,13 @@
         ASL
         ADC scratch
         ASL
+    .ELSEIF amount = 11
+        STA scratch
+        ASL
+        ASL
+        ADC scratch
+        ASL
+        ADC scratch
     .ELSEIF amount = 12
         STA scratch
         ASL
@@ -335,6 +342,21 @@
         ASL
         ASL
         ADC scratch
+    .ELSEIF amount = 18
+        STA scratch
+        ASL
+        ASL
+        ASL
+        ADC scratch
+        ASL
+    .ELSEIF amount = 19
+        STA scratch
+        ASL
+        ASL
+        ASL
+        ADC scratch
+        ASL
+        ADC scratch
     .ELSEIF amount = 20
         STA scratch
         ASL
@@ -349,6 +371,14 @@
         ASL
         ASL
         ASL
+    .ELSEIF amount = 25
+        STA scratch
+        ASL
+        ADC scratch
+        ASL
+        ASL
+        ASL
+        ADC scratch
     .ELSEIF amount = 27
         STA scratch
         ASL
@@ -358,6 +388,15 @@
         ADC scratch
         ASL
         ADC scratch
+    .ELSEIF amount = 30
+        STA scratch
+        ASL
+        ADC scratch
+        ASL
+        ADC scratch
+        ASL
+        ADC scratch
+        ASL
     .ELSEIF amount = 32
         ASL
         ASL
@@ -369,6 +408,7 @@
         ASL
         ASL
         ADC scratch
+        ASL
         ASL
         ASL
     .ELSEIF amount = 48
@@ -391,6 +431,15 @@
         ASL
         ASL
         ADC scratch
+        ASL
+        ASL
+        ASL
+        ASL
+    .ELSEIF amount = 96
+        STA scratch
+        ASL
+        ADC scratch
+        ASL
         ASL
         ASL
         ASL
