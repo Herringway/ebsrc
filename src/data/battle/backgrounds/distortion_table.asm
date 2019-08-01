@@ -1,1891 +1,1486 @@
 
 BG_DISTORTION_TABLE: ;$CAF708
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::NONE
   .WORD $0000 ;Ripple frequency
   .WORD $0000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0400 ;Ripple frequency
   .WORD $0800 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0400 ;Ripple frequency
   .WORD $1000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0400 ;Ripple frequency
   .WORD $2000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0400 ;Ripple frequency
   .WORD $4000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0300 ;Ripple frequency
   .WORD $0800 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0300 ;Ripple frequency
   .WORD $1000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0300 ;Ripple frequency
   .WORD $2000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0300 ;Ripple frequency
   .WORD $4000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $0800 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $1000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $2000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $4000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0100 ;Ripple frequency
   .WORD $0800 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0100 ;Ripple frequency
   .WORD $1000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0100 ;Ripple frequency
   .WORD $2000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0100 ;Ripple frequency
   .WORD $4000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0400 ;Ripple frequency
   .WORD $8000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $8000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $FFFF ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_INTERLACED
   .WORD $0400 ;Ripple frequency
   .WORD $0800 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_INTERLACED
   .WORD $0400 ;Ripple frequency
   .WORD $1000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_INTERLACED
   .WORD $0400 ;Ripple frequency
   .WORD $2000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_INTERLACED
   .WORD $0400 ;Ripple frequency
   .WORD $4000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_INTERLACED
   .WORD $0300 ;Ripple frequency
   .WORD $0800 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_INTERLACED
   .WORD $0300 ;Ripple frequency
   .WORD $1000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_INTERLACED
   .WORD $0300 ;Ripple frequency
   .WORD $2000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_INTERLACED
   .WORD $0300 ;Ripple frequency
   .WORD $4000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_INTERLACED
   .WORD $0200 ;Ripple frequency
   .WORD $0800 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_INTERLACED
   .WORD $0200 ;Ripple frequency
   .WORD $1000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_INTERLACED
   .WORD $0200 ;Ripple frequency
   .WORD $2000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_INTERLACED
   .WORD $0200 ;Ripple frequency
   .WORD $4000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_INTERLACED
   .WORD $0100 ;Ripple frequency
   .WORD $0800 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_INTERLACED
   .WORD $0100 ;Ripple frequency
   .WORD $1000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_INTERLACED
   .WORD $0100 ;Ripple frequency
   .WORD $2000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_INTERLACED
   .WORD $0100 ;Ripple frequency
   .WORD $4000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_INTERLACED
   .WORD $0400 ;Ripple frequency
   .WORD $8000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_INTERLACED
   .WORD $0200 ;Ripple frequency
   .WORD $8000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_INTERLACED
   .WORD $0200 ;Ripple frequency
   .WORD $FFFF ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0400 ;Ripple frequency
   .WORD $0800 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0400 ;Ripple frequency
   .WORD $1000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0400 ;Ripple frequency
   .WORD $2000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0400 ;Ripple frequency
   .WORD $4000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0300 ;Ripple frequency
   .WORD $0800 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0300 ;Ripple frequency
   .WORD $1000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0300 ;Ripple frequency
   .WORD $2000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0300 ;Ripple frequency
   .WORD $4000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $0800 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $1000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $2000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $4000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0100 ;Ripple frequency
   .WORD $0800 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0100 ;Ripple frequency
   .WORD $1000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0100 ;Ripple frequency
   .WORD $2000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0100 ;Ripple frequency
   .WORD $4000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0400 ;Ripple frequency
   .WORD $8000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $8000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $FFFF ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0400 ;Ripple frequency
   .WORD $0800 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0400 ;Ripple frequency
   .WORD $1000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0400 ;Ripple frequency
   .WORD $2000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0400 ;Ripple frequency
   .WORD $4000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0300 ;Ripple frequency
   .WORD $0800 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0300 ;Ripple frequency
   .WORD $1000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0300 ;Ripple frequency
   .WORD $2000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0300 ;Ripple frequency
   .WORD $4000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0200 ;Ripple frequency
   .WORD $0800 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0200 ;Ripple frequency
   .WORD $1000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0200 ;Ripple frequency
   .WORD $2000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0200 ;Ripple frequency
   .WORD $4000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0100 ;Ripple frequency
   .WORD $0800 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0100 ;Ripple frequency
   .WORD $1000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0100 ;Ripple frequency
   .WORD $2000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0100 ;Ripple frequency
   .WORD $4000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0400 ;Ripple frequency
   .WORD $8000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0200 ;Ripple frequency
   .WORD $8000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0200 ;Ripple frequency
   .WORD $FFFF ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $78 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0078 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0200 ;Ripple frequency
   .WORD $2000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0100 ;Ripple amplitude acceleration
   .BYTE $0A ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $78 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0078 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $2000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0100 ;Ripple amplitude acceleration
   .BYTE $0A ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $78 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0078 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_INTERLACED
   .WORD $0200 ;Ripple frequency
   .WORD $2000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0100 ;Ripple amplitude acceleration
   .BYTE $0A ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $78 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0078 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $2000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0100 ;Ripple amplitude acceleration
   .BYTE $0A ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $FF ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $00FF ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $0000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0100 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $FF ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $00FF ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $FF00 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $FF00 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $FF ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $00FF ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $0000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0100 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $FF ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $00FF ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $FF00 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $FF00 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $8000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $02 ;Unknown
+  .WORD $0200 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $8000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $80 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0080 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $0100 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0400 ;Ripple frequency
   .WORD $4000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $0100 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $02 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0002 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $0100 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0400 ;Ripple frequency
   .WORD $4000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $03 ;Unknown
+  .WORD $0300 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $FE ;Unknown
-  .BYTE $FF ;Unknown
+  .WORD $FFFE ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $04 ;Unknown
+  .WORD $0400 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0800 ;Ripple frequency
   .WORD $4000 ;Ripple amplitude
   .BYTE $80 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $FFFE ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $01 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $04 ;Unknown
+  .WORD $0400 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0000 ;Ripple frequency
   .WORD $4000 ;Ripple amplitude
   .BYTE $80 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0002 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $FF ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $58 ;Unknown
-  .BYTE $02 ;Unknown
+  .WORD $0258 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0000 ;Ripple frequency
   .WORD $0000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $0100 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $03 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0003 ;Compression rate acceleration
 
-  .BYTE $58 ;Unknown
-  .BYTE $02 ;Unknown
+  .WORD $0258 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0000 ;Ripple frequency
   .WORD $0000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $08 ;Unknown
-  .BYTE $08 ;Unknown
+  .WORD $0808 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $FD ;Unknown
-  .BYTE $FF ;Unknown
+  .WORD $FFFD ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $02 ;Unknown
+  .WORD $0200 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0000 ;Ripple frequency
   .WORD $0000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $02 ;Unknown
+  .WORD $0200 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $FF ;Unknown
-  .BYTE $FF ;Unknown
+  .WORD $FFFF ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $02 ;Unknown
+  .WORD $0200 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0000 ;Ripple frequency
   .WORD $0000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $01 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0001 ;Compression rate acceleration
 
-  .BYTE $F0 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $00F0 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0000 ;Ripple frequency
   .WORD $0000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $E0 ;Unknown
-  .BYTE $02 ;Unknown
+  .WORD $02E0 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $FE ;Unknown
-  .BYTE $FF ;Unknown
+  .WORD $FFFE ;Compression rate acceleration
 
-  .BYTE $F0 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $00F0 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0000 ;Ripple frequency
   .WORD $0000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $02 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0002 ;Compression rate acceleration
 
-  .BYTE $F0 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $00F0 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0400 ;Ripple frequency
   .WORD $8000 ;Ripple amplitude
   .BYTE $01 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $FFFE ;Ripple frequency acceleration
   .WORD $FF9C ;Ripple amplitude acceleration
   .BYTE $01 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $F0 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $00F0 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0220 ;Ripple frequency
   .WORD $2240 ;Ripple amplitude
   .BYTE $F1 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0002 ;Ripple frequency acceleration
   .WORD $0064 ;Ripple amplitude acceleration
   .BYTE $FF ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $0100 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0200 ;Ripple frequency
   .WORD $4000 ;Ripple amplitude
   .BYTE $02 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $0100 ;Compression rate
   .WORD $0002 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $01 ;Speed
-  .BYTE $02 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0002 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $0100 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0400 ;Ripple frequency
   .WORD $4000 ;Ripple amplitude
   .BYTE $02 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $03 ;Unknown
+  .WORD $0300 ;Compression rate
   .WORD $FFFE ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $FF ;Speed
-  .BYTE $FE ;Unknown
-  .BYTE $FF ;Unknown
+  .WORD $FFFE ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0080 ;Ripple frequency
   .WORD $0800 ;Ripple amplitude
   .BYTE $01 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $0100 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0400 ;Ripple frequency
   .WORD $0000 ;Ripple amplitude
   .BYTE $02 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0080 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $0100 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0400 ;Ripple frequency
   .WORD $8000 ;Ripple amplitude
   .BYTE $02 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $FF80 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $F4 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $01F4 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $0000 ;Ripple amplitude
   .BYTE $02 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0080 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $F4 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $01F4 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $FA00 ;Ripple amplitude
   .BYTE $02 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $FF80 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $F4 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $01F4 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $0000 ;Ripple amplitude
   .BYTE $0A ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0050 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $F4 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $01F4 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $9C40 ;Ripple amplitude
   .BYTE $0A ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $FFB0 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $F0 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $00F0 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $0800 ;Ripple amplitude
   .BYTE $02 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $01 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0001 ;Compression rate acceleration
 
-  .BYTE $E0 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $01E0 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $0800 ;Ripple amplitude
   .BYTE $02 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $F0 ;Unknown
+  .WORD $F000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $FE ;Unknown
-  .BYTE $FF ;Unknown
+  .WORD $FFFE ;Compression rate acceleration
 
-  .BYTE $F0 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $00F0 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0000 ;Ripple frequency
   .WORD $0000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $B4 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $00B4 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0000 ;Ripple frequency
   .WORD $0000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $68 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $0168 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0100 ;Ripple frequency
   .WORD $0000 ;Ripple amplitude
   .BYTE $02 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0080 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $68 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $0168 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0100 ;Ripple frequency
   .WORD $0000 ;Ripple amplitude
   .BYTE $02 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0040 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_INTERLACED
   .WORD $1000 ;Ripple frequency
   .WORD $FA80 ;Ripple amplitude
   .BYTE $0A ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $E0 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $01E0 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_INTERLACED
   .WORD $0200 ;Ripple frequency
   .WORD $1000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $F0 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $00F0 ;Duration
   .BYTE DISTORTION_STYLE::HORIZONTAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $1000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $00E0 ;Ripple frequency
   .WORD $1000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $0100 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0400 ;Ripple frequency
   .WORD $0000 ;Ripple amplitude
   .BYTE $02 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0080 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $0100 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0400 ;Ripple frequency
   .WORD $8000 ;Ripple amplitude
   .BYTE $02 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $FF80 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $E0 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $01E0 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $0400 ;Ripple amplitude
   .BYTE $02 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $0100 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $02 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0002 ;Compression rate acceleration
 
-  .BYTE $E0 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $01E0 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $0400 ;Ripple amplitude
   .BYTE $02 ;Unknown
-  .BYTE $C0 ;Unknown
-  .BYTE $04 ;Unknown
+  .WORD $04C0 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $FE ;Unknown
-  .BYTE $FF ;Unknown
+  .WORD $FFFE ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0300 ;Ripple frequency
   .WORD $4000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0400 ;Ripple frequency
   .WORD $2000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $0100 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0400 ;Ripple frequency
   .WORD $0000 ;Ripple amplitude
   .BYTE $02 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0080 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $0100 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0400 ;Ripple frequency
   .WORD $8000 ;Ripple amplitude
   .BYTE $02 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $FF80 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $0100 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0400 ;Ripple frequency
   .WORD $0000 ;Ripple amplitude
   .BYTE $02 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0096 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $0100 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0400 ;Ripple frequency
   .WORD $9600 ;Ripple amplitude
   .BYTE $02 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $FF6A ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $68 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $0168 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0100 ;Ripple frequency
   .WORD $0000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $003C ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $68 ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $0168 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0100 ;Ripple frequency
   .WORD $5460 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $FFC4 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0100 ;Ripple frequency
   .WORD $0400 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0000 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $F0 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $00F0 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0100 ;Ripple frequency
   .WORD $0000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $005A ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $F0 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $00F0 ;Duration
   .BYTE DISTORTION_STYLE::UNKNOWN
   .WORD $0100 ;Ripple frequency
   .WORD $5460 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $FFA6 ;Ripple amplitude acceleration
   .BYTE $02 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $FE ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $01FE ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $0000 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $0080 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
 
-  .BYTE $FE ;Unknown
-  .BYTE $01 ;Unknown
+  .WORD $01FE ;Duration
   .BYTE DISTORTION_STYLE::VERTICAL_SMOOTH
   .WORD $0200 ;Ripple frequency
   .WORD $FF00 ;Ripple amplitude
   .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate
   .WORD $0000 ;Ripple frequency acceleration
   .WORD $FF80 ;Ripple amplitude acceleration
   .BYTE $00 ;Speed
-  .BYTE $00 ;Unknown
-  .BYTE $00 ;Unknown
+  .WORD $0000 ;Compression rate acceleration
