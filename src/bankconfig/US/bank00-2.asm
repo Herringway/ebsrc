@@ -638,7 +638,7 @@
 
 .INCLUDE "unknown/C0/C0ADB2.asm"
 
-.INCLUDE "data/unknown/C0AE16.asm"
+.INCLUDE "data/dma_flags.asm"
 
 .INCLUDE "data/unknown/C0AE1D.asm"
 
