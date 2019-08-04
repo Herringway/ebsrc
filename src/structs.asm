@@ -350,3 +350,63 @@
 	pp1 .word (HPPP_WINDOW_WIDTH - 4) ;12
 	pp2 .word (HPPP_WINDOW_WIDTH - 4) ;18
 .ENDSTRUCT
+
+.STRUCT distortion_entry
+	duration .word ;0
+	style .byte ;2
+	ripple_frequency .word ;3
+	ripple_amplitude .word ;5
+	.byte ;7
+	compression_rate .word ;8
+	ripple_frequency_acceleration .word ;10
+	ripple_amplitude_acceleration .word ;12
+	speed .byte ;14
+	compression_acceleration .word;15
+.ENDSTRUCT
+
+.STRUCT bg_scrolling_entry
+	duration .word ;0
+	horizontal_movement .word ;2
+	vertical_movement .word ;4
+	horizontal_acceleration .word ;6
+	vertical_acceleration .word ;8
+.ENDSTRUCT
+
+.STRUCT bg_layer_config_entry
+	graphics .byte ;0
+	palette .byte ;1
+	bitdepth .byte ;2
+	.byte ;3
+	palette_cycle_1_first .byte ;4
+	palette_cycle_1_last .byte ;5
+	palette_cycle_2_first .byte ;6
+	palette_cycle_2_last .byte ;7
+	palette_change_speed .byte ;8
+	scrolling_movement_1 .byte ;9
+	scrolling_movement_2 .byte ;10
+	scrolling_movement_3 .byte ;11
+	scrolling_movement_4 .byte ;12
+	distortion_style_1 .byte ;13
+	distortion_style_2 .byte ;14
+	distortion_style_3 .byte ;15
+	distortion_style_4 .byte ;16
+.ENDSTRUCT
+
+.STRUCT loaded_bg_data
+	.byte ;0
+	bitdepth .byte ;1
+	.byte ;2
+	.byte ;3
+	palette_cycle_1_first .byte ;4
+	palette_cycle_1_last .byte ;5
+	palette_cycle_2_first .byte ;6
+	palette_cycle_2_last .byte ;7
+	.byte ;8
+	.byte ;9
+	palette_change_speed .byte ;10
+	.byte 1 ;11
+	palette .word 16 ;12
+	.byte 72 ;44
+	.byte ;116
+	.word ;117
+.ENDSTRUCT
