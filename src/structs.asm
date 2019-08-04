@@ -406,7 +406,14 @@
 	palette_change_speed .byte ;10
 	.byte 1 ;11
 	palette .word 16 ;12
-	.byte 72 ;44
+	.byte 32 ;44
+	.word ;76
+	.byte 19 ;78
+	.word ;97
+	.byte ;99
+	.word ;100
+	.word ;102
+	.byte 12 ;104
 	.byte ;116
 	.word ;117
 .ENDSTRUCT
