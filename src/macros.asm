@@ -529,6 +529,15 @@
     STA dest+2, X
 .ENDMACRO
 
+.MACRO DEREFERENCE_PTR_TO ptr, dest
+    LDY #$0002
+    LDA [ptr],Y
+    TAY
+    LDA [ptr]
+    STA dest
+    STY dest+2
+.ENDMACRO
+
 .MACRO COPY_TO_VRAM1 src, dest, size, unk
     LOADPTR src, $0E
     COPY_TO_VRAM1COMMON dest, size, unk
