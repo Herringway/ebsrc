@@ -640,7 +640,7 @@
 
 .INCLUDE "data/dma_flags.asm"
 
-.INCLUDE "data/unknown/C0AE1D.asm"
+.INCLUDE "data/dma_target_registers.asm"
 
 .INCLUDE "data/unknown/C0AE26.asm"
 
