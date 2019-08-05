@@ -13095,6 +13095,7 @@ LOAD_ENEMY_BATTLE_SPRITES: ;$C2C8C8
 	PLD
 	RTL
 
+;Responsible for animating battle bgs? A: Pointer to bg data, X: layer ID
 UNKNOWN_C2C92D: ;$C2C92D
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
 	PHD
@@ -13116,7 +13117,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 @UNKNOWN0:
 	LDA $1B
 	CLC
-	ADC #$000B
+	ADC #loaded_bg_data::palette_change_duration_left
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
 	LDA a:.LOWORD(RAM),X
@@ -13135,11 +13136,11 @@ UNKNOWN_C2C92D: ;$C2C92D
 	BEQ @UNKNOWN2
 	JMP a:.LOWORD(@UNKNOWN23)
 @UNKNOWN2:
-	LDY #$000A
+	LDY #loaded_bg_data::palette_change_speed
 	SEP #PROC_FLAGS::ACCUM8
 	LDA ($1B),Y
 	STA a:.LOWORD(RAM),X
-	LDY #$0003
+	LDY #loaded_bg_data::bg_config_unknown
 	REP #PROC_FLAGS::ACCUM8
 	LDA ($1B),Y
 	AND #$00FF
@@ -13155,10 +13156,10 @@ UNKNOWN_C2C92D: ;$C2C92D
 @UNKNOWN4:
 	JMP a:.LOWORD(@UNKNOWN22)
 @UNKNOWN5:
-	LDY #$0007
+	LDY #loaded_bg_data::palette_cycle_2_last
 	SEP #PROC_FLAGS::ACCUM8
 	LDA ($1B),Y
-	LDY #$0006
+	LDY #loaded_bg_data::palette_cycle_2_first
 	SEC
 	SBC ($1B),Y
 	REP #PROC_FLAGS::ACCUM8
@@ -13169,7 +13170,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 	STX $16
 	BRA @UNKNOWN9
 @UNKNOWN6:
-	LDY #$0009
+	LDY #loaded_bg_data::palette_cycle_2_step
 	LDA ($1B),Y
 	AND #$00FF
 	STA $04
@@ -13189,7 +13190,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 	SBC $04
 	STA $14
 @UNKNOWN8:
-	LDY #$0006
+	LDY #loaded_bg_data::palette_cycle_2_first
 	LDA ($1B),Y
 	AND #$00FF
 	TAY
@@ -13199,7 +13200,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 	CLC
 	ADC $04
 	ASL
-	LDY #$004C
+	LDY #loaded_bg_data::palette_pointer
 	CLC
 	ADC ($1B),Y
 	PHA
@@ -13225,7 +13226,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 	BCC @UNKNOWN6
 	LDA $1B
 	CLC
-	ADC #$0009
+	ADC #loaded_bg_data::palette_cycle_2_step
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
 	LDA a:.LOWORD(RAM),X
@@ -13239,10 +13240,10 @@ UNKNOWN_C2C92D: ;$C2C92D
 	LDA #$0000
 	STA a:.LOWORD(RAM),X
 @UNKNOWN10:
-	LDY #$0005
+	LDY #loaded_bg_data::palette_cycle_1_last
 	SEP #PROC_FLAGS::ACCUM8
 	LDA ($1B),Y
-	LDY #$0004
+	LDY #loaded_bg_data::palette_cycle_1_first
 	SEC
 	SBC ($1B),Y
 	REP #PROC_FLAGS::ACCUM8
@@ -13253,7 +13254,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 	STX $16
 	BRA @UNKNOWN14
 @UNKNOWN11:
-	LDY #$0008
+	LDY #loaded_bg_data::palette_cycle_1_step
 	LDA ($1B),Y
 	AND #$00FF
 	STA $04
@@ -13273,7 +13274,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 	SBC $04
 	STA $14
 @UNKNOWN13:
-	LDY #$0004
+	LDY #loaded_bg_data::palette_cycle_1_first
 	LDA ($1B),Y
 	AND #$00FF
 	TAY
@@ -13309,7 +13310,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 	BCC @UNKNOWN11
 	LDA $1B
 	CLC
-	ADC #$0008
+	ADC #loaded_bg_data::palette_cycle_1_step
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
 	LDA a:.LOWORD(RAM),X
@@ -13327,10 +13328,10 @@ UNKNOWN_C2C92D: ;$C2C92D
 	STA a:.LOWORD(RAM),X
 	JMP a:.LOWORD(@UNKNOWN22)
 @UNKNOWN16:
-	LDY #$0005
+	LDY #loaded_bg_data::palette_cycle_1_last
 	SEP #PROC_FLAGS::ACCUM8
 	LDA ($1B),Y
-	LDY #$0004
+	LDY #loaded_bg_data::palette_cycle_1_first
 	SEC
 	SBC ($1B),Y
 	REP #PROC_FLAGS::ACCUM8
@@ -13341,7 +13342,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 	STY $0E
 	BRA @UNKNOWN20
 @UNKNOWN17:
-	LDY #$0008
+	LDY #loaded_bg_data::palette_cycle_1_step
 	LDA ($1B),Y
 	AND #$00FF
 	STA $04
@@ -13380,7 +13381,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 	STA $02
 	STA $14
 @UNKNOWN19:
-	LDY #$0004
+	LDY #loaded_bg_data::palette_cycle_1_first
 	LDA ($1B),Y
 	AND #$00FF
 	TAX
@@ -13420,7 +13421,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 @UNKNOWN21:
 	LDA $1B
 	CLC
-	ADC #$0008
+	ADC #loaded_bg_data::palette_cycle_1_step
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
 	LDA a:.LOWORD(RAM),X
@@ -13451,7 +13452,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 @UNKNOWN24:
 	LDA $1B
 	CLC
-	ADC #$0053
+	ADC #loaded_bg_data::scrolling_duration_left
 	TAX
 	LDA a:.LOWORD(RAM),X
 	BNE @UNKNOWN25
@@ -13464,7 +13465,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 @UNKNOWN26:
 	LDA $1B
 	CLC
-	ADC #$0052
+	ADC #loaded_bg_data::current_scrolling_movement
 	TAX
 	STX $0E
 	SEP #PROC_FLAGS::ACCUM8
@@ -13485,7 +13486,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 	LDA #$0000
 	LDX $0E
 	STA a:.LOWORD(RAM),X
-	LDY #$004E
+	LDY #loaded_bg_data::scrolling_movements
 	REP #PROC_FLAGS::ACCUM8
 	LDA ($1B),Y
 	AND #$00FF
@@ -13507,7 +13508,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 	ADC $0A
 	STA $0A
 	LDA [$0A]
-	LDY #$0053
+	LDY #loaded_bg_data::scrolling_duration_left
 	STA ($1B),Y
 	LDA $12
 	;bg_scrolling_entry::horizontal_movement
@@ -13521,7 +13522,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 	ADC $0A
 	STA $0A
 	LDA [$0A]
-	LDY #$0059
+	LDY #loaded_bg_data::horizontal_velocity
 	STA ($1B),Y
 	LDA $12
 	;bg_scrolling_entry::vertical_movement
@@ -13537,7 +13538,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 	ADC $0A
 	STA $0A
 	LDA [$0A]
-	LDY #$005B
+	LDY #loaded_bg_data::vertical_velocity
 	STA ($1B),Y
 	LDA $12
 	CLC
@@ -13550,7 +13551,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 	ADC $0A
 	STA $0A
 	LDA [$0A]
-	LDY #$005D
+	LDY #loaded_bg_data::horizontal_acceleration
 	STA ($1B),Y
 	LDA $12
 	CLC
@@ -13559,18 +13560,18 @@ UNKNOWN_C2C92D: ;$C2C92D
 	ADC $06
 	STA $06
 	LDA [$06]
-	LDY #$005F
+	LDY #loaded_bg_data::vertical_acceleration
 	STA ($1B),Y
 @UNKNOWN29:
 	LDA $1B
 	CLC
-	ADC #$0055
+	ADC #loaded_bg_data::horizontal_position
 	STA $02
 	LDA $1B
 	CLC
-	ADC #$0059
+	ADC #loaded_bg_data::horizontal_velocity
 	TAX
-	LDY #$005D
+	LDY #loaded_bg_data::horizontal_acceleration
 	LDA a:.LOWORD(RAM),X
 	CLC
 	ADC ($1B),Y
@@ -13584,14 +13585,14 @@ UNKNOWN_C2C92D: ;$C2C92D
 	STA a:.LOWORD(RAM),X
 	LDA $1B
 	CLC
-	ADC #$0057
+	ADC #loaded_bg_data::vertical_position
 	TAY
 	STY $16
 	LDA $1B
 	CLC
-	ADC #$005B
+	ADC #loaded_bg_data::vertical_velocity
 	TAX
-	LDY #$005F
+	LDY #loaded_bg_data::vertical_acceleration
 	LDA a:.LOWORD(RAM),X
 	CLC
 	ADC ($1B),Y
@@ -13674,7 +13675,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 @UNKNOWN34:
 	LDA $1B
 	CLC
-	ADC #$0066
+	ADC #loaded_bg_data::distortion_duration_left
 	TAX
 	LDA a:.LOWORD(RAM),X
 	BNE @UNKNOWN35
@@ -13708,7 +13709,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 	LDA #$0000
 	LDX $0E
 	STA a:.LOWORD(RAM),X
-	LDY #$0061
+	LDY #loaded_bg_data::distortion_styles
 	REP #PROC_FLAGS::ACCUM8
 	LDA ($1B),Y
 	AND #$00FF
@@ -13730,11 +13731,11 @@ UNKNOWN_C2C92D: ;$C2C92D
 	ADC $0A
 	STA $0A
 	LDA [$0A]
-	LDY #$0066
+	LDY #loaded_bg_data::distortion_duration_left
 	STA ($1B),Y
 	LDA $1B
 	CLC
-	ADC #$0068
+	ADC #loaded_bg_data::distortion_type
 	TAX
 	LDA $10
 	;style
@@ -13764,7 +13765,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 	ADC $0A
 	STA $0A
 	LDA [$0A]
-	LDY #$0069
+	LDY #loaded_bg_data::distortion_ripple_frequency
 	STA ($1B),Y
 	LDA $10
 	CLC
@@ -13777,61 +13778,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 	ADC $0A
 	STA $0A
 	LDA [$0A]
-	LDY #$006B
-	STA ($1B),Y
-	LDA $10
-	CLC
-	ADC #$0007 ;distortion_entry::unknown
-	LDY $06
-	STY $0A
-	LDY $08
-	STY $0C
-	CLC
-	ADC $0A
-	STA $0A
-	SEP #PROC_FLAGS::ACCUM8
-	LDA [$0A]
-	LDY #$006D
-	STA ($1B),Y
-	REP #PROC_FLAGS::ACCUM8
-	LDA $10
-	CLC
-	ADC #distortion_entry::compression_rate
-	LDY $06
-	STY $0A
-	LDY $08
-	STY $0C
-	CLC
-	ADC $0A
-	STA $0A
-	LDA [$0A]
-	LDY #$006E
-	STA ($1B),Y
-	LDA $10
-	CLC
-	ADC #distortion_entry::ripple_frequency_acceleration
-	LDY $06
-	STY $0A
-	LDY $08
-	STY $0C
-	CLC
-	ADC $0A
-	STA $0A
-	LDA [$0A]
-	LDY #$0070
-	STA ($1B),Y
-	LDA $10
-	CLC
-	ADC #distortion_entry::ripple_amplitude_acceleration
-	LDY $06
-	STY $0A
-	LDY $08
-	STY $0C
-	CLC
-	ADC $0A
-	STA $0A
-	LDA [$0A]
-	LDY #$0072
+	LDY #loaded_bg_data::distortion_ripple_amplitude
 	STA ($1B),Y
 	LDA $10
 	CLC
@@ -13845,7 +13792,61 @@ UNKNOWN_C2C92D: ;$C2C92D
 	STA $0A
 	SEP #PROC_FLAGS::ACCUM8
 	LDA [$0A]
-	LDY #$0074
+	LDY #loaded_bg_data::distortion_speed
+	STA ($1B),Y
+	REP #PROC_FLAGS::ACCUM8
+	LDA $10
+	CLC
+	ADC #distortion_entry::compression_rate
+	LDY $06
+	STY $0A
+	LDY $08
+	STY $0C
+	CLC
+	ADC $0A
+	STA $0A
+	LDA [$0A]
+	LDY #loaded_bg_data::distortion_compression_rate
+	STA ($1B),Y
+	LDA $10
+	CLC
+	ADC #distortion_entry::ripple_frequency_acceleration
+	LDY $06
+	STY $0A
+	LDY $08
+	STY $0C
+	CLC
+	ADC $0A
+	STA $0A
+	LDA [$0A]
+	LDY #loaded_bg_data::distortion_ripple_frequency_acceleration
+	STA ($1B),Y
+	LDA $10
+	CLC
+	ADC #distortion_entry::ripple_amplitude_acceleration
+	LDY $06
+	STY $0A
+	LDY $08
+	STY $0C
+	CLC
+	ADC $0A
+	STA $0A
+	LDA [$0A]
+	LDY #loaded_bg_data::distortion_ripple_amplitude_acceleration
+	STA ($1B),Y
+	LDA $10
+	CLC
+	ADC #distortion_entry::speed_acceleration
+	LDY $06
+	STY $0A
+	LDY $08
+	STY $0C
+	CLC
+	ADC $0A
+	STA $0A
+	SEP #PROC_FLAGS::ACCUM8
+	LDA [$0A]
+	LDY #loaded_bg_data::distortion_speed_acceleration
 	STA ($1B),Y
 	REP #PROC_FLAGS::ACCUM8
 	LDA $10
@@ -13855,7 +13856,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 	ADC $06
 	STA $06
 	LDA [$06]
-	LDY #$0075
+	LDY #loaded_bg_data::distortion_compression_acceleration
 	STA ($1B),Y
 	LDA a:.LOWORD(RAM),X
 	AND #$00FF
@@ -13882,7 +13883,7 @@ UNKNOWN_C2C92D: ;$C2C92D
 @UNKNOWN40:
 	LDA $1B
 	CLC
-	ADC #$0068
+	ADC #loaded_bg_data::distortion_type
 	STA $0E
 	TAX
 	LDA a:.LOWORD(RAM),X
@@ -13892,27 +13893,27 @@ UNKNOWN_C2C92D: ;$C2C92D
 @UNKNOWN41:
 	LDA $1B
 	CLC
-	ADC #$0069
+	ADC #loaded_bg_data::distortion_ripple_frequency
 	TAX
-	LDY #$0070
+	LDY #loaded_bg_data::distortion_ripple_frequency_acceleration
 	LDA a:.LOWORD(RAM),X
 	CLC
 	ADC ($1B),Y
 	STA a:.LOWORD(RAM),X
 	LDA $1B
 	CLC
-	ADC #$006B
+	ADC #loaded_bg_data::distortion_ripple_amplitude
 	TAX
-	LDY #$0072
+	LDY #loaded_bg_data::distortion_ripple_amplitude_acceleration
 	LDA a:.LOWORD(RAM),X
 	CLC
 	ADC ($1B),Y
 	STA a:.LOWORD(RAM),X
 	LDA $1B
 	CLC
-	ADC #$006D
+	ADC #loaded_bg_data::distortion_speed
 	TAX
-	LDY #$0074
+	LDY #loaded_bg_data::distortion_speed_acceleration
 	SEP #PROC_FLAGS::ACCUM8
 	LDA a:.LOWORD(RAM),X
 	CLC
@@ -13921,9 +13922,9 @@ UNKNOWN_C2C92D: ;$C2C92D
 	REP #PROC_FLAGS::ACCUM8
 	LDA $1B
 	CLC
-	ADC #$006E
+	ADC #loaded_bg_data::distortion_compression_rate
 	STA $02
-	LDY #$0075
+	LDY #loaded_bg_data::distortion_compression_acceleration
 	LDX $02
 	LDA a:.LOWORD(RAM),X
 	CLC
@@ -13951,17 +13952,17 @@ UNKNOWN_C2C92D: ;$C2C92D
 	LDA .LOWORD(UNKNOWN_7EADAC)
 	BNE @UNKNOWN43
 @UNKNOWN42:
-	LDY #$006D
+	LDY #loaded_bg_data::distortion_speed
 	LDA ($1B),Y
 	AND #$00FF
 	TAY
 	STY $10
-	LDY #$006B
+	LDY #loaded_bg_data::distortion_ripple_amplitude
 	LDA ($1B),Y
 	XBA
 	AND #$00FF
 	TAX
-	LDY #$0069
+	LDY #loaded_bg_data::distortion_ripple_frequency
 	LDA ($1B),Y
 	LDY $10
 	JSL UNKNOWN_C0AE5A
@@ -13996,7 +13997,7 @@ UNKNOWN_C2CFE5: ;$C2CFE5
 	LDY #$0003
 	LDA [$06],Y
 	LDY $16
-	STA a:.LOWORD(RAM)+3,Y
+	STA a:.LOWORD(RAM) + loaded_bg_data::bg_config_unknown,Y
 	LDY #bg_layer_config_entry::palette_cycle_1_first
 	LDA [$06],Y
 	LDY $16
@@ -14018,19 +14019,19 @@ UNKNOWN_C2CFE5: ;$C2CFE5
 	LDY $16
 	STA a:.LOWORD(RAM) + loaded_bg_data::palette_change_speed,Y
 	REP #PROC_FLAGS::ACCUM8
-	LDA #$0009
+	LDA #bg_layer_config_entry::scrolling_movement_1
 	CLC
 	ADC $06
 	STA $06
 	STA $0E
 	LDA $08
 	STA $10
-	LDX #$0004
+	LDX #.SIZEOF(loaded_bg_data::scrolling_movements)
 	TYA
 	CLC
-	ADC #$004E
+	ADC #loaded_bg_data::scrolling_movements
 	JSL MEMCPY16
-	LDA #$000D
+	LDA #bg_layer_config_entry::distortion_style_1
 	LDX $12
 	STX $06
 	LDX $14
@@ -14041,11 +14042,11 @@ UNKNOWN_C2CFE5: ;$C2CFE5
 	STA $0E
 	LDA $08
 	STA $10
-	LDX #$0004
+	LDX #.SIZEOF(loaded_bg_data::distortion_styles)
 	LDY $16
 	TYA
 	CLC
-	ADC #$0061
+	ADC #loaded_bg_data::distortion_styles
 	JSL MEMCPY16
 	LDA #$0001
 	LDY $16
@@ -14305,9 +14306,9 @@ LOAD_BATTLE_BG: ;$C2D121
 	STA $10
 	LDA #.LOWORD(LOADED_BG_DATA_LAYER1)
 	JSL UNKNOWN_C2CFE5
-	LDA #.LOWORD(LOADED_BG_DATA_LAYER1) + 76
+	LDA #.LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::palette_pointer
 	STA $02
-	LDA #$0240
+	LDA #.LOWORD(CUR_MAP_PAL)
 	LDX $02
 	STA a:.LOWORD(RAM),X
 	LDY #.LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::palette
@@ -14337,7 +14338,7 @@ LOAD_BATTLE_BG: ;$C2D121
 	STA $06
 	DEREFERENCE_PTR_TO $06, $06
 	MOVE_INT $06, $0E
-	LDX #$0020
+	LDX #.SIZEOF(loaded_bg_data::palette)
 	LDY $1E
 	TYA
 	JSL MEMCPY16
@@ -14353,8 +14354,8 @@ LOAD_BATTLE_BG: ;$C2D121
 	STA $0A
 	DEREFERENCE_PTR_TO $0A, $06
 	MOVE_INT $06, $0E
-	LDX #$0020
-	LDA #.LOWORD(LOADED_BG_DATA_LAYER1) + 44
+	LDX #.SIZEOF(loaded_bg_data::palette2)
+	LDA #.LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::palette2
 	JSL MEMCPY16
 	LDY $1E
 	TYA
@@ -14493,9 +14494,9 @@ LOAD_BATTLE_BG: ;$C2D121
 	STA $10
 	LDA $04
 	JSL UNKNOWN_C2CFE5
-	LDA #.LOWORD(LOADED_BG_DATA_LAYER2) + 76
+	LDA #.LOWORD(LOADED_BG_DATA_LAYER2) + loaded_bg_data::palette_pointer
 	STA $02
-	LDA #$0280
+	LDA #.LOWORD(CUR_MAP_PAL) + 64
 	LDX $02
 	STA a:.LOWORD(RAM),X
 	SEP #PROC_FLAGS::ACCUM8
@@ -14532,7 +14533,7 @@ LOAD_BATTLE_BG: ;$C2D121
 	STA $06
 	DEREFERENCE_PTR_TO $06, $06
 	MOVE_INT $06, $0E
-	LDX #$0020
+	LDX #.SIZEOF(loaded_bg_data::palette)
 	LDY $2C
 	TYA
 	JSL MEMCPY16
@@ -14546,8 +14547,8 @@ LOAD_BATTLE_BG: ;$C2D121
 	STA $0A
 	DEREFERENCE_PTR_TO $0A, $06
 	MOVE_INT $06, $0E
-	LDX #$0020
-	LDA #.LOWORD(LOADED_BG_DATA_LAYER2) + 44
+	LDX #.SIZEOF(loaded_bg_data::palette2)
+	LDA #.LOWORD(LOADED_BG_DATA_LAYER2) + loaded_bg_data::palette2
 	JSL MEMCPY16
 	LDY $2C
 	TYA
@@ -14660,9 +14661,9 @@ LOAD_BATTLE_BG: ;$C2D121
 	STA $10
 	LDA #.LOWORD(LOADED_BG_DATA_LAYER1)
 	JSL UNKNOWN_C2CFE5
-	LDA #.LOWORD(LOADED_BG_DATA_LAYER1) + 76
+	LDA #.LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::palette_pointer
 	STA $02
-	LDA #$0280
+	LDA #.LOWORD(CUR_MAP_PAL) + 64
 	LDX $02
 	STA a:.LOWORD(RAM),X
 	LDY #.LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::palette
@@ -14685,7 +14686,7 @@ LOAD_BATTLE_BG: ;$C2D121
 	STA $06
 	DEREFERENCE_PTR_TO $06, $06
 	MOVE_INT $06, $0E
-	LDX #$0020
+	LDX #.SIZEOF(loaded_bg_data::palette)
 	LDY $1E
 	TYA
 	JSL MEMCPY16
@@ -14701,8 +14702,8 @@ LOAD_BATTLE_BG: ;$C2D121
 	STA $0A
 	DEREFERENCE_PTR_TO $0A, $06
 	MOVE_INT $06, $0E
-	LDX #$0020
-	LDA #.LOWORD(LOADED_BG_DATA_LAYER1) + 44
+	LDX #.SIZEOF(loaded_bg_data::palette2)
+	LDA #.LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::palette2
 	JSL MEMCPY16
 	LDY $1E
 	TYA
@@ -14812,9 +14813,9 @@ LOAD_BATTLE_BG: ;$C2D121
 	STA $10
 	LDA $04
 	JSL UNKNOWN_C2CFE5
-	LDA #.LOWORD(LOADED_BG_DATA_LAYER2) + 76
+	LDA #.LOWORD(LOADED_BG_DATA_LAYER2) + loaded_bg_data::palette_pointer
 	STA $02
-	LDA #$02C0
+	LDA #.LOWORD(CUR_MAP_PAL) + 128
 	LDX $02
 	STA a:.LOWORD(RAM),X
 	LDY #.LOWORD(LOADED_BG_DATA_LAYER2) + loaded_bg_data::palette
@@ -14846,7 +14847,7 @@ LOAD_BATTLE_BG: ;$C2D121
 	STA $06
 	DEREFERENCE_PTR_TO $06, $06
 	MOVE_INT $06, $0E
-	LDX #$0020
+	LDX #.SIZEOF(loaded_bg_data::palette)
 	LDY $2C
 	TYA
 	JSL MEMCPY16
@@ -14860,8 +14861,8 @@ LOAD_BATTLE_BG: ;$C2D121
 	STA $0A
 	DEREFERENCE_PTR_TO $0A, $06
 	MOVE_INT $06, $0E
-	LDX #$0020
-	LDA #.LOWORD(LOADED_BG_DATA_LAYER2) + 44
+	LDX #.SIZEOF(loaded_bg_data::palette2)
+	LDA #.LOWORD(LOADED_BG_DATA_LAYER2) + loaded_bg_data::palette2
 	JSL MEMCPY16
 	LDY $2C
 	TYA
@@ -14899,7 +14900,7 @@ LOAD_BATTLE_BG: ;$C2D121
 	LDA .LOWORD(LOADED_BG_DATA_LAYER2)
 	AND #$00FF
 	BEQ @UNKNOWN24
-	LDA .LOWORD(LOADED_BG_DATA_LAYER2) + 97
+	LDA .LOWORD(LOADED_BG_DATA_LAYER2) + loaded_bg_data::distortion_styles
 	AND #$00FF
 	BEQ @UNKNOWN24
 	LDA #$0001
@@ -14921,17 +14922,17 @@ UNKNOWN_C2DAE3: ;$C2DAE3
 	TDC
 	ADC #$FFF1
 	TCD
-	LDX #.LOWORD(LOADED_BG_DATA_LAYER1) + 97
+	LDX #.LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::distortion_styles
 	SEP #PROC_FLAGS::ACCUM8
 	LDA a:.LOWORD(RAM),X
 	STA $0E
-	LDY #.LOWORD(LOADED_BG_DATA_LAYER1) + 100
+	LDY #.LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::distortion_styles + 3
 	LDA a:.LOWORD(RAM),Y
 	STA a:.LOWORD(RAM),X
-	STZ .LOWORD(LOADED_BG_DATA_LAYER1) + 98
+	STZ .LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::distortion_styles + 1
 	REP #PROC_FLAGS::ACCUM8
 	LDA #$0001
-	STA .LOWORD(LOADED_BG_DATA_LAYER1) + 102
+	STA .LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::distortion_duration_left
 	SEP #PROC_FLAGS::ACCUM8
 	LDA $0E
 	STA a:.LOWORD(RAM),Y
@@ -14945,7 +14946,7 @@ UNKNOWN_C2DB14: ;$C2DB14
 	TDC
 	ADC #$FFEE
 	TCD
-	LDA .LOWORD(LOADED_BG_DATA_LAYER1) + 76
+	LDA .LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::palette_pointer
 	STA $06
 	PHB
 	SEP #PROC_FLAGS::ACCUM8
@@ -14954,7 +14955,7 @@ UNKNOWN_C2DB14: ;$C2DB14
 	STZ $09
 	REP #PROC_FLAGS::ACCUM8
 	MOVE_INT $06, $0E
-	LDX #$0020
+	LDX #.SIZEOF(loaded_bg_data::palette)
 	LDA #.LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::palette
 	JSL MEMCPY16
 	PLD
@@ -15121,7 +15122,7 @@ UNKNOWN_C2DB3F: ;$C2DB3F
 	LDA #$FFFE
 	STA .LOWORD(UNKNOWN_7EAD96)
 @UNKNOWN17:
-	LDA .LOWORD(LOADED_BG_DATA_LAYER1) + 1
+	LDA .LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::bitdepth
 	AND #$00FF
 	CMP #$0002
 	BNE @UNKNOWN18
@@ -15311,8 +15312,8 @@ UNKNOWN_C2DE0F: ;$C2DE0F
 	STZ $09
 	REP #PROC_FLAGS::ACCUM8
 	MOVE_INT $06, $0E
-	LDX #$0020
-	LDA .LOWORD(LOADED_BG_DATA_LAYER1) + 76
+	LDX #.SIZEOF(loaded_bg_data::palette)
+	LDA .LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::palette_pointer
 	JSL MEMCPY16
 	LDA .LOWORD(LOADED_BG_DATA_LAYER2)
 	AND #$00FF
@@ -15326,8 +15327,8 @@ UNKNOWN_C2DE0F: ;$C2DE0F
 	STZ $09
 	REP #PROC_FLAGS::ACCUM8
 	MOVE_INT $06, $0E
-	LDX #$0020
-	LDA .LOWORD(LOADED_BG_DATA_LAYER2) + 76
+	LDX #.SIZEOF(loaded_bg_data::palette)
+	LDA .LOWORD(LOADED_BG_DATA_LAYER2) + loaded_bg_data::palette_pointer
 	JSL MEMCPY16
 @UNKNOWN2:
 	PLD
@@ -15339,7 +15340,7 @@ UNKNOWN_C2DE96: ;$C2DE96
 	TDC
 	ADC #$FFEA
 	TCD
-	LDA #.LOWORD(LOADED_BG_DATA_LAYER1) + 44
+	LDA #.LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::palette2
 	STA $06
 	PHB
 	SEP #PROC_FLAGS::ACCUM8
@@ -15349,10 +15350,10 @@ UNKNOWN_C2DE96: ;$C2DE96
 	REP #PROC_FLAGS::ACCUM8
 	MOVE_INT $06, $12
 	MOVE_INT $06, $0E
-	LDX #$0020
+	LDX #.SIZEOF(loaded_bg_data::palette)
 	LDA #.LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::palette
 	JSL MEMCPY16
-	LDA #.LOWORD(LOADED_BG_DATA_LAYER2) + 44
+	LDA #.LOWORD(LOADED_BG_DATA_LAYER2) + loaded_bg_data::palette2
 	STA $0A
 	PHB
 	SEP #PROC_FLAGS::ACCUM8
@@ -15362,21 +15363,21 @@ UNKNOWN_C2DE96: ;$C2DE96
 	REP #PROC_FLAGS::ACCUM8
 	MOVE_INT $0A, $06
 	MOVE_INT $06, $0E
-	LDX #$0020
+	LDX #.SIZEOF(loaded_bg_data::palette)
 	LDA #.LOWORD(LOADED_BG_DATA_LAYER2) + loaded_bg_data::palette
 	JSL MEMCPY16
 	MOVE_INT $12, $06
 	MOVE_INT $06, $0E
-	LDX #$0020
-	LDA .LOWORD(LOADED_BG_DATA_LAYER1) + 76
+	LDX #.SIZEOF(loaded_bg_data::palette)
+	LDA .LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::palette_pointer
 	JSL MEMCPY16
 	LDA .LOWORD(LOADED_BG_DATA_LAYER2)
 	AND #$00FF
 	BEQ @UNKNOWN0
 	MOVE_INT $0A, $06
 	MOVE_INT $06, $0E
-	LDX #$0020
-	LDA .LOWORD(LOADED_BG_DATA_LAYER2) + 76
+	LDX #.SIZEOF(loaded_bg_data::palette)
+	LDA .LOWORD(LOADED_BG_DATA_LAYER2) + loaded_bg_data::palette_pointer
 	JSL MEMCPY16
 @UNKNOWN0:
 	PLD
@@ -15580,7 +15581,7 @@ UNKNOWN_C2E08E: ;$C2E08E
 	TCD
 	PLA
 	STA $04
-	LDA .LOWORD(LOADED_BG_DATA_LAYER1) + 1
+	LDA .LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::bitdepth
 	AND #$00FF
 	CMP #$0004
 	BNE @UNKNOWN2
@@ -15650,7 +15651,7 @@ SHOW_PSI_ANIMATION: ;$C2E116
 	TCD
 	PLA
 	STA $02
-	LDA .LOWORD(LOADED_BG_DATA_LAYER1) + 1
+	LDA .LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::bitdepth
 	AND #$00FF
 	CMP #$0002
 	BNE @UNKNOWN1
@@ -16190,7 +16191,7 @@ SHOW_PSI_ANIMATION: ;$C2E116
 	CPX #$0020
 	BCC @UNKNOWN21
 @UNKNOWN24:
-	LDA .LOWORD(LOADED_BG_DATA_LAYER1) + 1
+	LDA .LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::bitdepth
 	AND #$00FF
 	CMP #$0002
 	BNE @UNKNOWN25

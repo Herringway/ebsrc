@@ -356,11 +356,11 @@
 	style .byte ;2
 	ripple_frequency .word ;3
 	ripple_amplitude .word ;5
-	.byte ;7
+	speed .byte ;7
 	compression_rate .word ;8
 	ripple_frequency_acceleration .word ;10
 	ripple_amplitude_acceleration .word ;12
-	speed .byte ;14
+	speed_acceleration .byte ;14
 	compression_acceleration .word;15
 .ENDSTRUCT
 
@@ -393,27 +393,40 @@
 .ENDSTRUCT
 
 .STRUCT loaded_bg_data
-	.byte ;0
+	target_layer .byte ;0
 	bitdepth .byte ;1
 	.byte ;2
-	.byte ;3
+	bg_config_unknown .byte ;3
 	palette_cycle_1_first .byte ;4
 	palette_cycle_1_last .byte ;5
 	palette_cycle_2_first .byte ;6
 	palette_cycle_2_last .byte ;7
-	.byte ;8
-	.byte ;9
+	palette_cycle_1_step .byte ;8
+	palette_cycle_2_step .byte ;9
 	palette_change_speed .byte ;10
-	.byte 1 ;11
+	palette_change_duration_left .byte ;11
 	palette .word 16 ;12
-	.byte 32 ;44
-	.word ;76
-	.byte 19 ;78
-	.word ;97
-	.byte ;99
-	.word ;100
-	.word ;102
-	.byte 12 ;104
-	.byte ;116
-	.word ;117
+	palette2 .word 16 ;44
+	palette_pointer .word ;76
+	scrolling_movements .byte 4 ;78
+	current_scrolling_movement .byte ;82
+	scrolling_duration_left .word ;83
+	horizontal_position .word ;85
+	vertical_position .word ;87
+	horizontal_velocity .word ;89
+	vertical_velocity .word ;91
+	horizontal_acceleration .word ;93
+	vertical_acceleration .word ;95
+	distortion_styles .byte 4 ;97
+	.byte ;101
+	distortion_duration_left .word ;102
+	distortion_type .byte ;104
+	distortion_ripple_frequency .word ;105
+	distortion_ripple_amplitude .word ;107
+	distortion_speed .byte ;109
+	distortion_compression_rate .word ;110
+	distortion_ripple_frequency_acceleration .word ;112
+	distortion_ripple_amplitude_acceleration .word ;114
+	distortion_speed_acceleration .byte ;116
+	distortion_compression_acceleration .word ;117
 .ENDSTRUCT
