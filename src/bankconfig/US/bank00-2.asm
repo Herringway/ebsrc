@@ -650,6 +650,10 @@
 
 .INCLUDE "data/unknown/C0AE44.asm"
 
+.INCLUDE "unknown/C0/C0AE4C.asm"
+
+.INCLUDE "unknown/C0/C0AE56.asm"
+
 .INCLUDE "unknown/C0/C0AE5A.asm"
 
 .INCLUDE "unknown/C0/C0AFCD.asm"
