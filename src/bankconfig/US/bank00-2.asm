@@ -636,7 +636,7 @@
 
 .INCLUDE "unknown/C0/C0AD9F.asm"
 
-.INCLUDE "unknown/C0/C0ADB2.asm"
+.INCLUDE "misc/battlebgs/do_battlebg_dma.asm"
 
 .INCLUDE "data/dma_flags.asm"
 
@@ -650,11 +650,11 @@
 
 .INCLUDE "data/unknown/C0AE44.asm"
 
-.INCLUDE "unknown/C0/C0AE4C.asm"
+.INCLUDE "misc/battlebgs/load_bg_offset_parameters.asm"
 
-.INCLUDE "unknown/C0/C0AE56.asm"
+.INCLUDE "misc/battlebgs/load_bg_offset_parameters2.asm"
 
-.INCLUDE "unknown/C0/C0AE5A.asm"
+.INCLUDE "misc/battlebgs/prepare_bg_offset_tables.asm"
 
 .INCLUDE "unknown/C0/C0AFCD.asm"
 
