@@ -482,6 +482,20 @@
     STA dest+2
 .ENDMACRO
 
+.MACRO MOVE_INTX src, dest
+    LDX src
+    STX dest
+    LDX src+2
+    STX dest+2
+.ENDMACRO
+
+.MACRO MOVE_INTY src, dest
+    LDY src
+    STY dest
+    LDY src+2
+    STY dest+2
+.ENDMACRO
+
 .MACRO MOVE_INT_CONSTANT constant, dest
     LDA #.LOWORD(constant)
     STA dest

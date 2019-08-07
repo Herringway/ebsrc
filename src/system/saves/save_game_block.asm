@@ -45,10 +45,7 @@ SAVE_GAME_BLOCK: ;$EF088F
 	LDA #.SIZEOF(game_state)
 	JSL MEMCPY24
 	LDA #.SIZEOF(game_state)
-	LDX $1C
-	STX $06
-	LDX $1E
-	STX $08
+	MOVE_INTX $1C, $06
 	CLC
 	ADC $06
 	STA $06
@@ -74,10 +71,7 @@ SAVE_GAME_BLOCK: ;$EF088F
 	LDA #.SIZEOF(char_struct) * 6
 	JSL MEMCPY24
 	LDA #.SIZEOF(char_struct) * 6
-	LDX $1C
-	STX $06
-	LDX $1E
-	STX $08
+	MOVE_INTX $1C, $06
 	CLC
 	ADC $06
 	STA $06

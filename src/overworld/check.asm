@@ -45,10 +45,7 @@ CHECK: ;$C1323B
 	LDA $12
 	CLC
 	ADC #npc_config::item
-	LDX $14
-	STX $06
-	LDX $16
-	STX $08
+	MOVE_INTX $14, $06
 	CLC
 	ADC $06
 	STA $06
@@ -68,10 +65,7 @@ CHECK: ;$C1323B
 	OPTIMIZED_MULT $04, .SIZEOF(npc_config)
 	CLC
 	ADC #npc_config::item
-	LDX $14
-	STX $06
-	LDX $16
-	STX $08
+	MOVE_INTX $14, $06
 	CLC
 	ADC $06
 	STA $06
@@ -89,10 +83,7 @@ CHECK: ;$C1323B
 	STA $12
 	CLC
 	ADC #npc_config::event_flag
-	LDX $06
-	STX $0A
-	LDX $08
-	STX $0C
+	MOVE_INTX $06, $0A
 	CLC
 	ADC $0A
 	STA $0A
@@ -110,10 +101,7 @@ CHECK: ;$C1323B
 	LDA $12
 	CLC
 	ADC #npc_config::text_pointer
-	LDX $14
-	STX $06
-	LDX $16
-	STX $08
+	MOVE_INTX $14, $06
 	CLC
 	ADC $06
 	STA $06

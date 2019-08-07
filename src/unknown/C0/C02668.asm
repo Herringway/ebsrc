@@ -163,10 +163,7 @@ UNKNOWN_C02668: ;$C02668
 	LDA [$06]
 	STA $26
 	LDA #$0004
-	LDX $0A
-	STX $06
-	LDX $0C
-	STX $08
+	MOVE_INTX $0A, $06
 	CLC
 	ADC $06
 	STA $06
@@ -314,10 +311,7 @@ UNKNOWN_C02668: ;$C02668
 	LDA $16
 	CLC
 	ADC #enemy_data::overworld_sprite
-	LDX $22
-	STX $06
-	LDX $24
-	STX $08
+	MOVE_INTX $22, $06
 	CLC
 	ADC $06
 	STA $06
@@ -327,10 +321,7 @@ UNKNOWN_C02668: ;$C02668
 	LDA $16
 	CLC
 	ADC #enemy_data::movement_pattern
-	LDX $22
-	STX $06
-	LDX $24
-	STX $08
+	MOVE_INTX $22, $06
 	CLC
 	ADC $06
 	STA $06

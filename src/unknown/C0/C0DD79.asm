@@ -25,10 +25,7 @@ UNKNOWN_C0DD79: ;$C0DD79
 	STA $10
 	CLC
 	ADC #psi_teleport_destination::dest_x
-	LDX $06
-	STX $0A
-	LDX $08
-	STX $0C
+	MOVE_INTX $06, $0A
 	CLC
 	ADC $0A
 	STA $0A

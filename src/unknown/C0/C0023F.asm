@@ -43,10 +43,7 @@ UNKNOWN_C0023F: ;$C0023F
 	CMP #$0009
 	BCC @UNKNOWN2
 	LDA #map_palette_animation_entry::entries
-	LDX $0A
-	STX $06
-	LDX $0C
-	STX $08
+	MOVE_INTX $0A, $06
 	CLC
 	ADC $06
 	STA $06

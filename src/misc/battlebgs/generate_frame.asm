@@ -399,10 +399,7 @@ GENERATE_BATTLEBG_FRAME: ;$C2C92D
 	LDA $10
 	OPTIMIZED_MULT $04, 10
 	STA $12
-	LDX $06
-	STX $0A
-	LDX $08
-	STX $0C
+	MOVE_INTX $06, $0A
 	CLC
 	ADC $0A
 	STA $0A
@@ -413,10 +410,7 @@ GENERATE_BATTLEBG_FRAME: ;$C2C92D
 	;bg_scrolling_entry::horizontal_movement
 	INC
 	INC
-	LDX $06
-	STX $0A
-	LDX $08
-	STX $0C
+	MOVE_INTX $06, $0A
 	CLC
 	ADC $0A
 	STA $0A
@@ -429,10 +423,7 @@ GENERATE_BATTLEBG_FRAME: ;$C2C92D
 	INC
 	INC
 	INC
-	LDX $06
-	STX $0A
-	LDX $08
-	STX $0C
+	MOVE_INTX $06, $0A
 	CLC
 	ADC $0A
 	STA $0A
@@ -442,10 +433,7 @@ GENERATE_BATTLEBG_FRAME: ;$C2C92D
 	LDA $12
 	CLC
 	ADC #bg_scrolling_entry::horizontal_acceleration
-	LDX $06
-	STX $0A
-	LDX $08
-	STX $0C
+	MOVE_INTX $06, $0A
 	CLC
 	ADC $0A
 	STA $0A
@@ -622,10 +610,7 @@ GENERATE_BATTLEBG_FRAME: ;$C2C92D
 	LDA $10
 	OPTIMIZED_MULT $04, .SIZEOF(distortion_entry)
 	STA $10
-	LDX $06
-	STX $0A
-	LDX $08
-	STX $0C
+	MOVE_INTX $06, $0A
 	CLC
 	ADC $0A
 	STA $0A
@@ -640,10 +625,7 @@ GENERATE_BATTLEBG_FRAME: ;$C2C92D
 	;style
 	INC
 	INC
-	LDY $06
-	STY $0A
-	LDY $08
-	STY $0C
+	MOVE_INTY $06, $0A
 	CLC
 	ADC $0A
 	STA $0A
@@ -656,10 +638,7 @@ GENERATE_BATTLEBG_FRAME: ;$C2C92D
 	INC
 	INC
 	INC
-	LDY $06
-	STY $0A
-	LDY $08
-	STY $0C
+	MOVE_INTY $06, $0A
 	CLC
 	ADC $0A
 	STA $0A
@@ -669,10 +648,7 @@ GENERATE_BATTLEBG_FRAME: ;$C2C92D
 	LDA $10
 	CLC
 	ADC #distortion_entry::ripple_amplitude
-	LDY $06
-	STY $0A
-	LDY $08
-	STY $0C
+	MOVE_INTY $06, $0A
 	CLC
 	ADC $0A
 	STA $0A
@@ -682,10 +658,7 @@ GENERATE_BATTLEBG_FRAME: ;$C2C92D
 	LDA $10
 	CLC
 	ADC #distortion_entry::speed
-	LDY $06
-	STY $0A
-	LDY $08
-	STY $0C
+	MOVE_INTY $06, $0A
 	CLC
 	ADC $0A
 	STA $0A
@@ -697,10 +670,7 @@ GENERATE_BATTLEBG_FRAME: ;$C2C92D
 	LDA $10
 	CLC
 	ADC #distortion_entry::compression_rate
-	LDY $06
-	STY $0A
-	LDY $08
-	STY $0C
+	MOVE_INTY $06, $0A
 	CLC
 	ADC $0A
 	STA $0A
@@ -710,10 +680,7 @@ GENERATE_BATTLEBG_FRAME: ;$C2C92D
 	LDA $10
 	CLC
 	ADC #distortion_entry::ripple_frequency_acceleration
-	LDY $06
-	STY $0A
-	LDY $08
-	STY $0C
+	MOVE_INTY $06, $0A
 	CLC
 	ADC $0A
 	STA $0A
@@ -723,10 +690,7 @@ GENERATE_BATTLEBG_FRAME: ;$C2C92D
 	LDA $10
 	CLC
 	ADC #distortion_entry::ripple_amplitude_acceleration
-	LDY $06
-	STY $0A
-	LDY $08
-	STY $0C
+	MOVE_INTY $06, $0A
 	CLC
 	ADC $0A
 	STA $0A
@@ -736,10 +700,7 @@ GENERATE_BATTLEBG_FRAME: ;$C2C92D
 	LDA $10
 	CLC
 	ADC #distortion_entry::speed_acceleration
-	LDY $06
-	STY $0A
-	LDY $08
-	STY $0C
+	MOVE_INTY $06, $0A
 	CLC
 	ADC $0A
 	STA $0A

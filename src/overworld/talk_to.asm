@@ -43,10 +43,7 @@ TALK_TO: ;$C13187
 	OPTIMIZED_MULT $04, .SIZEOF(npc_config)
 	CLC
 	ADC #npc_config::text_pointer
-	LDX $0E
-	STX $06
-	LDX $10
-	STX $08
+	MOVE_INTX $0E, $06
 	CLC
 	ADC $06
 	STA $06
