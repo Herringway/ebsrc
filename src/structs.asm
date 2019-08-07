@@ -376,7 +376,7 @@
 	graphics .byte ;0
 	palette .byte ;1
 	bitdepth .byte ;2
-	.byte ;3
+	palette_shifting_style .byte ;3
 	palette_cycle_1_first .byte ;4
 	palette_cycle_1_last .byte ;5
 	palette_cycle_2_first .byte ;6
@@ -396,7 +396,7 @@
 	target_layer .byte ;0
 	bitdepth .byte ;1
 	.byte ;2
-	bg_config_unknown .byte ;3
+	palette_shifting_style .byte ;3
 	palette_cycle_1_first .byte ;4
 	palette_cycle_1_last .byte ;5
 	palette_cycle_2_first .byte ;6
