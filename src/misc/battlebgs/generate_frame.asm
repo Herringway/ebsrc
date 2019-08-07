@@ -2,12 +2,7 @@
 ;Responsible for animating battle bgs? A: Pointer to bg data, X: layer ID
 GENERATE_BATTLEBG_FRAME: ;$C2C92D
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
-	PHD
-	PHA
-	TDC
-	ADC #$FFE1
-	TCD
-	PLA
+	RESERVE_STACK_SPACE 31
 	STX $1D
 	STA $1B
 	LDA ($1B)

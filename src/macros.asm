@@ -1,5 +1,21 @@
 .INCLUDE "textmacros.asm"
 
+.MACRO RESERVE_STACK_SPACE size
+    PHD
+    PHA
+    TDC
+    ADC #$FFFF - size + 1
+    TCD
+    PLA
+.ENDMACRO
+
+.MACRO RESERVE_STACK_SPACE_CLOBBER size
+    PHD
+    TDC
+    ADC #$FFFF - size + 1
+    TCD
+.ENDMACRO
+
 .macro PTR3 addr
     .WORD .LOWORD(addr)
     .BYTE .LOBYTE(.HIWORD(addr))
