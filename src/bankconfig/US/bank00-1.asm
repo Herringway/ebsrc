@@ -379,4 +379,4 @@
 
 .INCLUDE "unknown/C0/C07C5B.asm"
 
-.INCLUDE "unknown/C0/C07C8A.asm"
+.INCLUDE "system/strcat.asm"
