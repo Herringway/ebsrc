@@ -91,7 +91,7 @@ UNKNOWN_C4F264: ;$C4F264
 	INC $1A
 	LDA $18
 	CLC
-	ADC #$0026
+	ADC #photographer_config_entry::object_config + photographer_config_entry_object::tile_x
 	MOVE_INTX $0A, $06
 	CLC
 	ADC $06
@@ -103,7 +103,7 @@ UNKNOWN_C4F264: ;$C4F264
 	STA $0E
 	LDA $18
 	CLC
-	ADC #$0028
+	ADC #photographer_config_entry::object_config + photographer_config_entry_object::tile_y
 	MOVE_INTX $0A, $06
 	CLC
 	ADC $06
@@ -138,7 +138,7 @@ UNKNOWN_C4F264: ;$C4F264
 	CLC
 	ADC $04
 	TAX
-	LDA .LOWORD(GAME_STATE)+214,X
+	LDA .LOWORD(GAME_STATE) + game_state::saved_photo_states + photo_state::party,X
 	AND #$00FF
 	STA $02
 	BEQ @UNKNOWN8

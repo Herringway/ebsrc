@@ -15,7 +15,7 @@ UNKNOWN_C4F46F: ;$C4F46F
 	STA $20
 	LDX #$0100
 	SEP #PROC_FLAGS::ACCUM8
-	LDY #$0008
+	LDY #photographer_config_entry::slide_direction
 	LDA [$06],Y
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF
@@ -27,7 +27,7 @@ UNKNOWN_C4F46F: ;$C4F46F
 	MOVE_INT $06, $0E
 	MOVE_INT $1E, $06
 	SEP #PROC_FLAGS::ACCUM8
-	LDY #$0009
+	LDY #photographer_config_entry::slide_distance
 	LDA [$06],Y
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF

@@ -373,7 +373,7 @@ UNKNOWN_C4343E: ;$C4343E
 	ASL
 	TAX
 	LDA $12
-	STA .LOWORD(GAME_STATE)+212,X
+	STA .LOWORD(GAME_STATE) + game_state::saved_photo_states,X
 	LDY #$0000
 	STY $10
 	JMP a:.LOWORD(@UNKNOWN10)
@@ -399,7 +399,7 @@ UNKNOWN_C4343E: ;$C4343E
 	ADC $04
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	STZ .LOWORD(GAME_STATE)+214,X
+	STZ .LOWORD(GAME_STATE) + game_state::saved_photo_states + photo_state::party,X
 	BRA @UNKNOWN9
 @UNKNOWN5:
 	.A16
@@ -463,7 +463,7 @@ UNKNOWN_C4343E: ;$C4343E
 	TXA
 	SEP #PROC_FLAGS::ACCUM8
 	PLX
-	STA .LOWORD(GAME_STATE)+214,X
+	STA .LOWORD(GAME_STATE) + game_state::saved_photo_states + photo_state::party,X
 @UNKNOWN9:
 	INY
 	STY $10

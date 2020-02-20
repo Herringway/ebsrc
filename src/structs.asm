@@ -1,4 +1,9 @@
 
+.STRUCT coords
+	x_coord .word ;0
+	y_coord .word ;2
+.ENDSTRUCT
+
 .STRUCT char_struct
 	name .byte 5 ;0
 	level .byte ;5
@@ -46,6 +51,11 @@
 	.byte ;92
 	.byte ;93
 	.byte ;94
+.ENDSTRUCT
+
+.STRUCT photo_state
+	.word ;0
+	party .byte 6 ;2
 .ENDSTRUCT
 
 .STRUCT game_state
@@ -100,8 +110,7 @@
 	.byte ;195
 	.byte 4 ;196
 	.byte 12 ;200
-	.word ;212
-	.byte 254 ;214
+	saved_photo_states .byte 32 * .SIZEOF(photo_state) ;212
 	timer .dword ;468
 	text_flavour .byte ;472
 .ENDSTRUCT
@@ -285,17 +294,24 @@
 	help_text .dword ;35
 .ENDSTRUCT
 
+.STRUCT photographer_config_entry_object
+	tile_x .word ;0
+	tile_y .word ;2
+	sprite .word ;4
+.ENDSTRUCT ;6
+
 .STRUCT photographer_config_entry
 	event_flag .word ;0
 	;Coordinates for something
-	.word ;2
-	.word ;4
+	map_x .word ;2
+	map_y .word ;4
 	credits_map_palettes_offset .word ;6
-	.byte ;8
-	.byte ;9
+	slide_direction .byte ;8
+	slide_distance .byte ;9
 	photographer_x .word ;10
 	photographer_y .word ;12
-	.byte 48 ;14
+	party_config .byte 6 * .SIZEOF(coords) ;14
+	object_config .byte 4 * .SIZEOF(photographer_config_entry_object) ;38
 .ENDSTRUCT ;62
 
 .STRUCT packtable_entry
