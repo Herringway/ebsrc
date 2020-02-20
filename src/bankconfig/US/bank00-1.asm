@@ -125,9 +125,9 @@
 
 .INCLUDE "unknown/C0/C02D29.asm"
 
-.INCLUDE "overworld/adjust_position.asm"
+.INCLUDE "overworld/adjust_position_horizontal.asm"
 
-.INCLUDE "unknown/C0/C03017.asm"
+.INCLUDE "overworld/adjust_position_vertical.asm"
 
 .INCLUDE "unknown/C0/C0329F.asm"
 
