@@ -17293,7 +17293,9 @@ UNKNOWN_C3DBDB_ENTRY2: ;$C3DBE0
 
 .INCLUDE "data/unknown/C3E168.asm"
 
-.INCLUDE "data/unknown/C3E178.asm"
+.INCLUDE "data/map/mushroomization_direction_remap_tables.asm"
+
+.INCLUDE "data/unknown/C3E1D8.asm"
 
 .INCLUDE "data/unknown/C3E230.asm"
 
