@@ -121,7 +121,7 @@
 
 .INCLUDE "overworld/reset_mushroomized_walking.asm"
 
-.INCLUDE "unknown/C0/C02C89.asm"
+.INCLUDE "overworld/mushroomization_movement_swap.asm"
 
 .INCLUDE "unknown/C0/C02D29.asm"
 
