@@ -390,7 +390,7 @@
 
 .INCLUDE "overworld/jump_to_loaded_movement_pointer.asm"
 
-.INCLUDE "unknown/C0/C09DA1.asm"
+.INCLUDE "overworld/clear_sprite_tick_callback.asm"
 
 .INCLUDE "unknown/C0/C09DAE.asm"
 
