@@ -1,0 +1,18 @@
+
+PRAYER_LIST: ;$C4A2F9
+	.BYTE 0
+	.BYTE 0
+	.BYTE 0
+	.BYTE 0
+	.BYTE 0
+	.BYTE 1
+	.BYTE 1
+	.BYTE 2
+	.BYTE 3
+	.BYTE 4
+	.BYTE 5
+	.BYTE 5
+	.BYTE 6
+	.BYTE 7
+	.BYTE 8
+	.BYTE 9

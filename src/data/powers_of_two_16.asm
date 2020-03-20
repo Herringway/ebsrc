@@ -1,0 +1,18 @@
+
+POWERS_OF_TWO_16BIT: ;$C44C6C
+	.WORD 1<<0
+	.WORD 1<<1
+	.WORD 1<<2
+	.WORD 1<<3
+	.WORD 1<<4
+	.WORD 1<<5
+	.WORD 1<<6
+	.WORD 1<<7
+	.WORD 1<<8
+	.WORD 1<<9
+	.WORD 1<<10
+	.WORD 1<<11
+	.WORD 1<<12
+	.WORD 1<<13
+	.WORD 1<<14
+	.WORD 1<<15

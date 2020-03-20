@@ -1,0 +1,10 @@
+
+POWERS_OF_TWO_8BIT: ;$C4562F
+	.BYTE 1<<0
+	.BYTE 1<<1
+	.BYTE 1<<2
+	.BYTE 1<<3
+	.BYTE 1<<4
+	.BYTE 1<<5
+	.BYTE 1<<6
+	.BYTE 1<<7
