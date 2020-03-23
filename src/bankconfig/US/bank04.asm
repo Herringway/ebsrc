@@ -27,7 +27,7 @@
 
 .INCLUDE "data/unknown/C40BE8.asm"
 
-.INCLUDE "data/unknown/C40DF3.asm"
+.INCLUDE "data/text/floating_sprite_table.asm"
 
 .INCLUDE "data/movements/patterns/785.asm"
 
@@ -897,7 +897,7 @@ UNKNOWN_C4AC58: ;$C4AC58
 
 .INCLUDE "unknown/C4/C4B329.asm"
 
-.INCLUDE "unknown/C4/C4B3D0.asm"
+.INCLUDE "text/spawn_floating_sprite.asm"
 
 .INCLUDE "unknown/C4/C4B4BE.asm"
 
