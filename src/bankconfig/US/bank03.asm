@@ -17283,6 +17283,10 @@ UNKNOWN_C3DBDB_ENTRY2: ;$C3DBE0
 
 .INCLUDE "data/unknown/C3DFE8.asm"
 
+.INCLUDE "data/map/character_initial_entity_data.asm"
+
+.INCLUDE "data/map/character_sizes.asm"
+
 .INCLUDE "data/map/movement_speeds.asm"
 
 .INCLUDE "data/map/allowed_input_directions.asm"
