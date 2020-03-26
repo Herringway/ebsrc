@@ -2,3 +2,4 @@
 *.sfc
 bin
 jpn_bin
+*.dep
