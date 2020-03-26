@@ -16,7 +16,9 @@ UNKNOWN_C092F5: ;$C092F5
 	LDA #$001E
 	STA .LOWORD(UNKNOWN_7E0A4E)
 	PLA
-UNKNOWN_C092F5_ENTRY2:
+; Initializes movement...?
+;A = movement code, X,Y = coordinates
+UNKNOWN_C092F5_ENTRY2: ;$C09321
 	PHA
 	PHY
 	PHX

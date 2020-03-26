@@ -1,4 +1,6 @@
-
+;FIXME: This appears to be very inaccurately named.
+;A = Sprite ID, X = Movement, Y = ???
+; $0E,$10 = X,Y coords
 PARSE_C3FC49_DATA: ;$C01E49
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
 	RESERVE_STACK_SPACE 49
