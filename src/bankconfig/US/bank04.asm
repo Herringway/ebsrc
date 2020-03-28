@@ -1014,7 +1014,7 @@ UNKNOWN_C4AC58: ;$C4AC58
 UNKNOWN_C4DE78: ;$C4DE78
 	.INCBIN "src/bin/unknowns/C4DE78.bin"
 
-.INCLUDE "unknown/C4/C4DE9A.asm"
+.INCLUDE "unknown/C4/C4DE98.asm"
 
 .INCLUDE "unknown/C4/C4DED0.asm"
 
