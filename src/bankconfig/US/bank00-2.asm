@@ -308,6 +308,8 @@
 
 .INCLUDE "data/unknown/C09ABD.asm"
 
+.INCLUDE "unknown/C0/C09AC5.asm"
+
 .INCLUDE "unknown/C0/C09ACC.asm"
 
 .INCLUDE "unknown/C0/C09AD3.asm"
