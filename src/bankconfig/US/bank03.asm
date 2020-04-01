@@ -17349,6 +17349,12 @@ UNKNOWN_C3DBDB_ENTRY2: ;$C3DBE0
 
 .INCLUDE "data/unknown/C3F819.asm"
 
+.INCLUDE "data/unknown/C3F871.asm"
+
+.INCLUDE "data/unknown/C3F8B1.asm"
+
+.INCLUDE "data/unknown/C3F8F1.asm"
+
 .INCLUDE "data/unknown/C3F951.asm"
 
 .INCLUDE "unknown/C3/C3F981.asm"
