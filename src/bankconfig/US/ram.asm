@@ -1584,6 +1584,7 @@ UNKNOWN_7EAEF2: ;$7EAEF2
 UNKNOWN_7EAEF4: ;$7EAEF4
 	.RES 8
 
+;Unknown... seems to be 64 6 byte entries, but I have no idea where the starting points are or what this data is
 .ORG $7EAF02
 UNKNOWN_7EAF02: ;$7EAF02
 	.RES 384
