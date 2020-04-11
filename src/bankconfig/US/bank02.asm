@@ -1,5 +1,5 @@
 .SEGMENT "BANK02"
-.INCLUDE "movementmacros.asm"
+.INCLUDE "eventmacros.asm"
 .INCLUDE "common.asm"
 .INCLUDE "config.asm"
 .INCLUDE "structs.asm"
@@ -2616,7 +2616,7 @@ ADD_CHAR_TO_PARTY: ;$C228F8
 	JSL UNKNOWN_C0369B
 	ASL
 	CLC
-	ADC #.LOWORD(SPRITE_TICK_CALLBACK_HIGH)
+	ADC #.LOWORD(ENTITY_TICK_CALLBACK_HIGH)
 	TAX
 	LDA a:.LOWORD(RAM),X
 	ORA #OBJECT_TICK_DISABLED | OBJECT_MOVE_DISABLED
@@ -17098,4 +17098,4 @@ UNKNOWN_C2FB35: ;$C2FB35
 
 .INCLUDE "unknown/C2/C2FF9A.asm"
 
-.INCLUDE "data/movements/patterns/000.asm"
+.INCLUDE "data/events/scripts/000.asm"

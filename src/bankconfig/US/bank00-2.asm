@@ -1,5 +1,5 @@
 .SEGMENT "BANK00B"
-.INCLUDE "movementmacros.asm"
+.INCLUDE "eventmacros.asm"
 .INCLUDE "common.asm"
 .INCLUDE "config.asm"
 .INCLUDE "structs.asm"
@@ -200,111 +200,111 @@
 
 .INCLUDE "data/movement_control_codes_pointer_table.asm"
 
-.INCLUDE "overworld/movement_codes/00.asm"
+.INCLUDE "overworld/events/script/00.asm"
 
-.INCLUDE "overworld/movement_codes/01.asm"
+.INCLUDE "overworld/events/script/01.asm"
 
-.INCLUDE "overworld/movement_codes/24.asm"
+.INCLUDE "overworld/events/script/24.asm"
 
-.INCLUDE "overworld/movement_codes/02.asm"
+.INCLUDE "overworld/events/script/02.asm"
 
-.INCLUDE "overworld/movement_codes/19.asm"
+.INCLUDE "overworld/events/script/19.asm"
 
-.INCLUDE "overworld/movement_codes/03.asm"
+.INCLUDE "overworld/events/script/03.asm"
 
-.INCLUDE "overworld/movement_codes/1A.asm"
+.INCLUDE "overworld/events/script/1A.asm"
 
-.INCLUDE "overworld/movement_codes/1B.asm"
+.INCLUDE "overworld/events/script/1B.asm"
 
-.INCLUDE "overworld/movement_codes/04.asm"
+.INCLUDE "overworld/events/script/04.asm"
 
-.INCLUDE "overworld/movement_codes/05.asm"
+.INCLUDE "overworld/events/script/05.asm"
 
-.INCLUDE "overworld/movement_codes/06.asm"
+.INCLUDE "overworld/events/script/06.asm"
 
-.INCLUDE "overworld/movement_codes/3B_45.asm"
+.INCLUDE "overworld/events/script/3B_45.asm"
 
-.INCLUDE "overworld/movement_codes/28.asm"
+.INCLUDE "overworld/events/script/28.asm"
 
-.INCLUDE "overworld/movement_codes/29.asm"
+.INCLUDE "overworld/events/script/29.asm"
 
-.INCLUDE "overworld/movement_codes/2A.asm"
+.INCLUDE "overworld/events/script/2A.asm"
 
-.INCLUDE "overworld/movement_codes/3F_49.asm"
+.INCLUDE "overworld/events/script/3F_49.asm"
 
-.INCLUDE "overworld/movement_codes/40_4A.asm"
+.INCLUDE "overworld/events/script/40_4A.asm"
 
-.INCLUDE "overworld/movement_codes/41_4B.asm"
+.INCLUDE "overworld/events/script/41_4B.asm"
 
-.INCLUDE "overworld/movement_codes/2E.asm"
+.INCLUDE "overworld/events/script/2E.asm"
 
-.INCLUDE "overworld/movement_codes/2F.asm"
+.INCLUDE "overworld/events/script/2F.asm"
 
-.INCLUDE "overworld/movement_codes/30.asm"
+.INCLUDE "overworld/events/script/30.asm"
 
-.INCLUDE "overworld/movement_codes/31.asm"
+.INCLUDE "overworld/events/script/31.asm"
 
-.INCLUDE "overworld/movement_codes/32.asm"
+.INCLUDE "overworld/events/script/32.asm"
 
-.INCLUDE "overworld/movement_codes/33.asm"
+.INCLUDE "overworld/events/script/33.asm"
 
-.INCLUDE "overworld/movement_codes/34.asm"
+.INCLUDE "overworld/events/script/34.asm"
 
-.INCLUDE "overworld/movement_codes/35.asm"
+.INCLUDE "overworld/events/script/35.asm"
 
-.INCLUDE "overworld/movement_codes/36.asm"
+.INCLUDE "overworld/events/script/36.asm"
 
-.INCLUDE "overworld/movement_codes/2B.asm"
+.INCLUDE "overworld/events/script/2B.asm"
 
-.INCLUDE "overworld/movement_codes/2C.asm"
+.INCLUDE "overworld/events/script/2C.asm"
 
-.INCLUDE "overworld/movement_codes/2D.asm"
+.INCLUDE "overworld/events/script/2D.asm"
 
-.INCLUDE "overworld/movement_codes/37.asm"
+.INCLUDE "overworld/events/script/37.asm"
 
-.INCLUDE "overworld/movement_codes/38.asm"
+.INCLUDE "overworld/events/script/38.asm"
 
-.INCLUDE "overworld/movement_codes/39.asm"
+.INCLUDE "overworld/events/script/39.asm"
 
 .INCLUDE "unknown/C0/C09907.asm"
 
-.INCLUDE "overworld/movement_codes/3A.asm"
+.INCLUDE "overworld/events/script/3A.asm"
 
-.INCLUDE "overworld/movement_codes/43.asm"
+.INCLUDE "overworld/events/script/43.asm"
 
-.INCLUDE "overworld/movement_codes/42_4C.asm"
+.INCLUDE "overworld/events/script/42_4C.asm"
 
-.INCLUDE "overworld/movement_codes/0A.asm"
+.INCLUDE "overworld/events/script/0A.asm"
 
-.INCLUDE "overworld/movement_codes/0B.asm"
+.INCLUDE "overworld/events/script/0B.asm"
 
-.INCLUDE "overworld/movement_codes/10.asm"
+.INCLUDE "overworld/events/script/10.asm"
 
-.INCLUDE "overworld/movement_codes/11.asm"
+.INCLUDE "overworld/events/script/11.asm"
 
-.INCLUDE "overworld/movement_codes/0C.asm"
+.INCLUDE "overworld/events/script/0C.asm"
 
-.INCLUDE "overworld/movement_codes/07.asm"
+.INCLUDE "overworld/events/script/07.asm"
 
-.INCLUDE "overworld/movement_codes/13.asm"
+.INCLUDE "overworld/events/script/13.asm"
 
-.INCLUDE "overworld/movement_codes/08.asm"
+.INCLUDE "overworld/events/script/08.asm"
 
-.INCLUDE "overworld/movement_codes/09.asm"
+.INCLUDE "overworld/events/script/09.asm"
 
-.INCLUDE "overworld/movement_codes/3C_46.asm"
+.INCLUDE "overworld/events/script/3C_46.asm"
 
-.INCLUDE "overworld/movement_codes/3D_47.asm"
+.INCLUDE "overworld/events/script/3D_47.asm"
 
-.INCLUDE "overworld/movement_codes/3E_48.asm"
+.INCLUDE "overworld/events/script/3E_48.asm"
 
-.INCLUDE "overworld/movement_codes/18.asm"
+.INCLUDE "overworld/events/script/18.asm"
 
-.INCLUDE "overworld/movement_codes/14.asm"
+.INCLUDE "overworld/events/script/14.asm"
 
-.INCLUDE "overworld/movement_codes/27.asm"
+.INCLUDE "overworld/events/script/27.asm"
 
-.INCLUDE "overworld/movement_codes/0D.asm"
+.INCLUDE "overworld/events/script/0D.asm"
 
 .INCLUDE "data/unknown/C09ABD.asm"
 
@@ -316,41 +316,41 @@
 
 .INCLUDE "unknown/C0/C09ADB.asm"
 
-.INCLUDE "overworld/movement_codes/0E.asm"
+.INCLUDE "overworld/events/script/0E.asm"
 
 .INCLUDE "data/unknown/C09AF9.asm"
 
-.INCLUDE "overworld/movement_codes/0F.asm"
+.INCLUDE "overworld/events/script/0F.asm"
 
-.INCLUDE "overworld/movement_codes/12.asm"
+.INCLUDE "overworld/events/script/12.asm"
 
-.INCLUDE "overworld/movement_codes/15.asm"
+.INCLUDE "overworld/events/script/15.asm"
 
-.INCLUDE "overworld/movement_codes/16.asm"
+.INCLUDE "overworld/events/script/16.asm"
 
-.INCLUDE "overworld/movement_codes/17.asm"
+.INCLUDE "overworld/events/script/17.asm"
 
-.INCLUDE "overworld/movement_codes/1C.asm"
+.INCLUDE "overworld/events/script/1C.asm"
 
-.INCLUDE "overworld/movement_codes/1D.asm"
+.INCLUDE "overworld/events/script/1D.asm"
 
-.INCLUDE "overworld/movement_codes/1E.asm"
+.INCLUDE "overworld/events/script/1E.asm"
 
-.INCLUDE "overworld/movement_codes/1F.asm"
+.INCLUDE "overworld/events/script/1F.asm"
 
-.INCLUDE "overworld/movement_codes/20.asm"
+.INCLUDE "overworld/events/script/20.asm"
 
-.INCLUDE "overworld/movement_codes/44.asm"
+.INCLUDE "overworld/events/script/44.asm"
 
-.INCLUDE "overworld/movement_codes/21.asm"
+.INCLUDE "overworld/events/script/21.asm"
 
-.INCLUDE "overworld/movement_codes/26.asm"
+.INCLUDE "overworld/events/script/26.asm"
 
-.INCLUDE "overworld/movement_codes/22.asm"
+.INCLUDE "overworld/events/script/22.asm"
 
-.INCLUDE "overworld/movement_codes/23.asm"
+.INCLUDE "overworld/events/script/23.asm"
 
-.INCLUDE "overworld/movement_codes/25.asm"
+.INCLUDE "overworld/events/script/25.asm"
 
 .INCLUDE "unknown/C0/C09C02.asm"
 
@@ -382,17 +382,17 @@
 
 .INCLUDE "unknown/C0/C09D78.asm"
 
-.INCLUDE "overworld/movement_data_read8.asm"
+.INCLUDE "overworld/events/script/read8.asm"
 
-.INCLUDE "overworld/movement_data_read8_copy.asm"
+.INCLUDE "overworld/events/script/read8_copy.asm"
 
-.INCLUDE "overworld/movement_data_read16.asm"
+.INCLUDE "overworld/events/script/read16.asm"
 
-.INCLUDE "overworld/movement_data_read16_copy.asm"
+.INCLUDE "overworld/events/script/read16_copy.asm"
 
-.INCLUDE "overworld/jump_to_loaded_movement_pointer.asm"
+.INCLUDE "overworld/events/jump_to_loaded_movement_pointer.asm"
 
-.INCLUDE "overworld/clear_sprite_tick_callback.asm"
+.INCLUDE "overworld/events/clear_sprite_tick_callback.asm"
 
 .INCLUDE "unknown/C0/C09DAE.asm"
 
@@ -634,7 +634,7 @@
 
 .INCLUDE "unknown/C0/C0AD56.asm"
 
-.INCLUDE "data/movements/patterns/786.asm"
+.INCLUDE "data/events/scripts/786.asm"
 
 .INCLUDE "unknown/C0/C0AD9F.asm"
 

@@ -3,7 +3,7 @@
 .INCLUDE "config.asm"
 .INCLUDE "structs.asm"
 
-.INCLUDE "overworld/clear_unknown_30x2_table_23.asm"
+.INCLUDE "overworld/events/clear_unknown_30x2_table_23.asm"
 
 .INCLUDE "unknown/C0/C00013.asm"
 
@@ -93,7 +93,7 @@
 
 .INCLUDE "unknown/C0/C01DED.asm"
 
-.INCLUDE "overworld/parse_C3FC49_data.asm"
+.INCLUDE "overworld/events/parse_C3FC49_data.asm"
 
 .INCLUDE "unknown/C0/C020F1.asm"
 

@@ -1,5 +1,5 @@
 .SEGMENT "BANK04"
-.INCLUDE "movementmacros.asm"
+.INCLUDE "eventmacros.asm"
 .INCLUDE "common.asm"
 .INCLUDE "config.asm"
 .INCLUDE "structs.asm"
@@ -17,7 +17,7 @@
 
 .INCLUDE "unknown/C4/C40085.asm"
 
-.INCLUDE "data/movement_pattern_pointers.asm"
+.INCLUDE "data/events/script_pointers.asm"
 
 .INCLUDE "unknown/C4/C40B51.asm"
 
@@ -29,131 +29,131 @@
 
 .INCLUDE "data/text/floating_sprite_table.asm"
 
-.INCLUDE "data/movements/patterns/785.asm"
+.INCLUDE "data/events/scripts/785.asm"
 
 .INCLUDE "data/unknown/C40E31.asm"
 
-.INCLUDE "data/movements/C40F18.asm"
+.INCLUDE "data/events/C40F18.asm"
 
-.INCLUDE "data/movements/C40F4A.asm"
+.INCLUDE "data/events/C40F4A.asm"
 
-.INCLUDE "data/movements/C40F59.asm"
+.INCLUDE "data/events/C40F59.asm"
 
-.INCLUDE "data/movements/patterns/502.asm"
+.INCLUDE "data/events/scripts/502.asm"
 
-.INCLUDE "data/movements/patterns/503.asm"
+.INCLUDE "data/events/scripts/503.asm"
 
-.INCLUDE "data/movements/patterns/504.asm"
+.INCLUDE "data/events/scripts/504.asm"
 
-.INCLUDE "data/movements/patterns/505.asm"
+.INCLUDE "data/events/scripts/505.asm"
 
-.INCLUDE "data/movements/patterns/506.asm"
+.INCLUDE "data/events/scripts/506.asm"
 
-.INCLUDE "data/movements/patterns/507.asm"
+.INCLUDE "data/events/scripts/507.asm"
 
-.INCLUDE "data/movements/patterns/508.asm"
+.INCLUDE "data/events/scripts/508.asm"
 
-.INCLUDE "data/movements/patterns/509.asm"
+.INCLUDE "data/events/scripts/509.asm"
 
-.INCLUDE "data/movements/patterns/510.asm"
+.INCLUDE "data/events/scripts/510.asm"
 
-.INCLUDE "data/movements/patterns/511.asm"
+.INCLUDE "data/events/scripts/511.asm"
 
-.INCLUDE "data/movements/patterns/512.asm"
+.INCLUDE "data/events/scripts/512.asm"
 
-.INCLUDE "data/movements/patterns/513.asm"
+.INCLUDE "data/events/scripts/513.asm"
 
-.INCLUDE "data/movements/patterns/514.asm"
+.INCLUDE "data/events/scripts/514.asm"
 
-.INCLUDE "data/movements/patterns/515.asm"
+.INCLUDE "data/events/scripts/515.asm"
 
-.INCLUDE "data/movements/patterns/516.asm"
+.INCLUDE "data/events/scripts/516.asm"
 
-.INCLUDE "data/movements/patterns/517.asm"
+.INCLUDE "data/events/scripts/517.asm"
 
-.INCLUDE "data/movements/patterns/518.asm"
+.INCLUDE "data/events/scripts/518.asm"
 
-.INCLUDE "data/movements/patterns/519.asm"
+.INCLUDE "data/events/scripts/519.asm"
 
-.INCLUDE "data/movements/patterns/520.asm"
+.INCLUDE "data/events/scripts/520.asm"
 
-.INCLUDE "data/movements/patterns/521.asm"
+.INCLUDE "data/events/scripts/521.asm"
 
-.INCLUDE "data/movements/patterns/522.asm"
+.INCLUDE "data/events/scripts/522.asm"
 
-.INCLUDE "data/movements/patterns/523.asm"
+.INCLUDE "data/events/scripts/523.asm"
 
-.INCLUDE "data/movements/patterns/524.asm"
+.INCLUDE "data/events/scripts/524.asm"
 
-.INCLUDE "data/movements/patterns/525.asm"
+.INCLUDE "data/events/scripts/525.asm"
 
-.INCLUDE "data/movements/patterns/526.asm"
+.INCLUDE "data/events/scripts/526.asm"
 
-.INCLUDE "data/movements/patterns/527.asm"
+.INCLUDE "data/events/scripts/527.asm"
 
-.INCLUDE "data/movements/patterns/528.asm"
+.INCLUDE "data/events/scripts/528.asm"
 
-.INCLUDE "data/movements/patterns/529.asm"
+.INCLUDE "data/events/scripts/529.asm"
 
-.INCLUDE "data/movements/patterns/530.asm"
+.INCLUDE "data/events/scripts/530.asm"
 
-.INCLUDE "data/movements/patterns/534.asm"
+.INCLUDE "data/events/scripts/534.asm"
 
 .INCLUDE "data/unknown/C41036.asm"
 
-.INCLUDE "data/movements/C4116C.asm"
+.INCLUDE "data/events/C4116C.asm"
 
-.INCLUDE "data/movements/C4119D.asm"
+.INCLUDE "data/events/C4119D.asm"
 
-.INCLUDE "data/movements/C411EB.asm"
+.INCLUDE "data/events/C411EB.asm"
 
-.INCLUDE "data/movements/C4121F.asm"
+.INCLUDE "data/events/C4121F.asm"
 
-.INCLUDE "data/movements/C41253.asm"
+.INCLUDE "data/events/C41253.asm"
 
-.INCLUDE "data/movements/C41382.asm"
+.INCLUDE "data/events/C41382.asm"
 
-.INCLUDE "data/movements/C413D6.asm"
+.INCLUDE "data/events/C413D6.asm"
 
-.INCLUDE "data/movements/C41402.asm"
+.INCLUDE "data/events/C41402.asm"
 
-.INCLUDE "data/movements/C4144C.asm"
+.INCLUDE "data/events/C4144C.asm"
 
-.INCLUDE "data/movements/C4152A.asm"
+.INCLUDE "data/events/C4152A.asm"
 
-.INCLUDE "data/movements/C4154E.asm"
+.INCLUDE "data/events/C4154E.asm"
 
-.INCLUDE "data/movements/C4158A.asm"
+.INCLUDE "data/events/C4158A.asm"
 
-.INCLUDE "data/movements/C415BA.asm"
+.INCLUDE "data/events/C415BA.asm"
 
-.INCLUDE "data/movements/C415E7.asm"
+.INCLUDE "data/events/C415E7.asm"
 
-.INCLUDE "data/movements/C4160A.asm"
+.INCLUDE "data/events/C4160A.asm"
 
-.INCLUDE "data/movements/C4163F.asm"
+.INCLUDE "data/events/C4163F.asm"
 
-.INCLUDE "data/movements/C416AC.asm"
+.INCLUDE "data/events/C416AC.asm"
 
-.INCLUDE "data/movements/C4170E.asm"
+.INCLUDE "data/events/C4170E.asm"
 
-.INCLUDE "data/movements/C41822.asm"
+.INCLUDE "data/events/C41822.asm"
 
-.INCLUDE "data/movements/C41900.asm"
+.INCLUDE "data/events/C41900.asm"
 
-.INCLUDE "data/movements/C41938.asm"
+.INCLUDE "data/events/C41938.asm"
 
-.INCLUDE "data/movements/C41974.asm"
+.INCLUDE "data/events/C41974.asm"
 
-.INCLUDE "data/movements/C4198D.asm"
+.INCLUDE "data/events/C4198D.asm"
 
-.INCLUDE "data/movements/C419B2.asm"
+.INCLUDE "data/events/C419B2.asm"
 
-.INCLUDE "data/movements/C419BF.asm"
+.INCLUDE "data/events/C419BF.asm"
 
-.INCLUDE "data/movements/C41A2A.asm"
+.INCLUDE "data/events/C41A2A.asm"
 
-.INCLUDE "data/movements/C41A7D.asm"
+.INCLUDE "data/events/C41A7D.asm"
 
 .INCLUDE "system/decomp.asm"
 
@@ -181,35 +181,35 @@
 
 .INCLUDE "unknown/C4/C42144.asm"
 
-.INCLUDE "data/movements/patterns/787.asm"
+.INCLUDE "data/events/scripts/787.asm"
 
-.INCLUDE "data/movements/patterns/860.asm"
+.INCLUDE "data/events/scripts/860.asm"
 
-.INCLUDE "data/movements/C4220E.asm"
+.INCLUDE "data/events/C4220E.asm"
 
-.INCLUDE "data/movements/patterns/789.asm"
+.INCLUDE "data/events/scripts/789.asm"
 
 .INCLUDE "data/unknown/C42235.asm"
 
-.INCLUDE "data/movements/patterns/788.asm"
+.INCLUDE "data/events/scripts/788.asm"
 
-.INCLUDE "data/movements/patterns/790.asm"
+.INCLUDE "data/events/scripts/790.asm"
 
-.INCLUDE "data/movements/patterns/791.asm"
+.INCLUDE "data/events/scripts/791.asm"
 
-.INCLUDE "data/movements/patterns/792.asm"
+.INCLUDE "data/events/scripts/792.asm"
 
-.INCLUDE "data/movements/patterns/793.asm"
+.INCLUDE "data/events/scripts/793.asm"
 
-.INCLUDE "data/movements/patterns/794.asm"
+.INCLUDE "data/events/scripts/794.asm"
 
-.INCLUDE "data/movements/patterns/795.asm"
+.INCLUDE "data/events/scripts/795.asm"
 
-.INCLUDE "data/movements/patterns/796.asm"
+.INCLUDE "data/events/scripts/796.asm"
 
-.INCLUDE "data/movements/patterns/797.asm"
+.INCLUDE "data/events/scripts/797.asm"
 
-.INCLUDE "data/movements/patterns/798.asm"
+.INCLUDE "data/events/scripts/798.asm"
 
 .INCLUDE "unknown/C4/C423DC.asm"
 
@@ -253,7 +253,7 @@
 
 .INCLUDE "unknown/C4/C426ED.asm"
 
-.INCLUDE "data/movements/patterns/859.asm"
+.INCLUDE "data/events/scripts/859.asm"
 
 .INCLUDE "data/unknown/C427A1.asm"
 

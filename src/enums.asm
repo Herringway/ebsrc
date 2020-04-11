@@ -3,7 +3,7 @@
 .INCLUDE "constants/enemies.asm"
 .INCLUDE "constants/actions.asm"
 .INCLUDE "constants/overworldsprites.asm"
-.INCLUDE "constants/movement.asm"
+.INCLUDE "constants/event.asm"
 .INCLUDE "constants/battle.asm"
 .INCLUDE "constants/battlebgs.asm"
 .INCLUDE "constants/items.asm"
@@ -38,7 +38,7 @@
 
 .DEFINE NUM_89D4_ENTRIES 70
 
-.DEFINE MAX_MAP_ENTITIES 30
+.DEFINE MAX_ENTITIES 30
 
 .DEFINE PARTY_LEADER_ENTITY_INDEX 24
 
@@ -419,12 +419,12 @@
 .ENDENUM
 
 .ENUM EVENT_0E_TABLES
-	UNKNOWN_3
-	UNKNOWN_4
-	UNKNOWN_5
-	UNKNOWN_6
-	UNKNOWN_7
-	UNKNOWN_8
-	UNKNOWN_9
-	UNKNOWN_10
+	UNKNOWN_3 = 0
+	UNKNOWN_4 = 1
+	UNKNOWN_5 = 2
+	UNKNOWN_6 = 3
+	UNKNOWN_7 = 4
+	UNKNOWN_8 = 5
+	UNKNOWN_9 = 6
+	UNKNOWN_10 = 7
 .ENDENUM

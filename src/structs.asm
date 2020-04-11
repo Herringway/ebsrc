@@ -127,7 +127,7 @@
 	pp .word ;35
 	exp .dword ;37
 	money .word ;41
-	movement_pattern .word ;43
+	event_script .word ;43
 	encounter_text_ptr .dword ;45
 	death_text_ptr .dword ;49
 	battle_sprite_palette .byte ;53
@@ -255,7 +255,7 @@
 	type .byte ;0
 	sprite .word ;1
 	direction .byte ;3
-	movement .byte ;4
+	event_script .byte ;4
 	.byte ;5
 	event_flag .word ;6
 	.byte ;8
