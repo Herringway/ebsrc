@@ -409,8 +409,7 @@
 
 .INCLUDE "unknown/C4/C44963.asm"
 
-UNKNOWN_C44AD7: ;$C44AD7
-	.INCBIN "src/bin/unknowns/C44AD7.bin"
+.INCLUDE "data/unknown/C44AD7.asm"
 
 .INCLUDE "unknown/C4/C44AF7.asm"
 
@@ -440,8 +439,7 @@ UNKNOWN_C44AD7: ;$C44AD7
 
 .INCLUDE "data/text/battle_back_row_text.asm"
 
-CC_1C_01_TABLE: ;$C4550F
-	.INCBIN "src/bin/unknowns/C4550F.bin"
+.INCLUDE "data/text/CC_1C_01_data.asm"
 
 .INCLUDE "data/powers_of_two_8.asm"
 
@@ -485,8 +483,7 @@ CC_1C_01_TABLE: ;$C4550F
 
 .INCLUDE "system/math/rand_mod.asm"
 
-UNKNOWN_C45F96: ;$C45F96
-	.INCBIN "src/bin/unknowns/C45F96.bin"
+.INCLUDE "data/unknown/C45F96.asm"
 
 .INCLUDE "unknown/C4/C45FA8.asm"
 
@@ -586,13 +583,13 @@ UNKNOWN_C45F96: ;$C45F96
 
 .INCLUDE "unknown/C4/C469F1.asm"
 
-UNKNOWN_C46A5E: ;$C46A5E
-	.INCBIN "src/bin/unknowns/C46A5E.bin"
+.INCLUDE "data/unknown/C46A5E.asm"
 
 .INCLUDE "unknown/C4/C46A6E.asm"
 
-UNKNOWN_C46A7A: ;$C46A7A
-	.INCBIN "src/bin/unknowns/C46A7A.bin"
+.INCLUDE "data/unknown/C46A7A.asm"
+
+.INCLUDE "data/unknown/C46A8A.asm"
 
 .INCLUDE "unknown/C4/C46A9A.asm"
 
@@ -608,8 +605,7 @@ UNKNOWN_C46A7A: ;$C46A7A
 
 .INCLUDE "unknown/C4/C46B37.asm"
 
-UNKNOWN_C46B41: ;$C46B41
-	.INCBIN "src/bin/unknowns/C46B41.bin"
+.INCLUDE "data/unknown/C46B41.asm"
 
 .INCLUDE "unknown/C4/C46B51.asm"
 
@@ -687,8 +683,7 @@ UNKNOWN_C46B41: ;$C46B41
 
 .INCLUDE "unknown/C4/C474A8.asm"
 
-UNKNOWN_C474F6: ;$C474F6
-	.INCBIN "src/bin/unknowns/C474F6.bin"
+.INCLUDE "data/unknown/C474F6.asm"
 
 .INCLUDE "unknown/C4/C47501.asm"
 
@@ -746,15 +741,13 @@ UNKNOWN_C474F6: ;$C474F6
 
 .INCLUDE "unknown/C4/C48C3E.asm"
 
-UNKNOWN_C48C59: ;$C48C59
-	.INCBIN "src/bin/unknowns/C48C59.bin"
+.INCLUDE "data/unknown/C48C59.asm"
 
 .INCLUDE "unknown/C4/C48C69.asm"
 
 .INCLUDE "unknown/C4/C48C97.asm"
 
-UNKNOWN_C48D38: ;$C48D38
-	.INCBIN "src/bin/unknowns/C48D38.bin"
+.INCLUDE "data/unknown/C48D38.asm"
 
 .INCLUDE "unknown/C4/C48D58.asm"
 
@@ -856,18 +849,13 @@ UNKNOWN_C48D38: ;$C48D38
 
 .INCLUDE "unknown/C4/C4A377.asm"
 
-UNKNOWN_C4A591: ;$C4A591
-	.INCBIN "src/bin/unknowns/C4A591.bin"
+.INCLUDE "data/unknown/C4A591.asm"
 
 .INCLUDE "unknown/C4/C4A67E.asm"
 
 .INCLUDE "unknown/C4/C4A7B0.asm"
 
-UNKNOWN_C4AC57: ;$C4AC57
-	.INCBIN "src/bin/unknowns/C4AC57.bin"
-
-UNKNOWN_C4AC58: ;$C4AC58
-	.INCBIN "src/bin/unknowns/C4AC58.bin"
+.INCLUDE "data/unknown/C4AC57.asm"
 
 .INCLUDE "data/sound_stone_unknown1.asm"
 
@@ -1011,8 +999,7 @@ UNKNOWN_C4AC58: ;$C4AC58
 
 .INCLUDE "intro/decomp_nintendo_presentation.asm"
 
-UNKNOWN_C4DE78: ;$C4DE78
-	.INCBIN "src/bin/unknowns/C4DE78.bin"
+.INCLUDE "data/unknown/C4DE78.asm"
 
 .INCLUDE "unknown/C4/C4DE98.asm"
 
