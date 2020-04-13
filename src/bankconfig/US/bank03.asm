@@ -17365,7 +17365,9 @@ UNKNOWN_C3DBDB_ENTRY2: ;$C3DBE0
 
 .INCLUDE "data/unknown/C3FB1F.asm"
 
-.INCLUDE "data/unknown/C3FB2B.asm"
+.INCLUDE "data/text/name_registry_request_string.asm"
+
+.INCLUDE "data/unknown/C3FB45.asm"
 
 .INCLUDE "data/unknown/C3FC49.asm"
 

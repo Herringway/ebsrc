@@ -1,9 +1,11 @@
 
+;A = char* namebuf? X = id??? ($41, $45, $49, $4F,$55), Y = ??? (0-4)
+; X,Y pairs observed: ($41, 0), ($49, 1), ($55, 2), ($45, 3), ($4F, 4)
 UNKNOWN_C4D00F: ;$C4D00F
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
 	RESERVE_STACK_SPACE 16
 	STA $02
-	LOADPTR UNKNOWN_C3FB2B+26, $06
+	LOADPTR UNKNOWN_C3FB45, $06
 	TYA
 	ASL
 	PHA

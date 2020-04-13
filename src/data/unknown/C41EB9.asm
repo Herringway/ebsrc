@@ -1,3 +1,11 @@
 
+;Bit flags for something (See UNKNOWN_C41DB6)
 UNKNOWN_C41EB9: ;$C41EB9
-	.BYTE $FF, $FF, $7F, $7F, $3F, $3F, $1F, $1F, $0F, $0F, $07, $07, $03, $03, $01, $01
+	.WORD $FFFF
+	.WORD $7F7F
+	.WORD $3F3F
+	.WORD $1F1F
+	.WORD $0F0F
+	.WORD $0707
+	.WORD $0303
+	.WORD $0101

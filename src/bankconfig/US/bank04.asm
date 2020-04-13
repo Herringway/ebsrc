@@ -31,7 +31,7 @@
 
 .INCLUDE "data/events/scripts/785.asm"
 
-.INCLUDE "data/unknown/C40E31.asm"
+.INCLUDE "data/events/entity_overlays.asm"
 
 .INCLUDE "data/events/C40F18.asm"
 
@@ -99,7 +99,7 @@
 
 .INCLUDE "data/events/scripts/534.asm"
 
-.INCLUDE "data/unknown/C41036.asm"
+.INCLUDE "data/events/C41036.asm"
 
 .INCLUDE "data/events/C4116C.asm"
 
@@ -179,7 +179,9 @@
 
 .INCLUDE "data/unknown/C4205D.asm"
 
-.INCLUDE "unknown/C4/C42144.asm"
+.INCLUDE "data/unknown/C420BD.asm"
+
+.INCLUDE "unknown/C4/C4213F.asm"
 
 .INCLUDE "data/events/scripts/787.asm"
 
@@ -189,7 +191,7 @@
 
 .INCLUDE "data/events/scripts/789.asm"
 
-.INCLUDE "data/unknown/C42235.asm"
+.INCLUDE "data/events/C42235.asm"
 
 .INCLUDE "data/events/scripts/788.asm"
 
@@ -255,15 +257,15 @@
 
 .INCLUDE "data/events/scripts/859.asm"
 
-.INCLUDE "data/unknown/C427A1.asm"
+.INCLUDE "data/events/C427A1.asm"
 
-.INCLUDE "data/unknown/C427E0.asm"
+.INCLUDE "data/events/C427E0.asm"
 
-.INCLUDE "data/unknown/C42802.asm"
+.INCLUDE "data/events/C42802.asm"
 
-.INCLUDE "data/unknown/C42815.asm"
+.INCLUDE "data/events/C42815.asm"
 
-.INCLUDE "data/unknown/C42828.asm"
+.INCLUDE "data/events/C42828.asm"
 
 .INCLUDE "unknown/C4/C4283F.asm"
 
