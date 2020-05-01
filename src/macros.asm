@@ -620,3 +620,51 @@
     .ENDIF
     JSL PREPARE_VRAM_COPY_ENTRY_B
 .ENDMACRO
+
+.MACRO SPRITES group, spr1, spr2, spr3, spr4, spr5, spr6, spr7, spr8
+    .BANKBYTES group
+    SPRITES2 group, spr1, spr2, spr3, spr4, spr5, spr6, spr7, spr8
+.ENDMACRO
+
+.MACRO SPRITES2 group, spr1, spr2, spr3, spr4, spr5, spr6, spr7, spr8
+    .IFNBLANK spr1
+        .ASSERT .HIWORD(spr1) = .HIWORD(group), error, "sprite 1 not in same bank!"
+        .ASSERT .LOWORD(spr1) >= .LOWORD(group), error, "sprite 1 offset before sprite group offset!"
+        .WORD .LOWORD(spr1)
+    .ENDIF
+    .IFNBLANK spr2
+        .ASSERT .HIWORD(spr2) = .HIWORD(group), error, "sprite 2 not in same bank!"
+        .ASSERT .LOWORD(spr2) >= .LOWORD(group), error, "sprite 2 offset before sprite group offset!"
+        .WORD .LOWORD(spr2)
+    .ENDIF
+    .IFNBLANK spr3
+        .ASSERT .HIWORD(spr3) = .HIWORD(group), error, "sprite 3 not in same bank!"
+        .ASSERT .LOWORD(spr3) >= .LOWORD(group), error, "sprite 3 offset before sprite group offset!"
+        .WORD .LOWORD(spr3)
+    .ENDIF
+    .IFNBLANK spr4
+        .ASSERT .HIWORD(spr4) = .HIWORD(group), error, "sprite 4 not in same bank!"
+        .ASSERT .LOWORD(spr4) >= .LOWORD(group), error, "sprite 4 offset before sprite group offset!"
+        .WORD .LOWORD(spr4)
+    .ENDIF
+    .IFNBLANK spr5
+        .ASSERT .HIWORD(spr5) = .HIWORD(group), error, "sprite 5 not in same bank!"
+        .ASSERT .LOWORD(spr5) >= .LOWORD(group), error, "sprite 5 offset before sprite group offset!"
+        .WORD .LOWORD(spr5)
+    .ENDIF
+    .IFNBLANK spr6
+        .ASSERT .HIWORD(spr6) = .HIWORD(group), error, "sprite 6 not in same bank!"
+        .ASSERT .LOWORD(spr6) >= .LOWORD(group), error, "sprite 6 offset before sprite group offset!"
+        .WORD .LOWORD(spr6)
+    .ENDIF
+    .IFNBLANK spr7
+        .ASSERT .HIWORD(spr7) = .HIWORD(group), error, "sprite 7 not in same bank!"
+        .ASSERT .LOWORD(spr7) >= .LOWORD(group), error, "sprite 7 offset before sprite group offset!"
+        .WORD .LOWORD(spr7)
+    .ENDIF
+    .IFNBLANK spr8
+        .ASSERT .HIWORD(spr8) = .HIWORD(group), error, "sprite 8 not in same bank!"
+        .ASSERT .LOWORD(spr8) >= .LOWORD(group), error, "sprite 8 offset before sprite group offset!"
+        .WORD .LOWORD(spr8)
+    .ENDIF
+.ENDMACRO
