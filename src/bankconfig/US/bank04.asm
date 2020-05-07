@@ -287,6 +287,14 @@
 
 .INCLUDE "data/unknown/C42A41.asm"
 
+.INCLUDE "data/unknown/C42A63.asm"
+
+.INCLUDE "data/unknown/C42A85.asm"
+
+.INCLUDE "data/unknown/C42AA7.asm"
+
+.INCLUDE "data/unknown/C42AC9.asm"
+
 .INCLUDE "data/unknown/C42AEB.asm"
 
 .INCLUDE "data/unknown/C42B0D.asm"
