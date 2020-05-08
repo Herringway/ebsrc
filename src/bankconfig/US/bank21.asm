@@ -1,5 +1,7 @@
 .SEGMENT "BANK21"
 .INCLUDE "common.asm"
+.INCLUDE "config.asm"
+.INCLUDE "structs.asm"
 .INCLUDE "flyovermacros.asm"
 
 COFFEE_SEQUENCE_TEXT: ;$E10000
@@ -44,7 +46,7 @@ COMPRESSED_PALETTE_UNKNOWN: ;$E1374A
 
 .INCLUDE "data/credits.asm"
 
-.INCLUDE "data/unknown/E14DE8.asm"
+.INCLUDE "unknown/E1/E14DE8.asm"
 
 APE_ARRANGEMENT: ;$E14EC1
 	.INCBIN "bin/intro/logos/ape.arr"
