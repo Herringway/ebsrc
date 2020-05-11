@@ -19,7 +19,7 @@
 .INCLUDE "data/map/npc_config.asm"
 
 AUDIO_PACK_94: ;$CFF2B5
-	.INCBIN "bin/audiopacks/94.bin"
+	.INCBIN "bin/US/audiopacks/94.bin"
 
 AUDIO_PACK_96: ;$CFFF38
-	.INCBIN "bin/audiopacks/96.bin"
+	.INCBIN "bin/US/audiopacks/96.bin"

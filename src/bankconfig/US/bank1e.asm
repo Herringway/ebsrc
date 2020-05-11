@@ -2,37 +2,37 @@
 .INCLUDE "common-usa.asm"
 
 MAP_DATA_TILE_SET_GRAPHICS_6: ;$DE0000
-	.INCBIN "bin/maps/gfx/6.bin"
+	.INCBIN "bin/US/maps/gfx/6.bin"
 
 MAP_DATA_TILE_SET_GRAPHICS_7: ;$DE32C9
-	.INCBIN "bin/maps/gfx/7.bin"
+	.INCBIN "bin/US/maps/gfx/7.bin"
 
 MAP_DATA_TILE_SET_GRAPHICS_8: ;$DE543F
-	.INCBIN "bin/maps/gfx/8.bin"
+	.INCBIN "bin/US/maps/gfx/8.bin"
 
 MAP_DATA_TILE_SET_GRAPHICS_2: ;$DE747E
-	.INCBIN "bin/maps/gfx/2.bin"
+	.INCBIN "bin/US/maps/gfx/2.bin"
 
 MAP_DATA_TILE_SET_GRAPHICS_10: ;$DEA101
-	.INCBIN "bin/maps/gfx/10.bin"
+	.INCBIN "bin/US/maps/gfx/10.bin"
 
 MAP_DATA_TILE_SET_GRAPHICS_11: ;$DECE3A
-	.INCBIN "bin/maps/gfx/11.bin"
+	.INCBIN "bin/US/maps/gfx/11.bin"
 
 MAP_DATA_TILE_ANIMATION_GFX_15: ;$DEF0E7
-	.INCBIN "bin/maps/anim_gfx/15.bin"
+	.INCBIN "bin/US/maps/anim_gfx/15.bin"
 
 MAP_DATA_TILE_ANIMATION_GFX_16: ;$DEF100
-	.INCBIN "bin/maps/anim_gfx/16.bin"
+	.INCBIN "bin/US/maps/anim_gfx/16.bin"
 
 MAP_DATA_TILE_ANIMATION_GFX_17: ;$DEF2CF
-	.INCBIN "bin/maps/anim_gfx/17.bin"
+	.INCBIN "bin/US/maps/anim_gfx/17.bin"
 
 MAP_DATA_TILE_ANIMATION_GFX_18: ;$DEF5EB
-	.INCBIN "bin/maps/anim_gfx/18.bin"
+	.INCBIN "bin/US/maps/anim_gfx/18.bin"
 
 MAP_DATA_TILE_ANIMATION_GFX_19: ;$DEF869
-	.INCBIN "bin/maps/anim_gfx/19.bin"
+	.INCBIN "bin/US/maps/anim_gfx/19.bin"
 
 AUDIO_PACK_143: ;$DEFCDD
-	.INCBIN "bin/audiopacks/143.bin"
+	.INCBIN "bin/US/audiopacks/143.bin"

@@ -155,7 +155,7 @@
 
 .INCLUDE "data/unknown/EF4A40.asm"
 
-.INCLUDE "bin/text_data/6.ebtxt"
+.INCLUDE "bin/US/text_data/6.ebtxt"
 
 .INCLUDE "data/command_window_text.asm"
 

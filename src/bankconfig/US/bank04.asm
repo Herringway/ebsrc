@@ -3,7 +3,7 @@
 .INCLUDE "common-usa.asm"
 .INCLUDE "config.asm"
 .INCLUDE "structs.asm"
-.INCLUDE "bin/flyovers.symbols.asm"
+.INCLUDE "bin/US/flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C40000.asm"
 

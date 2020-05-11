@@ -2,22 +2,22 @@
 .INCLUDE "common-usa.asm"
 
 MAP_DATA_TILE_SET_GRAPHICS_0: ;$DD0000
-	.INCBIN "bin/maps/gfx/0.bin"
+	.INCBIN "bin/US/maps/gfx/0.bin"
 
 MAP_DATA_TILE_SET_GRAPHICS_1: ;$DD3294
-	.INCBIN "bin/maps/gfx/1.bin"
+	.INCBIN "bin/US/maps/gfx/1.bin"
 
 MAP_DATA_TILE_SET_GRAPHICS_9: ;$DD5F17
-	.INCBIN "bin/maps/gfx/9.bin"
+	.INCBIN "bin/US/maps/gfx/9.bin"
 
 MAP_DATA_TILE_SET_GRAPHICS_3: ;$DD89A2
-	.INCBIN "bin/maps/gfx/3.bin"
+	.INCBIN "bin/US/maps/gfx/3.bin"
 
 MAP_DATA_TILE_SET_GRAPHICS_4: ;$DDB7D1
-	.INCBIN "bin/maps/gfx/4.bin"
+	.INCBIN "bin/US/maps/gfx/4.bin"
 
 MAP_DATA_TILE_SET_GRAPHICS_5: ;$DDDF3B
-	.INCBIN "bin/maps/gfx/5.bin"
+	.INCBIN "bin/US/maps/gfx/5.bin"
 
 AUDIO_PACK_75: ;$DDFECE
-	.INCBIN "bin/audiopacks/75.bin"
+	.INCBIN "bin/US/audiopacks/75.bin"

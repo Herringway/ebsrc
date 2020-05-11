@@ -1,3 +1,3 @@
 
 KIRBY: ;$EFEFB7
-	.INCBIN "bin/kirby.gfx"
+	.INCBIN "bin/US/kirby.gfx"
