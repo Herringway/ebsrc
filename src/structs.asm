@@ -71,45 +71,45 @@
 	party_npc_2 .byte ;70
 	party_npc_1_hp .word ;71
 	party_npc_2_hp .word ;73
-	.byte ;75
+	unknown4B .byte ;75
 	party_status .byte ;76
-	.byte ;77
-	.word ;78
-	.word ;80
+	unknown4D .byte ;77
+	unknown4E .word ;78
+	unknown50 .word ;80
 	wallet_backup .dword ;82
 	escargo_express_items .byte 36 ;86
-	.word ;122
-	.byte 4 ;124
-	.word ;128
+	unknown7A .word ;122
+	unknown7C .byte 4 ;124
+	unknown80 .word ;128
 	leader_x_coord .word ;130
-	.word ;132
+	unknown84 .word ;132
 	leader_y_coord .word ;134
-	.word ;136
+	unknown88 .word ;136
 	leader_direction .word ;138
 	trodden_tile_type .word ;140
 	walking_style .word ;142
-	.word ;144
-	.word ;146
+	unknown90 .word ;144
+	unknown92 .word ;146
 	current_party_members .word ;148
-	.byte 6 ;150
+	unknown96 .byte 6 ;150
 	player_controlled_party_members .byte ;156
-	.byte 5 ;157
-	.byte 12 ;162
+	unknown9D .byte 5 ;157
+	unknownA2 .byte 12 ;162
 	party_count .byte ;174
 	player_controlled_party_count .byte ;175
-	.word ;176
-	.word ; 178
-	.byte 2 ;180
-	.byte 3 ;182
-	.byte 3 ;185
+	unknownB0 .word ;176
+	unknownB2 .word ; 178
+	unknownB4 .byte 2 ;180
+	unknownB6 .byte 3 ;182
+	unknownB8 .byte 3 ;185
 	auto_fight_enable .byte ;188
 	exit_mouse_x_coord .word ;189
 	exit_mouse_y_coord .word ;191
 	text_speed .byte ;193
 	sound_setting .byte ;194
-	.byte ;195
-	.byte 4 ;196
-	.byte 12 ;200
+	unknownC3 .byte ;195
+	unknownC4 .byte 4 ;196
+	unknownC8 .byte 12 ;200
 	saved_photo_states .byte 32 * .SIZEOF(photo_state) ;212
 	timer .dword ;468
 	text_flavour .byte ;472
