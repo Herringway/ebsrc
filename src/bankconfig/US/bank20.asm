@@ -1,5 +1,5 @@
 .SEGMENT "BANK20"
-.INCLUDE "common.asm"
+.INCLUDE "common-usa.asm"
 
 TEXT_WINDOW_GFX: ;$E00000
 	.INCBIN "bin/graphics/text_window.gfx"

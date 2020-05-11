@@ -1,5 +1,5 @@
 .SEGMENT "BANK1C"
-.INCLUDE "common.asm"
+.INCLUDE "common-usa.asm"
 
 MAP_DATA_TILE_ARRANGEMENT_12:;$DC0000
 	.INCBIN "bin/maps/arrangements/12.bin"

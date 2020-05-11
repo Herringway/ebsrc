@@ -1,5 +1,5 @@
 .SEGMENT "BANK28"
-.INCLUDE "common.asm"
+.INCLUDE "common-usa.asm"
 
 AUDIO_PACK_84: ;$E80000
 	.INCBIN "bin/audiopacks/84.bin"

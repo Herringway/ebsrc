@@ -1,5 +1,5 @@
 .SEGMENT "BANK13"
-.INCLUDE "common.asm"
+.INCLUDE "common-usa.asm"
 
 OVERWORLD_SPRITES_BANK3:
 SPRITE_0354:

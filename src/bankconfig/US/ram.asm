@@ -2,7 +2,7 @@
 .INCLUDE "config.asm"
 .INCLUDE "enums.asm"
 .INCLUDE "structs.asm"
-.INCLUDE "symbols.asm"
+.INCLUDE "symbols-usa.asm"
 
 RAM: ;For pointers.
 UNKNOWN_7E0000: ;$7E0000

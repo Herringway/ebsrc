@@ -1,5 +1,5 @@
 .SEGMENT "BANK12"
-.INCLUDE "common.asm"
+.INCLUDE "common-usa.asm"
 
 SPRITE_GROUP_POO:
 SPRITE_0123:

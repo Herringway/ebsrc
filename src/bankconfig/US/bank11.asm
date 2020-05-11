@@ -1,5 +1,5 @@
 .SEGMENT "BANK11"
-.INCLUDE "common.asm"
+.INCLUDE "common-usa.asm"
 
 SPRITE_GROUP_NESS_BICYCLE:
 SPRITE_0000: ;$D10000

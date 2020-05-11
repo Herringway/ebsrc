@@ -1,5 +1,5 @@
 .INCLUDE "macros.asm"
 .INCLUDE "hardware.asm"
 .INCLUDE "enums.asm"
-.INCLUDE "symbols.asm"
+.INCLUDE "symbols-usa.asm"
 .SMART

@@ -1,5 +1,5 @@
 .SEGMENT "BANK0C"
-.INCLUDE "common.asm"
+.INCLUDE "common-usa.asm"
 
 ANIMATIONDATA_CARPAINTER_LIGHTNING_REFLECT: ;$CC0000
 	.INCBIN "bin/graphics/animations/lightning_reflect.bin"
