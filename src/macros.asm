@@ -621,6 +621,32 @@
     JSL PREPARE_VRAM_COPY_ENTRY_B
 .ENDMACRO
 
+.MACRO COPY_TO_VRAM3COMMON dest, size, unk
+    LDY #dest
+    .IF size = dest
+        TYX
+    .ELSE
+        LDX #size
+    .ENDIF
+    SEP #PROC_FLAGS::ACCUM8
+    .IF unk = dest
+        TYA
+    .ELSE
+        LDA #unk
+    .ENDIF
+    JSL TRANSFER_TO_VRAM
+.ENDMACRO
+
+.MACRO COPY_TO_VRAM3 src, dest, size, unk
+    LOADPTR src, $0E
+    COPY_TO_VRAM3COMMON dest, size, unk
+.ENDMACRO
+
+.MACRO COPY_TO_VRAM3P src, dest, size, unk
+    MOVE_INT src, $0E
+    COPY_TO_VRAM3COMMON dest, size, unk
+.ENDMACRO
+
 .MACRO SPRITES group, spr1, spr2, spr3, spr4, spr5, spr6, spr7, spr8
     .BANKBYTES group
     SPRITES2 group, spr1, spr2, spr3, spr4, spr5, spr6, spr7, spr8
