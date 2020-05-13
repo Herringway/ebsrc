@@ -13,7 +13,7 @@ UNKNOWN_C3E7E3: ;$C3E7E3
 	ADC #.LOWORD(WINDOW_STATS_TABLE)
 	TAY
 	STY $0E
-	LDA a:.LOWORD(RAM)+43,Y
+	LDA a:.LOWORD(RAM) + window_stats::argument_memory_storage,Y
 	CMP #$FFFF
 	BEQ @UNKNOWN2
 	LDY #.SIZEOF(u89D4_entry)
@@ -23,8 +23,8 @@ UNKNOWN_C3E7E3: ;$C3E7E3
 	TAX
 @UNKNOWN0:
 	LDA #$0000
-	STA a:.LOWORD(RAM),X
-	LDA a:.LOWORD(RAM)+2,X
+	STA a:u89D4_entry::unknown0,X
+	LDA a:u89D4_entry::unknown2,X
 	CMP #$FFFF
 	BEQ @UNKNOWN1
 	LDY #.SIZEOF(u89D4_entry)
@@ -36,12 +36,12 @@ UNKNOWN_C3E7E3: ;$C3E7E3
 @UNKNOWN1:
 	LDA #$FFFF
 	LDY $0E
-	STA a:.LOWORD(UNKNOWN_7E002F),Y
-	STA a:.LOWORD(UNKNOWN_7E002D),Y
-	STA a:.LOWORD(RAM)+43,Y
+	STA a:.LOWORD(RAM) + window_stats::secondary_memory_storage,Y
+	STA a:.LOWORD(RAM) + window_stats::argument_memory_storage + 2,Y
+	STA a:.LOWORD(RAM) + window_stats::argument_memory_storage,Y
 	LDA #$0001
-	STA BG1_X_POS,Y
-	STA BG1_Y_POS,Y
+	STA a:.LOWORD(RAM) + window_stats::secondary_memory_storage + 2,Y
+	STA a:.LOWORD(RAM) + window_stats::unknown51,Y
 @UNKNOWN2:
 	PLD
 	RTL

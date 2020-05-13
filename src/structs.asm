@@ -246,7 +246,7 @@
 	working_memory_storage .byte 4 ;39
 	argument_memory_storage .byte 4 ;43 - may actually be a pair of $7E89D4 entries
 	secondary_memory_storage .byte 4 ;47
-	.byte 4 ;51
+	unknown51 .byte 4 ;51
 	.dword ;55 - a pointer for something
 	.byte 23 ;59
 .ENDSTRUCT
@@ -267,18 +267,18 @@
 .ENDSTRUCT
 
 .STRUCT u89D4_entry
-	.word ;0
-	.word ;2
-	.word ;4
-	.word ;6
-	.word ;8
-	.word ;10
-	.word ;12
-	.byte ;14 - seems to be a sound effect id
-	.byte ;15
-	.byte 3 ;16
-	.byte 24 ;19
-	.word ;43
+	unknown0 .word ;0
+	unknown2 .word ;2
+	unknown4 .word ;4
+	unknown6 .word ;6
+	unknown8 .word ;8
+	unknown10 .word ;10
+	unknown12 .word ;12
+	unknown14 .byte ;14 - seems to be a sound effect id
+	unknown15 .byte ;15
+	unknown16 .byte 3 ;16
+	unknown19 .byte 24 ;19
+	unknown43 .word ;43
 .ENDSTRUCT
 
 .STRUCT item
