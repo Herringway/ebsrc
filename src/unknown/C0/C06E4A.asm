@@ -10,6 +10,6 @@ UNKNOWN_C06E4A: ;$C06E4A
 	STA .LOWORD(GAME_STATE)+game_state::leader_x_coord
 	LDA .LOWORD(UNKNOWN_7E5DD2)
 	STA .LOWORD(GAME_STATE)+game_state::leader_y_coord
-	STZ .LOWORD(GAME_STATE)+132
-	STZ .LOWORD(GAME_STATE)+128
+	STZ .LOWORD(GAME_STATE) + game_state::unknown84
+	STZ .LOWORD(GAME_STATE) + game_state::unknown80
 	RTL
