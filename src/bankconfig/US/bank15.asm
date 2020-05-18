@@ -1,6 +1,6 @@
 .SEGMENT "BANK15"
 .INCLUDE "common-usa.asm"
-.INCLUDE "config.asm"
+.INCLUDE "config-usa.asm"
 .INCLUDE "structs.asm"
 
 SPRITE_GROUP_TONY_IN_BED:

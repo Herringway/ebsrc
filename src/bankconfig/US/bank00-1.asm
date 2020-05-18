@@ -1,6 +1,6 @@
 .SEGMENT "BANK00"
 .INCLUDE "common-usa.asm"
-.INCLUDE "config.asm"
+.INCLUDE "config-usa.asm"
 .INCLUDE "structs.asm"
 
 .INCLUDE "overworld/events/clear_unknown_30x2_table_23.asm"

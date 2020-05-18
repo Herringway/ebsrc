@@ -1,6 +1,6 @@
 .SEGMENT "BANK2F"
 .INCLUDE "common-usa.asm"
-.INCLUDE "config.asm"
+.INCLUDE "config-usa.asm"
 .INCLUDE "structs.asm"
 
 .INCLUDE "battle/enemy_flashing_off.asm"

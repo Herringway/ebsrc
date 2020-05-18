@@ -1,7 +1,7 @@
 .SEGMENT "BANK00B"
 .INCLUDE "eventmacros.asm"
 .INCLUDE "common-usa.asm"
-.INCLUDE "config.asm"
+.INCLUDE "config-usa.asm"
 .INCLUDE "structs.asm"
 
 .INCLUDE "system/reset.asm"

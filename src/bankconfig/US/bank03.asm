@@ -1,7 +1,7 @@
 .SEGMENT "BANK03"
 .INCLUDE "eventmacros.asm"
 .INCLUDE "common-usa.asm"
-.INCLUDE "config.asm"
+.INCLUDE "config-usa.asm"
 .INCLUDE "structs.asm"
 
 .INCLUDE "data/sprite_group_palettes.asm"
