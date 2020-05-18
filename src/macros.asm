@@ -98,6 +98,8 @@
             .BYTE $5D
         .elseif .strat(str, i) = '.'
             .BYTE $5E
+        .elseif .strat(str, i) = '/'
+            .BYTE $5F
         .elseif .strat(str, i) = '0'
             .BYTE $60
         .elseif .strat(str, i) = '1'
