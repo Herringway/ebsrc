@@ -226,7 +226,7 @@
 .ENDSTRUCT
 
 .STRUCT window_stats
-	.byte 4 ;0
+	unknown0 .byte 4 ;0
 	id .word ;4
 	window_x .word ;6
 	window_y .word ;8
@@ -236,10 +236,10 @@
 	text_y .word ;16
 	text_width .word ;18
 	text_height .word ;20
-	.byte ;22
+	unknown22 .byte ;22
 	wram_address .word ;23
 	font .byte ;25
-	.byte ;26
+	unknown26 .byte ;26
 	argument_memory .byte 4 ;27
 	working_memory .byte 4 ;31
 	secondary_memory .byte 4 ;35
@@ -247,8 +247,8 @@
 	argument_memory_storage .byte 4 ;43 - may actually be a pair of $7E89D4 entries
 	secondary_memory_storage .byte 4 ;47
 	unknown51 .byte 4 ;51
-	.dword ;55 - a pointer for something
-	.byte 23 ;59
+	unknown55 .dword ;55 - a pointer for something
+	unknown59 .byte 23 ;59
 .ENDSTRUCT
 
 .STRUCT npc_config

@@ -44,7 +44,7 @@ UNKNOWN_C4343E: ;$C4343E
 	ADC #.LOWORD(GAME_STATE)
 	STA $12
 	CLC
-	ADC #$0096
+	ADC #game_state::unknown96
 	TAX
 	STX $0E
 	LDA a:.LOWORD(RAM),X
@@ -65,7 +65,7 @@ UNKNOWN_C4343E: ;$C4343E
 	.A16
 	LDA $12
 	TAX
-	LDA a:.LOWORD(RAM)+156,X
+	LDA a:.LOWORD(RAM)+game_state::player_controlled_party_members,X
 	AND #$00FF
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168

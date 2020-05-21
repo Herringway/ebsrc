@@ -131,9 +131,11 @@ TITLE_SCREEN_PALETTE: ;$E1CDE1
 
 .INCLUDE "data/unknown/E1D815.asm"
 
-.INCLUDE "data/unknown/E1D835.asm"
+CAST_NAMES_GFX: ;$E1D835
+	.INCBIN "bin/US/ending/cast_names.gfx.lzhal"
 
-.INCLUDE "data/unknown/E1E4E7.asm"
+UNKNOWN_E1E4E6: ;$E1E4E6
+	.INCBIN "bin/US/ending/cast_names.pal.lzhal"
 
 STAFF_CREDITS_FONT_GRAPHICS: ;$E1E528
 	.INCBIN "bin/US/ending/credits_font.gfx.lzhal"

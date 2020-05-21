@@ -4,7 +4,7 @@ UNKNOWN_C09E79: ;$C09E79
 	STY $94
 	ASL
 	TAX
-	LDA .LOWORD(CHAR_STRUCT)+.SIZEOF(char_struct)*3+char_struct::afflictions,X
+	LDA .LOWORD(UNKNOWN_C09AF9),X
 	CLC
 	ADC $88
 	TAX
