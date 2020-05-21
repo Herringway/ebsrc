@@ -1,0 +1,5 @@
+
+RAND_0_3: ;$C0A633
+	JSL RAND
+	AND #$0003
+	RTL

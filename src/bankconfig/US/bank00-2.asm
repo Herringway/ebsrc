@@ -492,6 +492,8 @@
 
 .INCLUDE "data/unknown/C0A623.asm"
 
+.INCLUDE "system/math/rand_0_3.asm"
+
 .INCLUDE "system/math/rand_0_7.asm"
 
 .INCLUDE "unknown/C0/C0A643.asm"
