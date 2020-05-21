@@ -94,6 +94,10 @@
 
 .INCLUDE "unknown/C0/C08C58.asm"
 
+.INCLUDE "data/C08C58_jumps.asm"
+
+.INCLUDE "unknown/C0/C08C6D.asm"
+
 .INCLUDE "unknown/C0/C08C87.asm"
 
 .INCLUDE "unknown/C0/C08CA1.asm"
