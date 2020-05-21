@@ -861,6 +861,14 @@
 
 .INCLUDE "data/unknown/C4A591.asm"
 
+.INCLUDE "data/unknown/C4A5CE.asm"
+
+.INCLUDE "data/unknown/C4A5FA.asm"
+
+.INCLUDE "data/unknown/C4A626.asm"
+
+.INCLUDE "data/unknown/C4A652.asm"
+
 .INCLUDE "unknown/C4/C4A67E.asm"
 
 .INCLUDE "unknown/C4/C4A7B0.asm"
