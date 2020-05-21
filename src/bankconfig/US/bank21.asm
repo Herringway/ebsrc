@@ -102,11 +102,14 @@ NINTENDO_PRESENTATION_GRAPHICS: ;$E1AD4E
 NINTENDO_ITOI_PALETTE: ;$E1AE6F
 	.INCBIN "bin/US/intro/attract/nintendo_itoi.pal"
 
-.INCLUDE "data/unknown/E1AE7C.asm"
+UNKNOWN_E1AE7C: ;$E1AE7C
+	.INCBIN "bin/US/E1AE7C.bin.lzhal"
 
-.INCLUDE "data/unknown/E1AE83.asm"
+UNKNOWN_E1AE83: ;$E1AE83
+	.INCBIN "bin/US/E1AE83.bin.lzhal"
 
-.INCLUDE "data/unknown/E1AEFD.asm"
+UNKNOWN_E1AEFD: ;$E1AEFD
+	.INCBIN "bin/US/E1AEFD.bin.lzhal"
 
 TITLE_SCREEN_ARRANGEMENT: ;$E1AF7D
 	.INCBIN "bin/US/intro/title_screen.arr"
@@ -114,20 +117,25 @@ TITLE_SCREEN_ARRANGEMENT: ;$E1AF7D
 TITLE_SCREEN_GRAPHICS: ;$E1B211
 	.INCBIN "bin/US/intro/title_screen.gfx"
 
-.INCLUDE "data/unknown/E1C6E5.asm"
+UNKNOWN_E1C6E5: ;$E1C6E5
+	.INCBIN "bin/US/intro/title_screen_letters.gfx.lzhal"
 
 TITLE_SCREEN_PALETTE: ;$E1CDE1
 	.INCBIN "bin/US/intro/title_screen.pal"
 
 .INCLUDE "data/unknown/E1CE08.asm"
 
-.INCLUDE "data/unknown/E1CFAF.asm"
+UNKNOWN_E1CFAF: ;$E1CCAB
+	.INCBIN "bin/US/E1CFAF.gfx.lzhal"
 
-.INCLUDE "data/unknown/E1D4F4.asm"
+UNKNOWN_E1D4F4:
+	.INCBIN "bin/US/E1D4F4.pal.lzhal"
 
-.INCLUDE "data/unknown/E1D5E8.asm"
+UNKNOWN_E1D5E8: ;$E1D2E4
+	.INCBIN "bin/US/E1D5E8.arr.lzhal"
 
-.INCLUDE "data/unknown/E1D6E1.asm"
+UNKNOWN_E1D6E1: ;$E1D6E1
+	.INCBIN "bin/US/E1D6E1.gfx.lzhal"
 
 .INCLUDE "data/unknown/E1D815.asm"
 
