@@ -27,7 +27,7 @@ UNKNOWN_C03F1E: ;$C03F1E
 	LDY #$0000
 	BRA @UNKNOWN2
 @UNKNOWN1:
-	LDA .LOWORD(GAME_STATE)+156,Y
+	LDA .LOWORD(GAME_STATE) + game_state::player_controlled_party_members,Y
 	AND #$00FF
 	ASL
 	TAX
