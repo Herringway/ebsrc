@@ -2,169 +2,169 @@
 .INCLUDE "common-usa.asm"
 
 BATTLE_SPRITE_82: ;$CE0000
-	.INCBIN"bin/US/battle_sprites/82.bin"
+	.INCBIN"bin/US/battle_sprites/82.gfx.lzhal"
 
 BATTLE_SPRITE_6: ;$CE0305
-	.INCBIN"bin/US/battle_sprites/6.bin"
+	.INCBIN"bin/US/battle_sprites/6.gfx.lzhal"
 
 BATTLE_SPRITE_31: ;$CE0601
-	.INCBIN"bin/US/battle_sprites/31.bin"
+	.INCBIN"bin/US/battle_sprites/31.gfx.lzhal"
 
 BATTLE_SPRITE_50: ;$CE08F3
-	.INCBIN"bin/US/battle_sprites/50.bin"
+	.INCBIN"bin/US/battle_sprites/50.gfx.lzhal"
 
 BATTLE_SPRITE_109: ;$CE0BD6
-	.INCBIN"bin/US/battle_sprites/109.bin"
+	.INCBIN"bin/US/battle_sprites/109.gfx.lzhal"
 
 BATTLE_SPRITE_53: ;$CE0EB3
-	.INCBIN"bin/US/battle_sprites/53.bin"
+	.INCBIN"bin/US/battle_sprites/53.gfx.lzhal"
 
 BATTLE_SPRITE_103: ;$CE118D
-	.INCBIN"bin/US/battle_sprites/103.bin"
+	.INCBIN"bin/US/battle_sprites/103.gfx.lzhal"
 
 BATTLE_SPRITE_98: ;$CE1461
-	.INCBIN"bin/US/battle_sprites/98.bin"
+	.INCBIN"bin/US/battle_sprites/98.gfx.lzhal"
 
 BATTLE_SPRITE_68: ;$CE170A
-	.INCBIN"bin/US/battle_sprites/68.bin"
+	.INCBIN"bin/US/battle_sprites/68.gfx.lzhal"
 
 BATTLE_SPRITE_52: ;$CE19A9
-	.INCBIN"bin/US/battle_sprites/52.bin"
+	.INCBIN"bin/US/battle_sprites/52.gfx.lzhal"
 
 BATTLE_SPRITE_8: ;$CE1C2E
-	.INCBIN"bin/US/battle_sprites/8.bin"
+	.INCBIN"bin/US/battle_sprites/8.gfx.lzhal"
 
 BATTLE_SPRITE_21: ;$CE1EB1
-	.INCBIN"bin/US/battle_sprites/21.bin"
+	.INCBIN"bin/US/battle_sprites/21.gfx.lzhal"
 
 BATTLE_SPRITE_43: ;$CE2133
-	.INCBIN"bin/US/battle_sprites/43.bin"
+	.INCBIN"bin/US/battle_sprites/43.gfx.lzhal"
 
 BATTLE_SPRITE_7: ;$CE239C
-	.INCBIN"bin/US/battle_sprites/7.bin"
+	.INCBIN"bin/US/battle_sprites/7.gfx.lzhal"
 
 BATTLE_SPRITE_5: ;$CE25E6
-	.INCBIN"bin/US/battle_sprites/5.bin"
+	.INCBIN"bin/US/battle_sprites/5.gfx.lzhal"
 
 BATTLE_SPRITE_26: ;$CE2830
-	.INCBIN"bin/US/battle_sprites/26.bin"
+	.INCBIN"bin/US/battle_sprites/26.gfx.lzhal"
 
 BATTLE_SPRITE_61: ;$CE2A5E
-	.INCBIN"bin/US/battle_sprites/61.bin"
+	.INCBIN"bin/US/battle_sprites/61.gfx.lzhal"
 
 BATTLE_SPRITE_24: ;$CE2C7E
-	.INCBIN"bin/US/battle_sprites/24.bin"
+	.INCBIN"bin/US/battle_sprites/24.gfx.lzhal"
 
 BATTLE_SPRITE_92: ;$CE2E9B
-	.INCBIN"bin/US/battle_sprites/92.bin"
+	.INCBIN"bin/US/battle_sprites/92.gfx.lzhal"
 
 BATTLE_SPRITE_33: ;$CE30B7
-	.INCBIN"bin/US/battle_sprites/33.bin"
+	.INCBIN"bin/US/battle_sprites/33.gfx.lzhal"
 
 BATTLE_SPRITE_29: ;$CE32C9
-	.INCBIN"bin/US/battle_sprites/29.bin"
+	.INCBIN"bin/US/battle_sprites/29.gfx.lzhal"
 
 BATTLE_SPRITE_69: ;$CE34C5
-	.INCBIN"bin/US/battle_sprites/69.bin"
+	.INCBIN"bin/US/battle_sprites/69.gfx.lzhal"
 
 BATTLE_SPRITE_49: ;$CE36B1
-	.INCBIN"bin/US/battle_sprites/49.bin"
+	.INCBIN"bin/US/battle_sprites/49.gfx.lzhal"
 
 BATTLE_SPRITE_80: ;$CE3897
-	.INCBIN"bin/US/battle_sprites/80.bin"
+	.INCBIN"bin/US/battle_sprites/80.gfx.lzhal"
 
 BATTLE_SPRITE_3: ;$CE3A60
-	.INCBIN"bin/US/battle_sprites/3.bin"
+	.INCBIN"bin/US/battle_sprites/3.gfx.lzhal"
 
 BATTLE_SPRITE_45: ;$CE3C0F
-	.INCBIN"bin/US/battle_sprites/45.bin"
+	.INCBIN"bin/US/battle_sprites/45.gfx.lzhal"
 
 BATTLE_SPRITE_20: ;$CE3DB9
-	.INCBIN"bin/US/battle_sprites/20.bin"
+	.INCBIN"bin/US/battle_sprites/20.gfx.lzhal"
 
 BATTLE_SPRITE_91: ;$CE3F63
-	.INCBIN"bin/US/battle_sprites/91.bin"
+	.INCBIN"bin/US/battle_sprites/91.gfx.lzhal"
 
 BATTLE_SPRITE_19: ;$CE4104
-	.INCBIN"bin/US/battle_sprites/19.bin"
+	.INCBIN"bin/US/battle_sprites/19.gfx.lzhal"
 
 BATTLE_SPRITE_2: ;$CE429C
-	.INCBIN"bin/US/battle_sprites/2.bin"
+	.INCBIN"bin/US/battle_sprites/2.gfx.lzhal"
 
 BATTLE_SPRITE_25: ;$CE4432
-	.INCBIN"bin/US/battle_sprites/25.bin"
+	.INCBIN"bin/US/battle_sprites/25.gfx.lzhal"
 
 BATTLE_SPRITE_17: ;$CE45BF
-	.INCBIN"bin/US/battle_sprites/17.bin"
+	.INCBIN"bin/US/battle_sprites/17.gfx.lzhal"
 
 BATTLE_SPRITE_76: ;$CE4745
-	.INCBIN"bin/US/battle_sprites/76.bin"
+	.INCBIN"bin/US/battle_sprites/76.gfx.lzhal"
 
 BATTLE_SPRITE_15: ;$CE48C8
-	.INCBIN"bin/US/battle_sprites/15.bin"
+	.INCBIN"bin/US/battle_sprites/15.gfx.lzhal"
 
 BATTLE_SPRITE_48: ;$CE4A4A
-	.INCBIN"bin/US/battle_sprites/48.bin"
+	.INCBIN"bin/US/battle_sprites/48.gfx.lzhal"
 
 BATTLE_SPRITE_70: ;$CE4BAE
-	.INCBIN"bin/US/battle_sprites/70.bin"
+	.INCBIN"bin/US/battle_sprites/70.gfx.lzhal"
 
 BATTLE_SPRITE_57: ;$CE4D0E
-	.INCBIN"bin/US/battle_sprites/57.bin"
+	.INCBIN"bin/US/battle_sprites/57.gfx.lzhal"
 
 BATTLE_SPRITE_1: ;$CE4E6D
-	.INCBIN"bin/US/battle_sprites/1.bin"
+	.INCBIN"bin/US/battle_sprites/1.gfx.lzhal"
 
 BATTLE_SPRITE_47: ;$CE4FCC
-	.INCBIN"bin/US/battle_sprites/47.bin"
+	.INCBIN"bin/US/battle_sprites/47.gfx.lzhal"
 
 BATTLE_SPRITE_46: ;$CE5128
-	.INCBIN"bin/US/battle_sprites/46.bin"
+	.INCBIN"bin/US/battle_sprites/46.gfx.lzhal"
 
 BATTLE_SPRITE_4: ;$CE5283
-	.INCBIN"bin/US/battle_sprites/4.bin"
+	.INCBIN"bin/US/battle_sprites/4.gfx.lzhal"
 
 BATTLE_SPRITE_77: ;$CE53DB
-	.INCBIN"bin/US/battle_sprites/77.bin"
+	.INCBIN"bin/US/battle_sprites/77.gfx.lzhal"
 
 BATTLE_SPRITE_65: ;$CE5527
-	.INCBIN"bin/US/battle_sprites/65.bin"
+	.INCBIN"bin/US/battle_sprites/65.gfx.lzhal"
 
 BATTLE_SPRITE_85: ;$CE5673
-	.INCBIN"bin/US/battle_sprites/85.bin"
+	.INCBIN"bin/US/battle_sprites/85.gfx.lzhal"
 
 BATTLE_SPRITE_44: ;$CE57BD
-	.INCBIN"bin/US/battle_sprites/44.bin"
+	.INCBIN"bin/US/battle_sprites/44.gfx.lzhal"
 
 BATTLE_SPRITE_58: ;$CE58FD
-	.INCBIN"bin/US/battle_sprites/58.bin"
+	.INCBIN"bin/US/battle_sprites/58.gfx.lzhal"
 
 BATTLE_SPRITE_18: ;$CE5A3B
-	.INCBIN"bin/US/battle_sprites/18.bin"
+	.INCBIN"bin/US/battle_sprites/18.gfx.lzhal"
 
 BATTLE_SPRITE_59: ;$CE5B5F
-	.INCBIN"bin/US/battle_sprites/59.bin"
+	.INCBIN"bin/US/battle_sprites/59.gfx.lzhal"
 
 BATTLE_SPRITE_16: ;$CE5C78
-	.INCBIN"bin/US/battle_sprites/16.bin"
+	.INCBIN"bin/US/battle_sprites/16.gfx.lzhal"
 
 BATTLE_SPRITE_66: ;$CE5D8A
-	.INCBIN"bin/US/battle_sprites/66.bin"
+	.INCBIN"bin/US/battle_sprites/66.gfx.lzhal"
 
 BATTLE_SPRITE_90: ;$CE5E8A
-	.INCBIN"bin/US/battle_sprites/90.bin"
+	.INCBIN"bin/US/battle_sprites/90.gfx.lzhal"
 
 BATTLE_SPRITE_88: ;$CE5F82
-	.INCBIN"bin/US/battle_sprites/88.bin"
+	.INCBIN"bin/US/battle_sprites/88.gfx.lzhal"
 
 BATTLE_SPRITE_0: ;$CE606D
-	.INCBIN"bin/US/battle_sprites/0.bin"
+	.INCBIN"bin/US/battle_sprites/0.gfx.lzhal"
 
 BATTLE_SPRITE_42: ;$CE6158
-	.INCBIN"bin/US/battle_sprites/42.bin"
+	.INCBIN"bin/US/battle_sprites/42.gfx.lzhal"
 
 BATTLE_SPRITE_89: ;$CE6230
-	.INCBIN"bin/US/battle_sprites/89.bin"
+	.INCBIN"bin/US/battle_sprites/89.gfx.lzhal"
 
 .INCLUDE "data/battle/battle_sprites_pointers.asm"
 
@@ -462,7 +462,7 @@ SWIRL_PRIMARY_TABLE: ;$CEDD41
 	.BYTE $00, $00, $00, $00, $02, $00, $17, $00, $04, $17, $0F, $00, $03, $26, $16, $00, $04, $3C, $15, $00, $02, $51, $1C, $00, $03, $6D, $11, $00
 
 SOUND_STONE_GFX: ;$CEDD5D
-	.INCBIN "bin/US/graphics/sound_stone.gfx"
+	.INCBIN "bin/US/graphics/sound_stone.gfx.lzhal"
 
 SOUND_STONE_PALETTE: ;$CEF806
 	.INCBIN "bin/US/sound_stone.pal"

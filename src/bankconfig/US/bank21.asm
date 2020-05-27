@@ -49,58 +49,58 @@ COMPRESSED_PALETTE_UNKNOWN: ;$E1374A
 .INCLUDE "unknown/E1/E14DE8.asm"
 
 APE_ARRANGEMENT: ;$E14EC1
-	.INCBIN "bin/US/intro/logos/ape.arr"
+	.INCBIN "bin/US/intro/logos/ape.arr.lzhal"
 
 APE_GRAPHICS: ;$E14F2A
-	.INCBIN "bin/US/intro/logos/ape.gfx"
+	.INCBIN "bin/US/intro/logos/ape.gfx.lzhal"
 
 APE_PALETTE: ;$E15130
-	.INCBIN "bin/US/intro/logos/ape.pal"
+	.INCBIN "bin/US/intro/logos/ape.pal.lzhal"
 
 HALKEN_ARRANGEMENT: ;$E15174
-	.INCBIN "bin/US/intro/logos/halken.arr"
+	.INCBIN "bin/US/intro/logos/halken.arr.lzhal"
 
 HALKEN_GRAPHICS: ;$E151E8
-	.INCBIN "bin/US/intro/logos/halken.gfx"
+	.INCBIN "bin/US/intro/logos/halken.gfx.lzhal"
 
 HALKEN_PALETTE: ;$E153B8
-	.INCBIN "bin/US/intro/logos/halken.pal"
+	.INCBIN "bin/US/intro/logos/halken.pal.lzhal"
 
 NINTENDO_ARRANGEMENT: ;$E15455
-	.INCBIN "bin/US/intro/logos/nintendo.arr"
+	.INCBIN "bin/US/intro/logos/nintendo.arr.lzhal"
 
 NINTENDO_GRAPHICS: ;$E1549E
-	.INCBIN "bin/US/intro/logos/nintendo.gfx"
+	.INCBIN "bin/US/intro/logos/nintendo.gfx.lzhal"
 
 NINTENDO_PALETTE: ;$E1558F
-	.INCBIN "bin/US/intro/logos/nintendo.pal"
+	.INCBIN "bin/US/intro/logos/nintendo.pal.lzhal"
 
 GAS_STATION_ARRANGEMENT: ;$E155D3
-	.INCBIN "bin/US/intro/gas_station.arr"
+	.INCBIN "bin/US/intro/gas_station.arr.lzhal"
 
 GAS_STATION_GRAPHICS: ;$E15B33
-	.INCBIN "bin/US/intro/gas_station.gfx"
+	.INCBIN "bin/US/intro/gas_station.gfx.lzhal"
 
 GAS_STATION_PALETTE: ;$E1A9B7
-	.INCBIN "bin/US/intro/gas_station.pal"
+	.INCBIN "bin/US/intro/gas_station.pal.lzhal"
 
 GAS_STATION_PALETTE_2: ;$E1AA5D
-	.INCBIN "bin/US/intro/gas_station2.pal"
+	.INCBIN "bin/US/intro/gas_station2.pal.lzhal"
 
 PRODUCED_ITOI_ARRANGEMENT: ;$E1AADF
-	.INCBIN "bin/US/intro/attract/produced_by_itoi.arr"
+	.INCBIN "bin/US/intro/attract/produced_by_itoi.arr.lzhal"
 
 PRODUCED_ITOI_GRAPHICS: ;$E1AB4B
-	.INCBIN "bin/US/intro/attract/produced_by_itoi.gfx"
+	.INCBIN "bin/US/intro/attract/produced_by_itoi.gfx.lzhal"
 
 NINTENDO_PRESENTATION_ARRANGEMENT: ;$E1AD01
-	.INCBIN "bin/US/intro/attract/nintendo_presentation.arr"
+	.INCBIN "bin/US/intro/attract/nintendo_presentation.arr.lzhal"
 
 NINTENDO_PRESENTATION_GRAPHICS: ;$E1AD4E
-	.INCBIN "bin/US/intro/attract/nintendo_presentation.gfx"
+	.INCBIN "bin/US/intro/attract/nintendo_presentation.gfx.lzhal"
 
 NINTENDO_ITOI_PALETTE: ;$E1AE6F
-	.INCBIN "bin/US/intro/attract/nintendo_itoi.pal"
+	.INCBIN "bin/US/intro/attract/nintendo_itoi.pal.lzhal"
 
 UNKNOWN_E1AE7C: ;$E1AE7C
 	.INCBIN "bin/US/E1AE7C.bin.lzhal"
@@ -112,16 +112,16 @@ UNKNOWN_E1AEFD: ;$E1AEFD
 	.INCBIN "bin/US/E1AEFD.bin.lzhal"
 
 TITLE_SCREEN_ARRANGEMENT: ;$E1AF7D
-	.INCBIN "bin/US/intro/title_screen.arr"
+	.INCBIN "bin/US/intro/title_screen.arr.lzhal"
 
 TITLE_SCREEN_GRAPHICS: ;$E1B211
-	.INCBIN "bin/US/intro/title_screen.gfx"
+	.INCBIN "bin/US/intro/title_screen.gfx.lzhal"
 
 UNKNOWN_E1C6E5: ;$E1C6E5
 	.INCBIN "bin/US/intro/title_screen_letters.gfx.lzhal"
 
 TITLE_SCREEN_PALETTE: ;$E1CDE1
-	.INCBIN "bin/US/intro/title_screen.pal"
+	.INCBIN "bin/US/intro/title_screen.pal.lzhal"
 
 .INCLUDE "data/unknown/E1CE08.asm"
 
