@@ -1,0 +1,5 @@
+.SEGMENT "BANK06"
+.INCLUDE "common-usa19950327.asm"
+
+TEXT_DATA_BANK_2: ;$C60000
+	.INCLUDE "bin/US19950327/text_data/1.ebtxt"
