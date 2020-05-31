@@ -699,7 +699,7 @@
 .ENDMACRO
 
 .MACRO EBTEXT_CHARACTER_HAS_AILMENT arg, arg2, arg3
-	.BYTE $1D, $0D, arg, arg2, arg3
+	.BYTE $1D, $0D, arg, arg2 + 1, arg3
 .ENDMACRO
 
 .MACRO EBTEXT_GIVE_ITEM_TO_CHARACTER_B arg, arg2
