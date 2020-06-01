@@ -11,7 +11,7 @@ UNKNOWN_C216DB: ;$C216DB
 	LDA $17
 	AND #$00FF
 	TAX
-	LDA .LOWORD(GAME_STATE) + game_state::unknown7A,X
+	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
 	AND #$00FF
 	DEC
 	LDY #.SIZEOF(char_struct)

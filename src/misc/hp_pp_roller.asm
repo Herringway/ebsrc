@@ -11,7 +11,7 @@ HP_PP_ROLLER: ;$C2109F
 	AND #$00FF
 	AND #$0003
 	TAX
-	LDA .LOWORD(GAME_STATE) + game_state::unknown7A,X
+	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
 	AND #$00FF
 	BNE @UNKNOWN1
 	JMP a:.LOWORD(@UNKNOWN30)

@@ -78,8 +78,7 @@
 	unknown50 .word ;79
 	wallet_backup .dword ;81
 	escargo_express_items .byte 36 ;85
-	unknown7A .word ;121
-	unknown7C .byte 4 ;123
+	party_members .byte 6 ;121
 	unknown80 .word ;127
 	leader_x_coord .word ;129
 	unknown84 .word ;131

@@ -10,7 +10,7 @@ FIND_INVENTORY_SPACE2: ;$C4572B
 @UNKNOWN0:
 	TYA
 	CLC
-	ADC #.LOWORD(GAME_STATE) + game_state::unknown7A
+	ADC #.LOWORD(GAME_STATE) + game_state::party_members
 	TAX
 	STX $0E
 	LDA a:.LOWORD(RAM),X

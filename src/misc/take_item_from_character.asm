@@ -13,7 +13,7 @@ TAKE_ITEM_FROM_CHARACTER: ;$C18EAD
 	LDA $10
 	STA $02
 	CLC
-	ADC #.LOWORD(GAME_STATE) + game_state::unknown7A
+	ADC #.LOWORD(GAME_STATE) + game_state::party_members
 	TAY
 	STY $0E
 	LDX $04

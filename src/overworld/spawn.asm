@@ -39,7 +39,7 @@ SPAWN: ;$C4C718
 	LDX $16
 	LDA $02
 	JSL UNKNOWN_C019B2
-	LDA .LOWORD(GAME_STATE) + game_state::unknown7A
+	LDA .LOWORD(GAME_STATE) + game_state::party_members
 	AND #$00FF
 	DEC
 	LDY #.SIZEOF(char_struct)

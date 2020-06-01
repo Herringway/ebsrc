@@ -9,7 +9,7 @@ BATTLE_ROUTINE: ;$C24821
 	STA $33
 	SEP #PROC_FLAGS::ACCUM8
 	STA .LOWORD(GAME_STATE)+game_state::player_controlled_party_count
-	LDY #.LOWORD(GAME_STATE) + game_state::unknown7A
+	LDY #.LOWORD(GAME_STATE) + game_state::party_members
 	STY $31
 	STZ $0E
 	LDX #$0006
@@ -123,7 +123,7 @@ BATTLE_ROUTINE: ;$C24821
 	STZ $31
 	JMP a:.LOWORD(@UNKNOWN9)
 @UNKNOWN5:
-	LDY #.LOWORD(GAME_STATE) + game_state::unknown7A
+	LDY #.LOWORD(GAME_STATE) + game_state::party_members
 	LDA ($31),Y
 	AND #$00FF
 	STA $04
@@ -260,7 +260,7 @@ BATTLE_ROUTINE: ;$C24821
 	JMP a:.LOWORD(@UNKNOWN19)
 @UNKNOWN14:
 	REP #PROC_FLAGS::ACCUM8
-	LDA .LOWORD(GAME_STATE) + game_state::unknown7A,Y
+	LDA .LOWORD(GAME_STATE) + game_state::party_members,Y
 	AND #$00FF
 	STA $04
 	STA $21
@@ -484,7 +484,7 @@ BATTLE_ROUTINE: ;$C24821
 	BEQ @UNKNOWN33
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0001
-	STA .LOWORD(GAME_STATE) + game_state::unknown7A
+	STA .LOWORD(GAME_STATE) + game_state::party_members
 	LDX #$0001
 @UNKNOWN33:
 	REP #PROC_FLAGS::ACCUM8
@@ -493,7 +493,7 @@ BATTLE_ROUTINE: ;$C24821
 	BEQ @UNKNOWN34
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0002
-	STA .LOWORD(GAME_STATE) + game_state::unknown7A,X
+	STA .LOWORD(GAME_STATE) + game_state::party_members,X
 	INX
 @UNKNOWN34:
 	REP #PROC_FLAGS::ACCUM8
@@ -502,7 +502,7 @@ BATTLE_ROUTINE: ;$C24821
 	BEQ @UNKNOWN35
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0003
-	STA .LOWORD(GAME_STATE) + game_state::unknown7A,X
+	STA .LOWORD(GAME_STATE) + game_state::party_members,X
 	INX
 @UNKNOWN35:
 	REP #PROC_FLAGS::ACCUM8
@@ -511,7 +511,7 @@ BATTLE_ROUTINE: ;$C24821
 	BEQ @UNKNOWN36
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0004
-	STA .LOWORD(GAME_STATE) + game_state::unknown7A,X
+	STA .LOWORD(GAME_STATE) + game_state::party_members,X
 	INX
 @UNKNOWN36:
 	REP #PROC_FLAGS::ACCUM8
@@ -520,7 +520,7 @@ BATTLE_ROUTINE: ;$C24821
 	STA .LOWORD(GAME_STATE)+game_state::player_controlled_party_count
 	BRA @UNKNOWN38
 @UNKNOWN37:
-	STZ .LOWORD(GAME_STATE) + game_state::unknown7A,X
+	STZ .LOWORD(GAME_STATE) + game_state::party_members,X
 	INX
 @UNKNOWN38:
 	CPX #$0006
@@ -557,7 +557,7 @@ BATTLE_ROUTINE: ;$C24821
 	BRA @UNKNOWN45
 @UNKNOWN42:
 	REP #PROC_FLAGS::ACCUM8
-	LDA .LOWORD(GAME_STATE) + game_state::unknown7A,X
+	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
 	AND #$00FF
 	STA $04
 	STA $21
@@ -903,7 +903,7 @@ BATTLE_ROUTINE: ;$C24821
 	JMP a:.LOWORD(@UNKNOWN225)
 @UNKNOWN78:
 	LDX $02
-	LDA .LOWORD(GAME_STATE) + game_state::unknown7A,X
+	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
 	AND #$00FF
 	STA $04
 	STA $21
@@ -2072,7 +2072,7 @@ BATTLE_ROUTINE: ;$C24821
 	LDA a:battler::id,X
 	STA $02
 	LDX $2F
-	LDA .LOWORD(GAME_STATE) + game_state::unknown7A,X
+	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
 	AND #$00FF
 	CMP $02
 	BNE @UNKNOWN183

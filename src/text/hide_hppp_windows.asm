@@ -15,7 +15,7 @@ HIDE_HPPP_WINDOWS: ;$C10A1D
 	TYA
 	JSL UNDRAW_HP_PP_WINDOW
 	LDY $0E
-	LDA .LOWORD(GAME_STATE) + game_state::unknown7A,Y
+	LDA .LOWORD(GAME_STATE) + game_state::party_members,Y
 	AND #$00FF
 	DEC
 	LDY #.SIZEOF(char_struct)

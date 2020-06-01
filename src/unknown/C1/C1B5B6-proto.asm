@@ -22,7 +22,7 @@ UNKNOWN_C1B5B6: ;$C1B5B6
 	TAX
 	DEX
 	SEP #PROC_FLAGS::ACCUM8
-	LDA .LOWORD(GAME_STATE) + game_state::unknown7A,X
+	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
 	STA $28
 	REP #PROC_FLAGS::ACCUM8
 	LDA $28
@@ -410,7 +410,7 @@ UNKNOWN_C1B5B6: ;$C1B5B6
 @UNKNOWN22:
 	TYA
 	CLC
-	ADC #.LOWORD(GAME_STATE) + game_state::unknown7A
+	ADC #.LOWORD(GAME_STATE) + game_state::party_members
 	STA $02
 	LDX #$0005
 	STX $24

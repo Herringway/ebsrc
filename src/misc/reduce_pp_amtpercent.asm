@@ -17,7 +17,7 @@ REDUCE_PP_AMTPERCENT: ;$C18FBA
 	LDA $10
 	STA $02
 	LDX $02
-	LDA .LOWORD(GAME_STATE) + game_state::unknown7A,X
+	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
 	AND #$00FF
 	LDX $0E
 	JSL UNKNOWN_C3ED2C

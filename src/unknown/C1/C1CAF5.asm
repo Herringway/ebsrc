@@ -5,7 +5,7 @@ UNKNOWN_C1CAF5: ;$C1CAF5
 	TAX
 	STX $12
 	LDX .LOWORD(PSI_WINDOW_CHARACTER)
-	LDA .LOWORD(GAME_STATE) + game_state::unknown7A,X
+	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
 	AND #$00FF
 	TAY
 	STY $10

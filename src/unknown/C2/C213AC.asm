@@ -11,7 +11,7 @@ UNKNOWN_C213AC: ;$C213AC
 	AND #$00FF
 	AND #$0003
 	STA $20
-	LDY #.LOWORD(GAME_STATE) + game_state::unknown7A
+	LDY #.LOWORD(GAME_STATE) + game_state::party_members
 	LDA ($20),Y
 	AND #$00FF
 	BNE @UNKNOWN1
@@ -81,7 +81,7 @@ UNKNOWN_C213AC: ;$C213AC
 	ADC #$7C00
 	STA $1C
 	REP #PROC_FLAGS::INDEX8
-	LDY #.LOWORD(GAME_STATE) + game_state::unknown7A
+	LDY #.LOWORD(GAME_STATE) + game_state::party_members
 	LDA ($20),Y
 	AND #$00FF
 	DEC

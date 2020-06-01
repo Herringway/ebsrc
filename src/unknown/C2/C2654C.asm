@@ -61,7 +61,7 @@ UNKNOWN_C2654C: ;$C2654C
 	BRA @UNKNOWN9
 @UNKNOWN6:
 	LDX $02
-	LDA .LOWORD(GAME_STATE) + game_state::unknown7A,X
+	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
 	AND #$00FF
 	TAX
 	CPX #$0001

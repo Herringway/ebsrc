@@ -27,10 +27,10 @@ UNKNOWN_C4D989: ;$C4D989
 	BRA @UNKNOWN1
 @UNKNOWN0:
 	SEP #PROC_FLAGS::ACCUM8
-	STZ .LOWORD(GAME_STATE) + game_state::unknown7A,X
+	STZ .LOWORD(GAME_STATE) + game_state::party_members,X
 	INX
 @UNKNOWN1:
-	CPX #$0006
+	CPX #.SIZEOF(game_state::party_members)
 	BCC @UNKNOWN0
 	LDX #$0B08
 	REP #PROC_FLAGS::ACCUM8

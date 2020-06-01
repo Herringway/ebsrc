@@ -176,7 +176,7 @@ CALC_DAMAGE: ;$C27EAF
 @UNKNOWN13:
 	LDA a:.LOWORD(RAM) + battler::id,Y
 	STA $02
-	LDA .LOWORD(GAME_STATE) + game_state::unknown7A,X
+	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
 	AND #$00FF
 	CMP $02
 	BNE @UNKNOWN14

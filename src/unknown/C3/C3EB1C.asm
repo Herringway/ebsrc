@@ -29,7 +29,7 @@ UNKNOWN_C3EB1C: ;$C3EB1C
 	STX $12
 	BRA @UNKNOWN10
 @UNKNOWN3:
-	LDA .LOWORD(GAME_STATE) + game_state::unknown7A,X
+	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
 	AND #$00FF
 	DEC
 	LDY #.SIZEOF(char_struct)

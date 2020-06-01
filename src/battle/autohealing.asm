@@ -12,7 +12,7 @@ AUTOHEALING: ;$C4A0CF
 	BRA @UNKNOWN3
 @UNKNOWN0:
 	LDX $02
-	LDA .LOWORD(GAME_STATE) + game_state::unknown7A,X
+	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
 	AND #$00FF
 	TAY
 	STY $10

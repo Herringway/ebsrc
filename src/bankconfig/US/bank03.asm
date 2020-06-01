@@ -17295,7 +17295,7 @@ UNKNOWN_C3DBDB_ENTRY2: ;$C3DBE0
 
 .INCLUDE "data/debug/off_text.asm"
 
-.INCLUDE "unknown/C3/C3E977.asm"
+.INCLUDE "misc/get_character_item.asm"
 
 .INCLUDE "unknown/C3/C3E9A0.asm"
 

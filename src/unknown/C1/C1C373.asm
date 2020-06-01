@@ -10,7 +10,7 @@ UNKNOWN_C1C373: ;$C1C373
 	LDX #$0001
 	STX $0E
 	LDX $02
-	LDA .LOWORD(GAME_STATE) + game_state::unknown7A,X
+	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
 	AND #$00FF
 	LDX $0E
 	JSR a:.LOWORD(UNKNOWN_C1C32A)
