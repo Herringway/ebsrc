@@ -6,6 +6,9 @@
 
 SRAM: ;For pointers.
 
+.ORG $306000
+SAVE_BASE: ;$306000
+
 .ORG $316000
 UNKNOWN_316000: ;$316000
 
