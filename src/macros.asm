@@ -484,6 +484,75 @@
     STA dest+2
 .ENDMACRO
 
+.MACRO ADD_INT val1, val2, dest
+    LDA val1
+    ADC val2
+    STA dest
+    LDA val1+2
+    ADC val2+2
+    STA dest+2
+.ENDMACRO
+
+.MACRO ADD_INT_ASSIGN val1, val2
+    ADD_INT val1, val2, val1
+.ENDMACRO
+
+.MACRO CONST_ADD_VAR_INT constant, var, dest
+    LDA #.LOWORD(constant)
+    ADC var
+    STA dest
+    LDA #.HIWORD(constant)
+    ADC var+2
+    STA dest+2
+.ENDMACRO
+
+.MACRO CONST_ADD_VAR_INT_ASSIGN constant, var
+    CONST_ADD_VAR_INT constant, var, var
+.ENDMACRO
+
+.MACRO VAR_ADD_CONST_INT constant, var, dest
+    LDA var
+    ADC #.LOWORD(constant)
+    STA dest
+    LDA var+2
+    ADC #.HIWORD(constant)
+    STA dest+2
+.ENDMACRO
+
+.MACRO VAR_ADD_CONST_INT_ASSIGN constant, var
+    VAR_ADD_CONST_INT constant, var, var
+.ENDMACRO
+
+.MACRO SUB_INT val1, val2, dest
+    LDA val1
+    SBC val2
+    STA dest
+    LDA val1+2
+    SBC val2+2
+    STA dest+2
+.ENDMACRO
+
+.MACRO SUB_INT_ASSIGN val1, val2
+    SUB_INT val1, val2, val1
+.ENDMACRO
+
+.MACRO CONST_SUB_VAR_INT constant, var, dest
+    LDA #.LOWORD(constant)
+    SBC var
+    STA dest
+    LDA #.HIWORD(constant)
+    SBC var+2
+    STA dest+2
+.ENDMACRO
+
+.MACRO CONST_SUB_VAR_INT_ASSIGN constant, var
+    CONST_SUB_VAR_INT constant, var, var
+.ENDMACRO
+
+.MACRO NEGATE_INT_ASSIGN var
+    CONST_SUB_VAR_INT_ASSIGN 0, var
+.ENDMACRO
+
 .MACRO MOVE_INTX src, dest
     LDX src
     STX dest
