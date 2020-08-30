@@ -445,3 +445,9 @@
 	distortion_speed_acceleration .byte ;116
 	distortion_compression_acceleration .word ;117
 .ENDSTRUCT
+
+.STRUCT save_header
+	unknown0 .byte 28
+	checksum .word ;28
+	checksum_complement .word ;30
+.ENDSTRUCT
