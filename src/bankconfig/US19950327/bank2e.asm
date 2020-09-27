@@ -2,139 +2,139 @@
 .INCLUDE "common-usa19950327.asm"
 
 AUDIO_PACK_113: ;$EE0000
-	.INCBIN "bin/US19950327/audiopacks/113.bin"
+	BINARY "audiopacks/113.bin"
 
 AUDIO_PACK_146: ;$EE058D
-	.INCBIN "bin/US19950327/audiopacks/146.bin"
+	BINARY "audiopacks/146.bin"
 
 AUDIO_PACK_136: ;$EE0000_
-	.INCBIN "bin/US19950327/audiopacks/136.bin"
+	BINARY "audiopacks/136.bin"
 
 AUDIO_PACK_112: ;$EE0554_
-	.INCBIN "bin/US19950327/audiopacks/112.bin"
+	BINARY "audiopacks/112.bin"
 
 AUDIO_PACK_163: ;$EE0A8B_
-	.INCBIN "bin/US19950327/audiopacks/163.bin"
+	BINARY "audiopacks/163.bin"
 
 AUDIO_PACK_115: ;$EE0FB2_
-	.INCBIN "bin/US19950327/audiopacks/115.bin"
+	BINARY "audiopacks/115.bin"
 
 AUDIO_PACK_53: ;$EE14D4_
-	.INCBIN "bin/US19950327/audiopacks/53.bin"
+	BINARY "audiopacks/53.bin"
 
 AUDIO_PACK_67: ;$EE19EE_
-	.INCBIN "bin/US19950327/audiopacks/67.bin"
+	BINARY "audiopacks/67.bin"
 
 AUDIO_PACK_20: ;$EE1EFE_
-	.INCBIN "bin/US19950327/audiopacks/20.bin"
+	BINARY "audiopacks/20.bin"
 
 AUDIO_PACK_144: ;$EE2401_
-	.INCBIN "bin/US19950327/audiopacks/144.bin"
+	BINARY "audiopacks/144.bin"
 
 AUDIO_PACK_63: ;$EE28FE_
-	.INCBIN "bin/US19950327/audiopacks/63.bin"
+	BINARY "audiopacks/63.bin"
 
 AUDIO_PACK_138: ;$EE2DCD_
-	.INCBIN "bin/US19950327/audiopacks/138.bin"
+	BINARY "audiopacks/138.bin"
 
 AUDIO_PACK_148: ;$EE3D4F
-	.INCBIN "bin/US19950327/audiopacks/148.bin"
+	BINARY "audiopacks/148.bin"
 
 AUDIO_PACK_23: ;$EE3E9C_
-	.INCBIN "bin/US19950327/audiopacks/23.bin"
+	BINARY "audiopacks/23.bin"
 
 AUDIO_PACK_11: ;$EE42BB_
-	.INCBIN "bin/US19950327/audiopacks/11.bin"
+	BINARY "audiopacks/11.bin"
 
 AUDIO_PACK_142: ;$EE46CE_
-	.INCBIN "bin/US19950327/audiopacks/142.bin"
+	BINARY "audiopacks/142.bin"
 
 AUDIO_PACK_160: ;$EE4ADF_
-	.INCBIN "bin/US19950327/audiopacks/160.bin"
+	BINARY "audiopacks/160.bin"
 
 AUDIO_PACK_101: ;$EE4EEA_
-	.INCBIN "bin/US19950327/audiopacks/101.bin"
+	BINARY "audiopacks/101.bin"
 
 AUDIO_PACK_103: ;$EE52E6_
-	.INCBIN "bin/US19950327/audiopacks/103.bin"
+	BINARY "audiopacks/103.bin"
 
 AUDIO_PACK_51: ;$EE56DF_
-	.INCBIN "bin/US19950327/audiopacks/51.bin"
+	BINARY "audiopacks/51.bin"
 
 AUDIO_PACK_29: ;$ED5D6B
-	.INCBIN "bin/US19950327/audiopacks/29.bin"
+	BINARY "audiopacks/29.bin"
 
 AUDIO_PACK_93: ;$EE60CC
-	.INCBIN "bin/US19950327/audiopacks/93.bin"
+	BINARY "audiopacks/93.bin"
 
 AUDIO_PACK_95: ;$EE642E
-	.INCBIN "bin/US19950327/audiopacks/95.bin"
+	BINARY "audiopacks/95.bin"
 
 AUDIO_PACK_164: ;$EE6780
-	.INCBIN "bin/US19950327/audiopacks/164.bin"
+	BINARY "audiopacks/164.bin"
 
 AUDIO_PACK_151: ;$EE6AC0
-	.INCBIN "bin/US19950327/audiopacks/151.bin"
+	BINARY "audiopacks/151.bin"
 
 AUDIO_PACK_6: ;$EE6DEB
-	.INCBIN "bin/US19950327/audiopacks/6.bin"
+	BINARY "audiopacks/6.bin"
 
 AUDIO_PACK_12: ;$EE70BD
-	.INCBIN "bin/US19950327/audiopacks/12.bin"
+	BINARY "audiopacks/12.bin"
 
 AUDIO_PACK_135: ;$EE6A85_
-	.INCBIN "bin/US19950327/audiopacks/135.bin"
+	BINARY "audiopacks/135.bin"
 
 AUDIO_PACK_83: ;$EE6D36_
-	.INCBIN "bin/US19950327/audiopacks/83.bin"
+	BINARY "audiopacks/83.bin"
 
 AUDIO_PACK_88: ;$EE6FDD_
-	.INCBIN "bin/US19950327/audiopacks/88.bin"
+	BINARY "audiopacks/88.bin"
 
 AUDIO_PACK_129: ;$EE74D7_
-	.INCBIN "bin/US19950327/audiopacks/129.bin"
+	BINARY "audiopacks/129.bin"
 
 AUDIO_PACK_22: ;$EE7737_
-	.INCBIN "bin/US19950327/audiopacks/22.bin"
+	BINARY "audiopacks/22.bin"
 
 AUDIO_PACK_17: ;$EE798E_
-	.INCBIN "bin/US19950327/audiopacks/17.bin"
+	BINARY "audiopacks/17.bin"
 
 AUDIO_PACK_91: ;$EE7BDF_
-	.INCBIN "bin/US19950327/audiopacks/91.bin"
+	BINARY "audiopacks/91.bin"
 
 AUDIO_PACK_81: ;$EE7E29_
-	.INCBIN "bin/US19950327/audiopacks/81.bin"
+	BINARY "audiopacks/81.bin"
 
 AUDIO_PACK_147: ;$EE804D_
-	.INCBIN "bin/US19950327/audiopacks/147.bin"
+	BINARY "audiopacks/147.bin"
 
 AUDIO_PACK_128: ;$EE8466_
-	.INCBIN "bin/US19950327/audiopacks/128.bin"
+	BINARY "audiopacks/128.bin"
 
 AUDIO_PACK_49: ;$EE87CB_
-	.INCBIN "bin/US19950327/audiopacks/49.bin"
+	BINARY "audiopacks/49.bin"
 
 AUDIO_PACK_9: ;$EE894F_
-	.INCBIN "bin/US19950327/audiopacks/9.bin"
+	BINARY "audiopacks/9.bin"
 
 AUDIO_PACK_145: ;$EE8DE0
-	.INCBIN "bin/US19950327/audiopacks/145.bin"
+	BINARY "audiopacks/145.bin"
 
 AUDIO_PACK_69: ;$EE8F34
-	.INCBIN "bin/US19950327/audiopacks/69.bin"
+	BINARY "audiopacks/69.bin"
 
 AUDIO_PACK_167: ;$EE907B
-	.INCBIN "bin/US19950327/audiopacks/167.bin"
+	BINARY "audiopacks/167.bin"
 
 AUDIO_PACK_130: ;$EE8D65_
-	.INCBIN "bin/US19950327/audiopacks/130.bin"
+	BINARY "audiopacks/130.bin"
 
 AUDIO_PACK_168: ;$EE8EA2_
-	.INCBIN "bin/US19950327/audiopacks/168.bin"
+	BINARY "audiopacks/168.bin"
 
 AUDIO_PACK_137: ;$EE8FD6_
-	.INCBIN "bin/US19950327/audiopacks/137.bin"
+	BINARY "audiopacks/137.bin"
 
 AUDIO_PACK_41: ;$EE9517
-	.INCBIN "bin/US19950327/audiopacks/41.bin"
+	BINARY "audiopacks/41.bin"

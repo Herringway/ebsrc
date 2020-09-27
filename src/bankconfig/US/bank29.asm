@@ -2,19 +2,19 @@
 .INCLUDE "common-usa.asm"
 
 AUDIO_PACK_27: ;$E90000
-	.INCBIN "bin/US/audiopacks/27.bin"
+	BINARY "audiopacks/27.bin"
 
 AUDIO_PACK_80: ;$E93A74
-	.INCBIN "bin/US/audiopacks/80.bin"
+	BINARY "audiopacks/80.bin"
 
 AUDIO_PACK_118: ;$E97356
-	.INCBIN "bin/US/audiopacks/118.bin"
+	BINARY "audiopacks/118.bin"
 
 AUDIO_PACK_131: ;$E9AC26
-	.INCBIN "bin/US/audiopacks/131.bin"
+	BINARY "audiopacks/131.bin"
 
 AUDIO_PACK_2: ;$E9E084
-	.INCBIN "bin/US/audiopacks/2.bin"
+	BINARY "audiopacks/2.bin"
 
 AUDIO_PACK_149: ;$E9F8C8
-	.INCBIN "bin/US/audiopacks/149.bin"
+	BINARY "audiopacks/149.bin"

@@ -20,4 +20,4 @@
 .INCLUDE "data/map/battle_groups_table.asm"
 
 AUDIO_PACK_139: ;$D0DFB4
-	.INCBIN "bin/US19950327/audiopacks/139.bin"
+	BINARY "audiopacks/139.bin"

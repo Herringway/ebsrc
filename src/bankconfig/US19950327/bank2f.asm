@@ -70,22 +70,22 @@
 .INCLUDE "data/status_window_text.asm"
 
 NAME_INPUT_WINDOW_SELECTION_LAYOUT_0: ;$EFA460
-	.INCBIN "bin/US19950327/name_input_layouts/0.bin"
+	BINARY "name_input_layouts/0.bin"
 
 NAME_INPUT_WINDOW_SELECTION_LAYOUT_1: ;$EFA4E3
-	.INCBIN "bin/US19950327/name_input_layouts/1.bin"
+	BINARY "name_input_layouts/1.bin"
 
 NAME_INPUT_WINDOW_SELECTION_LAYOUT_2: ;$EFA566
-	.INCBIN "bin/US19950327/name_input_layouts/2.bin"
+	BINARY "name_input_layouts/2.bin"
 
 NAME_INPUT_WINDOW_SELECTION_LAYOUT_3: ;$EFA5E9
-	.INCBIN "bin/US19950327/name_input_layouts/3.bin"
+	BINARY "name_input_layouts/3.bin"
 
 NAME_INPUT_WINDOW_SELECTION_LAYOUT_4: ;$EFA66C
-	.INCBIN "bin/US19950327/name_input_layouts/4.bin"
+	BINARY "name_input_layouts/4.bin"
 
 NAME_INPUT_WINDOW_SELECTION_LAYOUT_5: ;$EFA6A7
-	.INCBIN "bin/US19950327/name_input_layouts/5.bin"
+	BINARY "name_input_layouts/5.bin"
 
 .INCLUDE "data/name_input_window_selection_layout_pointers.asm"
 
@@ -180,12 +180,12 @@ NAME_INPUT_WINDOW_SELECTION_LAYOUT_5: ;$EFA6A7
 .INCLUDE "data/unknown/EFEB5F.asm"
 
 DEBUG_MENU_FONT: ;$EFCB61
-	.INCBIN "bin/US19950327/fonts/debug.gfx"
+	BINARY "fonts/debug.gfx"
 
 .INCLUDE "data/unknown/EFEF70.asm"
 
 KIRBY: ;$EFCFA8
-	.INCBIN "bin/US19950327/kirby.gfx"
+	BINARY "kirby.gfx"
 
 .INCLUDE "data/unknown/EFF0D7.asm"
 

@@ -2,13 +2,13 @@
 .INCLUDE "common-usa19950327.asm"
 
 AUDIO_PACK_108: ;$E20000
-	.INCBIN "bin/US19950327/audiopacks/108.bin"
+	BINARY "audiopacks/108.bin"
 
 AUDIO_PACK_0: ;$E277F0
-	.INCBIN "bin/US19950327/audiopacks/0.bin"
+	BINARY "audiopacks/0.bin"
 
 AUDIO_PACK_36: ;$E2ED2C
-	.INCBIN "bin/US19950327/audiopacks/36.bin"
+	BINARY "audiopacks/36.bin"
 
 AUDIO_PACK_18: ;$E2FC88
-	.INCBIN "bin/US19950327/audiopacks/18.bin"
+	BINARY "audiopacks/18.bin"

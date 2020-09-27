@@ -1,5 +1,9 @@
 .INCLUDE "textmacros.asm"
 
+.MACRO BINARY file
+    .INCBIN .SPRINTF("bin/%s/%s", LOCALE, file)
+.ENDMACRO
+
 .MACRO RESERVE_STACK_SPACE size
     PHD
     PHA

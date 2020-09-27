@@ -2,64 +2,64 @@
 .INCLUDE "common-usa19950327.asm"
 
 BATTLE_BACKGROUND_GFX_63: ;$CA0000
-	.INCBIN"bin/US19950327/battle_bgs/graphics/63.gfx.lzhal"
+	BINARY "battle_bgs/graphics/63.gfx.lzhal"
 
 BATTLE_BACKGROUND_GFX_64: ;$CA2042
-	.INCBIN"bin/US19950327/battle_bgs/graphics/64.gfx.lzhal"
+	BINARY "battle_bgs/graphics/64.gfx.lzhal"
 
 BATTLE_BACKGROUND_GFX_61: ;$CA382D
-	.INCBIN"bin/US19950327/battle_bgs/graphics/61.gfx.lzhal"
+	BINARY "battle_bgs/graphics/61.gfx.lzhal"
 
 BATTLE_BACKGROUND_GFX_60: ;$CA480F
-	.INCBIN"bin/US19950327/battle_bgs/graphics/60.gfx.lzhal"
+	BINARY "battle_bgs/graphics/60.gfx.lzhal"
 
 BATTLE_BACKGROUND_GFX_42: ;$CA5723
-	.INCBIN"bin/US19950327/battle_bgs/graphics/42.gfx.lzhal"
+	BINARY "battle_bgs/graphics/42.gfx.lzhal"
 
 BATTLE_BACKGROUND_GFX_38: ;$CA65D3
-	.INCBIN"bin/US19950327/battle_bgs/graphics/38.gfx.lzhal"
+	BINARY "battle_bgs/graphics/38.gfx.lzhal"
 
 BATTLE_BACKGROUND_GFX_37: ;$CA7314
-	.INCBIN"bin/US19950327/battle_bgs/graphics/37.gfx.lzhal"
+	BINARY "battle_bgs/graphics/37.gfx.lzhal"
 
 BATTLE_BACKGROUND_GFX_43: ;$CA7F6C
-	.INCBIN"bin/US19950327/battle_bgs/graphics/43.gfx.lzhal"
+	BINARY "battle_bgs/graphics/43.gfx.lzhal"
 
 BATTLE_BACKGROUND_GFX_39: ;$CA8B4F
-	.INCBIN"bin/US19950327/battle_bgs/graphics/39.gfx.lzhal"
+	BINARY "battle_bgs/graphics/39.gfx.lzhal"
 
 BATTLE_BACKGROUND_GFX_41: ;$CA965F
-	.INCBIN"bin/US19950327/battle_bgs/graphics/41.gfx.lzhal"
+	BINARY "battle_bgs/graphics/41.gfx.lzhal"
 
 BATTLE_BACKGROUND_GFX_62: ;$CAA049
-	.INCBIN"bin/US19950327/battle_bgs/graphics/62.gfx.lzhal"
+	BINARY "battle_bgs/graphics/62.gfx.lzhal"
 
 BATTLE_BACKGROUND_GFX_40: ;$CAA8F9
-	.INCBIN"bin/US19950327/battle_bgs/graphics/40.gfx.lzhal"
+	BINARY "battle_bgs/graphics/40.gfx.lzhal"
 
 BATTLE_BACKGROUND_ARR_37: ;$CAB092
-	.INCBIN"bin/US19950327/battle_bgs/arrangements/37.arr.lzhal"
+	BINARY "battle_bgs/arrangements/37.arr.lzhal"
 
 BATTLE_BACKGROUND_GFX_66: ;$CAB75B
-	.INCBIN"bin/US19950327/battle_bgs/graphics/66.gfx.lzhal"
+	BINARY "battle_bgs/graphics/66.gfx.lzhal"
 
 BATTLE_BACKGROUND_ARR_38: ;$CABE1E
-	.INCBIN"bin/US19950327/battle_bgs/arrangements/38.arr.lzhal"
+	BINARY "battle_bgs/arrangements/38.arr.lzhal"
 
 BATTLE_BACKGROUND_ARR_39: ;$CAC4A1
-	.INCBIN"bin/US19950327/battle_bgs/arrangements/39.arr.lzhal"
+	BINARY "battle_bgs/arrangements/39.arr.lzhal"
 
 BATTLE_BACKGROUND_ARR_42: ;$CACB09
-	.INCBIN"bin/US19950327/battle_bgs/arrangements/42.arr.lzhal"
+	BINARY "battle_bgs/arrangements/42.arr.lzhal"
 
 BATTLE_BACKGROUND_ARR_100: ;$CAD149
-	.INCBIN"bin/US19950327/battle_bgs/arrangements/100.arr.lzhal"
+	BINARY "battle_bgs/arrangements/100.arr.lzhal"
 
 BATTLE_BACKGROUND_GFX_56: ;$CAD755
-	.INCBIN"bin/US19950327/battle_bgs/graphics/56.gfx.lzhal"
+	BINARY "battle_bgs/graphics/56.gfx.lzhal"
 
 BATTLE_BACKGROUND_GFX_90: ;$CAD79E
-	.INCBIN"bin/US19950327/battle_bgs/graphics/90.gfx.lzhal"
+	BINARY "battle_bgs/graphics/90.gfx.lzhal"
 
 .INCLUDE "data/battle/backgrounds/graphics_pointers.asm"
 

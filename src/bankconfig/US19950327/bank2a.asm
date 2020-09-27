@@ -2,22 +2,22 @@
 .INCLUDE "common-usa19950327.asm"
 
 AUDIO_PACK_54: ;$EA0000
-	.INCBIN "bin/US19950327/audiopacks/54.bin"
+	BINARY "audiopacks/54.bin"
 
 AUDIO_PACK_52: ;$EA337A
-	.INCBIN "bin/US19950327/audiopacks/52.bin"
+	BINARY "audiopacks/52.bin"
 
 AUDIO_PACK_72: ;$EA6594
-	.INCBIN "bin/US19950327/audiopacks/72.bin"
+	BINARY "audiopacks/72.bin"
 
 AUDIO_PACK_89: ;$EA96F6
-	.INCBIN "bin/US19950327/audiopacks/89.bin"
+	BINARY "audiopacks/89.bin"
 
 AUDIO_PACK_35: ;$EAC590
-	.INCBIN "bin/US19950327/audiopacks/35.bin"
+	BINARY "audiopacks/35.bin"
 
 AUDIO_PACK_62: ;$EC9B76
-	.INCBIN "bin/US19950327/audiopacks/62.bin"
+	BINARY "audiopacks/62.bin"
 
 AUDIO_PACK_31: ;$EE7274
-	.INCBIN "bin/US19950327/audiopacks/31.bin"
+	BINARY "audiopacks/31.bin"
