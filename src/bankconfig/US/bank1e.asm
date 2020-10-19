@@ -35,4 +35,5 @@ MAP_DATA_TILE_ANIMATION_GFX_19: ;$DEF869
 	BINARY "maps/anim_gfx/19.bin"
 
 AUDIO_PACK_143: ;$DEFCDD
-	BINARY "audiopacks/143.bin"
+	AUDIOPACKBIN $2F1, $5800, "audiopacks/143.bin"
+	AUDIOPACK 0

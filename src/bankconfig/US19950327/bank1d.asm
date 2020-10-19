@@ -20,4 +20,5 @@ MAP_DATA_TILE_SET_GRAPHICS_5: ;$DDDF41
 	BINARY "maps/gfx/5.gfx.lzhal"
 
 AUDIO_PACK_75: ;$DDFED0
-	BINARY "audiopacks/75.bin"
+	AUDIOPACKBIN $124, $5800, "audiopacks/75.bin"
+	AUDIOPACK 0

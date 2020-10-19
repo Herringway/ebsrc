@@ -2,19 +2,37 @@
 .INCLUDE "common-usa.asm"
 
 AUDIO_PACK_27: ;$E90000
-	BINARY "audiopacks/27.bin"
+	AUDIOPACKBIN $18, $6C68, "audiopacks/27-1.bin"
+	AUDIOPACKBIN $3A30, $95B0, "audiopacks/27-2.bin"
+	AUDIOPACKBIN $1E, $6E9C, "audiopacks/27-3.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_80: ;$E93A74
-	BINARY "audiopacks/80.bin"
+	AUDIOPACKBIN $8, $6C68, "audiopacks/80-1.bin"
+	AUDIOPACKBIN $38C0, $95B0, "audiopacks/80-2.bin"
+	AUDIOPACKBIN $C, $6E9C, "audiopacks/80-3.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_118: ;$E97356
-	BINARY "audiopacks/118.bin"
+	AUDIOPACKBIN $28, $6C68, "audiopacks/118-1.bin"
+	AUDIOPACKBIN $3870, $95B0, "audiopacks/118-2.bin"
+	AUDIOPACKBIN $2A, $6E9C, "audiopacks/118-3.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_131: ;$E9AC26
-	BINARY "audiopacks/131.bin"
+	AUDIOPACKBIN $18, $6C68, "audiopacks/131-1.bin"
+	AUDIOPACKBIN $3420, $95B0, "audiopacks/131-2.bin"
+	AUDIOPACKBIN $18, $6E9C, "audiopacks/131-3.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_2: ;$E9E084
-	BINARY "audiopacks/2.bin"
+	AUDIOPACKBIN $30, $6C00, "audiopacks/2-1.bin"
+	AUDIOPACKBIN $17D0, $7000, "audiopacks/2-2.bin"
+	AUDIOPACKBIN $36, $6E00, "audiopacks/2-3.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_149: ;$E9F8C8
-	BINARY "audiopacks/149.bin"
+	AUDIOPACKBIN $1BE, $5800, "audiopacks/149-1.bin"
+	AUDIOPACKBIN $334, $5C00, "audiopacks/149-2.bin"
+	AUDIOPACKBIN $19D, $6200, "audiopacks/149-3.bin"
+	AUDIOPACK 0

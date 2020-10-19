@@ -17,4 +17,5 @@ MAP_DATA_TILE_SET_GRAPHICS_13: ;$D9CE52
 	BINARY "maps/gfx/13.gfx.lzhal"
 
 AUDIO_PACK_45: ;$D9FC18
-	BINARY "audiopacks/45.bin"
+	AUDIOPACKBIN $3C3, $5800, "audiopacks/45.bin"
+	AUDIOPACK 0

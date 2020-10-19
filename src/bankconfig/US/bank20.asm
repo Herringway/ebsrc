@@ -46,7 +46,11 @@ TOWN_MAP_SUMMERS: ;$E0C7F1
 	BINARY "town_maps/5.bin.lzhal"
 
 AUDIO_PACK_110: ;$E0ED03
-	BINARY "audiopacks/110.bin"
+	AUDIOPACKBIN $18, $6C68, "audiopacks/110-1.bin"
+	AUDIOPACKBIN $FA0, $95B0, "audiopacks/110-2.bin"
+	AUDIOPACKBIN $18, $6E9C, "audiopacks/110-3.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_6: ;$E0FCE1
-	BINARY "audiopacks/6.bin"
+	AUDIOPACKBIN $2CC, $4800, "audiopacks/6.bin"
+	AUDIOPACK 0

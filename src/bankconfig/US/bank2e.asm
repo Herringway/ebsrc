@@ -2,139 +2,194 @@
 .INCLUDE "common-usa.asm"
 
 AUDIO_PACK_136: ;$EE0000
-	BINARY "audiopacks/136.bin"
+	AUDIOPACKBIN $20C, $4800, "audiopacks/136-1.bin"
+	AUDIOPACKBIN $33E, $5200, "audiopacks/136-2.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_112: ;$EE0554
-	BINARY "audiopacks/112.bin"
+	AUDIOPACKBIN $531, $4800, "audiopacks/112.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_163: ;$EE0A8B
-	BINARY "audiopacks/163.bin"
+	AUDIOPACKBIN $521, $4800, "audiopacks/163.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_115: ;$EE0FB2
-	BINARY "audiopacks/115.bin"
+	AUDIOPACKBIN $51C, $4800, "audiopacks/115.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_53: ;$EE14D4
-	BINARY "audiopacks/53.bin"
+	AUDIOPACKBIN $514, $5800, "audiopacks/53.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_67: ;$EE19EE
-	BINARY "audiopacks/67.bin"
+	AUDIOPACKBIN $50A, $5800, "audiopacks/67.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_20: ;$EE1EFE
-	BINARY "audiopacks/20.bin"
+	AUDIOPACKBIN $4FD, $4800, "audiopacks/20.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_144: ;$EE2401
-	BINARY "audiopacks/144.bin"
+	AUDIOPACKBIN $4F7, $5800, "audiopacks/144.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_63: ;$EE28FE
-	BINARY "audiopacks/63.bin"
+	AUDIOPACKBIN $4C9, $5800, "audiopacks/63.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_138: ;$EE2DCD
-	BINARY "audiopacks/138.bin"
+	AUDIOPACKBIN $463, $5800, "audiopacks/138.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_127: ;$EE3236
-	BINARY "audiopacks/127.bin"
+	AUDIOPACKBIN $421, $5800, "audiopacks/127.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_16: ;$EE365D
-	BINARY "audiopacks/16.bin"
+	AUDIOPACKBIN $41A, $4800, "audiopacks/16.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_148: ;$EE3A7D
-	BINARY "audiopacks/148.bin"
+	AUDIOPACKBIN $419, $4800, "audiopacks/148.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_23: ;$EE3E9C
-	BINARY "audiopacks/23.bin"
+	AUDIOPACKBIN $160, $5800, "audiopacks/23-1.bin"
+	AUDIOPACKBIN $2B5, $6000, "audiopacks/23-2.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_11: ;$EE42BB
-	BINARY "audiopacks/11.bin"
+	AUDIOPACKBIN $40D, $5800, "audiopacks/11.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_142: ;$EE46CE
-	BINARY "audiopacks/142.bin"
+	AUDIOPACKBIN $40B, $4800, "audiopacks/142.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_160: ;$EE4ADF
-	BINARY "audiopacks/160.bin"
+	AUDIOPACKBIN $405, $5800, "audiopacks/160.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_101: ;$EE4EEA
-	BINARY "audiopacks/101.bin"
+	AUDIOPACKBIN $3F6, $4800, "audiopacks/101.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_103: ;$EE52E6
-	BINARY "audiopacks/103.bin"
+	AUDIOPACKBIN $1A6, $4800, "audiopacks/103-1.bin"
+	AUDIOPACKBIN $FB, $4C00, "audiopacks/103-2.bin"
+	AUDIOPACKBIN $14A, $5200, "audiopacks/103-3.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_51: ;$EE56DF
-	BINARY "audiopacks/51.bin"
+	AUDIOPACKBIN $3B4, $5800, "audiopacks/51.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_93: ;$EE5A99
-	BINARY "audiopacks/93.bin"
+	AUDIOPACKBIN $35B, $5800, "audiopacks/93.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_95: ;$EE5DFA
-	BINARY "audiopacks/95.bin"
+	AUDIOPACKBIN $8, $6C68, "audiopacks/95-1.bin"
+	AUDIOPACKBIN $330, $95B0, "audiopacks/95-2.bin"
+	AUDIOPACKBIN $C, $6E9C, "audiopacks/95-3.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_164: ;$EE614C
-	BINARY "audiopacks/164.bin"
+	AUDIOPACKBIN $33A, $4800, "audiopacks/164.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_151: ;$EE648C
-	BINARY "audiopacks/151.bin"
+	AUDIOPACKBIN $325, $5800, "audiopacks/151.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_12: ;$EE67B7
-	BINARY "audiopacks/12.bin"
+	AUDIOPACKBIN $2C8, $4800, "audiopacks/12.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_135: ;$EE6A85
-	BINARY "audiopacks/135.bin"
+	AUDIOPACKBIN $2AB, $5800, "audiopacks/135.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_83: ;$EE6D36
-	BINARY "audiopacks/83.bin"
+	AUDIOPACKBIN $F7, $4800, "audiopacks/83-1.bin"
+	AUDIOPACKBIN $6F, $5200, "audiopacks/83-2.bin"
+	AUDIOPACKBIN $133, $5300, "audiopacks/83-3.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_88: ;$EE6FDD
-	BINARY "audiopacks/88.bin"
+	AUDIOPACKBIN $291, $4800, "audiopacks/88.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_31: ;$EE7274
-	BINARY "audiopacks/31.bin"
+	AUDIOPACKBIN $25D, $5800, "audiopacks/31.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_129: ;$EE74D7
-	BINARY "audiopacks/129.bin"
+	AUDIOPACKBIN $25A, $5800, "audiopacks/129.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_22: ;$EE7737
-	BINARY "audiopacks/22.bin"
+	AUDIOPACKBIN $251, $5800, "audiopacks/22.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_17: ;$EE798E
-	BINARY "audiopacks/17.bin"
+	AUDIOPACKBIN $24B, $4800, "audiopacks/17.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_91: ;$EE7BDF
-	BINARY "audiopacks/91.bin"
+	AUDIOPACKBIN $244, $4800, "audiopacks/91.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_81: ;$EE7E29
-	BINARY "audiopacks/81.bin"
+	AUDIOPACKBIN $10D, $4800, "audiopacks/81-1.bin"
+	AUDIOPACKBIN $10D, $5200, "audiopacks/81-2.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_147: ;$EE804D
-	BINARY "audiopacks/147.bin"
+	AUDIOPACKBIN $219, $4800, "audiopacks/147.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_152: ;$EE826C
-	BINARY "audiopacks/152.bin"
+	AUDIOPACKBIN $1F4, $5800, "audiopacks/152.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_128: ;$EE8466
-	BINARY "audiopacks/128.bin"
+	AUDIOPACKBIN $1CC, $5800, "audiopacks/128.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_159: ;$EE8638
-	BINARY "audiopacks/159.bin"
+	AUDIOPACKBIN $18D, $5800, "audiopacks/159.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_49: ;$EE87CB
-	BINARY "audiopacks/49.bin"
+	AUDIOPACKBIN $17E, $5800, "audiopacks/49.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_9: ;$EE894F
-	BINARY "audiopacks/9.bin"
+	AUDIOPACKBIN $175, $5800, "audiopacks/9.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_69: ;$EE8ACA
-	BINARY "audiopacks/69.bin"
+	AUDIOPACKBIN $14E, $5800, "audiopacks/69.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_167: ;$EE8C1E
-	BINARY "audiopacks/167.bin"
+	AUDIOPACKBIN $141, $4800, "audiopacks/167.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_130: ;$EE8D65
-	BINARY "audiopacks/130.bin"
+	AUDIOPACKBIN $137, $4800, "audiopacks/130.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_168: ;$EE8EA2
-	BINARY "audiopacks/168.bin"
+	AUDIOPACKBIN $12E, $4800, "audiopacks/168.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_137: ;$EE8FD6
-	BINARY "audiopacks/137.bin"
+	AUDIOPACKBIN $123, $4800, "audiopacks/137.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_41: ;$EE90FF
-	BINARY "audiopacks/41.bin"
+	AUDIOPACKBIN $FC, $5800, "audiopacks/41.bin"
+	AUDIOPACK 0

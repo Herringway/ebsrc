@@ -176,7 +176,5 @@ PSI_ANIM_PALETTES: ;$CCF47F
 .INCLUDE "data/psi_anim_pointers.asm"
 
 AUDIO_PACK_71: ;$CCF617
-	BINARY "audiopacks/71.bin"
-
-UNKNOWN_PTR_CCFFD5: ;$CCFFD5
-	.DWORD $C80530
+	AUDIOPACKBIN $9BE, $5800, "audiopacks/71.bin"
+	AUDIOPACK 0

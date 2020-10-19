@@ -19,7 +19,12 @@
 .INCLUDE "data/map/npc_config.asm"
 
 AUDIO_PACK_94: ;$CFF2B5
-	BINARY "audiopacks/94.bin"
+	AUDIOPACKBIN $763, $4800, "audiopacks/94-1.bin"
+	AUDIOPACKBIN $12B, $4F80, "audiopacks/94-2.bin"
+	AUDIOPACKBIN $191, $5100, "audiopacks/94-3.bin"
+	AUDIOPACKBIN $252, $5400, "audiopacks/94-4.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_96: ;$CFFF38
-	BINARY "audiopacks/96.bin"
+	AUDIOPACKBIN $BB, $4800, "audiopacks/96.bin"
+	AUDIOPACK 0

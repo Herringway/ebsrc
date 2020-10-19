@@ -2,16 +2,27 @@
 .INCLUDE "common-usa19950327.asm"
 
 AUDIO_PACK_64: ;$E40000
-	BINARY "audiopacks/64.bin"
+	AUDIOPACKBIN $18, $6C68, "audiopacks/64-1.bin"
+	AUDIOPACKBIN $5100, $95B0, "audiopacks/64-2.bin"
+	AUDIOPACKBIN $24, $6E9C, "audiopacks/64-3.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_42: ;$E4514A
-	BINARY "audiopacks/42.bin"
+	AUDIOPACKBIN $38, $6C68, "audiopacks/42-1.bin"
+	AUDIOPACKBIN $5060, $95B0, "audiopacks/42-2.bin"
+	AUDIOPACKBIN $42, $6E9C, "audiopacks/42-3.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_126: ;$E4A232
-	BINARY "audiopacks/126.bin"
+	AUDIOPACKBIN $18, $6C68, "audiopacks/126-1.bin"
+	AUDIOPACKBIN $4C60, $95B0, "audiopacks/126-2.bin"
+	AUDIOPACKBIN $18, $6E9C, "audiopacks/126-3.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_125: ;$E4EED0
-	BINARY "audiopacks/125.bin"
+	AUDIOPACKBIN $EBC, $4800, "audiopacks/125.bin"
+	AUDIOPACK 0
 
 AUDIO_PACK_155: ;$E4FD92
-	BINARY "audiopacks/155.bin"
+	AUDIOPACKBIN $261, $5800, "audiopacks/155.bin"
+	AUDIOPACK 0

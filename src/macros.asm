@@ -4,6 +4,22 @@
     .INCBIN .SPRINTF("bin/%s/%s", LOCALE, file)
 .ENDMACRO
 
+.MACRO AUDIOPACKBIN size, target, file
+    .WORD size
+    .IF size > 0
+        .WORD target
+        BINARY file
+    .ENDIF
+.ENDMACRO
+
+.MACRO AUDIOPACK size, target, file
+    .WORD size
+    .IF size > 0
+        .WORD target
+        .INCLUDE file
+    .ENDIF
+.ENDMACRO
+
 .MACRO RESERVE_STACK_SPACE size
     PHD
     PHA

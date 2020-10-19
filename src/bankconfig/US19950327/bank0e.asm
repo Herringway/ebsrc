@@ -468,4 +468,6 @@ SOUND_STONE_PALETTE: ;$CEF806
 	BINARY "sound_stone.pal"
 
 AUDIO_PACK_102: ;$CEF8C6
-	BINARY "audiopacks/102.bin"
+	AUDIOPACKBIN $26D, $4800, "audiopacks/102-1.bin"
+	AUDIOPACKBIN $46D, $5200, "audiopacks/102-2.bin"
+	AUDIOPACK 0

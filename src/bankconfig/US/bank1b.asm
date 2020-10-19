@@ -20,4 +20,5 @@ MAP_DATA_TILE_ARRANGEMENT_11: ;$DBC6CC
 	BINARY "maps/arrangements/11.bin"
 
 AUDIO_PACK_65: ;$DBF2EB
-	BINARY "audiopacks/65.bin"
+	AUDIOPACKBIN $C73, $5800, "audiopacks/65.bin"
+	AUDIOPACK 0

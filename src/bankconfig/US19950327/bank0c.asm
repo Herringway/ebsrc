@@ -176,4 +176,5 @@ PSI_ANIM_PALETTES: ;$CCF47F
 .INCLUDE "data/psi_anim_pointers.asm"
 
 AUDIO_PACK_141: ;$ED3A9C
-	BINARY "audiopacks/141.bin"
+	AUDIOPACKBIN $8C9, $5800, "audiopacks/141.bin"
+	AUDIOPACK 0

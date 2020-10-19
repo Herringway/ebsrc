@@ -71,4 +71,7 @@ MAP_DATA_TILE_ANIMATION_GFX_14: ;$DFE4C8
 .INCLUDE "data/map/palette_anim_table.asm"
 
 AUDIO_PACK_165: ;$DFEC5A
-	BINARY "audiopacks/165.bin"
+	AUDIOPACKBIN $8, $6C68, "audiopacks/165-1.bin"
+	AUDIOPACKBIN $12F0, $95B0, "audiopacks/165-2.bin"
+	AUDIOPACKBIN $C, $6E9C, "audiopacks/165-3.bin"
+	AUDIOPACK 0
