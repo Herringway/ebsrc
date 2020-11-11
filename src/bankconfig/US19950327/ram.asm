@@ -82,11 +82,13 @@ UNKNOWN_7E002A: ;$7E002A
 	.RES 1
 UNKNOWN_7E002B: ;$7E002B
 	.RES 1
-UNKNOWN_7E002C: ;$7E002C
+;the ID of the frame being/about to be displayed, multiplied by 2
+NEXT_FRAME_DISPLAY_ID: ;$7E002C
 	.RES 1
 UNKNOWN_7E002D: ;$7E002D
 	.RES 1
-UNKNOWN_7E002E: ;$7E002E
+;the ID of the next frame to buffer as a byte offset - 0 for buffer 0, 2 for buffer 1
+NEXT_FRAME_BUF_ID: ;$7E002E
 	.RES 1
 UNKNOWN_7E002F: ;$7E002F
 	.RES 1
