@@ -190,7 +190,7 @@
 
 .INCLUDE "unknown/C0/C0927C.asm"
 
-.INCLUDE "unknown/C0/C092F5.asm"
+.INCLUDE "overworld/create_entity.asm"
 
 .INCLUDE "unknown/C0/C0943C.asm"
 
