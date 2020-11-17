@@ -25,7 +25,10 @@ depsusa: $(USSRCS:.asm=.dep)
 depsusaproto: $(USPROTOSRCS:.asm=.dep)
 
 extract:
-	dub run ebbinex -- "donor.sfc" "src/bin"
+	ebbinex "earthbound.yml" "donor.sfc"
+
+extractproto:
+	ebbinex "earthbound-1995-03-27.yml" "donor-1995-03-27.sfc"
 
 %.o: %.asm
 	ca65 $(CA65FLAGS) -o "$@" "$<"
