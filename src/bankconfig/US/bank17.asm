@@ -18,4 +18,4 @@ MAP_DATA_TILE_TABLE_CHUNK_10: ;$D78000
 .INCLUDE "data/map/per-sector_attributes.asm"
 
 MAP_DATA_TILE_ARRANGEMENT_0: ;$D7C600
-	BINARY "maps/arrangements/0.bin"
+	BINARY "maps/arrangements/0.arr.lzhal"

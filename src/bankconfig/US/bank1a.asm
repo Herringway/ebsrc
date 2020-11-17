@@ -2,13 +2,13 @@
 .INCLUDE "common-usa.asm"
 
 MAP_DATA_TILE_ARRANGEMENT_5: ;$DA0000
-	BINARY "maps/arrangements/5.bin"
+	BINARY "maps/arrangements/5.arr.lzhal"
 
 MAP_DATA_TILE_ARRANGEMENT_6: ;$DA1342
-	BINARY "maps/arrangements/6.bin"
+	BINARY "maps/arrangements/6.arr.lzhal"
 
 MAP_DATA_TILE_ARRANGEMENT_7: ;$DA4EA3
-	BINARY "maps/arrangements/7.bin"
+	BINARY "maps/arrangements/7.arr.lzhal"
 
 MAP_DATA_PALETTE_0: ;$DA7CA7
 	BINARY "maps/palettes/0.bin"
