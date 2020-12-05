@@ -294,6 +294,18 @@
     .BYTE $00
 .ENDMACRO
 
+.MACRO PADDEDASCII str, len
+    .BYTE str
+    .REPEAT len-.STRLEN(str)
+        .BYTE $00
+    .ENDREPEAT
+.ENDMACRO
+
+.MACRO ASCIIZ str
+    .BYTE str
+    .BYTE $00
+.ENDMACRO
+
 .MACRO RGB red, green, blue
     .assert red < 32, error, "Red out of range"
     .assert green < 32, error, "Green out of range"

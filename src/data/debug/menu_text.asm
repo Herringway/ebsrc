@@ -1,4 +1,6 @@
 
+.FEATURE STRING_ESCAPES
+
 ; Some of this was left untranslated and remains in the same form as in Mother 2.
 DEBUG_MENU_TEXT: ;$C3E874
 	PADDEDEBTEXT "Flag", 10
@@ -11,11 +13,11 @@ DEBUG_MENU_TEXT: ;$C3E874
 	PADDEDEBTEXT "Warp", 10
 	PADDEDEBTEXT "Tea", 10
 	.IF CLEAN_ROM
-		.BYTE $E6, $EF, $FB, $00, $00, $00, $00, $00, $00, $00 ;テレポ
-		.BYTE $D4, $B6, $25, $2A, $00, $00, $00, $00, $00, $00 ;スターα
-		.BYTE $D4, $B6, $25, $2B, $00, $00, $00, $00, $00, $00 ;スターβ
-		.BYTE $DB, $EF, $25, $BD, $25, $30, $00, $00, $00, $00 ;プレーヤー0
-		.BYTE $DB, $EF, $25, $BD, $25, $31, $00, $00, $00, $00 ;プレーヤー1
+		PADDEDASCII "\xE6\xEF\xFB", 10 ;テレポ
+		PADDEDASCII "\xD4\xB6\x25\x2A", 10 ;スターα
+		PADDEDASCII "\xD4\xB6\x25\x2B", 10 ;スターβ
+		PADDEDASCII "\xDB\xEF\x25\xBD\x25\x30", 10 ;プレーヤー0
+		PADDEDASCII "\xDB\xEF\x25\xBD\x25\x31", 10 ;プレーヤー1
 	.ELSE
 		PADDEDEBTEXT "Teleport", 10
 		PADDEDEBTEXT "Star ~", 10
@@ -29,7 +31,7 @@ DEBUG_MENU_TEXT: ;$C3E874
 	PADDEDEBTEXT "STONE", 10
 	PADDEDEBTEXT "STAFF", 10
 	.IF CLEAN_ROM
-		.BYTE $EC, $25, $B6, $25, $00, $00, $00, $00, $00, $00 ;メーター
+		PADDEDASCII "\xEC\x25\xB6\x25", 10 ;メーター
 	.ELSE
 		PADDEDEBTEXT "Meter", 10
 	.ENDIF
