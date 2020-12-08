@@ -451,3 +451,15 @@
 	checksum .word ;28
 	checksum_complement .word ;30
 .ENDSTRUCT
+
+.STRUCT unknown_4DD6
+	unknown0 .byte 4 ;0
+	unknown4 .byte 4 ;4
+	unknown8 .byte 4 ;8
+	unknown12 .byte 4 ;12
+	unknown16 .byte 4 ;16
+	unknown20 .byte 4 ;20
+	unknown24 .byte 4 ;24
+	unknown28 .byte 356 ;28
+	unknown384 .byte 64 ;384
+.ENDSTRUCT
