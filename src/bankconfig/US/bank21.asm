@@ -163,6 +163,10 @@ TOWN_MAP_ICON_PALETTE: ;$E1F1C3
 
 .INCLUDE "data/unknown/E1F203.asm"
 
+.INCLUDE "data/unknown/E1F44C.asm"
+
+.INCLUDE "data/unknown/E1F47A.asm"
+
 .INCLUDE "data/map/town_map_icon_placement_pointer_table.asm"
 
 .INCLUDE "data/map/town_map_icon_placement_data.asm"
