@@ -478,7 +478,7 @@
 
 .INCLUDE "misc/change_equipped_other.asm"
 
-.INCLUDE "data/powers_of_two_4.asm"
+.INCLUDE "data/item_usable_flags.asm"
 
 .INCLUDE "misc/check_status_group.asm"
 
