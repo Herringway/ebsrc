@@ -6,10 +6,10 @@ Contributions are welcome.
 
 ## US Retail
 
-	ebbinex "path to retail ROM" src\bin\US\
+	ebbinex earthbound.yml "path to retail ROM"
 	make
 
 ## 1995-03-27 US Prototype
 
-	ebbinex "path to prototype ROM" src\bin\US19950327\
+	ebbinex earthbound-1995-03-27.yml "path to prototype ROM"
 	make proto19950327
