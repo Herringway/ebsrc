@@ -2046,7 +2046,7 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "misc/get_character_item.asm"
 
-.INCLUDE "unknown/C3/C3E9A0.asm"
+.INCLUDE "misc/check_item_equipped.asm"
 
 .INCLUDE "unknown/C3/C3E9F7.asm"
 
