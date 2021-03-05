@@ -5,7 +5,7 @@ SET_WORKING_MEMORY: ;$C1045D
 	MOVE_INT $1C, $06
 	JSR a:.LOWORD(GET_ACTIVE_WINDOW_ADDRESS)
 	CLC
-	ADC #window_stats::wram_address
+	ADC #window_stats::working_memory
 	TAY
 	MOVE_INT_YPTRDEST $06, a:.LOWORD(RAM)
 	MOVE_INT $06, $14

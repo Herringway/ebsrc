@@ -10,7 +10,7 @@ TRANSFER_STORAGE_MEM_ACTIVE: ;$C10380
 	MOVE_INT_YPTRSRC a:.LOWORD(RAM), $06
 	LDA $0E
 	CLC
-	ADC #window_stats::wram_address
+	ADC #window_stats::working_memory
 	TAY
 	MOVE_INT_YPTRDEST $06, a:.LOWORD(RAM)
 	LDA $0E

@@ -19,7 +19,7 @@ UNKNOWN_C1F497: ;$C1F497
 	LDY #.SIZEOF(window_stats)
 	JSL MULT168
 	TAX
-	LDA .LOWORD(WINDOW_STATS_TABLE)+window_stats::argument_memory_storage,X
+	LDA .LOWORD(WINDOW_STATS_TABLE)+window_stats::current_option,X
 	LDY #.SIZEOF(u89D4_entry)
 	JSL MULT168
 	CLC

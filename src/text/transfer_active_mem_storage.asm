@@ -5,7 +5,7 @@ TRANSFER_ACTIVE_MEM_STORAGE: ;$C10324
 	JSR a:.LOWORD(GET_ACTIVE_WINDOW_ADDRESS)
 	STA $0E
 	CLC
-	ADC #window_stats::wram_address
+	ADC #window_stats::working_memory
 	TAY
 	MOVE_INT_YPTRSRC a:.LOWORD(RAM), $06
 	LDA $0E

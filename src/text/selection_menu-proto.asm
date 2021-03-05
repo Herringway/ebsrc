@@ -19,14 +19,14 @@ SELECTION_MENU: ;$C11A6A
 	CLC
 	ADC #.LOWORD(WINDOW_STATS_TABLE)
 	STA $24
-	LDY #window_stats::secondary_memory_storage
+	LDY #window_stats::selected_option
 	LDA ($24),Y
 	CMP #$FFFF
 	BEQ @UNKNOWN4
 	TAX
 	STX $22
 	STA $20
-	LDY #window_stats::argument_memory_storage
+	LDY #window_stats::current_option
 	LDA ($24),Y
 	LDY #.SIZEOF(u89D4_entry)
 	JSL MULT168
@@ -73,7 +73,7 @@ SELECTION_MENU: ;$C11A6A
 	BRA @UNKNOWN5
 @UNKNOWN4:
 	STZ $20
-	LDY #window_stats::argument_memory_storage
+	LDY #window_stats::current_option
 	LDA ($24),Y
 	LDY #.SIZEOF(u89D4_entry)
 	JSL MULT168
@@ -467,7 +467,7 @@ SELECTION_MENU: ;$C11A6A
 	JSR a:.LOWORD(UNKNOWN_C10FEA)
 	JSL CLEAR_9622
 	LDA $20
-	LDY #window_stats::secondary_memory_storage
+	LDY #window_stats::selected_option
 	STA ($24),Y
 	LDX $04
 	LDA a:.LOWORD(RAM),X
@@ -561,7 +561,7 @@ SELECTION_MENU: ;$C11A6A
 @UNKNOWN40:
 	LDA #$0000
 	STA $02
-	LDY #window_stats::argument_memory_storage
+	LDY #window_stats::current_option
 	LDA ($24),Y
 	LDY #.SIZEOF(u89D4_entry)
 	JSL MULT168

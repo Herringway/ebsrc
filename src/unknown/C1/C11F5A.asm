@@ -10,7 +10,7 @@ UNKNOWN_C11F5A: ;$C11F5A
 	LDY #.SIZEOF(window_stats)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(WINDOW_STATS_TABLE) + window_stats::unknown55
+	ADC #.LOWORD(WINDOW_STATS_TABLE) + window_stats::cursor_move_callback
 	TAY
 	MOVE_INT_YPTRDEST $06, a:.LOWORD(RAM)
 	PLD
