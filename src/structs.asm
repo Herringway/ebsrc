@@ -167,18 +167,18 @@
 
 .STRUCT battler
 	id .byte ;0
-	.byte ;1
+	unknown01 .byte ;1
 	sprite .byte ;2
-	.byte ;3
+	unknown03 .byte ;3
 	current_action .word ;4
 	action_order_var .byte ;6
-	.byte ;7
+	unknown07 .byte ;7
 	current_action_argument .byte ;8
-	.byte ;9
+	unknown09 .byte ;9
 	current_target .byte ;10
 	the_flag .byte ;11
 	consciousness .byte ;12
-	.byte ;13
+	unknown13 .byte ;13
 	ally_or_enemy .byte ;14
 	npc_id .byte ;15
 	row .byte ;16
@@ -215,13 +215,13 @@
 	sprite_x .byte ;66
 	sprite_y .byte ;67
 	initiative .byte ;68
-	.byte ;69
-	.byte 2 ;70
-	.byte ;72
-	.byte ;73
-	.byte ;74
+	unknown69 .byte ;69
+	unknown70 .byte 2 ;70
+	unknown72 .byte ;72
+	unknown73 .byte ;73
+	unknown74 .byte ;74
 	id2 .byte ;75
-	.byte 2;76
+	unknown76 .byte 2;76
 .ENDSTRUCT
 
 .STRUCT window_stats
@@ -462,4 +462,12 @@
 	unknown24 .byte 4 ;24
 	unknown28 .byte 356 ;28
 	unknown384 .byte 64 ;384
+.ENDSTRUCT
+
+.STRUCT unknown_A97D
+	unknown0 .byte 1 ;0
+	unknown1 .byte 1 ;4
+	unknown2 .byte 2 ;8
+	unknown4 .byte 1 ;12
+	unknown5 .byte 1 ;12
 .ENDSTRUCT
