@@ -22,7 +22,7 @@
 
 .INCLUDE "unknown/C0/C083E3.asm"
 
-.INCLUDE "system/read_joypad2.asm"
+.INCLUDE "system/read_joypad.asm"
 
 .INCLUDE "unknown/C0/C08456.asm"
 
@@ -58,7 +58,7 @@
 
 .INCLUDE "unknown/C0/C08744.asm"
 
-.INCLUDE "system/read_joypad.asm"
+.INCLUDE "system/wait_until_next_frame.asm"
 
 .INCLUDE "unknown/C0/C0878B.asm"
 
