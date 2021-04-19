@@ -35,7 +35,7 @@ BATTLE_INIT_ENEMY_STATS: ;$C2B6EB
 	STA a:battler::id,X
 	TYA
 	LDX $02
-	STA a:.LOWORD(RAM)+76,X
+	STA a:battler::unknown76,X
 	LDY #enemy_data::battle_sprite
 	LDA [$06],Y
 	LDX $02
@@ -183,7 +183,7 @@ BATTLE_INIT_ENEMY_STATS: ;$C2B6EB
 	CLC
 	ADC #battler::exp
 	TAY
-	MOVE_INT_YPTRDEST $0A, a:.LOWORD(RAM)
+	MOVE_INT_YPTRDEST $0A, NULL
 	SEP #PROC_FLAGS::ACCUM8
 	LDY #enemy_data::initial_status
 	LDA [$06],Y

@@ -144,15 +144,9 @@
 	hypnosis_brainshock_vulnerability .byte ;67
 	miss_rate .byte ;68
 	action_order .byte ;69
-	action_1 .word ;70
-	action_2 .word ;72
-	action_3 .word ;74
-	action_4 .word ;76
+	actions .word 4 ;70
 	final_action .word ;78
-	action_1_arg .byte ;80
-	action_2_arg .byte ;81
-	action_3_arg .byte ;82
-	action_4_arg .byte ;83
+	action_args .byte 4 ;80
 	final_action_arg .byte ;84
 	iq .byte ;85
 	boss .byte ;86
@@ -174,14 +168,14 @@
 	action_order_var .byte ;6
 	unknown07 .byte ;7
 	current_action_argument .byte ;8
-	unknown09 .byte ;9
+	unknown09 .byte ;9 - flags of some sort?
 	current_target .byte ;10
 	the_flag .byte ;11
 	consciousness .byte ;12
 	unknown13 .byte ;13
 	ally_or_enemy .byte ;14
 	npc_id .byte ;15
-	row .byte ;16
+	row .byte ;16 - might actually be an id for game_state's party_npc_*
 	hp .word ;17
 	hp_target .word ;19
 	hp_max .word ;21
