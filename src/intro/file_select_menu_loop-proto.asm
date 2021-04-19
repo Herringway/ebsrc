@@ -632,7 +632,7 @@ FILE_MENU_LOOP: ;$C1F805
 	LDA #$0050 ;' '
 	STA .LOWORD(GAME_STATE)+game_state::favourite_thing+3
 	LDA #$01
-	STA $988D
+	STA .LOWORD(GAME_STATE) + game_state::unknownC3
 	REP #PROC_FLAGS::ACCUM8
 	LDA .LOWORD(GAME_STATE)+game_state::leader_x_coord
 	STA .LOWORD(RESPAWN_X)
