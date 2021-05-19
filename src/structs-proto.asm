@@ -27,13 +27,13 @@
 	base_iq .byte ;34
 	items .byte 14 ;35
 	equipment .byte 4 ;49
-	.dword 2 ;53
+	unknown53 .dword 2 ;53
 	position_index .word ;61
-	.dword ;63
-	.word ;67
+	unknown63 .dword ;63
+	unknown67 .word ;67
 	current_hp .word ;69
 	current_hp_target .word ;71
-	.word ;73
+	unknown73 .word ;73
 	current_pp .word ;75
 	current_pp_target .word ;77
 	hp_pp_window_options .word ;79
@@ -48,9 +48,9 @@
 	boosted_vitality .byte ;89
 	boosted_iq .byte ;90
 	boosted_luck .byte ;91
-	.byte ;92
-	.byte ;93
-	.byte ;94
+	unknown92 .byte ;92
+	unknown93 .byte ;93
+	unknown94 .byte ;94
 .ENDSTRUCT
 
 .STRUCT photo_state
