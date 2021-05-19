@@ -465,6 +465,18 @@
         ASL
         ASL
         ASL
+    .ELSEIF amount = 44
+        STA scratch
+        ASL
+        ASL
+        ADC scratch
+        ASL
+        ADC scratch
+        ASL
+        ASL
+    .ELSEIF amount = 45
+        LDY #amount
+        JSL MULT168
     .ELSEIF amount = 48
         STA scratch
         ASL
