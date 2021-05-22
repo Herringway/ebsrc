@@ -474,9 +474,6 @@
         ADC scratch
         ASL
         ASL
-    .ELSEIF amount = 45
-        LDY #amount
-        JSL MULT168
     .ELSEIF amount = 48
         STA scratch
         ASL
@@ -511,7 +508,8 @@
         ASL
         ASL
     .ELSE
-        .ASSERT 0, error, "Unsupported multiplication amount"
+        LDY #amount
+        JSL MULT168
     .ENDIF
 .ENDMACRO
 

@@ -17,8 +17,7 @@ BTLACT_TELEPORT_BOX: ;$C2AB71
 	LDX .LOWORD(CURRENT_ATTACKER)
 	LDA a:battler::current_action_argument,X
 	AND #$00FF
-	LDY #.SIZEOF(item)
-	JSL MULT168
+	OPTIMIZED_MULT $04, .SIZEOF(item)
 	CLC
 	ADC #item::strength
 	TAX
