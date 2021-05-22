@@ -119,7 +119,7 @@ CHECK_DEAD_PLAYERS: ;$C2BB18
 	LDA $14
 	STA $02
 	CLC
-	ADC #$0012
+	ADC #char_struct::afflictions + 4
 	TAX
 	LDA a:.LOWORD(RAM),X
 	AND #$00FF

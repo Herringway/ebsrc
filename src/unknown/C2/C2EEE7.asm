@@ -34,7 +34,7 @@ UNKNOWN_C2EEE7: ;$C2EEE7
 	STY $12
 	LDA $14
 	CLC
-	ADC #$0035
+	ADC #enemy_data::battle_sprite_palette
 	MOVE_INTX $16, $06
 	CLC
 	ADC $06
