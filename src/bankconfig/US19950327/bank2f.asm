@@ -89,7 +89,7 @@ NAME_INPUT_WINDOW_SELECTION_LAYOUT_5: ;$EFA6A7
 
 .INCLUDE "data/name_input_window_selection_layout_pointers.asm"
 
-.INCLUDE "data/unknown/EFA6EB.asm"
+.INCLUDE "bin/US19950327/text_data/7.ebtxt"
 
 .INCLUDE "data/map/per_sector_town_map_data.asm"
 

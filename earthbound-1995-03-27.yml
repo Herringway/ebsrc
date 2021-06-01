@@ -3721,6 +3721,12 @@ dumpEntries:
   size: 17766
   extension: ebtxt
   compressed: false
+- subdir: text_data
+  name: '7'
+  offset: 0x2F86DC
+  size: 36
+  extension: ebtxt
+  compressed: false
 - subdir: battle_bgs/graphics
   name: '63'
   offset: 0xA0000
@@ -17530,6 +17536,7 @@ renameLabels:
   0xEF82BA: TEXT_DOOR_006
   0xEF82C7: TEXT_NPC_0147_ALT
   0xEF854C: TEXT_ENEMY_USED_PSI
+  0xEF86DD: TEXT_DEBUG_UNKNOWN_MENU_2
 compressedTextStrings:
 - ' in the '
 - '                '

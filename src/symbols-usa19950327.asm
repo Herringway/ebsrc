@@ -5,5 +5,6 @@
 .INCLUDE "bin/US19950327/text_data/4.symbols.asm"
 .INCLUDE "bin/US19950327/text_data/5.symbols.asm"
 .INCLUDE "bin/US19950327/text_data/6.symbols.asm"
+.INCLUDE "bin/US19950327/text_data/7.symbols.asm"
 
 .INCLUDE "symbols-common.asm"
