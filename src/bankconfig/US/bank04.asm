@@ -477,6 +477,8 @@
 
 .INCLUDE "data/battle/misc_target_text.asm"
 
+.INCLUDE "data/text/phone_call_text.asm"
+
 .INCLUDE "misc/get_required_exp.asm"
 
 .INCLUDE "data/text/status_equip_window_text.asm"
