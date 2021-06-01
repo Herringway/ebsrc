@@ -13,10 +13,10 @@ UNKNOWN_C10F40: ;$C10F40
 	ADC #.LOWORD(WINDOW_STATS_TABLE)
 	TAX
 	STX $10
-	LDY a:.LOWORD(RAM)+53,X
+	LDY a:.LOWORD(RAM)+window_stats::tilemap_address,X
 	STY $0E
-	LDY a:.LOWORD(RAM)+12,X
-	LDA a:.LOWORD(RAM)+10,X
+	LDY a:window_stats::height,X
+	LDA a:window_stats::width,X
 	JSL MULT16
 	STA $02
 	BRA @UNKNOWN2
@@ -40,8 +40,8 @@ UNKNOWN_C10F40: ;$C10F40
 	BNE @UNKNOWN0
 	JSL UNKNOWN_C45E96
 	LDX $10
-	STZ a:.LOWORD(RAM)+16,X
-	STZ a:.LOWORD(RAM)+14,X
+	STZ a:window_stats::text_y,X
+	STZ a:window_stats::text_x,X
 @UNKNOWN3:
 	PLD
 	RTS

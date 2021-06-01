@@ -114,7 +114,7 @@ SELECTION_MENU: ;$C1196A
 	MOVE_INT_CONSTANT NULL, $0A
 	LDA $24
 	CLC
-	ADC #$0037
+	ADC #window_stats::cursor_move_callback
 	TAY
 	MOVE_INT_YPTRSRC a:.LOWORD(RAM), $06
 	CMP $0C
@@ -137,7 +137,7 @@ SELECTION_MENU: ;$C1196A
 	STA $1C
 	LDA $24
 	CLC
-	ADC #$0037
+	ADC #window_stats::cursor_move_callback
 	TAY
 	MOVE_INT_YPTRSRC a:.LOWORD(RAM), $06
 	LDA $1C
@@ -506,7 +506,7 @@ SELECTION_MENU: ;$C1196A
 	JSR a:.LOWORD(UNKNOWN_C10FA3)
 	LDA $24
 	CLC
-	ADC #$0033
+	ADC #window_stats::menu_page_number
 	TAX
 	STX $22
 	LDA a:.LOWORD(RAM),X
@@ -620,7 +620,7 @@ SELECTION_MENU: ;$C1196A
 	TAY
 	STY $20
 	TYA
-	LDY #$0033
+	LDY #window_stats::menu_page_number
 	CMP ($24),Y
 	BEQ @UNKNOWN43
 	LDY $20

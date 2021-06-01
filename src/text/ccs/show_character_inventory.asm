@@ -40,9 +40,9 @@ CC_1A_05: ;$C1549E
 	CLC
 	ADC #.LOWORD(WINDOW_STATS_TABLE)
 	TAX
-	STZ a:.LOWORD(RAM)+16,X
+	STZ a:window_stats::text_y,X
 	TAX
-	STZ a:.LOWORD(RAM)+14,X
+	STZ a:window_stats::text_x,X
 	LDY $0E
 	TYA
 	CLC

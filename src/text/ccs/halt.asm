@@ -57,10 +57,10 @@ CC_13_14: ;$C10166
 @UNKNOWN7:
 	LOADPTR UNKNOWN_C3E3F8+30, $0E
 	LDX $02
-	LDA a:.LOWORD(RAM)+8,X
+	LDA a:window_stats::window_y,X
 	LDX $02
 	CLC
-	ADC a:.LOWORD(RAM)+12,X
+	ADC a:window_stats::height,X
 	ASL
 	ASL
 	ASL
@@ -68,10 +68,10 @@ CC_13_14: ;$C10166
 	ASL
 	STA $04
 	LDX $02
-	LDA a:.LOWORD(RAM)+6,X
+	LDA a:window_stats::window_x,X
 	LDX $02
 	CLC
-	ADC a:.LOWORD(RAM)+10,X
+	ADC a:window_stats::width,X
 	CLC
 	ADC $04
 	CLC
@@ -97,10 +97,10 @@ CC_13_14: ;$C10166
 	BNE @UNKNOWN8
 	LOADPTR UNKNOWN_C3E3F8+32, $0E
 	LDX $02
-	LDA a:.LOWORD(RAM)+8,X
+	LDA a:window_stats::window_y,X
 	LDX $02
 	CLC
-	ADC a:.LOWORD(RAM)+12,X
+	ADC a:window_stats::height,X
 	ASL
 	ASL
 	ASL
@@ -108,10 +108,10 @@ CC_13_14: ;$C10166
 	ASL
 	STA $04
 	LDX $02
-	LDA a:.LOWORD(RAM)+6,X
+	LDA a:window_stats::window_x,X
 	LDX $02
 	CLC
-	ADC a:.LOWORD(RAM)+10,X
+	ADC a:window_stats::width,X
 	CLC
 	ADC $04
 	CLC
@@ -139,10 +139,10 @@ CC_13_14: ;$C10166
 @UNKNOWN12:
 	LOADPTR UNKNOWN_C3E3F8+34, $0E
 	LDX $02
-	LDA a:.LOWORD(RAM)+8,X
+	LDA a:window_stats::window_y,X
 	LDX $02
 	CLC
-	ADC a:.LOWORD(RAM)+12,X
+	ADC a:window_stats::height,X
 	ASL
 	ASL
 	ASL
@@ -150,10 +150,10 @@ CC_13_14: ;$C10166
 	ASL
 	PHA
 	LDX $02
-	LDA a:.LOWORD(RAM)+6,X
+	LDA a:window_stats::window_x,X
 	LDX $02
 	CLC
-	ADC a:.LOWORD(RAM)+10,X
+	ADC a:window_stats::width,X
 	PLY
 	STY $02
 	CLC

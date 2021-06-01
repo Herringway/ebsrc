@@ -24,22 +24,22 @@ UNKNOWN_C44C8C: ;$C44C8C
 	STA $02
 	STA $14
 	LDX $02
-	LDA a:.LOWORD(RAM)+14,X
+	LDA a:window_stats::text_x,X
 	STA $04
 	LDX $02
-	LDA a:.LOWORD(RAM)+16,X
+	LDA a:window_stats::text_y,X
 	STA $12
 	LDX $02
-	LDA a:.LOWORD(RAM)+19,X
+	LDA a:window_stats::curr_tile_attributes,X
 	STA $10
 	LDX $02
 	LDA $04
-	CMP a:.LOWORD(RAM)+10,X
+	CMP a:window_stats::width,X
 	BNE @UNKNOWN5
 	LDA #$0000
 	STA $04
 	LDX $02
-	LDA a:.LOWORD(RAM)+12,X
+	LDA a:window_stats::height,X
 	LSR
 	DEC
 	CMP $12
@@ -87,14 +87,14 @@ UNKNOWN_C44C8C: ;$C44C8C
 	ASL
 	PHA
 	LDX $02
-	LDY a:.LOWORD(RAM)+10,X
+	LDY a:window_stats::width,X
 	LDA $12
 	JSL MULT16
 	ASL
 	ASL
 	LDX $02
 	CLC
-	ADC a:.LOWORD(BG2_X_POS),X
+	ADC a:window_stats::tilemap_address,X
 	PLY
 	STY $02
 	CLC
@@ -121,7 +121,7 @@ UNKNOWN_C44C8C: ;$C44C8C
 	LDA $14
 	STA $02
 	LDX $02
-	LDA a:.LOWORD(RAM)+10,X
+	LDA a:window_stats::width,X
 	ASL
 	STA $02
 	TYA
@@ -151,10 +151,10 @@ UNKNOWN_C44C8C: ;$C44C8C
 	LDA $04
 	LDX $14
 	STX $02
-	STA a:.LOWORD(RAM)+14,X
+	STA a:window_stats::text_x,X
 	LDA $12
 	LDX $02
-	STA a:.LOWORD(RAM)+16,X
+	STA a:window_stats::text_y,X
 @UNKNOWN16:
 	PLD
 	RTS

@@ -18,20 +18,20 @@ UNKNOWN_C43F77: ;$C43F77
 	ADC #.LOWORD(WINDOW_STATS_TABLE)
 	TAX
 	CLC
-	ADC #$000A
+	ADC #window_stats::width
 	TAY
 	STY $10
-	LDA a:.LOWORD(RAM)+14,X
+	LDA a:window_stats::text_x,X
 	ASL
 	STA $04
 	LDA a:.LOWORD(RAM),Y
 	TAY
-	LDA a:.LOWORD(RAM)+16,X
+	LDA a:window_stats::text_y,X
 	JSL MULT16
 	ASL
 	ASL
 	CLC
-	ADC a:.LOWORD(BG2_X_POS),X
+	ADC a:window_stats::tilemap_address,X
 	CLC
 	ADC $04
 	TAX

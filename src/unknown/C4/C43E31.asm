@@ -43,7 +43,7 @@ UNKNOWN_C43E31: ;$C43E31
 	LDA $10
 	STA $02
 	LDX $02
-	LDA a:.LOWORD(RAM)+21,X
+	LDA a:window_stats::font,X
 	OPTIMIZED_MULT $04, 12
 	CLC
 	ADC $0A

@@ -66,7 +66,7 @@ UNKNOWN_C442AC: ;$C442AC
 	LDA [$06],Y
 	STA $04
 	LDX $18
-	STZ a:.LOWORD(RAM)+14,X
+	STZ a:window_stats::text_x,X
 	LDY #$0008
 	LDA [$06],Y
 	STA $16
@@ -118,10 +118,10 @@ UNKNOWN_C442AC: ;$C442AC
 	CMP $1A
 	BCC @UNKNOWN5
 	LDX $18
-	STZ a:.LOWORD(RAM)+14,X
+	STZ a:window_stats::text_x,X
 	LDA #$7700
 	STA $04
-	LDY #$000A
+	LDY #window_stats::width
 	LDA ($18),Y
 	STA $12
 	LDA #$0000

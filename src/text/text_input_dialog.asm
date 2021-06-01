@@ -152,10 +152,10 @@ TEXT_INPUT_DIALOG: ;$C1E57F
 	LDA $04
 	EOR #$0001
 	STA $04
-	LDY #$0010
+	LDY #window_stats::text_y
 	LDA ($1C),Y
 	ASL
-	LDY #$0008
+	LDY #window_stats::window_y
 	CLC
 	ADC ($1C),Y
 	ASL
@@ -164,9 +164,9 @@ TEXT_INPUT_DIALOG: ;$C1E57F
 	ASL
 	ASL
 	STA $02
-	LDY #$0006
+	LDY #window_stats::window_x
 	LDA ($1C),Y
-	LDY #$000E
+	LDY #window_stats::text_x
 	CLC
 	ADC ($1C),Y
 	CLC
@@ -221,7 +221,7 @@ TEXT_INPUT_DIALOG: ;$C1E57F
 	STA $10
 	LDA $20
 	STA $12
-	LDY #$000C
+	LDY #window_stats::height
 	LDA ($1C),Y
 	LSR
 	STA $14
@@ -237,7 +237,7 @@ TEXT_INPUT_DIALOG: ;$C1E57F
 	AND #PAD::LEFT
 	BEQ @UNKNOWN15
 	LOADPTR $7BFFFF, $0E
-	LDY #$000A
+	LDY #window_stats::width
 	LDA ($1C),Y
 	STA $12
 	LDA $22

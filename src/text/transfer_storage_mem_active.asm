@@ -5,7 +5,7 @@ TRANSFER_STORAGE_MEM_ACTIVE: ;$C10380
 	JSR a:.LOWORD(GET_ACTIVE_WINDOW_ADDRESS)
 	STA $0E
 	CLC
-	ADC #$0021
+	ADC #window_stats::working_memory_storage
 	TAY
 	MOVE_INT_YPTRSRC a:.LOWORD(RAM), $06
 	LDA $0E
@@ -15,7 +15,7 @@ TRANSFER_STORAGE_MEM_ACTIVE: ;$C10380
 	MOVE_INT_YPTRDEST $06, a:.LOWORD(RAM)
 	LDA $0E
 	CLC
-	ADC #$0025
+	ADC #window_stats::argument_memory_storage
 	TAY
 	MOVE_INT_YPTRSRC a:.LOWORD(RAM), $06
 	LDA $0E
@@ -26,8 +26,8 @@ TRANSFER_STORAGE_MEM_ACTIVE: ;$C10380
 	LDA $0E
 	PHA
 	TAX
-	LDA a:.LOWORD(RAM)+41,X
+	LDA a:window_stats::secondary_memory_storage,X
 	PLX
-	STA a:.LOWORD(RAM)+31,X
+	STA a:window_stats::secondary_memory,X
 	PLD
 	RTS

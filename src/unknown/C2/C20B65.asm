@@ -49,7 +49,7 @@ UNKNOWN_C20B65: ;$C20B65
 	TAY
 	STY $0E
 @UNKNOWN3:
-	LDY #$000C
+	LDY #window_stats::height
 	LDA ($12),Y
 	LSR
 	STA $02
@@ -82,7 +82,7 @@ UNKNOWN_C20B65: ;$C20B65
 	DEC
 	STA $02
 @UNKNOWN7:
-	LDY #$000A
+	LDY #window_stats::width
 	LDA $02
 	CMP ($12),Y
 	BCC @UNKNOWN5
@@ -96,7 +96,7 @@ UNKNOWN_C20B65: ;$C20B65
 	TAY
 	STY $0E
 @UNKNOWN8:
-	LDY #$000C
+	LDY #window_stats::height
 	LDA ($12),Y
 	LSR
 	STA $02
@@ -126,7 +126,7 @@ UNKNOWN_C20B65: ;$C20B65
 @UNKNOWN11:
 	INC $02
 @UNKNOWN12:
-	LDY #$000A
+	LDY #window_stats::width
 	LDA $02
 	CMP ($12),Y
 	BCC @UNKNOWN10
@@ -138,7 +138,7 @@ UNKNOWN_C20B65: ;$C20B65
 	TAY
 	STY $0E
 @UNKNOWN13:
-	LDY #$000C
+	LDY #window_stats::height
 	LDA ($12),Y
 	LSR
 	STA $02
@@ -167,7 +167,7 @@ UNKNOWN_C20B65: ;$C20B65
 	ADC $14
 	STA $02
 @UNKNOWN17:
-	LDY #$000A
+	LDY #window_stats::width
 	LDA $02
 	CMP ($12),Y
 	BCC @UNKNOWN15
@@ -191,7 +191,7 @@ UNKNOWN_C20B65: ;$C20B65
 	DEY
 	STY $0E
 @UNKNOWN20:
-	LDY #$000C
+	LDY #window_stats::height
 	LDA ($12),Y
 	LSR
 	STA $04
@@ -206,7 +206,7 @@ UNKNOWN_C20B65: ;$C20B65
 	ADC $14
 	STA $02
 @UNKNOWN21:
-	LDY #$000A
+	LDY #window_stats::width
 	LDA $02
 	CMP ($12),Y
 	BCC @UNKNOWN18
@@ -231,7 +231,7 @@ UNKNOWN_C20B65: ;$C20B65
 	INY
 	STY $0E
 @UNKNOWN24:
-	LDY #$000C
+	LDY #window_stats::height
 	LDA ($12),Y
 	LSR
 	STA $04
@@ -245,7 +245,7 @@ UNKNOWN_C20B65: ;$C20B65
 	ADC $14
 	STA $02
 @UNKNOWN25:
-	LDY #$000A
+	LDY #window_stats::width
 	LDA $02
 	CMP ($12),Y
 	BCC @UNKNOWN22

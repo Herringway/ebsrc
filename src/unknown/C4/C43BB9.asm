@@ -38,26 +38,26 @@ UNKNOWN_C43BB9: ;$C43BB9
 	STA $02
 	STA $14
 	LDX $02
-	LDA a:.LOWORD(RAM)+19,X
+	LDA a:window_stats::curr_tile_attributes,X
 	STA $12
 	LDX $02
-	LDA a:.LOWORD(RAM)+14,X
+	LDA a:window_stats::text_x,X
 	STA $10
 	LDX $02
-	LDA a:.LOWORD(RAM)+16,X
+	LDA a:window_stats::text_y,X
 	STA $0E
 	LDA $10
 	ASL
 	PHA
 	LDX $02
-	LDY a:.LOWORD(RAM)+10,X
+	LDY a:window_stats::width,X
 	LDA $0E
 	JSL MULT16
 	ASL
 	ASL
 	LDX $02
 	CLC
-	ADC a:.LOWORD(BG2_X_POS),X
+	ADC a:window_stats::tilemap_address,X
 	PLY
 	STY $02
 	CLC
@@ -85,7 +85,7 @@ UNKNOWN_C43BB9: ;$C43BB9
 	LDA $14
 	STA $02
 	LDX $02
-	LDA a:.LOWORD(RAM)+10,X
+	LDA a:window_stats::width,X
 	TAX
 	LDA $04
 	JSL UNKNOWN_EF00BB
@@ -105,7 +105,7 @@ UNKNOWN_C43BB9: ;$C43BB9
 	LDA $10
 	LDX $14
 	STX $02
-	STA a:.LOWORD(RAM)+14,X
+	STA a:window_stats::text_x,X
 	SEP #PROC_FLAGS::ACCUM8
 	STZ .LOWORD(UNKNOWN_7E9622)
 @UNKNOWN7:

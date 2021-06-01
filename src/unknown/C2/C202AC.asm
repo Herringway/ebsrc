@@ -12,9 +12,9 @@ UNKNOWN_C202AC: ;$C202AC
 	ADC #.LOWORD(WINDOW_STATS_TABLE)
 	TAY
 	CLC
-	ADC #$003C
+	ADC #window_stats::title
 	STA $04
-	LDA a:.LOWORD(RAM)+59,Y
+	LDA a:window_stats::unknown59,Y
 	AND #$00FF
 	BNE @UNKNOWN3
 	LDA #$0000
@@ -46,10 +46,10 @@ UNKNOWN_C202AC: ;$C202AC
 	LDA $10
 	SEP #PROC_FLAGS::ACCUM8
 	INC
-	STA a:.LOWORD(RAM)+59,Y
+	STA a:window_stats::unknown59,Y
 @UNKNOWN3:
 	REP #PROC_FLAGS::ACCUM8
-	LDA a:.LOWORD(RAM)+59,Y
+	LDA a:window_stats::unknown59,Y
 	AND #$00FF
 	DEC
 	ASL

@@ -14,9 +14,9 @@ ENEMY_SELECT_MODE: ;$C1E1A5
 	CLC
 	ADC #.LOWORD(WINDOW_STATS_TABLE)
 	TAX
-	LDA a:.LOWORD(RAM)+14,X
+	LDA a:.LOWORD(RAM)+window_stats::text_x,X
 	STA $20
-	LDA a:.LOWORD(RAM)+16,X
+	LDA a:.LOWORD(RAM)+window_stats::text_y,X
 	STA $1E
 	LDA #$0001
 	STA $1C

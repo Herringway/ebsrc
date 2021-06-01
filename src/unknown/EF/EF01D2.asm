@@ -33,7 +33,7 @@ UNKNOWN_EF01D2: ;$EF01D2
 	LDA .LOWORD(UNKNOWN_7E9E23)
 	AND #$0007
 	STA $04
-	LDA a:.LOWORD(RAM)+14,X
+	LDA a:window_stats::text_x,X
 	DEC
 	ASL
 	ASL
@@ -45,7 +45,7 @@ UNKNOWN_EF01D2: ;$EF01D2
 	CLC
 	ADC $02
 	STA $02
-	LDA a:.LOWORD(RAM)+10,X
+	LDA a:window_stats::width,X
 	ASL
 	ASL
 	ASL

@@ -18,7 +18,7 @@ UNKNOWN_C451FA: ;$C451FA
 	ADC #.LOWORD(WINDOW_STATS_TABLE)
 	STA $26
 	CLC
-	ADC #$002B
+	ADC #window_stats::current_option
 	TAX
 	LDA a:.LOWORD(RAM),X
 	CMP #$FFFF
@@ -26,7 +26,7 @@ UNKNOWN_C451FA: ;$C451FA
 	JMP a:.LOWORD(@UNKNOWN24)
 @UNKNOWN0:
 	LDA $28
-	LDY #$0031
+	LDY #window_stats::unknown49
 	STA ($26),Y
 	LDA a:.LOWORD(RAM),X
 	LDY #$002D
@@ -93,7 +93,7 @@ UNKNOWN_C451FA: ;$C451FA
 	INC $04
 	BRA @UNKNOWN1
 @UNKNOWN2:
-	LDY #$000A
+	LDY #window_stats::width
 	LDA ($26),Y
 	LDY #$0800
 	JSL MULT16
@@ -121,7 +121,7 @@ UNKNOWN_C451FA: ;$C451FA
 	LDA $04
 	CMP #$FFFF
 	BNE @UNKNOWN3
-	LDY #$002B
+	LDY #window_stats::current_option
 	LDA ($26),Y
 	LDY #$002D
 	JSL MULT168
@@ -137,19 +137,19 @@ UNKNOWN_C451FA: ;$C451FA
 	LDA $28
 	DEC
 	JSL MULT16
-	LDY #$000A
+	LDY #window_stats::width
 	CLC
 	ADC ($26),Y
 	LDY $28
 	JSL DIVISION16S_DIVISOR_POSITIVE
 	STA $20
 @UNKNOWN6:
-	LDY #$000C
+	LDY #window_stats::height
 	LDA ($26),Y
 	LSR
 	TAX
 	STX $1E
-	LDY #$002B
+	LDY #window_stats::current_option
 	LDA ($26),Y
 	JSL REDIRECT_C1138D
 	LDX $1E
@@ -171,7 +171,7 @@ UNKNOWN_C451FA: ;$C451FA
 	LDA #$0001
 	STA $1C
 @UNKNOWN8:
-	LDY #$0010
+	LDY #window_stats::text_y
 	LDA ($26),Y
 	STA $02
 	STA $1A
@@ -307,13 +307,13 @@ UNKNOWN_C451FA: ;$C451FA
 @UNKNOWN21:
 	LDA $26
 	CLC
-	ADC #$002B
+	ADC #window_stats::current_option
 	TAX
 	STX $20
 	LDA a:.LOWORD(RAM),X
 	JSL REDIRECT_C1138D
 	STA $2C
-	LDY #$000C
+	LDY #window_stats::height
 	LDA ($26),Y
 	LSR
 	STA $02
@@ -351,7 +351,7 @@ UNKNOWN_C451FA: ;$C451FA
 	BNE @UNKNOWN22
 	LOADPTR UNKNOWN_C3E3F8+84, $0E
 	MOVE_INT_CONSTANT NULL, $12
-	LDY #$000C
+	LDY #window_stats::height
 	LDA ($26),Y
 	LSR
 	TAY
@@ -359,7 +359,7 @@ UNKNOWN_C451FA: ;$C451FA
 	LDX #$0000
 	TXA
 	JSL UNKNOWN_C10BFE
-	LDY #$002D
+	LDY #window_stats::option_count ; also .SIZEOF(u89D4_entry)
 	LDA ($26),Y
 	JSL MULT168
 	TAX
