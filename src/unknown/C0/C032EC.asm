@@ -172,7 +172,7 @@ UNKNOWN_C032EC: ;$C032EC
 	LDY #.SIZEOF(enemy_data)
 	JSL MULT168
 	CLC
-	ADC #$0021
+	ADC #enemy_data::hp
 	MOVE_INTX $0A, $06
 	CLC
 	ADC $06
@@ -201,7 +201,7 @@ UNKNOWN_C032EC: ;$C032EC
 	LDY #.SIZEOF(enemy_data)
 	JSL MULT168
 	CLC
-	ADC #$0021
+	ADC #enemy_data::hp
 	TAX
 	LDA f:ENEMY_CONFIGURATION_TABLE,X
 	STA .LOWORD(GAME_STATE)+game_state::party_npc_2_hp
