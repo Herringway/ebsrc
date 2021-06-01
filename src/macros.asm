@@ -465,6 +465,15 @@
         ASL
         ASL
         ASL
+    .ELSEIF amount = 42
+        STA scratch
+        ASL
+        ASL
+        ADC scratch
+        ASL
+        ASL
+        ADC scratch
+        ASL
     .ELSEIF amount = 44
         STA scratch
         ASL
