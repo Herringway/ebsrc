@@ -1,3 +1,3 @@
 
 BATTLE_FRONT_ROW_TEXT: ;$C454F5
-	EBTEXT "the Front Row"
+	PADDEDEBTEXT "the Front Row", 13
