@@ -44,7 +44,7 @@ CREATE_WINDOW: ;$C104EE
 	CMP #$FFFF
 	BNE @UNKNOWN2
 	LDA #$FFFF
-	STA a:window_stats::unknown2,X
+	STA a:window_stats::next,X
 	LDA $0E
 	STA .LOWORD(UNKNOWN_7E88E2)
 	BRA @UNKNOWN3
@@ -54,13 +54,13 @@ CREATE_WINDOW: ;$C104EE
 	JSL MULT168
 	TAX
 	LDA $0E
-	STA .LOWORD(WINDOW_STATS_TABLE)+window_stats::unknown0,X
+	STA .LOWORD(WINDOW_STATS_TABLE)+window_stats::prev,X
 	LDA .LOWORD(UNKNOWN_7E88E0)
 	LDX $10
-	STA a:window_stats::unknown2,X
+	STA a:window_stats::next,X
 @UNKNOWN3:
 	LDA #$FFFF
-	STA a:window_stats::unknown0,X
+	STA a:window_stats::prev,X
 	LDA $0E
 	STA .LOWORD(UNKNOWN_7E88E0)
 	BRA @UNKNOWN7
@@ -69,24 +69,24 @@ CREATE_WINDOW: ;$C104EE
 	CMP #$FFFF
 	BNE @UNKNOWN5
 	LDA #$FFFF
-	STA a:window_stats::unknown0,X
+	STA a:window_stats::prev,X
 	LDA $0E
 	STA .LOWORD(UNKNOWN_7E88E0)
 	BRA @UNKNOWN6
 @UNKNOWN5:
 	LDA .LOWORD(UNKNOWN_7E88E2)
-	STA a:window_stats::unknown0,X
+	STA a:window_stats::prev,X
 	LDA .LOWORD(UNKNOWN_7E88E2)
 	LDY #.SIZEOF(window_stats)
 	JSL MULT168
 	TAX
 	LDA $0E
-	STA .LOWORD(WINDOW_STATS_TABLE)+window_stats::unknown2,X
+	STA .LOWORD(WINDOW_STATS_TABLE)+window_stats::next,X
 @UNKNOWN6:
 	STA .LOWORD(UNKNOWN_7E88E2)
 	LDA #$FFFF
 	LDX $10
-	STA a:window_stats::unknown2,X
+	STA a:window_stats::next,X
 @UNKNOWN7:
 	LDY $14
 	TYA

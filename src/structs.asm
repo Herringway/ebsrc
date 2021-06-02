@@ -225,8 +225,8 @@
 .ENDSTRUCT
 
 .STRUCT window_stats
-	unknown0 .word ;0
-	unknown2 .word ;2
+	prev .word ;0 - index into WINDOW_STATS_TABLE
+	next .word ;2 - index into WINDOW_STATS_TABLE
 	id .word ;4
 	window_x .word ;6
 	window_y .word ;8

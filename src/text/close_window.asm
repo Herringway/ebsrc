@@ -28,9 +28,9 @@ CLOSE_WINDOW: ;$C3E521
 	LDY #.SIZEOF(window_stats)
 	JSL MULT168
 	TAX
-	LDY .LOWORD(WINDOW_STATS_TABLE)+window_stats::unknown2,X
+	LDY .LOWORD(WINDOW_STATS_TABLE)+window_stats::next,X
 	STY $14
-	LDA .LOWORD(WINDOW_STATS_TABLE)+window_stats::unknown0,X
+	LDA .LOWORD(WINDOW_STATS_TABLE)+window_stats::prev,X
 	STA $12
 	CPY #$FFFF
 	BNE @UNKNOWN3
@@ -42,7 +42,7 @@ CLOSE_WINDOW: ;$C3E521
 	JSL MULT168
 	TAX
 	LDA $12
-	STA .LOWORD(WINDOW_STATS_TABLE)+window_stats::unknown0,X
+	STA .LOWORD(WINDOW_STATS_TABLE)+window_stats::prev,X
 @UNKNOWN4:
 	CMP #$FFFF
 	BNE @UNKNOWN5
@@ -55,7 +55,7 @@ CLOSE_WINDOW: ;$C3E521
 	TAX
 	LDY $14
 	TYA
-	STA .LOWORD(WINDOW_STATS_TABLE)+window_stats::unknown2,X
+	STA .LOWORD(WINDOW_STATS_TABLE)+window_stats::next,X
 @UNKNOWN6:
 	LDA $04
 	LDY #.SIZEOF(window_stats)
