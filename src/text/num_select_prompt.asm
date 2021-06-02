@@ -19,9 +19,9 @@ NUM_SELECT_PROMPT: ;$C1101C
 	CLC
 	ADC #.LOWORD(WINDOW_STATS_TABLE)
 	TAX
-	LDA a:.LOWORD(RAM)+14,X
+	LDA a:window_stats::text_x,X
 	STA $24
-	LDA a:.LOWORD(RAM)+16,X
+	LDA a:window_stats::text_y,X
 	STA $22
 	MOVE_INT_CONSTANT NULL, $06
 	MOVE_INT $06, $1E

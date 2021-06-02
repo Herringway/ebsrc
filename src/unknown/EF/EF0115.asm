@@ -10,10 +10,10 @@ UNKNOWN_EF0115: ;$EF0115
 	CLC
 	ADC #.LOWORD(WINDOW_STATS_TABLE)
 	TAX
-	LDY a:.LOWORD(RAM)+53,X
+	LDY a:window_stats::tilemap_address,X
 	STY $10
-	LDY a:.LOWORD(RAM)+12,X
-	LDA a:.LOWORD(RAM)+10,X
+	LDY a:window_stats::height,X
+	LDA a:window_stats::width,X
 	JSL MULT16
 	TAX
 	STX $0E

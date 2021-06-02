@@ -47,7 +47,7 @@ CREATE_WINDOW: ;$C104EE
 	CMP #$FFFF
 	BNE @UNKNOWN2
 	LDA #$FFFF
-	STA a:.LOWORD(RAM)+2,X
+	STA a:window_stats::next,X
 	LDA $0E
 	STA .LOWORD(UNKNOWN_7E88E2)
 	BRA @UNKNOWN3
@@ -57,13 +57,13 @@ CREATE_WINDOW: ;$C104EE
 	JSL MULT168
 	TAX
 	LDA $0E
-	STA .LOWORD(WINDOW_STATS_TABLE),X
+	STA .LOWORD(WINDOW_STATS_TABLE)+window_stats::prev,X
 	LDA .LOWORD(UNKNOWN_7E88E0)
 	LDX $10
-	STA a:.LOWORD(RAM)+2,X
+	STA a:window_stats::next,X
 @UNKNOWN3:
 	LDA #$FFFF
-	STA a:.LOWORD(RAM),X
+	STA a:window_stats::prev,X
 	LDA $0E
 	STA .LOWORD(UNKNOWN_7E88E0)
 	BRA @UNKNOWN7
@@ -72,28 +72,28 @@ CREATE_WINDOW: ;$C104EE
 	CMP #$FFFF
 	BNE @UNKNOWN5
 	LDA #$FFFF
-	STA a:.LOWORD(RAM),X
+	STA a:window_stats::prev,X
 	LDA $0E
 	STA .LOWORD(UNKNOWN_7E88E0)
 	BRA @UNKNOWN6
 @UNKNOWN5:
 	LDA .LOWORD(UNKNOWN_7E88E2)
-	STA a:.LOWORD(RAM),X
+	STA a:window_stats::prev,X
 	LDA .LOWORD(UNKNOWN_7E88E2)
 	LDY #.SIZEOF(window_stats)
 	JSL MULT168
 	TAX
 	LDA $0E
-	STA .LOWORD(WINDOW_STATS_TABLE)+2,X
+	STA .LOWORD(WINDOW_STATS_TABLE)+window_stats::next,X
 @UNKNOWN6:
 	STA .LOWORD(UNKNOWN_7E88E2)
 	LDA #$FFFF
 	LDX $10
-	STA a:.LOWORD(RAM)+2,X
+	STA a:window_stats::next,X
 @UNKNOWN7:
 	LDY $14
 	TYA
-	STA a:.LOWORD(RAM)+4,X
+	STA a:window_stats::id,X
 	TYA
 	ASL
 	TAX
@@ -111,7 +111,7 @@ CREATE_WINDOW: ;$C104EE
 	STA $0A
 	LDA [$0A]
 	LDX $10
-	STA a:.LOWORD(RAM)+6,X
+	STA a:window_stats::window_x,X
 	LDA $04
 	INC
 	INC
@@ -120,7 +120,7 @@ CREATE_WINDOW: ;$C104EE
 	ADC $0A
 	STA $0A
 	LDA [$0A]
-	STA a:.LOWORD(RAM)+8,X
+	STA a:window_stats::window_y,X
 	LDA $04
 	INC
 	INC
@@ -133,7 +133,7 @@ CREATE_WINDOW: ;$C104EE
 	LDA [$0A]
 	DEC
 	DEC
-	STA a:.LOWORD(RAM)+10,X
+	STA a:window_stats::width,X
 	LDA $04
 	CLC
 	ADC #$0006
@@ -143,92 +143,92 @@ CREATE_WINDOW: ;$C104EE
 	LDA [$06]
 	DEC
 	DEC
-	STA a:.LOWORD(RAM)+12,X
+	STA a:window_stats::height,X
 	LDY #$03F0
 	LDA $0E
 	JSL MULT16
 	CLC
 	ADC #.LOWORD(UNKNOWN_7E5E7E)
-	STA a:.LOWORD(RAM)+53,X
+	STA a:window_stats::tilemap_address,X
 	LDY $14
 	STY .LOWORD(CURRENT_FOCUS_WINDOW)
 @UNKNOWN8:
-	STZ a:.LOWORD(RAM)+16,X
-	STZ a:.LOWORD(RAM)+14,X
+	STZ a:window_stats::text_y,X
+	STZ a:window_stats::text_x,X
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0080
-	STA a:.LOWORD(RAM)+18,X
+	STA a:window_stats::unknown18,X
 	REP #PROC_FLAGS::ACCUM8
-	STZ a:.LOWORD(RAM)+19,X
-	STZ a:.LOWORD(RAM)+21,X
+	STZ a:window_stats::curr_tile_attributes,X
+	STZ a:window_stats::font,X
 	LDA $02
 	CLC
-	ADC #$0017
+	ADC #window_stats::working_memory
 	TAY
 	MOVE_INT_YPTRSRC a:.LOWORD(RAM), $06
 	TXA
 	CLC
-	ADC #$0017
+	ADC #window_stats::working_memory
 	TAY
 	MOVE_INT_YPTRDEST $06, a:.LOWORD(RAM)
 	LDA $02
 	CLC
-	ADC #$001B
+	ADC #window_stats::argument_memory
 	TAY
 	MOVE_INT_YPTRSRC a:.LOWORD(RAM), $06
 	TXA
 	CLC
-	ADC #$001B
+	ADC #window_stats::argument_memory
 	TAY
 	MOVE_INT_YPTRDEST $06, a:.LOWORD(RAM)
 	LDA $02
 	CLC
-	ADC #$0021
+	ADC #window_stats::working_memory_storage
 	TAY
 	MOVE_INT_YPTRSRC a:.LOWORD(RAM), $06
 	TXA
 	CLC
-	ADC #$0021
+	ADC #window_stats::working_memory_storage
 	TAY
 	MOVE_INT_YPTRDEST $06, a:.LOWORD(RAM)
 	LDA $02
 	CLC
-	ADC #$0025
+	ADC #window_stats::argument_memory_storage
 	TAY
 	MOVE_INT_YPTRSRC a:.LOWORD(RAM), $06
 	TXA
 	CLC
-	ADC #$0025
+	ADC #window_stats::argument_memory_storage
 	TAY
 	MOVE_INT_YPTRDEST $06, a:.LOWORD(RAM)
 	LDX $02
-	LDA a:.LOWORD(RAM)+31,X
+	LDA a:window_stats::secondary_memory,X
 	LDX $10
-	STA a:.LOWORD(RAM)+31,X
+	STA a:window_stats::secondary_memory,X
 	LDX $02
-	LDA a:.LOWORD(RAM)+41,X
+	LDA a:window_stats::secondary_memory_storage,X
 	LDX $10
-	STA a:.LOWORD(RAM)+41,X
+	STA a:window_stats::secondary_memory_storage,X
 	LDA #$FFFF
-	STA a:.LOWORD(RAM)+47,X
-	STA a:.LOWORD(RAM)+45,X
-	STA a:.LOWORD(RAM)+43,X
+	STA a:window_stats::selected_option,X
+	STA a:window_stats::option_count,X
+	STA a:window_stats::current_option,X
 	LDA #$0001
-	STA a:.LOWORD(RAM)+49,X
-	STA a:.LOWORD(RAM)+51,X
+	STA a:window_stats::unknown49,X
+	STA a:window_stats::menu_page_number,X
 	LDA #$0000
 	STA $06
 	LDA #$0000
 	STA $08
 	TXA
 	CLC
-	ADC #$0037
+	ADC #window_stats::cursor_move_callback
 	TAY
 	MOVE_INT_YPTRDEST $06, a:.LOWORD(RAM)
-	LDY a:.LOWORD(RAM)+53,X
+	LDY a:window_stats::tilemap_address,X
 	STY $0E
-	LDY a:.LOWORD(RAM)+12,X
-	LDA a:.LOWORD(RAM)+10,X
+	LDY a:window_stats::height,X
+	LDA a:window_stats::width,X
 	JSL MULT16
 	STA $02
 	BRA @UNKNOWN11
@@ -251,7 +251,7 @@ CREATE_WINDOW: ;$C104EE
 	LDA $02
 	BNE @UNKNOWN9
 	LDX $10
-	LDA a:.LOWORD(RAM)+59,X
+	LDA a:window_stats::unknown59,X
 	AND #$00FF
 	BEQ @UNKNOWN12
 	AND #$00FF
@@ -263,8 +263,8 @@ CREATE_WINDOW: ;$C104EE
 @UNKNOWN12:
 	LDX $10
 	SEP #PROC_FLAGS::ACCUM8
-	STZ a:.LOWORD(RAM)+60,X
-	STZ a:.LOWORD(RAM)+59,X
+	STZ a:window_stats::title,X
+	STZ a:window_stats::unknown59,X
 	JSL UNKNOWN_C45E96
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0001

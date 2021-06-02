@@ -4,7 +4,7 @@ GET_WORKING_MEMORY: ;$C1040A
 	RESERVE_STACK_SPACE_CLOBBER 14
 	JSR a:.LOWORD(GET_ACTIVE_WINDOW_ADDRESS)
 	CLC
-	ADC #window_stats::wram_address
+	ADC #window_stats::working_memory
 	TAY
 	MOVE_INT_YPTRSRC a:.LOWORD(RAM), $06
 	MOVE_INT $06, $14

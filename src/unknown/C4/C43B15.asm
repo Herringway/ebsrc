@@ -12,17 +12,17 @@ UNKNOWN_C43B15: ;$C43B15
 	ADC #.LOWORD(WINDOW_STATS_TABLE)
 	TAX
 	STX $12
-	LDA a:.LOWORD(RAM)+19,X
+	LDA a:window_stats::curr_tile_attributes,X
 	STA $10
-	LDA a:.LOWORD(RAM)+10,X
+	LDA a:window_stats::width,X
 	STA $04
 	LDY $04
-	LDA a:.LOWORD(RAM)+16,X
+	LDA a:window_stats::text_y,X
 	JSL MULT16
 	ASL
 	ASL
 	CLC
-	ADC a:.LOWORD(BG2_X_POS),X
+	ADC a:window_stats::tilemap_address,X
 	TAY
 	LDA $04
 	DEC
@@ -47,7 +47,7 @@ UNKNOWN_C43B15: ;$C43B15
 	CMP #$0040
 	BEQ @UNKNOWN0
 	LDX $12
-	LDA a:.LOWORD(RAM)+14,X
+	LDA a:window_stats::text_x,X
 	STA $12
 	ASL
 	STA $02

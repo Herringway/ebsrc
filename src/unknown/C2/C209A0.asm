@@ -13,10 +13,10 @@ UNKNOWN_C209A0: ;$C209A0
 	ADC #.LOWORD(WINDOW_STATS_TABLE)
 	TAX
 	STX $10
-	LDY a:.LOWORD(RAM)+53,X
+	LDY a:window_stats::tilemap_address,X
 	STY $0E
-	LDY a:.LOWORD(RAM)+12,X
-	LDA a:.LOWORD(RAM)+10,X
+	LDY a:window_stats::height,X
+	LDA a:window_stats::width,X
 	JSL MULT16
 	STA $02
 	BRA @UNKNOWN2
@@ -39,7 +39,7 @@ UNKNOWN_C209A0: ;$C209A0
 	LDA $02
 	BNE @UNKNOWN0
 	LDX $10
-	LDA a:.LOWORD(RAM)+59,X
+	LDA a:window_stats::unknown59,X
 	AND #$00FF
 	BEQ @UNKNOWN3
 	AND #$00FF
@@ -51,8 +51,8 @@ UNKNOWN_C209A0: ;$C209A0
 @UNKNOWN3:
 	LDX $10
 	SEP #PROC_FLAGS::ACCUM8
-	STZ a:.LOWORD(RAM)+60,X
-	STZ a:.LOWORD(RAM)+59,X
+	STZ a:window_stats::title,X
+	STZ a:window_stats::unknown59,X
 	LDA #$0001
 	STA .LOWORD(UNKNOWN_7E9623)
 	JSL UNKNOWN_C07C5B

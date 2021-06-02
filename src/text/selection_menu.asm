@@ -23,20 +23,20 @@ SELECTION_MENU: ;$C1196A
 	AND #$00FF
 	BEQ @UNKNOWN1
 	LDA .LOWORD(UNKNOWN_7E9688)
-	LDY #window_stats::argument_memory_storage
+	LDY #window_stats::current_option
 	STA ($24),Y
 	LDA .LOWORD(UNKNOWN_7E968A)
-	LDY #window_stats::secondary_memory_storage
+	LDY #window_stats::selected_option
 	STA ($24),Y
 @UNKNOWN1:
-	LDY #window_stats::secondary_memory_storage
+	LDY #window_stats::selected_option
 	LDA ($24),Y
 	CMP #$FFFF
 	BEQ @UNKNOWN4
 	TAX
 	STX $22
 	STA $20
-	LDY #window_stats::argument_memory_storage
+	LDY #window_stats::current_option
 	LDA ($24),Y
 	LDY #.SIZEOF(u89D4_entry)
 	JSL MULT168
@@ -83,7 +83,7 @@ SELECTION_MENU: ;$C1196A
 	BRA @UNKNOWN5
 @UNKNOWN4:
 	STZ $20
-	LDY #window_stats::argument_memory_storage
+	LDY #window_stats::current_option
 	LDA ($24),Y
 	LDY #.SIZEOF(u89D4_entry)
 	JSL MULT168
@@ -114,7 +114,7 @@ SELECTION_MENU: ;$C1196A
 	MOVE_INT_CONSTANT NULL, $0A
 	LDA $24
 	CLC
-	ADC #$0037
+	ADC #window_stats::cursor_move_callback
 	TAY
 	MOVE_INT_YPTRSRC a:.LOWORD(RAM), $06
 	CMP $0C
@@ -137,7 +137,7 @@ SELECTION_MENU: ;$C1196A
 	STA $1C
 	LDA $24
 	CLC
-	ADC #$0037
+	ADC #window_stats::cursor_move_callback
 	TAY
 	MOVE_INT_YPTRSRC a:.LOWORD(RAM), $06
 	LDA $1C
@@ -487,7 +487,7 @@ SELECTION_MENU: ;$C1196A
 	JSR a:.LOWORD(UNKNOWN_C10FEA)
 	JSL CLEAR_9622
 	LDA $20
-	LDY #window_stats::secondary_memory_storage
+	LDY #window_stats::selected_option
 	STA ($24),Y
 	LDX $04
 	LDA a:.LOWORD(RAM),X
@@ -506,7 +506,7 @@ SELECTION_MENU: ;$C1196A
 	JSR a:.LOWORD(UNKNOWN_C10FA3)
 	LDA $24
 	CLC
-	ADC #$0033
+	ADC #window_stats::menu_page_number
 	TAX
 	STX $22
 	LDA a:.LOWORD(RAM),X
@@ -581,7 +581,7 @@ SELECTION_MENU: ;$C1196A
 @UNKNOWN40:
 	LDA #$0000
 	STA $02
-	LDY #window_stats::argument_memory_storage
+	LDY #window_stats::current_option
 	LDA ($24),Y
 	LDY #.SIZEOF(u89D4_entry)
 	JSL MULT168
@@ -620,7 +620,7 @@ SELECTION_MENU: ;$C1196A
 	TAY
 	STY $20
 	TYA
-	LDY #$0033
+	LDY #window_stats::menu_page_number
 	CMP ($24),Y
 	BEQ @UNKNOWN43
 	LDY $20

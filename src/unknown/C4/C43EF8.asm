@@ -19,7 +19,7 @@ UNKNOWN_C43EF8: ;$C43EF8
 	JSL UNKNOWN_C43E31
 	STA $02
 	LDX $14
-	LDA a:.LOWORD(RAM)+10,X
+	LDA a:window_stats::width,X
 	ASL
 	ASL
 	ASL
@@ -27,7 +27,7 @@ UNKNOWN_C43EF8: ;$C43EF8
 	SBC $02
 	LSR
 	STA $12
-	LDA a:.LOWORD(RAM)+16,X
+	LDA a:window_stats::text_y,X
 	TAX
 	LDA $12
 	JSL UNKNOWN_C43D75

@@ -219,7 +219,8 @@
 .ENDSTRUCT
 
 .STRUCT window_stats
-	unknown0 .byte 4 ;0
+	prev .word ;0 - index into WINDOW_STATS_TABLE
+	next .word ;2 - index into WINDOW_STATS_TABLE
 	id .word ;4
 	window_x .word ;6
 	window_y .word ;8
@@ -227,21 +228,24 @@
 	height .word ;12
 	text_x .word ;14
 	text_y .word ;16
-	text_width .word ;18
-	text_height .word ;20
-	unknown22 .byte ;22
-	wram_address .word ;23
-	font .byte ;25
-	unknown26 .byte ;26
-	argument_memory .byte 4 ;27
-	working_memory .byte 4 ;31
-	secondary_memory .byte 4 ;35
-	working_memory_storage .byte 4 ;39
-	argument_memory_storage .byte 4 ;43 - may actually be a pair of $7E89D4 entries
-	secondary_memory_storage .byte 4 ;47
-	unknown51 .byte 4 ;51
-	unknown55 .dword ;55 - a pointer for something
-	unknown59 .byte 23 ;59
+	unknown18 .byte ;18
+	curr_tile_attributes .word ;19
+	font .word ;21
+	working_memory .dword ;23
+	argument_memory .dword ;27
+	secondary_memory .word ;31
+	working_memory_storage .dword ;33
+	argument_memory_storage .dword ;37
+	secondary_memory_storage .word ;41
+	current_option .word ;43 - 89D4 entry number
+	option_count .word ;45
+	selected_option .word ;47
+	unknown49 .word ;49
+	menu_page_number .word ;51
+	tilemap_address .word ;53
+	cursor_move_callback .dword ;55
+	unknown59 .byte ;59
+	title .byte 22 ;60
 .ENDSTRUCT
 
 .STRUCT npc_config

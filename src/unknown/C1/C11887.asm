@@ -16,8 +16,8 @@ UNKNOWN_C11887: ;$C11887
 	TAY
 	STY $0E
 	LDA $10
-	STA a:.LOWORD(RAM)+47,Y
-	LDA a:.LOWORD(RAM)+43,Y
+	STA a:window_stats::selected_option,Y
+	LDA a:window_stats::current_option,Y
 	LDY #.SIZEOF(u89D4_entry)
 	JSL MULT168
 	CLC
@@ -38,7 +38,7 @@ UNKNOWN_C11887: ;$C11887
 	BNE @UNKNOWN0
 	LDA a:.LOWORD(RAM)+6,X
 	LDY $0E
-	STA a:.LOWORD(RAM)+51,Y
+	STA a:window_stats::menu_page_number,Y
 @UNKNOWN2:
 	JSR a:.LOWORD(PRINT_MENU_ITEMS)
 	PLD

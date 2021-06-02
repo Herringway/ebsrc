@@ -34,7 +34,7 @@ UNKNOWN_C113D1: ;$C113D1
 	STY $0E
 	LDA $02
 	CLC
-	ADC #$002B
+	ADC #window_stats::current_option
 	TAX
 	LDA a:.LOWORD(RAM),X
 	CMP #$FFFF
@@ -47,7 +47,7 @@ UNKNOWN_C113D1: ;$C113D1
 @UNKNOWN2:
 	LDA $02
 	CLC
-	ADC #.SIZEOF(u89D4_entry)
+	ADC #window_stats::option_count
 	TAX
 	LDA a:.LOWORD(RAM),X
 	STA a:.LOWORD(RAM)+4,Y
@@ -59,7 +59,7 @@ UNKNOWN_C113D1: ;$C113D1
 	STA .LOWORD(UNKNOWN_7E89D4)+2,X
 @UNKNOWN3:
 	LDX $02
-	STA a:.LOWORD(RAM)+.SIZEOF(u89D4_entry),X
+	STA a:window_stats::option_count,X
 	LDA #$FFFF
 	LDY $0E
 	STA a:.LOWORD(RAM)+2,Y

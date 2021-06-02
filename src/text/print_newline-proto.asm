@@ -14,18 +14,18 @@ PRINT_NEWLINE: ;$C438B1
 	STY $10
 	JSL UNKNOWN_C45E96
 	LDY $10
-	LDA a:.LOWORD(RAM)+21,Y
+	LDA a:window_stats::font,Y
 	BEQ @UNKNOWN0
 	JSL UNKNOWN_C45E96
 @UNKNOWN0:
 	LDY $10
 	TYA
 	CLC
-	ADC #$0010
+	ADC #window_stats::text_y
 	TAX
 	LDA a:.LOWORD(RAM),X
 	STA $0E
-	LDA a:.LOWORD(RAM)+12,Y
+	LDA a:window_stats::height,Y
 	LSR
 	DEC
 	STA $02
@@ -41,6 +41,6 @@ PRINT_NEWLINE: ;$C438B1
 @UNKNOWN2:
 	LDY $10
 	TYX
-	STZ a:.LOWORD(RAM)+14,X
+	STZ a:window_stats::text_x,X
 	PLD
 	RTL

@@ -12,12 +12,12 @@ UNKNOWN_EF016F: ;$EF016F
 	ADC #.LOWORD(WINDOW_STATS_TABLE)
 	STA $12
 	CLC
-	ADC #$002B
+	ADC #window_stats::current_option
 	TAY
 	STY $10
 	LDA $12
 	CLC
-	ADC #$002F
+	ADC #window_stats::selected_option
 	STA $0E
 	TAX
 	LDA a:.LOWORD(RAM),X

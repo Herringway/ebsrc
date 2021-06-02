@@ -17,7 +17,7 @@ UNKNOWN_C208B8: ;$C208B8
 	LDA $10
 	ASL
 	STA $02
-	LDA a:.LOWORD(RAM)+10,Y
+	LDA a:window_stats::width,Y
 	TAY
 	LDX $12
 	TXA
@@ -26,7 +26,7 @@ UNKNOWN_C208B8: ;$C208B8
 	ASL
 	LDY $0E
 	CLC
-	ADC a:.LOWORD(RAM)+53,Y
+	ADC a:window_stats::tilemap_address,Y
 	CLC
 	ADC $02
 	TAX

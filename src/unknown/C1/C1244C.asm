@@ -204,7 +204,7 @@ UNKNOWN_C1244C: ;$C1244C
 	STA $06
 	DEREFERENCE_PTR_TO $06, $06
 	MOVE_INT $06, $0E
-	LDY #$0008
+	LDY #window_stats::window_y
 	LDA ($1A),Y
 	ASL
 	ASL
@@ -212,9 +212,9 @@ UNKNOWN_C1244C: ;$C1244C
 	ASL
 	ASL
 	STA $02
-	LDY #$0006
+	LDY #window_stats::window_x
 	LDA ($1A),Y
-	LDY #$000A
+	LDY #window_stats::width
 	CLC
 	ADC ($1A),Y
 	DEC

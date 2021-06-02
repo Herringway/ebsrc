@@ -17,7 +17,7 @@ PRINT_MENU_ITEMS: ;$C1163C
 	ADC #.LOWORD(WINDOW_STATS_TABLE)
 	STA $04
 	LDX $04
-	LDA a:.LOWORD(RAM)+43,X
+	LDA a:window_stats::current_option,X
 	CMP #$FFFF
 	BNE @UNKNOWN1
 	SEP #PROC_FLAGS::ACCUM8
@@ -36,7 +36,7 @@ PRINT_MENU_ITEMS: ;$C1163C
 	LDX $02
 	LDA a:.LOWORD(RAM)+6,X
 	LDX $04
-	CMP a:.LOWORD(RAM)+51,X
+	CMP a:window_stats::menu_page_number,X
 	BEQ @UNKNOWN3
 	CMP #$0000
 	BEQ @UNKNOWN3
@@ -58,7 +58,7 @@ PRINT_MENU_ITEMS: ;$C1163C
 	JSR a:.LOWORD(UNKNOWN_C10FEA)
 	LDA $04
 	CLC
-	ADC #$003C
+	ADC #window_stats::title
 	TAY
 	LDA a:.LOWORD(RAM),Y
 	AND #$00FF
@@ -91,7 +91,7 @@ PRINT_MENU_ITEMS: ;$C1163C
 	REP #PROC_FLAGS::ACCUM8
 	LDA $04
 	CLC
-	ADC #$0033
+	ADC #window_stats::menu_page_number
 	TAY
 	STY $14
 	SEP #PROC_FLAGS::ACCUM8
@@ -132,7 +132,7 @@ PRINT_MENU_ITEMS: ;$C1163C
 	LDA a:.LOWORD(RAM),Y
 	STA $14
 	LDX $04
-	LDA a:.LOWORD(RAM)+45,X
+	LDA a:window_stats::option_count,X
 	LDY #.SIZEOF(u89D4_entry)
 	JSL MULT168
 	TAX
