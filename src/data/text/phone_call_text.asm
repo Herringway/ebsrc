@@ -1,0 +1,3 @@
+
+PHONE_CALL_TEXT:
+	EBTEXT "Call:"

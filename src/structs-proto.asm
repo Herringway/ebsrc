@@ -27,13 +27,13 @@
 	base_iq .byte ;34
 	items .byte 14 ;35
 	equipment .byte 4 ;49
-	.dword 2 ;53
+	unknown53 .dword 2 ;53
 	position_index .word ;61
-	.dword ;63
-	.word ;67
+	unknown63 .dword ;63
+	unknown67 .word ;67
 	current_hp .word ;69
 	current_hp_target .word ;71
-	.word ;73
+	unknown73 .word ;73
 	current_pp .word ;75
 	current_pp_target .word ;77
 	hp_pp_window_options .word ;79
@@ -48,9 +48,9 @@
 	boosted_vitality .byte ;89
 	boosted_iq .byte ;90
 	boosted_luck .byte ;91
-	.byte ;92
-	.byte ;93
-	.byte ;94
+	unknown92 .byte ;92
+	unknown93 .byte ;93
+	unknown94 .byte ;94
 .ENDSTRUCT
 
 .STRUCT photo_state
@@ -144,15 +144,9 @@
 	hypnosis_brainshock_vulnerability .byte ;67
 	miss_rate .byte ;68
 	action_order .byte ;69
-	action_1 .word ;70
-	action_2 .word ;72
-	action_3 .word ;74
-	action_4 .word ;76
+	actions .word 4 ;70
 	final_action .word ;78
-	action_1_arg .byte ;80
-	action_2_arg .byte ;81
-	action_3_arg .byte ;82
-	action_4_arg .byte ;83
+	action_args .byte 4 ;80
 	final_action_arg .byte ;84
 	iq .byte ;85
 	boss .byte ;86
@@ -167,21 +161,21 @@
 
 .STRUCT battler
 	id .byte ;0
-	.byte ;1
+	unknown01 .byte ;1
 	sprite .byte ;2
-	.byte ;3
+	unknown03 .byte ;3
 	current_action .word ;4
 	action_order_var .byte ;6
-	.byte ;7
+	unknown07 .byte ;7
 	current_action_argument .byte ;8
-	.byte ;9
+	unknown09 .byte ;9 - flags of some sort?
 	current_target .byte ;10
 	the_flag .byte ;11
 	consciousness .byte ;12
-	.byte ;13
+	unknown13 .byte ;13
 	ally_or_enemy .byte ;14
 	npc_id .byte ;15
-	row .byte ;16
+	row .byte ;16 - might actually be an id for game_state's party_npc_*
 	hp .word ;17
 	hp_target .word ;19
 	hp_max .word ;21
@@ -215,13 +209,13 @@
 	sprite_x .byte ;66
 	sprite_y .byte ;67
 	initiative .byte ;68
-	.byte ;69
-	.byte 2 ;70
-	.byte ;72
-	.byte ;73
-	.byte ;74
+	unknown69 .byte ;69
+	unknown70 .byte 2 ;70
+	unknown72 .byte ;72
+	unknown73 .byte ;73
+	unknown74 .byte ;74
 	id2 .byte ;75
-	.byte 2;76
+	unknown76 .byte 2;76
 .ENDSTRUCT
 
 .STRUCT window_stats
@@ -466,4 +460,12 @@
 	unknown24 .byte 4 ;24
 	unknown28 .byte 356 ;28
 	unknown384 .byte 64 ;384
+.ENDSTRUCT
+
+.STRUCT unknown_A97D
+	unknown0 .byte 1 ;0
+	unknown1 .byte 1 ;4
+	unknown2 .byte 2 ;8
+	unknown4 .byte 1 ;12
+	unknown5 .byte 1 ;12
 .ENDSTRUCT

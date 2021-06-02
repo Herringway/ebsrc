@@ -70,8 +70,7 @@ CC_1D_0C: ;$C17058
 	TAX
 	LDA a:.LOWORD(RAM),X
 	AND #$00FF
-	LDY #.SIZEOF(item)
-	JSL MULT168
+	OPTIMIZED_MULT $04, .SIZEOF(item)
 	CLC
 	ADC #item::flags
 	TAX

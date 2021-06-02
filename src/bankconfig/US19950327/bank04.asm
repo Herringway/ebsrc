@@ -478,13 +478,15 @@
 
 .INCLUDE "misc/change_equipped_other.asm"
 
-.INCLUDE "data/powers_of_two_4.asm"
+.INCLUDE "data/item_usable_flags.asm"
 
 .INCLUDE "misc/check_status_group.asm"
 
 .INCLUDE "misc/inflict_status_nonbattle.asm"
 
 .INCLUDE "data/battle/misc_target_text.asm"
+
+.INCLUDE "data/text/phone_call_text.asm"
 
 .INCLUDE "misc/get_required_exp.asm"
 

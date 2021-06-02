@@ -7,7 +7,7 @@ BTLACT_COLD: ;$C28B6D
 	BNE @UNKNOWN1
 	LDX .LOWORD(CURRENT_TARGET)
 	SEP #PROC_FLAGS::ACCUM8
-	LDA a:.LOWORD(RAM)+battler::freeze_resist,X
+	LDA a:battler::freeze_resist,X
 	JSR a:.LOWORD(SUCCESS_255)
 	.A16
 	CMP #$0000

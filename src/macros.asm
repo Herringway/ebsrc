@@ -465,6 +465,24 @@
         ASL
         ASL
         ASL
+    .ELSEIF amount = 42
+        STA scratch
+        ASL
+        ASL
+        ADC scratch
+        ASL
+        ASL
+        ADC scratch
+        ASL
+    .ELSEIF amount = 44
+        STA scratch
+        ASL
+        ASL
+        ADC scratch
+        ASL
+        ADC scratch
+        ASL
+        ASL
     .ELSEIF amount = 48
         STA scratch
         ASL
@@ -499,7 +517,8 @@
         ASL
         ASL
     .ELSE
-        .ASSERT 0, error, "Unsupported multiplication amount"
+        LDY #amount
+        JSL MULT168
     .ENDIF
 .ENDMACRO
 
@@ -518,6 +537,11 @@
     STA dest
     LDA src+2
     STA dest+2
+.ENDMACRO
+
+.MACRO MOVE_INT64 src, dest
+    MOVE_INT src, dest
+    MOVE_INT src + 4, dest + 4
 .ENDMACRO
 
 .MACRO ADD_INT val1, val2, dest
@@ -603,6 +627,16 @@
     STY dest+2
 .ENDMACRO
 
+.MACRO MOVE_INT64X src, dest
+    MOVE_INTX src, dest
+    MOVE_INTX src + 4, dest + 4
+.ENDMACRO
+
+.MACRO MOVE_INT64Y src, dest
+    MOVE_INTY src, dest
+    MOVE_INTY src + 4, dest + 4
+.ENDMACRO
+
 .MACRO MOVE_INT_CONSTANT constant, dest
     LDA #.LOWORD(constant)
     STA dest
@@ -622,6 +656,16 @@
     STA dest, Y
     LDA src+2
     STA dest+2, Y
+.ENDMACRO
+
+.MACRO MOVE_INT64_XPTRDEST src, dest
+    MOVE_INT_XPTRDEST src, dest
+    MOVE_INT_XPTRDEST src + 4, dest + 4
+.ENDMACRO
+
+.MACRO MOVE_INT64_YPTRDEST src, dest
+    MOVE_INT_YPTRDEST src, dest
+    MOVE_INT_YPTRDEST src + 4, dest + 4
 .ENDMACRO
 
 .MACRO MOVE_INT_CONSTANT_XPTRDEST constant, dest

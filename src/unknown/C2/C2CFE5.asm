@@ -70,10 +70,10 @@ UNKNOWN_C2CFE5: ;$C2CFE5
 	JSL MEMCPY16
 	LDA #$0001
 	LDY $16
-	STA a:.LOWORD(RAM)+83,Y
-	STA a:.LOWORD(PAD_1_STATE)+1,Y
+	STA a:loaded_bg_data::scrolling_duration_left,Y
+	STA a:loaded_bg_data::distortion_duration_left,Y
 	SEP #PROC_FLAGS::ACCUM8
-	STA a:.LOWORD(RAM)+11,Y
+	STA a:loaded_bg_data::palette_change_duration_left,Y
 	REP #PROC_FLAGS::ACCUM8
 	PLD
 	RTL

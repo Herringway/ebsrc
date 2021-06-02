@@ -1,3 +1,3 @@
 
 BATTLE_BACK_ROW_TEXT: ;$C45502
-	EBTEXTZ "the Back Row"
+	PADDEDEBTEXT "the Back Row", 13

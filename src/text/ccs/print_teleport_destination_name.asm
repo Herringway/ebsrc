@@ -14,8 +14,7 @@ CC_1C_06: ;$C146DE
 @UNKNOWN1:
 	LOADPTR PSI_TELEPORT_DEST_TABLE, $06
 	LDA $12
-	LDY #.SIZEOF(psi_teleport_destination)
-	JSL MULT168
+	OPTIMIZED_MULT $04, .SIZEOF(psi_teleport_destination)
 	CLC
 	ADC $06
 	STA $06

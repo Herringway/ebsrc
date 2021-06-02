@@ -391,6 +391,8 @@
 
 .INCLUDE "text/ccs/test_has_enough_money.asm"
 
+.INCLUDE "text/ccs/unknown_19_1A.asm"
+
 .INCLUDE "text/ccs/unknown_18_0D.asm"
 
 .INCLUDE "text/ccs/print_vertical_strings.asm"

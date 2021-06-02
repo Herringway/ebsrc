@@ -3411,6 +3411,12 @@ dumpEntries:
   size: 21850
   extension: ebtxt
   compressed: false
+- subdir: text_data
+  name: '7'
+  offset: 0x2FA6EB
+  size: 36
+  extension: ebtxt
+  compressed: false
 - subdir: battle_bgs/arrangements
   name: '0'
   offset: 0xBD871
@@ -17213,6 +17219,7 @@ renameLabels:
   0xEFA2AB: TEXT_ACTION_271
   0xEFA2C9: TEXT_DOOR_006
   0xEFA2D6: TEXT_NPC_0147_ALT
+  0xEFA6EC: TEXT_DEBUG_UNKNOWN_MENU_2
 compressedTextStrings:
 - '                '
 - ' in the '
