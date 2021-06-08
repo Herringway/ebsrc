@@ -31,13 +31,13 @@ UNKNOWN_C03DAA: ;$C03DAA
 	ADC #.LOWORD(CHAR_STRUCT)
 	TAX
 	LDA $02
-	STA a:.LOWORD(RAM)+59,X
+	STA a:char_struct::unknown59,X
 	LDY $0E
 	LDA .LOWORD(UNKNOWN_30X2_TABLE_3),Y
-	STA a:.LOWORD(RAM)+53,X
-	STZ a:.LOWORD(RAM)+57,X
+	STA a:char_struct::unknown53,X
+	STZ a:char_struct::unknown57,X
 	LDA #$FFFF
-	STA a:.LOWORD(RAM)+92,X
+	STA a:char_struct::unknown92,X
 	LDA a:char_struct::afflictions + STATUS_GROUP::PERSISTENT_EASYHEAL,X
 	AND #$00FF
 	CMP #STATUS_0::UNCONSCIOUS

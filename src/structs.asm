@@ -27,9 +27,13 @@
 	base_iq .byte ;34
 	items .byte 14 ;35
 	equipment .byte 4 ;49
-	unknown53 .dword 2 ;53
+	unknown53 .word ;53
+	unknown55 .word ;55
+	unknown57 .word ;57
+	unknown59 .word ;59
 	position_index .word ;61
-	unknown63 .dword ;63
+	unknown63 .word ;63
+	unknown65 .word ;65
 	unknown67 .word ;67
 	current_hp .word ;69
 	current_hp_target .word ;71
@@ -274,8 +278,8 @@
 	unknown14 .byte ;14 - seems to be a sound effect id
 	unknown15 .byte ;15
 	unknown16 .byte 3 ;16
-	unknown19 .byte 24 ;19
-	unknown43 .word ;43
+	unknown19 .byte 25 ;19
+	unknown44 .byte ;44
 .ENDSTRUCT
 
 .STRUCT item

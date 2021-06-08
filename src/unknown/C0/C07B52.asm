@@ -36,7 +36,7 @@ UNKNOWN_C07B52: ;$C07B52
 	LDA .LOWORD(GAME_STATE)+game_state::current_party_members
 	CMP $12
 	BEQ @UNKNOWN2
-	LDA a:.LOWORD(RAM)+61,X
+	LDA a:char_struct::position_index,X
 	CMP $14
 	BNE @UNKNOWN3
 @UNKNOWN2:
@@ -71,7 +71,7 @@ UNKNOWN_C07B52: ;$C07B52
 	ASL
 	ASL
 	CLC
-	ADC #$5156
+	ADC #.LOWORD(PLAYER_POSITION_BUFFER)
 	STA $02
 	LDY $12
 	LDX $02

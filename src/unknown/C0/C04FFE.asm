@@ -192,14 +192,14 @@ UNKNOWN_C04FFE: ;$C04FFE
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0001
 	LDX .LOWORD(UNKNOWN_7E4DC6)
-	STA a:.LOWORD(RAM)+14,X
+	STA a:char_struct::afflictions,X
 	LDX .LOWORD(UNKNOWN_7E4DC6)
 	REP #PROC_FLAGS::ACCUM8
-	STZ a:.LOWORD(RAM)+71,X
+	STZ a:char_struct::current_hp_target,X
 	LDX .LOWORD(UNKNOWN_7E4DC6)
-	STZ a:.LOWORD(RAM)+69,X
+	STZ a:char_struct::current_hp,X
 	LDX .LOWORD(UNKNOWN_7E4DC6)
-	LDA a:.LOWORD(RAM)+59,X
+	LDA a:char_struct::unknown59,X
 	ASL
 	TAX
 	LDA #$0010

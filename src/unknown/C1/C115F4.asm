@@ -13,9 +13,9 @@ UNKNOWN_C115F4: ;$C115F4
 	TAX
 	LDY $16
 	TYA
-	STA a:.LOWORD(RAM)+12,X
+	STA a:u89D4_entry::unknown12,X
 	LDA #$0002
-	STA a:.LOWORD(RAM),X
+	STA a:u89D4_entry::unknown0,X
 	TXA
 	PLD
 	RTS

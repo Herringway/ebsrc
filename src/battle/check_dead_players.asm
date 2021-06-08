@@ -108,7 +108,7 @@ CHECK_DEAD_PLAYERS: ;$C2BB18
 	SEP #PROC_FLAGS::ACCUM8
 	LDA a:.LOWORD(RAM),X
 	PLX
-	STA a:battler::ally_or_enemy,X
+	STA a:char_struct::afflictions,X
 	LDX $12
 	INX
 	STX $12

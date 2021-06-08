@@ -82,7 +82,7 @@ CALL_FOR_HELP_COMMON: ;$C2BD5E
 	STX $22
 	TXA
 	CLC
-	ADC #$005C
+	ADC #enemy_data::max_called
 	MOVE_INTX $06, $0A
 	CLC
 	ADC $0A
@@ -110,7 +110,7 @@ CALL_FOR_HELP_COMMON: ;$C2BD5E
 	LDX $22
 	TXA
 	CLC
-	ADC #$001C
+	ADC #enemy_data::battle_sprite
 	MOVE_INTX $06, $0A
 	CLC
 	ADC $0A
@@ -127,7 +127,7 @@ CALL_FOR_HELP_COMMON: ;$C2BD5E
 	LDX $22
 	TXA
 	CLC
-	ADC #$005B
+	ADC #enemy_data::row
 	CLC
 	ADC $06
 	STA $06

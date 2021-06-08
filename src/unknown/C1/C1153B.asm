@@ -16,9 +16,9 @@ UNKNOWN_C1153B: ;$C1153B
 	JSR a:.LOWORD(UNKNOWN_C114B1)
 	TAX
 	LDA $04
-	STA a:.LOWORD(RAM)+12,X
+	STA a:u89D4_entry::unknown12,X
 	LDA #$0002
-	STA a:.LOWORD(RAM),X
+	STA a:u89D4_entry::unknown0,X
 	TXA
 	PLD
 	RTS

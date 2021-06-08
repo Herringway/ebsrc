@@ -32,7 +32,7 @@ UNKNOWN_C03E5A: ;$C03E5A
 	TAX
 	LDA .LOWORD(CHOSEN_FOUR_PTRS),X
 	TAX
-	LDA a:.LOWORD(RAM)+61,X
+	LDA a:char_struct::position_index,X
 @UNKNOWN3:
 	PLD
 	RTS

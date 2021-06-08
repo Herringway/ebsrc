@@ -40,7 +40,7 @@ UNKNOWN_C113D1: ;$C113D1
 	CMP #$FFFF
 	BNE @UNKNOWN2
 	LDA #$FFFF
-	STA a:.LOWORD(RAM)+4,Y
+	STA a:u89D4_entry::unknown4,Y
 	LDA $10
 	STA a:.LOWORD(RAM),X
 	BRA @UNKNOWN3
@@ -50,35 +50,35 @@ UNKNOWN_C113D1: ;$C113D1
 	ADC #window_stats::option_count
 	TAX
 	LDA a:.LOWORD(RAM),X
-	STA a:.LOWORD(RAM)+4,Y
+	STA a:u89D4_entry::unknown4,Y
 	LDA a:.LOWORD(RAM),X
 	LDY #.SIZEOF(u89D4_entry)
 	JSL MULT168
 	TAX
 	LDA $10
-	STA .LOWORD(UNKNOWN_7E89D4)+2,X
+	STA .LOWORD(UNKNOWN_7E89D4) + u89D4_entry::unknown2,X
 @UNKNOWN3:
 	LDX $02
 	STA a:window_stats::option_count,X
 	LDA #$FFFF
 	LDY $0E
-	STA a:.LOWORD(RAM)+2,Y
+	STA a:u89D4_entry::unknown2,Y
 	LDA #$0001
-	STA a:.LOWORD(RAM),Y
+	STA a:u89D4_entry::unknown0,Y
 	TYA
 	CLC
-	ADC #$000F
+	ADC #u89D4_entry::unknown15
 	TAY
-	MOVE_INT_YPTRDEST $0A, a:.LOWORD(RAM)
+	MOVE_INT_YPTRDEST $0A, a:0
 	LDA #$0001
 	LDY $0E
-	STA a:.LOWORD(RAM)+6,Y
+	STA a:u89D4_entry::unknown6,Y
 	SEP #PROC_FLAGS::ACCUM8
-	STA a:.LOWORD(RAM)+14,Y
+	STA a:u89D4_entry::unknown14,Y
 	REP #PROC_FLAGS::ACCUM8
 	TYA
 	CLC
-	ADC #$0013
+	ADC #u89D4_entry::unknown19
 	TAX
 @UNKNOWN4:
 	SEP #PROC_FLAGS::ACCUM8

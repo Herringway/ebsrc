@@ -32,7 +32,7 @@ UNKNOWN_C04C45: ;$C04C45
 	LDA .LOWORD(CHOSEN_FOUR_PTRS),X
 	TAX
 	LDA .LOWORD(GAME_STATE) + game_state::unknown88
-	STA a:.LOWORD(RAM)+61,X
+	STA a:char_struct::position_index,X
 	LDA .LOWORD(GAME_STATE) + game_state::unknownB0
 	BEQ @UNKNOWN2
 	JSR a:.LOWORD(UNKNOWN_C04B53)
@@ -64,7 +64,7 @@ UNKNOWN_C04C45: ;$C04C45
 	ASL
 	ASL
 	CLC
-	ADC #$5156
+	ADC #.LOWORD(PLAYER_POSITION_BUFFER)
 	STA $10
 	LDA #.LOWORD(GAME_STATE) + game_state::leader_x_coord
 	STA $04
