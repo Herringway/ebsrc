@@ -55,6 +55,11 @@
 	.WORD .LOWORD(addr)
 .endmacro
 
+.macro PACKPTRM2 addr
+    .BYTE .LOBYTE(.HIWORD(addr)) - $E2
+    .WORD .LOWORD(addr)
+.endmacro
+
 .macro DISPLAY_TEXT_PTR addr
 	LOADPTR addr, $0E
 	JSL DISPLAY_TEXT
@@ -843,5 +848,14 @@
         .ASSERT .HIWORD(spr8) = .HIWORD(group), error, "sprite 8 not in same bank!"
         .ASSERT .LOWORD(spr8) >= .LOWORD(group), error, "sprite 8 offset before sprite group offset!"
         .WORD .LOWORD(spr8)
+    .ENDIF
+.ENDMACRO
+
+.MACRO STZ_BADOPT dest
+    .IF .strat(LOCALE, 0) = 'J'
+        LDA #$00
+        STA dest
+    .ELSE
+        STZ dest
     .ENDIF
 .ENDMACRO

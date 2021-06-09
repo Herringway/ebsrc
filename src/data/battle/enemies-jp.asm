@@ -1,0 +1,10858 @@
+
+ENEMY_CONFIGURATION_TABLE: ;$D59589
+  PADDEDASCII "\xD8\xDF\xFC\xED\xD4\xB6\x25", 10 ; ヌルモンスター
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0000 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NONE
+  .BYTE $07 ;Run flag
+  .WORD 0 ;HP
+  .WORD 0 ;PP
+  .DWORD 0 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_NO_MESSAGE
+  .BYTE $00 ;Palette
+  .BYTE 0 ;Level
+  .BYTE MUSIC::NONE
+  .WORD 0 ;Offense
+  .WORD 0 ;Defense
+  .BYTE 0 ;Speed
+  .BYTE 0 ;Guts
+  .BYTE 0 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 0 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x6F\x9D\xAA\x80\x68\x74\x9D\x75\x6E", 10 ; らんぼうなしんじゃ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $003F ;Battle sprite
+  .WORD OVERWORLD_SPRITE::INSANE_CULTIST
+  .BYTE $07 ;Run flag
+  .WORD 94 ;HP
+  .WORD 0 ;PP
+  .DWORD 353 ;Experience
+  .WORD 33 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_TRAPPED_YOU
+  .DWORD TEXT_BATTLE_TURNED_BACK_TO_NORMAL
+  .BYTE $03 ;Palette
+  .BYTE 13 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 19 ;Offense
+  .WORD 25 ;Defense
+  .BYTE 8 ;Speed
+  .BYTE 20 ;Guts
+  .BYTE 64 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::PAINT_ATTACK
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD BATTLE_ACTIONS::PAINT_ATTACK
+  .WORD BATTLE_ACTIONS::PAINT_ATTACK
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE ENEMY::INSANE_CULTIST_1 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $03 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xE7\xBB\x25\xF6\xA8\x62\x70\x75\x9D", 10 ; デパートのかいじん
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $003D ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 610 ;HP
+  .WORD 290 ;PP
+  .DWORD 24291 ;Experience
+  .WORD 1648 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $16 ;Palette
+  .BYTE 42 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 82 ;Offense
+  .WORD 135 ;Defense
+  .BYTE 19 ;Speed
+  .BYTE 24 ;Guts
+  .BYTE 62 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $03 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_FREEZE_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_FIRE_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_LIFEUP_ALPHA
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $09 ;Action 1 argument
+  .BYTE $05 ;Action 2 argument
+  .BYTE $17 ;Action 3 argument
+  .BYTE ENEMY::DEPT_STORE_SPOOK_2 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xB0\x25\xBC\x25\xB3\xE0\xDF", 10 ; アーマーガエル
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0003 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::ARMORED_FROG
+  .BYTE $07 ;Run flag
+  .WORD 202 ;HP
+  .WORD 0 ;PP
+  .DWORD 1566 ;Experience
+  .WORD 77 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $09 ;Palette
+  .BYTE 22 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 37 ;Offense
+  .WORD 108 ;Defense
+  .BYTE 7 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 8 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::SPIN_SOMETHING
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $04 ;Item drop rate
+  .BYTE ITEM::BROKEN_SPRAY_CAN ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xBA\xCE\xD9\xB1\xFF\x25", 10 ; バッファロー
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $004A ;Battle sprite
+  .WORD OVERWORLD_SPRITE::BAD_BUFFALO
+  .BYTE $07 ;Run flag
+  .WORD 341 ;HP
+  .WORD 0 ;PP
+  .DWORD 4108 ;Experience
+  .WORD 172 ;Money
+  .WORD EVENT_SCRIPT::EVENT_029
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $07 ;Palette
+  .BYTE 34 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 64 ;Offense
+  .WORD 104 ;Defense
+  .BYTE 11 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 5 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::TRAMPLE
+  .WORD BATTLE_ACTIONS::TEAR_INTO
+  .WORD BATTLE_ACTIONS::TRAMPLE
+  .WORD BATTLE_ACTIONS::KNIT_BROW
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::WET_TOWEL ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xB0\xCF\xB0\xCF\xDA\xBF\xCE\xD2", 10 ; アリアリブラック
+  .BYTE ENEMYTYPE::INSECT
+  .WORD $0001 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::BLACK_ANTOID
+  .BYTE $07 ;Run flag
+  .WORD 34 ;HP
+  .WORD 25 ;PP
+  .DWORD 37 ;Experience
+  .WORD 7 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $08 ;Palette
+  .BYTE 7 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 14 ;Offense
+  .WORD 13 ;Defense
+  .BYTE 4 ;Speed
+  .BYTE 3 ;Guts
+  .BYTE 0 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::PSI_LIFEUP_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE ENEMY::BLACK_ANTOID_1 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $17 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 1 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $05 ;Item drop rate
+  .BYTE ITEM::COOKIE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $03 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xB0\xCF\xB0\xCF\xEF\xCE\xF7", 10 ; アリアリレッド
+  .BYTE ENEMYTYPE::INSECT
+  .WORD $0001 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::BLACK_ANTOID
+  .BYTE $07 ;Run flag
+  .WORD 112 ;HP
+  .WORD 30 ;PP
+  .DWORD 1175 ;Experience
+  .WORD 35 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $10 ;Palette
+  .BYTE 20 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 29 ;Offense
+  .WORD 27 ;Defense
+  .BYTE 10 ;Speed
+  .BYTE 4 ;Guts
+  .BYTE 0 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD BATTLE_ACTIONS::BITE
+  .WORD BATTLE_ACTIONS::PSI_DEFENSE_DOWN_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE ENEMY::RED_ANTOID ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $29 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $04 ;Item drop rate
+  .BYTE ITEM::SUGAR_PACKET ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $03 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x60\x8F\x82\xC2\xF8\xF2", 10 ; あるくキノコ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0005 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::RAMBLIN_EVIL_MUSHROOM
+  .BYTE $07 ;Run flag
+  .WORD 60 ;HP
+  .WORD 0 ;PP
+  .DWORD 95 ;Experience
+  .WORD 15 ;Money
+  .WORD EVENT_SCRIPT::EVENT_024
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $09 ;Palette
+  .BYTE 7 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 15 ;Offense
+  .WORD 10 ;Defense
+  .BYTE 5 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 1 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::SCATTER_SPORES
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 1 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $03 ;Item drop rate
+  .BYTE ITEM::KETCHUP_PACKET ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x70\x92\x68\x70\xC2\xF8\xF2", 10 ; いけないキノコ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0005 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::RAMBLIN_EVIL_MUSHROOM
+  .BYTE $07 ;Run flag
+  .WORD 157 ;HP
+  .WORD 0 ;PP
+  .DWORD 1492 ;Experience
+  .WORD 95 ;Money
+  .WORD EVENT_SCRIPT::EVENT_024
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $0D ;Palette
+  .BYTE 17 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 29 ;Offense
+  .WORD 22 ;Defense
+  .BYTE 28 ;Speed
+  .BYTE 7 ;Guts
+  .BYTE 1 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $03 ;Action order
+  .WORD BATTLE_ACTIONS::SCATTER_SPORES
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::SCATTER_SPORES_2
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $03 ;Item drop rate
+  .BYTE ITEM::RUST_PROMOTER ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x60\x8F\x82\x9C", 10 ; あるくめ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $005A ;Battle sprite
+  .WORD OVERWORLD_SPRITE::MOBILE_SPROUT
+  .BYTE $06 ;Run flag
+  .WORD 79 ;HP
+  .WORD 9 ;PP
+  .DWORD 133 ;Experience
+  .WORD 13 ;Money
+  .WORD EVENT_SCRIPT::EVENT_024
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $06 ;Palette
+  .BYTE 10 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 17 ;Offense
+  .WORD 12 ;Defense
+  .BYTE 6 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 1 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::PSI_MAGNET_ALPHA
+  .WORD BATTLE_ACTIONS::SOW_SEEDS
+  .WORD BATTLE_ACTIONS::PSI_LIFEUP_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $2D ;Action 2 argument
+  .BYTE ENEMY::MOBILE_SPROUT ;Action 3 argument
+  .BYTE $17 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 1 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::CROISSANT ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $03 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x86\xAD\x70\x60\x8F\x82\x9C", 10 ; つよいあるくめ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $005A ;Battle sprite
+  .WORD OVERWORLD_SPRITE::MOBILE_SPROUT
+  .BYTE $07 ;Run flag
+  .WORD 179 ;HP
+  .WORD 13 ;PP
+  .DWORD 1865 ;Experience
+  .WORD 119 ;Money
+  .WORD EVENT_SCRIPT::EVENT_024
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $02 ;Palette
+  .BYTE 21 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 33 ;Offense
+  .WORD 27 ;Defense
+  .BYTE 18 ;Speed
+  .BYTE 6 ;Guts
+  .BYTE 1 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::SOW_SEEDS
+  .WORD BATTLE_ACTIONS::PSI_MAGNET_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_LIFEUP_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE ENEMY::TOUGH_MOBILE_SPROUT ;Action 2 argument
+  .BYTE $2D ;Action 3 argument
+  .BYTE $17 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $03 ;Item drop rate
+  .BYTE ITEM::SPRIG_OF_PARSLEY ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $03 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x70\x62\x7F\xA8\xDB\xBF\xD3", 10 ; いかりのプラグ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $003B ;Battle sprite
+  .WORD OVERWORLD_SPRITE::ROBO_PUMP
+  .BYTE $07 ;Run flag
+  .WORD 309 ;HP
+  .WORD 0 ;PP
+  .DWORD 4321 ;Experience
+  .WORD 346 ;Money
+  .WORD EVENT_SCRIPT::EVENT_027
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $03 ;Palette
+  .BYTE 32 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 60 ;Offense
+  .WORD 81 ;Defense
+  .BYTE 14 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 4 ;Luck
+  .BYTE $03 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::SPRAY_WATER_BLAST
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::SPRAY_WATER_BLAST
+  .WORD BATTLE_ACTIONS::SPRAY_WATER_BLAST
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::SUDDEN_GUTS_PILL ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x60\x6D\x62\x74\xA8\xEF\xF2\x25\xF7", 10 ; あやかしのレコード
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $002E ;Battle sprite
+  .WORD OVERWORLD_SPRITE::GIFT_BOX
+  .BYTE $07 ;Run flag
+  .WORD 263 ;HP
+  .WORD 35 ;PP
+  .DWORD 2736 ;Experience
+  .WORD 310 ;Money
+  .WORD EVENT_SCRIPT::EVENT_031
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $02 ;Palette
+  .BYTE 33 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 63 ;Offense
+  .WORD 78 ;Defense
+  .BYTE 20 ;Speed
+  .BYTE 12 ;Guts
+  .BYTE 7 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $03 ;Action order
+  .WORD BATTLE_ACTIONS::CHARGE
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::PSI_LIFEUP_ALPHA
+  .WORD BATTLE_ACTIONS::CHARGE
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $17 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 1 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::PIZZA ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xE0\xB8\xC5\x25\xFF\xFA", 10 ; エナジーロボ
+  .BYTE ENEMYTYPE::METAL
+  .WORD $0069 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 594 ;HP
+  .WORD 0 ;PP
+  .DWORD 26937 ;Experience
+  .WORD 730 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_BROKEN_INTO_PIECES
+  .BYTE $02 ;Palette
+  .BYTE 56 ;Level
+  .BYTE MUSIC::VS_KRAKEN
+  .WORD 119 ;Offense
+  .WORD 133 ;Defense
+  .BYTE 25 ;Speed
+  .BYTE 8 ;Guts
+  .BYTE 12 ;Luck
+  .BYTE $03 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::REPLENISH_FUEL
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::REPLENISH_FUEL
+  .WORD BATTLE_ACTIONS::REPLENISH_FUEL
+  .WORD BATTLE_ACTIONS::EXPLODE ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $03 ;Item drop rate
+  .BYTE ITEM::SUPER_BOMB ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xD4\x25\xBB\x25\xE0\xB8\xC5\x25\xFF\xFA", 10 ; スーパーエナジーロボ
+  .BYTE ENEMYTYPE::METAL
+  .WORD $0069 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 798 ;HP
+  .WORD 0 ;PP
+  .DWORD 53142 ;Experience
+  .WORD 820 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_BROKEN_INTO_PIECES
+  .BYTE $18 ;Palette
+  .BYTE 64 ;Level
+  .BYTE MUSIC::VS_KRAKEN
+  .WORD 142 ;Offense
+  .WORD 185 ;Defense
+  .BYTE 46 ;Speed
+  .BYTE 8 ;Guts
+  .BYTE 12 ;Luck
+  .BYTE $03 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::REPLENISH_FUEL
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::REPLENISH_FUEL
+  .WORD BATTLE_ACTIONS::REPLENISH_FUEL
+  .WORD BATTLE_ACTIONS::EXPLODE ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $04 ;Item drop rate
+  .BYTE ITEM::SUPER_BOMB ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xA8\xAF\x70\xA8\x90\xAC\x75", 10 ; のろいのえもじ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0046 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::GUARDIAN_HIEROGLYPH
+  .BYTE $07 ;Run flag
+  .WORD 470 ;HP
+  .WORD 126 ;PP
+  .DWORD 13064 ;Experience
+  .WORD 470 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $04 ;Palette
+  .BYTE 48 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 94 ;Offense
+  .WORD 106 ;Defense
+  .BYTE 20 ;Speed
+  .BYTE 20 ;Guts
+  .BYTE 38 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $03 ;Action order
+  .WORD BATTLE_ACTIONS::COUGH
+  .WORD BATTLE_ACTIONS::PSI_THUNDER_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_FLASH_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_THUNDER_BETA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $0D ;Action 2 argument
+  .BYTE $11 ;Action 3 argument
+  .BYTE $0E ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $03 ;Item drop rate
+  .BYTE ITEM::PHARAOHS_CURSE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xD4\xE8\x25\xD2\x90\xAC\x75", 10 ; スネークえもじ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0043 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::LETHAL_ASP_HIEROGLYPH
+  .BYTE $07 ;Run flag
+  .WORD 458 ;HP
+  .WORD 0 ;PP
+  .DWORD 11321 ;Experience
+  .WORD 625 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $04 ;Palette
+  .BYTE 46 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 89 ;Offense
+  .WORD 94 ;Defense
+  .BYTE 21 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 36 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::BITE
+  .WORD BATTLE_ACTIONS::BITE
+  .WORD BATTLE_ACTIONS::COIL_AROUND
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::PHARAOHS_CURSE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x97\x9D\x93\x72\xCA\xDE\x25\xED", 10 ; でんげきビューン
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0016 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::ELECTRO_SWOOSH
+  .BYTE $07 ;Run flag
+  .WORD 543 ;HP
+  .WORD 338 ;PP
+  .DWORD 17075 ;Experience
+  .WORD 791 ;Money
+  .WORD EVENT_SCRIPT::EVENT_027
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $01 ;Palette
+  .BYTE 62 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 140 ;Offense
+  .WORD 156 ;Defense
+  .BYTE 40 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 10 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $02 ;Action order
+  .WORD BATTLE_ACTIONS::GREET
+  .WORD BATTLE_ACTIONS::ELECTRIC_SHOCK
+  .WORD BATTLE_ACTIONS::ELECTRIC_SHOCK
+  .WORD BATTLE_ACTIONS::CHARGE
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::SUDDEN_GUTS_PILL ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $04 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xE0\xEF\xC4\xFE\xCE\xB2", 10 ; エレショッカ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0024 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::THUNDER_MITE
+  .BYTE $07 ;Run flag
+  .WORD 445 ;HP
+  .WORD 238 ;PP
+  .DWORD 14792 ;Experience
+  .WORD 574 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $1A ;Palette
+  .BYTE 52 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 107 ;Offense
+  .WORD 107 ;Defense
+  .BYTE 20 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 8 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_FLASH_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_FLASH_BETA
+  .WORD BATTLE_ACTIONS::PSI_THUNDER_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_THUNDER_BETA
+  .WORD NULL ;Final action
+  .BYTE $11 ;Action 1 argument
+  .BYTE $12 ;Action 2 argument
+  .BYTE $0D ;Action 3 argument
+  .BYTE $0E ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::BOTTLE_OF_WATER ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xE0\xEF\xC2\xD4\xCB\xCF\xCE\xF6", 10 ; エレキスピリット
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0024 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::THUNDER_MITE
+  .BYTE $07 ;Run flag
+  .WORD 587 ;HP
+  .WORD 329 ;PP
+  .DWORD 30390 ;Experience
+  .WORD 804 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $01 ;Palette
+  .BYTE 59 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 130 ;Offense
+  .WORD 139 ;Defense
+  .BYTE 26 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 8 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_FLASH_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_FLASH_BETA
+  .WORD BATTLE_ACTIONS::PSI_THUNDER_BETA
+  .WORD BATTLE_ACTIONS::PSI_THUNDER_GAMMA
+  .WORD NULL ;Final action
+  .BYTE $11 ;Action 1 argument
+  .BYTE $12 ;Action 2 argument
+  .BYTE $0E ;Action 3 argument
+  .BYTE $0F ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::BRAIN_FOOD_LUNCH ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xA8\xAF\x70\xA8\xEC\x25\xCD\xD2", 10 ; のろいのメーワク
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0030 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::ROBO_PUMP
+  .BYTE $07 ;Run flag
+  .WORD 564 ;HP
+  .WORD 0 ;PP
+  .DWORD 35737 ;Experience
+  .WORD 853 ;Money
+  .WORD EVENT_SCRIPT::EVENT_027
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_MELTED_INTO_THIN_AIR
+  .BYTE $0B ;Palette
+  .BYTE 57 ;Level
+  .BYTE MUSIC::VS_KRAKEN
+  .WORD 121 ;Offense
+  .WORD 136 ;Defense
+  .BYTE 30 ;Speed
+  .BYTE 7 ;Guts
+  .BYTE 16 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $03 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::DISRUPT_SENSES
+  .WORD BATTLE_ACTIONS::POSSESS
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::LUXURY_JERKY ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x3E\xA8\x60\x82\x6C", 10 ; ♪のあくま
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $004F ;Battle sprite
+  .WORD OVERWORLD_SPRITE::EVIL_MANI_MANI
+  .BYTE $07 ;Run flag
+  .WORD 1654 ;HP
+  .WORD 882 ;PP
+  .DWORD 89004 ;Experience
+  .WORD 4442 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $05 ;Palette
+  .BYTE 71 ;Level
+  .BYTE MUSIC::VS_STARMAN_JR
+  .WORD 172 ;Offense
+  .WORD 253 ;Defense
+  .BYTE 31 ;Speed
+  .BYTE 1 ;Guts
+  .BYTE 80 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD BATTLE_ACTIONS::PSI_ROCKIN_ALPHA
+  .WORD BATTLE_ACTIONS::GLORIOUS_LIGHT
+  .WORD BATTLE_ACTIONS::PSI_SHIELD_BETA
+  .WORD NULL ;Final action
+  .BYTE ENEMY::YOUR_NIGHTMARE_2 ;Action 1 argument
+  .BYTE $01 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $21 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::PSI_SHIELD
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xA2\x6C\x7E\x66\xA0\x75\x64\x9D", 10 ; こまったおじさん
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0022 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::ANNOYING_OLD_PARTY_MAN
+  .BYTE $07 ;Run flag
+  .WORD 99 ;HP
+  .WORD 0 ;PP
+  .DWORD 130 ;Experience
+  .WORD 32 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_TRAPPED_YOU
+  .DWORD TEXT_BATTLE_TURNED_BACK_TO_NORMAL
+  .BYTE $08 ;Palette
+  .BYTE 13 ;Level
+  .BYTE MUSIC::VS_RUNAWAY_DOG
+  .WORD 20 ;Offense
+  .WORD 25 ;Defense
+  .BYTE 6 ;Speed
+  .BYTE 50 ;Guts
+  .BYTE 15 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $06 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::GRUMBLE_ABOUT_YOUTH
+  .WORD BATTLE_ACTIONS::WOBBLE
+  .WORD BATTLE_ACTIONS::REEL
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::PROTEIN_DRINK ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x9C\x70\x7D\x82\x68\xF0\xBD\xC5", 10 ; めいわくなオヤジ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0022 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::ANNOYING_OLD_PARTY_MAN
+  .BYTE $07 ;Run flag
+  .WORD 288 ;HP
+  .WORD 0 ;PP
+  .DWORD 2373 ;Experience
+  .WORD 268 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_TRAPPED_YOU
+  .DWORD TEXT_BATTLE_TURNED_BACK_TO_NORMAL
+  .BYTE $10 ;Palette
+  .BYTE 31 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 58 ;Offense
+  .WORD 77 ;Defense
+  .BYTE 17 ;Speed
+  .BYTE 50 ;Guts
+  .BYTE 15 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $06 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::GRUMBLE_ABOUT_YOUTH
+  .WORD BATTLE_ACTIONS::LECTURE
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::WOBBLE
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $03 ;Item drop rate
+  .BYTE ITEM::PROTEIN_DRINK ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xC5\xCC\x68\x78\x70\x64\x9D", 10 ; ジミなにいさん
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0023 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::UNASSUMING_LOCAL_GUY_ENEMY
+  .BYTE $07 ;Run flag
+  .WORD 73 ;HP
+  .WORD 0 ;PP
+  .DWORD 146 ;Experience
+  .WORD 19 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_TRAPPED_YOU
+  .DWORD TEXT_BATTLE_TURNED_BACK_TO_NORMAL
+  .BYTE $01 ;Palette
+  .BYTE 9 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 18 ;Offense
+  .WORD 13 ;Defense
+  .BYTE 5 ;Speed
+  .BYTE 1 ;Guts
+  .BYTE 14 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BECOME_FRIENDLY
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $04 ;Item drop rate
+  .BYTE ITEM::TOOTHBRUSH ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x72\x6C\x6C\x68\x78\x70\x64\x9D", 10 ; きままなにいさん
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $006B ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NEW_AGE_RETRO_HIPPIE_ENEMY
+  .BYTE $07 ;Run flag
+  .WORD 87 ;HP
+  .WORD 0 ;PP
+  .DWORD 160 ;Experience
+  .WORD 23 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_TRAPPED_YOU
+  .DWORD TEXT_BATTLE_TURNED_BACK_TO_NORMAL
+  .BYTE $01 ;Palette
+  .BYTE 11 ;Level
+  .BYTE MUSIC::VS_NEW_AGE_RETRO_HIPPIE
+  .WORD 19 ;Offense
+  .WORD 14 ;Defense
+  .BYTE 5 ;Speed
+  .BYTE 10 ;Guts
+  .BYTE 16 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::LOSE_TEMPER
+  .WORD BATTLE_ACTIONS::TOOTHBRUSH
+  .WORD BATTLE_ACTIONS::RULER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $9A ;Action 3 argument
+  .BYTE $8C ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $03 ;Item drop rate
+  .BYTE ITEM::RULER ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xB2\x25\xEB\xC0\xED\xB6\x25\x64\x9D", 10 ; カーペインターさん
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0021 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::MR_CARPAINTER
+  .BYTE $07 ;Run flag
+  .WORD 262 ;HP
+  .WORD 70 ;PP
+  .DWORD 1412 ;Experience
+  .WORD 195 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_TURNED_BACK_TO_NORMAL
+  .BYTE $01 ;Palette
+  .BYTE 21 ;Level
+  .BYTE MUSIC::VS_STARMAN_JR
+  .WORD 33 ;Offense
+  .WORD 45 ;Defense
+  .BYTE 8 ;Speed
+  .BYTE 13 ;Guts
+  .BYTE 72 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $02 ;Action order
+  .WORD BATTLE_ACTIONS::CRASHING_BOOM_BANG
+  .WORD BATTLE_ACTIONS::PSI_LIFEUP_ALPHA
+  .WORD BATTLE_ACTIONS::PAINT_ATTACK
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $17 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::MR_CARPAINTER_2 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xB2\x25\xFA\xED\xF7\xCE\xD3", 10 ; カーボンドッグ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0028 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::YOUR_SANCTUARY_POINT_BOSS
+  .BYTE $07 ;Run flag
+  .WORD 1672 ;HP
+  .WORD 0 ;PP
+  .DWORD 0 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $01 ;Palette
+  .BYTE 70 ;Level
+  .BYTE MUSIC::VS_YOUR_SANCTUARY_BOSS
+  .WORD 159 ;Offense
+  .WORD 174 ;Defense
+  .BYTE 31 ;Speed
+  .BYTE 52 ;Guts
+  .BYTE 53 ;Luck
+  .BYTE $03 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::SPEW_FIREBALL
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD BATTLE_ACTIONS::HOWL
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::GIVE_OFF_RAINBOW ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE ENEMY::CARBON_DOG_2 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE ENEMY::DIAMOND_DOG_1 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x62\x70\x7F\x72\xEA\xB0", 10 ; かいりきベア
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0068 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::MIGHTY_BEAR
+  .BYTE $07 ;Run flag
+  .WORD 167 ;HP
+  .WORD 0 ;PP
+  .DWORD 609 ;Experience
+  .WORD 49 ;Money
+  .WORD EVENT_SCRIPT::EVENT_029
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $07 ;Palette
+  .BYTE 16 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 29 ;Offense
+  .WORD 31 ;Defense
+  .BYTE 7 ;Speed
+  .BYTE 1 ;Guts
+  .BYTE 5 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $03 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::CLAW
+  .WORD BATTLE_ACTIONS::BITE
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::TEDDY_BEAR ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x62\x70\x7F\x72\xEA\xB0\x5C\xE4\xDA\xED", 10 ; かいりきベア・セブン
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0068 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::MIGHTY_BEAR
+  .BYTE $07 ;Run flag
+  .WORD 367 ;HP
+  .WORD 0 ;PP
+  .DWORD 8884 ;Experience
+  .WORD 440 ;Money
+  .WORD EVENT_SCRIPT::EVENT_029
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $15 ;Palette
+  .BYTE 42 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 85 ;Offense
+  .WORD 76 ;Defense
+  .BYTE 11 ;Speed
+  .BYTE 1 ;Guts
+  .BYTE 4 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $03 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::CLAW
+  .WORD BATTLE_ACTIONS::BITE
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::SUPER_PLUSH_BEAR ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xB2\xCA\xD2\xB4\xC0\xBC\xED", 10 ; カビクサイマン
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $000A ;Battle sprite
+  .WORD OVERWORLD_SPRITE::STINKY_GHOST
+  .BYTE $07 ;Run flag
+  .WORD 203 ;HP
+  .WORD 0 ;PP
+  .DWORD 830 ;Experience
+  .WORD 53 ;Money
+  .WORD EVENT_SCRIPT::EVENT_024
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $09 ;Palette
+  .BYTE 21 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 36 ;Offense
+  .WORD 41 ;Defense
+  .BYTE 9 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 17 ;Luck
+  .BYTE $03 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::MOLD_SPORES
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::CROISSANT ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xCF\xF6\xDF\xB4\xED\xB7\x25", 10 ; リトルサンダー
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $001E ;Battle sprite
+  .WORD OVERWORLD_SPRITE::THUNDER_MITE
+  .BYTE $07 ;Run flag
+  .WORD 293 ;HP
+  .WORD 200 ;PP
+  .DWORD 10798 ;Experience
+  .WORD 430 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_DISAPPEARED
+  .BYTE $01 ;Palette
+  .BYTE 43 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 85 ;Offense
+  .WORD 83 ;Defense
+  .BYTE 20 ;Speed
+  .BYTE 13 ;Guts
+  .BYTE 8 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_THUNDER_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_THUNDER_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_THUNDER_BETA
+  .WORD BATTLE_ACTIONS::PSI_THUNDER_BETA
+  .WORD NULL ;Final action
+  .BYTE $0D ;Action 1 argument
+  .BYTE $0D ;Action 2 argument
+  .BYTE $0E ;Action 3 argument
+  .BYTE $0E ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::BOTTLE_OF_WATER ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xB3\xCC\xB3\xCC\xEF\xE7\xC1", 10 ; ガミガミレディ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0063 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::CRANKY_LADY
+  .BYTE $07 ;Run flag
+  .WORD 95 ;HP
+  .WORD 0 ;PP
+  .DWORD 200 ;Experience
+  .WORD 17 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_TRAPPED_YOU
+  .DWORD TEXT_BATTLE_TURNED_BACK_TO_NORMAL
+  .BYTE $03 ;Palette
+  .BYTE 8 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 16 ;Offense
+  .WORD 18 ;Defense
+  .BYTE 6 ;Speed
+  .BYTE 3 ;Guts
+  .BYTE 32 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::WIELD_SHOPPING_BAG
+  .WORD BATTLE_ACTIONS::SCOWL
+  .WORD BATTLE_ACTIONS::GRIN
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::HANDBAG_STRAP ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xB3\xCC\xB3\xCC\xB3\xCC\xEF\xE7\xC1", 10 ; ガミガミガミレディ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0063 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::CRANKY_LADY
+  .BYTE $07 ;Run flag
+  .WORD 277 ;HP
+  .WORD 0 ;PP
+  .DWORD 3651 ;Experience
+  .WORD 134 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_TRAPPED_YOU
+  .DWORD TEXT_BATTLE_TURNED_BACK_TO_NORMAL
+  .BYTE $07 ;Palette
+  .BYTE 27 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 48 ;Offense
+  .WORD 70 ;Defense
+  .BYTE 17 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 32 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::SCOWL
+  .WORD BATTLE_ACTIONS::CONTINUOUS_ATTACK
+  .WORD BATTLE_ACTIONS::WIELD_SHOPPING_BAG
+  .WORD BATTLE_ACTIONS::SCARY_WORDS
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $04 ;Item drop rate
+  .BYTE ITEM::HANDBAG_STRAP ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xC3\x25\xD3", 10 ; ギーグ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0000 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 3600 ;HP
+  .WORD 0 ;PP
+  .DWORD 0 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $00 ;Palette
+  .BYTE 73 ;Level
+  .BYTE MUSIC::GIYGAS_AWAKENS
+  .WORD 203 ;Offense
+  .WORD 300 ;Defense
+  .BYTE 52 ;Speed
+  .BYTE 1 ;Guts
+  .BYTE 80 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xB2\xC8\xEC\xB5\xD0\xDF\xD4", 10 ; カニメザウルス
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $000E ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WETNOSAUR
+  .BYTE $07 ;Run flag
+  .WORD 1030 ;HP
+  .WORD 0 ;PP
+  .DWORD 33098 ;Experience
+  .WORD 745 ;Money
+  .WORD EVENT_SCRIPT::EVENT_029
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $09 ;Palette
+  .BYTE 59 ;Level
+  .BYTE MUSIC::VS_KRAKEN
+  .WORD 126 ;Offense
+  .WORD 172 ;Defense
+  .BYTE 17 ;Speed
+  .BYTE 2 ;Guts
+  .BYTE 16 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $03 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::STOMP
+  .WORD BATTLE_ACTIONS::SWING_TAIL
+  .WORD BATTLE_ACTIONS::BITE
+  .WORD BATTLE_ACTIONS::LOUD_RUMBLE
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::LUXURY_JERKY ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xB9\xBF\xEB\xF2\xB5\xD0\xDF\xD4", 10 ; ハラペコザウルス
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0041 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::CHOMPOSAUR
+  .BYTE $07 ;Run flag
+  .WORD 1288 ;HP
+  .WORD 320 ;PP
+  .DWORD 44378 ;Experience
+  .WORD 896 ;Money
+  .WORD EVENT_SCRIPT::EVENT_029
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $03 ;Palette
+  .BYTE 62 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 139 ;Offense
+  .WORD 183 ;Defense
+  .BYTE 17 ;Speed
+  .BYTE 3 ;Guts
+  .BYTE 16 ;Luck
+  .BYTE $03 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_FIRE_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_FIRE_BETA
+  .WORD BATTLE_ACTIONS::SWING_TAIL
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $05 ;Action 1 argument
+  .BYTE $06 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::CHOMPOSAUR_2 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::MAGIC_FRY_PAN ;Item dropped
+  .BYTE INITIAL_STATUS::SHIELD_POWER
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x72\xAE\x67\x70\xB0\xCF", 10 ; きょだいアリ
+  .BYTE ENEMYTYPE::INSECT
+  .WORD $0049 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::YOUR_SANCTUARY_POINT_BOSS
+  .BYTE $07 ;Run flag
+  .WORD 235 ;HP
+  .WORD 102 ;PP
+  .DWORD 685 ;Experience
+  .WORD 150 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $04 ;Palette
+  .BYTE 13 ;Level
+  .BYTE MUSIC::VS_YOUR_SANCTUARY_BOSS
+  .WORD 19 ;Offense
+  .WORD 23 ;Defense
+  .BYTE 6 ;Speed
+  .BYTE 9 ;Guts
+  .BYTE 72 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::PSI_DEFENSE_DOWN_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_MAGNET_ALPHA
+  .WORD NULL ;Final action
+  .BYTE ENEMY::TITANIC_ANT_2 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $29 ;Action 3 argument
+  .BYTE $2D ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xAC\x7E\xA6\x72\xAE\x67\x70\xB0\xCF", 10 ; もっときょだいアリ
+  .BYTE ENEMYTYPE::INSECT
+  .WORD $0049 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::GIGANTIC_ANT
+  .BYTE $07 ;Run flag
+  .WORD 308 ;HP
+  .WORD 81 ;PP
+  .DWORD 3980 ;Experience
+  .WORD 304 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $01 ;Palette
+  .BYTE 30 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 54 ;Offense
+  .WORD 112 ;Defense
+  .BYTE 17 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 6 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_MAGNET_ALPHA
+  .WORD BATTLE_ACTIONS::POISON_STING
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $2D ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::GIGANTIC_ANT_2 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::DOUBLE_BURGER ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x72\xAE\x67\x70\xC2\xF8\xF2", 10 ; きょだいキノコ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $000B ;Battle sprite
+  .WORD OVERWORLD_SPRITE::YOUR_SANCTUARY_POINT_BOSS
+  .BYTE $07 ;Run flag
+  .WORD 1700 ;HP
+  .WORD 112 ;PP
+  .DWORD 96323 ;Experience
+  .WORD 4086 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $09 ;Palette
+  .BYTE 48 ;Level
+  .BYTE MUSIC::VS_YOUR_SANCTUARY_BOSS
+  .WORD 95 ;Offense
+  .WORD 154 ;Defense
+  .BYTE 18 ;Speed
+  .BYTE 32 ;Guts
+  .BYTE 72 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $02 ;Action order
+  .WORD BATTLE_ACTIONS::SCATTER_SPORES
+  .WORD BATTLE_ACTIONS::PSI_LIFEUP_ALPHA
+  .WORD BATTLE_ACTIONS::SCATTER_SPORES_2
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $17 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::SHROOOM_2 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x72\xAE\x67\x70\xE8\xD5\xCC", 10 ; きょだいネズミ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $004B ;Battle sprite
+  .WORD OVERWORLD_SPRITE::YOUR_SANCTUARY_POINT_BOSS
+  .BYTE $07 ;Run flag
+  .WORD 1827 ;HP
+  .WORD 60 ;PP
+  .DWORD 115272 ;Experience
+  .WORD 4464 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $04 ;Palette
+  .BYTE 47 ;Level
+  .BYTE MUSIC::VS_YOUR_SANCTUARY_BOSS
+  .WORD 71 ;Offense
+  .WORD 180 ;Defense
+  .BYTE 19 ;Speed
+  .BYTE 250 ;Guts
+  .BYTE 45 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::POISONOUS_BITE
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD BATTLE_ACTIONS::BITE
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE ENEMY::PLAGUE_RAT_OF_DOOM_2 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x72\xAE\x67\x70\xFC\xD3\xBF", 10 ; きょだいモグラ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0053 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::YOUR_SANCTUARY_POINT_BOSS
+  .BYTE $07 ;Run flag
+  .WORD 498 ;HP
+  .WORD 161 ;PP
+  .DWORD 5791 ;Experience
+  .WORD 400 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $05 ;Palette
+  .BYTE 23 ;Level
+  .BYTE MUSIC::VS_YOUR_SANCTUARY_BOSS
+  .WORD 37 ;Offense
+  .WORD 50 ;Defense
+  .BYTE 9 ;Speed
+  .BYTE 15 ;Guts
+  .BYTE 36 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $03 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_LIFEUP_ALPHA
+  .WORD BATTLE_ACTIONS::TEAR_INTO
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $17 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::MONDO_MOLE_2 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x60\x68\xA8\x88\x74", 10 ; あなのぬし
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0053 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::YOUR_SANCTUARY_POINT_BOSS
+  .BYTE $07 ;Run flag
+  .WORD 386 ;HP
+  .WORD 110 ;PP
+  .DWORD 17301 ;Experience
+  .WORD 1467 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $15 ;Palette
+  .BYTE 32 ;Level
+  .BYTE MUSIC::VS_YOUR_SANCTUARY_BOSS
+  .WORD 59 ;Offense
+  .WORD 129 ;Defense
+  .BYTE 17 ;Speed
+  .BYTE 21 ;Guts
+  .BYTE 55 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::CLAW
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::PSI_SHIELD_BETA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE ENEMY::GUARDIAN_DIGGER_2 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $21 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::SHIELD_POWER
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xC2\xBF\x25\xB2\xCE\xDB", 10 ; キラーカップ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $002C ;Battle sprite
+  .WORD OVERWORLD_SPRITE::GIFT_BOX
+  .BYTE $07 ;Run flag
+  .WORD 190 ;HP
+  .WORD 0 ;PP
+  .DWORD 2462 ;Experience
+  .WORD 280 ;Money
+  .WORD EVENT_SCRIPT::EVENT_031
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $02 ;Palette
+  .BYTE 30 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 55 ;Offense
+  .WORD 20 ;Defense
+  .BYTE 23 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 1 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::HOT_ESPRESSO
+  .WORD BATTLE_ACTIONS::HOT_ESPRESSO
+  .WORD BATTLE_ACTIONS::HOT_ESPRESSO
+  .WORD BATTLE_ACTIONS::HOT_ESPRESSO
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 1 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $06 ;Item drop rate
+  .BYTE ITEM::CUP_OF_COFFEE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x80\x7D\x72\x68\xB7\xC0\xD4", 10 ; うわきなダイス
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $003A ;Battle sprite
+  .WORD OVERWORLD_SPRITE::GIFT_BOX
+  .BYTE $07 ;Run flag
+  .WORD 307 ;HP
+  .WORD 0 ;PP
+  .DWORD 10672 ;Experience
+  .WORD 703 ;Money
+  .WORD EVENT_SCRIPT::EVENT_031
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $03 ;Palette
+  .BYTE 59 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 146 ;Offense
+  .WORD 113 ;Defense
+  .BYTE 77 ;Speed
+  .BYTE 75 ;Guts
+  .BYTE 6 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD NULL ;Final action
+  .BYTE ENEMY::CARE_FREE_BOMB ;Action 1 argument
+  .BYTE ENEMY::BEAUTIFUL_UFO ;Action 2 argument
+  .BYTE ENEMY::HIGH_CLASS_UFO ;Action 3 argument
+  .BYTE ENEMY::CARE_FREE_BOMB ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 1 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $03 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x83\x76\x6E\x83\x76\x6E", 10 ; ぐちゃぐちゃ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $005B ;Battle sprite
+  .WORD OVERWORLD_SPRITE::SLIMY_LITTLE_PILE
+  .BYTE $07 ;Run flag
+  .WORD 224 ;HP
+  .WORD 0 ;PP
+  .DWORD 1978 ;Experience
+  .WORD 124 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $06 ;Palette
+  .BYTE 24 ;Level
+  .BYTE MUSIC::VS_MASTER_BARF
+  .WORD 42 ;Offense
+  .WORD 61 ;Defense
+  .BYTE 15 ;Speed
+  .BYTE 7 ;Guts
+  .BYTE 38 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::STINKY_BREATH
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD BATTLE_ACTIONS::STICKY_MUCUS
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE ENEMY::SLIMY_LIL_PILE ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::BOMB ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $04 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x93\xA7\x93\xA7", 10 ; げどげど
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $005B ;Battle sprite
+  .WORD OVERWORLD_SPRITE::SLIMY_LITTLE_PILE
+  .BYTE $07 ;Run flag
+  .WORD 326 ;HP
+  .WORD 0 ;PP
+  .DWORD 15075 ;Experience
+  .WORD 579 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $0E ;Palette
+  .BYTE 49 ;Level
+  .BYTE MUSIC::VS_MASTER_BARF
+  .WORD 103 ;Offense
+  .WORD 101 ;Defense
+  .BYTE 22 ;Speed
+  .BYTE 9 ;Guts
+  .BYTE 39 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD BATTLE_ACTIONS::STICKY_MUCUS
+  .WORD BATTLE_ACTIONS::STINKY_BREATH
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE ENEMY::EVEN_SLIMIER_LITTLE_PILE ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::MULTI_BOTTLE_ROCKET ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $03 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xD4\xBB\xC0\xB7\x25\x28", 10 ; スパイダー!
+  .BYTE ENEMYTYPE::INSECT
+  .WORD $004D ;Battle sprite
+  .WORD OVERWORLD_SPRITE::ARACHNID
+  .BYTE $07 ;Run flag
+  .WORD 216 ;HP
+  .WORD 0 ;PP
+  .DWORD 4933 ;Experience
+  .WORD 296 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $05 ;Palette
+  .BYTE 32 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 61 ;Offense
+  .WORD 30 ;Defense
+  .BYTE 23 ;Speed
+  .BYTE 3 ;Guts
+  .BYTE 0 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::SPIDER_SILK
+  .WORD BATTLE_ACTIONS::POISON_STING
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 1 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $04 ;Item drop rate
+  .BYTE ITEM::JAR_OF_HOT_SAUCE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xD4\xBB\xC0\xB7\x25\x28\x28\x28\x28", 10 ; スパイダー!!!!
+  .BYTE ENEMYTYPE::INSECT
+  .WORD $004D ;Battle sprite
+  .WORD OVERWORLD_SPRITE::ARACHNID
+  .BYTE $07 ;Run flag
+  .WORD 344 ;HP
+  .WORD 0 ;PP
+  .DWORD 10449 ;Experience
+  .WORD 412 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $1F ;Palette
+  .BYTE 45 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 87 ;Offense
+  .WORD 86 ;Defense
+  .BYTE 20 ;Speed
+  .BYTE 4 ;Guts
+  .BYTE 0 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::POISON_STING
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::SPIDER_SILK
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::BEEF_JERKY ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xD2\xBF\x25\xE2\xED", 10 ; クラーケン
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0029 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::KRAKEN
+  .BYTE $07 ;Run flag
+  .WORD 1097 ;HP
+  .WORD 176 ;PP
+  .DWORD 79267 ;Experience
+  .WORD 3049 ;Money
+  .WORD EVENT_SCRIPT::EVENT_029
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $01 ;Palette
+  .BYTE 54 ;Level
+  .BYTE MUSIC::VS_KRAKEN
+  .WORD 105 ;Offense
+  .WORD 166 ;Defense
+  .BYTE 21 ;Speed
+  .BYTE 1 ;Guts
+  .BYTE 32 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::FIRE_BREATH
+  .WORD BATTLE_ACTIONS::EMIT_PALE_GREEN_LIGHT
+  .WORD BATTLE_ACTIONS::CRASHING_BOOM_BANG
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::KRAKEN_2 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xD2\xBF\x25\xE2\xED\xBA\xC0\xF0", 10 ; クラーケンバイオ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0029 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 900 ;HP
+  .WORD 60 ;PP
+  .DWORD 50308 ;Experience
+  .WORD 960 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $18 ;Palette
+  .BYTE 70 ;Level
+  .BYTE MUSIC::VS_KRAKEN
+  .WORD 155 ;Offense
+  .WORD 195 ;Defense
+  .BYTE 42 ;Speed
+  .BYTE 1 ;Guts
+  .BYTE 32 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::GENERATE_TORNADO
+  .WORD BATTLE_ACTIONS::CRASHING_BOOM_BANG
+  .WORD BATTLE_ACTIONS::FIRE_BREATH
+  .WORD BATTLE_ACTIONS::EMIT_PALE_GREEN_LIGHT
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::GUTSY_BAT ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xD2\xDF\x25\xED", 10 ; クルーン
+  .BYTE ENEMYTYPE::METAL
+  .WORD $0034 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $06 ;Run flag
+  .WORD 113 ;HP
+  .WORD 17 ;PP
+  .DWORD 297 ;Experience
+  .WORD 21 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DESTROYED
+  .BYTE $02 ;Palette
+  .BYTE 14 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 21 ;Offense
+  .WORD 22 ;Defense
+  .BYTE 7 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 12 ;Luck
+  .BYTE $03 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $03 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::NIGHT_TIME_STUFFINESS_BEAM
+  .WORD BATTLE_ACTIONS::PSI_SHIELD_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $1F ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::METEORNIUM ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xD2\xDF\xDF\x25\xED", 10 ; クルルーン
+  .BYTE ENEMYTYPE::METAL
+  .WORD $0034 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 374 ;HP
+  .WORD 36 ;PP
+  .DWORD 5782 ;Experience
+  .WORD 256 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DESTROYED
+  .BYTE $1C ;Palette
+  .BYTE 39 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 78 ;Offense
+  .WORD 90 ;Defense
+  .BYTE 18 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 12 ;Luck
+  .BYTE $03 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $03 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::NIGHT_TIME_STUFFINESS_BEAM
+  .WORD BATTLE_ACTIONS::NEUTRALIZER
+  .WORD BATTLE_ACTIONS::PSI_SHIELD_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $C3 ;Action 3 argument
+  .BYTE $1F ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::METEOTITE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xD2\xDF\xED\xD2\xDF\x25\xED", 10 ; クルンクルーン
+  .BYTE ENEMYTYPE::METAL
+  .WORD $0034 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 553 ;HP
+  .WORD 83 ;PP
+  .DWORD 28866 ;Experience
+  .WORD 756 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DESTROYED
+  .BYTE $18 ;Palette
+  .BYTE 56 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 122 ;Offense
+  .WORD 130 ;Defense
+  .BYTE 28 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 12 ;Luck
+  .BYTE $03 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $03 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::DISRUPT_SENSES
+  .WORD BATTLE_ACTIONS::PSI_SHIELD_BETA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $21 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::METEOTITE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $04 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xFB\xCF\xD4\xBC\xED", 10 ; ポリスマン
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0033 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::POLICE
+  .BYTE $07 ;Run flag
+  .WORD 75 ;HP
+  .WORD 0 ;PP
+  .DWORD 86 ;Experience
+  .WORD 18 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_TURNED_BACK_TO_NORMAL
+  .BYTE $02 ;Palette
+  .BYTE 7 ;Level
+  .BYTE MUSIC::VS_RUNAWAY_DOG
+  .WORD 15 ;Offense
+  .WORD 18 ;Defense
+  .BYTE 5 ;Speed
+  .BYTE 7 ;Guts
+  .BYTE 16 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::CRUSHING_CHOP
+  .WORD BATTLE_ACTIONS::CRUSHING_CHOP
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $04 ;Item drop rate
+  .BYTE ITEM::HAMBURGER ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $03 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x6C\x72\x99\x7A", 10 ; まきへび
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0019 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::THIRSTY_COIL_SNAKE
+  .BYTE $07 ;Run flag
+  .WORD 18 ;HP
+  .WORD 0 ;PP
+  .DWORD 1 ;Experience
+  .WORD 4 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $01 ;Palette
+  .BYTE 1 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 3 ;Offense
+  .WORD 4 ;Defense
+  .BYTE 2 ;Speed
+  .BYTE 0 ;Guts
+  .BYTE 6 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::COIL_AROUND
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::COOKIE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x6C\x72\x99\x7A\xF7\xBF\xC0", 10 ; まきへびドライ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0019 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::THIRSTY_COIL_SNAKE
+  .BYTE $07 ;Run flag
+  .WORD 270 ;HP
+  .WORD 0 ;PP
+  .DWORD 2786 ;Experience
+  .WORD 276 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $19 ;Palette
+  .BYTE 28 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 52 ;Offense
+  .WORD 80 ;Defense
+  .BYTE 18 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 7 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::POISONOUS_BITE
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::COIL_AROUND
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $03 ;Item drop rate
+  .BYTE ITEM::CHICK ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xA2\x80\xAC\x7F\x64\x9D", 10 ; こうもりさん
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0013 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::MR_BATTY
+  .BYTE $07 ;Run flag
+  .WORD 86 ;HP
+  .WORD 0 ;PP
+  .DWORD 304 ;Experience
+  .WORD 30 ;Money
+  .WORD EVENT_SCRIPT::EVENT_025
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $01 ;Palette
+  .BYTE 15 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 25 ;Offense
+  .WORD 5 ;Defense
+  .BYTE 29 ;Speed
+  .BYTE 4 ;Guts
+  .BYTE 3 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::SIZE_UP_SITUATION
+  .WORD BATTLE_ACTIONS::BECOME_FRIENDLY
+  .WORD BATTLE_ACTIONS::SIZE_UP_SITUATION
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 1 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::JAR_OF_HOT_SAUCE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xA2\x80\xAC\x7F\x64\x6C", 10 ; こうもりさま
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0013 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::MR_BATTY
+  .BYTE $07 ;Run flag
+  .WORD 294 ;HP
+  .WORD 0 ;PP
+  .DWORD 4177 ;Experience
+  .WORD 371 ;Money
+  .WORD EVENT_SCRIPT::EVENT_025
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $1A ;Palette
+  .BYTE 35 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 66 ;Offense
+  .WORD 72 ;Defense
+  .BYTE 33 ;Speed
+  .BYTE 8 ;Guts
+  .BYTE 4 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::SIZE_UP_SITUATION
+  .WORD BATTLE_ACTIONS::BECOME_FRIENDLY
+  .WORD BATTLE_ACTIONS::BITE
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::DOUBLE_BURGER ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $03 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x60\x9F", 10 ; あれ
+  .BYTE ENEMYTYPE::INSECT
+  .WORD $0050 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::ARACHNID
+  .BYTE $07 ;Run flag
+  .WORD 209 ;HP
+  .WORD 0 ;PP
+  .DWORD 1757 ;Experience
+  .WORD 80 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $05 ;Palette
+  .BYTE 18 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 30 ;Offense
+  .WORD 26 ;Defense
+  .BYTE 35 ;Speed
+  .BYTE 9 ;Guts
+  .BYTE 24 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::KNIT_BROW
+  .WORD BATTLE_ACTIONS::VENT_ODOR
+  .WORD BATTLE_ACTIONS::LEAP_FORWARD_AND_SPREAD_WINGS
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::SECRET_HERB ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x60\xA8\x60\x9F", 10 ; あのあれ
+  .BYTE ENEMYTYPE::INSECT
+  .WORD $0050 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::ARACHNID
+  .BYTE $07 ;Run flag
+  .WORD 399 ;HP
+  .WORD 0 ;PP
+  .DWORD 10543 ;Experience
+  .WORD 432 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $1D ;Palette
+  .BYTE 42 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 84 ;Offense
+  .WORD 33 ;Defense
+  .BYTE 77 ;Speed
+  .BYTE 9 ;Guts
+  .BYTE 24 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::KNIT_BROW
+  .WORD BATTLE_ACTIONS::CONTINUOUS_ATTACK
+  .WORD BATTLE_ACTIONS::LEAP_FORWARD_AND_SPREAD_WINGS
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $03 ;Item drop rate
+  .BYTE ITEM::SECRET_HERB ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xBC\xCE\xF7\xB4\xC0\xED", 10 ; マッドサイン
+  .BYTE ENEMYTYPE::METAL
+  .WORD $001A ;Battle sprite
+  .WORD OVERWORLD_SPRITE::CRAZED_SIGN
+  .BYTE $07 ;Run flag
+  .WORD 295 ;HP
+  .WORD 98 ;PP
+  .DWORD 3618 ;Experience
+  .WORD 244 ;Money
+  .WORD EVENT_SCRIPT::EVENT_028
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $01 ;Palette
+  .BYTE 34 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 64 ;Offense
+  .WORD 96 ;Defense
+  .BYTE 17 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 11 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::PSI_PARALYSIS_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_HYPNOSIS_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $2F ;Action 3 argument
+  .BYTE $2B ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 1 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::BIG_BOTTLE_ROCKET ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xD4\xC0\xD4\xC0", 10 ; スイスイ
+  .BYTE ENEMYTYPE::METAL
+  .WORD $000D ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 391 ;HP
+  .WORD 140 ;PP
+  .DWORD 5397 ;Experience
+  .WORD 458 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_DISAPPEARED
+  .BYTE $1B ;Palette
+  .BYTE 40 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 81 ;Offense
+  .WORD 91 ;Defense
+  .BYTE 18 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 63 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::PSI_PSI_SHIELD_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_FLASH_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $23 ;Action 3 argument
+  .BYTE $11 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::MULTI_BOTTLE_ROCKET ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xD4\x25\xB7\xBF\xBF\xCE\xB6", 10 ; スーダララッタ
+  .BYTE ENEMYTYPE::METAL
+  .WORD $000D ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 722 ;HP
+  .WORD 212 ;PP
+  .DWORD 33818 ;Experience
+  .WORD 906 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_DISAPPEARED
+  .BYTE $09 ;Palette
+  .BYTE 65 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 144 ;Offense
+  .WORD 171 ;Defense
+  .BYTE 38 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 63 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::PSI_PSI_SHIELD_BETA
+  .WORD BATTLE_ACTIONS::PSI_FLASH_BETA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $25 ;Action 3 argument
+  .BYTE $12 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $03 ;Item drop rate
+  .BYTE ITEM::MULTI_BOTTLE_ROCKET ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x68\x6C\x70\x72\xFA\x25\xB7\x25", 10 ; なまいきボーダー
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0064 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::SKATE_PUNK
+  .BYTE $07 ;Run flag
+  .WORD 31 ;HP
+  .WORD 0 ;PP
+  .DWORD 12 ;Experience
+  .WORD 17 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_TURNED_BACK_TO_NORMAL
+  .BYTE $07 ;Palette
+  .BYTE 3 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 7 ;Offense
+  .WORD 8 ;Defense
+  .BYTE 5 ;Speed
+  .BYTE 0 ;Guts
+  .BYTE 13 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::SHRED_ON_SKATEBOARD
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE ENEMY::YES_MAN_JUNIOR ;Action 3 argument
+  .BYTE ENEMY::POGO_PUNK ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::PIZZA ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xD4\xE2\xDF\xCB\xF0\xED", 10 ; スケルピオン
+  .BYTE ENEMYTYPE::INSECT
+  .WORD $005C ;Battle sprite
+  .WORD OVERWORLD_SPRITE::SKELPION
+  .BYTE $07 ;Run flag
+  .WORD 137 ;HP
+  .WORD 21 ;PP
+  .DWORD 1823 ;Experience
+  .WORD 140 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $0E ;Palette
+  .BYTE 24 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 41 ;Offense
+  .WORD 23 ;Defense
+  .BYTE 37 ;Speed
+  .BYTE 80 ;Guts
+  .BYTE 7 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::POISON_STING
+  .WORD BATTLE_ACTIONS::EDGE_CLOSER
+  .WORD BATTLE_ACTIONS::PSI_THUNDER_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $0D ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 1 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::VIAL_OF_SERUM ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xD4\xE2\xDF\xCB\xF0\xED\x5C\xE7\xCE\xF7", 10 ; スケルピオン・デッド
+  .BYTE ENEMYTYPE::INSECT
+  .WORD $005C ;Battle sprite
+  .WORD OVERWORLD_SPRITE::SKELPION
+  .BYTE $07 ;Run flag
+  .WORD 214 ;HP
+  .WORD 125 ;PP
+  .DWORD 9908 ;Experience
+  .WORD 609 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $0B ;Palette
+  .BYTE 41 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 82 ;Offense
+  .WORD 57 ;Defense
+  .BYTE 40 ;Speed
+  .BYTE 88 ;Guts
+  .BYTE 8 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::POISON_STING
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::PSI_THUNDER_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_THUNDER_BETA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $0D ;Action 3 argument
+  .BYTE $0E ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $04 ;Item drop rate
+  .BYTE ITEM::KETCHUP_PACKET ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xD4\xB6\x25\xBC\xED", 10 ; スターマン
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0037 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::STARMAN
+  .BYTE $07 ;Run flag
+  .WORD 545 ;HP
+  .WORD 155 ;PP
+  .DWORD 23396 ;Experience
+  .WORD 720 ;Money
+  .WORD EVENT_SCRIPT::EVENT_026
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $02 ;Palette
+  .BYTE 55 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 103 ;Offense
+  .WORD 126 ;Defense
+  .BYTE 24 ;Speed
+  .BYTE 25 ;Guts
+  .BYTE 16 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::ON_GUARD
+  .WORD BATTLE_ACTIONS::PSI_MAGNET_ALPHA
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $2D ;Action 3 argument
+  .BYTE ENEMY::STARMAN_2 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::BRAIN_FOOD_LUNCH ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xD4\x25\xBB\x25\xD4\xB6\x25\xBC\xED", 10 ; スーパースターマン
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0037 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::STARMAN
+  .BYTE $07 ;Run flag
+  .WORD 568 ;HP
+  .WORD 310 ;PP
+  .DWORD 30145 ;Experience
+  .WORD 735 ;Money
+  .WORD EVENT_SCRIPT::EVENT_026
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $1A ;Palette
+  .BYTE 56 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 112 ;Offense
+  .WORD 129 ;Defense
+  .BYTE 24 ;Speed
+  .BYTE 25 ;Guts
+  .BYTE 16 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD BATTLE_ACTIONS::ON_GUARD
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE ENEMY::STARMAN_1 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::STARMAN_SUPER_2 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::SWORD_OF_KINGS ;Item dropped
+  .BYTE INITIAL_STATUS::PSI_SHIELD_POWER
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xD4\xB6\x25\xBC\xED\x5C\xE4\xED\xF5", 10 ; スターマン・センゾ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0037 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 750 ;HP
+  .WORD 462 ;PP
+  .DWORD 48695 ;Experience
+  .WORD 807 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $0C ;Palette
+  .BYTE 68 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 152 ;Offense
+  .WORD 170 ;Defense
+  .BYTE 46 ;Speed
+  .BYTE 43 ;Guts
+  .BYTE 16 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $02 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_STARSTORM_ALPHA
+  .WORD BATTLE_ACTIONS::FLASH_SMILE
+  .WORD BATTLE_ACTIONS::WHISPER_3
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $15 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::GHOST_OF_STARMAN_2 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::GODDESS_RIBBON ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x7D\x6F\x70\xFA\x25\xDF", 10 ; わらいボール
+  .BYTE ENEMYTYPE::METAL
+  .WORD $0004 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::SMILIN_SPHERE
+  .BYTE $07 ;Run flag
+  .WORD 233 ;HP
+  .WORD 60 ;PP
+  .DWORD 2218 ;Experience
+  .WORD 191 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_TOTALLY_SCRAPPED
+  .BYTE $09 ;Palette
+  .BYTE 27 ;Level
+  .BYTE MUSIC::VS_KRAKEN
+  .WORD 50 ;Offense
+  .WORD 65 ;Defense
+  .BYTE 17 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 13 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $03 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::PSI_FIRE_ALPHA
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::LAUGH_MANIACALLY
+  .WORD BATTLE_ACTIONS::EXPLODE ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $05 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::METEORNIUM ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x8A\x72\x7C\xFA\x25\xDF", 10 ; ぶきみボール
+  .BYTE ENEMYTYPE::METAL
+  .WORD $0004 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::SMILIN_SPHERE
+  .BYTE $07 ;Run flag
+  .WORD 577 ;HP
+  .WORD 180 ;PP
+  .DWORD 20389 ;Experience
+  .WORD 796 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_TOTALLY_SCRAPPED
+  .BYTE $11 ;Palette
+  .BYTE 56 ;Level
+  .BYTE MUSIC::VS_KRAKEN
+  .WORD 116 ;Offense
+  .WORD 134 ;Defense
+  .BYTE 27 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 15 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $03 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::PSI_FIRE_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_FIRE_BETA
+  .WORD BATTLE_ACTIONS::LAUGH_MANIACALLY
+  .WORD BATTLE_ACTIONS::EXPLODE ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $05 ;Action 2 argument
+  .BYTE $06 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::BROKEN_ANTENNA ;Item dropped
+  .BYTE INITIAL_STATUS::PSI_SHIELD
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xA0\x80\x92\xA8\x94\x72\xA5\x80", 10 ; おうけのせきぞう
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0057 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::PETRIFIED_ROYAL_GUARD
+  .BYTE $07 ;Run flag
+  .WORD 573 ;HP
+  .WORD 0 ;PP
+  .DWORD 19163 ;Experience
+  .WORD 628 ;Money
+  .WORD EVENT_SCRIPT::EVENT_028
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $05 ;Palette
+  .BYTE 53 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 106 ;Offense
+  .WORD 173 ;Defense
+  .BYTE 12 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 5 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::COME_OUT_SWINGING
+  .WORD BATTLE_ACTIONS::COME_OUT_SWINGING
+  .WORD BATTLE_ACTIONS::CHARGE
+  .WORD BATTLE_ACTIONS::WAR_CRY
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::SUDDEN_GUTS_PILL ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x94\x72\xA5\x80\xA8\xAC\xA6\x75\x9C", 10 ; せきぞうのもとじめ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0057 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::PETRIFIED_ROYAL_GUARD
+  .BYTE $07 ;Run flag
+  .WORD 831 ;HP
+  .WORD 6 ;PP
+  .DWORD 95390 ;Experience
+  .WORD 3235 ;Money
+  .WORD EVENT_SCRIPT::EVENT_028
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $13 ;Palette
+  .BYTE 55 ;Level
+  .BYTE MUSIC::VS_YOUR_SANCTUARY_BOSS
+  .WORD 109 ;Offense
+  .WORD 214 ;Defense
+  .BYTE 21 ;Speed
+  .BYTE 1 ;Guts
+  .BYTE 7 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::COME_OUT_SWINGING
+  .WORD BATTLE_ACTIONS::SPIN_SOMETHING
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::GUARDIAN_GENERAL_2 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x44\x58\xD4\xB6\x25\xBC\xED", 10 ; DXスターマン
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $006A ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 1400 ;HP
+  .WORD 418 ;PP
+  .DWORD 160524 ;Experience
+  .WORD 3827 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $02 ;Palette
+  .BYTE 65 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 143 ;Offense
+  .WORD 186 ;Defense
+  .BYTE 27 ;Speed
+  .BYTE 43 ;Guts
+  .BYTE 21 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::PSI_STARSTORM_ALPHA
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD NULL ;Final action
+  .BYTE ENEMY::STARMAN_DELUXE_2 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $15 ;Action 3 argument
+  .BYTE ENEMY::STARMAN_SUPER_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::PSI_SHIELD_POWER
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x64\x70\xA3\xA8\xD4\xB6\x25\xBC\xED", 10 ; さいごのスターマン
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $006A ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 840 ;HP
+  .WORD 860 ;PP
+  .DWORD 61929 ;Experience
+  .WORD 915 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $10 ;Palette
+  .BYTE 71 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 178 ;Offense
+  .WORD 187 ;Defense
+  .BYTE 47 ;Speed
+  .BYTE 25 ;Guts
+  .BYTE 24 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $03 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_SHIELD_BETA
+  .WORD BATTLE_ACTIONS::PSI_BRAINSHOCK_OMEGA
+  .WORD BATTLE_ACTIONS::PSI_STARSTORM_ALPHA
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $21 ;Action 1 argument
+  .BYTE $32 ;Action 2 argument
+  .BYTE $15 ;Action 3 argument
+  .BYTE ENEMY::FINAL_STARMAN_2 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
+  .BYTE INITIAL_STATUS::PSI_SHIELD_POWER
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xB0\x25\xBA\xED\xF5\xED\xCA", 10 ; アーバンゾンビ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0048 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::URBAN_ZOMBIE
+  .BYTE $07 ;Run flag
+  .WORD 171 ;HP
+  .WORD 0 ;PP
+  .DWORD 700 ;Experience
+  .WORD 58 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_RETURNED_TO_DUST_OF_EARTH
+  .BYTE $04 ;Palette
+  .BYTE 19 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 31 ;Offense
+  .WORD 24 ;Defense
+  .BYTE 10 ;Speed
+  .BYTE 15 ;Guts
+  .BYTE 24 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $03 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::LAUGH_HYSTERICALLY
+  .WORD BATTLE_ACTIONS::COLD_BREATH
+  .WORD BATTLE_ACTIONS::SOMETHING_MYSTERIOUS
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::HAMBURGER ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xA6\x7F\x86\x72\xF5\xED\xCA", 10 ; とりつきゾンビ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0032 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::ZOMBIE_POSSESSOR
+  .BYTE $07 ;Run flag
+  .WORD 176 ;HP
+  .WORD 0 ;PP
+  .DWORD 950 ;Experience
+  .WORD 81 ;Money
+  .WORD EVENT_SCRIPT::EVENT_027
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_MELTED_INTO_THIN_AIR
+  .BYTE $02 ;Palette
+  .BYTE 17 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 28 ;Offense
+  .WORD 19 ;Defense
+  .BYTE 30 ;Speed
+  .BYTE 9 ;Guts
+  .BYTE 6 ;Luck
+  .BYTE $03 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $03 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::REACH_WITH_ICY_HAND
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD BATTLE_ACTIONS::POSSESS
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE ENEMY::ZOMBIE_POSSESSOR ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::SECRET_HERB ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xF5\xED\xCA\xF7\xCE\xD3", 10 ; ゾンビドッグ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0042 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::ZOMBIE_DOG
+  .BYTE $07 ;Run flag
+  .WORD 210 ;HP
+  .WORD 0 ;PP
+  .DWORD 1354 ;Experience
+  .WORD 54 ;Money
+  .WORD EVENT_SCRIPT::EVENT_022
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_RETURNED_TO_DUST_OF_EARTH
+  .BYTE $04 ;Palette
+  .BYTE 22 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 39 ;Offense
+  .WORD 51 ;Defense
+  .BYTE 30 ;Speed
+  .BYTE 10 ;Guts
+  .BYTE 11 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::HOWL
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::POISONOUS_BITE
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::BOTTLE_ROCKET ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xB7\x25\xE6\xC1\xF2\xCE\xDB", 10 ; ダーティコップ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0045 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::CROOKED_COP
+  .BYTE $07 ;Run flag
+  .WORD 140 ;HP
+  .WORD 0 ;PP
+  .DWORD 492 ;Experience
+  .WORD 159 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $08 ;Palette
+  .BYTE 13 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 20 ;Offense
+  .WORD 24 ;Defense
+  .BYTE 15 ;Speed
+  .BYTE 8 ;Guts
+  .BYTE 18 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::SUBMISSION_HOLD
+  .WORD BATTLE_ACTIONS::COME_OUT_SWINGING
+  .WORD BATTLE_ACTIONS::ON_GUARD
+  .WORD BATTLE_ACTIONS::LOSE_TEMPER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::BOILED_EGG ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $03 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x60\x6A\x9F\x9D\xAA\x80\xF2\xCE\xDB", 10 ; あばれんぼうコップ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0045 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::CROOKED_COP
+  .BYTE $07 ;Run flag
+  .WORD 325 ;HP
+  .WORD 0 ;PP
+  .DWORD 7448 ;Experience
+  .WORD 420 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_TURNED_BACK_TO_NORMAL
+  .BYTE $0A ;Palette
+  .BYTE 36 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 69 ;Offense
+  .WORD 75 ;Defense
+  .BYTE 18 ;Speed
+  .BYTE 7 ;Guts
+  .BYTE 16 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::SUBMISSION_HOLD
+  .WORD BATTLE_ACTIONS::COME_OUT_SWINGING
+  .WORD BATTLE_ACTIONS::ON_GUARD
+  .WORD BATTLE_ACTIONS::LOSE_TEMPER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::DOUBLE_BURGER ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x67\x70\xD0\xCE\xF7\x25", 10 ; だいウッドー
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $005F ;Battle sprite
+  .WORD OVERWORLD_SPRITE::TERRITORIAL_OAK
+  .BYTE $06 ;Run flag
+  .WORD 145 ;HP
+  .WORD 41 ;PP
+  .DWORD 356 ;Experience
+  .WORD 29 ;Money
+  .WORD EVENT_SCRIPT::EVENT_029
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $06 ;Palette
+  .BYTE 15 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 26 ;Offense
+  .WORD 30 ;Defense
+  .BYTE 5 ;Speed
+  .BYTE 9 ;Guts
+  .BYTE 4 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::PSI_BRAINSHOCK_ALPHA
+  .WORD BATTLE_ACTIONS::VACUUM_ATTACK
+  .WORD BATTLE_ACTIONS::BURST_INTO_FLAMES ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $31 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xA2\x9D\x75\xAE\x80\xD0\xCE\xF7\x25", 10 ; こんじょうウッドー
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $005F ;Battle sprite
+  .WORD OVERWORLD_SPRITE::TERRITORIAL_OAK
+  .BYTE $07 ;Run flag
+  .WORD 609 ;HP
+  .WORD 76 ;PP
+  .DWORD 17567 ;Experience
+  .WORD 690 ;Money
+  .WORD EVENT_SCRIPT::EVENT_029
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $0E ;Palette
+  .BYTE 59 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 134 ;Offense
+  .WORD 146 ;Defense
+  .BYTE 14 ;Speed
+  .BYTE 11 ;Guts
+  .BYTE 5 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::PSI_BRAINSHOCK_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_MAGNET_ALPHA
+  .WORD BATTLE_ACTIONS::BURST_INTO_FLAMES ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $31 ;Action 3 argument
+  .BYTE $2D ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $04 ;Item drop rate
+  .BYTE ITEM::VIPER ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $03 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xB7\xC0\xBD\xFC\xED\xF7\xF7\xCE\xD3", 10 ; ダイヤモンドドッグ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $004C ;Battle sprite
+  .WORD OVERWORLD_SPRITE::YOUR_SANCTUARY_POINT_BOSS
+  .BYTE $07 ;Run flag
+  .WORD 3344 ;HP
+  .WORD 154 ;PP
+  .DWORD 337738 ;Experience
+  .WORD 6968 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $04 ;Palette
+  .BYTE 70 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 167 ;Offense
+  .WORD 230 ;Defense
+  .BYTE 31 ;Speed
+  .BYTE 10 ;Guts
+  .BYTE 47 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD BATTLE_ACTIONS::PSI_SHIELD_BETA
+  .WORD BATTLE_ACTIONS::GLORIOUS_LIGHT
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE ENEMY::DIAMOND_DOG_2 ;Action 2 argument
+  .BYTE $21 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::SHIELD_POWER
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xBC\xDF\x5C\xE7\x5C\xB6\xF2", 10 ; マル・デ・タコ
+  .BYTE ENEMYTYPE::METAL
+  .WORD $0007 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 482 ;HP
+  .WORD 0 ;PP
+  .DWORD 14475 ;Experience
+  .WORD 499 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_TOTALLY_SCRAPPED
+  .BYTE $02 ;Palette
+  .BYTE 49 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 99 ;Offense
+  .WORD 121 ;Defense
+  .BYTE 23 ;Speed
+  .BYTE 8 ;Guts
+  .BYTE 24 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::STEAL
+  .WORD BATTLE_ACTIONS::COIL_AROUND
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xCC\xB6\x5C\xEC\x5C\xB6\xF2", 10 ; ミタ・メ・タコ
+  .BYTE ENEMYTYPE::METAL
+  .WORD $0007 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 604 ;HP
+  .WORD 0 ;PP
+  .DWORD 25607 ;Experience
+  .WORD 637 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_TOTALLY_SCRAPPED
+  .BYTE $15 ;Palette
+  .BYTE 61 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 138 ;Offense
+  .WORD 147 ;Defense
+  .BYTE 26 ;Speed
+  .BYTE 8 ;Guts
+  .BYTE 18 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::STEAL
+  .WORD BATTLE_ACTIONS::COIL_AROUND
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::METEOTITE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xB2\xB8\x5C\xCF\x5C\xB6\xF2", 10 ; カナ・リ・タコ
+  .BYTE ENEMYTYPE::METAL
+  .WORD $0007 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 768 ;HP
+  .WORD 0 ;PP
+  .DWORD 41738 ;Experience
+  .WORD 744 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_TOTALLY_SCRAPPED
+  .BYTE $0A ;Palette
+  .BYTE 66 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 147 ;Offense
+  .WORD 176 ;Defense
+  .BYTE 43 ;Speed
+  .BYTE 8 ;Guts
+  .BYTE 24 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::STEAL
+  .WORD BATTLE_ACTIONS::ELECTRIC_FIELD
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::METEOTITE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xB6\xF2\x5C\xF4\x5C\xF8\xFC\xF8", 10 ; タコ・ソ・ノモノ
+  .BYTE ENEMYTYPE::METAL
+  .WORD $0007 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 792 ;HP
+  .WORD 0 ;PP
+  .DWORD 47876 ;Experience
+  .WORD 815 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_TOTALLY_SCRAPPED
+  .BYTE $03 ;Palette
+  .BYTE 70 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 163 ;Offense
+  .WORD 181 ;Defense
+  .BYTE 44 ;Speed
+  .BYTE 8 ;Guts
+  .BYTE 24 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::ELECTRIC_FIELD
+  .WORD BATTLE_ACTIONS::STEAL
+  .WORD BATTLE_ACTIONS::ELECTRIC_FIELD
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $04 ;Item drop rate
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x86\x7E\x6B\x7F\xB7\xCE\xD2", 10 ; つっぱりダック
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0012 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::MAD_DUCK
+  .BYTE $07 ;Run flag
+  .WORD 51 ;HP
+  .WORD 0 ;PP
+  .DWORD 41 ;Experience
+  .WORD 12 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $01 ;Palette
+  .BYTE 8 ;Level
+  .BYTE MUSIC::VS_RUNAWAY_DOG
+  .WORD 12 ;Offense
+  .WORD 24 ;Defense
+  .BYTE 30 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 1 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $05 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::DISRUPT_SENSES
+  .WORD BATTLE_ACTIONS::FALL_DOWN
+  .WORD BATTLE_ACTIONS::SPIN_SOMETHING
+  .WORD BATTLE_ACTIONS::PECK
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 0 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $03 ;Item drop rate
+  .BYTE ITEM::FRESH_EGG ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $04 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x80\x74\x68\x7D\x9F\x74\x72\xA0\x82", 10 ; うしなわれしきおく
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $005D ;Battle sprite
+  .WORD OVERWORLD_SPRITE::DALIS_CLOCK
+  .BYTE $07 ;Run flag
+  .WORD 296 ;HP
+  .WORD 0 ;PP
+  .DWORD 2503 ;Experience
+  .WORD 314 ;Money
+  .WORD EVENT_SCRIPT::EVENT_027
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $06 ;Palette
+  .BYTE 34 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 65 ;Offense
+  .WORD 66 ;Defense
+  .BYTE 4 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 4 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::FREEZE_IN_TIME
+  .WORD BATTLE_ACTIONS::FREEZE_IN_TIME
+  .WORD BATTLE_ACTIONS::FREEZE_IN_TIME
+  .WORD BATTLE_ACTIONS::TICK_TOCK
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 1 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x76\xAE\x80\x98\x9D\x75\x8E\xA8\x9C", 10 ; ちょうねんじゅのめ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0058 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::YOUR_SANCTUARY_POINT_BOSS
+  .BYTE $07 ;Run flag
+  .WORD 1048 ;HP
+  .WORD 240 ;PP
+  .DWORD 30303 ;Experience
+  .WORD 1358 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $05 ;Palette
+  .BYTE 29 ;Level
+  .BYTE MUSIC::VS_YOUR_SANCTUARY_BOSS
+  .WORD 54 ;Offense
+  .WORD 88 ;Defense
+  .BYTE 16 ;Speed
+  .BYTE 21 ;Guts
+  .BYTE 71 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD BATTLE_ACTIONS::PSI_FLASH_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_PARALYSIS_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE ENEMY::TRILLIONAGE_SPROUT_2 ;Action 2 argument
+  .BYTE $11 ;Action 3 argument
+  .BYTE $2F ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $03 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xDC\xC5\xB2", 10 ; ムジカ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0008 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::GIFT_BOX
+  .BYTE $07 ;Run flag
+  .WORD 292 ;HP
+  .WORD 0 ;PP
+  .DWORD 3748 ;Experience
+  .WORD 341 ;Money
+  .WORD EVENT_SCRIPT::EVENT_031
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $09 ;Palette
+  .BYTE 35 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 69 ;Offense
+  .WORD 85 ;Defense
+  .BYTE 21 ;Speed
+  .BYTE 20 ;Guts
+  .BYTE 8 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::ELECTRIC_SHOCK
+  .WORD BATTLE_ACTIONS::HAUNTING_MELODY
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::ELECTRIC_SHOCK
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 1 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::SUDDEN_GUTS_PILL ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xE7\xB5\x25\xF6\xD0\xDF\xD9", 10 ; デザートウルフ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0067 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::RUNAWAY_DOG
+  .BYTE $07 ;Run flag
+  .WORD 247 ;HP
+  .WORD 0 ;PP
+  .DWORD 3740 ;Experience
+  .WORD 114 ;Money
+  .WORD EVENT_SCRIPT::EVENT_022
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $07 ;Palette
+  .BYTE 30 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 57 ;Offense
+  .WORD 67 ;Defense
+  .BYTE 33 ;Speed
+  .BYTE 2 ;Guts
+  .BYTE 11 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::HOWL
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::POISONOUS_BITE
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::SUDDEN_GUTS_PILL ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xE3\xCE\xDB\x25", 10 ; ゲップー
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0062 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::MASTER_BELCH
+  .BYTE $07 ;Run flag
+  .WORD 650 ;HP
+  .WORD 0 ;PP
+  .DWORD 12509 ;Experience
+  .WORD 664 ;Money
+  .WORD EVENT_SCRIPT::EVENT_029
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $06 ;Palette
+  .BYTE 27 ;Level
+  .BYTE MUSIC::VS_MASTER_BELCH
+  .WORD 50 ;Offense
+  .WORD 88 ;Defense
+  .BYTE 16 ;Speed
+  .BYTE 20 ;Guts
+  .BYTE 61 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $02 ;Action order
+  .WORD BATTLE_ACTIONS::NAUSEATING_BURP
+  .WORD BATTLE_ACTIONS::NAUSEATING_BURP
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE ENEMY::SLIMY_LIL_PILE ;Action 3 argument
+  .BYTE ENEMY::MASTER_BELCH_3 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $03 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x97\x62\x83\x76\x6E\x83\x76\x6E", 10 ; でかぐちゃぐちゃ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0062 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::MASTER_BELCH
+  .BYTE $07 ;Run flag
+  .WORD 631 ;HP
+  .WORD 0 ;PP
+  .DWORD 19659 ;Experience
+  .WORD 728 ;Money
+  .WORD EVENT_SCRIPT::EVENT_029
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $05 ;Palette
+  .BYTE 57 ;Level
+  .BYTE MUSIC::VS_MASTER_BELCH
+  .WORD 120 ;Offense
+  .WORD 158 ;Defense
+  .BYTE 16 ;Speed
+  .BYTE 26 ;Guts
+  .BYTE 32 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::STINKY_BREATH
+  .WORD BATTLE_ACTIONS::STICKY_MUCUS
+  .WORD BATTLE_ACTIONS::NAUSEATING_BURP
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::METEOTITE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x62\x90\x7E\x96\x72\x66\xE3\xCE\xDB\x25", 10 ; かえってきたゲップー
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0062 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::MASTER_BELCH
+  .BYTE $07 ;Run flag
+  .WORD 1319 ;HP
+  .WORD 0 ;PP
+  .DWORD 125056 ;Experience
+  .WORD 3536 ;Money
+  .WORD EVENT_SCRIPT::EVENT_029
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $13 ;Palette
+  .BYTE 60 ;Level
+  .BYTE MUSIC::VS_MASTER_BELCH
+  .WORD 136 ;Offense
+  .WORD 177 ;Defense
+  .BYTE 24 ;Speed
+  .BYTE 39 ;Guts
+  .BYTE 64 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::NAUSEATING_BURP
+  .WORD BATTLE_ACTIONS::CONTINUOUS_ATTACK
+  .WORD BATTLE_ACTIONS::STINKY_BREATH
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD BATTLE_ACTIONS::MASTER_BARF_DEFEAT ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::MASTER_BARF_2 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $07 ;Item drop rate
+  .BYTE ITEM::CASEY_BAT ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $03 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x60\x82\x6C\xA8\xC2\xCE\xD4", 10 ; あくまのキッス
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0015 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::THUNDER_MITE
+  .BYTE $07 ;Run flag
+  .WORD 333 ;HP
+  .WORD 0 ;PP
+  .DWORD 10354 ;Experience
+  .WORD 528 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $01 ;Palette
+  .BYTE 46 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 91 ;Offense
+  .WORD 100 ;Defense
+  .BYTE 19 ;Speed
+  .BYTE 7 ;Guts
+  .BYTE 16 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::KISS_OF_DEATH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::JAR_OF_DELISAUCE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x60\x82\x6C\xA8\xE7\xC1\x25\xDB\xC2\xD4", 10 ; あくまのディープキス
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0015 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::FRENCH_KISS_OF_DEATH
+  .BYTE $07 ;Run flag
+  .WORD 588 ;HP
+  .WORD 0 ;PP
+  .DWORD 19210 ;Experience
+  .WORD 879 ;Money
+  .WORD EVENT_SCRIPT::EVENT_027
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $12 ;Palette
+  .BYTE 70 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 160 ;Offense
+  .WORD 160 ;Defense
+  .BYTE 30 ;Speed
+  .BYTE 7 ;Guts
+  .BYTE 16 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::KISS_OF_DEATH
+  .WORD BATTLE_ACTIONS::KISS_OF_DEATH
+  .WORD BATTLE_ACTIONS::KISS_OF_DEATH
+  .WORD BATTLE_ACTIONS::KISS_OF_DEATH
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::HORN_OF_LIFE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xE7\xE9\xBF\x25", 10 ; デヘラー
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0011 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::FOBBY
+  .BYTE $07 ;Run flag
+  .WORD 120 ;HP
+  .WORD 10 ;PP
+  .DWORD 1311 ;Experience
+  .WORD 93 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $01 ;Palette
+  .BYTE 16 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 29 ;Offense
+  .WORD 9 ;Defense
+  .BYTE 1 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 3 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BE_ABSENTMINDED
+  .WORD BATTLE_ACTIONS::PSI_BRAINSHOCK_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_MAGNET_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $31 ;Action 3 argument
+  .BYTE $2D ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
+  .BYTE INITIAL_STATUS::CANT_CONCENTRATE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xE7\xE9\xE9\xE9\xBF\x25", 10 ; デヘヘヘラー
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0011 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::FOBBY
+  .BYTE $07 ;Run flag
+  .WORD 240 ;HP
+  .WORD 19 ;PP
+  .DWORD 18348 ;Experience
+  .WORD 620 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $05 ;Palette
+  .BYTE 48 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 98 ;Offense
+  .WORD 84 ;Defense
+  .BYTE 5 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 3 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $04 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::HP_SUCKER
+  .WORD BATTLE_ACTIONS::PSI_BRAINSHOCK_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_MAGNET_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $87 ;Action 2 argument
+  .BYTE $31 ;Action 3 argument
+  .BYTE $2D ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
+  .BYTE INITIAL_STATUS::CANT_CONCENTRATE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $04 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x97\x9D\x72\xD0\xB8\x25\xC3", 10 ; でんきウナーギ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0044 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::ZAP_EEL
+  .BYTE $07 ;Run flag
+  .WORD 370 ;HP
+  .WORD 0 ;PP
+  .DWORD 12170 ;Experience
+  .WORD 611 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $04 ;Palette
+  .BYTE 48 ;Level
+  .BYTE MUSIC::VS_MASTER_BELCH
+  .WORD 97 ;Offense
+  .WORD 93 ;Defense
+  .BYTE 29 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 8 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::ELECTRIC_SHOCK
+  .WORD BATTLE_ACTIONS::ELECTRIC_SHOCK
+  .WORD BATTLE_ACTIONS::ELECTRIC_SHOCK
+  .WORD BATTLE_ACTIONS::ELECTRIC_SHOCK
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $04 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x96\x9D\x83\xA7\xA8", 10 ; てんぐどの
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0052 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::THUNDER_MITE
+  .BYTE $07 ;Run flag
+  .WORD 371 ;HP
+  .WORD 5 ;PP
+  .DWORD 14718 ;Experience
+  .WORD 572 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $05 ;Palette
+  .BYTE 48 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 96 ;Offense
+  .WORD 99 ;Defense
+  .BYTE 19 ;Speed
+  .BYTE 20 ;Guts
+  .BYTE 16 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BREATHE_THROUGH_FLUTE
+  .WORD BATTLE_ACTIONS::PLAY_POISON_FLUTE
+  .WORD BATTLE_ACTIONS::BREATHE_THROUGH_FLUTE
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $04 ;Item drop rate
+  .BYTE ITEM::SNAKE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x6A\x92\xE6\xED\xF6", 10 ; ばけテント
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0056 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NONE
+  .BYTE $07 ;Run flag
+  .WORD 579 ;HP
+  .WORD 56 ;PP
+  .DWORD 5500 ;Experience
+  .WORD 407 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $05 ;Palette
+  .BYTE 25 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 43 ;Offense
+  .WORD 69 ;Defense
+  .BYTE 10 ;Speed
+  .BYTE 16 ;Guts
+  .BYTE 32 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $03 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::DEFENSE_SPRAY
+  .WORD BATTLE_ACTIONS::SPEW_FLY_HONEY
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $A1 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::BOOGEY_TENT_2 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x6D\xA7\x62\x7F\xE7\xCA\xDF", 10 ; やどかりデビル
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0056 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 774 ;HP
+  .WORD 60 ;PP
+  .DWORD 48311 ;Experience
+  .WORD 897 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $1E ;Palette
+  .BYTE 69 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 158 ;Offense
+  .WORD 192 ;Defense
+  .BYTE 45 ;Speed
+  .BYTE 25 ;Guts
+  .BYTE 32 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $03 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::POISONOUS_BITE
+  .WORD BATTLE_ACTIONS::DIAMONDIZING_BITE
+  .WORD BATTLE_ACTIONS::SHIELD_KILLER
+  .WORD BATTLE_ACTIONS::PSI_HYPNOSIS_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $84 ;Action 3 argument
+  .BYTE $2B ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::HORN_OF_LIFE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xF6\xB4\xB2\xBF\xED", 10 ; トサカラン
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $000C ;Battle sprite
+  .WORD OVERWORLD_SPRITE::CRESTED_BOOKA
+  .BYTE $07 ;Run flag
+  .WORD 265 ;HP
+  .WORD 0 ;PP
+  .DWORD 3011 ;Experience
+  .WORD 130 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $09 ;Palette
+  .BYTE 28 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 53 ;Offense
+  .WORD 73 ;Defense
+  .BYTE 17 ;Speed
+  .BYTE 24 ;Guts
+  .BYTE 37 ;Luck
+  .BYTE $03 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $04 ;Miss rate
+  .BYTE $03 ;Action order
+  .WORD BATTLE_ACTIONS::GRIN
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::WAR_CRY
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::PICNIC_LUNCH ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xF7\xB5\xB3\xBF\xED", 10 ; ドザガラン
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $000C ;Battle sprite
+  .WORD OVERWORLD_SPRITE::CRESTED_BOOKA
+  .BYTE $07 ;Run flag
+  .WORD 452 ;HP
+  .WORD 0 ;PP
+  .DWORD 16365 ;Experience
+  .WORD 604 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $03 ;Palette
+  .BYTE 49 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 100 ;Offense
+  .WORD 110 ;Defense
+  .BYTE 20 ;Speed
+  .BYTE 28 ;Guts
+  .BYTE 40 ;Luck
+  .BYTE $03 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $04 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::GRIN
+  .WORD BATTLE_ACTIONS::WAR_CRY
+  .WORD BATTLE_ACTIONS::CHARGE
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::BEEF_JERKY ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xF7\xDC\x25\xD2\x5C\xC0\x25\xC5\x25", 10 ; ドムーク・イージー
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $003D ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 401 ;HP
+  .WORD 190 ;PP
+  .DWORD 7640 ;Experience
+  .WORD 467 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $0B ;Palette
+  .BYTE 39 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 76 ;Offense
+  .WORD 102 ;Defense
+  .BYTE 17 ;Speed
+  .BYTE 7 ;Guts
+  .BYTE 16 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $03 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_FREEZE_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_FREEZE_BETA
+  .WORD BATTLE_ACTIONS::PSI_HYPNOSIS_ALPHA
+  .WORD BATTLE_ACTIONS::EERIE_GLARE
+  .WORD NULL ;Final action
+  .BYTE $09 ;Action 1 argument
+  .BYTE $0A ;Action 2 argument
+  .BYTE $2B ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xF7\xDC\x25\xD2\x5C\xC4\xC8\xB0", 10 ; ドムーク・シニア
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $003D ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 501 ;HP
+  .WORD 700 ;PP
+  .DWORD 21056 ;Experience
+  .WORD 715 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $0D ;Palette
+  .BYTE 54 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 108 ;Offense
+  .WORD 122 ;Defense
+  .BYTE 25 ;Speed
+  .BYTE 7 ;Guts
+  .BYTE 16 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $03 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_FREEZE_BETA
+  .WORD BATTLE_ACTIONS::PSI_FIRE_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_LIFEUP_ALPHA
+  .WORD BATTLE_ACTIONS::EERIE_GLARE
+  .WORD NULL ;Final action
+  .BYTE $0A ;Action 1 argument
+  .BYTE $05 ;Action 2 argument
+  .BYTE $17 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x76\xAE\x7E\xA6\x82\x64\xF3\x25\xD4\xF6", 10 ; ちょっとくさゴースト
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0035 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::STINKY_GHOST
+  .BYTE $07 ;Run flag
+  .WORD 194 ;HP
+  .WORD 50 ;PP
+  .DWORD 606 ;Experience
+  .WORD 71 ;Money
+  .WORD EVENT_SCRIPT::EVENT_024
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_MELTED_INTO_THIN_AIR
+  .BYTE $02 ;Palette
+  .BYTE 21 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 35 ;Offense
+  .WORD 89 ;Defense
+  .BYTE 10 ;Speed
+  .BYTE 2 ;Guts
+  .BYTE 9 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::GRIN
+  .WORD BATTLE_ACTIONS::PSI_LIFEUP_ALPHA
+  .WORD BATTLE_ACTIONS::VENT_ODOR
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $17 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $03 ;Item drop rate
+  .BYTE ITEM::BROKEN_IRON ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x60\x82\x74\x8E\x80\xF3\x25\xD4\xF6", 10 ; あくしゅうゴースト
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0035 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::STINKY_GHOST
+  .BYTE $07 ;Run flag
+  .WORD 444 ;HP
+  .WORD 0 ;PP
+  .DWORD 13179 ;Experience
+  .WORD 541 ;Money
+  .WORD EVENT_SCRIPT::EVENT_024
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_MELTED_INTO_THIN_AIR
+  .BYTE $0D ;Palette
+  .BYTE 46 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 90 ;Offense
+  .WORD 179 ;Defense
+  .BYTE 18 ;Speed
+  .BYTE 4 ;Guts
+  .BYTE 7 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::GRIN
+  .WORD BATTLE_ACTIONS::POSSESS
+  .WORD BATTLE_ACTIONS::VENT_ODOR
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::LARGE_PIZZA ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xF6\xED\xC6\xC2\x64\x9D", 10 ; トンチキさん
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0020 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::EVERDRED
+  .BYTE $07 ;Run flag
+  .WORD 182 ;HP
+  .WORD 0 ;PP
+  .DWORD 986 ;Experience
+  .WORD 171 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_TURNED_BACK_TO_NORMAL
+  .BYTE $01 ;Palette
+  .BYTE 15 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 25 ;Offense
+  .WORD 35 ;Defense
+  .BYTE 6 ;Speed
+  .BYTE 10 ;Guts
+  .BYTE 40 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::KNIT_BROW
+  .WORD BATTLE_ACTIONS::STEAL
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::EVERDRED_2 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x8C\xA2\x80\x7C\x85\x68\xB8\xEC\xD2\xC5", 10 ; むこうみずなナメクジ
+  .BYTE ENEMYTYPE::INSECT
+  .WORD $002F ;Battle sprite
+  .WORD OVERWORLD_SPRITE::BLACK_ANTOID
+  .BYTE $07 ;Run flag
+  .WORD 30 ;HP
+  .WORD 6 ;PP
+  .DWORD 27 ;Experience
+  .WORD 6 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $02 ;Palette
+  .BYTE 5 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 9 ;Offense
+  .WORD 2 ;Defense
+  .BYTE 1 ;Speed
+  .BYTE 0 ;Guts
+  .BYTE 3 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::EDGE_CLOSER
+  .WORD BATTLE_ACTIONS::PSI_HYPNOSIS_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $2B ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 1 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::BOMB ;Item dropped
+  .BYTE INITIAL_STATUS::CANT_CONCENTRATE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x98\x76\x7E\xA2\x70\xB8\xEC\xD2\xC5", 10 ; ねちっこいナメクジ
+  .BYTE ENEMYTYPE::INSECT
+  .WORD $002F ;Battle sprite
+  .WORD OVERWORLD_SPRITE::BLACK_ANTOID
+  .BYTE $07 ;Run flag
+  .WORD 217 ;HP
+  .WORD 11 ;PP
+  .DWORD 9994 ;Experience
+  .WORD 543 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $03 ;Palette
+  .BYTE 39 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 79 ;Offense
+  .WORD 77 ;Defense
+  .BYTE 2 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 7 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::VACUUM_ATTACK
+  .WORD BATTLE_ACTIONS::PSI_HYPNOSIS_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $2B ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $05 ;Item drop rate
+  .BYTE ITEM::SALT_PACKET ;Item dropped
+  .BYTE INITIAL_STATUS::CANT_CONCENTRATE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x83\x9F\x66\xE8\xD5\xCC", 10 ; ぐれたネズミ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0014 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::ROWDY_MOUSE
+  .BYTE $07 ;Run flag
+  .WORD 36 ;HP
+  .WORD 0 ;PP
+  .DWORD 34 ;Experience
+  .WORD 9 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $01 ;Palette
+  .BYTE 6 ;Level
+  .BYTE MUSIC::VS_RUNAWAY_DOG
+  .WORD 7 ;Offense
+  .WORD 20 ;Defense
+  .BYTE 5 ;Speed
+  .BYTE 225 ;Guts
+  .BYTE 2 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $03 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 1 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::BREAD_ROLL ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x60\x82\xA8\xE8\xD5\xCC", 10 ; あくのネズミ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0014 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::ROWDY_MOUSE
+  .BYTE $07 ;Run flag
+  .WORD 416 ;HP
+  .WORD 0 ;PP
+  .DWORD 9225 ;Experience
+  .WORD 406 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $17 ;Palette
+  .BYTE 38 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 63 ;Offense
+  .WORD 98 ;Defense
+  .BYTE 18 ;Speed
+  .BYTE 225 ;Guts
+  .BYTE 13 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $03 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::POISONOUS_BITE
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::RUST_PROMOTER_DX ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x60\x9D\x74\x9D\xFA\xDC", 10 ; あんしんボム
+  .BYTE ENEMYTYPE::METAL
+  .WORD $0006 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::FRENCH_KISS_OF_DEATH
+  .BYTE $07 ;Run flag
+  .WORD 504 ;HP
+  .WORD 0 ;PP
+  .DWORD 14941 ;Experience
+  .WORD 641 ;Money
+  .WORD EVENT_SCRIPT::EVENT_027
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_WAS_BROKEN_INTO_PIECES
+  .BYTE $09 ;Palette
+  .BYTE 60 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 135 ;Offense
+  .WORD 215 ;Defense
+  .BYTE 31 ;Speed
+  .BYTE 15 ;Guts
+  .BYTE 8 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BOMB
+  .WORD BATTLE_ACTIONS::BOMB
+  .WORD BATTLE_ACTIONS::BOMB
+  .WORD BATTLE_ACTIONS::SUPER_BOMB
+  .WORD NULL ;Final action
+  .BYTE $93 ;Action 1 argument
+  .BYTE $93 ;Action 2 argument
+  .BYTE $93 ;Action 3 argument
+  .BYTE $94 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::SUPER_BOMB ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $04 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x97\x9D\x93\x72\xBA\xC6\xBA\xC6", 10 ; でんげきバチバチ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0039 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::YOUR_SANCTUARY_POINT_BOSS
+  .BYTE $07 ;Run flag
+  .WORD 3092 ;HP
+  .WORD 80 ;PP
+  .DWORD 261637 ;Experience
+  .WORD 6564 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $02 ;Palette
+  .BYTE 67 ;Level
+  .BYTE MUSIC::VS_KRAKEN
+  .WORD 148 ;Offense
+  .WORD 203 ;Defense
+  .BYTE 29 ;Speed
+  .BYTE 47 ;Guts
+  .BYTE 56 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::ELECTRIC_SHOCK
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD BATTLE_ACTIONS::ELECTRIC_SHOCK
+  .WORD BATTLE_ACTIONS::HUNGRY_HP_SUCKER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE ENEMY::ELECTRO_SPECTER_2 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $88 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::PSI_SHIELD_POWER
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x62\x7D\x70\x70\xF6\xDC\x82\x9D", 10 ; かわいいトムくん
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $001C ;Battle sprite
+  .WORD OVERWORLD_SPRITE::HANDSOME_TOM
+  .BYTE $07 ;Run flag
+  .WORD 133 ;HP
+  .WORD 16 ;PP
+  .DWORD 520 ;Experience
+  .WORD 45 ;Money
+  .WORD EVENT_SCRIPT::EVENT_024
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $03 ;Palette
+  .BYTE 16 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 27 ;Offense
+  .WORD 25 ;Defense
+  .BYTE 11 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 8 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::REEL
+  .WORD BATTLE_ACTIONS::PSI_HYPNOSIS_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_BRAINSHOCK_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $2B ;Action 3 argument
+  .BYTE $31 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $03 ;Item drop rate
+  .BYTE ITEM::TIN_OF_COCOA ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xA0\x76\x6E\x9C\x68\xB4\xDC\x82\x9D", 10 ; おちゃめなサムくん
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $001C ;Battle sprite
+  .WORD OVERWORLD_SPRITE::HANDSOME_TOM
+  .BYTE $07 ;Run flag
+  .WORD 161 ;HP
+  .WORD 55 ;PP
+  .DWORD 712 ;Experience
+  .WORD 48 ;Money
+  .WORD EVENT_SCRIPT::EVENT_024
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $01 ;Palette
+  .BYTE 20 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 34 ;Offense
+  .WORD 44 ;Defense
+  .BYTE 17 ;Speed
+  .BYTE 16 ;Guts
+  .BYTE 16 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::REEL
+  .WORD BATTLE_ACTIONS::PSI_DEFENSE_DOWN_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_LIFEUP_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $29 ;Action 3 argument
+  .BYTE $17 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::REFRESHING_HERB ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xB4\xB2\xB8\x78\x9D\x93\x9D", 10 ; サカナにんげん
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $001F ;Battle sprite
+  .WORD OVERWORLD_SPRITE::MANLY_FISH
+  .BYTE $07 ;Run flag
+  .WORD 500 ;HP
+  .WORD 0 ;PP
+  .DWORD 15826 ;Experience
+  .WORD 624 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_TRAPPED_YOU
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $01 ;Palette
+  .BYTE 42 ;Level
+  .BYTE MUSIC::VS_MASTER_BELCH
+  .WORD 83 ;Offense
+  .WORD 114 ;Defense
+  .BYTE 22 ;Speed
+  .BYTE 9 ;Guts
+  .BYTE 20 ;Luck
+  .BYTE $03 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::SPEAR_JAB
+  .WORD BATTLE_ACTIONS::SPEAR_JAB
+  .WORD BATTLE_ACTIONS::SPEAR_JAB
+  .WORD BATTLE_ACTIONS::SPEAR_JAB
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::BEEF_JERKY ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xB4\xB2\xB8\x78\x9D\x93\x9D\x5C\x60\x78", 10 ; サカナにんげん・あに
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $001F ;Battle sprite
+  .WORD OVERWORLD_SPRITE::MANLY_FISH
+  .BYTE $07 ;Run flag
+  .WORD 526 ;HP
+  .WORD 210 ;PP
+  .DWORD 15970 ;Experience
+  .WORD 686 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_TRAPPED_YOU
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $0E ;Palette
+  .BYTE 56 ;Level
+  .BYTE MUSIC::VS_YOUR_SANCTUARY_BOSS
+  .WORD 114 ;Offense
+  .WORD 123 ;Defense
+  .BYTE 24 ;Speed
+  .BYTE 11 ;Guts
+  .BYTE 24 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $03 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_HYPNOSIS_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_PARALYSIS_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_FREEZE_BETA
+  .WORD BATTLE_ACTIONS::PSI_HEALING_OMEGA
+  .WORD NULL ;Final action
+  .BYTE $2B ;Action 1 argument
+  .BYTE $2F ;Action 2 argument
+  .BYTE $0A ;Action 3 argument
+  .BYTE $1E ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::HORN_OF_LIFE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xA0\x9D\x74\x6F\x85\x68\xC0\xD8", 10 ; おんしらずなイヌ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0002 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::RUNAWAY_DOG
+  .BYTE $07 ;Run flag
+  .WORD 21 ;HP
+  .WORD 0 ;PP
+  .DWORD 4 ;Experience
+  .WORD 3 ;Money
+  .WORD EVENT_SCRIPT::EVENT_022
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $09 ;Palette
+  .BYTE 2 ;Level
+  .BYTE MUSIC::VS_RUNAWAY_DOG
+  .WORD 4 ;Offense
+  .WORD 5 ;Defense
+  .BYTE 26 ;Speed
+  .BYTE 0 ;Guts
+  .BYTE 1 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::HOWL
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::HOWL
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 1 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::BREAD_ROLL ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xB9\xFF\xD0\xC1\x25\xED\x6D\xAF\x80", 10 ; ハロウィーンやろう
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $001B ;Battle sprite
+  .WORD OVERWORLD_SPRITE::TRICK_OR_TRICK_KID
+  .BYTE $07 ;Run flag
+  .WORD 142 ;HP
+  .WORD 0 ;PP
+  .DWORD 570 ;Experience
+  .WORD 47 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $01 ;Palette
+  .BYTE 18 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 30 ;Offense
+  .WORD 37 ;Defense
+  .BYTE 7 ;Speed
+  .BYTE 12 ;Guts
+  .BYTE 12 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::SPIT_SEEDS
+  .WORD BATTLE_ACTIONS::SPIT_SEEDS
+  .WORD BATTLE_ACTIONS::SPIT_SEEDS
+  .WORD BATTLE_ACTIONS::GRIN
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::BOMB ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xCA\xCE\xD3\xD9\xCE\xF6", 10 ; ビッグフット
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0065 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::CAVE_BOY
+  .BYTE $07 ;Run flag
+  .WORD 314 ;HP
+  .WORD 0 ;PP
+  .DWORD 618 ;Experience
+  .WORD 17 ;Money
+  .WORD EVENT_SCRIPT::EVENT_029
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $07 ;Palette
+  .BYTE 11 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 21 ;Offense
+  .WORD 33 ;Defense
+  .BYTE 79 ;Speed
+  .BYTE 0 ;Guts
+  .BYTE 80 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $03 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::SHOUT
+  .WORD BATTLE_ACTIONS::SWING_CLUB
+  .WORD BATTLE_ACTIONS::SHOUT
+  .WORD BATTLE_ACTIONS::SWING_CLUB
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::DOUBLE_BURGER ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x68\xA5\xA8\xE3\x25\xC5\xDE\xD6", 10 ; なぞのゲージュツ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $000F ;Battle sprite
+  .WORD OVERWORLD_SPRITE::ABSTRACT_ART
+  .BYTE $07 ;Run flag
+  .WORD 301 ;HP
+  .WORD 60 ;PP
+  .DWORD 4361 ;Experience
+  .WORD 255 ;Money
+  .WORD EVENT_SCRIPT::EVENT_027
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $09 ;Palette
+  .BYTE 35 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 67 ;Offense
+  .WORD 79 ;Defense
+  .BYTE 19 ;Speed
+  .BYTE 7 ;Guts
+  .BYTE 7 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::PSI_HYPNOSIS_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $2B ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 1 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::REFRESHING_HERB ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x79\x7A\x7D\x9F\xA0\xA6\xA2", 10 ; ひびわれおとこ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0038 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::SHATTERED_MAN
+  .BYTE $07 ;Run flag
+  .WORD 694 ;HP
+  .WORD 0 ;PP
+  .DWORD 44690 ;Experience
+  .WORD 2630 ;Money
+  .WORD EVENT_SCRIPT::EVENT_024
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $12 ;Palette
+  .BYTE 51 ;Level
+  .BYTE MUSIC::VS_YOUR_SANCTUARY_BOSS
+  .WORD 104 ;Offense
+  .WORD 138 ;Defense
+  .BYTE 18 ;Speed
+  .BYTE 25 ;Guts
+  .BYTE 38 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::LUNGE_FORWARD
+  .WORD BATTLE_ACTIONS::HUG
+  .WORD BATTLE_ACTIONS::REACH_WITH_ICY_HAND
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $06 ;Item drop rate
+  .BYTE ITEM::MUMMY_WRAP ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x74\x6A\x72\x79\x7A\x7D\x9F", 10 ; しばきひびわれ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0038 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::SHATTERED_MAN
+  .BYTE $07 ;Run flag
+  .WORD 516 ;HP
+  .WORD 0 ;PP
+  .DWORD 17423 ;Experience
+  .WORD 577 ;Money
+  .WORD EVENT_SCRIPT::EVENT_024
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $02 ;Palette
+  .BYTE 50 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 101 ;Offense
+  .WORD 116 ;Defense
+  .BYTE 12 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 4 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::CONTINUOUS_ATTACK
+  .WORD BATTLE_ACTIONS::HUG
+  .WORD BATTLE_ACTIONS::REACH_WITH_ICY_HAND
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $06 ;Item drop rate
+  .BYTE ITEM::MUMMY_WRAP ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xA0\xAC\x70\xA2\x7C\xD4\xF6\x25\xED", 10 ; おもいこみストーン
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0066 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::EGO_ORB
+  .BYTE $07 ;Run flag
+  .WORD 592 ;HP
+  .WORD 0 ;PP
+  .DWORD 24180 ;Experience
+  .WORD 836 ;Money
+  .WORD EVENT_SCRIPT::EVENT_030
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $07 ;Palette
+  .BYTE 58 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 125 ;Offense
+  .WORD 140 ;Defense
+  .BYTE 17 ;Speed
+  .BYTE 1 ;Guts
+  .BYTE 8 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::TEAR_INTO
+  .WORD BATTLE_ACTIONS::LUNGE_FORWARD
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $03 ;Item drop rate
+  .BYTE ITEM::SKIP_SANDWICH_DX ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x70\x68\x85\x6C\x5C\x60\x6F\x74", 10 ; いなずま・あらし
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0027 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::YOUR_SANCTUARY_POINT_BOSS
+  .BYTE $07 ;Run flag
+  .WORD 2065 ;HP
+  .WORD 70 ;PP
+  .DWORD 129026 ;Experience
+  .WORD 4736 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $01 ;Palette
+  .BYTE 56 ;Level
+  .BYTE MUSIC::VS_KRAKEN
+  .WORD 111 ;Offense
+  .WORD 178 ;Defense
+  .BYTE 21 ;Speed
+  .BYTE 35 ;Guts
+  .BYTE 55 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $02 ;Action order
+  .WORD BATTLE_ACTIONS::CRASHING_BOOM_BANG
+  .WORD BATTLE_ACTIONS::TAKE_DEEP_BREATH
+  .WORD BATTLE_ACTIONS::INTERTWINE
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::THUNDER_AND_STORM_2 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xA0\x76\xAE\x80\x74\xAC\xA8\xC2\xCE\xF7", 10 ; おちょうしものキッド
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0040 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::SKATE_PUNK
+  .BYTE $07 ;Run flag
+  .WORD 33 ;HP
+  .WORD 0 ;PP
+  .DWORD 13 ;Experience
+  .WORD 18 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $03 ;Palette
+  .BYTE 4 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 8 ;Offense
+  .WORD 9 ;Defense
+  .BYTE 4 ;Speed
+  .BYTE 0 ;Guts
+  .BYTE 14 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $03 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::SWING_HULA_HOOP
+  .WORD BATTLE_ACTIONS::SWING_HULA_HOOP
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::LAUGH_HYSTERICALLY
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::BAG_OF_FRIES ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xD9\xBF\xED\xC2\x25\xD4\xB6\xC0\xED\x32", 10 ; フランキースタイン2
+  .BYTE ENEMYTYPE::METAL
+  .WORD $0061 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NONE
+  .BYTE $07 ;Run flag
+  .WORD 91 ;HP
+  .WORD 0 ;PP
+  .DWORD 76 ;Experience
+  .WORD 31 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DESTROYED
+  .BYTE $06 ;Palette
+  .BYTE 7 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 15 ;Offense
+  .WORD 18 ;Defense
+  .BYTE 4 ;Speed
+  .BYTE 0 ;Guts
+  .BYTE 40 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $02 ;Action order
+  .WORD BATTLE_ACTIONS::GENERATE_STEAM
+  .WORD BATTLE_ACTIONS::PUNCH
+  .WORD BATTLE_ACTIONS::GENERATE_STEAM
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::FRANKYSTEIN_MARK_II_2 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xD9\xBF\xED\xD2\x64\x6C", 10 ; フランクさま
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0025 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::FRANK
+  .BYTE $07 ;Run flag
+  .WORD 63 ;HP
+  .WORD 0 ;PP
+  .DWORD 50 ;Experience
+  .WORD 48 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $01 ;Palette
+  .BYTE 6 ;Level
+  .BYTE MUSIC::VS_NEW_AGE_RETRO_HIPPIE
+  .WORD 12 ;Offense
+  .WORD 17 ;Defense
+  .BYTE 7 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 32 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BRANDISH_KNIFE
+  .WORD BATTLE_ACTIONS::COME_OUT_SWINGING
+  .WORD BATTLE_ACTIONS::SAY_SOMETHING_NASTY
+  .WORD BATTLE_ACTIONS::BRANDISH_KNIFE
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xA0\x60\x70\xA4\xDD\x25\xF9\x25", 10 ; おあいそユーホー
+  .BYTE ENEMYTYPE::METAL
+  .WORD $0031 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::LIL_UFO
+  .BYTE $07 ;Run flag
+  .WORD 162 ;HP
+  .WORD 25 ;PP
+  .DWORD 1519 ;Experience
+  .WORD 110 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DESTROYED
+  .BYTE $02 ;Palette
+  .BYTE 27 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 49 ;Offense
+  .WORD 32 ;Defense
+  .BYTE 58 ;Speed
+  .BYTE 1 ;Guts
+  .BYTE 70 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::PSI_LIFEUP_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $17 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x72\x82\x6A\x7F\xDD\x25\xF9\x25", 10 ; きくばりユーホー
+  .BYTE ENEMYTYPE::METAL
+  .WORD $0031 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::LIL_UFO
+  .BYTE $07 ;Run flag
+  .WORD 339 ;HP
+  .WORD 15 ;PP
+  .DWORD 8257 ;Experience
+  .WORD 426 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DESTROYED
+  .BYTE $13 ;Palette
+  .BYTE 44 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 86 ;Offense
+  .WORD 87 ;Defense
+  .BYTE 59 ;Speed
+  .BYTE 1 ;Guts
+  .BYTE 71 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::PSI_LIFEUP_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $17 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $04 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x69\x98\x7E\x62\x90\x7F\xC2\xCE\xF7", 10 ; はねっかえりキッド
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0060 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::SKATE_PUNK
+  .BYTE $07 ;Run flag
+  .WORD 35 ;HP
+  .WORD 0 ;PP
+  .DWORD 15 ;Experience
+  .WORD 18 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $06 ;Palette
+  .BYTE 4 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 8 ;Offense
+  .WORD 10 ;Defense
+  .BYTE 3 ;Speed
+  .BYTE 0 ;Guts
+  .BYTE 15 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $04 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::CHARGE
+  .WORD BATTLE_ACTIONS::CHARGE
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::FALL_DOWN
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $07 ;Item drop rate
+  .BYTE ITEM::HAMBURGER ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xA7\x84\xA2\x70\xA0\xA6\xA2", 10 ; どすこいおとこ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0026 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::TOUGH_GUY
+  .BYTE $07 ;Run flag
+  .WORD 342 ;HP
+  .WORD 0 ;PP
+  .DWORD 9310 ;Experience
+  .WORD 525 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_TRAPPED_YOU
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $01 ;Palette
+  .BYTE 37 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 72 ;Offense
+  .WORD 92 ;Defense
+  .BYTE 18 ;Speed
+  .BYTE 20 ;Guts
+  .BYTE 16 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::COME_OUT_SWINGING
+  .WORD BATTLE_ACTIONS::COME_OUT_SWINGING
+  .WORD BATTLE_ACTIONS::COME_OUT_SWINGING
+  .WORD BATTLE_ACTIONS::LOSE_TEMPER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $05 ;Item drop rate
+  .BYTE ITEM::CHICK ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xBC\xCE\xF7\xB6\xD2\xC4\x25", 10 ; マッドタクシー
+  .BYTE ENEMYTYPE::METAL
+  .WORD $0055 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::MAD_TAXI
+  .BYTE $07 ;Run flag
+  .WORD 253 ;HP
+  .WORD 0 ;PP
+  .DWORD 2336 ;Experience
+  .WORD 216 ;Money
+  .WORD EVENT_SCRIPT::EVENT_030
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_TOTALLY_SCRAPPED
+  .BYTE $05 ;Palette
+  .BYTE 28 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 53 ;Offense
+  .WORD 68 ;Defense
+  .BYTE 38 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 8 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::REV_AND_ACCELERATE
+  .WORD BATTLE_ACTIONS::REV_AND_ACCELERATE
+  .WORD BATTLE_ACTIONS::SPEW_EXHAUST
+  .WORD BATTLE_ACTIONS::SPEW_EXHAUST
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::XTERMINATOR_SPRAY ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xBC\xC8\xBC\xC8\xA8\x60\x82\x6C", 10 ; マニマニのあくま
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $004F ;Battle sprite
+  .WORD OVERWORLD_SPRITE::EVIL_MANI_MANI
+  .BYTE $07 ;Run flag
+  .WORD 860 ;HP
+  .WORD 88 ;PP
+  .DWORD 28139 ;Experience
+  .WORD 1852 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $03 ;Palette
+  .BYTE 45 ;Level
+  .BYTE MUSIC::VS_STARMAN_JR
+  .WORD 86 ;Offense
+  .WORD 145 ;Defense
+  .BYTE 15 ;Speed
+  .BYTE 1 ;Guts
+  .BYTE 80 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $03 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_MAGNET_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_PARALYSIS_ALPHA
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $2D ;Action 1 argument
+  .BYTE $2F ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::EVIL_MANI_MANI_2 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xC5\xCE\xBB\xC9\xF6\xB2\xCF\xE3", 10 ; ジッパヒトカリゲ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $002D ;Battle sprite
+  .WORD OVERWORLD_SPRITE::FRENCH_KISS_OF_DEATH
+  .BYTE $07 ;Run flag
+  .WORD 280 ;HP
+  .WORD 21 ;PP
+  .DWORD 8708 ;Experience
+  .WORD 659 ;Money
+  .WORD EVENT_SCRIPT::EVENT_027
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $02 ;Palette
+  .BYTE 56 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 118 ;Offense
+  .WORD 97 ;Defense
+  .BYTE 18 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 4 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_THUNDER_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_FLASH_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_FIRE_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_FREEZE_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $0D ;Action 1 argument
+  .BYTE $11 ;Action 2 argument
+  .BYTE $05 ;Action 3 argument
+  .BYTE $09 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::MAGIC_TART ;Item dropped
+  .BYTE INITIAL_STATUS::CANT_CONCENTRATE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $06 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xF0\xEF\xB8\xED\xB2\xF7\x25\xE4", 10 ; オレナンカドーセ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $003C ;Battle sprite
+  .WORD OVERWORLD_SPRITE::GIFT_BOX
+  .BYTE $07 ;Run flag
+  .WORD 38 ;HP
+  .WORD 0 ;PP
+  .DWORD 17 ;Experience
+  .WORD 11 ;Money
+  .WORD EVENT_SCRIPT::EVENT_031
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $03 ;Palette
+  .BYTE 7 ;Level
+  .BYTE MUSIC::VS_RUNAWAY_DOG
+  .WORD 11 ;Offense
+  .WORD 21 ;Defense
+  .BYTE 27 ;Speed
+  .BYTE 0 ;Guts
+  .BYTE 1 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::SIZE_UP_SITUATION
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE ENEMY::WORTHLESS_PROTOPLASM ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 0 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $05 ;Item drop rate
+  .BYTE ITEM::COOKIE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x7C\x69\x7F\xFF\xFA\xCE\xF6", 10 ; みはりロボット
+  .BYTE ENEMYTYPE::METAL
+  .WORD $0036 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::SENTRY_ROBOT
+  .BYTE $07 ;Run flag
+  .WORD 372 ;HP
+  .WORD 0 ;PP
+  .DWORD 5034 ;Experience
+  .WORD 392 ;Money
+  .WORD EVENT_SCRIPT::EVENT_030
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DESTROYED
+  .BYTE $02 ;Palette
+  .BYTE 39 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 77 ;Offense
+  .WORD 105 ;Defense
+  .BYTE 17 ;Speed
+  .BYTE 10 ;Guts
+  .BYTE 4 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::TICK_TOCK
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD BATTLE_ACTIONS::BOTTLE_ROCKET
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE ENEMY::SENTRY_ROBOT ;Action 3 argument
+  .BYTE $90 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::BIG_BOTTLE_ROCKET ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x75\x8E\x80\xA4\x80\x7A\xFB\x25\xC2\x25", 10 ; じゅうそうびポーキー
+  .BYTE ENEMYTYPE::METAL
+  .WORD $002A ;Battle sprite
+  .WORD OVERWORLD_SPRITE::POKEY
+  .BYTE $07 ;Run flag
+  .WORD 1746 ;HP
+  .WORD 999 ;PP
+  .DWORD 0 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $00 ;Palette
+  .BYTE 72 ;Level
+  .BYTE MUSIC::NONE
+  .WORD 150 ;Offense
+  .WORD 274 ;Defense
+  .BYTE 51 ;Speed
+  .BYTE 45 ;Guts
+  .BYTE 55 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::PSI_FIRE_BETA
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $06 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::HEAVILY_ARMED_POKEY_2 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x50\x4B\xA0\xA6\xA2", 10 ; PKおとこ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $001D ;Battle sprite
+  .WORD OVERWORLD_SPRITE::ROBO_PUMP
+  .BYTE $07 ;Run flag
+  .WORD 591 ;HP
+  .WORD 252 ;PP
+  .DWORD 30094 ;Experience
+  .WORD 682 ;Money
+  .WORD EVENT_SCRIPT::EVENT_027
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_TURNED_BACK_TO_NORMAL
+  .BYTE $01 ;Palette
+  .BYTE 58 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 124 ;Offense
+  .WORD 144 ;Defense
+  .BYTE 30 ;Speed
+  .BYTE 1 ;Guts
+  .BYTE 24 ;Luck
+  .BYTE $03 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_FIRE_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_FIRE_BETA
+  .WORD BATTLE_ACTIONS::PSI_FIRE_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_FIRE_BETA
+  .WORD NULL ;Final action
+  .BYTE $05 ;Action 1 argument
+  .BYTE $06 ;Action 2 argument
+  .BYTE $05 ;Action 3 argument
+  .BYTE $06 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x50\x4B\xA0\xA6\xA2\x5C\x62\x82\x80\x90", 10 ; PKおとこ・かくうえ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $001D ;Battle sprite
+  .WORD OVERWORLD_SPRITE::ROBO_PUMP
+  .BYTE $07 ;Run flag
+  .WORD 618 ;HP
+  .WORD 574 ;PP
+  .DWORD 39247 ;Experience
+  .WORD 862 ;Money
+  .WORD EVENT_SCRIPT::EVENT_027
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_TURNED_BACK_TO_NORMAL
+  .BYTE $12 ;Palette
+  .BYTE 65 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 145 ;Offense
+  .WORD 152 ;Defense
+  .BYTE 31 ;Speed
+  .BYTE 1 ;Guts
+  .BYTE 24 ;Luck
+  .BYTE $03 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $03 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_FIRE_BETA
+  .WORD BATTLE_ACTIONS::PSI_PSI_SHIELD_OMEGA
+  .WORD BATTLE_ACTIONS::PSI_PARALYSIS_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_FIRE_GAMMA
+  .WORD NULL ;Final action
+  .BYTE $06 ;Action 1 argument
+  .BYTE $26 ;Action 2 argument
+  .BYTE $2F ;Action 3 argument
+  .BYTE $07 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::STAR_PENDANT ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x7D\x8F\x8A\x8F\xFC\xD3\xBF", 10 ; わるぶるモグラ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $004E ;Battle sprite
+  .WORD OVERWORLD_SPRITE::MOLE_PLAYING_ROUGH
+  .BYTE $07 ;Run flag
+  .WORD 103 ;HP
+  .WORD 0 ;PP
+  .DWORD 456 ;Experience
+  .WORD 36 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $05 ;Palette
+  .BYTE 14 ;Level
+  .BYTE MUSIC::VS_RUNAWAY_DOG
+  .WORD 22 ;Offense
+  .WORD 28 ;Defense
+  .BYTE 9 ;Speed
+  .BYTE 2 ;Guts
+  .BYTE 8 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $03 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::SCRATCH
+  .WORD BATTLE_ACTIONS::SIZE_UP_SITUATION
+  .WORD BATTLE_ACTIONS::BE_ABSENTMINDED
+  .WORD BATTLE_ACTIONS::CLAW
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::CROISSANT ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $03 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x60\x6A\x9F\xF3\x25\xF6", 10 ; あばれゴート
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $005E ;Battle sprite
+  .WORD OVERWORLD_SPRITE::GRUFF_GOAT
+  .BYTE $07 ;Run flag
+  .WORD 45 ;HP
+  .WORD 0 ;PP
+  .DWORD 20 ;Experience
+  .WORD 9 ;Money
+  .WORD EVENT_SCRIPT::EVENT_022
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $06 ;Palette
+  .BYTE 7 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 8 ;Offense
+  .WORD 23 ;Defense
+  .BYTE 12 ;Speed
+  .BYTE 0 ;Guts
+  .BYTE 16 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::TRAMPLE
+  .WORD BATTLE_ACTIONS::TRAMPLE
+  .WORD BATTLE_ACTIONS::TRAMPLE
+  .WORD BATTLE_ACTIONS::TEAR_INTO
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $04 ;Item drop rate
+  .BYTE ITEM::SALT_PACKET ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x8D\x67\x9D\xFF\xFA", 10 ; ゆだんロボ
+  .BYTE ENEMYTYPE::METAL
+  .WORD $0047 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::CAPSULE
+  .BYTE $07 ;Run flag
+  .WORD 962 ;HP
+  .WORD 0 ;PP
+  .DWORD 32378 ;Experience
+  .WORD 2081 ;Money
+  .WORD EVENT_SCRIPT::EVENT_027
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $04 ;Palette
+  .BYTE 46 ;Level
+  .BYTE MUSIC::VS_STARMAN_JR
+  .WORD 88 ;Offense
+  .WORD 137 ;Defense
+  .BYTE 83 ;Speed
+  .BYTE 30 ;Guts
+  .BYTE 49 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $05 ;Miss rate
+  .BYTE $03 ;Action order
+  .WORD BATTLE_ACTIONS::LOSE_GEAR_AND_BOLTS
+  .WORD BATTLE_ACTIONS::REAPPLY_BANDAGE
+  .WORD BATTLE_ACTIONS::FIRE_MISSILE_DIZZILY
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD BATTLE_ACTIONS::RUNAWAY_FIVE_EVENT ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::CLUMSY_ROBOT_2 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::PSI_SHIELD
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x60\x86\x82\xAC\x90\x8F\x20\x96\x72", 10 ; あつくもえる てき
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0018 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::ROBO_PUMP
+  .BYTE $07 ;Run flag
+  .WORD 602 ;HP
+  .WORD 0 ;PP
+  .DWORD 37618 ;Experience
+  .WORD 768 ;Money
+  .WORD EVENT_SCRIPT::EVENT_027
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $01 ;Palette
+  .BYTE 59 ;Level
+  .BYTE MUSIC::VS_YOUR_SANCTUARY_BOSS
+  .WORD 131 ;Offense
+  .WORD 262 ;Defense
+  .BYTE 30 ;Speed
+  .BYTE 14 ;Guts
+  .BYTE 8 ;Luck
+  .BYTE $03 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::EDGE_CLOSER
+  .WORD BATTLE_ACTIONS::FIRE_BREATH
+  .WORD BATTLE_ACTIONS::SPEW_FIREBALL
+  .WORD BATTLE_ACTIONS::FIRE_SPRAY
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::METEOTITE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xA0\x78\xBF\xD9\xEF\xC4\xB0", 10 ; おにラフレシア
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0017 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::DEMONIC_PETUNIA
+  .BYTE $07 ;Run flag
+  .WORD 478 ;HP
+  .WORD 0 ;PP
+  .DWORD 15171 ;Experience
+  .WORD 724 ;Money
+  .WORD EVENT_SCRIPT::EVENT_029
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $01 ;Palette
+  .BYTE 50 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 102 ;Offense
+  .WORD 111 ;Defense
+  .BYTE 26 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 9 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $03 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::EDGE_CLOSER
+  .WORD BATTLE_ACTIONS::EXTINGUISHING_BLAST
+  .WORD BATTLE_ACTIONS::EDGE_CLOSER
+  .WORD BATTLE_ACTIONS::SCATTER_POLLEN
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::SPICY_JERKY ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xBF\xED\xDA\x25\xDA", 10 ; ランブーブ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0009 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::RANBOOB
+  .BYTE $07 ;Run flag
+  .WORD 232 ;HP
+  .WORD 42 ;PP
+  .DWORD 2486 ;Experience
+  .WORD 158 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $09 ;Palette
+  .BYTE 24 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 41 ;Offense
+  .WORD 63 ;Defense
+  .BYTE 20 ;Speed
+  .BYTE 1 ;Guts
+  .BYTE 9 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $03 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::PSI_SHIELD_ALPHA
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::WONDERFUL_POWDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $1F ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::PICNIC_LUNCH ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x79\xA6\x82\x76\xDD\x25\xF9\x25", 10 ; ひとくちユーホー
+  .BYTE ENEMYTYPE::METAL
+  .WORD $002B ;Battle sprite
+  .WORD OVERWORLD_SPRITE::LIL_UFO
+  .BYTE $06 ;Run flag
+  .WORD 82 ;HP
+  .WORD 0 ;PP
+  .DWORD 223 ;Experience
+  .WORD 14 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DESTROYED
+  .BYTE $02 ;Palette
+  .BYTE 12 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 18 ;Offense
+  .WORD 17 ;Defense
+  .BYTE 53 ;Speed
+  .BYTE 13 ;Guts
+  .BYTE 8 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::NIGHT_TIME_STUFFINESS_BEAM
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::SKIP_SANDWICH ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xA2\x80\x72\x8E\x80\xDD\x25\xF9\x25", 10 ; こうきゅうユーホー
+  .BYTE ENEMYTYPE::METAL
+  .WORD $002B ;Battle sprite
+  .WORD OVERWORLD_SPRITE::LIL_UFO
+  .BYTE $07 ;Run flag
+  .WORD 433 ;HP
+  .WORD 72 ;PP
+  .DWORD 12385 ;Experience
+  .WORD 456 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DESTROYED
+  .BYTE $0F ;Palette
+  .BYTE 47 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 93 ;Offense
+  .WORD 103 ;Defense
+  .BYTE 60 ;Speed
+  .BYTE 15 ;Guts
+  .BYTE 24 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::DISRUPT_SENSES
+  .WORD BATTLE_ACTIONS::PSI_PSI_SHIELD_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $23 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::SKIP_SANDWICH_DX ;Item dropped
+  .BYTE INITIAL_STATUS::SHIELD
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $04 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xD6\xB8\xBC\xED", 10 ; ツナマン
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0051 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NOOSE_MAN
+  .BYTE $07 ;Run flag
+  .WORD 231 ;HP
+  .WORD 0 ;PP
+  .DWORD 1990 ;Experience
+  .WORD 220 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $05 ;Palette
+  .BYTE 26 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 47 ;Offense
+  .WORD 52 ;Defense
+  .BYTE 18 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 4 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BINDING_ATTACK
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $04 ;Item drop rate
+  .BYTE ITEM::CARTON_OF_CREAM ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xFF\xFA\x5C\xB3\xFF\xED", 10 ; ロボ・ガロン
+  .BYTE ENEMYTYPE::METAL
+  .WORD $003E ;Battle sprite
+  .WORD OVERWORLD_SPRITE::ROBO_PUMP
+  .BYTE $07 ;Run flag
+  .WORD 431 ;HP
+  .WORD 0 ;PP
+  .DWORD 4797 ;Experience
+  .WORD 349 ;Money
+  .WORD EVENT_SCRIPT::EVENT_027
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_BROKEN_INTO_PIECES
+  .BYTE $03 ;Palette
+  .BYTE 36 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 70 ;Offense
+  .WORD 113 ;Defense
+  .BYTE 19 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 4 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $02 ;Action order
+  .WORD BATTLE_ACTIONS::WHISPER_3
+  .WORD BATTLE_ACTIONS::MURMUR_2
+  .WORD BATTLE_ACTIONS::MUTTER_1
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::ROBO_PUMP_2 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::SUPER_BOMB ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xDB\xEF\x25\xED\x7D\x78", 10 ; プレーンわに
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0054 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::PLAIN_CROCODILE
+  .BYTE $07 ;Run flag
+  .WORD 234 ;HP
+  .WORD 0 ;PP
+  .DWORD 1928 ;Experience
+  .WORD 62 ;Money
+  .WORD EVENT_SCRIPT::EVENT_029
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $05 ;Palette
+  .BYTE 24 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 40 ;Offense
+  .WORD 55 ;Defense
+  .BYTE 10 ;Speed
+  .BYTE 1 ;Guts
+  .BYTE 5 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::EDGE_CLOSER
+  .WORD BATTLE_ACTIONS::BITE
+  .WORD BATTLE_ACTIONS::SWING_TAIL
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::METEORNIUM ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x86\xAD\x70\x7D\x78", 10 ; つよいわに
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0054 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::PLAIN_CROCODILE
+  .BYTE $07 ;Run flag
+  .WORD 417 ;HP
+  .WORD 0 ;PP
+  .DWORD 10122 ;Experience
+  .WORD 495 ;Money
+  .WORD EVENT_SCRIPT::EVENT_029
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $15 ;Palette
+  .BYTE 43 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 85 ;Offense
+  .WORD 131 ;Defense
+  .BYTE 17 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 6 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::EDGE_CLOSER
+  .WORD BATTLE_ACTIONS::BITE
+  .WORD BATTLE_ACTIONS::SWING_TAIL
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::SUPER_BOMB ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xC2\xD6\xC0\x7D\x78", 10 ; キツイわに
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0054 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::PLAIN_CROCODILE
+  .BYTE $07 ;Run flag
+  .WORD 522 ;HP
+  .WORD 0 ;PP
+  .DWORD 19484 ;Experience
+  .WORD 692 ;Money
+  .WORD EVENT_SCRIPT::EVENT_029
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $03 ;Palette
+  .BYTE 55 ;Level
+  .BYTE MUSIC::VS_MASTER_BELCH
+  .WORD 110 ;Offense
+  .WORD 128 ;Defense
+  .BYTE 23 ;Speed
+  .BYTE 10 ;Guts
+  .BYTE 4 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BITE
+  .WORD BATTLE_ACTIONS::SWING_TAIL
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::SUPER_PLUSH_BEAR ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xAD\x82\x68\x70\xB9\xE0", 10 ; よくないハエ
+  .BYTE ENEMYTYPE::INSECT
+  .WORD $0059 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NO_GOOD_FLY
+  .BYTE $07 ;Run flag
+  .WORD 100 ;HP
+  .WORD 0 ;PP
+  .DWORD 415 ;Experience
+  .WORD 26 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $15 ;Palette
+  .BYTE 15 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 23 ;Offense
+  .WORD 13 ;Defense
+  .BYTE 10 ;Speed
+  .BYTE 3 ;Guts
+  .BYTE 0 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::SAY_SOMETHING_NASTY
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 1 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::BOILED_EGG ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x92\x7E\xA2\x80\x7D\x8F\x70\xB9\xE0", 10 ; けっこうわるいハエ
+  .BYTE ENEMYTYPE::INSECT
+  .WORD $0059 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NO_GOOD_FLY
+  .BYTE $07 ;Run flag
+  .WORD 141 ;HP
+  .WORD 0 ;PP
+  .DWORD 1116 ;Experience
+  .WORD 84 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $02 ;Palette
+  .BYTE 19 ;Level
+  .BYTE MUSIC::VS_MASTER_BARF
+  .WORD 32 ;Offense
+  .WORD 16 ;Defense
+  .BYTE 15 ;Speed
+  .BYTE 4 ;Guts
+  .BYTE 0 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::SAY_SOMETHING_NASTY
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::PIZZA ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x78\x82\x70\xB2\xBF\xD4", 10 ; にくいカラス
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0010 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::SPITEFUL_CROW
+  .BYTE $07 ;Run flag
+  .WORD 24 ;HP
+  .WORD 0 ;PP
+  .DWORD 3 ;Experience
+  .WORD 5 ;Money
+  .WORD EVENT_SCRIPT::EVENT_025
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $01 ;Palette
+  .BYTE 27 ;Level
+  .BYTE MUSIC::VS_RUNAWAY_DOG
+  .WORD 5 ;Offense
+  .WORD 3 ;Defense
+  .BYTE 77 ;Speed
+  .BYTE 0 ;Guts
+  .BYTE 1 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::PECK
+  .WORD BATTLE_ACTIONS::PECK
+  .WORD BATTLE_ACTIONS::GRIN
+  .WORD BATTLE_ACTIONS::STEAL
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $07 ;Item drop rate
+  .BYTE ITEM::COOKIE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x62\x70\x70\x88\xA8\x20\x68\x6C\x90", 10 ; かいいぬの なまえ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0000 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NONE
+  .BYTE $07 ;Run flag
+  .WORD 999 ;HP
+  .WORD 0 ;PP
+  .DWORD 0 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_NO_MESSAGE
+  .BYTE $00 ;Palette
+  .BYTE 5 ;Level
+  .BYTE MUSIC::NONE
+  .WORD 4 ;Offense
+  .WORD 99 ;Defense
+  .BYTE 10 ;Speed
+  .BYTE 40 ;Guts
+  .BYTE 24 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::LUNGE_FORWARD
+  .WORD BATTLE_ACTIONS::CHARGE
+  .WORD BATTLE_ACTIONS::BARK
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 0 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xFB\x25\xC2\x25", 10 ; ポーキー
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0000 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NONE
+  .BYTE $07 ;Run flag
+  .WORD 999 ;HP
+  .WORD 0 ;PP
+  .DWORD 0 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_NO_MESSAGE
+  .BYTE $00 ;Palette
+  .BYTE 5 ;Level
+  .BYTE MUSIC::NONE
+  .WORD 1 ;Offense
+  .WORD 99 ;Defense
+  .BYTE 5 ;Speed
+  .BYTE 1 ;Guts
+  .BYTE 1 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BE_POKEY
+  .WORD BATTLE_ACTIONS::BE_POKEY
+  .WORD BATTLE_ACTIONS::BE_POKEY
+  .WORD BATTLE_ACTIONS::BE_POKEY
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 0 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xCB\xCE\xC2\x25", 10 ; ピッキー
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0000 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NONE
+  .BYTE $07 ;Run flag
+  .WORD 999 ;HP
+  .WORD 0 ;PP
+  .DWORD 0 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_NO_MESSAGE
+  .BYTE $00 ;Palette
+  .BYTE 5 ;Level
+  .BYTE MUSIC::NONE
+  .WORD 3 ;Offense
+  .WORD 99 ;Defense
+  .BYTE 25 ;Speed
+  .BYTE 10 ;Guts
+  .BYTE 1 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::CHANT_SPELL
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 0 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xF6\xC8\x25", 10 ; トニー
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0000 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NONE
+  .BYTE $07 ;Run flag
+  .WORD 999 ;HP
+  .WORD 0 ;PP
+  .DWORD 0 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_NO_MESSAGE
+  .BYTE $00 ;Palette
+  .BYTE 5 ;Level
+  .BYTE MUSIC::NONE
+  .WORD 4 ;Offense
+  .WORD 99 ;Defense
+  .BYTE 12 ;Speed
+  .BYTE 20 ;Guts
+  .BYTE 8 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::NO_EFFECT_TONY
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 0 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xBA\xDF\x25\xED\xFC\xED\xC2\x25", 10 ; バルーンモンキー
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0000 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NONE
+  .BYTE $07 ;Run flag
+  .WORD 999 ;HP
+  .WORD 0 ;PP
+  .DWORD 0 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_NO_MESSAGE
+  .BYTE $00 ;Palette
+  .BYTE 5 ;Level
+  .BYTE MUSIC::NONE
+  .WORD 7 ;Offense
+  .WORD 99 ;Defense
+  .BYTE 20 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 30 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::SCRATCH_HEAD
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 0 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xB7\xED\xC5\xFE\xED\xA0\xA6\xA2", 10 ; ダンジョンおとこ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0000 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NONE
+  .BYTE $07 ;Run flag
+  .WORD 999 ;HP
+  .WORD 0 ;PP
+  .DWORD 0 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_NO_MESSAGE
+  .BYTE $00 ;Palette
+  .BYTE 5 ;Level
+  .BYTE MUSIC::NONE
+  .WORD 255 ;Offense
+  .WORD 99 ;Defense
+  .BYTE 1 ;Speed
+  .BYTE 30 ;Guts
+  .BYTE 1 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::HUG
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 0 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xD9\xBF\xC0\xED\xD3\xBC\xED", 10 ; フライングマン
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0000 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NONE
+  .BYTE $07 ;Run flag
+  .WORD 300 ;HP
+  .WORD 0 ;PP
+  .DWORD 0 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_GOT_HURT_AND_COLLAPSED_FLYING_MAN
+  .BYTE $00 ;Palette
+  .BYTE 99 ;Level
+  .BYTE MUSIC::NONE
+  .WORD 95 ;Offense
+  .WORD 92 ;Defense
+  .BYTE 100 ;Speed
+  .BYTE 50 ;Guts
+  .BYTE 24 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::PUNCH
+  .WORD BATTLE_ACTIONS::PUNCH
+  .WORD BATTLE_ACTIONS::CHARGE
+  .WORD BATTLE_ACTIONS::CHARGE
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 0 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x88\x70\x83\x8F\x7C", 10 ; ぬいぐるみ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0000 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NONE
+  .BYTE $07 ;Run flag
+  .WORD 100 ;HP
+  .WORD 0 ;PP
+  .DWORD 0 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_PILE_OF_FLUFF
+  .BYTE $00 ;Palette
+  .BYTE 5 ;Level
+  .BYTE MUSIC::NONE
+  .WORD 7 ;Offense
+  .WORD 20 ;Defense
+  .BYTE 0 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 8 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 0 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x86\xAD\x70\x88\x70\x83\x8F\x7C", 10 ; つよいぬいぐるみ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0000 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NONE
+  .BYTE $07 ;Run flag
+  .WORD 400 ;HP
+  .WORD 0 ;PP
+  .DWORD 0 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_BIG_PILE_OF_FLUFF
+  .BYTE $00 ;Palette
+  .BYTE 5 ;Level
+  .BYTE MUSIC::NONE
+  .WORD 7 ;Offense
+  .WORD 50 ;Defense
+  .BYTE 0 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 8 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 0 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xE3\xCE\xDB\x25", 10 ; ゲップー
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0062 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::MASTER_BELCH
+  .BYTE $07 ;Run flag
+  .WORD 650 ;HP
+  .WORD 0 ;PP
+  .DWORD 12509 ;Experience
+  .WORD 664 ;Money
+  .WORD EVENT_SCRIPT::EVENT_029
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $06 ;Palette
+  .BYTE 27 ;Level
+  .BYTE MUSIC::VS_MASTER_BELCH
+  .WORD 50 ;Offense
+  .WORD 88 ;Defense
+  .BYTE 16 ;Speed
+  .BYTE 20 ;Guts
+  .BYTE 61 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::WOLFED_DOWN_FLY_HONEY
+  .WORD BATTLE_ACTIONS::WOLFED_DOWN_FLY_HONEY
+  .WORD BATTLE_ACTIONS::WOLFED_DOWN_FLY_HONEY
+  .WORD BATTLE_ACTIONS::WOLFED_DOWN_FLY_HONEY
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $03 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x6F\x9D\xAA\x80\x68\x74\x9D\x75\x6E", 10 ; らんぼうなしんじゃ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $003F ;Battle sprite
+  .WORD OVERWORLD_SPRITE::INSANE_CULTIST
+  .BYTE $07 ;Run flag
+  .WORD 94 ;HP
+  .WORD 0 ;PP
+  .DWORD 353 ;Experience
+  .WORD 33 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_TRAPPED_YOU
+  .DWORD TEXT_BATTLE_TURNED_BACK_TO_NORMAL
+  .BYTE $03 ;Palette
+  .BYTE 13 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 19 ;Offense
+  .WORD 25 ;Defense
+  .BYTE 8 ;Speed
+  .BYTE 20 ;Guts
+  .BYTE 64 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 0 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $03 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xE7\xBB\x25\xF6\xA8\x62\x70\x75\x9D", 10 ; デパートのかいじん
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $003D ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 610 ;HP
+  .WORD 290 ;PP
+  .DWORD 24291 ;Experience
+  .WORD 1648 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $16 ;Palette
+  .BYTE 42 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 82 ;Offense
+  .WORD 135 ;Defense
+  .BYTE 19 ;Speed
+  .BYTE 24 ;Guts
+  .BYTE 62 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $03 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_MAGNET_OMEGA
+  .WORD BATTLE_ACTIONS::PSI_BRAINSHOCK_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_FREEZE_ALPHA
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $2E ;Action 1 argument
+  .BYTE $31 ;Action 2 argument
+  .BYTE $09 ;Action 3 argument
+  .BYTE ENEMY::DEPT_STORE_SPOOK_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 0 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x3E\xA8\x60\x82\x6C", 10 ; ♪のあくま
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $004F ;Battle sprite
+  .WORD OVERWORLD_SPRITE::EVIL_MANI_MANI
+  .BYTE $07 ;Run flag
+  .WORD 1654 ;HP
+  .WORD 882 ;PP
+  .DWORD 89004 ;Experience
+  .WORD 4442 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $05 ;Palette
+  .BYTE 71 ;Level
+  .BYTE MUSIC::VS_STARMAN_JR
+  .WORD 172 ;Offense
+  .WORD 253 ;Defense
+  .BYTE 31 ;Speed
+  .BYTE 1 ;Guts
+  .BYTE 80 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $02 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_ROCKIN_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_LIFEUP_BETA
+  .WORD BATTLE_ACTIONS::PSI_ROCKIN_OMEGA
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $01 ;Action 1 argument
+  .BYTE $18 ;Action 2 argument
+  .BYTE $04 ;Action 3 argument
+  .BYTE ENEMY::YOUR_NIGHTMARE_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xB2\x25\xEB\xC0\xED\xB6\x25\x64\x9D", 10 ; カーペインターさん
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0021 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::MR_CARPAINTER
+  .BYTE $07 ;Run flag
+  .WORD 262 ;HP
+  .WORD 70 ;PP
+  .DWORD 1412 ;Experience
+  .WORD 195 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_TURNED_BACK_TO_NORMAL
+  .BYTE $01 ;Palette
+  .BYTE 21 ;Level
+  .BYTE MUSIC::VS_STARMAN_JR
+  .WORD 33 ;Offense
+  .WORD 45 ;Defense
+  .BYTE 8 ;Speed
+  .BYTE 13 ;Guts
+  .BYTE 72 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $02 ;Action order
+  .WORD BATTLE_ACTIONS::CRASHING_BOOM_BANG
+  .WORD BATTLE_ACTIONS::PSI_PSI_SHIELD_ALPHA
+  .WORD BATTLE_ACTIONS::PAINT_ATTACK
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $23 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::MR_CARPAINTER_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xB2\x25\xFA\xED\xF7\xCE\xD3", 10 ; カーボンドッグ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0028 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::YOUR_SANCTUARY_POINT_BOSS
+  .BYTE $07 ;Run flag
+  .WORD 1672 ;HP
+  .WORD 0 ;PP
+  .DWORD 0 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $01 ;Palette
+  .BYTE 70 ;Level
+  .BYTE MUSIC::VS_YOUR_SANCTUARY_BOSS
+  .WORD 159 ;Offense
+  .WORD 174 ;Defense
+  .BYTE 31 ;Speed
+  .BYTE 52 ;Guts
+  .BYTE 53 ;Luck
+  .BYTE $03 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::FIRE_SPRAY
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD BATTLE_ACTIONS::CHARGE
+  .WORD BATTLE_ACTIONS::HOWL
+  .WORD BATTLE_ACTIONS::GIVE_OFF_RAINBOW ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE ENEMY::CARBON_DOG_1 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE ENEMY::DIAMOND_DOG_1 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xB9\xBF\xEB\xF2\xB5\xD0\xDF\xD4", 10 ; ハラペコザウルス
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $000E ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WETNOSAUR
+  .BYTE $07 ;Run flag
+  .WORD 1288 ;HP
+  .WORD 320 ;PP
+  .DWORD 44378 ;Experience
+  .WORD 896 ;Money
+  .WORD EVENT_SCRIPT::EVENT_029
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $09 ;Palette
+  .BYTE 62 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 139 ;Offense
+  .WORD 183 ;Defense
+  .BYTE 17 ;Speed
+  .BYTE 3 ;Guts
+  .BYTE 16 ;Luck
+  .BYTE $03 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::STOMP
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD BATTLE_ACTIONS::PSI_FIRE_BETA
+  .WORD BATTLE_ACTIONS::PSI_FIRE_GAMMA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE ENEMY::CHOMPOSAUR_1 ;Action 2 argument
+  .BYTE $06 ;Action 3 argument
+  .BYTE $07 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::MAGIC_FRY_PAN ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x72\xAE\x67\x70\xB0\xCF", 10 ; きょだいアリ
+  .BYTE ENEMYTYPE::INSECT
+  .WORD $0049 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::YOUR_SANCTUARY_POINT_BOSS
+  .BYTE $07 ;Run flag
+  .WORD 235 ;HP
+  .WORD 102 ;PP
+  .DWORD 685 ;Experience
+  .WORD 150 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $04 ;Palette
+  .BYTE 13 ;Level
+  .BYTE MUSIC::VS_YOUR_SANCTUARY_BOSS
+  .WORD 19 ;Offense
+  .WORD 23 ;Defense
+  .BYTE 6 ;Speed
+  .BYTE 9 ;Guts
+  .BYTE 72 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::BITE
+  .WORD BATTLE_ACTIONS::PSI_SHIELD_ALPHA
+  .WORD NULL ;Final action
+  .BYTE ENEMY::TITANIC_ANT_1 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $1F ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xAC\x7E\xA6\x72\xAE\x67\x70\xB0\xCF", 10 ; もっときょだいアリ
+  .BYTE ENEMYTYPE::INSECT
+  .WORD $0049 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::GIGANTIC_ANT
+  .BYTE $07 ;Run flag
+  .WORD 308 ;HP
+  .WORD 81 ;PP
+  .DWORD 3980 ;Experience
+  .WORD 304 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $01 ;Palette
+  .BYTE 30 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 54 ;Offense
+  .WORD 112 ;Defense
+  .BYTE 17 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 6 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_PARALYSIS_ALPHA
+  .WORD BATTLE_ACTIONS::FLASH_SMILE
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $2F ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE ENEMY::GIGANTIC_ANT_1 ;Action 3 argument
+  .BYTE ENEMY::GIGANTIC_ANT_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::DOUBLE_BURGER ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x72\xAE\x67\x70\xC2\xF8\xF2", 10 ; きょだいキノコ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $000B ;Battle sprite
+  .WORD OVERWORLD_SPRITE::YOUR_SANCTUARY_POINT_BOSS
+  .BYTE $07 ;Run flag
+  .WORD 1700 ;HP
+  .WORD 112 ;PP
+  .DWORD 96323 ;Experience
+  .WORD 4086 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $09 ;Palette
+  .BYTE 48 ;Level
+  .BYTE MUSIC::VS_YOUR_SANCTUARY_BOSS
+  .WORD 95 ;Offense
+  .WORD 154 ;Defense
+  .BYTE 18 ;Speed
+  .BYTE 32 ;Guts
+  .BYTE 72 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::SCATTER_SPORES
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::DISRUPT_SENSES
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::SHROOOM_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x72\xAE\x67\x70\xE8\xD5\xCC", 10 ; きょだいネズミ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $004B ;Battle sprite
+  .WORD OVERWORLD_SPRITE::YOUR_SANCTUARY_POINT_BOSS
+  .BYTE $07 ;Run flag
+  .WORD 1827 ;HP
+  .WORD 60 ;PP
+  .DWORD 115272 ;Experience
+  .WORD 4464 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $04 ;Palette
+  .BYTE 47 ;Level
+  .BYTE MUSIC::VS_YOUR_SANCTUARY_BOSS
+  .WORD 71 ;Offense
+  .WORD 180 ;Defense
+  .BYTE 19 ;Speed
+  .BYTE 250 ;Guts
+  .BYTE 45 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD BATTLE_ACTIONS::GRIN
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE ENEMY::PLAGUE_RAT_OF_DOOM_1 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x72\xAE\x67\x70\xFC\xD3\xBF", 10 ; きょだいモグラ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0053 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::YOUR_SANCTUARY_POINT_BOSS
+  .BYTE $07 ;Run flag
+  .WORD 498 ;HP
+  .WORD 161 ;PP
+  .DWORD 5791 ;Experience
+  .WORD 400 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $05 ;Palette
+  .BYTE 23 ;Level
+  .BYTE MUSIC::VS_YOUR_SANCTUARY_BOSS
+  .WORD 37 ;Offense
+  .WORD 50 ;Defense
+  .BYTE 9 ;Speed
+  .BYTE 15 ;Guts
+  .BYTE 36 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $03 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_PSI_SHIELD_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_OFFENSE_UP_ALPHA
+  .WORD BATTLE_ACTIONS::CLAW
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $23 ;Action 1 argument
+  .BYTE $27 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::MONDO_MOLE_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x60\x68\xA8\x88\x74", 10 ; あなのぬし
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0053 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::YOUR_SANCTUARY_POINT_BOSS
+  .BYTE $07 ;Run flag
+  .WORD 386 ;HP
+  .WORD 110 ;PP
+  .DWORD 17301 ;Experience
+  .WORD 1467 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $15 ;Palette
+  .BYTE 32 ;Level
+  .BYTE MUSIC::VS_YOUR_SANCTUARY_BOSS
+  .WORD 59 ;Offense
+  .WORD 129 ;Defense
+  .BYTE 17 ;Speed
+  .BYTE 21 ;Guts
+  .BYTE 55 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::TEAR_INTO
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::PSI_LIFEUP_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE ENEMY::GUARDIAN_DIGGER_1 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $17 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xD2\xBF\x25\xE2\xED", 10 ; クラーケン
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0029 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::KRAKEN
+  .BYTE $07 ;Run flag
+  .WORD 1097 ;HP
+  .WORD 176 ;PP
+  .DWORD 79267 ;Experience
+  .WORD 3049 ;Money
+  .WORD EVENT_SCRIPT::EVENT_029
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $01 ;Palette
+  .BYTE 54 ;Level
+  .BYTE MUSIC::VS_KRAKEN
+  .WORD 105 ;Offense
+  .WORD 166 ;Defense
+  .BYTE 21 ;Speed
+  .BYTE 1 ;Guts
+  .BYTE 32 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $03 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_FLASH_BETA
+  .WORD BATTLE_ACTIONS::FIRE_BREATH
+  .WORD BATTLE_ACTIONS::GENERATE_TORNADO
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $12 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::KRAKEN_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xD2\xBF\x25\xE2\xED\xBA\xC0\xF0", 10 ; クラーケンバイオ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0029 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 900 ;HP
+  .WORD 60 ;PP
+  .DWORD 50308 ;Experience
+  .WORD 960 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $18 ;Palette
+  .BYTE 70 ;Level
+  .BYTE MUSIC::VS_KRAKEN
+  .WORD 155 ;Offense
+  .WORD 195 ;Defense
+  .BYTE 42 ;Speed
+  .BYTE 1 ;Guts
+  .BYTE 32 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::GUTSY_BAT ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xD4\xB6\x25\xBC\xED", 10 ; スターマン
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0037 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::STARMAN
+  .BYTE $07 ;Run flag
+  .WORD 545 ;HP
+  .WORD 155 ;PP
+  .DWORD 23396 ;Experience
+  .WORD 720 ;Money
+  .WORD EVENT_SCRIPT::EVENT_026
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $02 ;Palette
+  .BYTE 55 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 103 ;Offense
+  .WORD 126 ;Defense
+  .BYTE 24 ;Speed
+  .BYTE 25 ;Guts
+  .BYTE 16 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_SHIELD_ALPHA
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::SUDDEN_GUTS_PILL
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $1F ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $9F ;Action 3 argument
+  .BYTE ENEMY::STARMAN_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::BRAIN_FOOD_LUNCH ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xD4\x25\xBB\x25\xD4\xB6\x25\xBC\xED", 10 ; スーパースターマン
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0037 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::STARMAN
+  .BYTE $07 ;Run flag
+  .WORD 568 ;HP
+  .WORD 310 ;PP
+  .DWORD 30145 ;Experience
+  .WORD 735 ;Money
+  .WORD EVENT_SCRIPT::EVENT_026
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $1A ;Palette
+  .BYTE 56 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 112 ;Offense
+  .WORD 129 ;Defense
+  .BYTE 24 ;Speed
+  .BYTE 25 ;Guts
+  .BYTE 16 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_PSI_SHIELD_BETA
+  .WORD BATTLE_ACTIONS::PSI_HEALING_OMEGA
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $25 ;Action 1 argument
+  .BYTE $1E ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::STARMAN_SUPER_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::SWORD_OF_KINGS ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xD4\xB6\x25\xBC\xED\x5C\xE4\xED\xF5", 10 ; スターマン・センゾ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0037 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 750 ;HP
+  .WORD 462 ;PP
+  .DWORD 48695 ;Experience
+  .WORD 807 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $0C ;Palette
+  .BYTE 68 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 152 ;Offense
+  .WORD 170 ;Defense
+  .BYTE 46 ;Speed
+  .BYTE 43 ;Guts
+  .BYTE 16 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $02 ;Action order
+  .WORD BATTLE_ACTIONS::MURMUR_2
+  .WORD BATTLE_ACTIONS::MUTTER_1
+  .WORD BATTLE_ACTIONS::PSI_STARSTORM_BETA
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $16 ;Action 3 argument
+  .BYTE ENEMY::GHOST_OF_STARMAN_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::GODDESS_RIBBON ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x44\x58\xD4\xB6\x25\xBC\xED", 10 ; DXスターマン
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $006A ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 1400 ;HP
+  .WORD 418 ;PP
+  .DWORD 160524 ;Experience
+  .WORD 3827 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $02 ;Palette
+  .BYTE 65 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 143 ;Offense
+  .WORD 186 ;Defense
+  .BYTE 27 ;Speed
+  .BYTE 43 ;Guts
+  .BYTE 21 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD BATTLE_ACTIONS::FIRE_BEAM
+  .WORD BATTLE_ACTIONS::PSI_PSI_SHIELD_BETA
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD NULL ;Final action
+  .BYTE ENEMY::STARMAN_DELUXE_1 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $25 ;Action 3 argument
+  .BYTE ENEMY::STARMAN_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x64\x70\xA3\xA8\xD4\xB6\x25\xBC\xED", 10 ; さいごのスターマン
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $006A ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 840 ;HP
+  .WORD 860 ;PP
+  .DWORD 61929 ;Experience
+  .WORD 915 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $10 ;Palette
+  .BYTE 71 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 178 ;Offense
+  .WORD 187 ;Defense
+  .BYTE 47 ;Speed
+  .BYTE 25 ;Guts
+  .BYTE 24 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $03 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_STARSTORM_BETA
+  .WORD BATTLE_ACTIONS::FLASH_SMILE
+  .WORD BATTLE_ACTIONS::PSI_HEALING_OMEGA
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $16 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $1E ;Action 3 argument
+  .BYTE ENEMY::FINAL_STARMAN_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xB0\x25\xBA\xED\xF5\xED\xCA", 10 ; アーバンゾンビ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0048 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::URBAN_ZOMBIE
+  .BYTE $07 ;Run flag
+  .WORD 171 ;HP
+  .WORD 0 ;PP
+  .DWORD 700 ;Experience
+  .WORD 58 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_RETURNED_TO_DUST_OF_EARTH
+  .BYTE $04 ;Palette
+  .BYTE 19 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 31 ;Offense
+  .WORD 24 ;Defense
+  .BYTE 10 ;Speed
+  .BYTE 15 ;Guts
+  .BYTE 24 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $03 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::HAMBURGER ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xB7\xC0\xBD\xFC\xED\xF7\xF7\xCE\xD3", 10 ; ダイヤモンドドッグ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $004C ;Battle sprite
+  .WORD OVERWORLD_SPRITE::YOUR_SANCTUARY_POINT_BOSS
+  .BYTE $07 ;Run flag
+  .WORD 3344 ;HP
+  .WORD 154 ;PP
+  .DWORD 337738 ;Experience
+  .WORD 6968 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $04 ;Palette
+  .BYTE 70 ;Level
+  .BYTE MUSIC::VS_SPINNING_ROBO
+  .WORD 167 ;Offense
+  .WORD 230 ;Defense
+  .BYTE 31 ;Speed
+  .BYTE 10 ;Guts
+  .BYTE 47 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BITE
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD BATTLE_ACTIONS::HOWL
+  .WORD BATTLE_ACTIONS::DIAMONDIZING_BITE
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE ENEMY::DIAMOND_DOG_1 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x76\xAE\x80\x98\x9D\x75\x8E\xA8\x9C", 10 ; ちょうねんじゅのめ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0058 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::YOUR_SANCTUARY_POINT_BOSS
+  .BYTE $07 ;Run flag
+  .WORD 1048 ;HP
+  .WORD 240 ;PP
+  .DWORD 30303 ;Experience
+  .WORD 1358 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $05 ;Palette
+  .BYTE 29 ;Level
+  .BYTE MUSIC::VS_YOUR_SANCTUARY_BOSS
+  .WORD 54 ;Offense
+  .WORD 88 ;Defense
+  .BYTE 16 ;Speed
+  .BYTE 21 ;Guts
+  .BYTE 71 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_PSI_SHIELD_ALPHA
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::EERIE_GLARE
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $23 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::TRILLIONAGE_SPROUT_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $03 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xE3\xCE\xDB\x25", 10 ; ゲップー
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0062 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::MASTER_BELCH
+  .BYTE $07 ;Run flag
+  .WORD 650 ;HP
+  .WORD 0 ;PP
+  .DWORD 12509 ;Experience
+  .WORD 664 ;Money
+  .WORD EVENT_SCRIPT::EVENT_029
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $06 ;Palette
+  .BYTE 27 ;Level
+  .BYTE MUSIC::VS_MASTER_BELCH
+  .WORD 50 ;Offense
+  .WORD 88 ;Defense
+  .BYTE 16 ;Speed
+  .BYTE 20 ;Guts
+  .BYTE 61 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::NAUSEATING_BURP
+  .WORD BATTLE_ACTIONS::CONTINUOUS_ATTACK
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD BATTLE_ACTIONS::EDGE_CLOSER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE ENEMY::SLIMY_LIL_PILE ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $03 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x97\x62\x83\x76\x6E\x83\x76\x6E", 10 ; でかぐちゃぐちゃ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0062 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::MASTER_BELCH
+  .BYTE $07 ;Run flag
+  .WORD 609 ;HP
+  .WORD 76 ;PP
+  .DWORD 17567 ;Experience
+  .WORD 690 ;Money
+  .WORD EVENT_SCRIPT::EVENT_029
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $05 ;Palette
+  .BYTE 59 ;Level
+  .BYTE MUSIC::VS_MASTER_BELCH
+  .WORD 134 ;Offense
+  .WORD 146 ;Defense
+  .BYTE 14 ;Speed
+  .BYTE 11 ;Guts
+  .BYTE 5 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::METEOTITE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $03 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x62\x90\x7E\x96\x72\x66\xE3\xCE\xDB\x25", 10 ; かえってきたゲップー
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0062 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::MASTER_BELCH
+  .BYTE $07 ;Run flag
+  .WORD 1319 ;HP
+  .WORD 0 ;PP
+  .DWORD 125056 ;Experience
+  .WORD 3536 ;Money
+  .WORD EVENT_SCRIPT::EVENT_029
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $13 ;Palette
+  .BYTE 60 ;Level
+  .BYTE MUSIC::VS_MASTER_BELCH
+  .WORD 136 ;Offense
+  .WORD 177 ;Defense
+  .BYTE 24 ;Speed
+  .BYTE 39 ;Guts
+  .BYTE 64 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD BATTLE_ACTIONS::CONTINUOUS_ATTACK
+  .WORD BATTLE_ACTIONS::NAUSEATING_BURP
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD BATTLE_ACTIONS::MASTER_BARF_DEFEAT ;Final action
+  .BYTE ENEMY::EVEN_SLIMIER_LITTLE_PILE ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::MASTER_BARF_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $07 ;Item drop rate
+  .BYTE ITEM::CASEY_BAT ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $03 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x80\x7D\x72\x68\xB7\xC0\xD4", 10 ; うわきなダイス
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $003A ;Battle sprite
+  .WORD OVERWORLD_SPRITE::GIFT_BOX
+  .BYTE $07 ;Run flag
+  .WORD 307 ;HP
+  .WORD 0 ;PP
+  .DWORD 10672 ;Experience
+  .WORD 703 ;Money
+  .WORD EVENT_SCRIPT::EVENT_031
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $03 ;Palette
+  .BYTE 59 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 146 ;Offense
+  .WORD 113 ;Defense
+  .BYTE 77 ;Speed
+  .BYTE 75 ;Guts
+  .BYTE 6 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD BATTLE_ACTIONS::CALL_FOR_HELP
+  .WORD NULL ;Final action
+  .BYTE ENEMY::ELECTRO_SWOOSH ;Action 1 argument
+  .BYTE ENEMY::FOBBY ;Action 2 argument
+  .BYTE ENEMY::UNCONTROLLABLE_SPHERE ;Action 3 argument
+  .BYTE ENEMY::ELECTRO_SWOOSH ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x96\x9D\x83\xA7\xA8", 10 ; てんぐどの
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0052 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::THUNDER_MITE
+  .BYTE $07 ;Run flag
+  .WORD 371 ;HP
+  .WORD 5 ;PP
+  .DWORD 14718 ;Experience
+  .WORD 572 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $05 ;Palette
+  .BYTE 48 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 96 ;Offense
+  .WORD 99 ;Defense
+  .BYTE 19 ;Speed
+  .BYTE 20 ;Guts
+  .BYTE 16 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $04 ;Item drop rate
+  .BYTE ITEM::SNAKE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x6A\x92\xE6\xED\xF6", 10 ; ばけテント
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0056 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NONE
+  .BYTE $07 ;Run flag
+  .WORD 579 ;HP
+  .WORD 56 ;PP
+  .DWORD 5500 ;Experience
+  .WORD 407 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $05 ;Palette
+  .BYTE 25 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 43 ;Offense
+  .WORD 69 ;Defense
+  .BYTE 10 ;Speed
+  .BYTE 16 ;Guts
+  .BYTE 32 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $03 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $03 ;Action order
+  .WORD BATTLE_ACTIONS::EMIT_PALE_GREEN_LIGHT
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::PSI_FLASH_ALPHA
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $11 ;Action 3 argument
+  .BYTE ENEMY::BOOGEY_TENT_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x6D\xA7\x62\x7F\xE7\xCA\xDF", 10 ; やどかりデビル
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0056 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 774 ;HP
+  .WORD 60 ;PP
+  .DWORD 48311 ;Experience
+  .WORD 897 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $1E ;Palette
+  .BYTE 69 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 158 ;Offense
+  .WORD 192 ;Defense
+  .BYTE 45 ;Speed
+  .BYTE 25 ;Guts
+  .BYTE 32 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $03 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::HORN_OF_LIFE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xF6\xED\xC6\xC2\x64\x9D", 10 ; トンチキさん
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0020 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::EVERDRED
+  .BYTE $07 ;Run flag
+  .WORD 182 ;HP
+  .WORD 0 ;PP
+  .DWORD 986 ;Experience
+  .WORD 171 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_TURNED_BACK_TO_NORMAL
+  .BYTE $01 ;Palette
+  .BYTE 15 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 25 ;Offense
+  .WORD 35 ;Defense
+  .BYTE 6 ;Speed
+  .BYTE 10 ;Guts
+  .BYTE 40 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::GRIN
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::EVERDRED_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x97\x9D\x93\x72\xBA\xC6\xBA\xC6", 10 ; でんげきバチバチ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0039 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::YOUR_SANCTUARY_POINT_BOSS
+  .BYTE $07 ;Run flag
+  .WORD 3092 ;HP
+  .WORD 80 ;PP
+  .DWORD 261637 ;Experience
+  .WORD 6564 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $02 ;Palette
+  .BYTE 67 ;Level
+  .BYTE MUSIC::VS_KRAKEN
+  .WORD 148 ;Offense
+  .WORD 203 ;Defense
+  .BYTE 29 ;Speed
+  .BYTE 47 ;Guts
+  .BYTE 56 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $03 ;Action order
+  .WORD BATTLE_ACTIONS::NEUTRALIZER
+  .WORD BATTLE_ACTIONS::SHIELD_KILLER
+  .WORD BATTLE_ACTIONS::ELECTRIC_SHOCK
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $C3 ;Action 1 argument
+  .BYTE $84 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::ELECTRO_SPECTER_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x70\x68\x85\x6C\x5C\x60\x6F\x74", 10 ; いなずま・あらし
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0027 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::YOUR_SANCTUARY_POINT_BOSS
+  .BYTE $07 ;Run flag
+  .WORD 2065 ;HP
+  .WORD 70 ;PP
+  .DWORD 129026 ;Experience
+  .WORD 4736 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $01 ;Palette
+  .BYTE 56 ;Level
+  .BYTE MUSIC::VS_KRAKEN
+  .WORD 111 ;Offense
+  .WORD 178 ;Defense
+  .BYTE 21 ;Speed
+  .BYTE 35 ;Guts
+  .BYTE 55 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $03 ;Action order
+  .WORD BATTLE_ACTIONS::SUMMON_STORM
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::CRASHING_BOOM_BANG
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::THUNDER_AND_STORM_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xD9\xBF\xED\xC2\x25\xD4\xB6\xC0\xED\x32", 10 ; フランキースタイン2
+  .BYTE ENEMYTYPE::METAL
+  .WORD $0061 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NONE
+  .BYTE $07 ;Run flag
+  .WORD 91 ;HP
+  .WORD 0 ;PP
+  .DWORD 76 ;Experience
+  .WORD 31 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DESTROYED
+  .BYTE $06 ;Palette
+  .BYTE 7 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 15 ;Offense
+  .WORD 18 ;Defense
+  .BYTE 4 ;Speed
+  .BYTE 0 ;Guts
+  .BYTE 40 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $03 ;Action order
+  .WORD BATTLE_ACTIONS::TEAR_INTO
+  .WORD BATTLE_ACTIONS::PUNCH
+  .WORD BATTLE_ACTIONS::GENERATE_STEAM
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::FRANKYSTEIN_MARK_II_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xBC\xC8\xBC\xC8\xA8\x60\x82\x6C", 10 ; マニマニのあくま
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $004F ;Battle sprite
+  .WORD OVERWORLD_SPRITE::EVIL_MANI_MANI
+  .BYTE $07 ;Run flag
+  .WORD 860 ;HP
+  .WORD 88 ;PP
+  .DWORD 28139 ;Experience
+  .WORD 1852 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $03 ;Palette
+  .BYTE 45 ;Level
+  .BYTE MUSIC::VS_STARMAN_JR
+  .WORD 86 ;Offense
+  .WORD 145 ;Defense
+  .BYTE 15 ;Speed
+  .BYTE 1 ;Guts
+  .BYTE 80 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $03 ;Action order
+  .WORD BATTLE_ACTIONS::EMIT_PALE_GREEN_LIGHT
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::GLORIOUS_LIGHT
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::EVIL_MANI_MANI_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x75\x8E\x80\xA4\x80\x7A\xFB\x25\xC2\x25", 10 ; じゅうそうびポーキー
+  .BYTE ENEMYTYPE::METAL
+  .WORD $002A ;Battle sprite
+  .WORD OVERWORLD_SPRITE::POKEY
+  .BYTE $07 ;Run flag
+  .WORD 1746 ;HP
+  .WORD 999 ;PP
+  .DWORD 0 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $01 ;Palette
+  .BYTE 72 ;Level
+  .BYTE MUSIC::NONE
+  .WORD 150 ;Offense
+  .WORD 274 ;Defense
+  .BYTE 51 ;Speed
+  .BYTE 45 ;Guts
+  .BYTE 55 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $02 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::HEAVILY_ARMED_POKEY_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x8D\x67\x9D\xFF\xFA", 10 ; ゆだんロボ
+  .BYTE ENEMYTYPE::METAL
+  .WORD $0047 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::CAPSULE
+  .BYTE $07 ;Run flag
+  .WORD 962 ;HP
+  .WORD 0 ;PP
+  .DWORD 32378 ;Experience
+  .WORD 2081 ;Money
+  .WORD EVENT_SCRIPT::EVENT_027
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $04 ;Palette
+  .BYTE 46 ;Level
+  .BYTE MUSIC::VS_STARMAN_JR
+  .WORD 88 ;Offense
+  .WORD 137 ;Defense
+  .BYTE 83 ;Speed
+  .BYTE 30 ;Guts
+  .BYTE 49 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $05 ;Miss rate
+  .BYTE $02 ;Action order
+  .WORD BATTLE_ACTIONS::CLUMSY_BEAM
+  .WORD BATTLE_ACTIONS::CLEAN_AREA
+  .WORD BATTLE_ACTIONS::EAT_BOLOGNA_SANDWICH
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD BATTLE_ACTIONS::RUNAWAY_FIVE_EVENT ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::CLUMSY_ROBOT_3 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xFF\xFA\x5C\xB3\xFF\xED", 10 ; ロボ・ガロン
+  .BYTE ENEMYTYPE::METAL
+  .WORD $003E ;Battle sprite
+  .WORD OVERWORLD_SPRITE::ROBO_PUMP
+  .BYTE $07 ;Run flag
+  .WORD 431 ;HP
+  .WORD 0 ;PP
+  .DWORD 4797 ;Experience
+  .WORD 349 ;Money
+  .WORD EVENT_SCRIPT::EVENT_027
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_BROKEN_INTO_PIECES
+  .BYTE $03 ;Palette
+  .BYTE 36 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 70 ;Offense
+  .WORD 113 ;Defense
+  .BYTE 19 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 4 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $02 ;Action order
+  .WORD BATTLE_ACTIONS::BOMB
+  .WORD BATTLE_ACTIONS::REPLENISH_FUEL
+  .WORD BATTLE_ACTIONS::TICK_TOCK
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $93 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::ROBO_PUMP_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::SUPER_BOMB ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xE7\xE9\xBF\x25", 10 ; デヘラー
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0011 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::FOBBY
+  .BYTE $07 ;Run flag
+  .WORD 120 ;HP
+  .WORD 10 ;PP
+  .DWORD 1311 ;Experience
+  .WORD 93 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $01 ;Palette
+  .BYTE 16 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 29 ;Offense
+  .WORD 9 ;Defense
+  .BYTE 1 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 3 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $01 ;Item drop rate
+  .BYTE ITEM::PSI_CARAMEL ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x94\x72\xA5\x80\xA8\xAC\xA6\x75\x9C", 10 ; せきぞうのもとじめ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0057 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::PETRIFIED_ROYAL_GUARD
+  .BYTE $07 ;Run flag
+  .WORD 831 ;HP
+  .WORD 6 ;PP
+  .DWORD 95390 ;Experience
+  .WORD 3235 ;Money
+  .WORD EVENT_SCRIPT::EVENT_028
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $13 ;Palette
+  .BYTE 55 ;Level
+  .BYTE MUSIC::VS_YOUR_SANCTUARY_BOSS
+  .WORD 109 ;Offense
+  .WORD 214 ;Defense
+  .BYTE 21 ;Speed
+  .BYTE 1 ;Guts
+  .BYTE 7 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::CHARGE
+  .WORD BATTLE_ACTIONS::WAR_CRY
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::GUARDIAN_GENERAL_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xB0\xCF\xB0\xCF\xDA\xBF\xCE\xD2", 10 ; アリアリブラック
+  .BYTE ENEMYTYPE::INSECT
+  .WORD $0001 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::BLACK_ANTOID
+  .BYTE $07 ;Run flag
+  .WORD 34 ;HP
+  .WORD 25 ;PP
+  .DWORD 37 ;Experience
+  .WORD 7 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $08 ;Palette
+  .BYTE 7 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 14 ;Offense
+  .WORD 13 ;Defense
+  .BYTE 4 ;Speed
+  .BYTE 3 ;Guts
+  .BYTE 0 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $03 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_LIFEUP_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_LIFEUP_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_LIFEUP_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_LIFEUP_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $17 ;Action 1 argument
+  .BYTE $17 ;Action 2 argument
+  .BYTE $17 ;Action 3 argument
+  .BYTE $17 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 1 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $03 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x60\x8F\x82\xC2\xF8\xF2", 10 ; あるくキノコ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0005 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::RAMBLIN_EVIL_MUSHROOM
+  .BYTE $07 ;Run flag
+  .WORD 60 ;HP
+  .WORD 0 ;PP
+  .DWORD 95 ;Experience
+  .WORD 15 ;Money
+  .WORD EVENT_SCRIPT::EVENT_024
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $09 ;Palette
+  .BYTE 7 ;Level
+  .BYTE MUSIC::VS_STRUTTIN_EVIL_MUSHROOM
+  .WORD 15 ;Offense
+  .WORD 10 ;Defense
+  .BYTE 5 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 1 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BE_ABSENTMINDED
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 1 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $06 ;Item drop rate
+  .BYTE ITEM::COOKIE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xA0\x9D\x74\x6F\x85\x68\xC0\xD8", 10 ; おんしらずなイヌ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0002 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::RUNAWAY_DOG
+  .BYTE $07 ;Run flag
+  .WORD 21 ;HP
+  .WORD 0 ;PP
+  .DWORD 4 ;Experience
+  .WORD 3 ;Money
+  .WORD EVENT_SCRIPT::EVENT_022
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $09 ;Palette
+  .BYTE 73 ;Level
+  .BYTE MUSIC::VS_RUNAWAY_DOG
+  .WORD 4 ;Offense
+  .WORD 5 ;Defense
+  .BYTE 26 ;Speed
+  .BYTE 0 ;Guts
+  .BYTE 1 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::HOWL
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::BITING_ATTACK
+  .WORD BATTLE_ACTIONS::BITE
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 1 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $06 ;Item drop rate
+  .BYTE ITEM::BREAD_ROLL ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xCA\xCE\xD3\xD9\xCE\xF6", 10 ; ビッグフット
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0065 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::CAVE_BOY
+  .BYTE $07 ;Run flag
+  .WORD 314 ;HP
+  .WORD 0 ;PP
+  .DWORD 618 ;Experience
+  .WORD 17 ;Money
+  .WORD EVENT_SCRIPT::EVENT_029
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $07 ;Palette
+  .BYTE 11 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 21 ;Offense
+  .WORD 33 ;Defense
+  .BYTE 5 ;Speed
+  .BYTE 0 ;Guts
+  .BYTE 80 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $03 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $08 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $07 ;Item drop rate
+  .BYTE ITEM::PICNIC_LUNCH ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xCC\xC8\xCC\xC8\xDD\x25\xEF\xC0", 10 ; ミニミニユーレイ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0000 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NONE
+  .BYTE $07 ;Run flag
+  .WORD 90 ;HP
+  .WORD 0 ;PP
+  .DWORD 1 ;Experience
+  .WORD 162 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_MELTED_INTO_THIN_AIR
+  .BYTE $00 ;Palette
+  .BYTE 18 ;Level
+  .BYTE MUSIC::VS_RUNAWAY_DOG
+  .WORD 19 ;Offense
+  .WORD 7 ;Defense
+  .BYTE 100 ;Speed
+  .BYTE 25 ;Guts
+  .BYTE 24 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $04 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::REACH_WITH_ICY_HAND
+  .WORD BATTLE_ACTIONS::REACH_WITH_ICY_HAND
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xD4\xB6\x25\xBC\xED\xA8\x8C\x84\xA2", 10 ; スターマンのむすこ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0037 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::STARMAN
+  .BYTE $07 ;Run flag
+  .WORD 200 ;HP
+  .WORD 999 ;PP
+  .DWORD 16 ;Experience
+  .WORD 20 ;Money
+  .WORD EVENT_SCRIPT::EVENT_026
+  .DWORD TEXT_BATTLE_ENEMY_BLOCKED_THE_WAY
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $02 ;Palette
+  .BYTE 6 ;Level
+  .BYTE MUSIC::VS_STARMAN_JR
+  .WORD 11 ;Offense
+  .WORD 10 ;Defense
+  .BYTE 1 ;Speed
+  .BYTE 0 ;Guts
+  .BYTE 80 ;Luck
+  .BYTE $03 ;Weakness to fire
+  .BYTE $03 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_FIRE_BETA
+  .WORD BATTLE_ACTIONS::ON_GUARD
+  .WORD BATTLE_ACTIONS::PSI_FREEZE_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_FIRE_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $06 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $09 ;Action 3 argument
+  .BYTE $05 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xDA\xED\xDA\x25\xED", 10 ; ブンブーン
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0000 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NONE
+  .BYTE $07 ;Run flag
+  .WORD 2000 ;HP
+  .WORD 999 ;PP
+  .DWORD 0 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_NO_MESSAGE
+  .BYTE $00 ;Palette
+  .BYTE 20 ;Level
+  .BYTE MUSIC::NONE
+  .WORD 40 ;Offense
+  .WORD 92 ;Defense
+  .BYTE 100 ;Speed
+  .BYTE 1 ;Guts
+  .BYTE 80 ;Luck
+  .BYTE $03 ;Weakness to fire
+  .BYTE $03 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $03 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_PSI_SHIELD_SIGMA
+  .WORD BATTLE_ACTIONS::PSI_PSI_SHIELD_SIGMA
+  .WORD BATTLE_ACTIONS::CHARGE
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD NULL ;Final action
+  .BYTE $24 ;Action 1 argument
+  .BYTE $24 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 0 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\x75\x8E\x80\xA4\x80\x7A\xFB\x25\xC2\x25", 10 ; じゅうそうびポーキー
+  .BYTE ENEMYTYPE::METAL
+  .WORD $002A ;Battle sprite
+  .WORD OVERWORLD_SPRITE::POKEY
+  .BYTE $07 ;Run flag
+  .WORD 2000 ;HP
+  .WORD 999 ;PP
+  .DWORD 0 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_NO_MESSAGE
+  .BYTE $04 ;Palette
+  .BYTE 80 ;Level
+  .BYTE MUSIC::POKEY_MEANS_BUSINESS
+  .WORD 145 ;Offense
+  .WORD 255 ;Defense
+  .BYTE 60 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 255 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $03 ;Action order
+  .WORD BATTLE_ACTIONS::DISCHARGE_STINKY_GAS
+  .WORD BATTLE_ACTIONS::DISCHARGE_STINKY_GAS
+  .WORD BATTLE_ACTIONS::CHARGE
+  .WORD BATTLE_ACTIONS::TEAR_INTO
+  .WORD BATTLE_ACTIONS::POKEY_SPEECH_1 ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 0 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x75\x8E\x80\xA4\x80\x7A\xFB\x25\xC2\x25", 10 ; じゅうそうびポーキー
+  .BYTE ENEMYTYPE::METAL
+  .WORD $002A ;Battle sprite
+  .WORD OVERWORLD_SPRITE::POKEY
+  .BYTE $07 ;Run flag
+  .WORD 1746 ;HP
+  .WORD 999 ;PP
+  .DWORD 0 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_NO_MESSAGE
+  .BYTE $04 ;Palette
+  .BYTE 72 ;Level
+  .BYTE MUSIC::GIYGAS_AWAKENS
+  .WORD 150 ;Offense
+  .WORD 274 ;Defense
+  .BYTE 51 ;Speed
+  .BYTE 45 ;Guts
+  .BYTE 55 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::DISCHARGE_STINKY_GAS
+  .WORD BATTLE_ACTIONS::POKEY_ATTACK
+  .WORD BATTLE_ACTIONS::CHARGE
+  .WORD BATTLE_ACTIONS::TEAR_INTO
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 0 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $5F ;Mirror success rate
+
+  PADDEDASCII "\xC3\x25\xD3", 10 ; ギーグ
+  .BYTE ENEMYTYPE::METAL
+  .WORD $006C ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NONE
+  .BYTE $07 ;Run flag
+  .WORD 9999 ;HP
+  .WORD 999 ;PP
+  .DWORD 0 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $14 ;Palette
+  .BYTE 80 ;Level
+  .BYTE MUSIC::POKEY_MEANS_BUSINESS
+  .WORD 255 ;Offense
+  .WORD 255 ;Defense
+  .BYTE 80 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 255 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_ROCKIN_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_ROCKIN_BETA
+  .WORD BATTLE_ACTIONS::PSI_ROCKIN_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_ROCKIN_BETA
+  .WORD NULL ;Final action
+  .BYTE $01 ;Action 1 argument
+  .BYTE $02 ;Action 2 argument
+  .BYTE $01 ;Action 3 argument
+  .BYTE $02 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xC3\x25\xD3", 10 ; ギーグ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0000 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NONE
+  .BYTE $07 ;Run flag
+  .WORD 9999 ;HP
+  .WORD 0 ;PP
+  .DWORD 0 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $00 ;Palette
+  .BYTE 80 ;Level
+  .BYTE MUSIC::GIYGAS_AWAKENS
+  .WORD 255 ;Offense
+  .WORD 255 ;Defense
+  .BYTE 80 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 255 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $02 ;Action order
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::GIYGAS_ATTACK
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xC3\x25\xD3", 10 ; ギーグ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0000 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NONE
+  .BYTE $07 ;Run flag
+  .WORD 2000 ;HP
+  .WORD 0 ;PP
+  .DWORD 0 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $00 ;Palette
+  .BYTE 80 ;Level
+  .BYTE MUSIC::GIYGAS_AWAKENS
+  .WORD 255 ;Offense
+  .WORD 255 ;Defense
+  .BYTE 80 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 255 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::INCOMPREHENSIBLE_ATTACK_THUNDER_BETA
+  .WORD BATTLE_ACTIONS::INCOMPREHENSIBLE_ATTACK_FREEZE_ALPHA
+  .WORD BATTLE_ACTIONS::INCOMPREHENSIBLE_ATTACK_FLASH_GAMMA
+  .WORD BATTLE_ACTIONS::SAY_PLAYER_NAME
+  .WORD BATTLE_ACTIONS::POKEY_SPEECH_2 ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xC3\x25\xD3", 10 ; ギーグ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0000 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NONE
+  .BYTE $07 ;Run flag
+  .WORD 9999 ;HP
+  .WORD 0 ;PP
+  .DWORD 0 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $00 ;Palette
+  .BYTE 80 ;Level
+  .BYTE MUSIC::GIYGAS_PHASE2
+  .WORD 255 ;Offense
+  .WORD 255 ;Defense
+  .BYTE 80 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 255 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::INCOMPREHENSIBLE_ATTACK_THUNDER_BETA_VULNERABLE
+  .WORD BATTLE_ACTIONS::INCOMPREHENSIBLE_ATTACK_FREEZE_ALPHA_VULNERABLE
+  .WORD BATTLE_ACTIONS::INCOMPREHENSIBLE_ATTACK_FLASH_GAMMA_VULNERABLE
+  .WORD BATTLE_ACTIONS::RANDOM_GIYGAS_QUOTE
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xA7\xAF\x86\x72\xF5\xED\xCA", 10 ; どろつきゾンビ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0048 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::URBAN_ZOMBIE
+  .BYTE $07 ;Run flag
+  .WORD 171 ;HP
+  .WORD 0 ;PP
+  .DWORD 700 ;Experience
+  .WORD 58 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_RETURNED_TO_DUST_OF_EARTH
+  .BYTE $0A ;Palette
+  .BYTE 19 ;Level
+  .BYTE MUSIC::VS_RUNAWAY_DOG
+  .WORD 31 ;Offense
+  .WORD 24 ;Defense
+  .BYTE 10 ;Speed
+  .BYTE 15 ;Guts
+  .BYTE 24 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $03 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::LAUGH_HYSTERICALLY
+  .WORD BATTLE_ACTIONS::COLD_BREATH
+  .WORD BATTLE_ACTIONS::SOMETHING_MYSTERIOUS
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 2 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $03 ;Item drop rate
+  .BYTE ITEM::SKIP_SANDWICH ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $02 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xA0\x66\x85\x98\xAC\xA8\xDC\xC4", 10 ; おたずねものムシ
+  .BYTE ENEMYTYPE::INSECT
+  .WORD $006D ;Battle sprite
+  .WORD OVERWORLD_SPRITE::CRIMINAL_CATERPILLAR
+  .BYTE $07 ;Run flag
+  .WORD 250 ;HP
+  .WORD 168 ;PP
+  .DWORD 30384 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_027
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $01 ;Palette
+  .BYTE 23 ;Level
+  .BYTE MUSIC::VS_RUNAWAY_DOG
+  .WORD 37 ;Offense
+  .WORD 16 ;Defense
+  .BYTE 134 ;Speed
+  .BYTE 0 ;Guts
+  .BYTE 0 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_FIRE_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_FIRE_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_FIRE_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_FIRE_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $05 ;Action 1 argument
+  .BYTE $05 ;Action 2 argument
+  .BYTE $05 ;Action 3 argument
+  .BYTE $05 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 1 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $0A ;Mirror success rate
+
+  PADDEDASCII "\xC5\xFF\xCF\xED\xB3", 10 ; ジロリンガ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $006E ;Battle sprite
+  .WORD OVERWORLD_SPRITE::WHIRLING_ROBO
+  .BYTE $07 ;Run flag
+  .WORD 720 ;HP
+  .WORD 400 ;PP
+  .DWORD 46376 ;Experience
+  .WORD 896 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $02 ;Palette
+  .BYTE 63 ;Level
+  .BYTE MUSIC::VS_CRANKY_LADY
+  .WORD 141 ;Offense
+  .WORD 162 ;Defense
+  .BYTE 38 ;Speed
+  .BYTE 25 ;Guts
+  .BYTE 16 ;Luck
+  .BYTE $03 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $02 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_BRAINSHOCK_OMEGA
+  .WORD BATTLE_ACTIONS::EERIE_GLARE
+  .WORD BATTLE_ACTIONS::PSI_PARALYSIS_OMEGA
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD NULL ;Final action
+  .BYTE $32 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $30 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 1 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $03 ;Item drop rate
+  .BYTE ITEM::METEOTITE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $14 ;Mirror success rate
+
+  PADDEDASCII "\xBC\xC5\xCE\xD2\xBA\xB6\xD9\xBF\xC0", 10 ; マジックバタフライ
+  .BYTE ENEMYTYPE::INSECT
+  .WORD $0000 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::MAGIC_BUTTERFLY
+  .BYTE $06 ;Run flag
+  .WORD 16 ;HP
+  .WORD 0 ;PP
+  .DWORD 1 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_032
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_NO_MESSAGE
+  .BYTE $00 ;Palette
+  .BYTE 0 ;Level
+  .BYTE MUSIC::NONE
+  .WORD 2 ;Offense
+  .WORD 2 ;Defense
+  .BYTE 25 ;Speed
+  .BYTE 0 ;Guts
+  .BYTE 0 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD BATTLE_ACTIONS::NO_EFFECT
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 0 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xF0\xE0\xCE\xDB", 10 ; オエップ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $005B ;Battle sprite
+  .WORD OVERWORLD_SPRITE::SLIMY_LITTLE_PILE
+  .BYTE $07 ;Run flag
+  .WORD 616 ;HP
+  .WORD 0 ;PP
+  .DWORD 7521 ;Experience
+  .WORD 460 ;Money
+  .WORD EVENT_SCRIPT::EVENT_020
+  .DWORD TEXT_BATTLE_ENEMY_CAME_AFTER_YOU
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $13 ;Palette
+  .BYTE 26 ;Level
+  .BYTE MUSIC::VS_MASTER_BELCH
+  .WORD 45 ;Offense
+  .WORD 71 ;Defense
+  .BYTE 10 ;Speed
+  .BYTE 19 ;Guts
+  .BYTE 30 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $03 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $01 ;Action order
+  .WORD BATTLE_ACTIONS::STINKY_BREATH
+  .WORD BATTLE_ACTIONS::BASH
+  .WORD BATTLE_ACTIONS::VENT_ODOR
+  .WORD BATTLE_ACTIONS::STICKY_MUCUS
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $32 ;Mirror success rate
+
+  PADDEDASCII "\xEF\xB0\xA0\x66\x85\x98\xAC\xA8\xDC\xC4", 10 ; レアおたずねものムシ
+  .BYTE ENEMYTYPE::INSECT
+  .WORD $006D ;Battle sprite
+  .WORD OVERWORLD_SPRITE::MASTER_CRIMINAL_WORM
+  .BYTE $07 ;Run flag
+  .WORD 377 ;HP
+  .WORD 300 ;PP
+  .DWORD 82570 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_027
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_BECAME_TAME
+  .BYTE $10 ;Palette
+  .BYTE 37 ;Level
+  .BYTE MUSIC::VS_RUNAWAY_DOG
+  .WORD 73 ;Offense
+  .WORD 40 ;Defense
+  .BYTE 136 ;Speed
+  .BYTE 0 ;Guts
+  .BYTE 0 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $00 ;Weakness to ice
+  .BYTE $00 ;Weakness to flash
+  .BYTE $00 ;Weakness to paralysis
+  .BYTE $00 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::PSI_FIRE_BETA
+  .WORD BATTLE_ACTIONS::PSI_FIRE_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_FIRE_ALPHA
+  .WORD BATTLE_ACTIONS::PSI_FIRE_ALPHA
+  .WORD NULL ;Final action
+  .BYTE $06 ;Action 1 argument
+  .BYTE $05 ;Action 2 argument
+  .BYTE $05 ;Action 3 argument
+  .BYTE $05 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 1 ;IQ
+  .BYTE $00 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $0A ;Mirror success rate
+
+  PADDEDASCII "\xD4\xF6\xFF\xED\xD3\x74\xAE\x76\xAE\x80", 10 ; ストロングしょちょう
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0045 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::CROOKED_COP
+  .BYTE $07 ;Run flag
+  .WORD 140 ;HP
+  .WORD 0 ;PP
+  .DWORD 492 ;Experience
+  .WORD 159 ;Money
+  .WORD EVENT_SCRIPT::EVENT_021
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $08 ;Palette
+  .BYTE 13 ;Level
+  .BYTE MUSIC::VS_CAVE_BOY
+  .WORD 20 ;Offense
+  .WORD 24 ;Defense
+  .BYTE 15 ;Speed
+  .BYTE 8 ;Guts
+  .BYTE 18 ;Luck
+  .BYTE $01 ;Weakness to fire
+  .BYTE $01 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $02 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::SUBMISSION_HOLD
+  .WORD BATTLE_ACTIONS::COME_OUT_SWINGING
+  .WORD BATTLE_ACTIONS::ON_GUARD
+  .WORD BATTLE_ACTIONS::LOSE_TEMPER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $02 ;Item drop rate
+  .BYTE ITEM::BOILED_EGG ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $00 ;Death style
+  .BYTE $00 ;Row
+  .BYTE $03 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\xC3\x25\xD3", 10 ; ギーグ
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $0000 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::NONE
+  .BYTE $07 ;Run flag
+  .WORD 9999 ;HP
+  .WORD 0 ;PP
+  .DWORD 0 ;Experience
+  .WORD 0 ;Money
+  .WORD EVENT_SCRIPT::EVENT_000
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_WAS_DEFEATED
+  .BYTE $00 ;Palette
+  .BYTE 80 ;Level
+  .BYTE MUSIC::GIYGAS_PHASE2
+  .WORD 255 ;Offense
+  .WORD 127 ;Defense
+  .BYTE 80 ;Speed
+  .BYTE 5 ;Guts
+  .BYTE 255 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $03 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $03 ;Weakness to hypnosis/brainshock
+  .BYTE $01 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::INCOMPREHENSIBLE_ATTACK_THUNDER_BETA_UNSTABLE
+  .WORD BATTLE_ACTIONS::INCOMPREHENSIBLE_ATTACK_FREEZE_ALPHA_UNSTABLE
+  .WORD BATTLE_ACTIONS::INCOMPREHENSIBLE_ATTACK_FLASH_GAMMA_UNSTABLE
+  .WORD BATTLE_ACTIONS::RANDOM_GIYGAS_QUOTE_TIMES_3
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  PADDEDASCII "\x8D\x67\x9D\xFF\xFA", 10 ; ゆだんロボ
+  .BYTE ENEMYTYPE::METAL
+  .WORD $0047 ;Battle sprite
+  .WORD OVERWORLD_SPRITE::CAPSULE
+  .BYTE $07 ;Run flag
+  .WORD 962 ;HP
+  .WORD 0 ;PP
+  .DWORD 32378 ;Experience
+  .WORD 2081 ;Money
+  .WORD EVENT_SCRIPT::EVENT_027
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BATTLE_STOPPED_MOVING
+  .BYTE $04 ;Palette
+  .BYTE 46 ;Level
+  .BYTE MUSIC::VS_STARMAN_JR
+  .WORD 88 ;Offense
+  .WORD 137 ;Defense
+  .BYTE 83 ;Speed
+  .BYTE 30 ;Guts
+  .BYTE 49 ;Luck
+  .BYTE $02 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $02 ;Weakness to flash
+  .BYTE $01 ;Weakness to paralysis
+  .BYTE $02 ;Weakness to hypnosis/brainshock
+  .BYTE $05 ;Miss rate
+  .BYTE $03 ;Action order
+  .WORD BATTLE_ACTIONS::REEL
+  .WORD BATTLE_ACTIONS::WOBBLE
+  .WORD BATTLE_ACTIONS::WANT_BATTERY
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD BATTLE_ACTIONS::RUNAWAY_FIVE_EVENT ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $00 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::CLUMSY_ROBOT_1 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate

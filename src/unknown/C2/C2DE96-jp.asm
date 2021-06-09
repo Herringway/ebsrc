@@ -1,0 +1,42 @@
+
+UNKNOWN_C2DE96: ;$C2DE96
+	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
+	RESERVE_STACK_SPACE_CLOBBER 18
+	LDA #.LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::palette2
+	STA $06
+	PHB
+	SEP #PROC_FLAGS::ACCUM8
+	PLA
+	STA $08
+	STZ $09
+	REP #PROC_FLAGS::ACCUM8
+	MOVE_INT $06, $0E
+	LDX #.SIZEOF(loaded_bg_data::palette)
+	LDA #.LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::palette
+	JSL MEMCPY16
+	LDA #.LOWORD(LOADED_BG_DATA_LAYER2) + loaded_bg_data::palette2
+	STA $0A
+	PHB
+	SEP #PROC_FLAGS::ACCUM8
+	PLA
+	STA $0C
+	STZ $0D
+	REP #PROC_FLAGS::ACCUM8
+	MOVE_INT $0A, $0E
+	LDX #.SIZEOF(loaded_bg_data::palette)
+	LDA #.LOWORD(LOADED_BG_DATA_LAYER2) + loaded_bg_data::palette
+	JSL MEMCPY16
+	MOVE_INT $06, $0E
+	LDX #.SIZEOF(loaded_bg_data::palette)
+	LDA .LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::palette_pointer
+	JSL MEMCPY16
+	LDA .LOWORD(LOADED_BG_DATA_LAYER2)
+	AND #$00FF
+	BEQ @UNKNOWN0
+	MOVE_INT $0A, $0E
+	LDX #.SIZEOF(loaded_bg_data::palette)
+	LDA .LOWORD(LOADED_BG_DATA_LAYER2) + loaded_bg_data::palette_pointer
+	JSL MEMCPY16
+@UNKNOWN0:
+	PLD
+	RTL

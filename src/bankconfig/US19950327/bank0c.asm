@@ -19,7 +19,7 @@ ANIMATIONDATA_ZOMBIES: ;$CC2C89
 ANIMATIONDATA_THE_END: ;$CC2CE1
 	BINARY "graphics/animations/the_end.anim.lzhal"
 
-.INCLUDE "data/animation_sequence_pointers-proto.asm"
+.INCLUDE "data/animation_sequence_pointers-jp.asm"
 
 PSI_ARRANGEMENT_20: ;$CC2E19
 	BINARY "psianims/arrangements/20.arr.lzhal"
