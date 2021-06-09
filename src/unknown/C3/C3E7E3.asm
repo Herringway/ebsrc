@@ -13,7 +13,7 @@ UNKNOWN_C3E7E3: ;$C3E7E3
 	ADC #.LOWORD(WINDOW_STATS_TABLE)
 	TAY
 	STY $0E
-	LDA a:.LOWORD(RAM) + window_stats::current_option,Y
+	LDA a:window_stats::current_option,Y
 	CMP #$FFFF
 	BEQ @UNKNOWN2
 	LDY #.SIZEOF(u89D4_entry)
@@ -36,12 +36,12 @@ UNKNOWN_C3E7E3: ;$C3E7E3
 @UNKNOWN1:
 	LDA #$FFFF
 	LDY $0E
-	STA a:.LOWORD(RAM) + window_stats::selected_option,Y
-	STA a:.LOWORD(RAM) + window_stats::option_count,Y
-	STA a:.LOWORD(RAM) + window_stats::current_option,Y
+	STA a:window_stats::selected_option,Y
+	STA a:window_stats::option_count,Y
+	STA a:window_stats::current_option,Y
 	LDA #$0001
-	STA a:.LOWORD(RAM) + window_stats::unknown49,Y
-	STA a:.LOWORD(RAM) + window_stats::menu_page_number,Y
+	STA a:window_stats::unknown49,Y
+	STA a:window_stats::menu_page_number,Y
 @UNKNOWN2:
 	PLD
 	RTL

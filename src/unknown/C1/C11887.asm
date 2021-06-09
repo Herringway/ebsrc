@@ -27,7 +27,7 @@ UNKNOWN_C11887: ;$C11887
 @UNKNOWN0:
 	DEC
 	STA $10
-	LDA a:.LOWORD(RAM)+2,X
+	LDA a:u89D4_entry::unknown2,X
 	LDY #.SIZEOF(u89D4_entry)
 	JSL MULT168
 	CLC
@@ -36,7 +36,7 @@ UNKNOWN_C11887: ;$C11887
 @UNKNOWN1:
 	LDA $10
 	BNE @UNKNOWN0
-	LDA a:.LOWORD(RAM)+6,X
+	LDA a:u89D4_entry::unknown6,X
 	LDY $0E
 	STA a:window_stats::menu_page_number,Y
 @UNKNOWN2:

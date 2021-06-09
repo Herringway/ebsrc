@@ -23,12 +23,12 @@ HIDE_HPPP_WINDOWS: ;$C10A1D
 	CLC
 	ADC #.LOWORD(CHAR_STRUCT)
 	TAX
-	LDA a:.LOWORD(RAM)+char_struct::current_hp_target,X
-	STA a:.LOWORD(RAM)+char_struct::current_hp,X
-	LDA a:.LOWORD(RAM)+char_struct::current_pp_target,X
-	STA a:.LOWORD(RAM)+char_struct::current_pp,X
-	STZ a:.LOWORD(RAM)+73,X
-	STZ a:.LOWORD(RAM)+67,X
+	LDA a:.LOWORD(RAM) + char_struct::current_hp_target,X
+	STA a:.LOWORD(RAM) + char_struct::current_hp,X
+	LDA a:.LOWORD(RAM) + char_struct::current_pp_target,X
+	STA a:.LOWORD(RAM) + char_struct::current_pp,X
+	STZ a:.LOWORD(RAM) + char_struct::unknown73,X
+	STZ a:.LOWORD(RAM) + char_struct::unknown67,X
 	LDY $0E
 	INY
 	STY $0E

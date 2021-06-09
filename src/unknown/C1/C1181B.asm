@@ -32,7 +32,7 @@ UNKNOWN_C1181B: ;$C1181B
 	LDA $02
 	DEC
 	STA $02
-	LDA a:.LOWORD(RAM)+2,X
+	LDA a:u89D4_entry::unknown2,X
 	LDY #.SIZEOF(u89D4_entry)
 	JSL MULT168
 	CLC
@@ -41,7 +41,7 @@ UNKNOWN_C1181B: ;$C1181B
 @UNKNOWN1:
 	LDA $02
 	BNE @UNKNOWN0
-	LDA a:.LOWORD(RAM)+6,X
+	LDA a:u89D4_entry::unknown6,X
 	LDY $0E
 	STA a:window_stats::menu_page_number,Y
 @UNKNOWN2:

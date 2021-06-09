@@ -13,7 +13,7 @@ UNKNOWN_C10F40: ;$C10F40
 	ADC #.LOWORD(WINDOW_STATS_TABLE)
 	TAX
 	STX $10
-	LDY a:.LOWORD(RAM)+window_stats::tilemap_address,X
+	LDY a:window_stats::tilemap_address,X
 	STY $0E
 	LDY a:window_stats::height,X
 	LDA a:window_stats::width,X
