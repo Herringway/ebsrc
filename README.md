@@ -13,3 +13,8 @@ Contributions are welcome.
 
 	ebbinex earthbound-1995-03-27.yml "path to prototype ROM"
 	make proto19950327
+
+## Mother 2
+
+	ebbinex mother2.yml "path to mother 2 ROM"
+	make mother2
