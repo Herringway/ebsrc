@@ -1,7 +1,7 @@
 .SEGMENT "BANK15"
-.INCLUDE "common-jp.asm"
-.INCLUDE "config-jp.asm"
-.INCLUDE "structs-jp.asm"
+.INCLUDE "common.asm"
+.INCLUDE "config.asm"
+.INCLUDE "structs.asm"
 
 SPRITE_GROUP_TONY_IN_BED:
 SPRITE_1028:
@@ -444,19 +444,19 @@ UNKNOWN_D545C0: ;$D545C0
 		.BYTE 0 ;It's empty.
 	.ENDREPEAT
 
-.INCLUDE "data/items-jp.asm"
+.INCLUDE "data/items.asm"
 
 .INCLUDE "data/store_inventories.asm"
 
-.INCLUDE "data/psi_teleport_destinations-jp.asm"
+.INCLUDE "data/psi_teleport_destinations.asm"
 
-.INCLUDE "data/telephone_contacts-jp.asm"
+.INCLUDE "data/telephone_contacts.asm"
 
 .INCLUDE "data/battle/action_table.asm"
 
 .INCLUDE "data/battle/psi_abilities.asm"
 
-.INCLUDE "data/battle/psi_names-jp.asm"
+.INCLUDE "data/battle/psi_names.asm"
 
 .INCLUDE "data/battle/npc_ai_table.asm"
 

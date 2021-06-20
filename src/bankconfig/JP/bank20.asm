@@ -1,5 +1,5 @@
 .SEGMENT "BANK20"
-.INCLUDE "common-jp.asm"
+.INCLUDE "common.asm"
 
 ;???
 COMPRESSED_SRAM: ;$E009B4
@@ -14,9 +14,9 @@ FLAVOURED_TEXT_GFX: ;$E010C2
 MOTHER2_ROMAJI_FONT: ;$E0110E
 	BINARY "fonts/hppp.gfx"
 
-.INCLUDE "data/text_window_properties-jp.asm"
+.INCLUDE "data/text_window_properties.asm"
 
-.INCLUDE "data/text_window_flavour_palettes-jp.asm"
+.INCLUDE "data/text_window_flavour_palettes.asm"
 
 MRSATURN_FONT_DATA: ;$E0209D
 	BINARY "fonts/unknown.gfx"

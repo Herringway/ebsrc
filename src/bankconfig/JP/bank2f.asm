@@ -1,7 +1,7 @@
 .SEGMENT "BANK2F"
-.INCLUDE "common-jp.asm"
-.INCLUDE "config-jp.asm"
-.INCLUDE "structs-jp.asm"
+.INCLUDE "common.asm"
+.INCLUDE "config.asm"
+.INCLUDE "structs.asm"
 
 AUDIO_PACK_23: ;$EF0000
         AUDIOPACKBIN $160, $5800, "audiopacks/23-1.bin"

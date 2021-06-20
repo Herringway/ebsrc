@@ -5,7 +5,11 @@
 .ENDSTRUCT
 
 .STRUCT char_struct
+.IF .DEFINED(JPN)
+	name .byte 4 ;0
+.ELSE
 	name .byte 5 ;0
+.ENDIF
 	level .byte ;5
 	exp .dword ;6
 	max_hp .word ;10
@@ -67,7 +71,13 @@
 	earthbound_playername .byte 24 ;12
 	pet_name .byte 6 ;36
 	favourite_food .byte 6 ;42
+.IF .DEFINED(JPN)
+	favourite_thing .byte 9 ;48
+.ELSEIF .DEFINED(PROTOTYPE19950327)
+	favourite_thing .byte 11 ;48
+.ELSE
 	favourite_thing .byte 12 ;48
+.ENDIF
 	money_carried .dword ;60
 	bank_balance .dword ;64
 	party_psi .byte ;68
@@ -119,9 +129,13 @@
 .ENDSTRUCT
 
 .STRUCT enemy_data
+.IFDEF USA
 	the_flag .byte ;0
 	name .byte 25 ;1
 	gender .byte ;26
+.ELSE
+	name .byte 10 ;0
+.ENDIF
 	type .byte ;27
 	battle_sprite .word ;28
 	overworld_sprite .word ;30
@@ -249,7 +263,11 @@
 	tilemap_address .word ;53
 	cursor_move_callback .dword ;55
 	unknown59 .byte ;59
+.IFDEF USA
 	title .byte 22 ;60
+.ELSE
+	title .byte 16 ;60
+.ENDIF
 .ENDSTRUCT
 
 .STRUCT npc_config
@@ -279,11 +297,17 @@
 	unknown15 .byte ;15
 	unknown16 .byte 3 ;16
 	unknown19 .byte 25 ;19
+.IFDEF USA
 	unknown44 .byte ;44
+.ENDIF
 .ENDSTRUCT
 
 .STRUCT item
+.IFDEF USA
 	name .byte 25 ;0
+.ELSE
+	name .byte 10 ;0
+.ENDIF
 	type .byte ;25
 	cost .word ;26
 	flags .byte ;28
@@ -355,7 +379,11 @@
 .ENDSTRUCT
 
 .STRUCT psi_teleport_destination
+.IFDEF USA
 	name .byte 25 ;0
+.ELSE
+	name .byte 10 ;0
+.ENDIF
 	event_flag .word ;25
 	dest_x .word ;27
 	dest_y .word ;29

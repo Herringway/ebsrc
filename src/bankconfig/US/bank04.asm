@@ -1,7 +1,7 @@
 .SEGMENT "BANK04"
 .INCLUDE "eventmacros.asm"
-.INCLUDE "common-usa.asm"
-.INCLUDE "config-usa.asm"
+.INCLUDE "common.asm"
+.INCLUDE "config.asm"
 .INCLUDE "structs.asm"
 .INCLUDE "bin/US/flyovers.symbols.asm"
 

@@ -1,7 +1,7 @@
 .SEGMENT "BANK21"
-.INCLUDE "common-jp.asm"
-.INCLUDE "config-jp.asm"
-.INCLUDE "structs-jp.asm"
+.INCLUDE "common.asm"
+.INCLUDE "config.asm"
+.INCLUDE "structs.asm"
 .INCLUDE "flyovermacros.asm"
 
 UNKNOWN_E10000: ;$E10000

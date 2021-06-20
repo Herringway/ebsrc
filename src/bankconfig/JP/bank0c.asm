@@ -1,5 +1,5 @@
 .SEGMENT "BANK0C"
-.INCLUDE "common-jp.asm"
+.INCLUDE "common.asm"
 
 ANIMATIONDATA_CARPAINTER_LIGHTNING_REFLECT: ;$CC0000
 	BINARY "graphics/animations/lightning_reflect.anim.lzhal"
@@ -19,7 +19,7 @@ ANIMATIONDATA_ZOMBIES: ;$CC2C89
 ANIMATIONDATA_THE_END: ;$CC2CE1
 	BINARY "graphics/animations/the_end.anim.lzhal"
 
-.INCLUDE "data/animation_sequence_pointers-jp.asm"
+.INCLUDE "data/animation_sequence_pointers.asm"
 
 PSI_ARRANGEMENT_20: ;$CC2E19
 	BINARY "psianims/arrangements/20.arr.lzhal"

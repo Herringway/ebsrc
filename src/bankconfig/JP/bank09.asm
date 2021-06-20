@@ -1,12 +1,12 @@
 .SEGMENT "BANK09"
-.INCLUDE "common-jp.asm"
+.INCLUDE "common.asm"
 
 TEXT_DATA_BANK_6: ;$C90000
 	.INCLUDE "bin/JP/text_data/4.ebtxt"
 
-.INCLUDE "data/command_window_text-jp.asm"
+.INCLUDE "data/command_window_text.asm"
 
-.INCLUDE "data/status_window_text-jp.asm"
+.INCLUDE "data/status_window_text.asm"
 
 NAME_INPUT_WINDOW_SELECTION_LAYOUT_0: ;$EFA460
 	BINARY "name_input_layouts/0.bin"

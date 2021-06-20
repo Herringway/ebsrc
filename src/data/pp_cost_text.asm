@@ -1,3 +1,7 @@
 
 PP_COST_TEXT: ;$C3F11C
+.IF .DEFINED(JPN)
+	ASCIIZ "\x74\xAE\x80\x79\x50\x50\x5B" ;しょうひPP:
+.ELSE
 	EBTEXT "PP Cost:"
+.ENDIF

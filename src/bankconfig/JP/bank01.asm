@@ -1,7 +1,7 @@
 .SEGMENT "BANK01"
-.INCLUDE "common-jp.asm"
-.INCLUDE "config-jp.asm"
-.INCLUDE "structs-jp.asm"
+.INCLUDE "common.asm"
+.INCLUDE "config.asm"
+.INCLUDE "structs.asm"
 
 ;.INCLUDE "unknown/C1/C10000.asm"
 
@@ -19,7 +19,7 @@
 
 .INCLUDE "unknown/C1/C1004E.asm"
 
-.INCLUDE "misc/clear_9622-jp.asm"
+.INCLUDE "misc/clear_9622.asm"
 
 .INCLUDE "misc/set_9622-jp.asm"
 
@@ -681,7 +681,7 @@
 
 .INCLUDE "unknown/C1/C19DB5-jp.asm"
 
-.INCLUDE "misc/get_item_type-jp.asm"
+.INCLUDE "misc/get_item_type.asm"
 
 .INCLUDE "unknown/C1/C19F29-jp.asm"
 

@@ -1,7 +1,7 @@
 .SEGMENT "BANK03"
 .INCLUDE "eventmacros.asm"
-.INCLUDE "common-usa.asm"
-.INCLUDE "config-usa.asm"
+.INCLUDE "common.asm"
+.INCLUDE "config.asm"
 .INCLUDE "structs.asm"
 
 SPRITE_GROUP_PALETTES: ;$C30000

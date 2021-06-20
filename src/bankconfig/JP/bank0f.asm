@@ -1,6 +1,6 @@
 .SEGMENT "BANK0F"
-.INCLUDE "common-jp.asm"
-.INCLUDE "config-jp.asm"
+.INCLUDE "common.asm"
+.INCLUDE "config.asm"
 
 .INCLUDE "data/map/door_data-jp.asm"
 

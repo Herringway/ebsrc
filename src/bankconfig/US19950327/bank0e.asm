@@ -1,5 +1,5 @@
 .SEGMENT "BANK0E"
-.INCLUDE "common-usa19950327.asm"
+.INCLUDE "common.asm"
 
 BATTLE_SPRITE_82: ;$CE0000
 	BINARY "battle_sprites/82.gfx.lzhal"

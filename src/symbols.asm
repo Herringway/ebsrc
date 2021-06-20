@@ -1,3 +1,33 @@
+.IF .DEFINED(JPN)
+	.INCLUDE "bin/JP/text_data/0.symbols.asm"
+	.INCLUDE "bin/JP/text_data/1.symbols.asm"
+	.INCLUDE "bin/JP/text_data/2.symbols.asm"
+	.INCLUDE "bin/JP/text_data/3.symbols.asm"
+	.INCLUDE "bin/JP/text_data/4.symbols.asm"
+	.INCLUDE "bin/JP/text_data/5.symbols.asm"
+
+	.GLOBAL UNKNOWN_E01F0E: far
+	.GLOBAL UNKNOWN_E1C291: far
+	.GLOBAL UNKNOWN_ARRANGEMENT_9DE1: far
+.ELSEIF .DEFINED(PROTOTYPE19950327)
+	.INCLUDE "bin/US19950327/text_data/0.symbols.asm"
+	.INCLUDE "bin/US19950327/text_data/1.symbols.asm"
+	.INCLUDE "bin/US19950327/text_data/2.symbols.asm"
+	.INCLUDE "bin/US19950327/text_data/3.symbols.asm"
+	.INCLUDE "bin/US19950327/text_data/4.symbols.asm"
+	.INCLUDE "bin/US19950327/text_data/5.symbols.asm"
+	.INCLUDE "bin/US19950327/text_data/6.symbols.asm"
+	.INCLUDE "bin/US19950327/text_data/7.symbols.asm"
+.ELSE
+	.INCLUDE "bin/US/text_data/0.symbols.asm"
+	.INCLUDE "bin/US/text_data/1.symbols.asm"
+	.INCLUDE "bin/US/text_data/2.symbols.asm"
+	.INCLUDE "bin/US/text_data/3.symbols.asm"
+	.INCLUDE "bin/US/text_data/4.symbols.asm"
+	.INCLUDE "bin/US/text_data/5.symbols.asm"
+	.INCLUDE "bin/US/text_data/6.symbols.asm"
+	.INCLUDE "bin/US/text_data/7.symbols.asm"
+.ENDIF
 
 .GLOBAL CLEAR_UNKNOWN_30X2_TABLE23: far
 .GLOBAL UNKNOWN_C00013: far
@@ -7955,3 +7985,4 @@
 .GLOBAL SRAM_SIZE_1_SCRATCH: far
 .GLOBAL SRAM_SIZE_2_SCRATCH: far
 .GLOBAL SRAM_SIZE_3_SCRATCH: far
+

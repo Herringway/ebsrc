@@ -1,3 +1,7 @@
 
 PHONE_CALL_TEXT:
+.IF .DEFINED(JPN)
+	.BYTE "\x62\x92\x64\x72"
+.ELSE
 	EBTEXT "Call:"
+.ENDIF

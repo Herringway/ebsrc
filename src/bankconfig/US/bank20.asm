@@ -1,5 +1,5 @@
 .SEGMENT "BANK20"
-.INCLUDE "common-usa.asm"
+.INCLUDE "common.asm"
 
 TEXT_WINDOW_GFX: ;$E00000
 	BINARY "graphics/text_window.gfx.lzhal"

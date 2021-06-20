@@ -1,4 +1,4 @@
-.INCLUDE "staffmacros-proto.asm"
+.INCLUDE "staffmacros.asm"
 
 STAFF_TEXT: ;$E1413F
 	EBSTAFF_VERTICALSPACE $02

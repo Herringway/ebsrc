@@ -1,4 +1,4 @@
-.INCLUDE "staffmacros-jp.asm"
+.INCLUDE "staffmacros.asm"
 
 .FEATURE STRING_ESCAPES
 

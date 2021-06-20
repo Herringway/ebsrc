@@ -1,5 +1,5 @@
 .SEGMENT "BANK10"
-.INCLUDE "common-usa19950327.asm"
+.INCLUDE "common.asm"
 
 .INCLUDE "data/map/door_pointer_table.asm"
 

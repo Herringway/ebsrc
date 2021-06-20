@@ -1,5 +1,5 @@
 .SEGMENT "BANK08"
-.INCLUDE "common-usa.asm"
+.INCLUDE "common.asm"
 
 TEXT_DATA_BANK_4: ;$C80000
 	.INCLUDE "bin/US/text_data/3.ebtxt"

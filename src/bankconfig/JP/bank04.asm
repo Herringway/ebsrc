@@ -1,8 +1,8 @@
 .SEGMENT "BANK04"
 .INCLUDE "eventmacros.asm"
-.INCLUDE "common-jp.asm"
-.INCLUDE "config-jp.asm"
-.INCLUDE "structs-jp.asm"
+.INCLUDE "common.asm"
+.INCLUDE "config.asm"
+.INCLUDE "structs.asm"
 .INCLUDE "bin/US/flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C40000.asm"
@@ -341,7 +341,7 @@
 
 .INCLUDE "unknown/C4/C4343E-jp.asm"
 
-.INCLUDE "data/item_use_menu_strings-jp.asm"
+.INCLUDE "data/item_use_menu_strings.asm"
 
 .INCLUDE "unknown/C4/C43568.asm"
 
@@ -414,11 +414,11 @@
 ;.INCLUDE "unknown/C4/C4507A.asm"
 
 
-.INCLUDE "data/text/battle_to_text-jp.asm"
+.INCLUDE "data/text/battle_to_text.asm"
 
-.INCLUDE "data/text/battle_front_row_text-jp.asm"
+.INCLUDE "data/text/battle_front_row_text.asm"
 
-.INCLUDE "data/text/battle_back_row_text-jp.asm"
+.INCLUDE "data/text/battle_back_row_text.asm"
 
 .INCLUDE "data/text/CC_1C_01_data.asm"
 
@@ -446,13 +446,13 @@
 
 .INCLUDE "misc/inflict_status_nonbattle.asm"
 
-.INCLUDE "data/battle/misc_target_text-jp.asm"
+.INCLUDE "data/battle/misc_target_text.asm"
 
-.INCLUDE "data/text/phone_call_text-jp.asm"
+.INCLUDE "data/text/phone_call_text.asm"
 
 .INCLUDE "misc/get_required_exp.asm"
 
-.INCLUDE "data/text/status_equip_window_text-jp.asm"
+.INCLUDE "data/text/status_equip_window_text.asm"
 
 .INCLUDE "data/homesickness_probabilities.asm"
 
@@ -698,7 +698,7 @@
 
 .INCLUDE "text/undraw_flyover_text-jp.asm"
 
-.INCLUDE "data/text/lumine_hall-jp.asm"
+.INCLUDE "data/text/lumine_hall.asm"
 
 .INCLUDE "unknown/C4/C4810E.asm"
 
@@ -914,7 +914,7 @@
 
 .INCLUDE "unknown/C4/C4BF7F.asm"
 
-.INCLUDE "data/text/file_select_text-jp.asm"
+.INCLUDE "data/text/file_select_text.asm"
 
 .INCLUDE "unknown/C4/C4C2DE-jp.asm"
 

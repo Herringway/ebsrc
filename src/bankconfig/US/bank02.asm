@@ -1,7 +1,7 @@
 .SEGMENT "BANK02"
 .INCLUDE "eventmacros.asm"
-.INCLUDE "common-usa.asm"
-.INCLUDE "config-usa.asm"
+.INCLUDE "common.asm"
+.INCLUDE "config.asm"
 .INCLUDE "structs.asm"
 
 .INCLUDE "overworld/inflict_sunstroke_check.asm"

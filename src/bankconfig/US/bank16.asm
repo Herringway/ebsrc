@@ -1,5 +1,5 @@
 .SEGMENT "BANK16"
-.INCLUDE "common-usa.asm"
+.INCLUDE "common.asm"
 
 MAP_DATA_TILE_TABLE_CHUNK_1: ;$D60000
 	BINARY "maps/tiles/chunk_01.bin"

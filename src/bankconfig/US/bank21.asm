@@ -1,6 +1,6 @@
 .SEGMENT "BANK21"
-.INCLUDE "common-usa.asm"
-.INCLUDE "config-usa.asm"
+.INCLUDE "common.asm"
+.INCLUDE "config.asm"
 .INCLUDE "structs.asm"
 .INCLUDE "flyovermacros.asm"
 

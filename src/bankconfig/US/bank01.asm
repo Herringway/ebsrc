@@ -1,6 +1,6 @@
 .SEGMENT "BANK01"
-.INCLUDE "common-usa.asm"
-.INCLUDE "config-usa.asm"
+.INCLUDE "common.asm"
+.INCLUDE "config.asm"
 .INCLUDE "structs.asm"
 
 .INCLUDE "unknown/C1/C10000.asm"

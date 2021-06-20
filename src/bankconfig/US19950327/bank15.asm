@@ -1,6 +1,6 @@
 .SEGMENT "BANK15"
-.INCLUDE "common-usa19950327.asm"
-.INCLUDE "config-usa19950327.asm"
+.INCLUDE "common.asm"
+.INCLUDE "config.asm"
 .INCLUDE "structs.asm"
 
 SPRITE_GROUP_TONY_IN_BED:
@@ -444,11 +444,11 @@ UNKNOWN_D545C0: ;$D545C0
 		.BYTE 0 ;It's empty.
 	.ENDREPEAT
 
-.INCLUDE "data/items-proto.asm"
+.INCLUDE "data/items.asm"
 
 .INCLUDE "data/store_inventories.asm"
 
-.INCLUDE "data/psi_teleport_destinations-proto.asm"
+.INCLUDE "data/psi_teleport_destinations.asm"
 
 .INCLUDE "data/telephone_contacts.asm"
 

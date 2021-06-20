@@ -1,5 +1,5 @@
 .SEGMENT "BANK1E"
-.INCLUDE "common-jp.asm"
+.INCLUDE "common.asm"
 
 MAP_DATA_TILE_SET_GRAPHICS_6: ;$DE0000
 	BINARY "maps/gfx/6.gfx.lzhal"

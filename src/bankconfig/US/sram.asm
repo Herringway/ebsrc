@@ -1,8 +1,8 @@
 .SEGMENT "SRAM"
-.INCLUDE "config-usa.asm"
+.INCLUDE "config.asm"
 .INCLUDE "enums.asm"
 .INCLUDE "structs.asm"
-.INCLUDE "symbols-usa.asm"
+.INCLUDE "symbols.asm"
 
 SRAM: ;For pointers.
 

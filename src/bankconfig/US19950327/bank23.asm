@@ -1,5 +1,5 @@
 .SEGMENT "BANK23"
-.INCLUDE "common-usa19950327.asm"
+.INCLUDE "common.asm"
 
 AUDIO_PACK_3: ;$E30000
 	AUDIOPACKBIN $24, $6C2C, "audiopacks/3-1.bin"

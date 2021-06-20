@@ -1,5 +1,5 @@
 .SEGMENT "BANK19"
-.INCLUDE "common-jp.asm"
+.INCLUDE "common.asm"
 
 MAP_DATA_TILE_ARRANGEMENT_1: ;$D90000
 	BINARY "maps/arrangements/1.arr.lzhal"

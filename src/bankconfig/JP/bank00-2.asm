@@ -1,8 +1,8 @@
 .SEGMENT "BANK00B"
 .INCLUDE "eventmacros.asm"
-.INCLUDE "common-jp.asm"
-.INCLUDE "config-jp.asm"
-.INCLUDE "structs-jp.asm"
+.INCLUDE "common.asm"
+.INCLUDE "config.asm"
+.INCLUDE "structs.asm"
 
 .INCLUDE "system/reset-jp.asm"
 
@@ -650,9 +650,9 @@
 
 .INCLUDE "data/dma_target_registers.asm"
 
-.INCLUDE "data/unknown/C0AE26-jp.asm"
+.INCLUDE "data/unknown/C0AE26.asm"
 
-.INCLUDE "data/unknown/C0AE2D-jp.asm"
+.INCLUDE "data/unknown/C0AE2D.asm"
 
 .INCLUDE "unknown/C0/C0AE34.asm"
 

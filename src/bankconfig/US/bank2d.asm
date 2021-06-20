@@ -1,5 +1,5 @@
 .SEGMENT "BANK2D"
-.INCLUDE "common-usa.asm"
+.INCLUDE "common.asm"
 
 AUDIO_PACK_121: ;$ED0000
 	AUDIOPACKBIN $A01, $4800, "audiopacks/121.bin"

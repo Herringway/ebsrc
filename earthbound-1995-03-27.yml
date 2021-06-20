@@ -15243,7 +15243,7 @@ textTable:
   0xA9: 'y'
   0xAA: z
   0xAB: '['
-  0xAC: '\'
+  0xAC: '|'
   0xAD: ']'
 staffTextTable:
   0x40: ' '

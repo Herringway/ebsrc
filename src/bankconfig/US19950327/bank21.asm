@@ -1,7 +1,7 @@
 .SEGMENT "BANK21"
-.INCLUDE "common-usa19950327.asm"
-.INCLUDE "config-usa19950327.asm"
-.INCLUDE "structs-proto.asm"
+.INCLUDE "common.asm"
+.INCLUDE "config.asm"
+.INCLUDE "structs.asm"
 .INCLUDE "flyovermacros.asm"
 
 COFFEE_SEQUENCE_TEXT: ;$E10000

@@ -1,5 +1,5 @@
 .SEGMENT "BANK0A"
-.INCLUDE "common-usa19950327.asm"
+.INCLUDE "common.asm"
 
 BATTLE_BACKGROUND_GFX_63: ;$CA0000
 	BINARY "battle_bgs/graphics/63.gfx.lzhal"

@@ -1,5 +1,5 @@
 .SEGMENT "BANK2E"
-.INCLUDE "common-usa.asm"
+.INCLUDE "common.asm"
 
 AUDIO_PACK_136: ;$EE0000
 	AUDIOPACKBIN $20C, $4800, "audiopacks/136-1.bin"

@@ -1,5 +1,5 @@
 .SEGMENT "BANK25"
-.INCLUDE "common-jp.asm"
+.INCLUDE "common.asm"
 
 AUDIO_PACK_50: ;$E50000
         AUDIOPACKBIN $18, $6C68, "audiopacks/50-1.bin"

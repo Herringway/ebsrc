@@ -1030,7 +1030,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Mirror success rate
 
   .BYTE $00 ;The Flag
-  PADDEDEBTEXT "\'s Nightmare", 25
+  PADDEDEBTEXT "|'s Nightmare", 25
   .BYTE GENDER::NEUTRAL
   .BYTE ENEMYTYPE::NORMAL
   .WORD $004F ;Battle sprite
@@ -8429,7 +8429,7 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $00 ;Mirror success rate
 
   .BYTE $00 ;The Flag
-  PADDEDEBTEXT "\'s Nightmare", 25
+  PADDEDEBTEXT "|'s Nightmare", 25
   .BYTE GENDER::NEUTRAL
   .BYTE ENEMYTYPE::NORMAL
   .WORD $004F ;Battle sprite

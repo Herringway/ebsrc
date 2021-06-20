@@ -1,3 +1,7 @@
 
 UNKNOWN_C0AE26: ;$C0AE26
+.IF .DEFINED(JPN)
+	.BYTE $E4, $CC, $3F, $FC, $94, $40, $00
+.ELSE
 	.BYTE $E4, $46, $3C, $FC, $0E, $3D, $00
+.ENDIF

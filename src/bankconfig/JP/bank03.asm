@@ -1,8 +1,8 @@
 .SEGMENT "BANK03"
 .INCLUDE "eventmacros.asm"
-.INCLUDE "common-jp.asm"
-.INCLUDE "config-jp.asm"
-.INCLUDE "structs-jp.asm"
+.INCLUDE "common.asm"
+.INCLUDE "config.asm"
+.INCLUDE "structs.asm"
 
 FONT_PTR_TABLE:
 CALL_C12DD5_WITH_ZERO_9622:
@@ -2011,7 +2011,7 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "data/unknown/C3E240.asm"
 
-.INCLUDE "data/text/window_configuration_table-jp.asm"
+.INCLUDE "data/text/window_configuration_table.asm"
 
 .INCLUDE "data/unknown/C3E3F8.asm"
 
@@ -2021,13 +2021,13 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "data/unknown/C3E84E.asm"
 
-.INCLUDE "data/debug/menu_text-jp.asm"
+.INCLUDE "data/debug/menu_text.asm"
 
 ;.INCLUDE "data/debug/menu_element_spacing_data.asm"
 
-.INCLUDE "data/debug/on_text-jp.asm"
+.INCLUDE "data/debug/on_text.asm"
 
-.INCLUDE "data/debug/off_text-jp.asm"
+.INCLUDE "data/debug/off_text.asm"
 
 .INCLUDE "misc/get_character_item.asm"
 
@@ -2061,15 +2061,15 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 ;.INCLUDE "data/font_pointer_table.asm"
 
-.INCLUDE "data/psi_categories-jp.asm"
+.INCLUDE "data/psi_categories.asm"
 
 .INCLUDE "data/unknown/C3F0B0.asm"
 
-.INCLUDE "data/psi_suffixes-jp.asm"
+.INCLUDE "data/psi_suffixes.asm"
 
-.INCLUDE "data/pp_cost_text-jp.asm"
+.INCLUDE "data/pp_cost_text.asm"
 
-.INCLUDE "data/psi_target_text-jp.asm"
+.INCLUDE "data/psi_target_text.asm"
 
 .INCLUDE "unknown/C3/C3F1EC-jp.asm"
 
@@ -2109,7 +2109,7 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "data/unknown/C3FB1F.asm"
 
-.INCLUDE "data/text/name_registry_request_string-jp.asm"
+.INCLUDE "data/text/name_registry_request_string.asm"
 
 .INCLUDE "data/unknown/C3FB45.asm"
 
@@ -2117,7 +2117,7 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "data/unknown/C3FD2D.asm"
 
-.INCLUDE "data/file_select_summary_party_sprite_config-jp.asm"
+.INCLUDE "data/file_select_summary_party_sprite_config.asm"
 
 .INCLUDE "data/attract_mode_text_pointers.asm"
 

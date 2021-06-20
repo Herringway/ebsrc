@@ -1,7 +1,7 @@
 .SEGMENT "BANK00"
-.INCLUDE "common-usa19950327.asm"
-.INCLUDE "config-usa19950327.asm"
-.INCLUDE "structs-proto.asm"
+.INCLUDE "common.asm"
+.INCLUDE "config.asm"
+.INCLUDE "structs.asm"
 
 .INCLUDE "overworld/events/clear_unknown_30x2_table_23.asm"
 
@@ -151,7 +151,7 @@
 
 .INCLUDE "overworld/get_on_bicycle.asm"
 
-.INCLUDE "unknown/C0/C03CFD-proto.asm"
+.INCLUDE "unknown/C0/C03CFD.asm"
 
 .INCLUDE "unknown/C0/C03DAA.asm"
 

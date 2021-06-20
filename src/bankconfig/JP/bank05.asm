@@ -1,5 +1,5 @@
 .SEGMENT "BANK05"
-.INCLUDE "common-jp.asm"
+.INCLUDE "common.asm"
 
 COMPRESSED_TEXT_PTRS:
 TEXT_DATA_BANK_1: ;$C50000

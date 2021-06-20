@@ -1,7 +1,7 @@
 .SEGMENT "BANK00"
-.INCLUDE "common-jp.asm"
-.INCLUDE "config-jp.asm"
-.INCLUDE "structs-jp.asm"
+.INCLUDE "common.asm"
+.INCLUDE "config.asm"
+.INCLUDE "structs.asm"
 
 UNKNOWN_C04EF0:
 REDIRECT_PRINT_NEWLINE:
@@ -21,13 +21,13 @@ UNKNOWN_C44FF3:
 
 .INCLUDE "unknown/C0/C0004B.asm"
 
-.INCLUDE "unknown/C0/C00085-jp.asm"
+.INCLUDE "unknown/C0/C00085.asm"
 
 .INCLUDE "unknown/C0/C00172.asm"
 
-.INCLUDE "unknown/C0/C0023F-jp.asm"
+.INCLUDE "unknown/C0/C0023F.asm"
 
-.INCLUDE "unknown/C0/C0030F-jp.asm"
+.INCLUDE "unknown/C0/C0030F.asm"
 
 .INCLUDE "unknown/C0/C0035B.asm"
 
@@ -99,7 +99,7 @@ UNKNOWN_C44FF3:
 
 .INCLUDE "system/alloc_sprite_mem.asm"
 
-.INCLUDE "unknown/C0/C01C52-jp.asm"
+.INCLUDE "unknown/C0/C01C52.asm"
 
 .INCLUDE "unknown/C0/C01D38.asm"
 
@@ -123,7 +123,7 @@ UNKNOWN_C44FF3:
 
 .INCLUDE "unknown/C0/C0263D.asm"
 
-.INCLUDE "unknown/C0/C02668-jp.asm"
+.INCLUDE "unknown/C0/C02668.asm"
 
 .INCLUDE "overworld/spawn_horizontal-jp.asm"
 
@@ -137,7 +137,7 @@ UNKNOWN_C44FF3:
 
 .INCLUDE "overworld/mushroomization_movement_swap.asm"
 
-.INCLUDE "unknown/C0/C02D29-jp.asm"
+.INCLUDE "unknown/C0/C02D29.asm"
 
 .INCLUDE "overworld/adjust_position_horizontal.asm"
 
@@ -165,7 +165,7 @@ UNKNOWN_C44FF3:
 
 .INCLUDE "overworld/get_on_bicycle.asm"
 
-.INCLUDE "unknown/C0/C03CFD-proto.asm"
+.INCLUDE "unknown/C0/C03CFD.asm"
 
 .INCLUDE "unknown/C0/C03DAA-jp.asm"
 

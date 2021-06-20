@@ -279,7 +279,7 @@
             .BYTE $A9
         .elseif .strat(str, i) = 'z'
             .BYTE $AA
-        .elseif .strat(str, i) = '\'
+        .elseif .strat(str, i) = '|'
             .BYTE $AC
         .else
             .warning .sprintf("Unknown character %c", .strat(str, i))
@@ -852,7 +852,7 @@
 .ENDMACRO
 
 .MACRO STZ_BADOPT dest
-    .IF .strat(LOCALE, 0) = 'J'
+    .IF .DEFINED(JPN)
         LDA #$00
         STA dest
     .ELSE

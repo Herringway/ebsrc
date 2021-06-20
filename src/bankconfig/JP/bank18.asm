@@ -1,5 +1,5 @@
 .SEGMENT "BANK18"
-.INCLUDE "common-jp.asm"
+.INCLUDE "common.asm"
 
 .INCLUDE "data/map/tile_collision_data.asm"
 

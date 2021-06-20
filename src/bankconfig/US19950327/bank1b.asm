@@ -1,5 +1,5 @@
 .SEGMENT "BANK1B"
-.INCLUDE "common-usa19950327.asm"
+.INCLUDE "common.asm"
 
 MAP_DATA_TILE_ARRANGEMENT_8: ;$DB0000
 	BINARY "maps/arrangements/8.bin.lzhal"

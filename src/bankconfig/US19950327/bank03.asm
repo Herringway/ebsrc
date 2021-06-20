@@ -1,8 +1,8 @@
 .SEGMENT "BANK03"
 .INCLUDE "eventmacros.asm"
-.INCLUDE "common-usa19950327.asm"
-.INCLUDE "config-usa19950327.asm"
-.INCLUDE "structs-proto.asm"
+.INCLUDE "common.asm"
+.INCLUDE "config.asm"
+.INCLUDE "structs.asm"
 
 SPRITE_GROUP_PALETTES: ;$C30000
 	BINARY "overworld_sprites/0.pal"
@@ -494,7 +494,7 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "data/events/C33C18.asm"
 
-.INCLUDE "data/events/C33C1D-proto.asm"
+.INCLUDE "data/events/C33C1D.asm"
 
 .INCLUDE "data/events/scripts/467.asm"
 
