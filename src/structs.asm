@@ -501,3 +501,9 @@
 	unknown4 .byte 1 ;12
 	unknown5 .byte 1 ;12
 .ENDSTRUCT
+
+.STRUCT overworld_palette_anim
+	timer .word ;0
+	index .word ;2
+	delays .word 9 ;4
+.ENDSTRUCT
