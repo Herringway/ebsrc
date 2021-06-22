@@ -5,21 +5,21 @@
 
 .INCLUDE "overworld/events/clear_unknown_30x2_table_23.asm"
 
-.INCLUDE "unknown/C0/C00013.asm"
+.INCLUDE "overworld/setup_vram.asm"
 
-.INCLUDE "unknown/C0/C0004B.asm"
+.INCLUDE "overworld/initialize.asm"
 
-.INCLUDE "unknown/C0/C00085.asm"
+.INCLUDE "system/load_tileset_anim.asm"
 
-.INCLUDE "unknown/C0/C00172.asm"
+.INCLUDE "system/animate_tileset.asm"
 
-.INCLUDE "unknown/C0/C0023F.asm"
+.INCLUDE "system/load_palette_anim.asm"
 
-.INCLUDE "unknown/C0/C0030F.asm"
+.INCLUDE "system/animate_palette.asm"
 
 .INCLUDE "unknown/C0/C0035B.asm"
 
-.INCLUDE "unknown/C0/C00391.asm"
+.INCLUDE "system/get_colour_average.asm"
 
 .INCLUDE "unknown/C0/C00434.asm"
 
