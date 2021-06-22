@@ -3,8 +3,6 @@
 .INCLUDE "config.asm"
 .INCLUDE "structs.asm"
 
-;.INCLUDE "unknown/C1/C10000.asm"
-
 .INCLUDE "unknown/C1/C10004.asm"
 
 .INCLUDE "text/enable_blinking_triangle.asm"
@@ -23,15 +21,7 @@
 
 .INCLUDE "misc/set_9622-jp.asm"
 
-;.INCLUDE "unknown/C3/C3E4E0.asm"
-
 .INCLUDE "unknown/C3/C3E4EF-jp.asm"
-
-;.INCLUDE "unknown/C3/C3E6F8.asm"
-
-;.INCLUDE "unknown/C3/C3E75D.asm"
-
-;.INCLUDE "unknown/C3/C3E7E3.asm"
 
 .INCLUDE "text/get_window_focus.asm"
 
@@ -126,28 +116,6 @@
 .INCLUDE "unknown/C1/C10D7C.asm"
 
 .INCLUDE "text/print_number-jp.asm"
-
-;.INCLUDE "unknown/C1/C1008E_redirect.asm"
-;
-;.INCLUDE "unknown/C1/C10BFE.asm"
-;
-;.INCLUDE "unknown/C1/C1138D_redirect.asm"
-;
-;.INCLUDE "unknown/C1/C117E2_redirect.asm"
-;
-;.INCLUDE "unknown/C1/C10C55.asm"
-;
-;.INCLUDE "unknown/C4/C438A5_redirect.asm"
-;
-;.INCLUDE "text/print_newline_redirect.asm"
-;
-;.INCLUDE "unknown/C1/C10BA1_redirect.asm"
-;
-;.INCLUDE "text/print_letter_redirect.asm"
-;
-;.INCLUDE "text/display_config_menu_title_redirect.asm"
-;
-;.INCLUDE "unknown/C4/C437B8_redirect.asm"
 
 .INCLUDE "unknown/C1/C11404.asm"
 
@@ -257,8 +225,6 @@
 
 .INCLUDE "unknown/C1/C133A7.asm"
 
-;.INCLUDE "unknown/C1/C133B0.asm"
-
 .INCLUDE "overworld/open_menu-jp.asm"
 
 .INCLUDE "text/open_hppp_display-jp.asm"
@@ -280,8 +246,6 @@
 .INCLUDE "unknown/C1/C14070.asm"
 
 .INCLUDE "text/ccs/print_stat.asm"
-
-;.INCLUDE "text/ccs/print_party_or_hint_new_line-jp.asm"
 
 .INCLUDE "text/ccs/unknown_1C_09.asm"
 
@@ -396,10 +360,6 @@
 .INCLUDE "text/ccs/inflict_character_status.asm"
 
 .INCLUDE "text/ccs/test_character_status.asm"
-
-;.INCLUDE "text/ccs/get_gender_etc.asm"
-
-;.INCLUDE "text/ccs/switch_gender_etc.asm"
 
 .INCLUDE "text/ccs/test_equality.asm"
 
@@ -878,9 +838,6 @@
 .INCLUDE "unknown/C1/C1FF2C-jp.asm"
 
 .INCLUDE "unknown/C1/C1FF6B-jp.asm"
-
-UNKNOWN_C1FF99:
-;.INCLUDE "unknown/C1/C1FF99.asm"
 
 .INCLUDE "system/antipiracy/sram_check_routine_checksum.asm"
 

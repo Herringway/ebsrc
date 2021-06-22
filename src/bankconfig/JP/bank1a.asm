@@ -106,6 +106,4 @@ MAP_DATA_PALETTE_30: ;$DAF267
 MAP_DATA_PALETTE_31: ;$DAF4A7
 	BINARY "maps/palettes/31.bin"
 
-;.BYTE $67, $30, $52, $14, $64, $00, $00
-
 .INCLUDE "data/map/unknown_map_palette_pointer_table.asm"

@@ -4,9 +4,6 @@
 .INCLUDE "config.asm"
 .INCLUDE "structs.asm"
 
-FONT_PTR_TABLE:
-CALL_C12DD5_WITH_ZERO_9622:
-UNKNOWN_C3E75D:
 SPRITE_GROUP_PALETTES: ;$C30000
 	BINARY "overworld_sprites/0.pal"
 	BINARY "overworld_sprites/1.pal"
@@ -1339,8 +1336,6 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "data/events/scripts/003.asm"
 
-;.INCLUDE "data/events/scripts/894.asm"
-
 .INCLUDE "data/events/C3A09F.asm"
 
 .INCLUDE "data/events/C3A0B2.asm"
@@ -2023,8 +2018,6 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "data/debug/menu_text.asm"
 
-;.INCLUDE "data/debug/menu_element_spacing_data.asm"
-
 .INCLUDE "data/debug/on_text.asm"
 
 .INCLUDE "data/debug/off_text.asm"
@@ -2058,8 +2051,6 @@ SPRITE_GROUP_PALETTES: ;$C30000
 .INCLUDE "misc/null/C3EF23.asm"
 
 .INCLUDE "data/unknown/C3EF26.asm"
-
-;.INCLUDE "data/font_pointer_table.asm"
 
 .INCLUDE "data/psi_categories.asm"
 
@@ -2120,8 +2111,6 @@ SPRITE_GROUP_PALETTES: ;$C30000
 .INCLUDE "data/file_select_summary_party_sprite_config.asm"
 
 .INCLUDE "data/attract_mode_text_pointers.asm"
-
-;.INCLUDE "data/unknown/C3FDB5.asm"
 
 .INCLUDE "data/unused_for_sale_sign_sprite_table.asm"
 

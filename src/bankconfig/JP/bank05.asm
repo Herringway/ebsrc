@@ -1,6 +1,5 @@
 .SEGMENT "BANK05"
 .INCLUDE "common.asm"
 
-COMPRESSED_TEXT_PTRS:
 TEXT_DATA_BANK_1: ;$C50000
 	.INCLUDE "bin/JP/text_data/0.ebtxt"

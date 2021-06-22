@@ -171,20 +171,6 @@ AUDIO_PACK_7: ;$EF614B
         AUDIOPACKBIN $CC, $4800, "audiopacks/7.bin"
         AUDIOPACK 0
 
-;.INCLUDE "unknown/EF/EF00BB.asm"
-;
-;.INCLUDE "unknown/EF/EF00E6.asm"
-;
-;.INCLUDE "unknown/EF/EF0115.asm"
-;
-;.INCLUDE "unknown/EF/EF016F.asm"
-;
-;.INCLUDE "unknown/EF/EF01D2.asm"
-;
-;
-;.INCLUDE "unknown/EF/EF04DC.asm"
-;
-
 .INCLUDE "data/map/tileset_table.asm"
 
 .INCLUDE "data/map/tileset_graphics_pointer_table.asm"

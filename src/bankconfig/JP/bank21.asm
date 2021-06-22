@@ -20,32 +20,6 @@ TEA_SEQUENCE_TEXT: ;$E10652
 UNKNOWN_E1213E: ;$E10000
 	BINARY "E1213E.bin"
 
-;MAIN_FONT_DATA: ;$E10C7A
-;	BINARY "fonts/main.bin"
-;
-;MAIN_FONT_GFX: ;$E10CDA
-;	BINARY "fonts/main.gfx"
-;
-;BATTLE_FONT_DATA: ;$E118DA
-;	BINARY "fonts/battle.bin"
-;
-;BATTLE_FONT_GFX: ;$E1193A
-;	BINARY "fonts/battle.gfx"
-;
-;TINY_FONT_DATA: ;$E11F3A
-;	BINARY "fonts/tiny.bin"
-;
-;TINY_FONT_GFX: ;$E11F9A
-;	BINARY "fonts/tiny.gfx"
-;
-;LARGE_FONT_DATA: ;$E1229A
-;	BINARY "fonts/large.bin"
-;
-;LARGE_FONT_GFX: ;$E122FA
-;	BINARY "fonts/large.gfx"
-
-;.INCLUDE "data/cast_sequence_formatting.asm"
-
 .INCLUDE "data/photographer_cfg.asm"
 
 COMPRESSED_PALETTE_UNKNOWN: ;$E1374A
@@ -127,21 +101,6 @@ NINTENDO_PRESENTATION_GRAPHICS: ;$E1AD4E
 NINTENDO_ITOI_PALETTE: ;$E1AE6F
 	BINARY "intro/attract/nintendo_itoi.pal.lzhal"
 
-;C80D
-
-
-;UNKNOWN_E1AE7C: ;$E1AE7C
-;	BINARY "E1AE7C.bin.lzhal"
-;
-;UNKNOWN_E1AE83: ;$E1AE83
-;	BINARY "E1AE83.bin.lzhal"
-;
-;UNKNOWN_E1AEFD: ;$E1AEFD
-;	BINARY "E1AEFD.bin.lzhal"
-
-TITLE_SCREEN_PALETTE: ;$E1CDE1
-;	BINARY "intro/title_screen.pal.lzhal"
-
 .INCLUDE "data/unknown/E1CE08-jp.asm"
 
 UNKNOWN_E1CFAF: ;$E1CCAB
@@ -152,9 +111,6 @@ UNKNOWN_E1D4F4:
 
 UNKNOWN_E1D5E8: ;$E1D2E4
 	BINARY "E1D5E8.arr.lzhal"
-
-;UNKNOWN_E1D6E1: ;$E1D6E1
-;	BINARY "E1D6E1.gfx.lzhal"
 
 CAST_NAMES_GFX: ;$E1D835
 	BINARY "ending/cast_names.gfx.lzhal"

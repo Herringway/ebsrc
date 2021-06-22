@@ -32,14 +32,6 @@
 
 .INCLUDE "unknown/C2/C208B8-jp.asm"
 
-;.INCLUDE "data/text/name_entry_grid_character_offset_table.asm"
-
-;.INCLUDE "data/unknown/C20958.asm"
-
-;.INCLUDE "data/text/the.asm"
-
-;.INCLUDE "unknown/C2/C209A0.asm"
-
 .INCLUDE "unknown/C2/C20A20.asm"
 
 .INCLUDE "unknown/C2/C20ABC.asm"

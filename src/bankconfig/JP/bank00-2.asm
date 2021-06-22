@@ -136,8 +136,6 @@
 
 .INCLUDE "unknown/C0/C08F68.asm"
 
-;.INCLUDE "unknown/C0/C08F8B.asm"
-
 .INCLUDE "data/unknown/C08F98.asm"
 
 .INCLUDE "data/dma_table.asm"
@@ -884,8 +882,6 @@
 
 .INCLUDE "unknown/C0/C0EBE0-jp.asm"
 
-;.INCLUDE "unknown/C0/C0EC77.asm"
-
 .INCLUDE "unknown/C0/C0ED41-jp.asm"
 
 .INCLUDE "unknown/C0/C0ED9F-jp.asm"
@@ -893,22 +889,6 @@
 .INCLUDE "unknown/C0/C0EE53.asm"
 
 .INCLUDE "intro/show_title_screen-jp.asm"
-
-;.INCLUDE "unknown/C0/C0ECB7.asm"
-
-;.INCLUDE "unknown/C0/C0ED14.asm"
-
-;.INCLUDE "unknown/C0/C0ED39.asm"
-
-;.INCLUDE "unknown/C0/C0ED5C.asm"
-
-;.INCLUDE "unknown/C0/C0EDD1.asm"
-
-;.INCLUDE "unknown/C0/C0EDDA.asm"
-
-;.INCLUDE "unknown/C0/C0EE47.asm"
-
-
 
 .INCLUDE "intro/logo_screen_load.asm"
 

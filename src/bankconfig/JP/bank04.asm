@@ -13,10 +13,6 @@
 
 .INCLUDE "unknown/C4/C40023.asm"
 
-;.INCLUDE "unknown/C4/C4002F.asm"
-
-;.INCLUDE "unknown/C4/C40085.asm"
-
 .INCLUDE "data/events/script_pointers-jp.asm"
 
 .INCLUDE "unknown/C4/C40B51.asm"
@@ -345,75 +341,6 @@
 
 .INCLUDE "unknown/C4/C43568.asm"
 
-;.INCLUDE "data/unknown/C43915.asm"
-
-;.INCLUDE "unknown/C4/C43B15.asm"
-;
-;.INCLUDE "unknown/C4/C43BB9.asm"
-;
-;.INCLUDE "unknown/C4/C43CAA.asm"
-;
-;.INCLUDE "unknown/C4/C43CD2.asm"
-;
-;.INCLUDE "unknown/C4/C43D24.asm"
-;
-;.INCLUDE "unknown/C4/C43D75.asm"
-;
-;.INCLUDE "unknown/C4/C43D95.asm"
-;
-;.INCLUDE "unknown/C4/C43DDB.asm"
-;
-;.INCLUDE "unknown/C4/C43E31.asm"
-;
-;.INCLUDE "unknown/C4/C43EF8.asm"
-;
-;.INCLUDE "unknown/C4/C43F53.asm"
-;
-;.INCLUDE "unknown/C4/C43F77.asm"
-;
-;.INCLUDE "text/get_character_at_cursor_position.asm"
-;
-;.INCLUDE "unknown/C4/C440B5.asm"
-;
-;.INCLUDE "unknown/C4/C441B7.asm"
-;
-;.INCLUDE "unknown/C4/C4424A.asm"
-;
-;.INCLUDE "unknown/C4/C442AC.asm"
-;
-;.INCLUDE "unknown/C4/C444FB.asm"
-;
-;.INCLUDE "unknown/C4/C445E1.asm"
-;
-;.INCLUDE "unknown/C4/C447FB.asm"
-;
-;.INCLUDE "unknown/C4/C4487C.asm"
-;
-;.INCLUDE "unknown/C4/C44963.asm"
-;
-;.INCLUDE "data/unknown/C44AD7.asm"
-;
-;.INCLUDE "unknown/C4/C44AF7.asm"
-;
-;.INCLUDE "unknown/C4/C44B3A.asm"
-;
-;.INCLUDE "data/powers_of_two_16.asm"
-;
-;.INCLUDE "unknown/C4/C44C8C.asm"
-;
-;.INCLUDE "unknown/C4/C44DCA.asm"
-;
-;.INCLUDE "unknown/C4/C44E44.asm"
-;
-;.INCLUDE "unknown/C4/C44E4D.asm"
-;
-;.INCLUDE "unknown/C4/C44E61.asm"
-;
-;.INCLUDE "unknown/C4/C44FF3.asm"
-;
-;.INCLUDE "unknown/C4/C4507A.asm"
-
-
 .INCLUDE "data/text/battle_to_text.asm"
 
 .INCLUDE "data/text/battle_front_row_text.asm"
@@ -549,8 +476,6 @@
 .INCLUDE "unknown/C4/C46881.asm"
 
 .INCLUDE "unknown/C4/C468A9.asm"
-
-;.INCLUDE "unknown/C4/C468AF.asm"
 
 .INCLUDE "unknown/C4/C468B5.asm"
 
@@ -702,10 +627,6 @@
 
 .INCLUDE "unknown/C4/C4810E.asm"
 
-;.INCLUDE "unknown/C4/C4827B.asm"
-
-;.INCLUDE "unknown/C4/C4838A.asm"
-
 .INCLUDE "unknown/C4/C4880C-jp.asm"
 
 .INCLUDE "unknown/C4/C48A6D-jp.asm"
@@ -777,12 +698,6 @@
 .INCLUDE "unknown/C4/C4981F.asm"
 
 .INCLUDE "unknown/C4/C49841.asm"
-
-;.INCLUDE "unknown/C4/C4984B.asm"
-
-;.INCLUDE "unknown/C4/C49875.asm"
-
-;.INCLUDE "unknown/C4/C4999B.asm"
 
 .INCLUDE "unknown/C4/C49A4B.asm"
 
@@ -940,8 +855,6 @@
 
 .INCLUDE "unknown/C4/C4C91A.asm"
 
-;EF0FDB -> C4CA65
-
 .INCLUDE "unknown/C4/C4CB4F.asm"
 
 .INCLUDE "unknown/C4/C4CB8F.asm"
@@ -1024,12 +937,6 @@
 
 .INCLUDE "unknown/C4/C4E51E.asm"
 
-;.INCLUDE "unknown/C4/C4E583.asm"
-
-;.INCLUDE "data/character_guardian_text.asm"
-
-;.INCLUDE "unknown/C4/C4E7AE.asm"
-
 .INCLUDE "unknown/C4/C4EA9C-jp.asm"
 
 .INCLUDE "unknown/C4/C4EB04-jp.asm"
@@ -1047,12 +954,6 @@
 .INCLUDE "unknown/C4/C4ECE7.asm"
 
 .INCLUDE "unknown/C4/C4ED0E-jp.asm"
-
-;.INCLUDE "unknown/C4/C4EDA3.asm"
-;
-;.INCLUDE "unknown/C4/C4EE9D.asm"
-;
-;.INCLUDE "unknown/C4/C4EEE1.asm"
 
 .INCLUDE "unknown/C4/C4EFC4.asm"
 
