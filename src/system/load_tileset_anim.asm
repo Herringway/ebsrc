@@ -52,31 +52,31 @@ LOAD_TILESET_ANIM: ;$C00085
 	ASL
 	ASL
 	CLC
-	ADC #.LOWORD(UNKNOWN_7E43DC)
+	ADC #.LOWORD(OVERWORLD_TILESET_ANIM)
 	TAX
 	MOVE_INT $06, $0A
 	LDA [$0A]
 	AND #$00FF
-	STA a:.LOWORD(RAM),X
+	STA a:overworld_tileset_anim::unknown0,X
 	SEP #PROC_FLAGS::ACCUM8
-	LDY #$0001
+	LDY #overworld_tileset_anim_entry::unknown1
 	LDA [$06],Y
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF
-	STA a:.LOWORD(RAM)+10,X
-	STA a:.LOWORD(RAM)+2,X
-	LDY #$0002
+	STA a:overworld_tileset_anim::unknown10,X
+	STA a:overworld_tileset_anim::unknown2,X
+	LDY #overworld_tileset_anim_entry::unknown2
 	LDA [$06],Y
-	STA a:.LOWORD(RAM)+4,X
-	LDY #$0004
+	STA a:overworld_tileset_anim::unknown4,X
+	LDY #overworld_tileset_anim_entry::unknown4
 	LDA [$06],Y
-	STA a:.LOWORD(RAM)+14,X
-	STA a:.LOWORD(RAM)+6,X
-	LDY #$0006
+	STA a:overworld_tileset_anim::unknown14,X
+	STA a:overworld_tileset_anim::unknown6,X
+	LDY #overworld_tileset_anim_entry::unknown6
 	LDA [$06],Y
-	STA a:.LOWORD(RAM)+8,X
-	STZ a:.LOWORD(RAM)+12,X
-	LDA #$0008
+	STA a:overworld_tileset_anim::unknown8,X
+	STZ a:overworld_tileset_anim::unknown12,X
+	LDA #.SIZEOF(overworld_tileset_anim_entry)
 	CLC
 	ADC $06
 	STA $06

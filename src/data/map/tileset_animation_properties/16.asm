@@ -1,9 +1,39 @@
 
 TILESET_ANIMATION_PROPERTIES_16: ;$EF12F3
 	.BYTE 6
-	.BYTE $02, $1F, $40, $00, $20, $00, $10, $20
-	.BYTE $02, $1F, $C0, $00, $A0, $00, $30, $00
-	.BYTE $02, $1F, $40, $00, $20, $02, $90, $20
-	.BYTE $02, $1F, $40, $01, $A0, $02, $B0, $00
-	.BYTE $02, $19, $40, $00, $20, $05, $50, $21
-	.BYTE $02, $19, $C0, $00, $A0, $05, $70, $01
+
+	.BYTE $02
+	.BYTE $1F
+	.WORD $0040
+	.WORD $0020
+	.WORD $2010
+
+	.BYTE $02
+	.BYTE $1F
+	.WORD $00C0
+	.WORD $00A0
+	.WORD $0030
+
+	.BYTE $02
+	.BYTE $1F
+	.WORD $0040
+	.WORD $0220
+	.WORD $2090
+
+	.BYTE $02
+	.BYTE $1F
+	.WORD $0140
+	.WORD $02A0
+	.WORD $00B0
+
+	.BYTE $02
+	.BYTE $19
+	.WORD $0040
+	.WORD $0520
+	.WORD $2150
+
+	.BYTE $02
+	.BYTE $19
+	.WORD $00C0
+	.WORD $05A0
+	.WORD $0170

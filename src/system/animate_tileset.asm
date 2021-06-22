@@ -3,14 +3,14 @@
 ANIMATE_TILESET: ;$C00172
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
 	RESERVE_STACK_SPACE_CLOBBER 24
-	LDA #.LOWORD(UNKNOWN_7E43DC)
+	LDA #.LOWORD(OVERWORLD_TILESET_ANIM)
 	STA $16
 	STZ $14
 	JMP a:.LOWORD(@UNKNOWN4)
 @UNKNOWN0:
 	LDA $16
 	CLC
-	ADC #$000A
+	ADC #overworld_tileset_anim::unknown10
 	TAX
 	LDA a:.LOWORD(RAM),X
 	DEC
@@ -18,21 +18,21 @@ ANIMATE_TILESET: ;$C00172
 	BEQ @UNKNOWN1
 	JMP a:.LOWORD(@UNKNOWN3)
 @UNKNOWN1:
-	LDY #$0002
+	LDY #overworld_tileset_anim::unknown2
 	LDA ($16),Y
 	STA a:.LOWORD(RAM),X
 	LDA $16
 	CLC
-	ADC #$000C
+	ADC #overworld_tileset_anim::unknown12
 	TAX
 	LDA a:.LOWORD(RAM),X
 	CMP ($16)
 	BNE @UNKNOWN2
 	LDA #$0000
 	STA a:.LOWORD(RAM),X
-	LDY #$0006
+	LDY #overworld_tileset_anim::unknown6
 	LDA ($16),Y
-	LDY #$000E
+	LDY #overworld_tileset_anim::unknown14
 	STA ($16),Y
 @UNKNOWN2:
 	LDA $16
@@ -43,7 +43,7 @@ ANIMATE_TILESET: ;$C00172
 	INC $04
 	LDA $16
 	CLC
-	ADC #$000E
+	ADC #overworld_tileset_anim::unknown14
 	STA $02
 	STA $12
 	LOADPTR UNKNOWN_7EC000, $06
@@ -55,7 +55,7 @@ ANIMATE_TILESET: ;$C00172
 	STA $0E
 	LDA $08
 	STA $10
-	LDY #$0008
+	LDY #overworld_tileset_anim::unknown8
 	LDA ($16),Y
 	TAY
 	LDX $04
@@ -79,7 +79,7 @@ ANIMATE_TILESET: ;$C00172
 	STA a:.LOWORD(RAM),X
 	LDA $16
 	CLC
-	ADC #$000C
+	ADC #overworld_tileset_anim::unknown12
 	TAX
 	LDA a:.LOWORD(RAM),X
 	INC
@@ -87,7 +87,7 @@ ANIMATE_TILESET: ;$C00172
 @UNKNOWN3:
 	LDA $16
 	CLC
-	ADC #$0010
+	ADC #.SIZEOF(overworld_tileset_anim)
 	STA $16
 	INC $14
 @UNKNOWN4:
