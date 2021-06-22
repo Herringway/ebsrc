@@ -55,27 +55,27 @@ LOAD_TILESET_ANIM: ;$C00085
 	ADC #.LOWORD(OVERWORLD_TILESET_ANIM)
 	TAX
 	MOVE_INT $06, $0A
-	LDA [$0A]
+	LDA [$0A] ;overworld_tileset_anim_entry::unknown0
 	AND #$00FF
 	STA a:overworld_tileset_anim::unknown0,X
 	SEP #PROC_FLAGS::ACCUM8
-	LDY #overworld_tileset_anim_entry::unknown1
+	LDY #overworld_tileset_anim_entry::frame_delay
 	LDA [$06],Y
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF
-	STA a:overworld_tileset_anim::unknown10,X
-	STA a:overworld_tileset_anim::unknown2,X
-	LDY #overworld_tileset_anim_entry::unknown2
+	STA a:overworld_tileset_anim::frames_until_update,X
+	STA a:overworld_tileset_anim::frame_delay,X
+	LDY #overworld_tileset_anim_entry::copy_size
 	LDA [$06],Y
-	STA a:overworld_tileset_anim::unknown4,X
-	LDY #overworld_tileset_anim_entry::unknown4
+	STA a:overworld_tileset_anim::copy_size,X
+	LDY #overworld_tileset_anim_entry::source_offset
 	LDA [$06],Y
-	STA a:overworld_tileset_anim::unknown14,X
-	STA a:overworld_tileset_anim::unknown6,X
-	LDY #overworld_tileset_anim_entry::unknown6
+	STA a:overworld_tileset_anim::source_offset2,X
+	STA a:overworld_tileset_anim::source_offset,X
+	LDY #overworld_tileset_anim_entry::destination_address
 	LDA [$06],Y
-	STA a:overworld_tileset_anim::unknown8,X
-	STZ a:overworld_tileset_anim::unknown12,X
+	STA a:overworld_tileset_anim::destination_address,X
+	STZ a:overworld_tileset_anim::destination_address2,X
 	LDA #.SIZEOF(overworld_tileset_anim_entry)
 	CLC
 	ADC $06

@@ -510,19 +510,19 @@
 
 .STRUCT overworld_tileset_anim
 	unknown0 .word ;0
-	unknown2 .word ;2
-	unknown4 .word ;4
-	unknown6 .word ;6
-	unknown8 .word ;8
-	unknown10 .word ;10
-	unknown12 .word ;12
-	unknown14 .word ;14
+	frame_delay .word ;2
+	copy_size .word ;4
+	source_offset .word ;6
+	destination_address .word ;8
+	frames_until_update .word ;10
+	destination_address2 .word ;12
+	source_offset2 .word ;14
 .ENDSTRUCT
 
 .STRUCT overworld_tileset_anim_entry
 	unknown0 .byte ;0
-	unknown1 .byte ;1
-	unknown2 .word ;2
-	unknown4 .word ;4
-	unknown6 .word ;6
+	frame_delay .byte ;1
+	copy_size .word ;2
+	source_offset .word ;4
+	destination_address .word ;6
 .ENDSTRUCT
