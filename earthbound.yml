@@ -17995,3 +17995,4 @@ compressedTextStrings:
 defaultDumpPath: src/bin/US/
 romIdentifier: 'EARTH BOUND          '
 dontUseTextTable: false
+multibyteFlyovers: false

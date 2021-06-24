@@ -18309,3 +18309,4 @@ compressedTextStrings:
 defaultDumpPath: src/bin/US19950327/
 romIdentifier: '01 95.03.27          '
 dontUseTextTable: false
+multibyteFlyovers: false
