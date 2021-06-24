@@ -494,7 +494,7 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "data/events/C33C18.asm"
 
-.INCLUDE "data/events/C33C1D-proto.asm"
+.INCLUDE "data/events/C33C1D.asm"
 
 .INCLUDE "data/events/scripts/467.asm"
 

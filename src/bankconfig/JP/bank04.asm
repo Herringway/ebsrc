@@ -13,7 +13,7 @@
 
 .INCLUDE "unknown/C4/C40023.asm"
 
-.INCLUDE "data/events/script_pointers-jp.asm"
+.INCLUDE "data/events/script_pointers.asm"
 
 .INCLUDE "unknown/C4/C40B51.asm"
 
