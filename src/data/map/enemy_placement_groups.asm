@@ -65,7 +65,7 @@ ENEMY_PLACEMENT_GROUP_007:
          .BYTE $04, $01, $00
          .BYTE $04, $03, $00
 ENEMY_PLACEMENT_GROUP_008:
-         .WORD EVENT_FLAG::UNKNOWN_040
+         .WORD EVENT_FLAG::FLG_WIN_FRANK
          .BYTE $0A, $00
          .BYTE $03, $08, $00
          .BYTE $02, $09, $00
