@@ -101,7 +101,7 @@ NINTENDO_PRESENTATION_GRAPHICS: ;$E1AD4E
 NINTENDO_ITOI_PALETTE: ;$E1AE6F
 	BINARY "intro/attract/nintendo_itoi.pal.lzhal"
 
-.INCLUDE "data/unknown/E1CE08-jp.asm"
+.INCLUDE "data/unknown/E1CE08.asm"
 
 UNKNOWN_E1CFAF: ;$E1CCAB
 	BINARY "E1CFAF.gfx.lzhal"
@@ -115,7 +115,7 @@ UNKNOWN_E1D5E8: ;$E1D2E4
 CAST_NAMES_GFX: ;$E1D835
 	BINARY "ending/cast_names.gfx.lzhal"
 
-.INCLUDE "data/unknown/E1D815-jp.asm"
+.INCLUDE "data/unknown/E1D815.asm"
 
 UNKNOWN_E1E4E6: ;$E1E4E6
 	BINARY "ending/cast_names.pal.lzhal"
