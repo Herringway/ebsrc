@@ -235,7 +235,7 @@ AUDIO_PACK_7: ;$EF614B
 
 .INCLUDE "data/map/per_sector_town_map_data.asm"
 
-.INCLUDE "data/map/town_map_mapping-jp.asm"
+.INCLUDE "data/map/town_map_mapping.asm"
 
 .INCLUDE "data/debug/sound_menu_option_strings.asm"
 

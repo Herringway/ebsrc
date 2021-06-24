@@ -187,6 +187,10 @@ NAME_INPUT_WINDOW_SELECTION_LAYOUT_5: ;$EFA6A7
 
 .INCLUDE "data/map/town_map_mapping.asm"
 
+.INCLUDE "data/unknown/EFC51B.asm"
+
+.INCLUDE "data/unknown/EFCD1B.asm"
+
 .INCLUDE "data/debug/sound_menu_option_strings.asm"
 
 .INCLUDE "unknown/EF/EFD56F.asm"
