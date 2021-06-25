@@ -136,9 +136,17 @@ UNKNOWN_C4F264: ;$C4F264
 	ASL
 	ASL
 	CLC
+.IF .DEFINED(JPN)
+	ADC #.LOWORD(GAME_STATE)
+	CLC
+	ADC $04
+	TAX
+	LDA a:game_state::saved_photo_states + photo_state::party,X
+.ELSE
 	ADC $04
 	TAX
 	LDA .LOWORD(GAME_STATE) + game_state::saved_photo_states + photo_state::party,X
+.ENDIF
 	AND #$00FF
 	STA $02
 	BEQ @UNKNOWN8

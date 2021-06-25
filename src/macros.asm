@@ -51,13 +51,12 @@
 .endmacro
 
 .macro PACKPTR addr
-	.BYTE .LOBYTE(.HIWORD(addr))
-	.WORD .LOWORD(addr)
-.endmacro
-
-.macro PACKPTRM2 addr
+.IF .DEFINED(JPN)
     .BYTE .LOBYTE(.HIWORD(addr)) - $E2
-    .WORD .LOWORD(addr)
+.ELSE
+	.BYTE .LOBYTE(.HIWORD(addr))
+.ENDIF
+	.WORD .LOWORD(addr)
 .endmacro
 
 .macro DISPLAY_TEXT_PTR addr

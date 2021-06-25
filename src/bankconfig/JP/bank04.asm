@@ -957,11 +957,11 @@
 
 .INCLUDE "unknown/C4/C4EFC4.asm"
 
-.INCLUDE "unknown/C4/C4F01D-jp.asm"
+.INCLUDE "unknown/C4/C4F01D.asm"
 
-.INCLUDE "unknown/C4/C4F07D-jp.asm"
+.INCLUDE "unknown/C4/C4F07D.asm"
 
-.INCLUDE "unknown/C4/C4F264-jp.asm"
+.INCLUDE "unknown/C4/C4F264.asm"
 
 .INCLUDE "ending/count_photo_flags.asm"
 
@@ -1001,9 +1001,9 @@
 
 .INCLUDE "data/music/dataset_table.asm"
 
-.INCLUDE "data/music/pack_pointer_table-jp.asm"
+.INCLUDE "data/music/pack_pointer_table.asm"
 
-.INCLUDE "unknown/C4/C4FB42-jp.asm"
+.INCLUDE "unknown/C4/C4FB42.asm"
 
 .INCLUDE "audio/initialize_spc700.asm"
 
