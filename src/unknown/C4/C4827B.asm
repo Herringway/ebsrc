@@ -11,10 +11,10 @@ UNKNOWN_C4827B: ;$C4827B
 	STY $1A
 	LOADPTR FONT_PTR_TABLE, $0A
 	LDA $1C
-	OPTIMIZED_MULT $04, 12
+	OPTIMIZED_MULT $04, .SIZEOF(font_table_entry)
 	TAX
 	CLC
-	ADC #$0008
+	ADC #font_table_entry::height
 	MOVE_INTY $0A, $06
 	CLC
 	ADC $06
@@ -42,7 +42,7 @@ UNKNOWN_C4827B: ;$C4827B
 	STA $16
 	TXA
 	CLC
-	ADC #$000A
+	ADC #font_table_entry::width
 	MOVE_INTY $0A, $06
 	CLC
 	ADC $06

@@ -32,7 +32,7 @@ UNKNOWN_C43E31: ;$C43E31
 	STA $02
 	LDX $02
 	LDA a:window_stats::font,X
-	OPTIMIZED_MULT $04, 12
+	OPTIMIZED_MULT $04, .SIZEOF(font_table_entry)
 	CLC
 	ADC $0A
 	STA $0A

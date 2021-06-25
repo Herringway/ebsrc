@@ -32,10 +32,10 @@ LOAD_WINDOW_GFX: ;$C47C3F
 	.A16
 @UNKNOWN1:
 	LOADPTR FONT_PTR_TABLE, $06
-	LDY #$0020
+	LDY #(.SIZEOF(font_table_entry) * FONT::BATTLE) + font_table_entry::height
 	LDA [$06],Y
 	STA $2A
-	LDY #$0022
+	LDY #(.SIZEOF(font_table_entry) * FONT::BATTLE) + font_table_entry::width
 	LDA [$06],Y
 	STA $28
 	LOADPTR UNKNOWN_7F2A00, $24
@@ -80,7 +80,7 @@ LOAD_WINDOW_GFX: ;$C47C3F
 	SBC #$0050
 	AND #$007F
 	TAY
-	MOVE_INT FONT_PTR_TABLE+28, $06
+	MOVE_INT FONT_PTR_TABLE + (.SIZEOF(font_table_entry) * FONT::BATTLE) + font_table_entry::graphics, $06
 	LDA $2A
 	JSL MULT16
 	CLC

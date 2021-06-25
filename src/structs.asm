@@ -526,3 +526,10 @@
 	source_offset .word ;4
 	destination_address .word ;6
 .ENDSTRUCT
+
+.STRUCT font_table_entry
+	data .dword ;0
+	graphics .dword ;4
+	height .word ;8
+	width .word ;10
+.ENDSTRUCT

@@ -94,10 +94,18 @@
     STA var+2
 .endmacro
 
+.ENUM CHAR
+    .IF .DEFINED(JPN)
+        SPACE = $20
+    .ELSE
+        SPACE = $50
+    .ENDIF
+.ENDENUM
+
 .macro EBTEXT str
     .repeat .strlen(str), i
         .if .strat(str, i) = ' '
-            .BYTE $50
+            .BYTE CHAR::SPACE
         .elseif .strat(str, i) = '!'
             .BYTE $51
         .elseif .strat(str, i) = '&'
