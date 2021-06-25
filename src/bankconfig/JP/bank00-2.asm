@@ -72,7 +72,7 @@
 
 .INCLUDE "unknown/C0/C087CE.asm"
 
-.INCLUDE "unknown/C0/C08814-jp.asm"
+.INCLUDE "unknown/C0/C08814.asm"
 
 .INCLUDE "unknown/C0/C0886C.asm"
 
