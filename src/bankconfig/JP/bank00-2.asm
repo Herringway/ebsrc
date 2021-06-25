@@ -4,9 +4,9 @@
 .INCLUDE "config.asm"
 .INCLUDE "structs.asm"
 
-.INCLUDE "system/reset-jp.asm"
+.INCLUDE "system/reset.asm"
 
-.INCLUDE "system/reset_vector-jp.asm"
+.INCLUDE "system/reset_vector.asm"
 
 .INCLUDE "system/nmi_vector.asm"
 
