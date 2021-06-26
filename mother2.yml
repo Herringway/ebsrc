@@ -17284,7 +17284,13 @@ dumpEntries:
 - subdir: ''
   name: E1213E
   offset: 0x21213E
-  size: 0x2A3
+  size: 0x243
+  extension: bin
+  compressed: false
+- subdir: ''
+  name: E12381
+  offset: 0x212381
+  size: 0x60
   extension: bin
   compressed: false
 - subdir: fonts

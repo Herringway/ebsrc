@@ -17,8 +17,11 @@ TEA_SEQUENCE_TEXT: ;$E10652
 ;$E10B86
 	.INCLUDE "bin/JP/flyovers.flyover"
 
-UNKNOWN_E1213E: ;$E10000
+UNKNOWN_E1213E: ;$E1213E
 	BINARY "E1213E.bin"
+
+UNKNOWN_E12381: ;$E12381
+	BINARY "E12381.bin"
 
 .INCLUDE "data/photographer_cfg.asm"
 
