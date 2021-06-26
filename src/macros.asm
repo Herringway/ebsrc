@@ -569,6 +569,19 @@
     ADD_INT val1, val2, val1
 .ENDMACRO
 
+.MACRO AND_INT val1, val2, dest
+    LDA val1
+    AND val2
+    STA dest
+    LDA val1+2
+    AND val2+2
+    STA dest+2
+.ENDMACRO
+
+.MACRO AND_INT_ASSIGN val1, val2
+    AND_INT val1, val2, val1
+.ENDMACRO
+
 .MACRO CONST_ADD_VAR_INT constant, var, dest
     LDA #.LOWORD(constant)
     ADC var

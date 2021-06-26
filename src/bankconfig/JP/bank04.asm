@@ -943,9 +943,9 @@
 
 .INCLUDE "unknown/C4/C4EBAD-jp.asm"
 
-.INCLUDE "unknown/C4/C4EC05-jp.asm"
+.INCLUDE "unknown/C4/C4EC05.asm"
 
-.INCLUDE "unknown/C4/C4EC52-jp.asm"
+.INCLUDE "unknown/C4/C4EC52.asm"
 
 .INCLUDE "unknown/C4/C4EC6E.asm"
 
@@ -953,7 +953,7 @@
 
 .INCLUDE "unknown/C4/C4ECE7.asm"
 
-.INCLUDE "unknown/C4/C4ED0E-jp.asm"
+.INCLUDE "unknown/C4/C4ED0E.asm"
 
 .INCLUDE "unknown/C4/C4EFC4.asm"
 
