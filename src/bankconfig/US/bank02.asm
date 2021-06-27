@@ -734,7 +734,7 @@
 
 .INCLUDE "unknown/C2/C2E8C4.asm"
 
-.INCLUDE "unknown/C2/C2E8E0.asm"
+.INCLUDE "system/battle_swirl_sequence.asm"
 
 .INCLUDE "unknown/C2/C2E9C8.asm"
 
