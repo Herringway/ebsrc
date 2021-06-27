@@ -1,6 +1,7 @@
 .INCLUDE "constants/music.asm"
 .INCLUDE "constants/sfx.asm"
 .INCLUDE "constants/enemies.asm"
+.INCLUDE "constants/enemy_groups.asm"
 .INCLUDE "constants/actions.asm"
 .INCLUDE "constants/overworldsprites.asm"
 .INCLUDE "constants/event.asm"
