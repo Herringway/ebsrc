@@ -668,7 +668,7 @@
 
 .INCLUDE "data/unknown/C0AFF1.asm"
 
-.INCLUDE "system/set_battle_swirl_colour.asm"
+.INCLUDE "system/set_coldata.asm"
 
 .INCLUDE "system/set_colour_addsub_mode.asm"
 

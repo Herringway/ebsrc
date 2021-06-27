@@ -1,7 +1,7 @@
 
 
 ; void setColData(char red, char green, char blue)
-SET_BATTLE_SWIRL_COLOUR: ;$C0B01A
+SET_COLDATA: ;$C0B01A
 	SEP #PROC_FLAGS::ACCUM8
 	AND #$001F
 	ORA #$0020
