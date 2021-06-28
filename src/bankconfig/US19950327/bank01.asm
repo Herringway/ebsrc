@@ -563,7 +563,7 @@
 
 .INCLUDE "text/ccs/tree_1B.asm"
 
-.INCLUDE "text/ccs/tree_1C-proto.asm"
+.INCLUDE "text/ccs/tree_1C.asm"
 
 .INCLUDE "text/ccs/tree_1D.asm"
 

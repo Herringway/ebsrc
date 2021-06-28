@@ -561,13 +561,13 @@
 
 .INCLUDE "text/ccs/tree_18.asm"
 
-.INCLUDE "text/ccs/tree_19-jp.asm"
+.INCLUDE "text/ccs/tree_19.asm"
 
 .INCLUDE "text/ccs/tree_1A.asm"
 
-.INCLUDE "text/ccs/tree_1B-jp.asm"
+.INCLUDE "text/ccs/tree_1B.asm"
 
-.INCLUDE "text/ccs/tree_1C-jp.asm"
+.INCLUDE "text/ccs/tree_1C.asm"
 
 .INCLUDE "text/ccs/tree_1D.asm"
 
