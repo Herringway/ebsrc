@@ -14,6 +14,6 @@
 
 .INCLUDE "data/map/sprite_placement_pointer_table.asm"
 
-.INCLUDE "data/map/sprite_placement_table-jp.asm"
+.INCLUDE "data/map/sprite_placement_table.asm"
 
-.INCLUDE "data/map/npc_config-jp.asm"
+.INCLUDE "data/map/npc_config.asm"
