@@ -2,9 +2,9 @@
 .INCLUDE "common.asm"
 .INCLUDE "config.asm"
 
-.INCLUDE "data/map/door_data-jp.asm"
+.INCLUDE "data/map/door_data.asm"
 
-.INCLUDE "data/map/door_config_table-jp.asm"
+.INCLUDE "data/map/door_config_table.asm"
 
 .INCLUDE "data/map/overworld_event_music_pointer_table.asm"
 
