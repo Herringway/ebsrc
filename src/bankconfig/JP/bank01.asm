@@ -745,7 +745,7 @@
 
 .INCLUDE "misc/find_condiment.asm"
 
-.INCLUDE "overworld/show_hp_alert-jp.asm"
+.INCLUDE "overworld/show_hp_alert.asm"
 
 .INCLUDE "text/display_in_battle_text.asm"
 
