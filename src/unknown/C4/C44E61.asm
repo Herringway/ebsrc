@@ -68,12 +68,12 @@ UNKNOWN_C44E61: ;$C44E61
 	STA $1A
 	LOADPTR FONT_PTR_TABLE, $0A
 	LDA $02
-	OPTIMIZED_MULT $04, 12
+	OPTIMIZED_MULT $04, .SIZEOF(font_table_entry)
 	TAY
 	STY $18
 	TYA
 	CLC
-	ADC #$0008
+	ADC #font_table_entry::height
 	MOVE_INTX $0A, $06
 	CLC
 	ADC $06
@@ -103,7 +103,7 @@ UNKNOWN_C44E61: ;$C44E61
 	LDY $18
 	TYA
 	CLC
-	ADC #$000A
+	ADC #font_table_entry::width
 	MOVE_INTX $0A, $06
 	CLC
 	ADC $06
