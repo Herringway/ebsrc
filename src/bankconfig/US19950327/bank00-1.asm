@@ -3,7 +3,7 @@
 .INCLUDE "config.asm"
 .INCLUDE "structs.asm"
 
-.INCLUDE "overworld/events/clear_unknown_30x2_table_23.asm"
+.INCLUDE "overworld/events/clear_entity_draw_sorting_table.asm"
 
 .INCLUDE "overworld/setup_vram.asm"
 
