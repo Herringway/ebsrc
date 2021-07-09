@@ -155,7 +155,7 @@
 
 .INCLUDE "unknown/C0/C03CFD.asm"
 
-.INCLUDE "unknown/C0/C03DAA-jp.asm"
+.INCLUDE "unknown/C0/C03DAA.asm"
 
 .INCLUDE "unknown/C0/C03E25-jp.asm"
 
@@ -167,7 +167,7 @@
 
 .INCLUDE "unknown/C0/C03F1E-jp.asm"
 
-.INCLUDE "unknown/C0/C03FA9-jp.asm"
+.INCLUDE "unknown/C0/C03FA9.asm"
 
 .INCLUDE "system/center_screen.asm"
 
