@@ -93,7 +93,7 @@
 
 .INCLUDE "unknown/C0/C01DED.asm"
 
-.INCLUDE "overworld/events/parse_C3FC49_data.asm"
+.INCLUDE "overworld/create_entity.asm"
 
 .INCLUDE "unknown/C0/C020F1.asm"
 
