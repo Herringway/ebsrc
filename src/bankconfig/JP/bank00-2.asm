@@ -896,13 +896,13 @@
 
 .INCLUDE "intro/logo_screen.asm"
 
-.INCLUDE "intro/gas_station_load-jp.asm"
+.INCLUDE "intro/gas_station_load.asm"
 
 .INCLUDE "unknown/C0/C0F1D2.asm"
 
 .INCLUDE "unknown/C0/C0F21E.asm"
 
-.INCLUDE "intro/gas_station-jp.asm"
+.INCLUDE "intro/gas_station.asm"
 
 .INCLUDE "unknown/C0/C0F3B2.asm"
 

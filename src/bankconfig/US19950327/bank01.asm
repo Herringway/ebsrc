@@ -807,7 +807,7 @@
 
 .INCLUDE "text/enter_your_name_please.asm"
 
-.INCLUDE "intro/name_a_character-proto.asm"
+.INCLUDE "intro/name_a_character.asm"
 
 .INCLUDE "unknown/C1/C1EC8F.asm"
 
