@@ -96,10 +96,21 @@ UNKNOWN_C052D4: ;$C052D4
 	STX $1C
 	LDA #$0000
 	STA $1A
+.IF .DEFINED(JPN)
+	JMP @UNKNOWN3
+.ELSE
 	BRA @UNKNOWN3
+.ENDIF
 @UNKNOWN2:
+.IF .DEFINED(JPN)
+	CLC
+	ADC #.LOWORD(GAME_STATE)
+	TAX
+	LDA a:game_state::player_controlled_party_members,X
+.ELSE
 	TAX
 	LDA .LOWORD(GAME_STATE)+game_state::player_controlled_party_members,X
+.ENDIF
 	AND #$00FF
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
@@ -115,7 +126,13 @@ UNKNOWN_C052D4: ;$C052D4
 	ASL
 	STA $02
 	CLC
+.IF .DEFINED(JPN)
+	ADC #.LOWORD(GAME_STATE)
+	CLC
+	ADC #game_state::unknownA2
+.ELSE
 	ADC #.LOWORD(GAME_STATE) + game_state::unknownA2
+.ENDIF
 	TAY
 	LDA a:.LOWORD(RAM),Y
 	ASL

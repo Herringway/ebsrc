@@ -4,7 +4,15 @@ UNKNOWN_C04F9F: ;$C04F9F
 	RESERVE_STACK_SPACE 18
 	TAY
 	STY $10
+.IF .DEFINED(JPN)
+	TYA
+	CLC
+	ADC #.LOWORD(GAME_STATE)
+	TAX
+	LDA a:game_state::player_controlled_party_members,X
+.ELSE
 	LDA .LOWORD(GAME_STATE)+game_state::player_controlled_party_members,Y
+.ENDIF
 	AND #$00FF
 	ASL
 	TAX
@@ -12,7 +20,7 @@ UNKNOWN_C04F9F: ;$C04F9F
 	TAX
 	STX $0E
 	LDY #$0064
-	LDA a:.LOWORD(RAM)+char_struct::max_hp,X
+	LDA a:char_struct::max_hp,X
 	STA $04
 	ASL
 	ASL
@@ -20,7 +28,7 @@ UNKNOWN_C04F9F: ;$C04F9F
 	ASL
 	ASL
 	JSL DIVISION16S_DIVISOR_POSITIVE
-	CMP a:.LOWORD(RAM)+char_struct::current_hp,X
+	CMP a:char_struct::current_hp,X
 	BCC @UNKNOWN1
 	BEQ @UNKNOWN1
 	LDY $10

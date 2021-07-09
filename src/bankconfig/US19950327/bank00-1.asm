@@ -315,7 +315,7 @@
 
 .INCLUDE "unknown/C0/C06A91.asm"
 
-.INCLUDE "unknown/C0/C06ACA-proto.asm"
+.INCLUDE "unknown/C0/C06ACA.asm"
 
 .INCLUDE "overworld/spawn_buzz_buzz.asm"
 

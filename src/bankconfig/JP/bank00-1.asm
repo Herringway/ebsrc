@@ -209,7 +209,7 @@
 
 .INCLUDE "unknown/C0/C04C45.asm"
 
-.INCLUDE "unknown/C0/C04D78-jp.asm"
+.INCLUDE "unknown/C0/C04D78.asm"
 
 ;.INCLUDE "unknown/C0/C04EF0.asm"
 
@@ -217,7 +217,7 @@
 
 .INCLUDE "unknown/C0/C04F60.asm"
 
-.INCLUDE "unknown/C0/C04F9F-jp.asm"
+.INCLUDE "unknown/C0/C04F9F.asm"
 
 .INCLUDE "unknown/C0/C04FFE.asm"
 
@@ -225,7 +225,7 @@
 
 .INCLUDE "battle/init_common.asm"
 
-.INCLUDE "unknown/C0/C052D4-jp.asm"
+.INCLUDE "unknown/C0/C052D4.asm"
 
 .INCLUDE "unknown/C0/C0546B.asm"
 
