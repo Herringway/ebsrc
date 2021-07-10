@@ -357,7 +357,7 @@
 
 .INCLUDE "unknown/C0/C07526.asm"
 
-.INCLUDE "overworld/dad_phone-jp.asm"
+.INCLUDE "overworld/dad_phone.asm"
 
 .INCLUDE "unknown/C0/C0769C.asm"
 

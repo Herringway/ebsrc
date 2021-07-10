@@ -967,7 +967,7 @@
 
 .INCLUDE "unknown/C4/C4F46F.asm"
 
-.INCLUDE "ending/play_credits-jp.asm"
+.INCLUDE "ending/play_credits.asm"
 
 .INCLUDE "unknown/EF/EF0C87.asm"
 
