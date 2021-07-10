@@ -113,9 +113,9 @@
 
 .INCLUDE "unknown/C0/C02668.asm"
 
-.INCLUDE "overworld/spawn_horizontal-jp.asm"
+.INCLUDE "overworld/spawn_horizontal.asm"
 
-.INCLUDE "overworld/spawn_vertical-jp.asm"
+.INCLUDE "overworld/spawn_vertical.asm"
 
 .INCLUDE "overworld/velocity_store.asm"
 
