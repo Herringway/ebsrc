@@ -551,6 +551,12 @@
     STA dest+2
 .ENDMACRO
 
+.MACRO MOVE_INT816 src, dest
+    LDA src
+    STA dest
+    STZ dest+2
+.ENDMACRO
+
 .MACRO MOVE_INT64 src, dest
     MOVE_INT src, dest
     MOVE_INT src + 4, dest + 4
