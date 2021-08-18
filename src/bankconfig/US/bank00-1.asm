@@ -33,11 +33,11 @@
 
 .INCLUDE "unknown/C0/C006F2.asm"
 
-.INCLUDE "unknown/C0/C00778.asm"
+.INCLUDE "overworld/load_special_sprite_palette.asm"
 
 .INCLUDE "overworld/load_map_palette.asm"
 
-.INCLUDE "unknown/C0/C008C3.asm"
+.INCLUDE "overworld/load_map_at_sector.asm"
 
 .INCLUDE "overworld/load_sector_attributes.asm"
 
@@ -57,25 +57,25 @@
 
 .INCLUDE "unknown/C0/C0122A.asm"
 
-.INCLUDE "unknown/C0/C012ED.asm"
+.INCLUDE "overworld/reload_map_at_position.asm"
 
-.INCLUDE "unknown/C0/C013F6.asm"
+.INCLUDE "overworld/load_map_at_position.asm"
 
-.INCLUDE "unknown/C0/C01558.asm"
+.INCLUDE "overworld/refresh_map_at_position.asm"
 
 .INCLUDE "unknown/C0/C01731.asm"
 
 .INCLUDE "unknown/C0/C017EA.asm"
 
-.INCLUDE "unknown/C0/C018F3.asm"
+.INCLUDE "overworld/reload_map.asm"
 
-.INCLUDE "unknown/C0/C019B2.asm"
+.INCLUDE "overworld/initialize_map.asm"
 
 .INCLUDE "unknown/C0/C019E2.asm"
 
 .INCLUDE "unknown/C0/C01A63.asm"
 
-.INCLUDE "unknown/C0/C01A69.asm"
+.INCLUDE "overworld/initialize_misc_object_data.asm"
 
 .INCLUDE "unknown/C0/C01A86.asm"
 
