@@ -563,6 +563,13 @@
     STZ dest+2
 .ENDMACRO
 
+.MACRO MOVE_INT1632S src, dest
+    MOVE_INT1632 src, dest
+    BPL :+
+    DEC dest+2
+    :
+.ENDMACRO
+
 .MACRO MOVE_INT64 src, dest
     MOVE_INT src, dest
     MOVE_INT src + 4, dest + 4
