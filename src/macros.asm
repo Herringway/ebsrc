@@ -595,6 +595,14 @@
     STZ dest+1
 .ENDMACRO
 
+.MACRO MOVE_INT832 src, dest
+    LDA src
+    STA dest
+    STZ dest+1
+    STZ dest+2
+    STZ dest+3
+.ENDMACRO
+
 .MACRO MOVE_INT1632 src, dest
     LDA src
     STA dest

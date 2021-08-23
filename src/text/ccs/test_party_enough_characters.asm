@@ -15,11 +15,7 @@ CC_1D_19: ;$C16172
 @ARG_IS_NONZERO:
 	MOVE_INT $06, $0A
 	SEP #PROC_FLAGS::ACCUM8
-	LDA .LOWORD(GAME_STATE)+game_state::player_controlled_party_count
-	STA $06
-	STZ $07
-	STZ $08
-	STZ $09
+	MOVE_INT832 .LOWORD(GAME_STATE)+game_state::player_controlled_party_count, $06
 	REP #PROC_FLAGS::ACCUM8
 	LDA $06
 	CMP $0A
