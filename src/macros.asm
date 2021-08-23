@@ -544,6 +544,44 @@
     JSL REDIRECT_CREATE_WINDOW
 .ENDMACRO
 
+.MACRO BRANCHGTS dest
+    BVS :+
+    BPL dest
+    BRA :++
+    :
+    BMI dest
+    :
+.ENDMACRO
+
+.MACRO BRANCHLTEQS dest
+    BVC :+
+    BPL dest
+    BRA :++
+    :
+    BMI dest
+    :
+.ENDMACRO
+
+.MACRO JUMPGTS dest
+    BVS :+
+    BMI :++
+    JMP dest
+    :
+    BPL :+
+    JMP dest
+    :
+.ENDMACRO
+
+.MACRO JUMPLTEQS dest
+    BVC :+
+    BMI :++
+    JMP dest
+    :
+    BPL :+
+    JMP dest
+    :
+.ENDMACRO
+
 .MACRO MOVE_INT src, dest
     LDA src
     STA dest
