@@ -621,6 +621,21 @@
     MOVE_INT src + 4, dest + 4
 .ENDMACRO
 
+
+.MACRO PUSH32 val
+    LDA val + 2
+    PHA
+    LDA val
+    PHA
+.ENDMACRO
+
+.MACRO PULL32 val
+    PLA
+    STA val
+    PLA
+    STA val + 2
+.ENDMACRO
+
 .MACRO ADD_INT val1, val2, dest
     LDA val1
     ADC val2
@@ -632,6 +647,19 @@
 
 .MACRO ADD_INT_ASSIGN val1, val2
     ADD_INT val1, val2, val1
+.ENDMACRO
+
+.MACRO OR_INT val1, val2, dest
+    LDA val1
+    ORA val2
+    STA dest
+    LDA val1 + 2
+    ORA val2 + 2
+    STA dest + 2
+.ENDMACRO
+
+.MACRO OR_INT_ASSIGN val1, val2
+    OR_INT val1, val2, val1
 .ENDMACRO
 
 .MACRO AND_INT val1, val2, dest
