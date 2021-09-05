@@ -636,6 +636,17 @@
     STA val + 2
 .ENDMACRO
 
+.MACRO ASR8_INT addr
+    LDA addr+1
+    STA addr
+    SEP #PROC_FLAGS::ACCUM8
+    MOVE_INT816 addr + 3, addr + 2
+    BPL :+
+    DEC addr + 3
+    :
+    REP #PROC_FLAGS::ACCUM8
+.ENDMACRO
+
 .MACRO ADD_INT val1, val2, dest
     LDA val1
     ADC val2
