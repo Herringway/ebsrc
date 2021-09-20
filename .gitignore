@@ -1,6 +1,8 @@
 *.o
 *.sfc
 bin
-jpn_bin
 *.dep
 *.bak
+*.sym
+*.ips
+*.srm
