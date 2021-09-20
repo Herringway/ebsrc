@@ -2016,6 +2016,12 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "data/unknown/C3E416.asm"
 
+.INCLUDE "data/unknown/C3E41C.asm"
+
+.INCLUDE "data/unknown/C3E41C_pointer_table.asm"
+
+.INCLUDE "data/unknown/C3E44C.asm"
+
 .INCLUDE "unknown/C3/C3E450.asm"
 
 .INCLUDE "misc/clear_9622.asm"
