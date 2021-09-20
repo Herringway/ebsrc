@@ -34,7 +34,7 @@ HP_PP_ROLLER: ;$C2109F
 	BNE @UNKNOWN4
 	LDA $10
 	CLC
-	ADC #$0042
+	ADC #char_struct::unknown67
 	TAX
 	STX $0E
 	LDA a:.LOWORD(RAM),X
@@ -53,7 +53,7 @@ HP_PP_ROLLER: ;$C2109F
 	BCS @UNKNOWN9
 	LDA $10
 	CLC
-	ADC #$0042
+	ADC #char_struct::unknown67
 	TAX
 	TXY
 	STY $0E
@@ -76,7 +76,7 @@ HP_PP_ROLLER: ;$C2109F
 	MOVE_INT_YPTRDEST $06, a:.LOWORD(RAM)
 	LDA $10
 	CLC
-	ADC #$0044
+	ADC #char_struct::current_hp
 	TAX
 	LDA a:.LOWORD(RAM),X
 	CMP $02
@@ -89,7 +89,7 @@ HP_PP_ROLLER: ;$C2109F
 	LDA $10
 	TAX
 	LDA #$0001
-	STA a:.LOWORD(RAM)+66,X
+	STA a:char_struct::unknown67,X
 	JMP @UNKNOWN15
 @UNKNOWN9:
 	TYA
@@ -97,7 +97,7 @@ HP_PP_ROLLER: ;$C2109F
 	BNE @UNKNOWN10
 	LDA $10
 	CLC
-	ADC #$0042
+	ADC #char_struct::unknown67
 	TAX
 	LDA a:.LOWORD(RAM),X
 	CMP #$0001
@@ -108,7 +108,7 @@ HP_PP_ROLLER: ;$C2109F
 @UNKNOWN10:
 	LDA $10
 	CLC
-	ADC #$0042
+	ADC #char_struct::unknown67
 	TAX
 	TXY
 	STY $0E
@@ -142,7 +142,7 @@ HP_PP_ROLLER: ;$C2109F
 	LDA $10
 	TAX
 	LDA #$0001
-	STA a:.LOWORD(RAM)+66,X
+	STA a:char_struct::unknown67,X
 	BRA @UNKNOWN15
 @UNKNOWN14:
 	LDA $10

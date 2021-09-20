@@ -542,9 +542,9 @@ FILE_MENU_LOOP: ;$C1F805
 	STA .LOWORD(CHAR_STRUCT)+char_struct::current_pp,Y
 	STA .LOWORD(CHAR_STRUCT)+char_struct::current_pp_target,Y
 	TYX
-	STZ .LOWORD(CHAR_STRUCT)+73,X
+	STZ .LOWORD(CHAR_STRUCT)+char_struct::unknown73,X
 	TYX
-	STZ .LOWORD(CHAR_STRUCT)+67,X
+	STZ .LOWORD(CHAR_STRUCT)+char_struct::unknown67,X
 	TYA
 	CLC
 	ADC #.LOWORD(CHAR_STRUCT) + char_struct::items
