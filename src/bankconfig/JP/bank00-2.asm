@@ -694,17 +694,17 @@
 
 .INCLUDE "unknown/C0/C0B65F.asm"
 
-.INCLUDE "unknown/C0/C0B67F-jp.asm"
+.INCLUDE "unknown/C0/C0B67F.asm"
 
 .INCLUDE "unknown/C0/C0B706.asm"
 
 .INCLUDE "battle/init_overworld.asm"
 
-.INCLUDE "system/main-jp.asm"
+.INCLUDE "system/main.asm"
 
 .INCLUDE "system/game_init.asm"
 
-.INCLUDE "unknown/C0/C0B9BC-jp.asm"
+.INCLUDE "unknown/C0/C0B9BC.asm"
 
 .INCLUDE "unknown/C0/C0BA35.asm"
 
