@@ -132,9 +132,9 @@
 
 .INCLUDE "system/strcmp.asm"
 
-.INCLUDE "unknown/C0/C08F42.asm"
+.INCLUDE "system/setjmp.asm"
 
-.INCLUDE "unknown/C0/C08F68.asm"
+.INCLUDE "system/longjmp.asm"
 
 .INCLUDE "unknown/C0/C08F8B.asm"
 
