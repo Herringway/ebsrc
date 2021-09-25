@@ -12,7 +12,7 @@
 
 .INCLUDE "system/irq_vector.asm"
 
-.INCLUDE "system/irq_nmi-jp.asm"
+.INCLUDE "system/irq_nmi.asm"
 
 .INCLUDE "system/test_sram_size.asm"
 
@@ -82,7 +82,7 @@
 
 .INCLUDE "unknown/C0/C088A5.asm"
 
-.INCLUDE "system/oam_clear-jp.asm"
+.INCLUDE "system/oam_clear.asm"
 
 .INCLUDE "unknown/C0/C08B19.asm"
 

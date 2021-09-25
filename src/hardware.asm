@@ -1,4 +1,11 @@
 
+.STRUCT oam_entry
+	x_coord .byte 1 ;0
+	y_coord .byte 1 ;1
+	starting_tile .byte 1 ;2
+	flags .byte 1 ;3
+.ENDSTRUCT
+
 .ENUM PROC_FLAGS
 	CARRY = 1
 	ZERO = 2

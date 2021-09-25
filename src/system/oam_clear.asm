@@ -1,5 +1,8 @@
 
 OAM_CLEAR: ;$C088B1
+.IF .DEFINED(JPN)
+	PHP
+.ENDIF
 	SEP #PROC_FLAGS::ACCUM8
 	REP #PROC_FLAGS::INDEX8
 	LDX #$0000
@@ -12,295 +15,303 @@ OAM_CLEAR: ;$C088B1
 	BEQ @UNKNOWN0
 	JMP @UNKNOWN1
 @UNKNOWN0:
-	LDX #$0500
-	STX a:.LOWORD(UNKNOWN_7E0003)
-	LDX #$0700
-	STX a:.LOWORD(UNKNOWN_7E0005)
-	LDX #$0700
-	STX a:.LOWORD(UNKNOWN_7E0007)
+	LDX #.LOWORD(OAM1)
+	STX a:.LOWORD(OAM_ADDR)
+	LDX #.LOWORD(OAM1) + 128 * .SIZEOF(oam_entry)
+	STX a:.LOWORD(OAM_END_ADDR)
+	LDX #.LOWORD(OAM1_HIGH_TABLE)
+	STX a:.LOWORD(OAM_HIGH_TABLE_ADDR)
 	LDA #$80
 	STA a:.LOWORD(UNKNOWN_7E000A)
 	LDA #$E0
 	PHD
-	PEA $0500
+	PEA .LOWORD(OAM1)
 	PLD
-	STA $01
-	STA $05
-	STA $09
-	STA $0D
-	STA $11
-	STA $15
-	STA $19
-	STA $1D
-	STA $21
-	STA $25
-	STA $29
-	STA $2D
-	STA $31
-	STA $35
-	STA $39
-	STA $3D
-	STA $41
-	STA $45
-	STA $49
-	STA $4D
-	STA $51
-	STA $55
-	STA $59
-	STA $5D
-	STA $61
-	STA $65
-	STA $69
-	STA $6D
-	STA $71
-	STA $75
-	STA $79
-	STA $7D
-	STA $81
-	STA $85
-	STA $89
-	STA $8D
-	STA $91
-	STA $95
-	STA $99
-	STA $9D
-	STA $A1
-	STA $A5
-	STA $A9
-	STA $AD
-	STA $B1
-	STA $B5
-	STA $B9
-	STA $BD
-	STA $C1
-	STA $C5
-	STA $C9
-	STA $CD
-	STA $D1
-	STA $D5
-	STA $D9
-	STA $DD
-	STA $E1
-	STA $E5
-	STA $E9
-	STA $ED
-	STA $F1
-	STA $F5
-	STA $F9
-	STA $FD
-	PEA $0600
+	STA <(.LOWORD(OAM1) + 0 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 1 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 2 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 3 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 4 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 5 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 6 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 7 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 8 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 9 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 10 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 11 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 12 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 13 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 14 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 15 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 16 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 17 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 18 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 19 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 20 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 21 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 22 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 23 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 24 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 25 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 26 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 27 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 28 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 29 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 30 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 31 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 32 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 33 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 34 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 35 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 36 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 37 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 38 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 39 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 40 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 41 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 42 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 43 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 44 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 45 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 46 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 47 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 48 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 49 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 50 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 51 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 52 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 53 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 54 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 55 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 56 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 57 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 58 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 59 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 60 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 61 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 62 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 63 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	PEA .LOWORD(OAM1) + $100
 	PLD
-	STA $01
-	STA $05
-	STA $09
-	STA $0D
-	STA $11
-	STA $15
-	STA $19
-	STA $1D
-	STA $21
-	STA $25
-	STA $29
-	STA $2D
-	STA $31
-	STA $35
-	STA $39
-	STA $3D
-	STA $41
-	STA $45
-	STA $49
-	STA $4D
-	STA $51
-	STA $55
-	STA $59
-	STA $5D
-	STA $61
-	STA $65
-	STA $69
-	STA $6D
-	STA $71
-	STA $75
-	STA $79
-	STA $7D
-	STA $81
-	STA $85
-	STA $89
-	STA $8D
-	STA $91
-	STA $95
-	STA $99
-	STA $9D
-	STA $A1
-	STA $A5
-	STA $A9
-	STA $AD
-	STA $B1
-	STA $B5
-	STA $B9
-	STA $BD
-	STA $C1
-	STA $C5
-	STA $C9
-	STA $CD
-	STA $D1
-	STA $D5
-	STA $D9
-	STA $DD
-	STA $E1
-	STA $E5
-	STA $E9
-	STA $ED
-	STA $F1
-	STA $F5
-	STA $F9
-	STA $FD
+	STA <(.LOWORD(OAM1) + 64 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 65 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 66 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 67 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 68 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 69 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 70 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 71 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 72 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 73 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 74 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 75 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 76 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 77 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 78 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 79 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 80 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 81 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 82 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 83 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 84 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 85 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 86 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 87 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 88 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 89 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 90 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 91 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 92 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 93 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 94 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 95 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 96 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 97 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 98 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 99 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 100 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 101 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 102 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 103 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 104 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 105 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 106 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 107 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 108 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 109 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 110 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 111 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 112 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 113 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 114 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 115 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 116 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 117 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 118 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 119 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 120 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 121 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 122 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 123 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 124 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 125 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 126 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM1) + 127 * .SIZEOF(oam_entry) + oam_entry::y_coord)
 	PLD
+.IF .DEFINED(JPN)
+	PLP
+.ELSE
 	REP #PROC_FLAGS::ACCUM8
+.ENDIF
 	RTL
 @UNKNOWN1:
 	.A8
-	LDX #$0800
-	STX a:.LOWORD(UNKNOWN_7E0003)
-	LDX #$0A00
-	STX a:.LOWORD(UNKNOWN_7E0005)
-	LDX #$0A00
-	STX a:.LOWORD(UNKNOWN_7E0007)
+	LDX #.LOWORD(OAM2)
+	STX a:.LOWORD(OAM_ADDR)
+	LDX #.LOWORD(OAM2) + 128 * .SIZEOF(oam_entry)
+	STX a:.LOWORD(OAM_END_ADDR)
+	LDX #.LOWORD(OAM2_HIGH_TABLE)
+	STX a:.LOWORD(OAM_HIGH_TABLE_ADDR)
 	LDA #$80
 	STA a:.LOWORD(UNKNOWN_7E000A)
 	LDA #$E0
 	PHD
-	PEA $0800
+	PEA .LOWORD(OAM2)
 	PLD
-	STA $01
-	STA $05
-	STA $09
-	STA $0D
-	STA $11
-	STA $15
-	STA $19
-	STA $1D
-	STA $21
-	STA $25
-	STA $29
-	STA $2D
-	STA $31
-	STA $35
-	STA $39
-	STA $3D
-	STA $41
-	STA $45
-	STA $49
-	STA $4D
-	STA $51
-	STA $55
-	STA $59
-	STA $5D
-	STA $61
-	STA $65
-	STA $69
-	STA $6D
-	STA $71
-	STA $75
-	STA $79
-	STA $7D
-	STA $81
-	STA $85
-	STA $89
-	STA $8D
-	STA $91
-	STA $95
-	STA $99
-	STA $9D
-	STA $A1
-	STA $A5
-	STA $A9
-	STA $AD
-	STA $B1
-	STA $B5
-	STA $B9
-	STA $BD
-	STA $C1
-	STA $C5
-	STA $C9
-	STA $CD
-	STA $D1
-	STA $D5
-	STA $D9
-	STA $DD
-	STA $E1
-	STA $E5
-	STA $E9
-	STA $ED
-	STA $F1
-	STA $F5
-	STA $F9
-	STA $FD
-	PEA $0900
+	STA <(.LOWORD(OAM2) + 0 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 1 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 2 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 3 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 4 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 5 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 6 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 7 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 8 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 9 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 10 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 11 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 12 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 13 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 14 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 15 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 16 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 17 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 18 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 19 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 20 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 21 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 22 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 23 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 24 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 25 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 26 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 27 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 28 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 29 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 30 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 31 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 32 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 33 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 34 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 35 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 36 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 37 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 38 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 39 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 40 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 41 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 42 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 43 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 44 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 45 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 46 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 47 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 48 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 49 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 50 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 51 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 52 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 53 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 54 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 55 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 56 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 57 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 58 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 59 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 60 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 61 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 62 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 63 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	PEA .LOWORD(OAM2) + $100
 	PLD
-	STA $01
-	STA $05
-	STA $09
-	STA $0D
-	STA $11
-	STA $15
-	STA $19
-	STA $1D
-	STA $21
-	STA $25
-	STA $29
-	STA $2D
-	STA $31
-	STA $35
-	STA $39
-	STA $3D
-	STA $41
-	STA $45
-	STA $49
-	STA $4D
-	STA $51
-	STA $55
-	STA $59
-	STA $5D
-	STA $61
-	STA $65
-	STA $69
-	STA $6D
-	STA $71
-	STA $75
-	STA $79
-	STA $7D
-	STA $81
-	STA $85
-	STA $89
-	STA $8D
-	STA $91
-	STA $95
-	STA $99
-	STA $9D
-	STA $A1
-	STA $A5
-	STA $A9
-	STA $AD
-	STA $B1
-	STA $B5
-	STA $B9
-	STA $BD
-	STA $C1
-	STA $C5
-	STA $C9
-	STA $CD
-	STA $D1
-	STA $D5
-	STA $D9
-	STA $DD
-	STA $E1
-	STA $E5
-	STA $E9
-	STA $ED
-	STA $F1
-	STA $F5
-	STA $F9
-	STA $FD
+	STA <(.LOWORD(OAM2) + 64 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 65 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 66 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 67 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 68 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 69 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 70 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 71 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 72 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 73 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 74 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 75 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 76 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 77 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 78 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 79 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 80 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 81 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 82 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 83 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 84 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 85 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 86 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 87 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 88 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 89 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 90 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 91 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 92 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 93 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 94 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 95 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 96 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 97 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 98 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 99 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 100 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 101 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 102 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 103 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 104 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 105 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 106 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 107 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 108 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 109 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 110 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 111 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 112 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 113 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 114 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 115 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 116 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 117 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 118 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 119 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 120 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 121 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 122 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 123 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 124 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 125 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 126 * .SIZEOF(oam_entry) + oam_entry::y_coord)
+	STA <(.LOWORD(OAM2) + 127 * .SIZEOF(oam_entry) + oam_entry::y_coord)
 	PLD
+.IF .DEFINED(JPN)
+	PLP
+.ELSE
 	REP #PROC_FLAGS::ACCUM8
+.ENDIF
 	RTL
