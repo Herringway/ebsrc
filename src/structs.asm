@@ -540,3 +540,22 @@
 	unknown3 .byte ;3
 	unknown4 .byte ;4
 .ENDSTRUCT
+
+.STRUCT pathfinder
+	from_offscreen .word ;0
+	unknown_hitbox .dword ;2
+	origin .dword ;6
+	unknown10 .word ;10
+	unknown12 .word ;12
+	unknown14 .word ;14
+	object_index .word ;16
+.ENDSTRUCT
+
+.STRUCT pathfinding
+	unknown0 .byte 120 ;0
+	radius .dword ;120
+	targets .dword 8 ;124
+	target_count .word ;156
+	pathfinder_count .word ;158
+	pathfinders .byte .SIZEOF(pathfinder) * 8 ;160
+.ENDSTRUCT

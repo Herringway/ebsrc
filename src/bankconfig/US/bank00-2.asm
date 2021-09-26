@@ -708,7 +708,7 @@
 
 .INCLUDE "unknown/C0/C0BA35.asm"
 
-.INCLUDE "unknown/C0/C0BC74.asm"
+.INCLUDE "misc/find_path_to_party.asm"
 
 .INCLUDE "unknown/C0/C0BD96.asm"
 
@@ -872,11 +872,11 @@
 
 .INCLUDE "unknown/C0/C0E9BA.asm"
 
-.INCLUDE "unknown/C0/C0EA3E.asm"
+.INCLUDE "misc/teleport_freezeobjects.asm"
 
-.INCLUDE "unknown/C0/C0EA68.asm"
+.INCLUDE "misc/teleport_freezeobjects2.asm"
 
-.INCLUDE "unknown/C0/C0EA99.asm"
+.INCLUDE "misc/teleport_mainloop.asm"
 
 .INCLUDE "unknown/C0/C0EBE0.asm"
 
