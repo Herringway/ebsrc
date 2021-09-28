@@ -12,16 +12,12 @@
     .ENDIF
 .ENDMACRO
 
-.MACRO AUDIOPACK size, target, file
-    .WORD size
-    .IF size > 0
-        .WORD target
-        .INCLUDE file
-    .ENDIF
-.ENDMACRO
-
 .MACRO AUDIOPACKEBM file
     BINARY file
+.ENDMACRO
+
+.MACRO AUDIOPACKTERMINATOR
+    .WORD 0
 .ENDMACRO
 
 .MACRO RESERVE_STACK_SPACE size
