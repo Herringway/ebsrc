@@ -320,7 +320,7 @@
 
 .INCLUDE "overworld/events/script/0E.asm"
 
-.INCLUDE "data/unknown/C09AF9.asm"
+.INCLUDE "data/events/entity_script_var_tables.asm"
 
 .INCLUDE "overworld/events/script/0F.asm"
 
@@ -414,7 +414,7 @@
 
 .INCLUDE "unknown/C0/C09F71.asm"
 
-.INCLUDE "unknown/C0/C09F82.asm"
+.INCLUDE "overworld/events/choose_random.asm"
 
 .INCLUDE "unknown/C0/C09FA8.asm"
 
@@ -496,9 +496,9 @@
 
 .INCLUDE "unknown/C0/C0A643.asm"
 
-.INCLUDE "unknown/C0/C0A651.asm"
+.INCLUDE "overworld/events/set_direction8.asm"
 
-.INCLUDE "unknown/C0/C0A65F.asm"
+.INCLUDE "overworld/events/set_direction.asm"
 
 .INCLUDE "unknown/C0/C0A66D.asm"
 
@@ -748,9 +748,9 @@
 
 .INCLUDE "unknown/C0/C0C62B.asm"
 
-.INCLUDE "unknown/C0/C0C682.asm"
+.INCLUDE "overworld/events/get_direction_rotated_clockwise.asm"
 
-.INCLUDE "unknown/C0/C0C69E.asm"
+.INCLUDE "overworld/events/get_direction_turned_randomly_left_or_right.asm"
 
 .INCLUDE "unknown/C0/C0C6B6.asm"
 
