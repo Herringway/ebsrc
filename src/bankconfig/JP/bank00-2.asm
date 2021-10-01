@@ -736,13 +736,13 @@
 
 .INCLUDE "data/unknown/C0C4CF.asm"
 
-.INCLUDE "data/unknown/C0C4E7.asm"
+.INCLUDE "data/map/opposite_directions.asm"
 
-.INCLUDE "unknown/C0/C0C4F7.asm"
+.INCLUDE "overworld/get_direction_from_player_to_entity.asm"
 
 .INCLUDE "unknown/C0/C0C524.asm"
 
-.INCLUDE "unknown/C0/C0C608.asm"
+.INCLUDE "overworld/get_opposite_direction_from_player_to_entity.asm"
 
 .INCLUDE "unknown/C0/C0C615.asm"
 

@@ -393,9 +393,9 @@
 
 .INCLUDE "system/math/rand_mod.asm"
 
-.INCLUDE "data/unknown/C45F96.asm"
+.INCLUDE "data/map/direction_matrix.asm"
 
-.INCLUDE "unknown/C4/C45FA8.asm"
+.INCLUDE "overworld/get_direction_to.asm"
 
 .INCLUDE "unknown/C4/C46028.asm"
 
