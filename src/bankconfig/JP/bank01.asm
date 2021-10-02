@@ -681,7 +681,7 @@
 
 .INCLUDE "battle/determine_targetting-jp.asm"
 
-.INCLUDE "overworld/use_item-jp.asm"
+.INCLUDE "overworld/use_item.asm"
 
 .INCLUDE "unknown/C1/C1B5B6-jp.asm"
 

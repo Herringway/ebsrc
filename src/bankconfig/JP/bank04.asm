@@ -183,6 +183,8 @@
 
 .INCLUDE "data/events/scripts/860.asm"
 
+.INCLUDE "data/events/C4215A-jp.asm"
+
 .INCLUDE "data/events/C4220E-jp.asm"
 
 .INCLUDE "data/events/scripts/792-jp.asm"

@@ -884,7 +884,7 @@
 
 .INCLUDE "unknown/C0/C0ED41-jp.asm"
 
-.INCLUDE "unknown/C0/C0ED9F-jp.asm"
+.INCLUDE "unknown/C0/C0EE47.asm"
 
 .INCLUDE "unknown/C0/C0EE53.asm"
 
