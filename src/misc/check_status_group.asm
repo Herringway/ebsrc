@@ -8,7 +8,7 @@ CHECK_STATUS_GROUP: ;$C458AF
 	STX $0E
 	CPY #$0008
 	BNE @UNKNOWN0
-	LDA .LOWORD(GAME_STATE) + game_state::unknown4B
+	LDA .LOWORD(GAME_STATE) + game_state::party_status
 	AND #$00FF
 	INC
 	BRA @UNKNOWN2

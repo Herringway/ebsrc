@@ -6,17 +6,17 @@ UNKNOWN_C23008: ;$C23008
 	STX $0E
 	SEP #PROC_FLAGS::ACCUM8
 	LDA a:.LOWORD(RAM),X
-	STA .LOWORD(GAME_STATE)+game_state::party_status
+	STA .LOWORD(GAME_STATE)+game_state::party_npc_1_id_copy
 	REP #PROC_FLAGS::ACCUM8
 	LDA .LOWORD(GAME_STATE)+game_state::party_npc_1_hp
-	STA .LOWORD(GAME_STATE) + game_state::unknown4E
+	STA .LOWORD(GAME_STATE) + game_state::party_npc_1_hp_copy
 	LDY #.LOWORD(GAME_STATE) + game_state::party_npc_2
 	SEP #PROC_FLAGS::ACCUM8
 	LDA a:.LOWORD(RAM),Y
-	STA .LOWORD(GAME_STATE) + game_state::unknown4D
+	STA .LOWORD(GAME_STATE) + game_state::party_npc_2_id_copy
 	REP #PROC_FLAGS::ACCUM8
 	LDA .LOWORD(GAME_STATE)+game_state::party_npc_2_hp
-	STA .LOWORD(GAME_STATE) + game_state::unknown50
+	STA .LOWORD(GAME_STATE) + game_state::party_npc_2_hp_copy
 	LDA a:.LOWORD(RAM),Y
 	AND #$00FF
 	JSL REMOVE_CHAR_FROM_PARTY

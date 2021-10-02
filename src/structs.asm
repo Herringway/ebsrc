@@ -85,11 +85,11 @@
 	party_npc_2 .byte ;70
 	party_npc_1_hp .word ;71
 	party_npc_2_hp .word ;73
-	unknown4B .byte ;75
-	party_status .byte ;76
-	unknown4D .byte ;77
-	unknown4E .word ;78
-	unknown50 .word ;80
+	party_status .byte ;75
+	party_npc_1_id_copy .byte ;76
+	party_npc_2_id_copy .byte ;77
+	party_npc_1_hp_copy .word ;78
+	party_npc_2_hp_copy .word ;80
 	wallet_backup .dword ;82
 	escargo_express_items .byte 36 ;86
 	party_members .byte 6 ;122

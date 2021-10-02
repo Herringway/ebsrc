@@ -12,7 +12,7 @@ UNKNOWN_C2307B: ;$C2307B
 	LDA a:.LOWORD(RAM),Y
 	AND #$00FF
 	JSL REMOVE_CHAR_FROM_PARTY
-	LDA .LOWORD(GAME_STATE)+game_state::party_status
+	LDA .LOWORD(GAME_STATE)+game_state::party_npc_1_id_copy
 	AND #$00FF
 	BEQ @UNKNOWN0
 	LDX $10
@@ -21,9 +21,9 @@ UNKNOWN_C2307B: ;$C2307B
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF
 	JSL ADD_CHAR_TO_PARTY
-	LDA .LOWORD(GAME_STATE) + game_state::unknown4E
+	LDA .LOWORD(GAME_STATE) + game_state::party_npc_1_hp_copy
 	STA .LOWORD(GAME_STATE)+game_state::party_npc_1_hp
-	LDA .LOWORD(GAME_STATE) + game_state::unknown4D
+	LDA .LOWORD(GAME_STATE) + game_state::party_npc_2_id_copy
 	AND #$00FF
 	BEQ @UNKNOWN0
 	LDY $0E
@@ -32,7 +32,7 @@ UNKNOWN_C2307B: ;$C2307B
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF
 	JSL ADD_CHAR_TO_PARTY
-	LDA .LOWORD(GAME_STATE) + game_state::unknown50
+	LDA .LOWORD(GAME_STATE) + game_state::party_npc_2_hp_copy
 	STA .LOWORD(GAME_STATE)+game_state::party_npc_2_hp
 @UNKNOWN0:
 	MOVE_INT .LOWORD(GAME_STATE)+game_state::wallet_backup, $06

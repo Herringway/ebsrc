@@ -11,7 +11,7 @@ UNKNOWN_C02D29: ;$C02D29
 	STZ .LOWORD(GAME_STATE)+game_state::unknownB2
 	STZ .LOWORD(GAME_STATE)+game_state::unknownB4
 	SEP #PROC_FLAGS::ACCUM8
-	STZ .LOWORD(GAME_STATE)+game_state::unknown4B
+	STZ .LOWORD(GAME_STATE)+game_state::party_status
 	REP #PROC_FLAGS::ACCUM8
 	LDA #$0018
 	STA .LOWORD(GAME_STATE)+game_state::current_party_members
