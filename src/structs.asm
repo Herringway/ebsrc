@@ -440,7 +440,7 @@
 .STRUCT loaded_bg_data
 	target_layer .byte ;0
 	bitdepth .byte ;1
-	.byte ;2
+	unknown2 .byte ;2
 	palette_shifting_style .byte ;3
 	palette_cycle_1_first .byte ;4
 	palette_cycle_1_last .byte ;5
@@ -463,7 +463,7 @@
 	horizontal_acceleration .word ;93
 	vertical_acceleration .word ;95
 	distortion_styles .byte 4 ;97
-	.byte ;101
+	unknown101 .byte ;101
 	distortion_duration_left .word ;102
 	distortion_type .byte ;104
 	distortion_ripple_frequency .word ;105
