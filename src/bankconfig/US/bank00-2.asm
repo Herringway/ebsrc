@@ -28,7 +28,7 @@
 
 .INCLUDE "unknown/C0/C08496.asm"
 
-.INCLUDE "unknown/C0/C08501.asm"
+.INCLUDE "system/process_sfx_queue.asm"
 
 .INCLUDE "unknown/C0/C08518.asm"
 
