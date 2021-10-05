@@ -698,7 +698,7 @@
 
 .INCLUDE "misc/battlebgs/generate_frame-jp.asm"
 
-.INCLUDE "unknown/C2/C2CFE5-jp.asm"
+.INCLUDE "unknown/C2/C2CFE5.asm"
 
 .INCLUDE "unknown/C2/C2D0AC.asm"
 
