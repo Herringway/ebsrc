@@ -93,8 +93,10 @@
 .ENUM CHAR
     .IF .DEFINED(JPN)
         SPACE = $20
+        ZERO = $30
     .ELSE
         SPACE = $50
+        ZERO = $60
     .ENDIF
 .ENDENUM
 
@@ -133,7 +135,7 @@
         .elseif .strat(str, i) = '/'
             .BYTE $5F
         .elseif .strat(str, i) = '0'
-            .BYTE $60
+            .BYTE CHAR::ZERO
         .elseif .strat(str, i) = '1'
             .BYTE $61
         .elseif .strat(str, i) = '2'
