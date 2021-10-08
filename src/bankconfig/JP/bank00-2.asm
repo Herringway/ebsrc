@@ -62,9 +62,9 @@
 
 .INCLUDE "unknown/C0/C0878B.asm"
 
-.INCLUDE "unknown/C0/C0879D_redirect.asm"
+.INCLUDE "system/set_inidisp_far.asm"
 
-.INCLUDE "unknown/C0/C0879D.asm"
+.INCLUDE "system/set_inidisp.asm"
 
 .INCLUDE "unknown/C0/C087AB_redirect.asm"
 
