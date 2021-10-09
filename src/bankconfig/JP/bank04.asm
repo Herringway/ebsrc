@@ -785,7 +785,7 @@
 
 .INCLUDE "data/sound_stone_melody_flags.asm"
 
-.INCLUDE "overworld/use_sound_stone-jp.asm"
+.INCLUDE "overworld/use_sound_stone.asm"
 
 .INCLUDE "unknown/C4/C4B1B8.asm"
 
