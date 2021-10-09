@@ -208,7 +208,7 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "data/events/scripts/316.asm"
 
-.INCLUDE "data/events/scripts/317-proto.asm"
+.INCLUDE "data/events/scripts/317.asm"
 
 .INCLUDE "data/events/scripts/318.asm"
 
@@ -510,9 +510,9 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "data/events/scripts/482.asm"
 
-.INCLUDE "data/events/scripts/480-proto.asm"
+.INCLUDE "data/events/scripts/480.asm"
 
-.INCLUDE "data/events/scripts/483-proto.asm"
+.INCLUDE "data/events/scripts/483.asm"
 
 .INCLUDE "data/events/scripts/484.asm"
 
@@ -564,7 +564,7 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "data/events/scripts/499.asm"
 
-.INCLUDE "data/events/scripts/499+500_common-proto.asm"
+.INCLUDE "data/events/scripts/499+500_common.asm"
 
 .INCLUDE "data/events/scripts/547.asm"
 
@@ -1330,7 +1330,7 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "data/events/scripts/001.asm"
 
-.INCLUDE "data/events/scripts/002-jp.asm"
+.INCLUDE "data/events/scripts/002.asm"
 
 .INCLUDE "data/events/C3A07F.asm"
 
@@ -1590,7 +1590,7 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "data/events/scripts/082.asm"
 
-.INCLUDE "data/events/scripts/083-jp.asm"
+.INCLUDE "data/events/scripts/083.asm"
 
 .INCLUDE "data/events/scripts/084.asm"
 
@@ -1936,11 +1936,11 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "data/events/scripts/216.asm"
 
-.INCLUDE "data/events/scripts/217-jp.asm"
+.INCLUDE "data/events/scripts/217.asm"
 
 .INCLUDE "data/events/scripts/218.asm"
 
-.INCLUDE "data/events/scripts/219-jp.asm"
+.INCLUDE "data/events/scripts/219.asm"
 
 .INCLUDE "data/events/C3DB7A.asm"
 
