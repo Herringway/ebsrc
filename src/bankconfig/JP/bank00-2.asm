@@ -70,13 +70,13 @@
 
 .INCLUDE "unknown/C0/C087AB.asm"
 
-.INCLUDE "unknown/C0/C087CE.asm"
+.INCLUDE "system/fade_in_with_mosaic.asm"
 
-.INCLUDE "unknown/C0/C08814.asm"
+.INCLUDE "system/fade_out_with_mosaic.asm"
 
-.INCLUDE "unknown/C0/C0886C.asm"
+.INCLUDE "system/fade_in.asm"
 
-.INCLUDE "unknown/C0/C0887A.asm"
+.INCLUDE "system/fade_out.asm"
 
 .INCLUDE "unknown/C0/C0888B.asm"
 
@@ -418,6 +418,10 @@
 
 .INCLUDE "unknown/C0/C09FA8.asm"
 
+.INCLUDE "overworld/events/fade_in.asm"
+
+.INCLUDE "overworld/events/fade_out.asm"
+
 .INCLUDE "unknown/C0/C09FAE.asm"
 
 .INCLUDE "unknown/C0/C09FF1.asm"
@@ -596,7 +600,7 @@
 
 .INCLUDE "unknown/C0/C0A9EB.asm"
 
-.INCLUDE "unknown/C0/C0AA07.asm"
+.INCLUDE "overworld/events/fade_out_with_mosaic.asm"
 
 .INCLUDE "unknown/C0/C0AA23.asm"
 
