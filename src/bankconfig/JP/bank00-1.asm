@@ -135,7 +135,7 @@
 
 .INCLUDE "unknown/C0/C032EC-jp.asm"
 
-.INCLUDE "unknown/C0/C034D6-jp.asm"
+.INCLUDE "overworld/update_party-jp.asm"
 
 .INCLUDE "unknown/C0/C0369B-jp.asm"
 
