@@ -530,7 +530,6 @@
 
 .INCLUDE "unknown/C0/C0A6D1.asm"
 
-UNKNOWN_C04EF0:
 .INCLUDE "unknown/C0/C0A6DA.asm"
 
 .INCLUDE "unknown/C0/C0A6E3.asm"
