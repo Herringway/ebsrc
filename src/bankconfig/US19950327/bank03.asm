@@ -1302,7 +1302,7 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "data/events/scripts/778.asm"
 
-.INCLUDE "data/events/scripts/776-proto.asm"
+.INCLUDE "data/events/scripts/776.asm"
 
 .INCLUDE "data/events/scripts/779.asm"
 

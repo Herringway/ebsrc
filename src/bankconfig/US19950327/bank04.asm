@@ -192,25 +192,25 @@
 
 .INCLUDE "data/events/scripts/789-proto.asm"
 
-.INCLUDE "data/events/scripts/788-proto.asm"
+.INCLUDE "data/events/scripts/788.asm"
 
-.INCLUDE "data/events/scripts/790-proto.asm"
+.INCLUDE "data/events/scripts/790.asm"
 
-.INCLUDE "data/events/scripts/791-proto.asm"
+.INCLUDE "data/events/scripts/791.asm"
 
-.INCLUDE "data/events/scripts/792-proto.asm"
+.INCLUDE "data/events/scripts/792.asm"
 
-.INCLUDE "data/events/scripts/793-proto.asm"
+.INCLUDE "data/events/scripts/793.asm"
 
-.INCLUDE "data/events/scripts/794-proto.asm"
+.INCLUDE "data/events/scripts/794.asm"
 
-.INCLUDE "data/events/scripts/795-proto.asm"
+.INCLUDE "data/events/scripts/795.asm"
 
-.INCLUDE "data/events/scripts/796-proto.asm"
+.INCLUDE "data/events/scripts/796.asm"
 
-.INCLUDE "data/events/scripts/797-proto.asm"
+.INCLUDE "data/events/scripts/797.asm"
 
-.INCLUDE "data/events/scripts/798-proto.asm"
+.INCLUDE "data/events/scripts/798.asm"
 
 .INCLUDE "unknown/C4/C423DC.asm"
 
