@@ -528,9 +528,9 @@
 
 .INCLUDE "unknown/C0/C0A6CB.asm"
 
-.INCLUDE "unknown/C0/C0A6D1.asm"
+.INCLUDE "overworld/events/disable_current_entity_collision.asm"
 
-.INCLUDE "unknown/C0/C0A6DA.asm"
+.INCLUDE "overworld/events/clear_current_entity_collision.asm"
 
 .INCLUDE "unknown/C0/C0A6E3.asm"
 
@@ -538,9 +538,9 @@
 
 .INCLUDE "unknown/C0/C0A794.asm"
 
-.INCLUDE "unknown/C0/C0A82F.asm"
+.INCLUDE "overworld/events/disable_current_entity_collision2.asm"
 
-.INCLUDE "unknown/C0/C0A838.asm"
+.INCLUDE "overworld/events/clear_current_entity_collision2.asm"
 
 .INCLUDE "unknown/C0/C0A841.asm"
 
