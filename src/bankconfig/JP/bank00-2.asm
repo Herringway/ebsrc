@@ -508,7 +508,7 @@
 
 .INCLUDE "unknown/C0/C0A673.asm"
 
-.INCLUDE "unknown/C0/C0A679.asm"
+.INCLUDE "overworld/events/set_surface_flags.asm"
 
 .INCLUDE "unknown/C0/C0A685.asm"
 
