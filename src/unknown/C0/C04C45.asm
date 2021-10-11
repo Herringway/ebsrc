@@ -58,11 +58,7 @@ UNKNOWN_C04C45: ;$C04C45
 	STA $14
 	LDA ($14)
 	STA $12
-	STA $04
-	ASL
-	ADC $04
-	ASL
-	ASL
+	OPTIMIZED_MULT $04, .SIZEOF(player_position_buffer_entry)
 	CLC
 	ADC #.LOWORD(PLAYER_POSITION_BUFFER)
 	STA $10
@@ -84,10 +80,10 @@ UNKNOWN_C04C45: ;$C04C45
 	BEQ @UNKNOWN7
 	LDX $04
 	LDA a:.LOWORD(RAM),X
-	STA ($10)
+	STA ($10) ;player_position_buffer_entry::x_coord
 	LDX $02
 	LDA a:.LOWORD(RAM),X
-	LDY #$0002
+	LDY #player_position_buffer_entry::y_coord
 	STA ($10),Y
 	LDA $12
 	INC
@@ -109,13 +105,13 @@ UNKNOWN_C04C45: ;$C04C45
 @UNKNOWN8:
 	LDX #.LOWORD(GAME_STATE)+game_state::trodden_tile_type
 	LDA a:.LOWORD(RAM),X
-	LDY #$0004
+	LDY #player_position_buffer_entry::tile_flags
 	STA ($10),Y
 	LDA .LOWORD(GAME_STATE)+game_state::walking_style
-	LDY #$0006
+	LDY #player_position_buffer_entry::walking_style
 	STA ($10),Y
 	LDA .LOWORD(GAME_STATE)+game_state::leader_direction
-	LDY #$0008
+	LDY #player_position_buffer_entry::direction
 	STA ($10),Y
 	LDY #.LOWORD(FOOTSTEP_SOUND_ID_OVERRIDE)
 	LDA #$0000

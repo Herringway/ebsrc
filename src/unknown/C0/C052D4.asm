@@ -52,26 +52,22 @@ UNKNOWN_C052D4: ;$C052D4
 	TXA
 	DEC
 	STA $1C
-	STA $04
-	ASL
-	ADC $04
-	ASL
-	ASL
+	OPTIMIZED_MULT $04, .SIZEOF(player_position_buffer_entry)
 	CLC
 	ADC #.LOWORD(PLAYER_POSITION_BUFFER)
 	TAX
 	LDA $24
-	STA a:.LOWORD(RAM),X
+	STA a:player_position_buffer_entry::x_coord,X
 	LDA $22
-	STA a:.LOWORD(RAM)+2,X
+	STA a:player_position_buffer_entry::y_coord,X
 	LDA $20
 	STA $04
-	STA a:.LOWORD(RAM)+4,X
+	STA a:player_position_buffer_entry::tile_flags,X
 	LDA $1E
-	STA a:.LOWORD(RAM)+6,X
+	STA a:player_position_buffer_entry::walking_style,X
 	LDA $28
-	STA a:.LOWORD(RAM)+8,X
-	STZ a:.LOWORD(RAM)+10,X
+	STA a:player_position_buffer_entry::direction,X
+	STZ a:player_position_buffer_entry::unknown10,X
 	LDA $24
 	CLC
 	ADC $14
@@ -85,11 +81,7 @@ UNKNOWN_C052D4: ;$C052D4
 @UNKNOWN1:
 	BNE @UNKNOWN0
 	LDA $26
-	STA $04
-	ASL
-	ADC $04
-	ASL
-	ASL
+	OPTIMIZED_MULT $04, .SIZEOF(player_position_buffer_entry)
 	CLC
 	ADC #.LOWORD(PLAYER_POSITION_BUFFER)
 	TAX
@@ -138,22 +130,22 @@ UNKNOWN_C052D4: ;$C052D4
 	ASL
 	PHA
 	LDX $1C
-	LDA a:.LOWORD(RAM),X
+	LDA a:player_position_buffer_entry::x_coord,X
 	PLX
 	STA .LOWORD(ENTITY_ABS_X_TABLE),X
 	LDA a:.LOWORD(RAM),Y
 	ASL
 	PHA
 	LDX $1C
-	LDA a:.LOWORD(RAM)+2,X
+	LDA a:player_position_buffer_entry::y_coord,X
 	PLX
 	STA .LOWORD(ENTITY_ABS_Y_TABLE),X
 	LDX $1C
-	LDA a:.LOWORD(RAM)+8,X
+	LDA a:player_position_buffer_entry::direction,X
 	LDX $02
 	STA .LOWORD(ENTITY_DIRECTIONS),X
 	LDX $1C
-	LDA a:.LOWORD(RAM)+4,X
+	LDA a:player_position_buffer_entry::tile_flags,X
 	LDX $02
 	STA .LOWORD(ENTITY_SURFACE_FLAGS),X
 	LDA $26

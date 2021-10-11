@@ -17,27 +17,23 @@ UNKNOWN_C0E6FE: ;$C0E6FE
 	STA $04
 	STA $0E
 	LDA $04
-	STA $04
-	ASL
-	ADC $04
-	ASL
-	ASL
+	OPTIMIZED_MULT $04, .SIZEOF(player_position_buffer_entry)
 	CLC
 	ADC #.LOWORD(PLAYER_POSITION_BUFFER)
 	TAX
 	LDY $10
 	LDA .LOWORD(ENTITY_SCRIPT_VAR0_TABLE),Y
 	STA $02
-	LDA a:.LOWORD(RAM),X
+	LDA a:player_position_buffer_entry::x_coord,X
 	STA .LOWORD(ENTITY_ABS_X_TABLE),Y
-	LDA a:.LOWORD(RAM)+2,X
+	LDA a:player_position_buffer_entry::y_coord,X
 	STA .LOWORD(ENTITY_ABS_Y_TABLE),Y
-	LDA a:.LOWORD(RAM)+8,X
+	LDA a:player_position_buffer_entry::direction,X
 	STA .LOWORD(ENTITY_DIRECTIONS),Y
-	LDA a:.LOWORD(RAM)+4,X
+	LDA a:player_position_buffer_entry::tile_flags,X
 	STA .LOWORD(ENTITY_SURFACE_FLAGS),Y
 	LDY .LOWORD(CURRENT_ENTITY_SLOT)
-	LDA a:.LOWORD(RAM)+6,X
+	LDA a:player_position_buffer_entry::walking_style,X
 	TAX
 	LDA $02
 	JSL UNKNOWN_C07A56

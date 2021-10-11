@@ -21,35 +21,31 @@ UNKNOWN_C0E3C1: ;$C0E3C1
 	LDX $12
 	LDA a:.LOWORD(RAM)+60,X
 	STA $0E
-	STA $04
-	ASL
-	ADC $04
-	ASL
-	ASL
+	OPTIMIZED_MULT $04, .SIZEOF(player_position_buffer_entry)
 	CLC
 	ADC #.LOWORD(PLAYER_POSITION_BUFFER)
 	STA $02
 	LDY .LOWORD(CURRENT_ENTITY_SLOT)
 	LDX $02
-	LDA a:.LOWORD(RAM)+6,X
+	LDA a:player_position_buffer_entry::walking_style,X
 	TAX
 	LDA $10
 	JSL UNKNOWN_C07A56
 	LDX $02
-	LDA a:.LOWORD(RAM),X
+	LDA a:player_position_buffer_entry::x_coord,X
 	LDX $14
 	STX $04
 	STA .LOWORD(ENTITY_ABS_X_TABLE),X
 	LDX $02
-	LDA a:.LOWORD(RAM)+2,X
+	LDA a:player_position_buffer_entry::y_coord,X
 	LDX $04
 	STA .LOWORD(ENTITY_ABS_Y_TABLE),X
 	LDX $02
-	LDA a:.LOWORD(RAM)+8,X
+	LDA a:player_position_buffer_entry::direction,X
 	LDX $04
 	STA .LOWORD(ENTITY_DIRECTIONS),X
 	LDX $02
-	LDA a:.LOWORD(RAM)+4,X
+	LDA a:player_position_buffer_entry::tile_flags,X
 	LDX $04
 	STA .LOWORD(ENTITY_SURFACE_FLAGS),X
 	LDX $0E

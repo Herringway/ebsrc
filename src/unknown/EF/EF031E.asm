@@ -18,18 +18,18 @@ UNKNOWN_EF031E: ;$EF031E
 	STA $04
 	STA $16
 	LDA $02
-	OPTIMIZED_MULT $04, 12
+	OPTIMIZED_MULT $04, .SIZEOF(player_position_buffer_entry)
 	CLC
 	ADC #.LOWORD(PLAYER_POSITION_BUFFER)
 	STA $14
 	LDA .LOWORD(ENTITY_SCRIPT_VAR0_TABLE),X
 	STA $12
-	LDA ($14)
+	LDA ($14) ;player_position_buffer_entry::x_coord
 	STA .LOWORD(ENTITY_ABS_X_TABLE),X
-	LDY #$0002
+	LDY #player_position_buffer_entry::y_coord
 	LDA ($14),Y
 	STA .LOWORD(ENTITY_ABS_Y_TABLE),X
-	LDY #$0006
+	LDY #player_position_buffer_entry::walking_style
 	LDA ($14),Y
 	BEQ @UNKNOWN0
 	LDY .LOWORD(CURRENT_ENTITY_SLOT)
@@ -82,7 +82,7 @@ UNKNOWN_EF031E: ;$EF031E
 @UNKNOWN4:
 	LDY .LOWORD(CURRENT_ENTITY_SLOT)
 	STY $10
-	LDY #$0006
+	LDY #player_position_buffer_entry::walking_style
 	LDA ($14),Y
 	TAX
 	LDA $12
@@ -103,7 +103,7 @@ UNKNOWN_EF031E: ;$EF031E
 	ASL
 	STA $16
 	TAX
-	LDY #$0008
+	LDY #player_position_buffer_entry::direction
 	LDA ($14),Y
 	STA .LOWORD(ENTITY_DIRECTIONS),X
 	LDA $16
@@ -195,7 +195,7 @@ UNKNOWN_EF031E: ;$EF031E
 	LDA $18
 	ASL
 	TAX
-	LDY #$0004
+	LDY #player_position_buffer_entry::tile_flags
 	LDA ($14),Y
 	STA .LOWORD(ENTITY_SURFACE_FLAGS),X
 @UNKNOWN14:

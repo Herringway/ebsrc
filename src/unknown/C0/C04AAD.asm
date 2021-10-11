@@ -45,18 +45,14 @@ UNKNOWN_C04AAD: ;$C04AAD
 	TAX
 	STX .LOWORD(UNKNOWN_7E4DC6)
 	LDA a:char_struct::position_index,X
-	STA $04
-	ASL
-	ADC $04
-	ASL
-	ASL
+	OPTIMIZED_MULT $04, .SIZEOF(player_position_buffer_entry)
 	CLC
 	ADC #.LOWORD(PLAYER_POSITION_BUFFER)
 	TAX
-	LDA a:.LOWORD(RAM)+6,X
-	CMP #$0008
+	LDA a:player_position_buffer_entry::walking_style,X
+	CMP #WALKING_STYLE::ROPE
 	BEQ @UNKNOWN3
-	CMP #$0007
+	CMP #WALKING_STYLE::LADDER
 	BEQ @UNKNOWN3
 	LDA $10
 	STA $04

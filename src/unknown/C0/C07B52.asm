@@ -65,17 +65,13 @@ UNKNOWN_C07B52: ;$C07B52
 	STA .LOWORD(ENTITY_DIRECTIONS),X
 	BRA @UNKNOWN4
 @UNKNOWN3:
-	STA $04
-	ASL
-	ADC $04
-	ASL
-	ASL
+	OPTIMIZED_MULT $04, .SIZEOF(player_position_buffer_entry)
 	CLC
 	ADC #.LOWORD(PLAYER_POSITION_BUFFER)
 	STA $02
 	LDY $12
 	LDX $02
-	LDA a:.LOWORD(RAM)+6,X
+	LDA a:player_position_buffer_entry::walking_style,X
 	TAX
 	STX $0E
 	LDA $10
@@ -85,15 +81,15 @@ UNKNOWN_C07B52: ;$C07B52
 	LDX $0E
 	JSL UNKNOWN_C07A56
 	LDX $02
-	LDA a:.LOWORD(RAM),X
+	LDA a:player_position_buffer_entry::x_coord,X
 	LDX $04
 	STA .LOWORD(ENTITY_ABS_X_TABLE),X
 	LDX $02
-	LDA a:.LOWORD(RAM)+2,X
+	LDA a:player_position_buffer_entry::y_coord,X
 	LDX $04
 	STA .LOWORD(ENTITY_ABS_Y_TABLE),X
 	LDX $02
-	LDA a:.LOWORD(RAM)+8,X
+	LDA a:player_position_buffer_entry::direction,X
 	LDX $04
 	STA .LOWORD(ENTITY_DIRECTIONS),X
 @UNKNOWN4:

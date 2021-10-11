@@ -7,11 +7,7 @@ UNKNOWN_C0E196: ;$C0E196
 	STA $14
 	LDX $04
 	LDA a:.LOWORD(RAM),X
-	STA $04
-	ASL
-	ADC $04
-	ASL
-	ASL
+	OPTIMIZED_MULT $04, .SIZEOF(player_position_buffer_entry)
 	CLC
 	ADC #.LOWORD(PLAYER_POSITION_BUFFER)
 	STA $02
@@ -20,12 +16,12 @@ UNKNOWN_C0E196: ;$C0E196
 	TAX
 	LDA a:.LOWORD(RAM),X
 	LDX $02
-	STA a:.LOWORD(RAM),X
+	STA a:player_position_buffer_entry::x_coord,X
 	LDX #.LOWORD(GAME_STATE) + game_state::leader_y_coord
 	STX $10
 	LDA a:.LOWORD(RAM),X
 	LDX $02
-	STA a:.LOWORD(RAM)+2,X
+	STA a:player_position_buffer_entry::y_coord,X
 	LDY .LOWORD(GAME_STATE)+game_state::current_party_members
 	LDX $10
 	LDA a:.LOWORD(RAM),X
@@ -37,12 +33,12 @@ UNKNOWN_C0E196: ;$C0E196
 	LDX $0E
 	JSL UNKNOWN_C05F33
 	LDX $02
-	STA a:.LOWORD(RAM)+4,X
+	STA a:player_position_buffer_entry::tile_flags,X
 	LDX $02
-	STZ a:.LOWORD(RAM)+6,X
+	STZ a:player_position_buffer_entry::walking_style,X
 	LDA .LOWORD(GAME_STATE)+game_state::leader_direction
 	LDX $02
-	STA a:.LOWORD(RAM)+8,X
+	STA a:player_position_buffer_entry::direction,X
 	LDA $14
 	STA $04
 	LDX $04

@@ -235,15 +235,11 @@ UNKNOWN_C0369B: ;$C0369B
 	LDX #$00FF
 @UNKNOWN15:
 	TXA
-	STA $04
-	ASL
-	ADC $04
-	ASL
-	ASL
+	OPTIMIZED_MULT $04, .SIZEOF(player_position_buffer_entry)
 	TAX
-	LDA .LOWORD(PLAYER_POSITION_BUFFER),X
+	LDA .LOWORD(PLAYER_POSITION_BUFFER) + player_position_buffer_entry::x_coord,X
 	STA $04
-	LDA .LOWORD(PLAYER_POSITION_BUFFER)+2,X
+	LDA .LOWORD(PLAYER_POSITION_BUFFER) + player_position_buffer_entry::y_coord,X
 	STA $02
 	LDA .LOWORD(GAME_STATE) + game_state::unknown92
 	CMP #$0003

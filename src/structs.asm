@@ -559,3 +559,12 @@
 	pathfinder_count .word ;158
 	pathfinders .byte .SIZEOF(pathfinder) * 8 ;160
 .ENDSTRUCT
+
+.STRUCT player_position_buffer_entry
+	x_coord .word ;0
+	y_coord .word ;2
+	tile_flags .word ;4
+	walking_style .word ;6
+	direction .word ;8
+	unknown10 .word ;10
+.ENDSTRUCT

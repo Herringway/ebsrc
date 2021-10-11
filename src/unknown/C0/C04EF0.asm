@@ -12,26 +12,22 @@ UNKNOWN_C04EF0: ;$C04EF0
 	TAX
 	STX .LOWORD(UNKNOWN_7E4DC6)
 	LDA a:.LOWORD(RAM)+61,X
-	STA $04
-	ASL
-	ADC $04
-	ASL
-	ASL
+	OPTIMIZED_MULT $04, .SIZEOF(player_position_buffer_entry)
 	CLC
 	ADC #.LOWORD(PLAYER_POSITION_BUFFER)
 	TAX
 	STX $0E
-	LDA a:.LOWORD(RAM)+8,X
+	LDA a:player_position_buffer_entry::direction,X
 	STA .LOWORD(ENTITY_DIRECTIONS),Y
 	LDA .LOWORD(CURRENT_ENTITY_SLOT)
 	ASL
 	PHA
-	LDA a:.LOWORD(RAM)+4,X
+	LDA a:player_position_buffer_entry::tile_flags,X
 	PLX
 	STA .LOWORD(ENTITY_SURFACE_FLAGS),X
 	LDY .LOWORD(CURRENT_ENTITY_SLOT)
 	LDX $0E
-	LDA a:.LOWORD(RAM)+6,X
+	LDA a:player_position_buffer_entry::walking_style,X
 	TAX
 	STX $0E
 	LDA .LOWORD(CURRENT_ENTITY_SLOT)

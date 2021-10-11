@@ -35,24 +35,20 @@ UNKNOWN_C04D78: ;$C04D78
 	STY .LOWORD(UNKNOWN_7E4DC6)
 	LDA a:char_struct::position_index,Y
 	STA $16
-	STA $04
-	ASL
-	ADC $04
-	ASL
-	ASL
+	OPTIMIZED_MULT $04, .SIZEOF(player_position_buffer_entry)
 	CLC
 	ADC #.LOWORD(PLAYER_POSITION_BUFFER)
 	STA $14
-	LDY #$0008
+	LDY #player_position_buffer_entry::direction
 	LDA ($14),Y
 	LDX $1A
 	STA .LOWORD(ENTITY_DIRECTIONS),X
-	LDY #$0004
+	LDY #player_position_buffer_entry::tile_flags
 	LDA ($14),Y
 	STA .LOWORD(ENTITY_SURFACE_FLAGS),X
 	LDA $14
 	CLC
-	ADC #$0006
+	ADC #player_position_buffer_entry::walking_style
 	STA $02
 	LDY .LOWORD(CURRENT_ENTITY_SLOT)
 	LDX $02
@@ -72,9 +68,9 @@ UNKNOWN_C04D78: ;$C04D78
 	STA $04
 	ASL
 	TAX
-	LDA ($14)
+	LDA ($14) ;player_position_buffer_entry::x_coord
 	STA .LOWORD(ENTITY_ABS_X_TABLE),X
-	LDY #$0002
+	LDY #player_position_buffer_entry::y_coord
 	LDA ($14),Y
 	STA .LOWORD(ENTITY_ABS_Y_TABLE),X
 	LDX #$0000
@@ -86,16 +82,16 @@ UNKNOWN_C04D78: ;$C04D78
 	INC
 	CMP $02
 	BEQ @UNKNOWN11
-	LDY #$0006
+	LDY #player_position_buffer_entry::walking_style
 	LDA ($14),Y
 	AND #$00FF
-	CMP #$0007
+	CMP #WALKING_STYLE::LADDER
 	BEQ @UNKNOWN5
-	CMP #$0008
+	CMP #WALKING_STYLE::ROPE
 	BEQ @UNKNOWN5
-	CMP #$000C
+	CMP #WALKING_STYLE::ESCALATOR
 	BEQ @UNKNOWN6
-	CMP #$000D
+	CMP #WALKING_STYLE::STAIRS
 	BEQ @UNKNOWN8
 	BRA @UNKNOWN9
 @UNKNOWN5:
@@ -137,7 +133,7 @@ UNKNOWN_C04D78: ;$C04D78
 	CLC
 	ADC $12
 	STA $10
-	LDY #$0006
+	LDY #player_position_buffer_entry::walking_style
 	LDA ($14),Y
 	LDX .LOWORD(UNKNOWN_7E4DC6)
 	STA a:char_struct::unknown65,X

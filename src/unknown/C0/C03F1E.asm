@@ -7,17 +7,17 @@ UNKNOWN_C03F1E: ;$C03F1E
 	LDY #$0002
 @UNKNOWN0:
 	LDA .LOWORD(GAME_STATE)+game_state::leader_x_coord
-	STA a:.LOWORD(RAM),X
+	STA a:player_position_buffer_entry::x_coord,X
 	LDA .LOWORD(GAME_STATE)+game_state::leader_y_coord
-	STA a:.LOWORD(RAM)+2,X
+	STA a:player_position_buffer_entry::y_coord,X
 	LDA .LOWORD(GAME_STATE)+game_state::leader_direction
-	STA a:.LOWORD(RAM)+8,X
+	STA a:player_position_buffer_entry::direction,X
 	LDA .LOWORD(GAME_STATE)+game_state::walking_style
-	STA a:.LOWORD(RAM)+6,X
+	STA a:player_position_buffer_entry::walking_style,X
 	LDA .LOWORD(GAME_STATE)+game_state::trodden_tile_type
-	STA a:.LOWORD(RAM)+4,X
+	STA a:player_position_buffer_entry::tile_flags,X
 	STZ .LOWORD(MISC_DEBUG_FLAGS)
-	STZ a:.LOWORD(RAM)+10,X
+	STZ a:player_position_buffer_entry::unknown10,X
 	TXA
 	CLC
 	ADC #$0BF4
