@@ -95,15 +95,13 @@ UNKNOWN_C03A94: ;$C03A94
 	STA $10
 	LDY $02
 	LDA $04
-	ASL
-	ASL
-	ASL
+	OPTIMIZED_MULT $04, .SIZEOF(character_initial_entity_entry)
 	TAX
 	INX
 	INX
 	INX
 	INX
-	LDA f:CHARACTER_INITIAL_ENTITY_DATA,X
+	LDA f:CHARACTER_INITIAL_ENTITY_DATA,X ;character_initial_entity_entry::actionscript_id
 	TAX
 	LDA $1C
 	JSL CREATE_ENTITY
@@ -126,15 +124,13 @@ UNKNOWN_C03A94: ;$C03A94
 	STA $10
 	LDY $02
 	LDA $04
-	ASL
-	ASL
-	ASL
+	OPTIMIZED_MULT $04, .SIZEOF(character_initial_entity_entry)
 	TAX
 	INX
 	INX
 	INX
 	INX
-	LDA f:CHARACTER_INITIAL_ENTITY_DATA,X
+	LDA f:CHARACTER_INITIAL_ENTITY_DATA,X ;character_initial_entity_entry::actionscript_id
 	TAX
 	LDA $1C
 	JSL CREATE_ENTITY

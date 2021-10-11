@@ -568,3 +568,10 @@
 	direction .word ;8
 	unknown10 .word ;10
 .ENDSTRUCT
+
+.STRUCT character_initial_entity_entry
+	overworld_sprite .word ;0
+	lost_underworld_sprite .word ;2
+	actionscript_id .word ;4
+	unknown6 .word ;6
+.ENDSTRUCT

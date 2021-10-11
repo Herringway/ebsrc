@@ -122,11 +122,9 @@ UNKNOWN_C0369B: ;$C0369B
 	STA $12
 	STA .LOWORD(NEW_ENTITY_VAR0)
 	LDA $12
-	ASL
-	ASL
-	ASL
+	OPTIMIZED_MULT $04, .SIZEOF(character_initial_entity_entry)
 	CLC
-	ADC #$0006
+	ADC #character_initial_entity_entry::unknown6
 	TAX
 	LDA f:CHARACTER_INITIAL_ENTITY_DATA,X
 	STA $1A
@@ -215,22 +213,18 @@ UNKNOWN_C0369B: ;$C0369B
 	CMP #$0003
 	BEQ @UNKNOWN16
 	LDA $12
-	ASL
-	ASL
-	ASL
+	OPTIMIZED_MULT $04, .SIZEOF(character_initial_entity_entry)
 	TAX
-	LDA f:CHARACTER_INITIAL_ENTITY_DATA,X
+	LDA f:CHARACTER_INITIAL_ENTITY_DATA,X ;character_initial_entity_entry::overworld_sprite
 	STA $18
 	BRA @UNKNOWN17
 @UNKNOWN16:
 	LDA $12
-	ASL
-	ASL
-	ASL
+	OPTIMIZED_MULT $04, .SIZEOF(character_initial_entity_entry)
 	TAX
 	INX
 	INX
-	LDA f:CHARACTER_INITIAL_ENTITY_DATA,X
+	LDA f:CHARACTER_INITIAL_ENTITY_DATA,X ;character_initial_entity_entry::lost_underworld_sprite
 	STA $18
 @UNKNOWN17:
 	LOADPTR CHARACTER_INITIAL_ENTITY_DATA, $06
@@ -240,9 +234,7 @@ UNKNOWN_C0369B: ;$C0369B
 	STA $10
 	LDY $1A
 	LDA $12
-	ASL
-	ASL
-	ASL
+	OPTIMIZED_MULT $04, .SIZEOF(character_initial_entity_entry)
 	INC
 	INC
 	INC
@@ -251,7 +243,7 @@ UNKNOWN_C0369B: ;$C0369B
 	CLC
 	ADC $0A
 	STA $0A
-	LDA [$0A]
+	LDA [$0A] ;character_initial_entity_entry::actionscript_id
 	TAX
 	LDA $18
 	JSL CREATE_ENTITY
@@ -272,11 +264,9 @@ UNKNOWN_C0369B: ;$C0369B
 	LDA .LOWORD(GAME_STATE) + game_state::unknown96
 	AND #$00FF
 	DEC
-	ASL
-	ASL
-	ASL
+	OPTIMIZED_MULT $04, .SIZEOF(character_initial_entity_entry)
 	CLC
-	ADC #$0006
+	ADC #character_initial_entity_entry::unknown6
 	CLC
 	ADC $06
 	STA $06
