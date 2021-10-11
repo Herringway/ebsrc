@@ -339,12 +339,6 @@
 	object_config .byte 4 * .SIZEOF(photographer_config_entry_object) ;38
 .ENDSTRUCT ;62
 
-.STRUCT packtable_entry
-	primarysamplepack .byte ;0
-	secondarysamplepack .byte ;1
-	sequencepack .byte ;2
-.ENDSTRUCT
-
 .STRUCT sprite_grouping
 	height .byte ;0
 	width .byte ;1
@@ -574,4 +568,15 @@
 	lost_underworld_sprite .word ;2
 	actionscript_id .word ;4
 	unknown6 .word ;6
+.ENDSTRUCT
+
+.STRUCT pack_table_entry
+	primary_sample_pack .byte ;0
+	secondary_sample_pack .byte ;1
+	sequence_pack .byte ;2
+.ENDSTRUCT
+
+.STRUCT music_pack_pointer
+	bank .byte ;0
+	addr .word ;1
 .ENDSTRUCT
