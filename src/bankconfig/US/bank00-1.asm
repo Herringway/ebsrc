@@ -355,7 +355,7 @@
 
 .INCLUDE "unknown/C0/C07526.asm"
 
-.INCLUDE "overworld/dad_phone.asm"
+.INCLUDE "overworld/process_queued_interactions.asm"
 
 .INCLUDE "unknown/C0/C0769C.asm"
 

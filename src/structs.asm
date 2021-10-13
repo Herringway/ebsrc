@@ -488,6 +488,14 @@
 	unknown384 .byte 64 ;384
 .ENDSTRUCT
 
+.STRUCT queued_interaction
+	type .word ;0
+	.UNION ;2
+		text_ptr .dword
+		door_ptr .dword
+	.ENDUNION
+.ENDSTRUCT
+
 .STRUCT unknown_A97D
 	unknown0 .byte 1 ;0
 	unknown1 .byte 1 ;4
@@ -579,4 +587,12 @@
 .STRUCT music_pack_pointer
 	bank .byte ;0
 	addr .word ;1
+.ENDSTRUCT
+
+.STRUCT door_data
+	text .dword ;0
+	event_flag .word ;4
+	unknown6 .word ;6
+	unknown8 .word ;8
+	unknown10 .byte ;10
 .ENDSTRUCT
