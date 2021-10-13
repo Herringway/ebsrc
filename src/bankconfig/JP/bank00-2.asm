@@ -580,7 +580,7 @@
 
 .INCLUDE "unknown/C0/C0A938.asm"
 
-.INCLUDE "unknown/C0/C0A943.asm"
+.INCLUDE "overworld/events/get_position_of_party_member.asm"
 
 .INCLUDE "unknown/C0/C0A94E.asm"
 

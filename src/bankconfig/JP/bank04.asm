@@ -527,7 +527,7 @@
 
 .INCLUDE "unknown/C4/C46BBB.asm"
 
-.INCLUDE "unknown/C4/C46BE9-jp.asm"
+.INCLUDE "overworld/get_position_of_party_member-jp.asm"
 
 .INCLUDE "unknown/C4/C46C45.asm"
 
