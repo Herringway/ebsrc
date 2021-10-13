@@ -542,6 +542,15 @@
     JSL REDIRECT_CREATE_WINDOW
 .ENDMACRO
 
+.MACRO CMP32 src, dest
+    LDA src + 2
+    CMP dest + 2
+    BNE :+
+    LDA src
+    CMP dest
+    :
+.ENDMACRO
+
 .MACRO BRANCHGTS dest
     BVS :+
     BPL dest
