@@ -153,9 +153,7 @@ IRQ_ENABLED:
 	STX <UNKNOWN_7E0001 + 0
 	SEP #PROC_FLAGS::ACCUM8
 	LDA <NEXT_FRAME_DISPLAY_ID + 0
-	BNE @UNKNOWN10
-	JMP @UNKNOWN12
-@UNKNOWN10:
+	BEQL @UNKNOWN12
 	DEC
 	BNE @UNKNOWN11
 ; Note: The + 0 is for suppressing a spurious 'suspicious address warning'

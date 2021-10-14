@@ -551,6 +551,32 @@
     :
 .ENDMACRO
 
+.MACRO BEQL dest
+    BNE :+
+    JMP dest
+    :
+.ENDMACRO
+
+.MACRO BNEL dest
+    BEQ :+
+    JMP dest
+    :
+.ENDMACRO
+
+.MACRO BCCL dest
+    BCS :+
+    BEQ :+
+    JMP dest
+    :
+.ENDMACRO
+
+.MACRO BCSL dest
+    BEQ :+
+    BCC :+
+    JMP dest
+    :
+.ENDMACRO
+
 .MACRO BRANCHGTS dest
     BVS :+
     BPL dest
