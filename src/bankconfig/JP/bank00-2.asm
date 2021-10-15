@@ -574,7 +574,7 @@
 
 .INCLUDE "unknown/C0/C0A907.asm"
 
-.INCLUDE "unknown/C0/C0A912.asm"
+.INCLUDE "overworld/events/prepare_new_entity.asm"
 
 .INCLUDE "unknown/C0/C0A92D.asm"
 
