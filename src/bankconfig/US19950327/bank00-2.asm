@@ -570,9 +570,9 @@
 
 .INCLUDE "unknown/C0/C0A8EF.asm"
 
-.INCLUDE "unknown/C0/C0A8F7.asm"
+.INCLUDE "overworld/events/prepare_new_entity_at_self.asm"
 
-.INCLUDE "unknown/C0/C0A8FF.asm"
+.INCLUDE "overworld/events/prepare_new_entity_at_party_leader.asm"
 
 .INCLUDE "unknown/C0/C0A907.asm"
 

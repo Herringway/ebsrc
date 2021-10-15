@@ -647,7 +647,7 @@
 
 .INCLUDE "unknown/C4/C46D4B.asm"
 
-.INCLUDE "unknown/C4/C46DAD.asm"
+.INCLUDE "overworld/prepare_new_entity_at_existing_entity_location.asm"
 
 .INCLUDE "unknown/C4/C46DE5.asm"
 
