@@ -295,7 +295,7 @@
 
 .INCLUDE "overworld/screen_transition.asm"
 
-.INCLUDE "unknown/C0/C068AF.asm"
+.INCLUDE "overworld/get_screen_transition_sound_effect.asm"
 
 .INCLUDE "unknown/C0/C068F4.asm"
 

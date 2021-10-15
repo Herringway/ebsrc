@@ -7,11 +7,7 @@ SCREEN_TRANSITION: ;$C06662
 	STA $1D
 	MOVE_INT_CONSTANT SCREEN_TRANSITION_CONFIG_TABLE, $06
 	LDA $1D
-	STA $04
-	ASL
-	ADC $04
-	ASL
-	ASL
+	OPTIMIZED_MULT $04, .SIZEOF(screen_transition_config)
 	CLC
 	ADC $06
 	STA $06
@@ -19,7 +15,7 @@ SCREEN_TRANSITION: ;$C06662
 	LDA $08
 	STA $1B
 	MOVE_INT $06, $0A
-	LDA [$0A]
+	LDA [$0A] ;screen_transition_config::duration
 	AND #$00FF
 	STA $02
 	CMP #$00FF
@@ -28,14 +24,14 @@ SCREEN_TRANSITION: ;$C06662
 	STA $02
 @NOT_MAX_DURATION:
 	SEP #PROC_FLAGS::ACCUM8
-	LDY #$0004
+	LDY #screen_transition_config::direction
 	LDA [$06],Y
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF
 	ASL
 	ASL
 	TAX
-	LDY #$0005
+	LDY #screen_transition_config::unknown5
 	LDA [$06],Y
 	JSL UNKNOWN_C42631
 	LDY $1F
@@ -45,14 +41,14 @@ SCREEN_TRANSITION: ;$C06662
 	LDA #$0002
 	JSL UNKNOWN_C0DD2C
 	SEP #PROC_FLAGS::ACCUM8
-	LDY #$0001
+	LDY #screen_transition_config::animation_id
 	LDA [$06],Y
 	STA $18
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF
 	BEQ @UNKNOWN2
 	SEP #PROC_FLAGS::ACCUM8
-	LDY #$0002
+	LDY #screen_transition_config::animation_flags
 	LDA [$06],Y
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF
@@ -83,7 +79,7 @@ SCREEN_TRANSITION: ;$C06662
 .ENDIF
 	MOVE_INT $19, $06
 	SEP #PROC_FLAGS::ACCUM8
-	LDY #$0003
+	LDY #screen_transition_config::fade_style
 	LDA [$06],Y
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF
@@ -115,7 +111,7 @@ SCREEN_TRANSITION: ;$C06662
 	CMP $02
 	BCC @UNKNOWN3
 	SEP #PROC_FLAGS::ACCUM8
-	LDY #$0003
+	LDY #screen_transition_config::fade_style
 	LDA [$06],Y
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF
@@ -145,7 +141,7 @@ SCREEN_TRANSITION: ;$C06662
 @UNKNOWN10:
 	LDX #$0000
 	SEP #PROC_FLAGS::ACCUM8
-	LDY #$0003
+	LDY #screen_transition_config::fade_style
 	LDA [$06],Y
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF
@@ -166,21 +162,21 @@ SCREEN_TRANSITION: ;$C06662
 @UNKNOWN14:
 	LDX #$FFFF
 	SEP #PROC_FLAGS::ACCUM8
-	LDY #$0008
+	LDY #screen_transition_config::secondary_duration
 	LDA [$06],Y
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF
 	JSL UNKNOWN_C496E7
 @UNKNOWN15:
 	SEP #PROC_FLAGS::ACCUM8
-	LDY #$0009
+	LDY #screen_transition_config::secondary_animation_id
 	LDA [$06],Y
 	STA $18
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF
 	BEQ @UNKNOWN16
 	SEP #PROC_FLAGS::ACCUM8
-	LDY #$000A
+	LDY #screen_transition_config::secondary_animation_flags
 	LDA [$06],Y
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF
@@ -217,7 +213,7 @@ SCREEN_TRANSITION: ;$C06662
 	STA $16
 @UNKNOWN21:
 	SEP #PROC_FLAGS::ACCUM8
-	LDY #$0008
+	LDY #screen_transition_config::secondary_duration
 	LDA [$06],Y
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF
