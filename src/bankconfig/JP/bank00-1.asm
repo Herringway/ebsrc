@@ -297,7 +297,7 @@
 
 .INCLUDE "unknown/C0/C065C2.asm"
 
-.INCLUDE "overworld/screen_transition-jp.asm"
+.INCLUDE "overworld/screen_transition.asm"
 
 .INCLUDE "unknown/C0/C068AF.asm"
 
