@@ -390,7 +390,7 @@
 
 .INCLUDE "unknown/C4/C43CAA.asm"
 
-.INCLUDE "unknown/C4/C43CD2-proto.asm"
+.INCLUDE "unknown/C4/C43CD2.asm"
 
 .INCLUDE "unknown/C4/C43D24.asm"
 
@@ -412,7 +412,7 @@
 
 .INCLUDE "unknown/C4/C440B5-proto.asm"
 
-.INCLUDE "unknown/C4/C441B7-proto.asm"
+.INCLUDE "unknown/C4/C441B7.asm"
 
 .INCLUDE "unknown/C4/C4424A.asm"
 
