@@ -649,7 +649,7 @@
 
 .INCLUDE "overworld/prepare_new_entity_at_existing_entity_location.asm"
 
-.INCLUDE "unknown/C4/C46DE5.asm"
+.INCLUDE "overworld/prepare_new_entity_at_teleport_destination.asm"
 
 .INCLUDE "overworld/prepare_new_entity.asm"
 

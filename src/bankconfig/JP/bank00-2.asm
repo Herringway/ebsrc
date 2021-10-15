@@ -572,7 +572,7 @@
 
 .INCLUDE "overworld/events/prepare_new_entity_at_party_leader.asm"
 
-.INCLUDE "unknown/C0/C0A907.asm"
+.INCLUDE "overworld/events/prepare_new_entity_at_teleport_destination.asm"
 
 .INCLUDE "overworld/events/prepare_new_entity.asm"
 
