@@ -544,9 +544,9 @@
 
 .INCLUDE "unknown/C4/C4645A.asm"
 
-.INCLUDE "unknown/C4/C464B5.asm"
+.INCLUDE "overworld/create_prepared_entity_npc.asm"
 
-.INCLUDE "unknown/C4/C46507.asm"
+.INCLUDE "overworld/create_prepared_entity_sprite.asm"
 
 .INCLUDE "unknown/C4/C46534.asm"
 
