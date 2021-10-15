@@ -325,7 +325,7 @@
 
 .INCLUDE "unknown/C0/C06B3D.asm"
 
-.INCLUDE "unknown/C0/C06BFF.asm"
+.INCLUDE "overworld/door_transition.asm"
 
 .INCLUDE "data/unknown/C06E02.asm"
 
