@@ -689,7 +689,7 @@
 
 .INCLUDE "unknown/C1/C1BB71-jp.asm"
 
-.INCLUDE "unknown/C1/C1BCAB.asm"
+.INCLUDE "overworld/teleport.asm"
 
 .INCLUDE "overworld/attempt_homesickness.asm"
 
