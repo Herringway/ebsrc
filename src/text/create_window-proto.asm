@@ -155,7 +155,7 @@ CREATE_WINDOW: ;$C104EE
 	STZ a:window_stats::text_x,X
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0080
-	STA a:window_stats::unknown18,X
+	STA a:window_stats::number_padding,X
 	REP #PROC_FLAGS::ACCUM8
 	STZ a:window_stats::curr_tile_attributes,X
 	STZ a:window_stats::font,X

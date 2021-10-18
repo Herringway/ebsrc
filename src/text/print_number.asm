@@ -42,7 +42,7 @@ PRINT_NUMBER: ;$C10DF6
 	STY $12
 	LDA $16
 	TAX
-	LDA a:window_stats::unknown18,X
+	LDA a:window_stats::number_padding,X
 	AND #$00FF
 	STA $16
 	AND #$0080

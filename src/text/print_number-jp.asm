@@ -40,7 +40,7 @@ PRINT_NUMBER: ;$C10DF6
 	ADC #.LOWORD(UNKNOWN_7E895A)
 	STA $02
 	LDX $16
-	LDA a:window_stats::unknown18,X
+	LDA a:window_stats::number_padding,X
 	AND #$00FF
 	STA $12
 	AND #$0080

@@ -5,7 +5,7 @@ UNKNOWN_C20A20: ;$C20A20
 	TAX
 	STX $0E
 	LDA .LOWORD(CURRENT_FOCUS_WINDOW)
-	STA a:.LOWORD(RAM),X
+	STA a:window_text_attributes_copy::id,X
 	LDA .LOWORD(CURRENT_FOCUS_WINDOW)
 	CMP #$FFFF
 	BEQL @UNKNOWN1
@@ -18,7 +18,7 @@ UNKNOWN_C20A20: ;$C20A20
 	TAX
 	LDA .LOWORD(WINDOW_STATS_TABLE)+window_stats::text_x,X
 	LDX $0E
-	STA a:.LOWORD(RAM)+2,X
+	STA a:window_text_attributes_copy::text_x,X
 	LDA .LOWORD(CURRENT_FOCUS_WINDOW)
 	ASL
 	TAX
@@ -28,7 +28,7 @@ UNKNOWN_C20A20: ;$C20A20
 	TAX
 	LDA .LOWORD(WINDOW_STATS_TABLE)+window_stats::text_y,X
 	LDX $0E
-	STA a:.LOWORD(RAM)+4,X
+	STA a:window_text_attributes_copy::text_y,X
 	LDA .LOWORD(CURRENT_FOCUS_WINDOW)
 	ASL
 	TAX
@@ -37,9 +37,9 @@ UNKNOWN_C20A20: ;$C20A20
 	JSL MULT168
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	LDA .LOWORD(WINDOW_STATS_TABLE)+window_stats::unknown18,X
+	LDA .LOWORD(WINDOW_STATS_TABLE)+window_stats::number_padding,X
 	LDX $0E
-	STA a:.LOWORD(RAM)+6,X
+	STA a:window_text_attributes_copy::number_padding,X
 	REP #PROC_FLAGS::ACCUM8
 	LDA .LOWORD(CURRENT_FOCUS_WINDOW)
 	ASL
@@ -50,7 +50,7 @@ UNKNOWN_C20A20: ;$C20A20
 	TAX
 	LDA .LOWORD(WINDOW_STATS_TABLE)+window_stats::curr_tile_attributes,X
 	LDX $0E
-	STA a:.LOWORD(RAM)+7,X
+	STA a:window_text_attributes_copy::curr_tile_attributes,X
 	LDA .LOWORD(CURRENT_FOCUS_WINDOW)
 	ASL
 	TAX
@@ -60,7 +60,7 @@ UNKNOWN_C20A20: ;$C20A20
 	TAX
 	LDA .LOWORD(WINDOW_STATS_TABLE)+window_stats::font,X
 	LDX $0E
-	STA a:.LOWORD(RAM)+9,X
+	STA a:window_text_attributes_copy::font,X
 @UNKNOWN1:
 	PLD
 	RTL

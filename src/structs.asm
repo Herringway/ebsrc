@@ -246,7 +246,7 @@
 	height .word ;12
 	text_x .word ;14
 	text_y .word ;16
-	unknown18 .byte ;18
+	number_padding .byte ;18
 	curr_tile_attributes .word ;19
 	font .word ;21
 	working_memory .dword ;23
@@ -618,4 +618,14 @@
 	direction .byte ;4
 	screen_transition .byte ;5
 	unknown6 .word ;6
+.ENDSTRUCT
+
+.STRUCT  window_text_attributes_copy
+	id .word ;0
+	text_x .word ;2
+	text_y .word ;4
+	number_padding .byte ;6
+	curr_tile_attributes .word ;7
+	font .word ;9
+	unknown .byte 10 ;11
 .ENDSTRUCT
