@@ -611,3 +611,11 @@
 	secondary_animation_flags .byte ;10
 	ending_sound_effect .byte ;11
 .ENDSTRUCT
+
+.STRUCT teleport_destination
+	x_coord .word ;0
+	y_coord .word ;2
+	direction .byte ;4
+	screen_transition .byte ;5
+	unknown6 .word ;6
+.ENDSTRUCT

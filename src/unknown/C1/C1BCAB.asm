@@ -9,9 +9,7 @@ UNKNOWN_C1BCAB: ;$C1BCAB
 	STA .LOWORD(OVERWORLD_STATUS_SUPPRESSION)
 	LOADPTR TELEPORT_DESTINATION_TABLE, $0A
 	LDA $18
-	ASL
-	ASL
-	ASL
+	OPTIMIZED_MULT $04, .SIZEOF(teleport_destination)
 	CLC
 	ADC $0A
 	STA $0A
@@ -33,7 +31,7 @@ UNKNOWN_C1BCAB: ;$C1BCAB
 	BCC @UNKNOWN0
 	BEQ @UNKNOWN0
 	JSL UNKNOWN_C06B3D
-	LDA #$0005
+	LDA #teleport_destination::screen_transition
 	MOVE_INTX $0A, $06
 	CLC
 	ADC $06
@@ -56,18 +54,18 @@ UNKNOWN_C1BCAB: ;$C1BCAB
 	JSL SCREEN_TRANSITION
 @UNKNOWN3:
 	MOVE_INT $0A, $06
-	LDA [$06]
+	LDA [$06] ;teleport_destination::x_coord
 	ASL
 	ASL
 	ASL
 	STA $18
-	LDY #$0002
+	LDY #teleport_destination::y_coord
 	LDA [$0A],Y
 	ASL
 	ASL
 	ASL
 	STA $04
-	LDA #$0004
+	LDA #teleport_destination::direction
 	MOVE_INTX $0A, $06
 	CLC
 	ADC $06
@@ -115,7 +113,7 @@ UNKNOWN_C1BCAB: ;$C1BCAB
 	MOVE_INT $06, .LOWORD(UNKNOWN_7E9D1B)
 @UNKNOWN6:
 	JSL UNKNOWN_C065A3
-	LDA #$0005
+	LDA #teleport_destination::screen_transition
 	MOVE_INTX $12, $0A
 	MOVE_INTX $0A, $06
 	CLC
