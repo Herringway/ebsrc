@@ -1,7 +1,33 @@
 
 TEXT_WINDOW_PROPERTIES: ;$E01FB9
 .IF .DEFINED(JPN)
-	.BYTE $00, $00, $00, $40, $00, $01, $80, $00, $01, $C0, $00, $01, $00, $01, $01
+	.WORD $000
+	.BYTE $00
+
+	.WORD $040
+	.BYTE $01
+
+	.WORD $080
+	.BYTE $01
+
+	.WORD $0C0
+	.BYTE $01
+
+	.WORD $100
+	.BYTE $01
 .ELSE
-	.BYTE $00, $00, $01, $40, $00, $08, $80, $00, $08, $C0, $00, $08, $00, $01, $08
+	.WORD $000
+	.BYTE $01
+
+	.WORD $040
+	.BYTE $08
+
+	.WORD $080
+	.BYTE $08
+
+	.WORD $0C0
+	.BYTE $08
+
+	.WORD $100
+	.BYTE $08
 .ENDIF
