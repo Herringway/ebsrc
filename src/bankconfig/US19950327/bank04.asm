@@ -330,7 +330,7 @@
 
 .INCLUDE "data/unknown/C42E7B.asm"
 
-.INCLUDE "unknown/C4/C42F45.asm"
+.INCLUDE "overworld/set_party_tick_callbacks.asm"
 
 .INCLUDE "data/map/tile_table_chunks_table.asm"
 
