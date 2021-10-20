@@ -774,13 +774,13 @@
 
 .INCLUDE "unknown/C4/C48E95.asm"
 
-.INCLUDE "unknown/C4/C48ECE.asm"
+.INCLUDE "overworld/is_valid_item_transformation.asm"
 
-.INCLUDE "unknown/C4/C48EEB.asm"
+.INCLUDE "overworld/initialize_item_transformation.asm"
 
 .INCLUDE "unknown/C4/C48F98.asm"
 
-.INCLUDE "unknown/C4/C48FC4.asm"
+.INCLUDE "overworld/process_item_transformations.asm"
 
 .INCLUDE "unknown/C4/C490EE.asm"
 

@@ -629,3 +629,18 @@
 	font .word ;9
 	unknown .byte 10 ;11
 .ENDSTRUCT
+
+.STRUCT timed_item_transformation
+	item .byte ;0
+	sfx .byte ;1
+	sfx_frequency .byte ;2
+	target_item .byte ;3
+	transformation_time .byte ;4
+.ENDSTRUCT
+
+.STRUCT loaded_timed_item_transformation
+	sfx .byte ;0
+	sfx_frequency .byte ;1
+	sfx_countdown .byte ;2
+	transformation_countdown .byte ;3
+.ENDSTRUCT
