@@ -17,7 +17,7 @@ UNKNOWN_C0BA35: ;$C0BA35
 	LOADPTR UNKNOWN_7F3000, $06
 	LDA $36
 	LDX $04
-	STA a:.LOWORD(RAM)+156,X
+	STA a:pathfinding::target_count,X
 	LDX #$0000
 	STX $2A
 	BRA @UNKNOWN5
@@ -69,7 +69,7 @@ UNKNOWN_C0BA35: ;$C0BA35
 	STA $28
 @UNKNOWN4:
 	LDX $04
-	CMP a:.LOWORD(UNKNOWN_7E0078),X
+	CMP a:pathfinding::radius,X
 	BNE @UNKNOWN1
 	LDX $2A
 	INX
@@ -77,7 +77,7 @@ UNKNOWN_C0BA35: ;$C0BA35
 @UNKNOWN5:
 	TXA
 	LDX $04
-	CMP a:.LOWORD(RAM)+122,X
+	CMP a:pathfinding::radius + 2,X
 	BNE @UNKNOWN0
 	LDA #$0000
 	STA $02
@@ -99,12 +99,7 @@ UNKNOWN_C0BA35: ;$C0BA35
 	LDA ($24),Y
 	STA $22
 	LDA $02
-	STA $04
-	ASL
-	ASL
-	ASL
-	ADC $04
-	ASL
+	OPTIMIZED_MULT $04, 18
 	STA $02
 	LDA $34
 	STA $04
@@ -113,20 +108,20 @@ UNKNOWN_C0BA35: ;$C0BA35
 	TAX
 	STX $2A
 	LDA $28
-	STA a:.LOWORD(RAM)+176,X
+	STA a:pathfinding::pathfinders + pathfinder::object_index,X
 	LDA $2E
-	STA a:.LOWORD(RAM)+160,X
+	STA a:pathfinding::pathfinders + pathfinder::from_offscreen,X
 	LDA $22
 	ASL
 	STA $22
 	LDX $22
 	LDA f:UNKNOWN_C42AA7,X
 	LDX $2A
-	STA a:.LOWORD(RAM)+164,X
+	STA a:pathfinding::pathfinders + pathfinder::unknown_hitbox + 2,X
 	LDX $22
 	LDA f:UNKNOWN_C42AC9,X
 	LDX $2A
-	STA a:.LOWORD(RAM)+162,X
+	STA a:pathfinding::pathfinders + pathfinder::unknown_hitbox,X
 	LDX $22
 	LDY #.LOWORD(ENTITY_ABS_X_TABLE)
 	LDA ($24),Y
@@ -139,7 +134,7 @@ UNKNOWN_C0BA35: ;$C0BA35
 	SBC $38
 	AND #$003F
 	LDX $2A
-	STA a:.LOWORD(TIMER)+1,X
+	STA a:pathfinding::pathfinders + pathfinder::origin + 2,X
 	LDY $2C
 	STY $02
 	LDX $22
@@ -157,7 +152,7 @@ UNKNOWN_C0BA35: ;$C0BA35
 	SBC $02
 	AND #$003F
 	LDX $2A
-	STA a:.LOWORD(RAM)+166,X
+	STA a:pathfinding::pathfinders + pathfinder::origin,X
 	LDA $26
 	STA $02
 	INC $02
@@ -172,7 +167,7 @@ UNKNOWN_C0BA35: ;$C0BA35
 	BNEL @UNKNOWN6
 	LDA $02
 	LDX $04
-	STA a:.LOWORD(RAM)+158,X
+	STA a:pathfinding::pathfinder_count,X
 	LOADPTR UNKNOWN_7F3000, $0E
 	LDA #$0004
 	STA $12
@@ -180,20 +175,20 @@ UNKNOWN_C0BA35: ;$C0BA35
 	STA $14
 	LDA $04
 	CLC
-	ADC #$007C
+	ADC #pathfinding::targets
 	STA $16
 	LDA $02
 	STA $18
 	LDA $04
 	CLC
-	ADC #$00A0
+	ADC #pathfinding::pathfinders
 	STA $1A
 	LDA #$FFFF
 	STA $1C
 	MOVE_INT $30, $1E
 	LDA $04
 	CLC
-	ADC #$0078
+	ADC #pathfinding::radius
 	TAY
 	LDX #$F400
 	LDA #$0C00
@@ -233,23 +228,18 @@ UNKNOWN_C0BA35: ;$C0BA35
 	STA $28
 	BRA @UNKNOWN21
 @UNKNOWN18:
-	STA $04
-	ASL
-	ASL
-	ASL
-	ADC $04
-	ASL
+	OPTIMIZED_MULT $04, 18
 	STA $02
 	LDA $34
 	STA $04
 	CLC
 	ADC $02
 	TAX
-	LDA a:.LOWORD(RAM)+176,X
+	LDA a:pathfinding::pathfinders + pathfinder::object_index,X
 	STA $22
 	TXA
 	CLC
-	ADC #$00AA
+	ADC #pathfinding::pathfinders + pathfinder::unknown10;
 	TAY
 	STY $30
 	LDA a:.LOWORD(RAM),Y
@@ -257,7 +247,7 @@ UNKNOWN_C0BA35: ;$C0BA35
 	LDA $22
 	ASL
 	STA $22
-	LDA a:.LOWORD(RAM)+172,X
+	LDA a:pathfinding::pathfinders + pathfinder::unknown12,X
 	LDY #.LOWORD(UNKNOWN_30X2_TABLE_46)
 	STA ($22),Y
 	LDY $30
