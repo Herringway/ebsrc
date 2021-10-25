@@ -490,6 +490,8 @@
 
 .INCLUDE "unknown/C0/C0A3A4.asm"
 
+.INCLUDE "unknown/C0/C0A443.asm"
+
 .INCLUDE "unknown/C0/C0A56E.asm"
 
 .INCLUDE "data/unknown/C0A60B.asm"
