@@ -211,15 +211,15 @@ NAME_INPUT_WINDOW_SELECTION_LAYOUT_5: ;$EFA6A7
 
 .INCLUDE "system/debug/display_menu_options.asm"
 
-.INCLUDE "unknown/EF/EFDB95.asm"
+.INCLUDE "system/debug/integer_to_hex_debug_tiles.asm"
 
-.INCLUDE "unknown/EF/EFDBF0.asm"
+.INCLUDE "system/debug/integer_to_decimal_debug_tiles.asm"
 
-.INCLUDE "unknown/EF/EFDC69.asm"
+.INCLUDE "system/debug/integer_to_binary_debug_tiles.asm"
 
-.INCLUDE "unknown/EF/EFDCBC.asm"
+.INCLUDE "system/debug/display_check_position_debug_overlay.asm"
 
-.INCLUDE "unknown/EF/EFDE1A.asm"
+.INCLUDE "system/debug/display_view_character_debug_overlay.asm"
 
 .INCLUDE "unknown/EF/EFDF0B.asm"
 
