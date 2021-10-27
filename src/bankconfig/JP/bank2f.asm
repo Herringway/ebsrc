@@ -326,6 +326,8 @@ DEBUG_MENU_FONT: ;$EFEB70
 
 .INCLUDE "data/unknown/EFEF70.asm"
 
+.INCLUDE "data/unknown/EFEF9F.asm"
+
 KIRBY: ;$EFEFB7
 	BINARY "kirby.gfx"
 
