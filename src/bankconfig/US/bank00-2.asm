@@ -50,7 +50,7 @@
 
 .INCLUDE "system/copy_to_vram.asm"
 
-.INCLUDE "unknown/C0/C086DE.asm"
+.INCLUDE "system/sbrk.asm"
 
 .INCLUDE "system/enable_nmi_joypad.asm"
 
