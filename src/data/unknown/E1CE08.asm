@@ -2,51 +2,1014 @@
 UNKNOWN_E1CE08: ;$E1CE08
 UNKNOWN_E1CE08_1:
 .IF .DEFINED(JPN)
-	.BYTE $20, $43, $30, $18, $00, $20, $42, $30, $10, $00, $20, $41, $30, $08, $00, $20, $40, $30, $00, $00, $18, $33, $30, $18, $00, $18, $32, $30, $10, $00, $18, $31, $30, $08, $00, $18, $30, $30, $00, $00, $10, $23, $30, $18, $00, $10, $22, $30, $10, $00, $10, $21, $30, $08, $00, $10, $20, $30, $00, $00, $08, $13, $30, $18, $00, $08, $12, $30, $10, $00, $08, $11, $30, $08, $00, $08, $10, $30, $00, $00, $00, $03, $30, $18, $00, $00, $02, $30, $10, $00, $00, $01, $30, $08, $00, $00, $00, $30, $00, $80
+	.BYTE $20
+	.WORD $3043
+	.BYTE $18
+	.BYTE $00
+
+	.BYTE $20
+	.WORD $3042
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $20
+	.WORD $3041
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $20
+	.WORD $3040
+	.BYTE $00
+	.BYTE $00
+
+	.BYTE $18
+	.WORD $3033
+	.BYTE $18
+	.BYTE $00
+
+	.BYTE $18
+	.WORD $3032
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $18
+	.WORD $3031
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $18
+	.WORD $3030
+	.BYTE $00
+	.BYTE $00
+
+	.BYTE $10
+	.WORD $3023
+	.BYTE $18
+	.BYTE $00
+
+	.BYTE $10
+	.WORD $3022
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $10
+	.WORD $3021
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $10
+	.WORD $3020
+	.BYTE $00
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3013
+	.BYTE $18
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3012
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3011
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3010
+	.BYTE $00
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $3003
+	.BYTE $18
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $3002
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $3001
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $3000
+	.BYTE $00
+	.BYTE $80
+
 .ELSE
-	.BYTE $10, $52, $30, $04, $00, $08, $42, $30, $04, $00, $08, $40, $30, $F4, $01, $00, $32, $30, $04, $00, $F8, $22, $30, $04, $00, $F8, $20, $30, $F4, $01, $F0, $12, $30, $04, $00, $E8, $02, $30, $04, $00, $E8, $00, $30, $F4, $81
+	.BYTE $10
+	.WORD $3052
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3042
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3040
+	.BYTE $F4
+	.BYTE $01
+
+	.BYTE $00
+	.WORD $3032
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $F8
+	.WORD $3022
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $F8
+	.WORD $3020
+	.BYTE $F4
+	.BYTE $01
+
+	.BYTE $F0
+	.WORD $3012
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $E8
+	.WORD $3002
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $E8
+	.WORD $3000
+	.BYTE $F4
+	.BYTE $81
+
 .ENDIF
 UNKNOWN_E1CE08_2:
 .IF .DEFINED(JPN)
-	.BYTE $28, $59, $30, $28, $00, $28, $58, $30, $20, $00, $28, $57, $30, $18, $00, $28, $56, $30, $10, $00, $28, $55, $30, $08, $00, $20, $49, $30, $28, $00, $20, $48, $30, $20, $00, $20, $47, $30, $18, $00, $20, $46, $30, $10, $00, $20, $45, $30, $08, $00, $20, $44, $30, $00, $00, $18, $39, $30, $28, $00, $18, $38, $30, $20, $00, $18, $37, $30, $18, $00, $18, $36, $30, $10, $00, $18, $35, $30, $08, $00, $18, $34, $30, $00, $00, $10, $29, $30, $28, $00, $10, $28, $30, $20, $00, $10, $27, $30, $18, $00, $10, $26, $30, $10, $00, $10, $25, $30, $08, $00, $10, $24, $30, $00, $00, $08, $19, $30, $28, $00, $08, $18, $30, $20, $00, $08, $17, $30, $18, $00, $08, $16, $30, $10, $00, $08, $15, $30, $08, $00, $08, $14, $30, $00, $00, $00, $09, $30, $28, $00, $00, $08, $30, $20, $00, $00, $07, $30, $18, $00, $00, $06, $30, $10, $00, $00, $05, $30, $08, $00, $00, $04, $30, $00, $80
+	.BYTE $28
+	.WORD $3059
+	.BYTE $28
+	.BYTE $00
+
+	.BYTE $28
+	.WORD $3058
+	.BYTE $20
+	.BYTE $00
+
+	.BYTE $28
+	.WORD $3057
+	.BYTE $18
+	.BYTE $00
+
+	.BYTE $28
+	.WORD $3056
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $28
+	.WORD $3055
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $20
+	.WORD $3049
+	.BYTE $28
+	.BYTE $00
+
+	.BYTE $20
+	.WORD $3048
+	.BYTE $20
+	.BYTE $00
+
+	.BYTE $20
+	.WORD $3047
+	.BYTE $18
+	.BYTE $00
+
+	.BYTE $20
+	.WORD $3046
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $20
+	.WORD $3045
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $20
+	.WORD $3044
+	.BYTE $00
+	.BYTE $00
+
+	.BYTE $18
+	.WORD $3039
+	.BYTE $28
+	.BYTE $00
+
+	.BYTE $18
+	.WORD $3038
+	.BYTE $20
+	.BYTE $00
+
+	.BYTE $18
+	.WORD $3037
+	.BYTE $18
+	.BYTE $00
+
+	.BYTE $18
+	.WORD $3036
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $18
+	.WORD $3035
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $18
+	.WORD $3034
+	.BYTE $00
+	.BYTE $00
+
+	.BYTE $10
+	.WORD $3029
+	.BYTE $28
+	.BYTE $00
+
+	.BYTE $10
+	.WORD $3028
+	.BYTE $20
+	.BYTE $00
+
+	.BYTE $10
+	.WORD $3027
+	.BYTE $18
+	.BYTE $00
+
+	.BYTE $10
+	.WORD $3026
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $10
+	.WORD $3025
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $10
+	.WORD $3024
+	.BYTE $00
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3019
+	.BYTE $28
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3018
+	.BYTE $20
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3017
+	.BYTE $18
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3016
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3015
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3014
+	.BYTE $00
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $3009
+	.BYTE $28
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $3008
+	.BYTE $20
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $3007
+	.BYTE $18
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $3006
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $3005
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $3004
+	.BYTE $00
+	.BYTE $80
+
 .ELSE
-	.BYTE $10, $55, $30, $04, $00, $08, $45, $30, $04, $00, $08, $43, $30, $F4, $01, $00, $35, $30, $04, $00, $F8, $25, $30, $04, $00, $F8, $23, $30, $F4, $01, $F0, $15, $30, $04, $00, $E8, $05, $30, $04, $00, $E8, $03, $30, $F4, $81
+	.BYTE $10
+	.WORD $3055
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3045
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3043
+	.BYTE $F4
+	.BYTE $01
+
+	.BYTE $00
+	.WORD $3035
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $F8
+	.WORD $3025
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $F8
+	.WORD $3023
+	.BYTE $F4
+	.BYTE $01
+
+	.BYTE $F0
+	.WORD $3015
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $E8
+	.WORD $3005
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $E8
+	.WORD $3003
+	.BYTE $F4
+	.BYTE $81
+
 .ENDIF
 UNKNOWN_E1CE08_3:
 .IF .DEFINED(JPN)
-	.BYTE $20, $4A, $30, $08, $00, $18, $3A, $30, $08, $00, $10, $2A, $30, $08, $00, $08, $1A, $30, $08, $00, $00, $0C, $30, $10, $00, $00, $0B, $30, $08, $00, $00, $0A, $30, $00, $80
+	.BYTE $20
+	.WORD $304A
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $18
+	.WORD $303A
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $10
+	.WORD $302A
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $301A
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $300C
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $300B
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $300A
+	.BYTE $00
+	.BYTE $80
+
 .ELSE
-	.BYTE $10, $58, $30, $04, $00, $08, $48, $30, $04, $00, $08, $46, $30, $F4, $01, $00, $38, $30, $04, $00, $F8, $28, $30, $04, $00, $F8, $26, $30, $F4, $01, $F0, $18, $30, $04, $00, $E8, $08, $30, $04, $00, $E8, $06, $30, $F4, $81
+	.BYTE $10
+	.WORD $3058
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3048
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3046
+	.BYTE $F4
+	.BYTE $01
+
+	.BYTE $00
+	.WORD $3038
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $F8
+	.WORD $3028
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $F8
+	.WORD $3026
+	.BYTE $F4
+	.BYTE $01
+
+	.BYTE $F0
+	.WORD $3018
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $E8
+	.WORD $3008
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $E8
+	.WORD $3006
+	.BYTE $F4
+	.BYTE $81
+
 .ENDIF
 UNKNOWN_E1CE08_4:
 .IF .DEFINED(JPN)
-	.BYTE $20, $4D, $30, $10, $00, $18, $3D, $30, $10, $00, $10, $2D, $30, $10, $00, $08, $1D, $30, $10, $00, $00, $4C, $30, $10, $00, $10, $2C, $30, $08, $00, $08, $1C, $30, $08, $00, $20, $4B, $30, $00, $00, $18, $3B, $30, $00, $00, $10, $2B, $30, $00, $00, $08, $1B, $30, $00, $00, $00, $3C, $30, $00, $80
+	.BYTE $20
+	.WORD $304D
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $18
+	.WORD $303D
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $10
+	.WORD $302D
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $301D
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $304C
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $10
+	.WORD $302C
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $301C
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $20
+	.WORD $304B
+	.BYTE $00
+	.BYTE $00
+
+	.BYTE $18
+	.WORD $303B
+	.BYTE $00
+	.BYTE $00
+
+	.BYTE $10
+	.WORD $302B
+	.BYTE $00
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $301B
+	.BYTE $00
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $303C
+	.BYTE $00
+	.BYTE $80
+
 .ELSE
-	.BYTE $10, $5B, $30, $04, $00, $08, $4B, $30, $04, $00, $08, $49, $30, $F4, $01, $00, $3B, $30, $04, $00, $F8, $2B, $30, $04, $00, $F8, $29, $30, $F4, $01, $F0, $1B, $30, $04, $00, $E8, $0B, $30, $04, $00, $E8, $09, $30, $F4, $81
+	.BYTE $10
+	.WORD $305B
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $304B
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3049
+	.BYTE $F4
+	.BYTE $01
+
+	.BYTE $00
+	.WORD $303B
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $F8
+	.WORD $302B
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $F8
+	.WORD $3029
+	.BYTE $F4
+	.BYTE $01
+
+	.BYTE $F0
+	.WORD $301B
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $E8
+	.WORD $300B
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $E8
+	.WORD $3009
+	.BYTE $F4
+	.BYTE $81
+
 .ENDIF
 UNKNOWN_E1CE08_5:
 .IF .DEFINED(JPN)
-	.BYTE $20, $60, $30, $10, $00, $18, $50, $30, $10, $00, $20, $4F, $30, $08, $00, $20, $4E, $30, $00, $00, $18, $3F, $30, $08, $00, $18, $3E, $30, $00, $00, $10, $2F, $30, $08, $00, $10, $2E, $30, $00, $00, $08, $1F, $30, $08, $00, $08, $1E, $30, $00, $00, $00, $0F, $30, $10, $00, $00, $0E, $30, $08, $00, $00, $0D, $30, $00, $80
+	.BYTE $20
+	.WORD $3060
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $18
+	.WORD $3050
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $20
+	.WORD $304F
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $20
+	.WORD $304E
+	.BYTE $00
+	.BYTE $00
+
+	.BYTE $18
+	.WORD $303F
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $18
+	.WORD $303E
+	.BYTE $00
+	.BYTE $00
+
+	.BYTE $10
+	.WORD $302F
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $10
+	.WORD $302E
+	.BYTE $00
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $301F
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $301E
+	.BYTE $00
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $300F
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $300E
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $300D
+	.BYTE $00
+	.BYTE $80
+
 .ELSE
-	.BYTE $10, $5E, $30, $04, $00, $08, $4E, $30, $04, $00, $08, $4C, $30, $F4, $01, $00, $3E, $30, $04, $00, $F8, $2E, $30, $04, $00, $F8, $2C, $30, $F4, $01, $F0, $1E, $30, $04, $00, $E8, $0E, $30, $04, $00, $E8, $0C, $30, $F4, $81
+	.BYTE $10
+	.WORD $305E
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $304E
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $304C
+	.BYTE $F4
+	.BYTE $01
+
+	.BYTE $00
+	.WORD $303E
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $F8
+	.WORD $302E
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $F8
+	.WORD $302C
+	.BYTE $F4
+	.BYTE $01
+
+	.BYTE $F0
+	.WORD $301E
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $E8
+	.WORD $300E
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $E8
+	.WORD $300C
+	.BYTE $F4
+	.BYTE $81
+
 .ENDIF
 UNKNOWN_E1CE08_6:
 .IF .DEFINED(JPN)
-	.BYTE $20, $72, $30, $10, $00, $20, $71, $30, $00, $00, $18, $68, $30, $10, $00, $18, $67, $30, $08, $00, $18, $66, $30, $00, $00, $10, $65, $30, $08, $00, $10, $64, $30, $00, $00, $10, $54, $30, $10, $00, $08, $63, $30, $10, $00, $08, $62, $30, $08, $00, $08, $61, $30, $00, $00, $00, $53, $30, $10, $00, $00, $52, $30, $08, $00, $00, $51, $30, $00, $80
+	.BYTE $20
+	.WORD $3072
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $20
+	.WORD $3071
+	.BYTE $00
+	.BYTE $00
+
+	.BYTE $18
+	.WORD $3068
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $18
+	.WORD $3067
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $18
+	.WORD $3066
+	.BYTE $00
+	.BYTE $00
+
+	.BYTE $10
+	.WORD $3065
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $10
+	.WORD $3064
+	.BYTE $00
+	.BYTE $00
+
+	.BYTE $10
+	.WORD $3054
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3063
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3062
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3061
+	.BYTE $00
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $3053
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $3052
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $3051
+	.BYTE $00
+	.BYTE $80
+
 .ELSE
-	.BYTE $08, $40, $31, $FC, $01, $F8, $20, $31, $FC, $01, $E8, $00, $31, $FC, $01, $10, $5F, $30, $F4, $00, $08, $4F, $30, $F4, $00, $00, $3F, $30, $F4, $00, $F8, $2F, $30, $F4, $00, $F0, $1F, $30, $F4, $00, $E8, $0F, $30, $F4, $80
+	.BYTE $08
+	.WORD $3140
+	.BYTE $FC
+	.BYTE $01
+
+	.BYTE $F8
+	.WORD $3120
+	.BYTE $FC
+	.BYTE $01
+
+	.BYTE $E8
+	.WORD $3100
+	.BYTE $FC
+	.BYTE $01
+
+	.BYTE $10
+	.WORD $305F
+	.BYTE $F4
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $304F
+	.BYTE $F4
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $303F
+	.BYTE $F4
+	.BYTE $00
+
+	.BYTE $F8
+	.WORD $302F
+	.BYTE $F4
+	.BYTE $00
+
+	.BYTE $F0
+	.WORD $301F
+	.BYTE $F4
+	.BYTE $00
+
+	.BYTE $E8
+	.WORD $300F
+	.BYTE $F4
+	.BYTE $80
+
 .ENDIF
 UNKNOWN_E1CE08_7:
 .IF .DEFINED(JPN)
-	.BYTE $00, $70, $30, $30, $00, $08, $6F, $30, $30, $00, $08, $6E, $30, $28, $00, $08, $6D, $30, $20, $00, $08, $6C, $30, $18, $00, $08, $6B, $30, $10, $00, $08, $6A, $30, $08, $00, $08, $69, $30, $00, $00, $00, $5F, $30, $28, $00, $00, $5E, $30, $20, $00, $00, $5D, $30, $18, $00, $00, $5C, $30, $10, $00, $00, $5B, $30, $08, $00, $00, $5A, $30, $00, $80
+	.BYTE $00
+	.WORD $3070
+	.BYTE $30
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $306F
+	.BYTE $30
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $306E
+	.BYTE $28
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $306D
+	.BYTE $20
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $306C
+	.BYTE $18
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $306B
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $306A
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3069
+	.BYTE $00
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $305F
+	.BYTE $28
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $305E
+	.BYTE $20
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $305D
+	.BYTE $18
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $305C
+	.BYTE $10
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $305B
+	.BYTE $08
+	.BYTE $00
+
+	.BYTE $00
+	.WORD $305A
+	.BYTE $00
+	.BYTE $80
+
 .ELSE
-	.BYTE $10, $54, $31, $04, $00, $08, $44, $31, $04, $00, $08, $42, $31, $F4, $01, $00, $34, $31, $04, $00, $F8, $24, $31, $04, $00, $F8, $22, $31, $F4, $01, $F0, $14, $31, $04, $00, $E8, $04, $31, $04, $00, $E8, $02, $31, $F4, $81
+	.BYTE $10
+	.WORD $3154
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3144
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3142
+	.BYTE $F4
+	.BYTE $01
+
+	.BYTE $00
+	.WORD $3134
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $F8
+	.WORD $3124
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $F8
+	.WORD $3122
+	.BYTE $F4
+	.BYTE $01
+
+	.BYTE $F0
+	.WORD $3114
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $E8
+	.WORD $3104
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $E8
+	.WORD $3102
+	.BYTE $F4
+	.BYTE $81
+
 .ENDIF
 .IF .DEFINED(USA)
 UNKNOWN_E1CE08_8:
-	.BYTE $10, $57, $31, $04, $00, $08, $47, $31, $04, $00, $08, $45, $31, $F4, $01, $00, $37, $31, $04, $00, $F8, $27, $31, $04, $00, $F8, $25, $31, $F4, $01, $F0, $17, $31, $04, $00, $E8, $07, $31, $04, $00, $E8, $05, $31, $F4, $81
+	.BYTE $10
+	.WORD $3157
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3147
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3145
+	.BYTE $F4
+	.BYTE $01
+
+	.BYTE $00
+	.WORD $3137
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $F8
+	.WORD $3127
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $F8
+	.WORD $3125
+	.BYTE $F4
+	.BYTE $01
+
+	.BYTE $F0
+	.WORD $3117
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $E8
+	.WORD $3107
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $E8
+	.WORD $3105
+	.BYTE $F4
+	.BYTE $81
+
 UNKNOWN_E1CE08_9:
-	.BYTE $10, $5A, $31, $04, $00, $08, $4A, $31, $04, $00, $08, $48, $31, $F4, $01, $00, $3A, $31, $04, $00, $F8, $2A, $31, $04, $00, $F8, $28, $31, $F4, $01, $F0, $1A, $31, $04, $00, $E8, $0A, $31, $04, $00, $E8, $08, $31, $F4, $81
+	.BYTE $10
+	.WORD $315A
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $314A
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $08
+	.WORD $3148
+	.BYTE $F4
+	.BYTE $01
+
+	.BYTE $00
+	.WORD $313A
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $F8
+	.WORD $312A
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $F8
+	.WORD $3128
+	.BYTE $F4
+	.BYTE $01
+
+	.BYTE $F0
+	.WORD $311A
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $E8
+	.WORD $310A
+	.BYTE $04
+	.BYTE $00
+
+	.BYTE $E8
+	.WORD $3108
+	.BYTE $F4
+	.BYTE $81
 .ENDIF
 UNKNOWN_E1CF9D: ;$E1CF9D
 	.WORD .LOWORD(UNKNOWN_E1CE08_1) ;$CE08
