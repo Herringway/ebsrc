@@ -222,9 +222,10 @@
 	brainshock_resist .byte ;59
 	hypnosis_resist .byte ;60
 	money .word ;61
-	exp .word ;63
-	vram_sprite_index .byte ;65
-	sprite_x .byte ;66
+	exp .dword ;63
+	;TODO: unravel this...
+	;vram_sprite_index .byte ;65
+	;sprite_x .byte ;66
 	sprite_y .byte ;67
 	initiative .byte ;68
 	unknown69 .byte ;69
@@ -498,10 +499,10 @@
 
 .STRUCT unknown_A97D
 	unknown0 .byte 1 ;0
-	unknown1 .byte 1 ;4
-	unknown2 .byte 2 ;8
-	unknown4 .byte 1 ;12
-	unknown5 .byte 1 ;12
+	unknown1 .byte 1 ;1
+	unknown2 .byte 2 ;2
+	unknown4 .byte 1 ;4
+	unknown5 .byte 1 ;5
 .ENDSTRUCT
 
 .STRUCT overworld_palette_anim
