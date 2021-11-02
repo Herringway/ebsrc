@@ -223,18 +223,17 @@
 	hypnosis_resist .byte ;60
 	money .word ;61
 	exp .dword ;63
-	;TODO: unravel this...
-	;vram_sprite_index .byte ;65
-	;sprite_x .byte ;66
-	sprite_y .byte ;67
-	initiative .byte ;68
-	unknown69 .byte ;69
-	unknown70 .byte 2 ;70
+	vram_sprite_index .byte ;67
+	sprite_x .byte ;68
+	sprite_y .byte ;69
+	initiative .byte ;70
+	unknown71 .byte ;71
 	unknown72 .byte ;72
 	unknown73 .byte ;73
 	unknown74 .byte ;74
-	id2 .byte ;75
-	unknown76 .byte 2;76
+	unknown75 .byte ;75
+	unknown76 .byte ;76
+	id2 .byte ;78
 .ENDSTRUCT
 
 .STRUCT window_stats

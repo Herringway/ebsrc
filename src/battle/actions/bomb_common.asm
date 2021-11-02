@@ -89,10 +89,10 @@ BOMB_COMMON: ;$C2A658
 	CMP a:battler::row,X
 	BNEL @UNKNOWN16
 	LDX $12
-	LDA .LOWORD(BATTLERS_TABLE)+battler::initiative,X
+	LDA .LOWORD(BATTLERS_TABLE)+battler::sprite_x,X
 	STA $01
 	LDX .LOWORD(CURRENT_TARGET)
-	LDA a:battler::initiative,X
+	LDA a:battler::sprite_x,X
 	STA $00
 	LDA $01
 	CMP $00

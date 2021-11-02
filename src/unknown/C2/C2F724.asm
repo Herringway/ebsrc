@@ -64,20 +64,20 @@ UNKNOWN_C2F724: ;$C2F724
 	AND #$0004
 	BNE @UNKNOWN7
 	LDX $02
-	LDA a:battler::unknown69,X
+	LDA a:battler::sprite_y,X
 	AND #$00FF
 	SEC
 	SBC .LOWORD(UNKNOWN_7EAD98)
 	TAY
 	LDX $02
-	LDA a:battler::initiative,X
+	LDA a:battler::sprite_x,X
 	AND #$00FF
 	SEC
 	SBC .LOWORD(UNKNOWN_7EAD96)
 	TAX
 	STX $12
 	LDX $02
-	LDA a:battler::sprite_y,X
+	LDA a:battler::vram_sprite_index,X
 	AND #$00FF
 	OPTIMIZED_MULT $04, 80
 	CLC
@@ -87,24 +87,24 @@ UNKNOWN_C2F724: ;$C2F724
 	JMP @UNKNOWN11
 @UNKNOWN7:
 	LDX $02
-	LDA a:battler::id2,X
+	LDA a:battler::unknown75,X
 	AND #$00FF
 	BEQ @UNKNOWN8
 	LDX $02
-	LDA a:battler::unknown69,X
+	LDA a:battler::sprite_y,X
 	AND #$00FF
 	SEC
 	SBC .LOWORD(UNKNOWN_7EAD98)
 	TAY
 	LDX $02
-	LDA a:battler::initiative,X
+	LDA a:battler::sprite_x,X
 	AND #$00FF
 	SEC
 	SBC .LOWORD(UNKNOWN_7EAD96)
 	TAX
 	STX $10
 	LDX $02
-	LDA a:battler::sprite_y,X
+	LDA a:battler::vram_sprite_index,X
 	AND #$00FF
 	OPTIMIZED_MULT $04, 80
 	CLC
@@ -125,20 +125,20 @@ UNKNOWN_C2F724: ;$C2F724
 	BEQ @UNKNOWN10
 @UNKNOWN9:
 	LDX $02
-	LDA a:battler::unknown69,X
+	LDA a:battler::sprite_y,X
 	AND #$00FF
 	SEC
 	SBC .LOWORD(UNKNOWN_7EAD98)
 	TAY
 	LDX $02
-	LDA a:battler::initiative,X
+	LDA a:battler::sprite_x,X
 	AND #$00FF
 	SEC
 	SBC .LOWORD(UNKNOWN_7EAD96)
 	TAX
 	STX $12
 	LDX $02
-	LDA a:battler::sprite_y,X
+	LDA a:battler::vram_sprite_index,X
 	AND #$00FF
 	OPTIMIZED_MULT $04, 80
 	CLC
@@ -148,20 +148,20 @@ UNKNOWN_C2F724: ;$C2F724
 	BRA @UNKNOWN11
 @UNKNOWN10:
 	LDX $02
-	LDA a:battler::unknown69,X
+	LDA a:battler::sprite_y,X
 	AND #$00FF
 	SEC
 	SBC .LOWORD(UNKNOWN_7EAD98)
 	TAY
 	LDX $02
-	LDA a:battler::initiative,X
+	LDA a:battler::sprite_x,X
 	AND #$00FF
 	SEC
 	SBC .LOWORD(UNKNOWN_7EAD96)
 	TAX
 	STX $0E
 	LDX $02
-	LDA a:battler::sprite_y,X
+	LDA a:battler::vram_sprite_index,X
 	AND #$00FF
 	OPTIMIZED_MULT $04, 80
 	CLC

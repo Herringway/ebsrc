@@ -80,7 +80,7 @@ REVIVE_TARGET: ;$C27397
 @UNKNOWN3:
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	STZ a:battler::id2,X
+	STZ a:battler::unknown75,X
 	CLC
 	REP #PROC_FLAGS::ACCUM8
 	ADC #.SIZEOF(battler)
@@ -93,7 +93,7 @@ REVIVE_TARGET: ;$C27397
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0001
 	LDX $04
-	STA a:battler::id2,X
+	STA a:battler::unknown75,X
 	LDX #$0001
 	STX $18
 	BRA @UNKNOWN6
@@ -101,7 +101,7 @@ REVIVE_TARGET: ;$C27397
 	STX $02
 	LDX $04
 	REP #PROC_FLAGS::ACCUM8
-	LDA a:battler::sprite_y,X
+	LDA a:battler::vram_sprite_index,X
 	AND #$00FF
 	ASL
 	ASL
@@ -131,7 +131,7 @@ REVIVE_TARGET: ;$C27397
 	TAX
 	STX $14
 	LDX $04
-	LDA a:battler::sprite_y,X
+	LDA a:battler::vram_sprite_index,X
 	AND #$00FF
 	ASL
 	ASL
@@ -155,7 +155,7 @@ REVIVE_TARGET: ;$C27397
 	BRA @UNKNOWN10
 @UNKNOWN9:
 	LDX $04
-	LDA a:battler::sprite_y,X
+	LDA a:battler::vram_sprite_index,X
 	AND #$00FF
 	ASL
 	ASL

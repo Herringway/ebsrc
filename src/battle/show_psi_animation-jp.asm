@@ -332,7 +332,7 @@ SHOW_PSI_ANIMATION: ;$C2E116
 	JMP @UNKNOWN24
 @UNKNOWN12:
 	LDX .LOWORD(CURRENT_TARGET)
-	LDA a:battler::initiative,X
+	LDA a:battler::sprite_x,X
 	AND #$00FF
 	STA $02
 	LDA #$0080
@@ -340,7 +340,7 @@ SHOW_PSI_ANIMATION: ;$C2E116
 	SBC $02
 	STA .LOWORD(UNKNOWN_7EAD9A)
 	LDX .LOWORD(CURRENT_TARGET)
-	LDA a:battler::unknown69,X
+	LDA a:battler::sprite_y,X
 	AND #$00FF
 	STA $02
 	LDA #$0090
@@ -360,10 +360,10 @@ SHOW_PSI_ANIMATION: ;$C2E116
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0001
 	LDX .LOWORD(CURRENT_TARGET)
-	STA a:battler::id2,X
+	STA a:battler::unknown75,X
 	LDX .LOWORD(CURRENT_TARGET)
 	REP #PROC_FLAGS::ACCUM8
-	LDA a:battler::sprite_y,X
+	LDA a:battler::vram_sprite_index,X
 	AND #$00FF
 	ASL
 	TAX
@@ -372,7 +372,7 @@ SHOW_PSI_ANIMATION: ;$C2E116
 	JMP @UNKNOWN24
 @UNKNOWN14:
 	LDX .LOWORD(CURRENT_TARGET)
-	LDA a:battler::unknown69,X
+	LDA a:battler::sprite_y,X
 	AND #$00FF
 	STA $02
 	LDA #$0090
@@ -403,9 +403,9 @@ SHOW_PSI_ANIMATION: ;$C2E116
 	BEQ @UNKNOWN17
 	LDX $02
 	SEP #PROC_FLAGS::ACCUM8
-	LDA a:battler::unknown69,X
+	LDA a:battler::sprite_y,X
 	LDX .LOWORD(CURRENT_TARGET)
-	CMP a:battler::unknown69,X
+	CMP a:battler::sprite_y,X
 	BNE @UNKNOWN17
 	LDX $02
 	REP #PROC_FLAGS::ACCUM8
@@ -419,10 +419,10 @@ SHOW_PSI_ANIMATION: ;$C2E116
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0001
 	LDX $02
-	STA a:battler::id2,X
+	STA a:battler::unknown75,X
 	LDX $02
 	REP #PROC_FLAGS::ACCUM8
-	LDA a:battler::sprite_y,X
+	LDA a:battler::vram_sprite_index,X
 	AND #$00FF
 	ASL
 	TAX
@@ -468,9 +468,9 @@ SHOW_PSI_ANIMATION: ;$C2E116
 	BEQ @UNKNOWN22
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0001
-	STA a:battler::id2,Y
+	STA a:battler::unknown75,Y
 	REP #PROC_FLAGS::ACCUM8
-	LDA a:battler::sprite_y,Y
+	LDA a:battler::vram_sprite_index,Y
 	AND #$00FF
 	ASL
 	TAX

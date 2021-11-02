@@ -483,7 +483,7 @@ KO_TARGET: ;$C27550
 @UNKNOWN35:
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	STZ a:battler::id2,X
+	STZ a:battler::unknown75,X
 	CLC
 	REP #PROC_FLAGS::ACCUM8
 	ADC #.SIZEOF(battler)
@@ -496,7 +496,7 @@ KO_TARGET: ;$C27550
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0001
 	LDX $02
-	STA a:battler::id2,X
+	STA a:battler::unknown75,X
 	REP #PROC_FLAGS::ACCUM8
 	LDA #$000A
 	JSL UNKNOWN_C2FAD8
@@ -510,7 +510,7 @@ KO_TARGET: ;$C27550
 	TAX
 	STX $1E
 	LDX $02
-	LDA a:battler::sprite_y,X
+	LDA a:battler::vram_sprite_index,X
 	AND #$00FF
 	ASL
 	ASL
@@ -539,7 +539,7 @@ KO_TARGET: ;$C27550
 	TAX
 	STX $1E
 	LDX $02
-	LDA a:battler::sprite_y,X
+	LDA a:battler::vram_sprite_index,X
 	AND #$00FF
 	ASL
 	ASL
@@ -594,7 +594,7 @@ KO_TARGET: ;$C27550
 	BEQ @UNKNOWN43
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0001
-	STA a:battler::id2,X
+	STA a:battler::unknown75,X
 @UNKNOWN43:
 	REP #PROC_FLAGS::ACCUM8
 	TXA

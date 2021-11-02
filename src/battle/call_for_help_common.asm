@@ -166,7 +166,7 @@ CALL_FOR_HELP_COMMON: ;$C2BD5E
 	AND #$00FF
 	CMP $1C
 	BNE @UNKNOWN12
-	LDA a:battler::initiative,X
+	LDA a:battler::sprite_x,X
 	AND #$00FF
 	SEC
 	SBC $02
@@ -179,7 +179,7 @@ CALL_FOR_HELP_COMMON: ;$C2BD5E
 @UNKNOWN11:
 	LDA $12
 	STA $02
-	LDA a:battler::initiative,X
+	LDA a:battler::sprite_x,X
 	AND #$00FF
 	CLC
 	ADC $02
@@ -189,7 +189,7 @@ CALL_FOR_HELP_COMMON: ;$C2BD5E
 	STA $04
 	BRA @UNKNOWN15
 @UNKNOWN12:
-	LDA a:battler::initiative,X
+	LDA a:battler::sprite_x,X
 	AND #$00FF
 	SEC
 	SBC $02
@@ -197,7 +197,7 @@ CALL_FOR_HELP_COMMON: ;$C2BD5E
 	BCS @UNKNOWN13
 	STA $18
 @UNKNOWN13:
-	LDA a:battler::initiative,X
+	LDA a:battler::sprite_x,X
 	AND #$00FF
 	CLC
 	ADC $02
@@ -335,7 +335,7 @@ CALL_FOR_HELP_COMMON: ;$C2BD5E
 	STA a:.LOWORD(RAM),Y
 	LDX $12
 	REP #PROC_FLAGS::ACCUM8
-	LDA a:battler::initiative,X
+	LDA a:battler::sprite_x,X
 	AND #$00FF
 	TAY
 	STY $24
@@ -399,7 +399,7 @@ CALL_FOR_HELP_COMMON: ;$C2BD5E
 	TYA
 	SEP #PROC_FLAGS::ACCUM8
 	LDX .LOWORD(CURRENT_TARGET)
-	STA a:battler::initiative,X
+	STA a:battler::sprite_x,X
 	REP #PROC_FLAGS::ACCUM8
 	LDA $1C
 	SEP #PROC_FLAGS::ACCUM8
@@ -413,20 +413,20 @@ CALL_FOR_HELP_COMMON: ;$C2BD5E
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0080
 	LDX .LOWORD(CURRENT_TARGET)
-	STA a:battler::unknown69,X
+	STA a:battler::sprite_y,X
 	BRA @UNKNOWN31
 @UNKNOWN30:
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0090
 	LDX .LOWORD(CURRENT_TARGET)
-	STA a:battler::unknown69,X
+	STA a:battler::sprite_y,X
 @UNKNOWN31:
 	REP #PROC_FLAGS::ACCUM8
 	LDA $26
 	JSR a:.LOWORD(UNKNOWN_C2F09F)
 	SEP #PROC_FLAGS::ACCUM8
 	LDX .LOWORD(CURRENT_TARGET)
-	STA a:battler::sprite_y,X
+	STA a:battler::vram_sprite_index,X
 	LDA #$0001
 	LDX .LOWORD(CURRENT_TARGET)
 	STA a:battler::unknown13,X

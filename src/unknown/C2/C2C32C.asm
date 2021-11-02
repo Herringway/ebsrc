@@ -3,13 +3,13 @@ UNKNOWN_C2C32C: ;$C2C32C
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
 	RESERVE_STACK_SPACE 20
 	STA $12
-	LDA #.LOWORD(BATTLERS_TABLE) + (.SIZEOF(battler) * 8) + battler::initiative
+	LDA #.LOWORD(BATTLERS_TABLE) + (.SIZEOF(battler) * 8) + battler::sprite_x
 	STA $02
 	LDX $02
 	LDA a:.LOWORD(RAM),X
 	AND #$00FF
 	STA $10
-	LDY #.LOWORD(BATTLERS_TABLE) + (.SIZEOF(battler) * 8) + 69
+	LDY #.LOWORD(BATTLERS_TABLE) + (.SIZEOF(battler) * 8) + battler::sprite_y
 	STY $0E
 	LDA a:.LOWORD(RAM),Y
 	AND #$00FF

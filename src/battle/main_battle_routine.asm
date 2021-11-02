@@ -827,7 +827,7 @@ BATTLE_ROUTINE: ;$C24821
 	BEQ @UNKNOWN73
 	TYA
 	CLC
-	ADC #battler::unknown70
+	ADC #battler::initiative
 	STA $02
 	LDA a:battler::speed,Y
 	JSR a:.LOWORD(FIFTY_PERCENT_VARIANCE)
@@ -1367,7 +1367,7 @@ BATTLE_ROUTINE: ;$C24821
 	STA a:.LOWORD(RAM),X
 	LDX $02
 	REP #PROC_FLAGS::ACCUM8
-	STZ a:battler::unknown70,X
+	STZ a:battler::initiative,X
 @UNKNOWN128:
 	LDX $02
 	LDA a:battler::current_action,X
@@ -2346,7 +2346,7 @@ BATTLE_ROUTINE: ;$C24821
 @UNKNOWN223:
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	STZ a:battler::id2,X
+	STZ a:battler::unknown75,X
 	CLC
 	REP #PROC_FLAGS::ACCUM8
 	ADC #.SIZEOF(battler)
