@@ -262,7 +262,7 @@
 
 .INCLUDE "battle/success_speed.asm"
 
-.INCLUDE "battle/atk_fail_chk.asm"
+.INCLUDE "battle/fail_attack_on_npcs.asm"
 
 .INCLUDE "battle/increase_offense_16th.asm"
 
