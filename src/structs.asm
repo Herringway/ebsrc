@@ -178,8 +178,7 @@
 .ENDSTRUCT
 
 .STRUCT battler
-	id .byte ;0
-	unknown01 .byte ;1
+	id .word ;0
 	sprite .byte ;2
 	unknown03 .byte ;3
 	current_action .word ;4
