@@ -429,7 +429,7 @@ CALL_FOR_HELP_COMMON: ;$C2BD5E
 	STA a:battler::vram_sprite_index,X
 	LDA #$0001
 	LDX .LOWORD(CURRENT_TARGET)
-	STA a:battler::unknown13,X
+	STA a:battler::has_taken_turn,X
 	JSL FIX_TARGET_NAME
 	.A16
 	LDA $28

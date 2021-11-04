@@ -820,7 +820,7 @@ BATTLE_ROUTINE: ;$C24821
 @UNKNOWN72:
 	TYX
 	SEP #PROC_FLAGS::ACCUM8
-	STZ a:battler::unknown13,X
+	STZ a:battler::has_taken_turn,X
 	REP #PROC_FLAGS::ACCUM8
 	LDA a:battler::consciousness,Y
 	AND #$00FF
@@ -1571,7 +1571,7 @@ BATTLE_ROUTINE: ;$C24821
 	STX .LOWORD(CURRENT_ATTACKER)
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0001
-	STA a:battler::unknown13,X
+	STA a:battler::has_taken_turn,X
 	LDX .LOWORD(CURRENT_ATTACKER)
 	REP #PROC_FLAGS::ACCUM8
 	LDA a:battler::afflictions + STATUS_GROUP::PERSISTENT_EASYHEAL,X

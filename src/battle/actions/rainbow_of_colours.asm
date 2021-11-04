@@ -37,7 +37,7 @@ BTLACT_RAINBOW_OF_COLOURS: ;$C2C14E
 	STA a:battler::vram_sprite_index,X
 	LDA #$0001
 	LDX .LOWORD(CURRENT_ATTACKER)
-	STA a:battler::unknown13,X
+	STA a:battler::has_taken_turn,X
 	REP #PROC_FLAGS::ACCUM8
 	LDA #$0001
 	STA .LOWORD(UNKNOWN_7EAA92)

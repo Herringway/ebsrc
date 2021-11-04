@@ -189,7 +189,7 @@
 	current_target .byte ;10
 	the_flag .byte ;11
 	consciousness .byte ;12
-	unknown13 .byte ;13
+	has_taken_turn .byte ;13
 	ally_or_enemy .byte ;14
 	npc_id .byte ;15
 	row .byte ;16
