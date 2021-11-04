@@ -230,7 +230,7 @@
 
 .INCLUDE "battle/random_targetting.asm"
 
-.INCLUDE "unknown/C2/C26FDC.asm"
+.INCLUDE "battle/target_battler.asm"
 
 .INCLUDE "battle/is_char_targetted.asm"
 
