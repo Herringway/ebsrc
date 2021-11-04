@@ -172,7 +172,7 @@
 
 .INCLUDE "unknown/C2/C240A4.asm"
 
-.INCLUDE "unknown/C2/C2416F.asm"
+.INCLUDE "battle/remove_status_untargettable_targets.asm"
 
 .INCLUDE "battle/find_stealable_items.asm"
 
