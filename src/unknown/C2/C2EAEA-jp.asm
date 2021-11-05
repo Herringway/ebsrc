@@ -1,5 +1,5 @@
 
-;A = battler* battler
+;A = battle sprite id
 UNKNOWN_C2EAEA: ;$C2EAEA
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
 	RESERVE_STACK_SPACE 42
