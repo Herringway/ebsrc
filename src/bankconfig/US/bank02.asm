@@ -58,7 +58,7 @@
 
 .INCLUDE "unknown/C2/C20F58.asm"
 
-.INCLUDE "unknown/C2/C20F9A.asm"
+.INCLUDE "misc/reset_hppp_rolling.asm"
 
 .INCLUDE "unknown/C2/C21034.asm"
 

@@ -38,10 +38,10 @@
 	position_index .word ;61
 	unknown63 .word ;63
 	unknown65 .word ;65
-	unknown67 .word ;67
+	current_hp_fraction .word ;67
 	current_hp .word ;69
 	current_hp_target .word ;71
-	unknown73 .word ;73
+	current_pp_fraction .word ;73
 	current_pp .word ;75
 	current_pp_target .word ;77
 	hp_pp_window_options .word ;79

@@ -1,16 +1,13 @@
 
-UNKNOWN_C20F9A: ;$C20F9A
+RESET_HPPP_ROLLING: ;$C20F9A
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
 	RESERVE_STACK_SPACE_CLOBBER 16
 	LDA #$0000
 	STA $02
 	BRA @UNKNOWN4
 @UNKNOWN0:
-	LDA $02
-	CLC
-	ADC #.LOWORD(GAME_STATE)
-	TAX
-	LDA a:game_state::party_members,X
+	LDX $02
+	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
 	AND #$00FF
 	DEC
 	LDY #.SIZEOF(char_struct)
@@ -27,7 +24,7 @@ UNKNOWN_C20F9A: ;$C20F9A
 	LDA #$0001
 	STA a:char_struct::current_hp_target,Y
 @UNKNOWN1:
-	LDA a:.LOWORD(RAM)+66,Y
+	LDA a:char_struct::current_hp_fraction,Y
 	BEQ @UNKNOWN2
 	LDA a:char_struct::current_hp,Y
 	STA $0E
@@ -43,13 +40,13 @@ UNKNOWN_C20F9A: ;$C20F9A
 	BEQ @UNKNOWN2
 	STA a:.LOWORD(RAM),X
 @UNKNOWN2:
-	LDA a:.LOWORD(RAM)+72,Y
+	LDA a:char_struct::current_pp_fraction,Y
 	BEQ @UNKNOWN3
 	LDA a:char_struct::current_pp,Y
 	STA $0E
 	TYA
 	CLC
-	ADC #$004C
+	ADC #$004D
 	TAX
 	LDA a:.LOWORD(RAM),X
 	STA $04
