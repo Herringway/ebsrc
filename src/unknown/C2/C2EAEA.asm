@@ -36,7 +36,7 @@ UNKNOWN_C2EAEA: ;$C2EAEA
 	TAY
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$00E0
-	STA ($26),Y
+	STA ($26),Y ;e1f203_entry::unknown0
 	REP #PROC_FLAGS::ACCUM8
 	LOADPTR UNKNOWN_C3F8B1, $06
 	LDA $1E
@@ -54,7 +54,7 @@ UNKNOWN_C2EAEA: ;$C2EAEA
 	STA $0A
 	SEP #PROC_FLAGS::ACCUM8
 	LDA [$0A]
-	STA ($26),Y
+	STA ($26),Y ;e1f203_entry::unknown1
 	LDA #$0008
 	PHA
 	REP #PROC_FLAGS::ACCUM8
@@ -86,7 +86,7 @@ UNKNOWN_C2EAEA: ;$C2EAEA
 	INY
 	SEP #PROC_FLAGS::ACCUM8
 	PLA
-	STA ($26),Y
+	STA ($26),Y ;e1f203_entry::unknown2
 	REP #PROC_FLAGS::ACCUM8
 	LDA $1E
 	TAY
@@ -95,7 +95,7 @@ UNKNOWN_C2EAEA: ;$C2EAEA
 	INY
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$00F0
-	STA ($26),Y
+	STA ($26),Y ;;e1f203_entry::unknown2+1
 	REP #PROC_FLAGS::ACCUM8
 	LDA $1E
 	TAY
@@ -105,7 +105,7 @@ UNKNOWN_C2EAEA: ;$C2EAEA
 	INY
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0001
-	STA ($26),Y
+	STA ($26),Y ;e1f203_entry::unknown4
 	LDX $20
 	INX
 	STX $20
@@ -140,17 +140,17 @@ UNKNOWN_C2EAEA: ;$C2EAEA
 	STA $22
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$00E0
-	LDY #$0003
+	LDY #e1f203_entry::unknown3
 	STA ($26),Y
 	LDX $26
-	STZ a:.LOWORD(RAM)+8,X
+	STZ a:0 + (.SIZEOF(e1f203_entry) * 1) + e1f203_entry::unknown3,X ;not sure why the +0 is necessary here
 	JMP @UNKNOWN9
 @UNKNOWN5:
 	LDY #$0002
 	STY $24
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$00C0
-	STA ($26)
+	STA ($26) ;e1f203_entry::unknown0
 	JMP @UNKNOWN9
 @UNKNOWN6:
 	LDY #$0002
@@ -160,18 +160,18 @@ UNKNOWN_C2EAEA: ;$C2EAEA
 	STA $22
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$00C0
-	LDY #$0005
+	LDY #(.SIZEOF(e1f203_entry) * 1) + e1f203_entry::unknown0
 	STA ($26),Y
-	STA ($26)
+	STA ($26) ;e1f203_entry::unknown0
 	LDA #$00E0
-	LDY #$000D
+	LDY #(.SIZEOF(e1f203_entry) * 2) + e1f203_entry::unknown3
 	STA ($26),Y
-	LDY #$0003
+	LDY #(.SIZEOF(e1f203_entry) * 0) + e1f203_entry::unknown3
 	STA ($26),Y
 	LDA #$0000
-	LDY #$0012
+	LDY #(.SIZEOF(e1f203_entry) * 3) + e1f203_entry::unknown3
 	STA ($26),Y
-	LDY #$0008
+	LDY #(.SIZEOF(e1f203_entry) * 1) + e1f203_entry::unknown3
 	STA ($26),Y
 	JMP @UNKNOWN9
 @UNKNOWN7:
@@ -183,31 +183,31 @@ UNKNOWN_C2EAEA: ;$C2EAEA
 	STY $24
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$00C0
-	LDY #$000F
+	LDY #(.SIZEOF(e1f203_entry) * 3) + e1f203_entry::unknown0
 	STA ($26),Y
-	LDY #$000A
+	LDY #(.SIZEOF(e1f203_entry) * 2) + e1f203_entry::unknown0
 	STA ($26),Y
-	LDY #$0005
+	LDY #(.SIZEOF(e1f203_entry) * 1) + e1f203_entry::unknown0
 	STA ($26),Y
-	STA ($26)
-	LDY #$0017
+	STA ($26) ;(.SIZEOF(e1f203_entry) * 0) + e1f203_entry::unknown0
+	LDY #(.SIZEOF(e1f203_entry) * 4) + e1f203_entry::unknown3
 	STA ($26),Y
-	LDY #$0003
+	LDY #(.SIZEOF(e1f203_entry) * 0) + e1f203_entry::unknown3
 	STA ($26),Y
 	LDA #$00E0
-	LDY #$001C
+	LDY #(.SIZEOF(e1f203_entry) * 5) + e1f203_entry::unknown3
 	STA ($26),Y
-	LDY #$0008
+	LDY #(.SIZEOF(e1f203_entry) * 1) + e1f203_entry::unknown3
 	STA ($26),Y
 	LDA #$0000
-	LDY #$0021
+	LDY #(.SIZEOF(e1f203_entry) * 6) + e1f203_entry::unknown3
 	STA ($26),Y
-	LDY #$000D
+	LDY #(.SIZEOF(e1f203_entry) * 2) + e1f203_entry::unknown3
 	STA ($26),Y
 	LDA #$0020
-	LDY #$0026
+	LDY #(.SIZEOF(e1f203_entry) * 7) + e1f203_entry::unknown3
 	STA ($26),Y
-	LDY #$0012
+	LDY #(.SIZEOF(e1f203_entry) * 3) + e1f203_entry::unknown3
 	STA ($26),Y
 	JMP @UNKNOWN9
 @UNKNOWN8:
@@ -218,63 +218,63 @@ UNKNOWN_C2EAEA: ;$C2EAEA
 	STA $22
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$00A0
-	LDY #$000F
+	LDY #(.SIZEOF(e1f203_entry) * 3) + e1f203_entry::unknown0
 	STA ($26),Y
-	LDY #$000A
+	LDY #(.SIZEOF(e1f203_entry) * 2) + e1f203_entry::unknown0
 	STA ($26),Y
-	LDY #$0005
+	LDY #(.SIZEOF(e1f203_entry) * 1) + e1f203_entry::unknown0
 	STA ($26),Y
-	STA ($26)
+	STA ($26) ;(.SIZEOF(e1f203_entry) * 0) + e1f203_entry::unknown0
 	LDA #$00C0
-	LDY #$0023
+	LDY #(.SIZEOF(e1f203_entry) * 7) + e1f203_entry::unknown0
 	STA ($26),Y
-	LDY #$001E
+	LDY #(.SIZEOF(e1f203_entry) * 6) + e1f203_entry::unknown0
 	STA ($26),Y
-	LDY #$0019
+	LDY #(.SIZEOF(e1f203_entry) * 5) + e1f203_entry::unknown0
 	STA ($26),Y
-	LDY #$0014
+	LDY #(.SIZEOF(e1f203_entry) * 4) + e1f203_entry::unknown0
 	STA ($26),Y
 	LDX $26
-	STZ a:.LOWORD(RAM)+75,X
+	STZ a:0 + (.SIZEOF(e1f203_entry) * 15) + e1f203_entry::unknown0,X
 	LDX $26
-	STZ a:.LOWORD(RAM)+70,X
+	STZ a:0 + (.SIZEOF(e1f203_entry) * 14) + e1f203_entry::unknown0,X
 	LDX $26
-	STZ a:.LOWORD(RAM)+65,X
+	STZ a:0 + (.SIZEOF(e1f203_entry) * 13) + e1f203_entry::unknown0,X
 	LDX $26
-	STZ a:.LOWORD(RAM)+60,X
-	LDY #$003F
+	STZ a:0 + (.SIZEOF(e1f203_entry) * 12) + e1f203_entry::unknown0,X
+	LDY #(.SIZEOF(e1f203_entry) * 12) + e1f203_entry::unknown3
 	STA ($26),Y
-	LDY #$002B
+	LDY #(.SIZEOF(e1f203_entry) * 8) + e1f203_entry::unknown3
 	STA ($26),Y
-	LDY #$0017
+	LDY #(.SIZEOF(e1f203_entry) * 4) + e1f203_entry::unknown3
 	STA ($26),Y
-	LDY #$0003
+	LDY #(.SIZEOF(e1f203_entry) * 0) + e1f203_entry::unknown3
 	STA ($26),Y
 	LDA #$00E0
-	LDY #$0044
+	LDY #(.SIZEOF(e1f203_entry) * 13) + e1f203_entry::unknown3
 	STA ($26),Y
-	LDY #$0030
+	LDY #(.SIZEOF(e1f203_entry) * 9) + e1f203_entry::unknown3
 	STA ($26),Y
-	LDY #$001C
+	LDY #(.SIZEOF(e1f203_entry) * 5) + e1f203_entry::unknown3
 	STA ($26),Y
-	LDY #$0008
+	LDY #(.SIZEOF(e1f203_entry) * 1) + e1f203_entry::unknown3
 	STA ($26),Y
 	LDX $26
-	STZ a:.LOWORD(RAM)+73,X
+	STZ a:0 + (.SIZEOF(e1f203_entry) * 14) + e1f203_entry::unknown3,X
 	LDX $26
-	STZ a:.LOWORD(RAM)+53,X
+	STZ a:0 + (.SIZEOF(e1f203_entry) * 10) + e1f203_entry::unknown3,X
 	LDX $26
-	STZ a:.LOWORD(RAM)+33,X
+	STZ a:0 + (.SIZEOF(e1f203_entry) * 6) + e1f203_entry::unknown3,X
 	LDX $26
-	STZ a:.LOWORD(RAM)+13,X
+	STZ a:0 + (.SIZEOF(e1f203_entry) * 2) + e1f203_entry::unknown3,X
 	LDA #$0020
-	LDY #$004E
+	LDY #(.SIZEOF(e1f203_entry) * 15) + e1f203_entry::unknown3
 	STA ($26),Y
-	LDY #$003A
+	LDY #(.SIZEOF(e1f203_entry) * 11) + e1f203_entry::unknown3
 	STA ($26),Y
-	LDY #$0026
+	LDY #(.SIZEOF(e1f203_entry) * 7) + e1f203_entry::unknown3
 	STA ($26),Y
-	LDY #$0012
+	LDY #(.SIZEOF(e1f203_entry) * 3) + e1f203_entry::unknown3
 	STA ($26),Y
 @UNKNOWN9:
 	LDY $24
