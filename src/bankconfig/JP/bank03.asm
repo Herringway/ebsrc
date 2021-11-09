@@ -2072,7 +2072,7 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "data/unknown/C3F2B1.asm"
 
-.INCLUDE "unknown/EF/EF027D-jp.asm"
+.INCLUDE "unknown/EF/EF027D.asm"
 
 .INCLUDE "unknown/EF/EF02C4.asm"
 

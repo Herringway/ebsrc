@@ -18,7 +18,7 @@ UNKNOWN_EF027D: ;$EF027D
 	TAX
 	LDA .LOWORD(CHOSEN_FOUR_PTRS),X
 	TAX
-	LDA a:.LOWORD(RAM)+61,X
+	LDA a:char_struct::position_index,X
 	OPTIMIZED_MULT $04, .SIZEOF(player_position_buffer_entry)
 	CLC
 	ADC #.LOWORD(PLAYER_POSITION_BUFFER)
