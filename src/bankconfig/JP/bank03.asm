@@ -2012,7 +2012,7 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "data/unknown/C3E40E.asm"
 
-.INCLUDE "data/unknown/C3E416.asm"
+.INCLUDE "data/text/blinking_triangle_tiles.asm"
 
 .INCLUDE "data/unknown/C3E41C.asm"
 
