@@ -54,7 +54,7 @@
 
 .INCLUDE "system/enable_nmi_joypad.asm"
 
-.INCLUDE "unknown/C0/C08726-proto.asm"
+.INCLUDE "unknown/C0/C08726-jp.asm"
 
 .INCLUDE "unknown/C0/C08744.asm"
 

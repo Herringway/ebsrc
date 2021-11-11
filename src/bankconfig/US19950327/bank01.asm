@@ -57,7 +57,7 @@
 
 .INCLUDE "text/set_argument_memory.asm"
 
-.INCLUDE "text/get_text_x-proto.asm"
+.INCLUDE "text/get_text_x-jp.asm"
 
 .INCLUDE "text/get_text_y.asm"
 
@@ -67,7 +67,7 @@
 
 .INCLUDE "unknown/C1/C107AF.asm"
 
-.INCLUDE "battle/enemy_flashing_off-proto.asm"
+.INCLUDE "battle/enemy_flashing_off-jp.asm"
 
 .INCLUDE "battle/enemy_flashing_on-proto.asm"
 

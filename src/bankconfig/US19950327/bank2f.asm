@@ -137,7 +137,7 @@ NAME_INPUT_WINDOW_SELECTION_LAYOUT_5: ;$EFA6A7
 
 .INCLUDE "unknown/EF/EFE133.asm"
 
-.INCLUDE "unknown/EF/EFE175-proto.asm"
+.INCLUDE "unknown/EF/EFE175.asm"
 
 .INCLUDE "system/debug/load_kirby_sprite.asm"
 

@@ -137,7 +137,7 @@
 
 .INCLUDE "unknown/C1/C1134B.asm"
 
-.INCLUDE "unknown/C1/C11354-jp.asm"
+.INCLUDE "unknown/C1/C11354.asm"
 
 .INCLUDE "unknown/C3/C3E7E3-jp.asm"
 
