@@ -643,3 +643,9 @@
 	sfx_countdown .byte ;2
 	transformation_countdown .byte ;3
 .ENDSTRUCT
+
+.STRUCT display_text_state
+	textptr .dword ;0
+	unknown4 .word ;4
+	saved_text_attributes .byte .SIZEOF(window_text_attributes_copy) ;6
+.ENDSTRUCT
