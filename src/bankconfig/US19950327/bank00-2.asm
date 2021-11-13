@@ -494,9 +494,9 @@
 
 .INCLUDE "unknown/C0/C0A56E.asm"
 
-.INCLUDE "data/unknown/C0A60B.asm"
+.INCLUDE "data/sprite_direction_mapping_4_direction.asm"
 
-.INCLUDE "data/unknown/C0A623.asm"
+.INCLUDE "data/sprite_direction_mapping_8_direction.asm"
 
 .INCLUDE "system/math/rand_0_3.asm"
 
