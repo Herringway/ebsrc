@@ -5,13 +5,7 @@ GET_PSI_NAME: ;$C1C403
 	STA $12
 	CMP #$0001
 	BNE @NOT_ROCKIN
-	LDA #.LOWORD(GAME_STATE) + game_state::favourite_thing
-	STA $06
-	PHB
-	SEP #PROC_FLAGS::ACCUM8
-	PLA
-	STA $08
-	STZ $09
+	PROMOTENEARPTR .LOWORD(GAME_STATE) + game_state::favourite_thing, $06
 	BRA @UNKNOWN1
 @NOT_ROCKIN:
 	.A16

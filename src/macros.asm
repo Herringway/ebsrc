@@ -647,6 +647,16 @@
     MOVE_INT src + 4, dest + 4
 .ENDMACRO
 
+.MACRO PROMOTENEARPTR src, dest
+    LDA #src
+    STA dest
+    PHB
+    SEP #PROC_FLAGS::ACCUM8
+    PLA
+    STA dest+2
+    STZ dest+3
+.ENDMACRO
+
 
 .MACRO PUSH32 val
     LDA val + 2
