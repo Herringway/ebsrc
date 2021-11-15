@@ -32,6 +32,8 @@
 
 .INCLUDE "unknown/C0/C08518.asm"
 
+.INCLUDE "unknown/C0/C0851B.asm"
+
 .INCLUDE "unknown/C0/C0851C.asm"
 
 .INCLUDE "unknown/C0/C08522.asm"
