@@ -30,13 +30,13 @@
 
 .INCLUDE "system/process_sfx_queue.asm"
 
-.INCLUDE "unknown/C0/C08518.asm"
+.INCLUDE "system/execute_irq_callback.asm"
 
-.INCLUDE "unknown/C0/C0851B.asm"
+.INCLUDE "system/default_irq_callback.asm"
 
-.INCLUDE "unknown/C0/C0851C.asm"
+.INCLUDE "system/set_irq_callback.asm"
 
-.INCLUDE "unknown/C0/C08522.asm"
+.INCLUDE "system/reset_irq_callback.asm"
 
 .INCLUDE "unknown/C0/C08529.asm"
 
@@ -822,11 +822,11 @@
 
 .INCLUDE "unknown/C0/C0DB0F.asm"
 
-.INCLUDE "unknown/C0/C0DBE6.asm"
+.INCLUDE "overworld/schedule_overworld_task.asm"
 
 .INCLUDE "unknown/C0/C0DC38.asm"
 
-.INCLUDE "unknown/C0/C0DC4E.asm"
+.INCLUDE "overworld/process_overworld_tasks.asm"
 
 .INCLUDE "overworld/load_dad_phone.asm"
 
