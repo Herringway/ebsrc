@@ -535,11 +535,11 @@
 	width .word ;10
 .ENDSTRUCT
 
-.STRUCT e1f203_entry
-	unknown0 .byte ;0
-	unknown1 .word ;1
-	unknown3 .byte ;3
-	unknown4 .byte ;4
+.STRUCT spritemap
+	y_offset .byte ;0
+	tile .word ;1
+	x_offset .byte ;3
+	bits .byte ;4
 .ENDSTRUCT
 
 .STRUCT pathfinder

@@ -22,7 +22,7 @@ UNKNOWN_C08CD5: ;$C08CD5
 	PLB
 	BRA @UNKNOWN3
 @UNKNOWN1:
-	LDA a:e1f203_entry::unknown1,Y
+	LDA a:spritemap::tile,Y
 	TAY
 	BRA @UNKNOWN3
 @UNKNOWN2:
@@ -33,7 +33,7 @@ UNKNOWN_C08CD5: ;$C08CD5
 	INY
 @UNKNOWN3:
 	REP #PROC_FLAGS::ACCUM8
-	LDA a:e1f203_entry::unknown0,Y
+	LDA a:spritemap::y_offset,Y
 	AND #$00FF
 	CMP #$0080
 	BCC @UNKNOWN4
@@ -49,15 +49,15 @@ UNKNOWN_C08CD5: ;$C08CD5
 	BCS @UNKNOWN6
 	SEP #PROC_FLAGS::ACCUM8
 @UNKNOWN5:
-	LDA a:e1f203_entry::unknown4,Y
+	LDA a:spritemap::bits,Y
 	BPL @UNKNOWN2
 	BRA @UNKNOWN10
 @UNKNOWN6:
 	.A16
 	STA <UNKNOWN_7E009F + 0
-	LDA a:e1f203_entry::unknown1,Y
+	LDA a:spritemap::tile,Y
 	STA <oam_entry::starting_tile,X
-	LDA a:e1f203_entry::unknown3,Y
+	LDA a:spritemap::x_offset,Y
 	AND #$00FF
 	CMP #$0080
 	BCC @UNKNOWN7
@@ -74,7 +74,7 @@ UNKNOWN_C08CD5: ;$C08CD5
 @UNKNOWN8:
 	ROL
 	ROR <UNKNOWN_7E000A + 0
-	LDA a:e1f203_entry::unknown4,Y
+	LDA a:spritemap::bits,Y
 	ROR
 	ROR <UNKNOWN_7E000A + 0
 	BCC @UNKNOWN9
@@ -90,7 +90,7 @@ UNKNOWN_C08CD5: ;$C08CD5
 	INX
 	INX
 	INX
-	LDA a:e1f203_entry::unknown4,Y
+	LDA a:spritemap::bits,Y
 	BMI @UNKNOWN10
 	REP #PROC_FLAGS::ACCUM8
 	CPX <OAM_END_ADDR + 0

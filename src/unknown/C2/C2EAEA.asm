@@ -36,7 +36,7 @@ UNKNOWN_C2EAEA: ;$C2EAEA
 	TAY
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$00E0
-	STA ($26),Y ;e1f203_entry::unknown0
+	STA ($26),Y ;spritemap::y_offset
 	REP #PROC_FLAGS::ACCUM8
 	LOADPTR UNKNOWN_C3F8B1, $06
 	LDA $1E
@@ -54,7 +54,7 @@ UNKNOWN_C2EAEA: ;$C2EAEA
 	STA $0A
 	SEP #PROC_FLAGS::ACCUM8
 	LDA [$0A]
-	STA ($26),Y ;e1f203_entry::unknown1
+	STA ($26),Y ;spritemap::tile
 	LDA #$0008
 	PHA
 	REP #PROC_FLAGS::ACCUM8
@@ -86,7 +86,7 @@ UNKNOWN_C2EAEA: ;$C2EAEA
 	INY
 	SEP #PROC_FLAGS::ACCUM8
 	PLA
-	STA ($26),Y ;e1f203_entry::unknown2
+	STA ($26),Y ;spritemap::tile + 1
 	REP #PROC_FLAGS::ACCUM8
 	LDA $1E
 	TAY
@@ -95,7 +95,7 @@ UNKNOWN_C2EAEA: ;$C2EAEA
 	INY
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$00F0
-	STA ($26),Y ;;e1f203_entry::unknown2+1
+	STA ($26),Y ;;spritemap::x_offset
 	REP #PROC_FLAGS::ACCUM8
 	LDA $1E
 	TAY
@@ -105,7 +105,7 @@ UNKNOWN_C2EAEA: ;$C2EAEA
 	INY
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0001
-	STA ($26),Y ;e1f203_entry::unknown4
+	STA ($26),Y ;spritemap::bits
 	LDX $20
 	INX
 	STX $20
@@ -140,17 +140,17 @@ UNKNOWN_C2EAEA: ;$C2EAEA
 	STA $22
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$00E0
-	LDY #e1f203_entry::unknown3
+	LDY #spritemap::x_offset
 	STA ($26),Y
 	LDX $26
-	STZ a:0 + (.SIZEOF(e1f203_entry) * 1) + e1f203_entry::unknown3,X ;not sure why the +0 is necessary here
+	STZ a:0 + (.SIZEOF(spritemap) * 1) + spritemap::x_offset,X ;not sure why the +0 is necessary here
 	JMP @UNKNOWN9
 @UNKNOWN5:
 	LDY #$0002
 	STY $24
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$00C0
-	STA ($26) ;e1f203_entry::unknown0
+	STA ($26) ;spritemap::y_offset
 	JMP @UNKNOWN9
 @UNKNOWN6:
 	LDY #$0002
@@ -160,18 +160,18 @@ UNKNOWN_C2EAEA: ;$C2EAEA
 	STA $22
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$00C0
-	LDY #(.SIZEOF(e1f203_entry) * 1) + e1f203_entry::unknown0
+	LDY #(.SIZEOF(spritemap) * 1) + spritemap::y_offset
 	STA ($26),Y
-	STA ($26) ;e1f203_entry::unknown0
+	STA ($26) ;spritemap::y_offset
 	LDA #$00E0
-	LDY #(.SIZEOF(e1f203_entry) * 2) + e1f203_entry::unknown3
+	LDY #(.SIZEOF(spritemap) * 2) + spritemap::x_offset
 	STA ($26),Y
-	LDY #(.SIZEOF(e1f203_entry) * 0) + e1f203_entry::unknown3
+	LDY #(.SIZEOF(spritemap) * 0) + spritemap::x_offset
 	STA ($26),Y
 	LDA #$0000
-	LDY #(.SIZEOF(e1f203_entry) * 3) + e1f203_entry::unknown3
+	LDY #(.SIZEOF(spritemap) * 3) + spritemap::x_offset
 	STA ($26),Y
-	LDY #(.SIZEOF(e1f203_entry) * 1) + e1f203_entry::unknown3
+	LDY #(.SIZEOF(spritemap) * 1) + spritemap::x_offset
 	STA ($26),Y
 	JMP @UNKNOWN9
 @UNKNOWN7:
@@ -183,31 +183,31 @@ UNKNOWN_C2EAEA: ;$C2EAEA
 	STY $24
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$00C0
-	LDY #(.SIZEOF(e1f203_entry) * 3) + e1f203_entry::unknown0
+	LDY #(.SIZEOF(spritemap) * 3) + spritemap::y_offset
 	STA ($26),Y
-	LDY #(.SIZEOF(e1f203_entry) * 2) + e1f203_entry::unknown0
+	LDY #(.SIZEOF(spritemap) * 2) + spritemap::y_offset
 	STA ($26),Y
-	LDY #(.SIZEOF(e1f203_entry) * 1) + e1f203_entry::unknown0
+	LDY #(.SIZEOF(spritemap) * 1) + spritemap::y_offset
 	STA ($26),Y
-	STA ($26) ;(.SIZEOF(e1f203_entry) * 0) + e1f203_entry::unknown0
-	LDY #(.SIZEOF(e1f203_entry) * 4) + e1f203_entry::unknown3
+	STA ($26) ;(.SIZEOF(spritemap) * 0) + spritemap::y_offset
+	LDY #(.SIZEOF(spritemap) * 4) + spritemap::x_offset
 	STA ($26),Y
-	LDY #(.SIZEOF(e1f203_entry) * 0) + e1f203_entry::unknown3
+	LDY #(.SIZEOF(spritemap) * 0) + spritemap::x_offset
 	STA ($26),Y
 	LDA #$00E0
-	LDY #(.SIZEOF(e1f203_entry) * 5) + e1f203_entry::unknown3
+	LDY #(.SIZEOF(spritemap) * 5) + spritemap::x_offset
 	STA ($26),Y
-	LDY #(.SIZEOF(e1f203_entry) * 1) + e1f203_entry::unknown3
+	LDY #(.SIZEOF(spritemap) * 1) + spritemap::x_offset
 	STA ($26),Y
 	LDA #$0000
-	LDY #(.SIZEOF(e1f203_entry) * 6) + e1f203_entry::unknown3
+	LDY #(.SIZEOF(spritemap) * 6) + spritemap::x_offset
 	STA ($26),Y
-	LDY #(.SIZEOF(e1f203_entry) * 2) + e1f203_entry::unknown3
+	LDY #(.SIZEOF(spritemap) * 2) + spritemap::x_offset
 	STA ($26),Y
 	LDA #$0020
-	LDY #(.SIZEOF(e1f203_entry) * 7) + e1f203_entry::unknown3
+	LDY #(.SIZEOF(spritemap) * 7) + spritemap::x_offset
 	STA ($26),Y
-	LDY #(.SIZEOF(e1f203_entry) * 3) + e1f203_entry::unknown3
+	LDY #(.SIZEOF(spritemap) * 3) + spritemap::x_offset
 	STA ($26),Y
 	JMP @UNKNOWN9
 @UNKNOWN8:
@@ -218,63 +218,63 @@ UNKNOWN_C2EAEA: ;$C2EAEA
 	STA $22
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$00A0
-	LDY #(.SIZEOF(e1f203_entry) * 3) + e1f203_entry::unknown0
+	LDY #(.SIZEOF(spritemap) * 3) + spritemap::y_offset
 	STA ($26),Y
-	LDY #(.SIZEOF(e1f203_entry) * 2) + e1f203_entry::unknown0
+	LDY #(.SIZEOF(spritemap) * 2) + spritemap::y_offset
 	STA ($26),Y
-	LDY #(.SIZEOF(e1f203_entry) * 1) + e1f203_entry::unknown0
+	LDY #(.SIZEOF(spritemap) * 1) + spritemap::y_offset
 	STA ($26),Y
-	STA ($26) ;(.SIZEOF(e1f203_entry) * 0) + e1f203_entry::unknown0
+	STA ($26) ;(.SIZEOF(spritemap) * 0) + spritemap::y_offset
 	LDA #$00C0
-	LDY #(.SIZEOF(e1f203_entry) * 7) + e1f203_entry::unknown0
+	LDY #(.SIZEOF(spritemap) * 7) + spritemap::y_offset
 	STA ($26),Y
-	LDY #(.SIZEOF(e1f203_entry) * 6) + e1f203_entry::unknown0
+	LDY #(.SIZEOF(spritemap) * 6) + spritemap::y_offset
 	STA ($26),Y
-	LDY #(.SIZEOF(e1f203_entry) * 5) + e1f203_entry::unknown0
+	LDY #(.SIZEOF(spritemap) * 5) + spritemap::y_offset
 	STA ($26),Y
-	LDY #(.SIZEOF(e1f203_entry) * 4) + e1f203_entry::unknown0
+	LDY #(.SIZEOF(spritemap) * 4) + spritemap::y_offset
 	STA ($26),Y
 	LDX $26
-	STZ a:0 + (.SIZEOF(e1f203_entry) * 15) + e1f203_entry::unknown0,X
+	STZ a:0 + (.SIZEOF(spritemap) * 15) + spritemap::y_offset,X
 	LDX $26
-	STZ a:0 + (.SIZEOF(e1f203_entry) * 14) + e1f203_entry::unknown0,X
+	STZ a:0 + (.SIZEOF(spritemap) * 14) + spritemap::y_offset,X
 	LDX $26
-	STZ a:0 + (.SIZEOF(e1f203_entry) * 13) + e1f203_entry::unknown0,X
+	STZ a:0 + (.SIZEOF(spritemap) * 13) + spritemap::y_offset,X
 	LDX $26
-	STZ a:0 + (.SIZEOF(e1f203_entry) * 12) + e1f203_entry::unknown0,X
-	LDY #(.SIZEOF(e1f203_entry) * 12) + e1f203_entry::unknown3
+	STZ a:0 + (.SIZEOF(spritemap) * 12) + spritemap::y_offset,X
+	LDY #(.SIZEOF(spritemap) * 12) + spritemap::x_offset
 	STA ($26),Y
-	LDY #(.SIZEOF(e1f203_entry) * 8) + e1f203_entry::unknown3
+	LDY #(.SIZEOF(spritemap) * 8) + spritemap::x_offset
 	STA ($26),Y
-	LDY #(.SIZEOF(e1f203_entry) * 4) + e1f203_entry::unknown3
+	LDY #(.SIZEOF(spritemap) * 4) + spritemap::x_offset
 	STA ($26),Y
-	LDY #(.SIZEOF(e1f203_entry) * 0) + e1f203_entry::unknown3
+	LDY #(.SIZEOF(spritemap) * 0) + spritemap::x_offset
 	STA ($26),Y
 	LDA #$00E0
-	LDY #(.SIZEOF(e1f203_entry) * 13) + e1f203_entry::unknown3
+	LDY #(.SIZEOF(spritemap) * 13) + spritemap::x_offset
 	STA ($26),Y
-	LDY #(.SIZEOF(e1f203_entry) * 9) + e1f203_entry::unknown3
+	LDY #(.SIZEOF(spritemap) * 9) + spritemap::x_offset
 	STA ($26),Y
-	LDY #(.SIZEOF(e1f203_entry) * 5) + e1f203_entry::unknown3
+	LDY #(.SIZEOF(spritemap) * 5) + spritemap::x_offset
 	STA ($26),Y
-	LDY #(.SIZEOF(e1f203_entry) * 1) + e1f203_entry::unknown3
+	LDY #(.SIZEOF(spritemap) * 1) + spritemap::x_offset
 	STA ($26),Y
 	LDX $26
-	STZ a:0 + (.SIZEOF(e1f203_entry) * 14) + e1f203_entry::unknown3,X
+	STZ a:0 + (.SIZEOF(spritemap) * 14) + spritemap::x_offset,X
 	LDX $26
-	STZ a:0 + (.SIZEOF(e1f203_entry) * 10) + e1f203_entry::unknown3,X
+	STZ a:0 + (.SIZEOF(spritemap) * 10) + spritemap::x_offset,X
 	LDX $26
-	STZ a:0 + (.SIZEOF(e1f203_entry) * 6) + e1f203_entry::unknown3,X
+	STZ a:0 + (.SIZEOF(spritemap) * 6) + spritemap::x_offset,X
 	LDX $26
-	STZ a:0 + (.SIZEOF(e1f203_entry) * 2) + e1f203_entry::unknown3,X
+	STZ a:0 + (.SIZEOF(spritemap) * 2) + spritemap::x_offset,X
 	LDA #$0020
-	LDY #(.SIZEOF(e1f203_entry) * 15) + e1f203_entry::unknown3
+	LDY #(.SIZEOF(spritemap) * 15) + spritemap::x_offset
 	STA ($26),Y
-	LDY #(.SIZEOF(e1f203_entry) * 11) + e1f203_entry::unknown3
+	LDY #(.SIZEOF(spritemap) * 11) + spritemap::x_offset
 	STA ($26),Y
-	LDY #(.SIZEOF(e1f203_entry) * 7) + e1f203_entry::unknown3
+	LDY #(.SIZEOF(spritemap) * 7) + spritemap::x_offset
 	STA ($26),Y
-	LDY #(.SIZEOF(e1f203_entry) * 3) + e1f203_entry::unknown3
+	LDY #(.SIZEOF(spritemap) * 3) + spritemap::x_offset
 	STA ($26),Y
 @UNKNOWN9:
 	LDY $24
