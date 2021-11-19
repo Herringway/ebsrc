@@ -475,16 +475,15 @@
 	checksum_complement .word ;30
 .ENDSTRUCT
 
-.STRUCT unknown_4DD6
-	unknown0 .byte 4 ;0
-	unknown4 .byte 4 ;4
-	unknown8 .byte 4 ;8
-	unknown12 .byte 4 ;12
-	unknown16 .byte 4 ;16
-	unknown20 .byte 4 ;20
-	unknown24 .byte 4 ;24
-	unknown28 .byte 356 ;28
-	unknown384 .byte 64 ;384
+.STRUCT movement_speeds
+	up .dword ;0
+	up_right .dword ;4
+	right .dword ;8
+	down_right .dword ;12
+	down .dword ;16
+	down_left .dword ;20
+	left .dword ;24
+	up_left .dword ;28
 .ENDSTRUCT
 
 .STRUCT queued_interaction

@@ -901,12 +901,10 @@ CHOSEN_FOUR_PTRS: ;$7E4DC8
 .ORG $7E515A
 UNKNOWN_7E4DD4: ;$7E4DD4
 	.RES 2
-; base of something...
 UNKNOWN_7E4DD6: ;$7E4DD6
-	.RES .SIZEOF(unknown_4DD6)
-; base of something...
+	.RES .SIZEOF(movement_speeds) * 14
 UNKNOWN_7E4F96: ;$7E4F96
-	.RES .SIZEOF(unknown_4DD6)
+	.RES .SIZEOF(movement_speeds) * 14
 PLAYER_POSITION_BUFFER: ;$7E5156
 	.RES .SIZEOF(player_position_buffer_entry) * 256
 MISC_DEBUG_FLAGS: ;$7E5D56
