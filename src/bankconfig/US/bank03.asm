@@ -2004,6 +2004,20 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "data/unknown/C3E1D8.asm"
 
+.INCLUDE "data/unknown/C3E1E0.asm"
+
+.INCLUDE "data/unknown/C3E200.asm"
+
+.INCLUDE "data/unknown/C3E208.asm"
+
+.INCLUDE "data/unknown/C3E210.asm"
+
+.INCLUDE "data/unknown/C3E218.asm"
+
+.INCLUDE "data/unknown/C3E220.asm"
+
+.INCLUDE "data/unknown/C3E228.asm"
+
 .INCLUDE "data/unknown/C3E230.asm"
 
 .INCLUDE "data/unknown/C3E240.asm"
