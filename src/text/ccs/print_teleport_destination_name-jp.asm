@@ -22,7 +22,7 @@ CC_1C_06: ;$C146DE
 	LDA $08
 	STA $10
 	LDA #.SIZEOF(psi_teleport_destination::name)
-	JSR DISPLAY_CONFIG_MENU_TITLE
+	JSR PRINT_STRING
 	LDA #NULL
 	PLD
 	RTS

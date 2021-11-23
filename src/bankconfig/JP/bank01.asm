@@ -123,7 +123,7 @@
 
 .INCLUDE "unknown/C1/C10EE3.asm"
 
-.INCLUDE "text/display_config_menu_title-jp.asm"
+.INCLUDE "text/print_string-jp.asm"
 
 .INCLUDE "unknown/C1/C10F40-jp.asm"
 

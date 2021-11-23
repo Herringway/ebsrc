@@ -99,7 +99,7 @@
 
 .INCLUDE "text/print_letter_redirect.asm"
 
-.INCLUDE "text/display_config_menu_title_redirect.asm"
+.INCLUDE "text/print_string_redirect.asm"
 
 .INCLUDE "unknown/C4/C437B8_redirect.asm"
 
@@ -117,7 +117,7 @@
 
 .INCLUDE "unknown/C1/C10EE3.asm"
 
-.INCLUDE "text/display_config_menu_title.asm"
+.INCLUDE "text/print_string.asm"
 
 .INCLUDE "unknown/C1/C10F40.asm"
 
