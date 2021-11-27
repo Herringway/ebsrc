@@ -1612,30 +1612,15 @@ UNKNOWN_7EAEF0: ;$7EAEF0
 	.RES 2
 UNKNOWN_7EAEF2: ;$7EAEF2
 	.RES 2
-; UNKNOWN_7EB37C is used as an index for this.
 UNKNOWN_7EAEF4: ;$7EAEF4
 	.RES 2 * 4
 UNKNOWN_7EAEFC: ;$7EAEFC
-
-;Unknown... seems to be 64 6 byte entries, but I have no idea where the starting points are or what this data is
-.ORG $7EAEFE
-UNKNOWN_7EAEFE: ;$7EAEFE
-	.RES 2
-UNKNOWN_7EAF00: ;$7EAF00
-	.RES 2
-UNKNOWN_7EAF02: ;$7EAF02
-	.RES 384
-UNKNOWN_7EB082: ;$7EB082
-	.RES 380
-UNKNOWN_7EB1FE: ;$7EB1FE
-	.RES 2
-UNKNOWN_7EB200: ;$7EB200
-	.RES 2
-UNKNOWN_7EB202: ;$7EB202
-	.RES 384
-
-.ORG $7EB37C
-;Used for 7EAEF4 table, apparently
+	.RES 6 * 16 * 4
+UNKNOWN_7EB07C: ;$7EB07C
+	.RES 6 * 16 * 4
+UNKNOWN_7EB1FC: ;$7EB1FC
+	.RES 6 * 16 * 4
+;Used as an index for 7EAEF4 table, apparently
 UNKNOWN_7EB37C: ;$7EB37C
 	.RES 2
 UNKNOWN_7EB37E: ;$7EB37E
