@@ -189,7 +189,7 @@
 
 .INCLUDE "unknown/C1/C12D17.asm"
 
-.INCLUDE "unknown/C1/C12DD5.asm"
+.INCLUDE "text/window_tick.asm"
 
 .INCLUDE "unknown/C1/C12E42.asm"
 

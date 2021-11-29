@@ -2038,11 +2038,11 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "unknown/C3/C3E450.asm"
 
-.INCLUDE "misc/clear_9622.asm"
+.INCLUDE "text/clear_instant_printing.asm"
 
-.INCLUDE "misc/set_9622.asm"
+.INCLUDE "text/set_instant_printing.asm"
 
-.INCLUDE "unknown/C3/C3E4E0.asm"
+.INCLUDE "text/window_tick_without_instant_printing.asm"
 
 .INCLUDE "unknown/C3/C3E4EF.asm"
 
