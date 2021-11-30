@@ -16,7 +16,7 @@
 
 .INCLUDE "unknown/C2/C202AC-jp.asm"
 
-.INCLUDE "text/read_name.asm"
+.INCLUDE "text/set_window_title.asm"
 
 .INCLUDE "unknown/C2/C2038B.asm"
 
