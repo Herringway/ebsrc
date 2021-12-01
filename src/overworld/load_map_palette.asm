@@ -67,8 +67,7 @@ LOAD_MAP_PAL: ;$C007B6
 	ADC #photographer_config_entry::credits_map_palettes_offset
 	TAX
 	LDA f:PHOTOGRAPHER_CFG_TABLE,X
-	STA $06
-	STZ $08
+	STORE_INT1632 $06
 	CLC
 	ADD_INT_ASSIGN $06, $0A
 	MOVE_INT $06, $0E

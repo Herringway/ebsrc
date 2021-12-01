@@ -617,12 +617,20 @@
 
 .MACRO MOVE_INT816 src, dest
     LDA src
+    STORE_INT816 dest
+.ENDMACRO
+
+.MACRO STORE_INT816 dest
     STA dest
     STZ dest+1
 .ENDMACRO
 
 .MACRO MOVE_INT832 src, dest
     LDA src
+    STORE_INT832 dest
+.ENDMACRO
+
+.MACRO STORE_INT832 dest
     STA dest
     STZ dest+1
     STZ dest+2
@@ -631,12 +639,32 @@
 
 .MACRO MOVE_INT1632 src, dest
     LDA src
+    STORE_INT1632 dest
+.ENDMACRO
+
+.MACRO STORE_INT1632 dest
     STA dest
     STZ dest+2
 .ENDMACRO
 
 .MACRO MOVE_INT1632S src, dest
     MOVE_INT1632 src, dest
+    BPL :+
+    DEC dest+2
+    :
+.ENDMACRO
+
+.MACRO STORE_INT1632S dest
+    STORE_INT1632 dest
+    BPL :+
+    DEC dest+2
+    :
+.ENDMACRO
+
+.MACRO SIGN_EXTENDA1632 dest
+    CMP #$0000
+    STA dest
+    STZ dest+2
     BPL :+
     DEC dest+2
     :
@@ -649,12 +677,15 @@
 
 .MACRO PROMOTENEARPTR src, dest
     LDA #src
+    PROMOTENEARPTRA dest
+.ENDMACRO
+
+.MACRO PROMOTENEARPTRA dest
     STA dest
     PHB
     SEP #PROC_FLAGS::ACCUM8
     PLA
-    STA dest+2
-    STZ dest+3
+    STORE_INT816 dest+2
 .ENDMACRO
 
 
