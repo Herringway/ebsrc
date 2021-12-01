@@ -336,8 +336,7 @@
 
 .INCLUDE "text/ccs/pause.asm"
 
-;$C14EBF
-.INCLUDE "text/ccs/display_shop_menu-proto.asm"
+.INCLUDE "text/ccs/display_shop_menu.asm"
 
 .INCLUDE "text/ccs/get_item_price.asm"
 

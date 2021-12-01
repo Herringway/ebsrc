@@ -345,7 +345,7 @@
 
 .INCLUDE "text/ccs/pause.asm"
 
-.INCLUDE "text/ccs/display_shop_menu-jp.asm"
+.INCLUDE "text/ccs/display_shop_menu.asm"
 
 .INCLUDE "text/ccs/get_item_price.asm"
 
