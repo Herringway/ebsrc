@@ -11,7 +11,7 @@
 
 .INCLUDE "text/get_blinking_prompt.asm"
 
-.INCLUDE "unknown/C1/C10048.asm"
+.INCLUDE "text/set_text_sound_mode.asm"
 
 .INCLUDE "unknown/C3/C3E450-jp.asm"
 
