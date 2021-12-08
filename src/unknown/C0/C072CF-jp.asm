@@ -18,12 +18,7 @@ UNKNOWN_C072CF: ;$C072CF
 	STA $18
 	LDA $1A
 	DEC
-	STA $04
-	ASL
-	ADC $04
-	ASL
-	ADC $04
-	ASL
+	OPTIMIZED_MULT $04, .SIZEOF(unknown_5E3C)
 	CLC
 	ADC #.LOWORD(UNKNOWN_7E5E3C)
 	TAY
@@ -74,18 +69,18 @@ UNKNOWN_C072CF: ;$C072CF
 @UNKNOWN1:
 	TXA
 	LDY $14
-	STA a:.LOWORD(RAM),Y
+	STA a:unknown_5E3C::unknown0,Y
 	LDA $10
-	STA a:.LOWORD(RAM)+2,Y
+	STA a:unknown_5E3C::unknown2,Y
 	LDA $02
-	STA a:.LOWORD(RAM)+6,Y
+	STA a:unknown_5E3C::unknown6,Y
 	LDA $0E
-	STA a:.LOWORD(RAM)+4,Y
+	STA a:unknown_5E3C::unknown4,Y
 	LDA $04
-	STA a:.LOWORD(RAM)+8,Y
+	STA a:unknown_5E3C::unknown8,Y
 	TYA
 	CLC
-	ADC #$000A
+	ADC #unknown_5E3C::unknown10
 	TAY
 	MOVE_INT_YPTRDEST $0A, a:.LOWORD(RAM)
 	LDA $1A

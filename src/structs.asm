@@ -595,6 +595,15 @@
 	unknown10 .byte ;10
 .ENDSTRUCT
 
+.STRUCT unknown_5E3C
+	unknown0 .word ;0
+	unknown2 .word ;2
+	unknown4 .word ;4
+	unknown6 .word ;6
+	unknown8 .word ;8
+	unknown10 .dword ;10
+.ENDSTRUCT
+
 .STRUCT screen_transition_config
 	duration .byte ;0
 	animation_id .byte ;1
