@@ -1,5 +1,5 @@
 
-; u89D4_entry* UNKNOWN_C113D1(char* label, char* selectedtext)
+; menu_option* UNKNOWN_C113D1(char* label, char* selectedtext)
 UNKNOWN_C113D1: ;$C113D1
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
 	RESERVE_STACK_SPACE_CLOBBER 18
@@ -8,7 +8,7 @@ UNKNOWN_C113D1: ;$C113D1
 	LDA .LOWORD(CURRENT_FOCUS_WINDOW)
 	CMP #$FFFF
 	BNE @UNKNOWN0
-	LDA #.LOWORD(UNKNOWN_7E89D4) + (.SIZEOF(u89D4_entry) * (NUM_89D4_ENTRIES - 1))
+	LDA #.LOWORD(MENU_OPTIONS) + (.SIZEOF(menu_option) * (NUM_MENU_OPTIONS - 1))
 	JMP @UNKNOWN5
 @UNKNOWN0:
 	LDA .LOWORD(CURRENT_FOCUS_WINDOW)
@@ -24,12 +24,12 @@ UNKNOWN_C113D1: ;$C113D1
 	STA $10
 	CMP #$FFFF
 	BNE @UNKNOWN1
-	LDA #.LOWORD(UNKNOWN_7E89D4) + (.SIZEOF(u89D4_entry) * (NUM_89D4_ENTRIES - 1))
+	LDA #.LOWORD(MENU_OPTIONS) + (.SIZEOF(menu_option) * (NUM_MENU_OPTIONS - 1))
 	JMP @UNKNOWN5
 @UNKNOWN1:
-	OPTIMIZED_MULT $04, .SIZEOF(u89D4_entry)
+	OPTIMIZED_MULT $04, .SIZEOF(menu_option)
 	CLC
-	ADC #.LOWORD(UNKNOWN_7E89D4)
+	ADC #.LOWORD(MENU_OPTIONS)
 	TAY
 	STY $0E
 	LDA $02
@@ -40,7 +40,7 @@ UNKNOWN_C113D1: ;$C113D1
 	CMP #$FFFF
 	BNE @UNKNOWN2
 	LDA #$FFFF
-	STA a:u89D4_entry::unknown4,Y
+	STA a:menu_option::previous,Y
 	LDA $10
 	STA a:.LOWORD(RAM),X
 	BRA @UNKNOWN3
@@ -50,34 +50,34 @@ UNKNOWN_C113D1: ;$C113D1
 	ADC #window_stats::option_count
 	TAX
 	LDA a:.LOWORD(RAM),X
-	STA a:u89D4_entry::unknown4,Y
+	STA a:menu_option::previous,Y
 	LDA a:.LOWORD(RAM),X
-	OPTIMIZED_MULT $04, .SIZEOF(u89D4_entry)
+	OPTIMIZED_MULT $04, .SIZEOF(menu_option)
 	TAX
 	LDA $10
-	STA .LOWORD(UNKNOWN_7E89D4) + u89D4_entry::unknown2,X
+	STA .LOWORD(MENU_OPTIONS) + menu_option::next,X
 @UNKNOWN3:
 	LDX $02
 	STA a:window_stats::option_count,X
 	LDA #$FFFF
 	LDY $0E
-	STA a:u89D4_entry::unknown2,Y
+	STA a:menu_option::next,Y
 	LDA #$0001
-	STA a:u89D4_entry::unknown0,Y
+	STA a:menu_option::unknown0,Y
 	TYA
 	CLC
-	ADC #u89D4_entry::unknown15
+	ADC #menu_option::script
 	TAY
 	MOVE_INT_YPTRDEST $0A, a:0
 	LDA #$0001
 	LDY $0E
-	STA a:u89D4_entry::unknown6,Y
+	STA a:menu_option::page,Y
 	SEP #PROC_FLAGS::ACCUM8
-	STA a:u89D4_entry::unknown14,Y
+	STA a:menu_option::sound_effect,Y
 	REP #PROC_FLAGS::ACCUM8
 	TYA
 	CLC
-	ADC #u89D4_entry::unknown19
+	ADC #menu_option::label
 	TAX
 @UNKNOWN4:
 	SEP #PROC_FLAGS::ACCUM8

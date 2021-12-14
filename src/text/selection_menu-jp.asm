@@ -28,9 +28,9 @@ SELECTION_MENU: ;$C1196A
 	STA $20
 	LDY #window_stats::current_option
 	LDA ($24),Y
-	OPTIMIZED_MULT $04, .SIZEOF(u89D4_entry)
+	OPTIMIZED_MULT $04, .SIZEOF(menu_option)
 	CLC
-	ADC #.LOWORD(UNKNOWN_7E89D4)
+	ADC #.LOWORD(MENU_OPTIONS)
 	STA $02
 	BRA @UNKNOWN3
 @UNKNOWN2:
@@ -38,26 +38,26 @@ SELECTION_MENU: ;$C1196A
 	STX $22
 	LDX $02
 	LDA a:.LOWORD(RAM)+2,X
-	OPTIMIZED_MULT $04, .SIZEOF(u89D4_entry)
+	OPTIMIZED_MULT $04, .SIZEOF(menu_option)
 	CLC
-	ADC #.LOWORD(UNKNOWN_7E89D4)
+	ADC #.LOWORD(MENU_OPTIONS)
 	STA $02
 @UNKNOWN3:
 	LDX $22
 	BNE @UNKNOWN2
 	JSR SET_INSTANT_PRINTING
 	LDX $02
-	LDA a:u89D4_entry::unknown10,X
+	LDA a:menu_option::text_y,X
 	TAX
 	STX $1E
 	LDX $02
-	LDA a:u89D4_entry::unknown8,X
+	LDA a:menu_option::text_x,X
 	INC
 	LDX $1E
 	JSR UNKNOWN_C438A5
 	LDA $02
 	CLC
-	ADC #u89D4_entry::unknown19
+	ADC #menu_option::label
 	PROMOTENEARPTRA $06
 	REP #PROC_FLAGS::ACCUM8
 	MOVE_INT $06, $0E
@@ -68,15 +68,15 @@ SELECTION_MENU: ;$C1196A
 	STZ $20
 	LDY #window_stats::current_option
 	LDA ($24),Y
-	OPTIMIZED_MULT $04, .SIZEOF(u89D4_entry)
+	OPTIMIZED_MULT $04, .SIZEOF(menu_option)
 	CLC
-	ADC #.LOWORD(UNKNOWN_7E89D4)
+	ADC #.LOWORD(MENU_OPTIONS)
 	STA $02
 @UNKNOWN5:
 	STZ $22
 	LDA $02
 	CLC
-	ADC #u89D4_entry::unknown15
+	ADC #menu_option::script
 	TAY
 	STY $1C
 	MOVE_INT_CONSTANT NULL, $0A
@@ -106,7 +106,7 @@ SELECTION_MENU: ;$C1196A
 @UNKNOWN8:
 	BEQ @UNKNOWN11
 	LDX $02
-	LDA a:u89D4_entry::unknown0,X
+	LDA a:menu_option::unknown0,X
 	CMP #$0001
 	BNE @UNKNOWN9
 	LDA $20
@@ -114,7 +114,7 @@ SELECTION_MENU: ;$C1196A
 	BRA @UNKNOWN10
 @UNKNOWN9:
 	LDX $02
-	LDA a:u89D4_entry::unknown12,X
+	LDA a:menu_option::userdata,X
 @UNKNOWN10:
 	STA $1E
 	LDA $24
@@ -132,11 +132,11 @@ SELECTION_MENU: ;$C1196A
 @UNKNOWN11:
 	JSR CLEAR_INSTANT_PRINTING
 	LDX $02
-	LDA a:u89D4_entry::unknown10,X
+	LDA a:menu_option::text_y,X
 	TAX
 	STX $1E
 	LDX $02
-	LDA a:u89D4_entry::unknown8,X
+	LDA a:menu_option::text_x,X
 	LDX $1E
 	JSR UNKNOWN_C438A5
 	LDA #$0001
@@ -217,7 +217,7 @@ SELECTION_MENU: ;$C1196A
 	AND #PAD::UP
 	BEQ @UNKNOWN15
 	LDX $02
-	LDA a:u89D4_entry::unknown8,X
+	LDA a:menu_option::text_x,X
 	STA $16
 	LDA #$0000
 	STA $0E
@@ -231,7 +231,7 @@ SELECTION_MENU: ;$C1196A
 	STA $14
 	LDY #$FFFF
 	LDX $02
-	LDA a:u89D4_entry::unknown10,X
+	LDA a:menu_option::text_y,X
 	TAX
 	LDA $16
 	JSL MOVE_CURSOR
@@ -242,7 +242,7 @@ SELECTION_MENU: ;$C1196A
 	AND #PAD::LEFT
 	BEQ @UNKNOWN16
 	LDX $02
-	LDA a:u89D4_entry::unknown10,X
+	LDA a:menu_option::text_y,X
 	STA $1E
 	LDA #$FFFF
 	STA $0E
@@ -257,7 +257,7 @@ SELECTION_MENU: ;$C1196A
 	TAX
 	STX $1E
 	LDX $02
-	LDA a:u89D4_entry::unknown8,X
+	LDA a:menu_option::text_x,X
 	LDX $1E
 	JSL MOVE_CURSOR
 	STA $1E
@@ -267,7 +267,7 @@ SELECTION_MENU: ;$C1196A
 	AND #PAD::DOWN
 	BEQ @UNKNOWN17
 	LDX $02
-	LDA a:u89D4_entry::unknown8,X
+	LDA a:menu_option::text_x,X
 	STA $16
 	LDA #$0000
 	STA $0E
@@ -279,7 +279,7 @@ SELECTION_MENU: ;$C1196A
 	STA $14
 	LDY #$0001
 	LDX $02
-	LDA a:u89D4_entry::unknown10,X
+	LDA a:menu_option::text_y,X
 	TAX
 	LDA $16
 	JSL MOVE_CURSOR
@@ -290,7 +290,7 @@ SELECTION_MENU: ;$C1196A
 	AND #PAD::RIGHT
 	BEQ @UNKNOWN18
 	LDX $02
-	LDA a:u89D4_entry::unknown10,X
+	LDA a:menu_option::text_y,X
 	STA $18
 	LDA #$0001
 	STA $0E
@@ -304,7 +304,7 @@ SELECTION_MENU: ;$C1196A
 	TAX
 	STX $16
 	LDX $02
-	LDA a:u89D4_entry::unknown8,X
+	LDA a:menu_option::text_x,X
 	LDX $16
 	JSL MOVE_CURSOR
 	STA $1E
@@ -319,11 +319,11 @@ SELECTION_MENU: ;$C1196A
 	STA $10
 	LDY #$FFFF
 	LDX $02
-	LDA a:u89D4_entry::unknown10,X
+	LDA a:menu_option::text_y,X
 	TAX
 	STX $1E
 	LDX $02
-	LDA a:u89D4_entry::unknown8,X
+	LDA a:menu_option::text_x,X
 	LDX $1E
 	JSL UNKNOWN_C20B65
 	STA $1E
@@ -338,11 +338,11 @@ SELECTION_MENU: ;$C1196A
 	STA $10
 	LDY #$0000
 	LDX $02
-	LDA a:u89D4_entry::unknown10,X
+	LDA a:menu_option::text_y,X
 	TAX
 	STX $1E
 	LDX $02
-	LDA a:u89D4_entry::unknown8,X
+	LDA a:menu_option::text_x,X
 	LDX $1E
 	JSL UNKNOWN_C20B65
 	STA $1E
@@ -357,11 +357,11 @@ SELECTION_MENU: ;$C1196A
 	STA $10
 	LDY #$0001
 	LDX $02
-	LDA a:u89D4_entry::unknown10,X
+	LDA a:menu_option::text_y,X
 	TAX
 	STX $1E
 	LDX $02
-	LDA a:u89D4_entry::unknown8,X
+	LDA a:menu_option::text_x,X
 	LDX $1E
 	JSL UNKNOWN_C20B65
 	STA $1E
@@ -376,11 +376,11 @@ SELECTION_MENU: ;$C1196A
 	STA $10
 	LDY #$0000
 	LDX $02
-	LDA a:u89D4_entry::unknown10,X
+	LDA a:menu_option::text_y,X
 	TAX
 	STX $16
 	LDX $02
-	LDA a:u89D4_entry::unknown8,X
+	LDA a:menu_option::text_x,X
 	LDX $16
 	JSL UNKNOWN_C20B65
 	STA $1E
@@ -391,18 +391,18 @@ SELECTION_MENU: ;$C1196A
 	BEQL @UNKNOWN33
 	JSR SET_INSTANT_PRINTING
 	LDX $02
-	LDA a:u89D4_entry::unknown6,X
+	LDA a:menu_option::page,X
 	BEQ @UNKNOWN30
 	LDX $02
-	LDA a:u89D4_entry::unknown14,X
+	LDA a:menu_option::sound_effect,X
 	AND #$00FF
 	JSL PLAY_SOUND
 	LDX $02
-	LDA a:u89D4_entry::unknown10,X
+	LDA a:menu_option::text_y,X
 	TAX
 	STX $1E
 	LDX $02
-	LDA a:u89D4_entry::unknown8,X
+	LDA a:menu_option::text_x,X
 	LDX $1E
 	JSR UNKNOWN_C438A5
 	LDA #$002F
@@ -411,7 +411,7 @@ SELECTION_MENU: ;$C1196A
 	JSR a:.LOWORD(UNKNOWN_C10FEA)
 	LDA $02
 	CLC
-	ADC #u89D4_entry::unknown19
+	ADC #menu_option::label
 	PROMOTENEARPTRA $06
 	REP #PROC_FLAGS::ACCUM8
 	MOVE_INT $06, $0E
@@ -424,7 +424,7 @@ SELECTION_MENU: ;$C1196A
 	LDY #window_stats::selected_option
 	STA ($24),Y
 	LDX $02
-	LDA a:u89D4_entry::unknown0,X
+	LDA a:menu_option::unknown0,X
 	CMP #$0001
 	BNE @UNKNOWN29
 	LDA $20
@@ -432,7 +432,7 @@ SELECTION_MENU: ;$C1196A
 	JMP @UNKNOWN44
 @UNKNOWN29:
 	LDX $02
-	LDA a:u89D4_entry::unknown12,X
+	LDA a:menu_option::userdata,X
 	JMP @UNKNOWN44
 @UNKNOWN30:
 	LDA #SFX::CURSOR2
@@ -446,11 +446,11 @@ SELECTION_MENU: ;$C1196A
 	LDA a:.LOWORD(RAM),X
 	STA $22
 	LDX $02
-	LDA a:u89D4_entry::unknown4,X
-	OPTIMIZED_MULT $04, .SIZEOF(u89D4_entry)
+	LDA a:menu_option::previous,X
+	OPTIMIZED_MULT $04, .SIZEOF(menu_option)
 	TAX
 	LDA $22
-	CMP .LOWORD(UNKNOWN_7E89D4) + u89D4_entry::unknown6,X
+	CMP .LOWORD(MENU_OPTIONS) + menu_option::page,X
 	BNE @UNKNOWN31
 	LDA #$0001
 	LDX $1A
@@ -503,9 +503,9 @@ SELECTION_MENU: ;$C1196A
 	STY $18
 	LDY #window_stats::current_option
 	LDA ($24),Y
-	OPTIMIZED_MULT $04, .SIZEOF(u89D4_entry)
+	OPTIMIZED_MULT $04, .SIZEOF(menu_option)
 	CLC
-	ADC #.LOWORD(UNKNOWN_7E89D4)
+	ADC #.LOWORD(MENU_OPTIONS)
 	STA $22
 	LDA $1E
 	AND #$00FF
@@ -520,22 +520,22 @@ SELECTION_MENU: ;$C1196A
 	LDY $18
 	INY
 	STY $18
-	LDY #u89D4_entry::unknown2
+	LDY #menu_option::next
 	LDA ($22),Y
-	OPTIMIZED_MULT $04, .SIZEOF(u89D4_entry)
+	OPTIMIZED_MULT $04, .SIZEOF(menu_option)
 	CLC
-	ADC #.LOWORD(UNKNOWN_7E89D4)
+	ADC #.LOWORD(MENU_OPTIONS)
 	STA $22
 @UNKNOWN42:
-	LDY #u89D4_entry::unknown8
+	LDY #menu_option::text_x
 	TXA
 	CMP ($22),Y
 	BNE @UNKNOWN41
-	LDY #u89D4_entry::unknown10
+	LDY #menu_option::text_y
 	LDA $1E
 	CMP ($22),Y
 	BNE @UNKNOWN41
-	LDY #u89D4_entry::unknown6
+	LDY #menu_option::page
 	LDA ($22),Y
 	STA $04
 	LDY #window_stats::menu_page_number
@@ -546,11 +546,11 @@ SELECTION_MENU: ;$C1196A
 	BNE @UNKNOWN41
 @UNKNOWN43:
 	LDX $02
-	LDA a:u89D4_entry::unknown10,X
+	LDA a:menu_option::text_y,X
 	TAX
 	STX $1E
 	LDX $02
-	LDA a:u89D4_entry::unknown8,X
+	LDA a:menu_option::text_x,X
 	LDX $1E
 	JSR UNKNOWN_C438A5
 	LDA #$002F

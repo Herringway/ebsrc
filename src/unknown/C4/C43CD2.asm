@@ -1,5 +1,5 @@
 
-;void UNKNOWN_C43CD2(u89D4_entry* menuEntry, unknown2, unknown2)
+;void UNKNOWN_C43CD2(menu_option* menuEntry, unknown2, unknown2)
 UNKNOWN_C43CD2: ;$C43CD2
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
 	RESERVE_STACK_SPACE 17
@@ -10,7 +10,7 @@ UNKNOWN_C43CD2: ;$C43CD2
 	TYA
 	JSL REDIRECT_C438A5
 	LDX $04
-	LDA a:u89D4_entry::unknown44,X
+	LDA a:menu_option::pixel_align,X
 	AND #$00FF
 	BEQ @UNKNOWN0
 	AND #$00FF

@@ -16,21 +16,21 @@ UNKNOWN_C3E7E3: ;$C3E7E3
 	LDA a:window_stats::current_option,Y
 	CMP #$FFFF
 	BEQ @UNKNOWN2
-	LDY #.SIZEOF(u89D4_entry)
+	LDY #.SIZEOF(menu_option)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(UNKNOWN_7E89D4)
+	ADC #.LOWORD(MENU_OPTIONS)
 	TAX
 @UNKNOWN0:
 	LDA #$0000
-	STA a:u89D4_entry::unknown0,X
-	LDA a:u89D4_entry::unknown2,X
+	STA a:menu_option::unknown0,X
+	LDA a:menu_option::next,X
 	CMP #$FFFF
 	BEQ @UNKNOWN1
-	LDY #.SIZEOF(u89D4_entry)
+	LDY #.SIZEOF(menu_option)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(UNKNOWN_7E89D4)
+	ADC #.LOWORD(MENU_OPTIONS)
 	TAX
 	BRA @UNKNOWN0
 @UNKNOWN1:

@@ -17,23 +17,23 @@ UNKNOWN_C11887: ;$C11887
 	LDA $0E
 	STA a:window_stats::selected_option,Y
 	LDA a:window_stats::current_option,Y
-	OPTIMIZED_MULT $04, .SIZEOF(u89D4_entry)
+	OPTIMIZED_MULT $04, .SIZEOF(menu_option)
 	CLC
-	ADC #.LOWORD(UNKNOWN_7E89D4)
+	ADC #.LOWORD(MENU_OPTIONS)
 	TAX
 	BRA @UNKNOWN1
 @UNKNOWN0:
 	DEC
 	STA $0E
-	LDA a:u89D4_entry::unknown2,X
-	OPTIMIZED_MULT $04, .SIZEOF(u89D4_entry)
+	LDA a:menu_option::next,X
+	OPTIMIZED_MULT $04, .SIZEOF(menu_option)
 	CLC
-	ADC #.LOWORD(UNKNOWN_7E89D4)
+	ADC #.LOWORD(MENU_OPTIONS)
 	TAX
 @UNKNOWN1:
 	LDA $0E
 	BNE @UNKNOWN0
-	LDA a:u89D4_entry::unknown6,X
+	LDA a:menu_option::page,X
 	STA a:window_stats::menu_page_number,Y
 @UNKNOWN2:
 	JSR a:.LOWORD(PRINT_MENU_ITEMS)

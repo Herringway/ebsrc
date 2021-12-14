@@ -13,9 +13,9 @@ UNKNOWN_C114B1: ;$C114B1
 	TAX
 	LDY $16
 	TYA
-	STA a:u89D4_entry::unknown8,X
+	STA a:menu_option::text_x,X
 	LDA $02
-	STA a:u89D4_entry::unknown10,X
+	STA a:menu_option::text_y,X
 	TXA
 	PLD
 	RTS

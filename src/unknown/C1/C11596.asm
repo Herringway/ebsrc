@@ -19,7 +19,7 @@ UNKNOWN_C11596: ;$C11596
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
 	LDA $00
-	STA a:u89D4_entry::unknown14,X
+	STA a:menu_option::sound_effect,X
 	REP #PROC_FLAGS::ACCUM8
 	TXA
 	PLD

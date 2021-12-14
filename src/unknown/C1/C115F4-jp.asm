@@ -12,9 +12,9 @@ UNKNOWN_C115F4: ;$C115F4
 	TAX
 	LDY $16
 	TYA
-	STA a:u89D4_entry::unknown12,X
+	STA a:menu_option::userdata,X
 	LDA #$0002
-	STA a:u89D4_entry::unknown0,X
+	STA a:menu_option::unknown0,X
 	TXA
 	PLD
 	RTS

@@ -284,20 +284,19 @@
 	.ENDUNION
 .ENDSTRUCT
 
-.STRUCT u89D4_entry
+.STRUCT menu_option
 	unknown0 .word ;0
-	unknown2 .word ;2
-	unknown4 .word ;4
-	unknown6 .word ;6
-	unknown8 .word ;8
-	unknown10 .word ;10
-	unknown12 .word ;12
-	unknown14 .byte ;14 - seems to be a sound effect id
-	unknown15 .byte ;15
-	unknown16 .byte 3 ;16
-	unknown19 .byte 25 ;19
+	next .word ;2
+	previous .word ;4
+	page .word ;6
+	text_x .word ;8
+	text_y .word ;10
+	userdata .word ;12
+	sound_effect .byte ;14
+	script .dword ;15
+	label .byte 25 ;19
 .IFDEF USA
-	unknown44 .byte ;44
+	pixel_align .byte ;44
 .ENDIF
 .ENDSTRUCT
 

@@ -15,7 +15,7 @@ UNKNOWN_C114B1: ;$C114B1
 	JSR a:.LOWORD(UNKNOWN_C113D1)
 	STA $16
 	CLC
-	ADC #u89D4_entry::unknown44
+	ADC #menu_option::pixel_align
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0000
@@ -41,11 +41,11 @@ UNKNOWN_C114B1: ;$C114B1
 	LDA $16
 	TAX
 	TYA
-	STA a:u89D4_entry::unknown8,X
+	STA a:menu_option::text_x,X
 	LDA $16
 	TAX
 	LDA $02
-	STA a:u89D4_entry::unknown10,X
+	STA a:menu_option::text_y,X
 	LDA $16
 	PLD
 	RTS

@@ -1,15 +1,15 @@
 
-;void UNKNOWN_C43DDB(u89D4_entry* menuEntry)
+;void UNKNOWN_C43DDB(menu_option* menuEntry)
 UNKNOWN_C43DDB: ;$C43DDB
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
 	RESERVE_STACK_SPACE 18
 	STA $02
 	CLC
-	ADC #u89D4_entry::unknown8
+	ADC #menu_option::text_x
 	STA $04
 	LDA $02
 	CLC
-	ADC #u89D4_entry::unknown10
+	ADC #menu_option::text_y
 	TAY
 	STY $10
 	LDA a:.LOWORD(RAM),Y
@@ -23,7 +23,7 @@ UNKNOWN_C43DDB: ;$C43DDB
 	JSL UNKNOWN_C43F77
 	JSL UNKNOWN_C43CAA
 	LDX $02
-	LDA a:u89D4_entry::unknown44,X
+	LDA a:menu_option::pixel_align,X
 	AND #$00FF
 	BEQ @UNKNOWN0
 	LDY $10
