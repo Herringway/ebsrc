@@ -45,9 +45,9 @@
 
 .INCLUDE "unknown/C0/C00BDC.asm"
 
-.INCLUDE "unknown/C0/C00CF3.asm"
+.INCLUDE "overworld/load_collision_row.asm"
 
-.INCLUDE "unknown/C0/C00D7E.asm"
+.INCLUDE "overworld/load_collision_column.asm"
 
 .INCLUDE "unknown/C0/C00E16.asm"
 
