@@ -16,13 +16,11 @@ UNKNOWN_C00434: ;$C00434
 	BRA @UNKNOWN4
 @UNKNOWN0:
 	CMP $02
-	BCC @UNKNOWN2 ;channel1 < channel 2
-	BEQ @UNKNOWN2 ;channel1 == channel 2 (this will never happen)
+	BLTEQ @UNKNOWN2 ;channel1 <= channel 2
 	SEC
 	SBC $02
 	CMP #$0006
-	BCC @UNKNOWN1 ;channel1 - channel2 < 6
-	BEQ @UNKNOWN1 ;channel1 - channel2 == 6
+	BLTEQ @UNKNOWN1 ;channel1 - channel2 <= 6
 	LDA $0E
 	SEC
 	SBC #$0006
@@ -36,8 +34,7 @@ UNKNOWN_C00434: ;$C00434
 	SEC
 	SBC $04
 	CMP #$0006
-	BCC @UNKNOWN3 ;channel2 - channel1 < 6
-	BEQ @UNKNOWN3 ;channel2 - channel1 == 6
+	BLTEQ @UNKNOWN3 ;channel2 - channel1 <= 6
 	LDA $0E
 	CLC
 	ADC #$0006

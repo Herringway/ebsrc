@@ -544,6 +544,17 @@
     :
 .ENDMACRO
 
+.MACRO BLTEQ dest
+    BCC dest
+    BEQ dest
+.ENDMACRO
+
+.MACRO BGT dest
+    BEQ :+
+    BCS dest
+    :
+.ENDMACRO
+
 .MACRO BEQL dest
     BNE :+
     JMP dest
