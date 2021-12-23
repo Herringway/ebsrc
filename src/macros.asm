@@ -563,7 +563,7 @@
     :
 .ENDMACRO
 
-.MACRO BCSL dest
+.MACRO BGTL dest
     BEQ :+
     BCC :+
     JMP dest
