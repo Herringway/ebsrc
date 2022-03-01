@@ -378,7 +378,7 @@
 
 .INCLUDE "data/unknown/C20958.asm"
 
-.INCLUDE "data/unknown/C43915.asm"
+.INCLUDE "data/text/locked_tiles.asm"
 
 .INCLUDE "unknown/C4/C43B15.asm"
 
@@ -430,7 +430,7 @@
 
 .INCLUDE "data/unknown/C44AD7.asm"
 
-.INCLUDE "unknown/C4/C44AF7.asm"
+.INCLUDE "text/free_tile.asm"
 
 .INCLUDE "unknown/C4/C44B3A.asm"
 
@@ -442,7 +442,7 @@
 
 .INCLUDE "unknown/C4/C44E44.asm"
 
-.INCLUDE "unknown/C4/C44E4D.asm"
+.INCLUDE "text/free_tile_safe.asm"
 
 .INCLUDE "unknown/C4/C44E61.asm" ;C44EA9
 
