@@ -8,7 +8,7 @@ GENERATE_BATTLEBG_FRAME: ;$C2C92D
 	LDA ($1B)
 	AND #$00FF
 	STA $19
-	LDY #$0002
+	LDY #loaded_bg_data::freeze_palette_scrolling
 	LDA ($1B),Y
 	AND #$00FF
 	BNEL @TARGET_BG_LAYER_SELECTION_COMPLETE
@@ -547,7 +547,7 @@ GENERATE_BATTLEBG_FRAME: ;$C2C92D
 	BNEL @DISTORTION_DMA_DONE
 	LDA $1B
 	CLC
-	ADC #$0065
+	ADC #loaded_bg_data::current_distortion_style_index
 	TAX
 	STX $0E
 	SEP #PROC_FLAGS::ACCUM8
@@ -560,7 +560,7 @@ GENERATE_BATTLEBG_FRAME: ;$C2C92D
 	CLC
 	ADC $1B
 	TAX
-	LDA a:.LOWORD(RAM)+97,X
+	LDA a:loaded_bg_data::distortion_styles,X
 	AND #$00FF
 	STA $10
 	BNE @UNKNOWN37

@@ -416,7 +416,7 @@ LOAD_BATTLE_BG: ;$C2D121
 	JSL UNKNOWN_C2CFE5
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0001
-	STA .LOWORD(LOADED_BG_DATA_LAYER2) + loaded_bg_data::unknown2
+	STA .LOWORD(LOADED_BG_DATA_LAYER2) + loaded_bg_data::freeze_palette_scrolling
 	LDA #$0002
 	LDX $1E
 	STA a:.LOWORD(RAM),X
