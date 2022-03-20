@@ -273,9 +273,7 @@ NAME_INPUT_WINDOW_SELECTION_LAYOUT_5: ;$EFA6A7
 
 .INCLUDE "data/unknown/EFEB3D.asm"
 
-.INCLUDE "data/unknown/EFEB5F.asm"
-
-DEBUG_MENU_FONT: ;$EFEB70
+DEBUG_MENU_FONT: ;$EFEB5F
 	BINARY "fonts/debug.gfx"
 
 .INCLUDE "data/unknown/EFEF70.asm"

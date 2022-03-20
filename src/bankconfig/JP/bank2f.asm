@@ -319,8 +319,6 @@ AUDIO_PACK_7: ;$EF614B
 
 .INCLUDE "data/unknown/EFEB3D.asm"
 
-.INCLUDE "data/unknown/EFEB5F.asm"
-
 DEBUG_MENU_FONT: ;$EFEB70
 	BINARY "fonts/debug.gfx"
 

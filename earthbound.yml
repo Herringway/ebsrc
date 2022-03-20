@@ -14087,8 +14087,8 @@ dumpEntries:
   compressed: false
 - subdir: fonts
   name: debug
-  offset: 0x2FEB70
-  size: 1024
+  offset: 0x2FEB5F
+  size: 1041
   extension: gfx
   compressed: false
 - subdir: ''
