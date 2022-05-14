@@ -49,13 +49,13 @@ CHOOSE_TARGET: ;$C24477
 	BNE @UNKNOWN5
 	LDX $02
 	SEP #PROC_FLAGS::ACCUM8
-	STZ a:battler::unknown09,X
+	STZ a:battler::action_targetting,X
 	BRA @UNKNOWN8
 @UNKNOWN5:
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0010
 	LDX $02
-	STA a:battler::unknown09,X
+	STA a:battler::action_targetting,X
 	BRA @UNKNOWN8
 @UNKNOWN6:
 	.A16
@@ -67,12 +67,12 @@ CHOOSE_TARGET: ;$C24477
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0010
 	LDX $02
-	STA a:battler::unknown09,X
+	STA a:battler::action_targetting,X
 	BRA @UNKNOWN8
 @UNKNOWN7:
 	LDX $02
 	SEP #PROC_FLAGS::ACCUM8
-	STZ a:battler::unknown09,X
+	STZ a:battler::action_targetting,X
 @UNKNOWN8:
 	REP #PROC_FLAGS::ACCUM8
 	LOADPTR BATTLE_ACTION_TABLE, $06
@@ -104,7 +104,7 @@ CHOOSE_TARGET: ;$C24477
 @UNKNOWN11:
 	LDA $02
 	CLC
-	ADC #battler::unknown09
+	ADC #battler::action_targetting
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
 	LDA a:.LOWORD(RAM),X
@@ -140,7 +140,7 @@ CHOOSE_TARGET: ;$C24477
 	.A16
 	LDA $02
 	CLC
-	ADC #battler::unknown09
+	ADC #battler::action_targetting
 	TAY
 	SEP #PROC_FLAGS::ACCUM8
 	LDA a:.LOWORD(RAM),Y
@@ -225,7 +225,7 @@ CHOOSE_TARGET: ;$C24477
 @UNKNOWN22:
 	LDA $02
 	CLC
-	ADC #battler::unknown09
+	ADC #battler::action_targetting
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
 	LDA a:.LOWORD(RAM),X
@@ -270,7 +270,7 @@ CHOOSE_TARGET: ;$C24477
 	.A16
 	LDA $02
 	CLC
-	ADC #battler::unknown09
+	ADC #battler::action_targetting
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
 	LDA a:.LOWORD(RAM),X

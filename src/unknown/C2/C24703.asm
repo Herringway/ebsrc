@@ -5,7 +5,7 @@ UNKNOWN_C24703: ;$C24703
 	TAX
 	STX $0E
 	MOVE_INT_CONSTANT 0, .LOWORD(BATTLER_TARGET_FLAGS)
-	LDA a:battler::unknown09,X
+	LDA a:battler::action_targetting,X
 	AND #$00FF
 	CMP #$0001
 	BEQ @UNKNOWN2

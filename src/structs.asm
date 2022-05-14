@@ -185,7 +185,7 @@
 	action_order_var .byte ;6
 	action_item_slot .byte ;7
 	current_action_argument .byte ;8
-	unknown09 .byte ;9
+	action_targetting .byte ;9
 	current_target .byte ;10
 	the_flag .byte ;11
 	consciousness .byte ;12
