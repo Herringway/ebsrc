@@ -43,7 +43,7 @@ BTLACT_SWITCH_WEAPONS: ;$C1DE43
 	SBC $02
 	STA $04
 	LDX .LOWORD(CURRENT_ATTACKER)
-	LDA a:battler::unknown07,X
+	LDA a:battler::action_item_slot,X
 	AND #$00FF
 	TAX
 	LDA $1C

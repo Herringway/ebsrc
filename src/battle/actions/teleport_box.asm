@@ -35,7 +35,7 @@ BTLACT_TELEPORT_BOX: ;$C2AB71
 	BEQ @TELEPORT_BOX_FAILURE
 @UNKNOWN1:
 	LDX .LOWORD(CURRENT_ATTACKER)
-	LDA a:battler::unknown07,X
+	LDA a:battler::action_item_slot,X
 	AND #$00FF
 	TAX
 	STX $12

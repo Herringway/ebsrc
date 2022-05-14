@@ -53,7 +53,7 @@ BTLACT_SWITCH_ARMOR: ;$C1E00F
 	SBC $02
 	STA $14
 	LDX .LOWORD(CURRENT_ATTACKER)
-	LDA a:battler::unknown07,X
+	LDA a:battler::action_item_slot,X
 	AND #$00FF
 	TAX
 	STX $12
