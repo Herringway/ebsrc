@@ -17,9 +17,9 @@ UNKNOWN_C07213: ;$C07213
 	AND #$00FF
 	BEQL @UNKNOWN2
 	LDA $02
-	OPTIMIZED_MULT $04, .SIZEOF(unknown_5E3C)
+	OPTIMIZED_MULT $04, .SIZEOF(active_hotspot)
 	CLC
-	ADC #.LOWORD(UNKNOWN_7E5E3C)
+	ADC #.LOWORD(ACTIVE_HOTSPOTS)
 	TAX
 	LOADPTR MAP_HOTSPOTS, $06
 	LDA a:.LOWORD(RAM)+game_state::unknownC8 + 2,Y
@@ -32,31 +32,31 @@ UNKNOWN_C07213: ;$C07213
 	STA $06
 	LDA $0E
 	AND #$00FF
-	STA a:unknown_5E3C::unknown0,X
+	STA a:active_hotspot::mode,X
 	MOVE_INT $06, $0A
 	LDA [$0A]
 	ASL
 	ASL
 	ASL
-	STA a:unknown_5E3C::unknown2,X
+	STA a:active_hotspot::x1,X
 	LDY #$0004
 	LDA [$06],Y
 	ASL
 	ASL
 	ASL
-	STA a:unknown_5E3C::unknown6,X
+	STA a:active_hotspot::x2,X
 	LDY #$0002
 	LDA [$06],Y
 	ASL
 	ASL
 	ASL
-	STA a:unknown_5E3C::unknown4,X
+	STA a:active_hotspot::y1,X
 	LDY #$0006
 	LDA [$06],Y
 	ASL
 	ASL
 	ASL
-	STA a:unknown_5E3C::unknown8,X
+	STA a:active_hotspot::y2,X
 	LDA $02
 	ASL
 	ASL
@@ -68,7 +68,7 @@ UNKNOWN_C07213: ;$C07213
 	MOVE_INT_YPTRSRC a:.LOWORD(RAM), $06
 	TXA
 	CLC
-	ADC #unknown_5E3C::unknown10
+	ADC #active_hotspot::pointer
 	TAY
 	MOVE_INT_YPTRDEST $06, a:.LOWORD(RAM)
 @UNKNOWN2:

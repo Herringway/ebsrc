@@ -18,9 +18,9 @@ UNKNOWN_C072CF: ;$C072CF
 	STA $18
 	LDA $1A
 	DEC
-	OPTIMIZED_MULT $04, .SIZEOF(unknown_5E3C)
+	OPTIMIZED_MULT $04, .SIZEOF(active_hotspot)
 	CLC
-	ADC #.LOWORD(UNKNOWN_7E5E3C)
+	ADC #.LOWORD(ACTIVE_HOTSPOTS)
 	TAY
 	STY $14
 	LDA .LOWORD(GAME_STATE)+game_state::leader_x_coord
@@ -67,18 +67,18 @@ UNKNOWN_C072CF: ;$C072CF
 @UNKNOWN1:
 	TXA
 	LDY $14
-	STA a:unknown_5E3C::unknown0,Y
+	STA a:active_hotspot::mode,Y
 	LDA $10
-	STA a:unknown_5E3C::unknown2,Y
+	STA a:active_hotspot::x1,Y
 	LDA $02
-	STA a:unknown_5E3C::unknown6,Y
+	STA a:active_hotspot::x2,Y
 	LDA $0E
-	STA a:unknown_5E3C::unknown4,Y
+	STA a:active_hotspot::y1,Y
 	LDA $04
-	STA a:unknown_5E3C::unknown8,Y
+	STA a:active_hotspot::y2,Y
 	TYA
 	CLC
-	ADC #unknown_5E3C::unknown10
+	ADC #active_hotspot::pointer
 	TAY
 	MOVE_INT_YPTRDEST $0A, a:.LOWORD(RAM)
 	LDA $1A

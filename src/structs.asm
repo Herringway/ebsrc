@@ -594,13 +594,13 @@
 	unknown10 .byte ;10
 .ENDSTRUCT
 
-.STRUCT unknown_5E3C
-	unknown0 .word ;0
-	unknown2 .word ;2
-	unknown4 .word ;4
-	unknown6 .word ;6
-	unknown8 .word ;8
-	unknown10 .dword ;10
+.STRUCT active_hotspot
+	mode .word ;0
+	x1 .word ;2
+	y1 .word ;4
+	x2 .word ;6
+	y2 .word ;8
+	pointer .dword ;10
 .ENDSTRUCT
 
 .STRUCT screen_transition_config

@@ -6,12 +6,12 @@ UNKNOWN_C071E5: ;$C071E5
 	DEX
 	STX $0E
 	TXA
-	OPTIMIZED_MULT $04, .SIZEOF(unknown_5E3C)
+	OPTIMIZED_MULT $04, .SIZEOF(active_hotspot)
 	CLC
-	ADC #.LOWORD(UNKNOWN_7E5E3C)
+	ADC #.LOWORD(ACTIVE_HOTSPOTS)
 	TAX
 	LDA #$0000
-	STA a:unknown_5E3C::unknown0,X
+	STA a:active_hotspot::mode,X
 	LDX $0E
 	SEP #PROC_FLAGS::ACCUM8
 	STZ .LOWORD(GAME_STATE) + game_state::unknownC8,X

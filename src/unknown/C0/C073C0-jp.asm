@@ -10,11 +10,11 @@ UNKNOWN_C073C0: ;$C073C0
 	LDA .LOWORD(TELEPORT_DESTINATION)
 	BNEL @UNKNOWN6
 	LDA $04
-	OPTIMIZED_MULT $04, .SIZEOF(unknown_5E3C)
+	OPTIMIZED_MULT $04, .SIZEOF(active_hotspot)
 	CLC
-	ADC #.LOWORD(UNKNOWN_7E5E3C)
+	ADC #.LOWORD(ACTIVE_HOTSPOTS)
 	TAY
-	LDA a:unknown_5E3C::unknown0,Y
+	LDA a:active_hotspot::mode,Y
 	STA $12
 	LDX .LOWORD(GAME_STATE)+game_state::leader_x_coord
 	LDA .LOWORD(GAME_STATE)+game_state::leader_y_coord
@@ -23,37 +23,37 @@ UNKNOWN_C073C0: ;$C073C0
 	CMP #$0001
 	BNE @UNKNOWN4
 	TXA
-	CMP a:unknown_5E3C::unknown2,Y
+	CMP a:active_hotspot::x1,Y
 	BCC @UNKNOWN5
 	TXA
-	CMP a:unknown_5E3C::unknown6,Y
+	CMP a:active_hotspot::x2,Y
 	BGT @UNKNOWN5
 	LDA $02
-	CMP a:unknown_5E3C::unknown4,Y
+	CMP a:active_hotspot::y1,Y
 	BCC @UNKNOWN5
 	LDA $02
-	CMP a:unknown_5E3C::unknown8,Y
+	CMP a:active_hotspot::y2,Y
 	BGT @UNKNOWN5
 	BRA @UNKNOWN6
 @UNKNOWN4:
 	TXA
-	CMP a:unknown_5E3C::unknown2,Y
+	CMP a:active_hotspot::x1,Y
 	BLTEQ @UNKNOWN6
 	TXA
-	CMP a:unknown_5E3C::unknown6,Y
+	CMP a:active_hotspot::x2,Y
 	BCS @UNKNOWN6
 	LDA $02
-	CMP a:unknown_5E3C::unknown4,Y
+	CMP a:active_hotspot::y1,Y
 	BLTEQ @UNKNOWN6
 	LDA $02
-	CMP a:unknown_5E3C::unknown8,Y
+	CMP a:active_hotspot::y2,Y
 	BCS @UNKNOWN6
 @UNKNOWN5:
 	LDA #$0000
-	STA a:unknown_5E3C::unknown0,Y
+	STA a:active_hotspot::mode,Y
 	TYA
 	CLC
-	ADC #unknown_5E3C::unknown10
+	ADC #active_hotspot::pointer
 	TAY
 	MOVE_INT_YPTRSRC a:.LOWORD(RAM), $06
 	MOVE_INT $06, $0E
