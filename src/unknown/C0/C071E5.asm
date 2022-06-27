@@ -14,7 +14,7 @@ UNKNOWN_C071E5: ;$C071E5
 	STA a:active_hotspot::mode,X
 	LDX $0E
 	SEP #PROC_FLAGS::ACCUM8
-	STZ .LOWORD(GAME_STATE) + game_state::unknownC8,X
+	STZ .LOWORD(GAME_STATE) + game_state::active_hotspot_modes,X
 	REP #PROC_FLAGS::ACCUM8
 	PLD
 	RTL

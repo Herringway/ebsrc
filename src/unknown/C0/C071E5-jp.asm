@@ -18,7 +18,7 @@ UNKNOWN_C071E5: ;$C071E5
 	ADC #.LOWORD(GAME_STATE)
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	STZ a:game_state::unknownC8,X
+	STZ a:game_state::active_hotspot_modes,X
 	REP #PROC_FLAGS::ACCUM8
 	PLD
 	RTL

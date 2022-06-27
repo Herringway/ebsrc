@@ -63,7 +63,7 @@ UNKNOWN_C073C0: ;$C073C0
 	STA $04
 	LDX $04
 	SEP #PROC_FLAGS::ACCUM8
-	STZ .LOWORD(GAME_STATE) + game_state::unknownC8,X
+	STZ .LOWORD(GAME_STATE) + game_state::active_hotspot_modes,X
 @UNKNOWN6:
 	REP #PROC_FLAGS::ACCUM8
 	PLD

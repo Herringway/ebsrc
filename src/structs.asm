@@ -122,7 +122,9 @@
 	sound_setting .byte ;194
 	unknownC3 .byte ;195
 	unknownC4 .byte 4 ;196
-	unknownC8 .byte 12 ;200
+	active_hotspot_modes .byte 2 ;200
+	active_hotspot_ids .byte 2 ;202
+	active_hotspot_pointers .byte 2 * 4 ;204
 	saved_photo_states .byte 32 * .SIZEOF(photo_state) ;212
 	timer .dword ;468
 	text_flavour .byte ;472

@@ -89,11 +89,11 @@ UNKNOWN_C072CF: ;$C072CF
 	TAY
 	TXA
 	SEP #PROC_FLAGS::ACCUM8
-	STA .LOWORD(RAM) + game_state::unknownC8,Y
+	STA .LOWORD(RAM) + game_state::active_hotspot_modes,Y
 	REP #PROC_FLAGS::ACCUM8
 	LDA $1C
 	SEP #PROC_FLAGS::ACCUM8
-	STA a:.LOWORD(RAM)+game_state::unknownC8 + 2,Y
+	STA a:.LOWORD(RAM)+game_state::active_hotspot_ids,Y
 	REP #PROC_FLAGS::ACCUM8
 	LDA $12
 	ASL
@@ -101,7 +101,7 @@ UNKNOWN_C072CF: ;$C072CF
 	CLC
 	ADC #.LOWORD(GAME_STATE)
 	CLC
-	ADC #game_state::unknownC8 + 4
+	ADC #game_state::active_hotspot_pointers
 	TAY
 	MOVE_INT_YPTRDEST $0A, a:.LOWORD(RAM)
 	PLD

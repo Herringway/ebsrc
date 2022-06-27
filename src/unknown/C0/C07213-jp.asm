@@ -11,7 +11,7 @@ UNKNOWN_C07213: ;$C07213
 	ADC #.LOWORD(GAME_STATE)
 	TAY
 	SEP #PROC_FLAGS::ACCUM8
-	LDA .LOWORD(RAM) + game_state::unknownC8,Y
+	LDA .LOWORD(RAM) + game_state::active_hotspot_modes,Y
 	STA $0E
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF
@@ -22,7 +22,7 @@ UNKNOWN_C07213: ;$C07213
 	ADC #.LOWORD(ACTIVE_HOTSPOTS)
 	TAX
 	LOADPTR MAP_HOTSPOTS, $06
-	LDA a:.LOWORD(RAM)+game_state::unknownC8 + 2,Y
+	LDA a:.LOWORD(RAM) + game_state::active_hotspot_ids,Y
 	AND #$00FF
 	ASL
 	ASL
@@ -63,7 +63,7 @@ UNKNOWN_C07213: ;$C07213
 	CLC
 	ADC #.LOWORD(GAME_STATE)
 	CLC
-	ADC #game_state::unknownC8 + 4
+	ADC #game_state::active_hotspot_pointers
 	TAY
 	MOVE_INT_YPTRSRC a:.LOWORD(RAM), $06
 	TXA
