@@ -138,7 +138,7 @@
 
 .INCLUDE "system/longjmp.asm"
 
-.INCLUDE "data/unknown/C08F98.asm"
+.INCLUDE "data/palette_dma_parameters.asm"
 
 .INCLUDE "data/dma_table.asm"
 
