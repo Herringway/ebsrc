@@ -1,5 +1,5 @@
 
-UNKNOWN_C07213: ;$C07213
+RELOAD_HOTSPOTS: ;$C07213
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
 	RESERVE_STACK_SPACE_CLOBBER 15
 	LDA #$0000
@@ -17,17 +17,12 @@ UNKNOWN_C07213: ;$C07213
 	AND #$00FF
 	BEQL @UNKNOWN2
 	LDA $02
-	STA $04
-	ASL
-	ADC $04
-	ASL
-	ADC $04
-	ASL
+	OPTIMIZED_MULT $04, .SIZEOF(active_hotspot)
 	CLC
 	ADC #.LOWORD(ACTIVE_HOTSPOTS)
 	TAX
 	LOADPTR MAP_HOTSPOTS, $06
-	LDA a:.LOWORD(RAM)+game_state::active_hotspot_ids,Y
+	LDA a:.LOWORD(RAM) + game_state::active_hotspot_ids,Y
 	AND #$00FF
 	ASL
 	ASL
@@ -37,41 +32,43 @@ UNKNOWN_C07213: ;$C07213
 	STA $06
 	LDA $0E
 	AND #$00FF
-	STA a:.LOWORD(RAM),X
+	STA a:active_hotspot::mode,X
 	MOVE_INT $06, $0A
 	LDA [$0A]
 	ASL
 	ASL
 	ASL
-	STA a:.LOWORD(RAM)+2,X
+	STA a:active_hotspot::x1,X
 	LDY #$0004
 	LDA [$06],Y
 	ASL
 	ASL
 	ASL
-	STA a:.LOWORD(RAM)+6,X
+	STA a:active_hotspot::x2,X
 	LDY #$0002
 	LDA [$06],Y
 	ASL
 	ASL
 	ASL
-	STA a:.LOWORD(RAM)+4,X
+	STA a:active_hotspot::y1,X
 	LDY #$0006
 	LDA [$06],Y
 	ASL
 	ASL
 	ASL
-	STA a:.LOWORD(RAM)+8,X
+	STA a:active_hotspot::y2,X
 	LDA $02
 	ASL
 	ASL
 	CLC
-	ADC #.LOWORD(GAME_STATE) + game_state::active_hotspot_pointers
+	ADC #.LOWORD(GAME_STATE)
+	CLC
+	ADC #game_state::active_hotspot_pointers
 	TAY
 	MOVE_INT_YPTRSRC a:.LOWORD(RAM), $06
 	TXA
 	CLC
-	ADC #$000A
+	ADC #active_hotspot::pointer
 	TAY
 	MOVE_INT_YPTRDEST $06, a:.LOWORD(RAM)
 @UNKNOWN2:

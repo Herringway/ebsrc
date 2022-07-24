@@ -343,11 +343,11 @@
 
 .INCLUDE "unknown/C0/C070CB.asm"
 
-.INCLUDE "unknown/C0/C071E5.asm"
+.INCLUDE "overworld/disable_hotspot.asm"
 
-.INCLUDE "unknown/C0/C07213.asm"
+.INCLUDE "overworld/reload_hotspots.asm"
 
-.INCLUDE "unknown/C0/C072CF.asm"
+.INCLUDE "overworld/activate_hotspot.asm"
 
 .INCLUDE "unknown/C0/C073C0.asm"
 
