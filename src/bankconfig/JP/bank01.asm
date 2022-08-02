@@ -633,7 +633,7 @@
 
 .INCLUDE "unknown/C1/C19A43-jp.asm"
 
-.INCLUDE "text/set_hppp_window_mode_item-jp.asm"
+.INCLUDE "text/set_hppp_window_mode_item.asm"
 
 .INCLUDE "unknown/C1/C19CDD.asm"
 
@@ -711,7 +711,7 @@
 
 .INCLUDE "unknown/C1/C1C3B6-jp.asm"
 
-.INCLUDE "text/get_psi_name-jp.asm"
+.INCLUDE "text/get_psi_name.asm"
 
 .INCLUDE "battle/generate_psi_list-jp.asm"
 
