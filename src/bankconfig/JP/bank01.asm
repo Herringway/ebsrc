@@ -83,9 +83,9 @@
 
 .INCLUDE "unknown/C4/C43657-jp.asm"
 
-.INCLUDE "battle/enemy_flashing_off-jp.asm"
+.INCLUDE "battle/enemy_flashing_off.asm"
 
-.INCLUDE "battle/enemy_flashing_on-proto.asm"
+.INCLUDE "battle/enemy_flashing_on.asm"
 
 .INCLUDE "text/show_hppp_windows-jp.asm"
 
