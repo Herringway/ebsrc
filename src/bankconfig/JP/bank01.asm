@@ -65,7 +65,7 @@
 
 .INCLUDE "text/set_argument_memory.asm"
 
-.INCLUDE "text/get_text_x-jp.asm"
+.INCLUDE "text/get_text_x.asm"
 
 .INCLUDE "text/get_text_y.asm"
 
