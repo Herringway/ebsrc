@@ -749,7 +749,7 @@
 
 .INCLUDE "text/display_in_battle_text.asm"
 
-.INCLUDE "text/display_text_wait-jp.asm"
+.INCLUDE "text/display_text_wait.asm"
 
 .INCLUDE "unknown/C1/C1DCCB-jp.asm"
 
