@@ -196,7 +196,7 @@
 
 .INCLUDE "unknown/C0/C09451.asm"
 
-.INCLUDE "unknown/C0/C09466.asm"
+.INCLUDE "overworld/events/run_actionscript_frame.asm"
 
 .INCLUDE "unknown/C0/C094D0.asm"
 
