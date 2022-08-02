@@ -1,5 +1,5 @@
 
-UNKNOWN_C213AC: ;$C213AC
+UPDATE_HPPP_METER_TILES: ;$C213AC
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
 	RESERVE_STACK_SPACE_CLOBBER 34
 	LDA .LOWORD(UNKNOWN_7E89C9)
@@ -9,10 +9,15 @@ UNKNOWN_C213AC: ;$C213AC
 	AND #$00FF
 	AND #$0003
 	STA $20
+.IF .DEFINED(JPN)
 	CLC
 	ADC #.LOWORD(GAME_STATE)
 	TAX
 	LDA a:game_state::party_members,X
+.ELSE
+	LDY #.LOWORD(GAME_STATE) + game_state::party_members
+	LDA ($20),Y
+.ENDIF
 	AND #$00FF
 	BEQL @UNKNOWN22
 	AND #$00FF
@@ -70,12 +75,18 @@ UNKNOWN_C213AC: ;$C213AC
 	CLC
 	ADC #$7C00
 	STA $1C
+.IF .DEFINED(JPN)
 	LDA $20
 	CLC
 	ADC #.LOWORD(GAME_STATE)
 	REP #PROC_FLAGS::INDEX8
 	TAX
 	LDA a:game_state::party_members,X
+.ELSE
+	REP #PROC_FLAGS::INDEX8
+	LDY #.LOWORD(GAME_STATE) + game_state::party_members
+	LDA ($20),Y
+.ENDIF
 	AND #$00FF
 	DEC
 	LDY #.SIZEOF(char_struct)
@@ -83,7 +94,7 @@ UNKNOWN_C213AC: ;$C213AC
 	CLC
 	ADC #.LOWORD(CHAR_STRUCT)
 	STA $18
-	LDY #$0042
+	LDY #char_struct::current_hp_fraction
 	LDA ($18),Y
 	STA $16
 	AND #$0001
@@ -91,7 +102,7 @@ UNKNOWN_C213AC: ;$C213AC
 	LDA $16
 	TAY
 	STY $14
-	LDY #$0044
+	LDY #char_struct::current_hp
 	LDA ($18),Y
 	TAX
 	LDA $20
@@ -188,7 +199,7 @@ UNKNOWN_C213AC: ;$C213AC
 	STA $04
 	STA $1A
 @UNKNOWN14:
-	LDY #$0048
+	LDY #char_struct::current_pp_fraction
 	LDA ($18),Y
 	STA $16
 	AND #$0001
@@ -196,12 +207,12 @@ UNKNOWN_C213AC: ;$C213AC
 	.A16
 	LDA $16
 	STA $0E
-	LDY #$004A
+	LDY #char_struct::current_pp
 	LDA ($18),Y
 	TAY
 	LDA $18
 	CLC
-	ADC #$000D
+	ADC #char_struct::afflictions
 	TAX
 	LDA $20
 	JSR a:.LOWORD(FILL_CHARACTER_PP_TILE_BUFFER)

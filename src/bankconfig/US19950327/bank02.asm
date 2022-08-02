@@ -60,7 +60,7 @@
 
 .INCLUDE "misc/hp_pp_roller.asm"
 
-.INCLUDE "unknown/C2/C213AC.asm"
+.INCLUDE "text/update_hppp_meter_tiles.asm"
 
 .INCLUDE "text/get_event_flag.asm"
 
