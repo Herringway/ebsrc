@@ -623,7 +623,7 @@
 
 .INCLUDE "unknown/C4/C47F87-jp.asm"
 
-.INCLUDE "text/undraw_flyover_text-jp.asm"
+.INCLUDE "text/undraw_flyover_text.asm"
 
 .INCLUDE "data/text/lumine_hall.asm"
 
