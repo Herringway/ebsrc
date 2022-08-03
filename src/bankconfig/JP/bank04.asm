@@ -669,7 +669,7 @@
 
 .INCLUDE "overworld/process_item_transformations.asm"
 
-.INCLUDE "unknown/C4/C490EE.asm"
+.INCLUDE "overworld/get_distance_to_magic_truffle.asm"
 
 .INCLUDE "unknown/C4/C491EE.asm"
 
@@ -909,23 +909,23 @@
 
 .INCLUDE "data/unknown/C4DE78.asm"
 
-.INCLUDE "unknown/C4/C4DE98.asm"
+.INCLUDE "overworld/initialize_your_sanctuary_display.asm"
 
-.INCLUDE "unknown/C4/C4DED0.asm"
+.INCLUDE "overworld/enable_your_sanctuary_display.asm"
 
-.INCLUDE "unknown/C4/C4DEE9.asm"
+.INCLUDE "overworld/prepare_your_sanctuary_location_palette_data.asm"
 
-.INCLUDE "unknown/C4/C4DF7D-jp.asm"
+.INCLUDE "overworld/prepare_your_sanctuary_location_tile_arrangement_data-jp.asm"
 
-.INCLUDE "unknown/C4/C4E08C.asm"
+.INCLUDE "overworld/prepare_your_sanctuary_location_tileset_data.asm"
 
-.INCLUDE "unknown/C4/C4E13E-jp.asm"
+.INCLUDE "overworld/load_your_sanctuary_location_data-jp.asm"
 
-.INCLUDE "unknown/C4/C4E281.asm"
+.INCLUDE "overworld/load_your_sanctuary_location.asm"
 
-.INCLUDE "unknown/C4/C4E2D7-jp.asm"
+.INCLUDE "overworld/display_your_sanctuary_location-jp.asm"
 
-.INCLUDE "unknown/C4/C4E366-jp.asm"
+.INCLUDE "overworld/test_your_sanctuary_display-jp.asm"
 
 .INCLUDE "unknown/C4/C4E369-jp.asm"
 
