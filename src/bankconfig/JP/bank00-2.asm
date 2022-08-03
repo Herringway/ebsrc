@@ -196,7 +196,7 @@
 
 .INCLUDE "unknown/C0/C09451.asm"
 
-.INCLUDE "overworld/events/run_actionscript_frame.asm"
+.INCLUDE "overworld/actionscript/run_actionscript_frame.asm"
 
 .INCLUDE "unknown/C0/C094D0.asm"
 
@@ -204,111 +204,111 @@
 
 .INCLUDE "data/movement_control_codes_pointer_table.asm"
 
-.INCLUDE "overworld/events/script/00.asm"
+.INCLUDE "overworld/actionscript/script/00.asm"
 
-.INCLUDE "overworld/events/script/01.asm"
+.INCLUDE "overworld/actionscript/script/01.asm"
 
-.INCLUDE "overworld/events/script/24.asm"
+.INCLUDE "overworld/actionscript/script/24.asm"
 
-.INCLUDE "overworld/events/script/02.asm"
+.INCLUDE "overworld/actionscript/script/02.asm"
 
-.INCLUDE "overworld/events/script/19.asm"
+.INCLUDE "overworld/actionscript/script/19.asm"
 
-.INCLUDE "overworld/events/script/03.asm"
+.INCLUDE "overworld/actionscript/script/03.asm"
 
-.INCLUDE "overworld/events/script/1A.asm"
+.INCLUDE "overworld/actionscript/script/1A.asm"
 
-.INCLUDE "overworld/events/script/1B.asm"
+.INCLUDE "overworld/actionscript/script/1B.asm"
 
-.INCLUDE "overworld/events/script/04.asm"
+.INCLUDE "overworld/actionscript/script/04.asm"
 
-.INCLUDE "overworld/events/script/05.asm"
+.INCLUDE "overworld/actionscript/script/05.asm"
 
-.INCLUDE "overworld/events/script/06.asm"
+.INCLUDE "overworld/actionscript/script/06.asm"
 
-.INCLUDE "overworld/events/script/3B_45.asm"
+.INCLUDE "overworld/actionscript/script/3B_45.asm"
 
-.INCLUDE "overworld/events/script/28.asm"
+.INCLUDE "overworld/actionscript/script/28.asm"
 
-.INCLUDE "overworld/events/script/29.asm"
+.INCLUDE "overworld/actionscript/script/29.asm"
 
-.INCLUDE "overworld/events/script/2A.asm"
+.INCLUDE "overworld/actionscript/script/2A.asm"
 
-.INCLUDE "overworld/events/script/3F_49.asm"
+.INCLUDE "overworld/actionscript/script/3F_49.asm"
 
-.INCLUDE "overworld/events/script/40_4A.asm"
+.INCLUDE "overworld/actionscript/script/40_4A.asm"
 
-.INCLUDE "overworld/events/script/41_4B.asm"
+.INCLUDE "overworld/actionscript/script/41_4B.asm"
 
-.INCLUDE "overworld/events/script/2E.asm"
+.INCLUDE "overworld/actionscript/script/2E.asm"
 
-.INCLUDE "overworld/events/script/2F.asm"
+.INCLUDE "overworld/actionscript/script/2F.asm"
 
-.INCLUDE "overworld/events/script/30.asm"
+.INCLUDE "overworld/actionscript/script/30.asm"
 
-.INCLUDE "overworld/events/script/31.asm"
+.INCLUDE "overworld/actionscript/script/31.asm"
 
-.INCLUDE "overworld/events/script/32.asm"
+.INCLUDE "overworld/actionscript/script/32.asm"
 
-.INCLUDE "overworld/events/script/33.asm"
+.INCLUDE "overworld/actionscript/script/33.asm"
 
-.INCLUDE "overworld/events/script/34.asm"
+.INCLUDE "overworld/actionscript/script/34.asm"
 
-.INCLUDE "overworld/events/script/35.asm"
+.INCLUDE "overworld/actionscript/script/35.asm"
 
-.INCLUDE "overworld/events/script/36.asm"
+.INCLUDE "overworld/actionscript/script/36.asm"
 
-.INCLUDE "overworld/events/script/2B.asm"
+.INCLUDE "overworld/actionscript/script/2B.asm"
 
-.INCLUDE "overworld/events/script/2C.asm"
+.INCLUDE "overworld/actionscript/script/2C.asm"
 
-.INCLUDE "overworld/events/script/2D.asm"
+.INCLUDE "overworld/actionscript/script/2D.asm"
 
-.INCLUDE "overworld/events/script/37.asm"
+.INCLUDE "overworld/actionscript/script/37.asm"
 
-.INCLUDE "overworld/events/script/38.asm"
+.INCLUDE "overworld/actionscript/script/38.asm"
 
-.INCLUDE "overworld/events/script/39.asm"
+.INCLUDE "overworld/actionscript/script/39.asm"
 
 .INCLUDE "unknown/C0/C09907.asm"
 
-.INCLUDE "overworld/events/script/3A.asm"
+.INCLUDE "overworld/actionscript/script/3A.asm"
 
-.INCLUDE "overworld/events/script/43.asm"
+.INCLUDE "overworld/actionscript/script/43.asm"
 
-.INCLUDE "overworld/events/script/42_4C.asm"
+.INCLUDE "overworld/actionscript/script/42_4C.asm"
 
-.INCLUDE "overworld/events/script/0A.asm"
+.INCLUDE "overworld/actionscript/script/0A.asm"
 
-.INCLUDE "overworld/events/script/0B.asm"
+.INCLUDE "overworld/actionscript/script/0B.asm"
 
-.INCLUDE "overworld/events/script/10.asm"
+.INCLUDE "overworld/actionscript/script/10.asm"
 
-.INCLUDE "overworld/events/script/11.asm"
+.INCLUDE "overworld/actionscript/script/11.asm"
 
-.INCLUDE "overworld/events/script/0C.asm"
+.INCLUDE "overworld/actionscript/script/0C.asm"
 
-.INCLUDE "overworld/events/script/07.asm"
+.INCLUDE "overworld/actionscript/script/07.asm"
 
-.INCLUDE "overworld/events/script/13.asm"
+.INCLUDE "overworld/actionscript/script/13.asm"
 
-.INCLUDE "overworld/events/script/08.asm"
+.INCLUDE "overworld/actionscript/script/08.asm"
 
-.INCLUDE "overworld/events/script/09.asm"
+.INCLUDE "overworld/actionscript/script/09.asm"
 
-.INCLUDE "overworld/events/script/3C_46.asm"
+.INCLUDE "overworld/actionscript/script/3C_46.asm"
 
-.INCLUDE "overworld/events/script/3D_47.asm"
+.INCLUDE "overworld/actionscript/script/3D_47.asm"
 
-.INCLUDE "overworld/events/script/3E_48.asm"
+.INCLUDE "overworld/actionscript/script/3E_48.asm"
 
-.INCLUDE "overworld/events/script/18.asm"
+.INCLUDE "overworld/actionscript/script/18.asm"
 
-.INCLUDE "overworld/events/script/14.asm"
+.INCLUDE "overworld/actionscript/script/14.asm"
 
-.INCLUDE "overworld/events/script/27.asm"
+.INCLUDE "overworld/actionscript/script/27.asm"
 
-.INCLUDE "overworld/events/script/0D.asm"
+.INCLUDE "overworld/actionscript/script/0D.asm"
 
 .INCLUDE "data/unknown/C09ABD.asm"
 
@@ -320,41 +320,41 @@
 
 .INCLUDE "unknown/C0/C09ADB.asm"
 
-.INCLUDE "overworld/events/script/0E.asm"
+.INCLUDE "overworld/actionscript/script/0E.asm"
 
 .INCLUDE "data/events/entity_script_var_tables.asm"
 
-.INCLUDE "overworld/events/script/0F.asm"
+.INCLUDE "overworld/actionscript/script/0F.asm"
 
-.INCLUDE "overworld/events/script/12.asm"
+.INCLUDE "overworld/actionscript/script/12.asm"
 
-.INCLUDE "overworld/events/script/15.asm"
+.INCLUDE "overworld/actionscript/script/15.asm"
 
-.INCLUDE "overworld/events/script/16.asm"
+.INCLUDE "overworld/actionscript/script/16.asm"
 
-.INCLUDE "overworld/events/script/17.asm"
+.INCLUDE "overworld/actionscript/script/17.asm"
 
-.INCLUDE "overworld/events/script/1C.asm"
+.INCLUDE "overworld/actionscript/script/1C.asm"
 
-.INCLUDE "overworld/events/script/1D.asm"
+.INCLUDE "overworld/actionscript/script/1D.asm"
 
-.INCLUDE "overworld/events/script/1E.asm"
+.INCLUDE "overworld/actionscript/script/1E.asm"
 
-.INCLUDE "overworld/events/script/1F.asm"
+.INCLUDE "overworld/actionscript/script/1F.asm"
 
-.INCLUDE "overworld/events/script/20.asm"
+.INCLUDE "overworld/actionscript/script/20.asm"
 
-.INCLUDE "overworld/events/script/44.asm"
+.INCLUDE "overworld/actionscript/script/44.asm"
 
-.INCLUDE "overworld/events/script/21.asm"
+.INCLUDE "overworld/actionscript/script/21.asm"
 
-.INCLUDE "overworld/events/script/26.asm"
+.INCLUDE "overworld/actionscript/script/26.asm"
 
-.INCLUDE "overworld/events/script/22.asm"
+.INCLUDE "overworld/actionscript/script/22.asm"
 
-.INCLUDE "overworld/events/script/23.asm"
+.INCLUDE "overworld/actionscript/script/23.asm"
 
-.INCLUDE "overworld/events/script/25.asm"
+.INCLUDE "overworld/actionscript/script/25.asm"
 
 .INCLUDE "unknown/C0/C09C02.asm"
 
@@ -386,17 +386,17 @@
 
 .INCLUDE "unknown/C0/C09D78.asm"
 
-.INCLUDE "overworld/events/script/read8.asm"
+.INCLUDE "overworld/actionscript/script/read8.asm"
 
-.INCLUDE "overworld/events/script/read8_copy.asm"
+.INCLUDE "overworld/actionscript/script/read8_copy.asm"
 
-.INCLUDE "overworld/events/script/read16.asm"
+.INCLUDE "overworld/actionscript/script/read16.asm"
 
-.INCLUDE "overworld/events/script/read16_copy.asm"
+.INCLUDE "overworld/actionscript/script/read16_copy.asm"
 
-.INCLUDE "overworld/events/jump_to_loaded_movement_pointer.asm"
+.INCLUDE "overworld/actionscript/jump_to_loaded_movement_pointer.asm"
 
-.INCLUDE "overworld/events/clear_sprite_tick_callback.asm"
+.INCLUDE "overworld/actionscript/clear_sprite_tick_callback.asm"
 
 .INCLUDE "unknown/C0/C09DAE.asm"
 
@@ -416,13 +416,13 @@
 
 .INCLUDE "unknown/C0/C09F71.asm"
 
-.INCLUDE "overworld/events/choose_random.asm"
+.INCLUDE "overworld/actionscript/choose_random.asm"
 
 .INCLUDE "unknown/C0/C09FA8.asm"
 
-.INCLUDE "overworld/events/fade_in.asm"
+.INCLUDE "overworld/actionscript/fade_in.asm"
 
-.INCLUDE "overworld/events/fade_out.asm"
+.INCLUDE "overworld/actionscript/fade_out.asm"
 
 .INCLUDE "unknown/C0/C09FAE.asm"
 
@@ -504,15 +504,15 @@
 
 .INCLUDE "unknown/C0/C0A643.asm"
 
-.INCLUDE "overworld/events/set_direction8.asm"
+.INCLUDE "overworld/actionscript/set_direction8.asm"
 
-.INCLUDE "overworld/events/set_direction.asm"
+.INCLUDE "overworld/actionscript/set_direction.asm"
 
 .INCLUDE "unknown/C0/C0A66D.asm"
 
 .INCLUDE "unknown/C0/C0A673.asm"
 
-.INCLUDE "overworld/events/set_surface_flags.asm"
+.INCLUDE "overworld/actionscript/set_surface_flags.asm"
 
 .INCLUDE "unknown/C0/C0A685.asm"
 
@@ -530,9 +530,9 @@
 
 .INCLUDE "unknown/C0/C0A6CB.asm"
 
-.INCLUDE "overworld/events/disable_current_entity_collision.asm"
+.INCLUDE "overworld/actionscript/disable_current_entity_collision.asm"
 
-.INCLUDE "overworld/events/clear_current_entity_collision.asm"
+.INCLUDE "overworld/actionscript/clear_current_entity_collision.asm"
 
 .INCLUDE "unknown/C0/C0A6E3.asm"
 
@@ -540,9 +540,9 @@
 
 .INCLUDE "unknown/C0/C0A794.asm"
 
-.INCLUDE "overworld/events/disable_current_entity_collision2.asm"
+.INCLUDE "overworld/actionscript/disable_current_entity_collision2.asm"
 
-.INCLUDE "overworld/events/clear_current_entity_collision2.asm"
+.INCLUDE "overworld/actionscript/clear_current_entity_collision2.asm"
 
 .INCLUDE "unknown/C0/C0A841.asm"
 
@@ -572,19 +572,19 @@
 
 .INCLUDE "unknown/C0/C0A8EF.asm"
 
-.INCLUDE "overworld/events/prepare_new_entity_at_self.asm"
+.INCLUDE "overworld/actionscript/prepare_new_entity_at_self.asm"
 
-.INCLUDE "overworld/events/prepare_new_entity_at_party_leader.asm"
+.INCLUDE "overworld/actionscript/prepare_new_entity_at_party_leader.asm"
 
-.INCLUDE "overworld/events/prepare_new_entity_at_teleport_destination.asm"
+.INCLUDE "overworld/actionscript/prepare_new_entity_at_teleport_destination.asm"
 
-.INCLUDE "overworld/events/prepare_new_entity.asm"
+.INCLUDE "overworld/actionscript/prepare_new_entity.asm"
 
 .INCLUDE "unknown/C0/C0A92D.asm"
 
 .INCLUDE "unknown/C0/C0A938.asm"
 
-.INCLUDE "overworld/events/get_position_of_party_member.asm"
+.INCLUDE "overworld/actionscript/get_position_of_party_member.asm"
 
 .INCLUDE "unknown/C0/C0A94E.asm"
 
@@ -604,7 +604,7 @@
 
 .INCLUDE "unknown/C0/C0A9EB.asm"
 
-.INCLUDE "overworld/events/fade_out_with_mosaic.asm"
+.INCLUDE "overworld/actionscript/fade_out_with_mosaic.asm"
 
 .INCLUDE "unknown/C0/C0AA23.asm"
 
@@ -756,9 +756,9 @@
 
 .INCLUDE "unknown/C0/C0C62B.asm"
 
-.INCLUDE "overworld/events/get_direction_rotated_clockwise.asm"
+.INCLUDE "overworld/actionscript/get_direction_rotated_clockwise.asm"
 
-.INCLUDE "overworld/events/get_direction_turned_randomly_left_or_right.asm"
+.INCLUDE "overworld/actionscript/get_direction_turned_randomly_left_or_right.asm"
 
 .INCLUDE "unknown/C0/C0C6B6.asm"
 

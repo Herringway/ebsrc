@@ -664,7 +664,7 @@
 
 .INCLUDE "unknown/C4/C46E4F.asm"
 
-.INCLUDE "overworld/events/test_player_in_area.asm"
+.INCLUDE "overworld/actionscript/test_player_in_area.asm"
 
 .INCLUDE "unknown/C4/C46EF8.asm"
 
