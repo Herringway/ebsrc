@@ -707,7 +707,7 @@
 
 .INCLUDE "unknown/C4/C49B6E-jp.asm"
 
-.INCLUDE "unknown/C4/C49C56-jp.asm"
+.INCLUDE "unknown/C4/C49C56.asm"
 
 .INCLUDE "unknown/C4/C49CA8-jp.asm"
 
