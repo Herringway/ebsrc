@@ -138,7 +138,7 @@
 
 .INCLUDE "system/longjmp.asm"
 
-.INCLUDE "unknown/C0/C08F8B.asm"
+.INCLUDE "system/wait_dma_finished.asm"
 
 .INCLUDE "data/palette_dma_parameters.asm"
 

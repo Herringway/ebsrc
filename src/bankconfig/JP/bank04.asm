@@ -923,7 +923,7 @@
 
 .INCLUDE "overworld/load_your_sanctuary_location.asm"
 
-.INCLUDE "overworld/display_your_sanctuary_location-jp.asm"
+.INCLUDE "overworld/display_your_sanctuary_location.asm"
 
 .INCLUDE "overworld/test_your_sanctuary_display-jp.asm"
 
