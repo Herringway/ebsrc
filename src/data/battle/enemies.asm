@@ -11318,3 +11318,101 @@ ENEMY_CONFIGURATION_TABLE: ;$D59589
   .BYTE $01 ;Row
   .BYTE $00 ;Max number of allies called
   .BYTE $00 ;Mirror success rate
+
+  .BYTE $00 ;The Flag
+  PADDEDEBTEXT "Toxic Shrooom!", 25
+  .BYTE GENDER::NEUTRAL
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $000B ;Battle sprite
+  .WORD OVERWORLD_SPRITE::YOUR_SANCTUARY_POINT_BOSS
+  .BYTE $07 ;Run flag
+  .WORD 1700 ;HP
+  .WORD 112 ;PP
+  .DWORD 96323 ;Experience
+  .WORD 4086 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BLOCK_EF6D96
+  .BYTE $09 ;Palette
+  .BYTE 48 ;Level
+  .BYTE MUSIC::VS_YOUR_SANCTUARY_BOSS
+  .WORD 95 ;Offense
+  .WORD 154 ;Defense
+  .BYTE 128 ;Speed
+  .BYTE 32 ;Guts
+  .BYTE 72 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $02 ;Action order
+  .WORD BATTLE_ACTIONS::ACTION_COUNTDOWN_START
+  .WORD BATTLE_ACTIONS::PSI_LIFEUP_ALPHA
+  .WORD BATTLE_ACTIONS::SCOWL
+  .WORD BATTLE_ACTIONS::ENEMY_EXTENDER
+  .WORD NULL ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $17 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE ENEMY::TOXIC_SHROOOM_2 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate
+
+  .BYTE $00 ;The Flag
+  PADDEDEBTEXT "Toxic Shrooom!", 25
+  .BYTE GENDER::NEUTRAL
+  .BYTE ENEMYTYPE::NORMAL
+  .WORD $000B ;Battle sprite
+  .WORD OVERWORLD_SPRITE::YOUR_SANCTUARY_POINT_BOSS
+  .BYTE $07 ;Run flag
+  .WORD 1700 ;HP
+  .WORD 112 ;PP
+  .DWORD 96323 ;Experience
+  .WORD 4086 ;Money
+  .WORD EVENT_SCRIPT::EVENT_023
+  .DWORD TEXT_BATTLE_ENEMY_ATTACKED
+  .DWORD TEXT_BLOCK_EF6D96
+  .BYTE $09 ;Palette
+  .BYTE 48 ;Level
+  .BYTE MUSIC::VS_YOUR_SANCTUARY_BOSS
+  .WORD 95 ;Offense
+  .WORD 154 ;Defense
+  .BYTE 18 ;Speed
+  .BYTE 32 ;Guts
+  .BYTE 72 ;Luck
+  .BYTE $00 ;Weakness to fire
+  .BYTE $02 ;Weakness to ice
+  .BYTE $01 ;Weakness to flash
+  .BYTE $03 ;Weakness to paralysis
+  .BYTE $01 ;Weakness to hypnosis/brainshock
+  .BYTE $00 ;Miss rate
+  .BYTE $00 ;Action order
+  .WORD BATTLE_ACTIONS::KNIT_BROW
+  .WORD BATTLE_ACTIONS::PSI_LIFEUP_ALPHA
+  .WORD BATTLE_ACTIONS::SCATTER_POLLEN
+  .WORD BATTLE_ACTIONS::COUGH
+  .WORD BATTLE_ACTIONS::ACTION_COUNTDOWN_END ;Final action
+  .BYTE $00 ;Action 1 argument
+  .BYTE $17 ;Action 2 argument
+  .BYTE $00 ;Action 3 argument
+  .BYTE $00 ;Action 4 argument
+  .BYTE $00 ;Final action argument
+  .BYTE 3 ;IQ
+  .BYTE $01 ;Boss flag
+  .BYTE $00 ;Item drop rate
+  .BYTE ITEM::NONE ;Item dropped
+  .BYTE INITIAL_STATUS::NONE
+  .BYTE $01 ;Death style
+  .BYTE $01 ;Row
+  .BYTE $00 ;Max number of allies called
+  .BYTE $00 ;Mirror success rate

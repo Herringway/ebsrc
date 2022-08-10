@@ -785,3 +785,5 @@
 .INCLUDE "unknown/C2/C2FF9A.asm"
 
 .INCLUDE "data/events/scripts/000.asm"
+
+.INCLUDE "battle/actions/countdown.asm"
