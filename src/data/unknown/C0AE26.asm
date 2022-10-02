@@ -1,7 +1,8 @@
 
+;an HDMA table (indirect) for battle backgrounds
 UNKNOWN_C0AE26: ;$C0AE26
-.IF .DEFINED(JPN)
-	.BYTE $E4, $CC, $3F, $FC, $94, $40, $00
-.ELSE
-	.BYTE $E4, $46, $3C, $FC, $0E, $3D, $00
-.ENDIF
+	.BYTE $E4
+	.WORD .LOWORD(UNKNOWN_7E3C46)
+	.BYTE $FC
+	.WORD .LOWORD(UNKNOWN_7E3D0E)
+	.BYTE $00
