@@ -742,7 +742,7 @@
 
 .INCLUDE "unknown/C2/C2EACF.asm"
 
-.INCLUDE "unknown/C2/C2EAEA.asm"
+.INCLUDE "battle/load_battle_sprite.asm"
 
 .INCLUDE "unknown/C2/C2EEE7.asm"
 
@@ -756,7 +756,7 @@
 
 .INCLUDE "unknown/C2/C2F121.asm"
 
-.INCLUDE "unknown/C2/C2F724.asm"
+.INCLUDE "battle/render_battle_sprite_row.asm"
 
 .INCLUDE "unknown/C2/C2F8F9.asm"
 

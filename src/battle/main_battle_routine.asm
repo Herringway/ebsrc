@@ -2318,7 +2318,7 @@ BATTLE_ROUTINE: ;$C24821
 @UNKNOWN223:
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	STZ a:battler::unknown75,X
+	STZ a:battler::use_alt_spritemap,X
 	CLC
 	REP #PROC_FLAGS::ACCUM8
 	ADC #.SIZEOF(battler)

@@ -232,7 +232,7 @@
 	unknown72 .byte ;72
 	unknown73 .byte ;73
 	unknown74 .byte ;74
-	unknown75 .byte ;75
+	use_alt_spritemap .byte ;75
 	unknown76 .byte ;76
 	id2 .byte ;78
 .ENDSTRUCT

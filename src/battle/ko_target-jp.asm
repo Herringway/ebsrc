@@ -483,7 +483,7 @@ KO_TARGET: ;$C27550
 @UNKNOWN35:
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	STZ a:battler::unknown75,X
+	STZ a:battler::use_alt_spritemap,X
 	CLC
 	REP #PROC_FLAGS::ACCUM8
 	ADC #.SIZEOF(battler)
@@ -496,7 +496,7 @@ KO_TARGET: ;$C27550
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0001
 	LDX $02
-	STA a:battler::unknown75,X
+	STA a:battler::use_alt_spritemap,X
 	REP #PROC_FLAGS::ACCUM8
 	LDA #$000A
 	JSL UNKNOWN_C2FAD8
@@ -594,7 +594,7 @@ KO_TARGET: ;$C27550
 	BEQ @UNKNOWN43
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0001
-	STA a:battler::unknown75,X
+	STA a:battler::use_alt_spritemap,X
 @UNKNOWN43:
 	REP #PROC_FLAGS::ACCUM8
 	TXA

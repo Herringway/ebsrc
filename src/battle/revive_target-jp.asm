@@ -80,7 +80,7 @@ REVIVE_TARGET: ;$C27397
 @UNKNOWN3:
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	STZ a:battler::unknown75,X
+	STZ a:battler::use_alt_spritemap,X
 	CLC
 	REP #PROC_FLAGS::ACCUM8
 	ADC #.SIZEOF(battler)
@@ -93,7 +93,7 @@ REVIVE_TARGET: ;$C27397
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0001
 	LDX $04
-	STA a:battler::unknown75,X
+	STA a:battler::use_alt_spritemap,X
 	TAX
 	STX $18
 	BRA @UNKNOWN6

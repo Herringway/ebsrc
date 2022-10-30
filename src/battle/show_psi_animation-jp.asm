@@ -354,7 +354,7 @@ SHOW_PSI_ANIMATION: ;$C2E116
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0001
 	LDX .LOWORD(CURRENT_TARGET)
-	STA a:battler::unknown75,X
+	STA a:battler::use_alt_spritemap,X
 	LDX .LOWORD(CURRENT_TARGET)
 	REP #PROC_FLAGS::ACCUM8
 	LDA a:battler::vram_sprite_index,X
@@ -413,7 +413,7 @@ SHOW_PSI_ANIMATION: ;$C2E116
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0001
 	LDX $02
-	STA a:battler::unknown75,X
+	STA a:battler::use_alt_spritemap,X
 	LDX $02
 	REP #PROC_FLAGS::ACCUM8
 	LDA a:battler::vram_sprite_index,X
@@ -462,7 +462,7 @@ SHOW_PSI_ANIMATION: ;$C2E116
 	BEQ @UNKNOWN22
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0001
-	STA a:battler::unknown75,Y
+	STA a:battler::use_alt_spritemap,Y
 	REP #PROC_FLAGS::ACCUM8
 	LDA a:battler::vram_sprite_index,Y
 	AND #$00FF

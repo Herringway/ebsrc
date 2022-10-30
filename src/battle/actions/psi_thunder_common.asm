@@ -110,7 +110,7 @@ PSI_THUNDER_COMMON: ;$C2966B
 	BNE @UNKNOWN12
 	LDX .LOWORD(CURRENT_TARGET)
 	SEP #PROC_FLAGS::ACCUM8
-	STZ a:battler::unknown75,X
+	STZ a:battler::use_alt_spritemap,X
 	LDX .LOWORD(CURRENT_TARGET)
 	REP #PROC_FLAGS::ACCUM8
 	LDA a:battler::ally_or_enemy,X
