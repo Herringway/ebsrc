@@ -63,7 +63,30 @@
 
 .INCLUDE "data/unknown/EF4A40.asm"
 
-.INCLUDE "bin/US19950327/text_data/6.ebtxt"
+;$EF3E05
+.INCLUDE "bin/US19950327/text_data/EBATTLE6.ebtxt"
+;$EF4699
+.INCLUDE "bin/US19950327/text_data/EBATTLE5.ebtxt"
+;$EF4EEB
+.INCLUDE "bin/US19950327/text_data/E07GPFT.ebtxt"
+;$EF572E
+.INCLUDE "bin/US19950327/text_data/EBATTLE4.ebtxt"
+;$EF5D9F
+.INCLUDE "bin/US19950327/text_data/EBATTLE2.ebtxt"
+;$EF63C2
+.INCLUDE "bin/US19950327/text_data/EBATTLE0.ebtxt"
+;$EF6982
+.INCLUDE "bin/US19950327/text_data/EBATTLE3.ebtxt"
+;$EF6F39
+.INCLUDE "bin/US19950327/text_data/EBATTLE9.ebtxt"
+;$EF74B7
+.INCLUDE "bin/US19950327/text_data/EBATTLE8.ebtxt"
+;$EF7A26
+.INCLUDE "bin/US19950327/text_data/EBATTLE1.ebtxt"
+;$EF7EE3
+.INCLUDE "bin/US19950327/text_data/EGOODS2.ebtxt"
+;$EF82EB
+.INCLUDE "bin/US19950327/text_data/UNKNOWN_EFA2FA.ebtxt"
 
 .INCLUDE "data/command_window_text.asm"
 
@@ -89,7 +112,8 @@ NAME_INPUT_WINDOW_SELECTION_LAYOUT_5: ;$EFA6A7
 
 .INCLUDE "data/name_input_window_selection_layout_pointers.asm"
 
-.INCLUDE "bin/US19950327/text_data/7.ebtxt"
+;$EF86DC
+.INCLUDE "bin/US19950327/text_data/UNKNOWN7.ebtxt"
 
 .INCLUDE "data/map/per_sector_town_map_data.asm"
 

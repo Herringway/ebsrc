@@ -29,4 +29,3 @@ NAME_INPUT_WINDOW_SELECTION_LAYOUT_5: ;$EFA6A7
 .INCLUDE "data/name_input_window_selection_layout_pointers.asm"
 
 .INCLUDE "bin/JP/text_data/5.ebtxt"
-
