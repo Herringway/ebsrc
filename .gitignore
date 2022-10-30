@@ -6,3 +6,6 @@ bin
 *.sym
 *.ips
 *.srm
+*.cht
+*.png
+*.bso.txt
