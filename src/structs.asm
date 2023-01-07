@@ -234,7 +234,7 @@
 	unknown74 .byte ;74
 	use_alt_spritemap .byte ;75
 	unknown76 .byte ;76
-	id2 .byte ;78
+	id2 .byte ;77
 .ENDSTRUCT
 
 .STRUCT window_stats
