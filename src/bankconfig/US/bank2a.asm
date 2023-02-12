@@ -2,39 +2,22 @@
 .INCLUDE "common.asm"
 
 AUDIO_PACK_54: ;$EA0000
-	AUDIOPACKBIN $18, $6C68, "audiopacks/54-1.bin"
-	AUDIOPACKBIN $3330, $95B0, "audiopacks/54-2.bin"
-	AUDIOPACKBIN $24, $6E9C, "audiopacks/54-3.bin"
-	AUDIOPACKTERMINATOR
+	AUDIOPACK "audiopacks/54.ebm"
 
 AUDIO_PACK_52: ;$EA337A
-	AUDIOPACKBIN $18, $6C68, "audiopacks/52-1.bin"
-	AUDIOPACKBIN $31D0, $95B0, "audiopacks/52-2.bin"
-	AUDIOPACKBIN $24, $6E9C, "audiopacks/52-3.bin"
-	AUDIOPACKTERMINATOR
+	AUDIOPACK "audiopacks/52.ebm"
 
 AUDIO_PACK_72: ;$EA6594
-	AUDIOPACKBIN $8, $6C68, "audiopacks/72-1.bin"
-	AUDIOPACKBIN $3140, $95B0, "audiopacks/72-2.bin"
-	AUDIOPACKBIN $C, $6E9C, "audiopacks/72-3.bin"
-	AUDIOPACKTERMINATOR
+	AUDIOPACK "audiopacks/72.ebm"
 
 AUDIO_PACK_89: ;$EA96F6
-	AUDIOPACKBIN $18, $6C68, "audiopacks/89-1.bin"
-	AUDIOPACKBIN $2E50, $95B0, "audiopacks/89-2.bin"
-	AUDIOPACKBIN $24, $6E9C, "audiopacks/89-3.bin"
-	AUDIOPACKTERMINATOR
+	AUDIOPACK "audiopacks/89.ebm"
 
 AUDIO_PACK_35: ;$EAC590
-	AUDIOPACKBIN $18, $6C68, "audiopacks/35-1.bin"
-	AUDIOPACKBIN $2B50, $95B0, "audiopacks/35-2.bin"
-	AUDIOPACKBIN $1E, $6E9C, "audiopacks/35-3.bin"
-	AUDIOPACKTERMINATOR
+	AUDIOPACK "audiopacks/35.ebm"
 
 AUDIO_PACK_140: ;$EAF124
-	AUDIOPACKBIN $D61, $5800, "audiopacks/140.bin"
-	AUDIOPACKTERMINATOR
+	AUDIOPACK "audiopacks/140.ebm"
 
 AUDIO_PACK_145: ;$EAFE8B
-	AUDIOPACKBIN $151, $4800, "audiopacks/145.bin"
-	AUDIOPACKTERMINATOR
+	AUDIOPACK "audiopacks/145.ebm"

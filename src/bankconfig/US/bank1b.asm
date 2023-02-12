@@ -20,5 +20,4 @@ MAP_DATA_TILE_ARRANGEMENT_11: ;$DBC6CC
 	BINARY "maps/arrangements/11.arr.lzhal"
 
 AUDIO_PACK_65: ;$DBF2EB
-	AUDIOPACKBIN $C73, $5800, "audiopacks/65.bin"
-	AUDIOPACKTERMINATOR
+	AUDIOPACK "audiopacks/65.ebm"

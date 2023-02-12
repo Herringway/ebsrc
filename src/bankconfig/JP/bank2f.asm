@@ -4,172 +4,124 @@
 .INCLUDE "structs.asm"
 
 AUDIO_PACK_23: ;$EF0000
-        AUDIOPACKBIN $160, $5800, "audiopacks/23-1.bin"
-        AUDIOPACKBIN $2B5, $6000, "audiopacks/23-2.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/23.ebm"
 
 AUDIO_PACK_11: ;$EF041F
-        AUDIOPACKBIN $40D, $5800, "audiopacks/11.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/11.ebm"
 
 AUDIO_PACK_142: ;$EF0832
-        AUDIOPACKBIN $40B, $4800, "audiopacks/142.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/142.ebm"
 
 AUDIO_PACK_160: ;$EF0C43
-        AUDIOPACKBIN $405, $5800, "audiopacks/160.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/160.ebm"
 
 AUDIO_PACK_101: ;$EF104E
-        AUDIOPACKBIN $3F6, $4800, "audiopacks/101.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/101.ebm"
 
 AUDIO_PACK_103: ;$EF144A
-        AUDIOPACKBIN $1A6, $4800, "audiopacks/103-1.bin"
-        AUDIOPACKBIN $FB, $4C00, "audiopacks/103-2.bin"
-        AUDIOPACKBIN $14A, $5200, "audiopacks/103-3.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/103.ebm"
 
 AUDIO_PACK_51: ;$EF1843
-        AUDIOPACKBIN $3B4, $5800, "audiopacks/51.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/51.ebm"
 
 AUDIO_PACK_18: ;$EF1BFD
-        AUDIOPACKBIN $36F, $5800, "audiopacks/18.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/18.ebm"
 
 AUDIO_PACK_29: ;$EF1F72
-        AUDIOPACKBIN $35C, $5800, "audiopacks/29.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/29.ebm"
 
 AUDIO_PACK_93: ;$EF22D4
-        AUDIOPACKBIN $35B, $5800, "audiopacks/93.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/93.ebm"
 
 AUDIO_PACK_95: ;$EF2635
-        AUDIOPACKBIN $8, $6C68, "audiopacks/95-1.bin"
-        AUDIOPACKBIN $330, $95B0, "audiopacks/95-2.bin"
-        AUDIOPACKBIN $C, $6E9C, "audiopacks/95-3.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/95.ebm"
 
 AUDIO_PACK_164: ;$EF2987
-        AUDIOPACKBIN $33A, $4800, "audiopacks/164.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/164.ebm"
 
 AUDIO_PACK_151: ;$EF2CC7
-        AUDIOPACKBIN $325, $5800, "audiopacks/151.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/151.ebm"
 
 AUDIO_PACK_143: ;$EF2FF2
-        AUDIOPACKBIN $2F1, $5800, "audiopacks/143.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/143.ebm"
 
 AUDIO_PACK_12: ;$EF32E9
-        AUDIOPACKBIN $2C8, $4800, "audiopacks/12.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/12.ebm"
 
 AUDIO_PACK_135: ;$EF35B7
-        AUDIOPACKBIN $2AB, $5800, "audiopacks/135.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/135.ebm"
 
 AUDIO_PACK_83: ;$EF3868
-        AUDIOPACKBIN $F7, $4800, "audiopacks/83-1.bin"
-        AUDIOPACKBIN $6F, $5200, "audiopacks/83-2.bin"
-        AUDIOPACKBIN $133, $5300, "audiopacks/83-3.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/83.ebm"
 
 AUDIO_PACK_88: ;$EF3B0F
-        AUDIOPACKBIN $291, $4800, "audiopacks/88.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/88.ebm"
 
 AUDIO_PACK_155: ;$EF3DA6
-        AUDIOPACKBIN $261, $5800, "audiopacks/155.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/155.ebm"
 
 AUDIO_PACK_31: ;$EF400D
-        AUDIOPACKBIN $25D, $5800, "audiopacks/31.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/31.ebm"
 
 AUDIO_PACK_129: ;$EF4270
-        AUDIOPACKBIN $25A, $5800, "audiopacks/129.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/129.ebm"
 
 AUDIO_PACK_22: ;$EF44D0
-        AUDIOPACKBIN $251, $5800, "audiopacks/22.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/22.ebm"
 
 AUDIO_PACK_17: ;$EF4727
-        AUDIOPACKBIN $24B, $4800, "audiopacks/17.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/17.ebm"
 
 AUDIO_PACK_91: ;$EF4978
-        AUDIOPACKBIN $244, $4800, "audiopacks/91.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/91.ebm"
 
 AUDIO_PACK_81: ;$EF4BC2
-        AUDIOPACKBIN $10D, $4800, "audiopacks/81-1.bin"
-        AUDIOPACKBIN $10D, $5200, "audiopacks/81-2.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/81.ebm"
 
 AUDIO_PACK_147: ;$EF4DE6
-        AUDIOPACKBIN $219, $4800, "audiopacks/147.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/147.ebm"
 
 AUDIO_PACK_152: ;$EF5005
-        AUDIOPACKBIN $1F4, $5800, "audiopacks/152.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/152.ebm"
 
 AUDIO_PACK_159: ;$EF51FF
-        AUDIOPACKBIN $18D, $5800, "audiopacks/159.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/159.ebm"
 
 AUDIO_PACK_49: ;$EF5392
-        AUDIOPACKBIN $17E, $5800, "audiopacks/49.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/49.ebm"
 
 AUDIO_PACK_9: ;$EF5516
-        AUDIOPACKBIN $175, $5800, "audiopacks/9.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/9.ebm"
 
 AUDIO_PACK_145: ;$EF5691
-        AUDIOPACKBIN $151, $4800, "audiopacks/145.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/145.ebm"
 
 AUDIO_PACK_69: ;$EF57E8
-        AUDIOPACKBIN $14E, $5800, "audiopacks/69.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/69.ebm"
 
 AUDIO_PACK_167: ;$EF593C
-        AUDIOPACKBIN $141, $4800, "audiopacks/167.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/167.ebm"
 
 AUDIO_PACK_130: ;$EF5A83
-        AUDIOPACKBIN $137, $4800, "audiopacks/130.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/130.ebm"
 
 AUDIO_PACK_168: ;$EF5BC0
-        AUDIOPACKBIN $12E, $4800, "audiopacks/168.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/168.ebm"
 
 AUDIO_PACK_75: ;$EF5CF4
-        AUDIOPACKBIN $124, $5800, "audiopacks/75.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/75.ebm"
 
 AUDIO_PACK_137: ;$EF5E1E
-        AUDIOPACKBIN $123, $4800, "audiopacks/137.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/137.ebm"
 
 AUDIO_PACK_59: ;$EF5F47
-        AUDIOPACKBIN $FC, $4800, "audiopacks/59.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/59.ebm"
 
 AUDIO_PACK_41: ;$EF6049
-        AUDIOPACKBIN $FC, $5800, "audiopacks/41.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/41.ebm"
 
 AUDIO_PACK_7: ;$EF614B
-        AUDIOPACKBIN $CC, $4800, "audiopacks/7.bin"
-        AUDIOPACKTERMINATOR
+        AUDIOPACK "audiopacks/7.ebm"
 
 .INCLUDE "data/map/tileset_table.asm"
 

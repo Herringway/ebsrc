@@ -4,20 +4,8 @@
     .INCBIN .SPRINTF("bin/%s/%s", LOCALE, file)
 .ENDMACRO
 
-.MACRO AUDIOPACKBIN size, target, file
-    .WORD size
-    .IF size > 0
-        .WORD target
-        BINARY file
-    .ENDIF
-.ENDMACRO
-
-.MACRO AUDIOPACKEBM file
+.MACRO AUDIOPACK file
     BINARY file
-.ENDMACRO
-
-.MACRO AUDIOPACKTERMINATOR
-    .WORD 0
 .ENDMACRO
 
 .MACRO RESERVE_STACK_SPACE size

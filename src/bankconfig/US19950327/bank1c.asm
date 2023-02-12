@@ -25,13 +25,7 @@ MAP_DATA_TILE_SET_GRAPHICS_14: ;$DCB023
 .INCLUDE "data/map/per-sector_music.asm"
 
 AUDIO_PACK_156: ;$DCE037
-	AUDIOPACKBIN $18, $6C68, "audiopacks/156-1.bin"
-	AUDIOPACKBIN $1850, $95B0, "audiopacks/156-2.bin"
-	AUDIOPACKBIN $12, $6E9C, "audiopacks/156-3.bin"
-	AUDIOPACKTERMINATOR
+	AUDIOPACK "audiopacks/156.ebm"
 
 AUDIO_PACK_79: ;$DCF8BF
-	AUDIOPACKBIN $10E, $4800, "audiopacks/79-1.bin"
-	AUDIOPACKBIN $40A, $4B00, "audiopacks/79-2.bin"
-	AUDIOPACKBIN $1AD, $5400, "audiopacks/79-3.bin"
-	AUDIOPACKTERMINATOR
+	AUDIOPACK "audiopacks/79.ebm"

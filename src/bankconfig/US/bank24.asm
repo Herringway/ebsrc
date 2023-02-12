@@ -2,27 +2,16 @@
 .INCLUDE "common.asm"
 
 AUDIO_PACK_64: ;$E40000
-	AUDIOPACKBIN $18, $6C68, "audiopacks/64-1.bin"
-	AUDIOPACKBIN $5100, $95B0, "audiopacks/64-2.bin"
-	AUDIOPACKBIN $24, $6E9C, "audiopacks/64-3.bin"
-	AUDIOPACKTERMINATOR
+	AUDIOPACK "audiopacks/64.ebm"
 
 AUDIO_PACK_42: ;$E4514A
-	AUDIOPACKBIN $38, $6C68, "audiopacks/42-1.bin"
-	AUDIOPACKBIN $5060, $95B0, "audiopacks/42-2.bin"
-	AUDIOPACKBIN $42, $6E9C, "audiopacks/42-3.bin"
-	AUDIOPACKTERMINATOR
+	AUDIOPACK "audiopacks/42.ebm"
 
 AUDIO_PACK_126: ;$E4A232
-	AUDIOPACKBIN $18, $6C68, "audiopacks/126-1.bin"
-	AUDIOPACKBIN $4C60, $95B0, "audiopacks/126-2.bin"
-	AUDIOPACKBIN $18, $6E9C, "audiopacks/126-3.bin"
-	AUDIOPACKTERMINATOR
+	AUDIOPACK "audiopacks/126.ebm"
 
 AUDIO_PACK_125: ;$E4EED0
-	AUDIOPACKBIN $EBC, $4800, "audiopacks/125.bin"
-	AUDIOPACKTERMINATOR
+	AUDIOPACK "audiopacks/125.ebm"
 
 AUDIO_PACK_155: ;$E4FD92
-	AUDIOPACKBIN $261, $5800, "audiopacks/155.bin"
-	AUDIOPACKTERMINATOR
+	AUDIOPACK "audiopacks/155.ebm"

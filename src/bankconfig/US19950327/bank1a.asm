@@ -109,5 +109,4 @@ MAP_DATA_PALETTE_31: ;$DAF4A7
 .INCLUDE "data/map/unknown_map_palette_pointer_table.asm"
 
 AUDIO_PACK_111: ;$DAFB07
-	AUDIOPACKBIN $4E1, $4800, "audiopacks/111.bin"
-	AUDIOPACKTERMINATOR
+	AUDIOPACK "audiopacks/111.ebm"

@@ -172,5 +172,4 @@ TOWN_MAP_ICON_PALETTE: ;$E1F1C3
 .INCLUDE "data/map/town_map_icon_placement_data.asm"
 
 AUDIO_PACK_123: ;$E1F581
-	AUDIOPACKBIN $A6B, $4800, "audiopacks/123.bin"
-	AUDIOPACKTERMINATOR
+	AUDIOPACK "audiopacks/123.ebm"

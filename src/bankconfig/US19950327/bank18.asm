@@ -40,5 +40,4 @@ FAULTY_GAME_PAK_GRAPHICS: ;$D8F5C4
 	BINARY "errors/faulty.gfx.lzhal"
 
 AUDIO_PACK_127: ;$D8FBC7
-	AUDIOPACKBIN $421, $5800, "audiopacks/127.bin"
-	AUDIOPACKTERMINATOR
+	AUDIOPACK "audiopacks/127.ebm"

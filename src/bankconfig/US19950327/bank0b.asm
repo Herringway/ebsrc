@@ -904,11 +904,7 @@ BATTLE_BACKGROUND_GFX_0: ;$CBD897
 .INCLUDE "data/battle/background_layer_table.asm"
 
 AUDIO_PACK_66: ;$CBE02A
-	AUDIOPACKBIN $18, $6C68, "audiopacks/66-1.bin"
-	AUDIOPACKBIN $1E80, $95B0, "audiopacks/66-2.bin"
-	AUDIOPACKBIN $12, $6E9C, "audiopacks/66-3.bin"
-	AUDIOPACKTERMINATOR
+	AUDIOPACK "audiopacks/66.ebm"
 
 AUDIO_PACK_59: ;$CBFEE2
-	AUDIOPACKBIN $FC, $4800, "audiopacks/59.bin"
-	AUDIOPACKTERMINATOR
+	AUDIOPACK "audiopacks/59.ebm"

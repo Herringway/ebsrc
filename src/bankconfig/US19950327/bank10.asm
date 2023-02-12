@@ -20,7 +20,4 @@
 .INCLUDE "data/map/battle_groups_table.asm"
 
 AUDIO_PACK_139: ;$D0DFB4
-	AUDIOPACKBIN $18, $6C68, "audiopacks/139-1.bin"
-	AUDIOPACKBIN $1FB0, $95B0, "audiopacks/139-2.bin"
-	AUDIOPACKBIN $1E, $6E9C, "audiopacks/139-3.bin"
-	AUDIOPACKTERMINATOR
+	AUDIOPACK "audiopacks/139.ebm"

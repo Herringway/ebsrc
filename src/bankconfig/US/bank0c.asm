@@ -176,5 +176,4 @@ PSI_ANIM_PALETTES: ;$CCF47F
 .INCLUDE "data/psi_anim_pointers.asm"
 
 AUDIO_PACK_71: ;$CCF617
-	AUDIOPACKBIN $9BE, $5800, "audiopacks/71.bin"
-	AUDIOPACKTERMINATOR
+	AUDIOPACK "audiopacks/71.ebm"

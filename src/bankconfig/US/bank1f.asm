@@ -71,7 +71,4 @@ MAP_DATA_TILE_ANIMATION_GFX_14: ;$DFE4C8
 .INCLUDE "data/map/palette_anim_table.asm"
 
 AUDIO_PACK_4: ;$DFEC46
-	AUDIOPACKEBM "audiopacks/4-1.ebm"
-	AUDIOPACKEBM "audiopacks/4-2.ebm"
-	AUDIOPACKEBM "audiopacks/4-3.ebm"
-	AUDIOPACKTERMINATOR
+	AUDIOPACK "audiopacks/4.ebm"
