@@ -41,13 +41,13 @@ USPROTOSRCS = $(wildcard $(USPROTOSRCDIR)/*.asm)
 
 
 mother2.sfc: $(patsubst %.asm, %.o, $(JPSRCS))
-	ld65 $(LD65FLAGS) -o "$@" $^
+	ld65 $(LD65FLAGS) --mapfile "mother2.map" -o "$@" $^
 
 earthbound.sfc: $(patsubst %.asm, %.o, $(USSRCS))
-	ld65 $(LD65FLAGS) -o "$@" $^
+	ld65 $(LD65FLAGS) --mapfile "earthbound.map" -o "$@" $^
 
 earthbound-1995-03-27.sfc: $(patsubst %.asm, %.o, $(USPROTOSRCS))
-	ld65 $(LD65FLAGS) -o "$@" $^
+	ld65 $(LD65FLAGS) --mapfile "earthbound-1995-03-27.map" -o "$@" $^
 
 depsjp: $(JPSRCS:.asm=.dep)
 depsusa: $(USSRCS:.asm=.dep)
