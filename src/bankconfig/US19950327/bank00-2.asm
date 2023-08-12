@@ -452,7 +452,7 @@
 
 .INCLUDE "unknown/C0/C0A0FA.asm"
 
-.INCLUDE "system/check_hardware-proto.asm"
+.INCLUDE "system/check_hardware.asm"
 
 .INCLUDE "unknown/C0/C0A156_redirect.asm"
 

@@ -13,8 +13,17 @@ DISABLE_HOTSPOT: ;$C071E5
 	LDA #$0000
 	STA a:active_hotspot::mode,X
 	LDX $0E
-	SEP #PROC_FLAGS::ACCUM8
-	STZ .LOWORD(GAME_STATE) + game_state::active_hotspot_modes,X
+	.IF .DEFINED(JPN)
+		TXA
+		CLC
+		ADC #.LOWORD(GAME_STATE)
+		TAX
+		SEP #PROC_FLAGS::ACCUM8
+		STZ a:game_state::active_hotspot_modes,X
+	.ELSE
+		SEP #PROC_FLAGS::ACCUM8
+		STZ .LOWORD(GAME_STATE) + game_state::active_hotspot_modes,X
+	.ENDIF
 	REP #PROC_FLAGS::ACCUM8
 	PLD
 	RTL

@@ -840,4 +840,4 @@
 
 .INCLUDE "unknown/C1/C1FF99.asm"
 
-.INCLUDE "system/antipiracy/sram_check_routine_checksum-proto.asm"
+.INCLUDE "system/antipiracy/sram_check_routine_checksum.asm"

@@ -847,7 +847,7 @@
 
 .INCLUDE "unknown/C4/C4C64D.asm"
 
-.INCLUDE "overworld/spawn-jp.asm"
+.INCLUDE "overworld/spawn.asm"
 
 .INCLUDE "unknown/C4/C4C8A4.asm"
 
@@ -915,17 +915,17 @@
 
 .INCLUDE "overworld/prepare_your_sanctuary_location_palette_data.asm"
 
-.INCLUDE "overworld/prepare_your_sanctuary_location_tile_arrangement_data-jp.asm"
+.INCLUDE "overworld/prepare_your_sanctuary_location_tile_arrangement_data.asm"
 
 .INCLUDE "overworld/prepare_your_sanctuary_location_tileset_data.asm"
 
-.INCLUDE "overworld/load_your_sanctuary_location_data-jp.asm"
+.INCLUDE "overworld/load_your_sanctuary_location_data.asm"
 
 .INCLUDE "overworld/load_your_sanctuary_location.asm"
 
 .INCLUDE "overworld/display_your_sanctuary_location.asm"
 
-.INCLUDE "overworld/test_your_sanctuary_display-jp.asm"
+.INCLUDE "overworld/test_your_sanctuary_display.asm"
 
 .INCLUDE "unknown/C4/C4E369-jp.asm"
 

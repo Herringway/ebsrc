@@ -345,11 +345,11 @@
 
 .INCLUDE "unknown/C0/C070CB-jp.asm"
 
-.INCLUDE "overworld/disable_hotspot-jp.asm"
+.INCLUDE "overworld/disable_hotspot.asm"
 
-.INCLUDE "overworld/reload_hotspots-jp.asm"
+.INCLUDE "overworld/reload_hotspots.asm"
 
-.INCLUDE "overworld/activate_hotspot-jp.asm"
+.INCLUDE "overworld/activate_hotspot.asm"
 
 .INCLUDE "unknown/C0/C073C0-jp.asm"
 

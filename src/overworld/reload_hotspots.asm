@@ -17,12 +17,7 @@ RELOAD_HOTSPOTS: ;$C07213
 	AND #$00FF
 	BEQL @UNKNOWN2
 	LDA $02
-	STA $04
-	ASL
-	ADC $04
-	ASL
-	ADC $04
-	ASL
+	OPTIMIZED_MULT $04, .SIZEOF(active_hotspot)
 	CLC
 	ADC #.LOWORD(ACTIVE_HOTSPOTS)
 	TAX
@@ -43,30 +38,36 @@ RELOAD_HOTSPOTS: ;$C07213
 	ASL
 	ASL
 	ASL
-	STA a:.LOWORD(RAM)+2,X
+	STA a:active_hotspot::x1,X
 	LDY #$0004
 	LDA [$06],Y
 	ASL
 	ASL
 	ASL
-	STA a:.LOWORD(RAM)+6,X
+	STA a:active_hotspot::x2,X
 	LDY #$0002
 	LDA [$06],Y
 	ASL
 	ASL
 	ASL
-	STA a:.LOWORD(RAM)+4,X
+	STA a:active_hotspot::y1,X
 	LDY #$0006
 	LDA [$06],Y
 	ASL
 	ASL
 	ASL
-	STA a:.LOWORD(RAM)+8,X
+	STA a:active_hotspot::y2,X
 	LDA $02
 	ASL
 	ASL
 	CLC
-	ADC #.LOWORD(GAME_STATE) + game_state::active_hotspot_pointers
+	.IF .DEFINED(JPN)
+		ADC #.LOWORD(GAME_STATE)
+		CLC
+		ADC #game_state::active_hotspot_pointers
+	.ELSE
+		ADC #.LOWORD(GAME_STATE) + game_state::active_hotspot_pointers
+	.ENDIF
 	TAY
 	MOVE_INT_YPTRSRC a:.LOWORD(RAM), $06
 	TXA

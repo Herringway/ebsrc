@@ -215,7 +215,7 @@
 
 .INCLUDE "unknown/C1/C12E42.asm"
 
-.INCLUDE "system/debug/y_button_menu-jp.asm"
+.INCLUDE "system/debug/y_button_menu.asm"
 
 .INCLUDE "overworld/talk_to.asm"
 

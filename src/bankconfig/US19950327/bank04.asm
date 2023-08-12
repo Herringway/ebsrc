@@ -966,7 +966,7 @@
 
 .INCLUDE "unknown/C4/C4C64D.asm"
 
-.INCLUDE "overworld/spawn-jp.asm"
+.INCLUDE "overworld/spawn.asm"
 
 .INCLUDE "unknown/C4/C4C8A4.asm"
 

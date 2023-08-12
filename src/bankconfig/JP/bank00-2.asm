@@ -50,7 +50,7 @@
 
 .INCLUDE "system/copy_to_vram_redirect.asm"
 
-.INCLUDE "system/copy_to_vram-jp.asm"
+.INCLUDE "system/copy_to_vram.asm"
 
 .INCLUDE "system/sbrk.asm"
 
@@ -146,7 +146,7 @@
 
 .INCLUDE "system/math/mult8.asm"
 
-.INCLUDE "system/math/mult168-jp.asm"
+.INCLUDE "system/math/mult168.asm"
 
 .INCLUDE "system/math/mult16.asm"
 
@@ -698,7 +698,7 @@
 
 .INCLUDE "data/sine_table.asm"
 
-.INCLUDE "system/file_select_init-jp.asm"
+.INCLUDE "system/file_select_init.asm"
 
 .INCLUDE "unknown/C0/C0B65F.asm"
 
@@ -926,7 +926,7 @@
 
 .INCLUDE "system/saves/check_all_blocks_signature.asm"
 
-.INCLUDE "system/saves/copy_save_block-jp.asm"
+.INCLUDE "system/saves/copy_save_block.asm"
 
 .INCLUDE "system/saves/calc_save_block_checksum.asm"
 
