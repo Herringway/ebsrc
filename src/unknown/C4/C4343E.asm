@@ -6,7 +6,7 @@ UNKNOWN_C4343E: ;$C4343E
 	DEC
 	STA $02
 	LOADINT32 3600, $0A
-	LOADPTRPTR .LOWORD(TIMER), $06
+	LOADPTRPTR TIMER, $06
 	JSL DIVISION32
 	LOADINT32 60000, $0A
 	CLC
@@ -28,7 +28,7 @@ UNKNOWN_C4343E: ;$C4343E
 	ASL
 	TAX
 	LDA $12
-	STA .LOWORD(GAME_STATE) + game_state::saved_photo_states,X
+	STA GAME_STATE + game_state::saved_photo_states,X
 	LDY #$0000
 	STY $10
 	JMP @UNKNOWN10
@@ -42,7 +42,7 @@ UNKNOWN_C4343E: ;$C4343E
 	ADC #game_state::unknown96
 	TAX
 	STX $0E
-	LDA a:.LOWORD(RAM),X
+	LDA RAM,X
 	AND #$00FF
 	BNE @UNKNOWN5
 	STY $04
@@ -54,22 +54,22 @@ UNKNOWN_C4343E: ;$C4343E
 	ADC $04
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	STZ .LOWORD(GAME_STATE) + game_state::saved_photo_states + photo_state::party,X
+	STZ GAME_STATE + game_state::saved_photo_states + photo_state::party,X
 	BRA @UNKNOWN9
 @UNKNOWN5:
 	.A16
 	LDA $12
 	TAX
-	LDA a:.LOWORD(RAM)+game_state::player_controlled_party_members,X
+	LDA RAM+game_state::player_controlled_party_members,X
 	AND #$00FF
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
 	ADC #.LOWORD(CHAR_STRUCT)
 	STA $12
-	STA .LOWORD(UNKNOWN_7E4DC6)
+	STA UNKNOWN_7E4DC6
 	LDX $0E
-	LDA a:.LOWORD(RAM),X
+	LDA RAM,X
 	AND #$00FF
 	TAX
 	STX $0E
@@ -94,7 +94,7 @@ UNKNOWN_C4343E: ;$C4343E
 	TAX
 	STX $0E
 @UNKNOWN7:
-	LDX .LOWORD(UNKNOWN_7E4DC6)
+	LDX UNKNOWN_7E4DC6
 	LDA a:char_struct::afflictions+STATUS_GROUP::PERSISTENT_HARDHEAL,X
 	AND #$00FF
 	CMP #STATUS_1::MUSHROOMIZED
@@ -118,7 +118,7 @@ UNKNOWN_C4343E: ;$C4343E
 	TXA
 	SEP #PROC_FLAGS::ACCUM8
 	PLX
-	STA .LOWORD(GAME_STATE) + game_state::saved_photo_states + photo_state::party,X
+	STA GAME_STATE + game_state::saved_photo_states + photo_state::party,X
 @UNKNOWN9:
 	INY
 	STY $10

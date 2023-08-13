@@ -9,16 +9,16 @@ RESET_POST_BATTLE_STATS: ;$C2BC5C
 	LDY #.SIZEOF(battler)
 	JSL MULT168
 	TAX
-	LDA .LOWORD(BATTLERS_TABLE)+battler::consciousness,X
+	LDA BATTLERS_TABLE+battler::consciousness,X
 	AND #$00FF
 	BEQ @UNKNOWN1
-	LDA .LOWORD(BATTLERS_TABLE)+battler::ally_or_enemy,X
+	LDA BATTLERS_TABLE+battler::ally_or_enemy,X
 	AND #$00FF
 	BNE @UNKNOWN1
-	LDA .LOWORD(BATTLERS_TABLE)+battler::npc_id,X
+	LDA BATTLERS_TABLE+battler::npc_id,X
 	AND #$00FF
 	BNE @UNKNOWN1
-	LDA .LOWORD(BATTLERS_TABLE)+battler::row,X
+	LDA BATTLERS_TABLE+battler::row,X
 	AND #$00FF
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168

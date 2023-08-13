@@ -11,7 +11,7 @@ UNKNOWN_C216DB: ;$C216DB
 	LDA $17
 	AND #$00FF
 	TAX
-	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
+	LDA GAME_STATE + game_state::party_members,X
 	AND #$00FF
 	DEC
 	LDY #.SIZEOF(char_struct)
@@ -105,7 +105,7 @@ UNKNOWN_C216DB: ;$C216DB
 	SEP #PROC_FLAGS::ACCUM8
 	INC $17
 @UNKNOWN9:
-	LDA .LOWORD(GAME_STATE)+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_count
 	CMP $17
 	BGTL @UNKNOWN0
 	REP #PROC_FLAGS::ACCUM8

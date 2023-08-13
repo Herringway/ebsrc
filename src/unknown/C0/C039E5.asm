@@ -6,20 +6,20 @@ UNKNOWN_C039E5: ;$C039E5
 	STY $10
 	BRA @UNKNOWN2
 @UNKNOWN0:
-	LDA .LOWORD(GAME_STATE)+game_state::unknown96,Y
+	LDA GAME_STATE+game_state::unknown96,Y
 	AND #$00FF
 	BEQ @UNKNOWN1
 	TYA
 	ASL
 	TAX
-	LDA .LOWORD(GAME_STATE)+game_state::unknownA2,X
+	LDA GAME_STATE+game_state::unknownA2,X
 	STA $0E
 	ASL
 	TAX
-	LDA .LOWORD(GAME_STATE)+game_state::leader_x_coord
-	STA .LOWORD(ENTITY_ABS_X_TABLE),X
-	LDA .LOWORD(GAME_STATE)+game_state::leader_y_coord
-	STA .LOWORD(ENTITY_ABS_Y_TABLE),X
+	LDA GAME_STATE+game_state::leader_x_coord
+	STA ENTITY_ABS_X_TABLE,X
+	LDA GAME_STATE+game_state::leader_y_coord
+	STA ENTITY_ABS_Y_TABLE,X
 	LDA $0E
 	JSL UNKNOWN_C0A254
 @UNKNOWN1:

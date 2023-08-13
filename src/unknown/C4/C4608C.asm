@@ -8,7 +8,7 @@ UNKNOWN_C4608C: ;$C4608C
 	AND #$00FF
 	CMP #$00FF
 	BNE @UNKNOWN0
-	LDA .LOWORD(GAME_STATE)+game_state::current_party_members
+	LDA GAME_STATE+game_state::current_party_members
 	BRA @UNKNOWN4
 @UNKNOWN0:
 	LDX #$0000
@@ -16,13 +16,13 @@ UNKNOWN_C4608C: ;$C4608C
 @UNKNOWN1:
 	SEP #PROC_FLAGS::ACCUM8
 	LDA $0E
-	CMP .LOWORD(GAME_STATE) + game_state::unknown96,X
+	CMP GAME_STATE + game_state::unknown96,X
 	BNE @UNKNOWN2
 	REP #PROC_FLAGS::ACCUM8
 	TXA
 	ASL
 	TAX
-	LDA .LOWORD(GAME_STATE) + game_state::unknownA2,X
+	LDA GAME_STATE + game_state::unknownA2,X
 	BRA @UNKNOWN4
 @UNKNOWN2:
 	INX

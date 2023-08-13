@@ -23,7 +23,7 @@ UNKNOWN_C2239D: ;$C2239D
 	STA $0E
 @UNKNOWN2:
 	STA $04
-	LDA .LOWORD(GAME_STATE)+game_state::party_count
+	LDA GAME_STATE+game_state::party_count
 	AND #$00FF
 	CLC
 	SBC $04

@@ -29,7 +29,7 @@ UNKNOWN_C3EB1C: ;$C3EB1C
 	STX $12
 	BRA @UNKNOWN10
 @UNKNOWN3:
-	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
+	LDA GAME_STATE + game_state::party_members,X
 	AND #$00FF
 	DEC
 	LDY #.SIZEOF(char_struct)
@@ -67,7 +67,7 @@ UNKNOWN_C3EB1C: ;$C3EB1C
 	CLC
 	ADC $02
 	TAX
-	LDA a:.LOWORD(RAM)+35,X
+	LDA RAM+35,X
 	AND #$00FF
 	STA $0E
 	BNE @UNKNOWN4
@@ -76,7 +76,7 @@ UNKNOWN_C3EB1C: ;$C3EB1C
 	INX
 	STX $12
 @UNKNOWN10:
-	LDA .LOWORD(GAME_STATE)+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_count
 	AND #$00FF
 	STA $02
 	TXA

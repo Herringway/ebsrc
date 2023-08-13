@@ -7,7 +7,7 @@ UNKNOWN_C032EC: ;$C032EC
 @UNKNOWN0:
 	INY
 @UNKNOWN1:
-	LDA .LOWORD(GAME_STATE) + game_state::party_members,Y
+	LDA GAME_STATE + game_state::party_members,Y
 	AND #$00FF
 	BEQ @UNKNOWN3
 	AND #$00FF
@@ -19,13 +19,13 @@ UNKNOWN_C032EC: ;$C032EC
 @UNKNOWN3:
 	TYA
 	SEP #PROC_FLAGS::ACCUM8
-	STA .LOWORD(GAME_STATE)+game_state::player_controlled_party_count
+	STA GAME_STATE+game_state::player_controlled_party_count
 	REP #PROC_FLAGS::ACCUM8
 	LDA #.LOWORD(GAME_STATE)+game_state::party_npc_1
 	STA $04
 	LDX $04
 	SEP #PROC_FLAGS::ACCUM8
-	LDA a:.LOWORD(RAM),X
+	LDA RAM,X
 	STA $00
 	STA $18
 	REP #PROC_FLAGS::ACCUM8
@@ -45,7 +45,7 @@ UNKNOWN_C032EC: ;$C032EC
 	STA $02
 	LDX $02
 	SEP #PROC_FLAGS::ACCUM8
-	LDA a:.LOWORD(RAM),X
+	LDA RAM,X
 	STA $01
 	LDA $15
 	STA $00
@@ -54,16 +54,16 @@ UNKNOWN_C032EC: ;$C032EC
 	BNE @UNKNOWN5
 	LDA $01
 	LDX $04
-	STA a:.LOWORD(RAM),X
+	STA RAM,X
 	LDX #.LOWORD(GAME_STATE)+game_state::party_npc_2_hp
 	STX $13
 	REP #PROC_FLAGS::ACCUM8
-	LDA a:.LOWORD(RAM),X
-	STA .LOWORD(GAME_STATE)+game_state::party_npc_1_hp
+	LDA RAM,X
+	STA GAME_STATE+game_state::party_npc_1_hp
 	SEP #PROC_FLAGS::ACCUM8
-	LDA .LOWORD(GAME_STATE) + game_state::party_members + 1,Y
+	LDA GAME_STATE + game_state::party_members + 1,Y
 	LDX $02
-	STA a:.LOWORD(RAM),X
+	STA RAM,X
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF
 	ASL
@@ -78,25 +78,25 @@ UNKNOWN_C032EC: ;$C032EC
 	TAX
 	LDA f:ENEMY_CONFIGURATION_TABLE,X
 	LDX $13
-	STA a:.LOWORD(RAM),X
+	STA RAM,X
 	JMP @UNKNOWN8
 @UNKNOWN5:
 	LDA $18
 	STA $00
-	CMP .LOWORD(GAME_STATE) + game_state::party_members + 1,Y
+	CMP GAME_STATE + game_state::party_members + 1,Y
 	BNE @UNKNOWN6
 	LDA $00
 	LDX $02
-	STA a:.LOWORD(RAM),X
+	STA RAM,X
 	LDX #.LOWORD(GAME_STATE)+game_state::party_npc_1_hp
 	STX $13
 	REP #PROC_FLAGS::ACCUM8
-	LDA a:.LOWORD(RAM),X
-	STA .LOWORD(GAME_STATE)+game_state::party_npc_2_hp
+	LDA RAM,X
+	STA GAME_STATE+game_state::party_npc_2_hp
 	SEP #PROC_FLAGS::ACCUM8
 	LDA ($16)
 	LDX $04
-	STA a:.LOWORD(RAM),X
+	STA RAM,X
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF
 	ASL
@@ -111,12 +111,12 @@ UNKNOWN_C032EC: ;$C032EC
 	TAX
 	LDA f:ENEMY_CONFIGURATION_TABLE,X
 	LDX $13
-	STA a:.LOWORD(RAM),X
+	STA RAM,X
 	JMP @UNKNOWN8
 @UNKNOWN6:
 	LDA $15
 	LDX $04
-	STA a:.LOWORD(RAM),X
+	STA RAM,X
 	TYX
 	INX
 	REP #PROC_FLAGS::ACCUM8
@@ -141,18 +141,18 @@ UNKNOWN_C032EC: ;$C032EC
 	ADC $06
 	STA $06
 	LDA [$06]
-	STA .LOWORD(GAME_STATE)+game_state::party_npc_1_hp
+	STA GAME_STATE+game_state::party_npc_1_hp
 	SEP #PROC_FLAGS::ACCUM8
-	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
+	LDA GAME_STATE + game_state::party_members,X
 	STA $0E
 	STA $00
 	LDX $02
-	LDA a:.LOWORD(RAM),X
+	LDA RAM,X
 	CMP $00
 	BEQ @UNKNOWN8
 	LDA $0E
 	LDX $02
-	STA a:.LOWORD(RAM),X
+	STA RAM,X
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF
 	ASL
@@ -172,19 +172,19 @@ UNKNOWN_C032EC: ;$C032EC
 	ADC $06
 	STA $06
 	LDA [$06]
-	STA .LOWORD(GAME_STATE)+game_state::party_npc_2_hp
+	STA GAME_STATE+game_state::party_npc_2_hp
 	BRA @UNKNOWN8
 @UNKNOWN7:
 	INY
 	LDX #.LOWORD(GAME_STATE)+game_state::party_npc_2
-	LDA .LOWORD(GAME_STATE) + game_state::party_members,Y
+	LDA GAME_STATE + game_state::party_members,Y
 	STA $0E
 	STA $00
-	LDA a:.LOWORD(RAM),X
+	LDA RAM,X
 	CMP $00
 	BEQ @UNKNOWN8
 	LDA $0E
-	STA a:.LOWORD(RAM),X
+	STA RAM,X
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF
 	ASL
@@ -198,7 +198,7 @@ UNKNOWN_C032EC: ;$C032EC
 	ADC #enemy_data::hp
 	TAX
 	LDA f:ENEMY_CONFIGURATION_TABLE,X
-	STA .LOWORD(GAME_STATE)+game_state::party_npc_2_hp
+	STA GAME_STATE+game_state::party_npc_2_hp
 @UNKNOWN8:
 	REP #PROC_FLAGS::ACCUM8
 	PLD

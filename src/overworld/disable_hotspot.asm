@@ -22,7 +22,7 @@ DISABLE_HOTSPOT: ;$C071E5
 		STZ a:game_state::active_hotspot_modes,X
 	.ELSE
 		SEP #PROC_FLAGS::ACCUM8
-		STZ .LOWORD(GAME_STATE) + game_state::active_hotspot_modes,X
+		STZ GAME_STATE + game_state::active_hotspot_modes,X
 	.ENDIF
 	REP #PROC_FLAGS::ACCUM8
 	PLD

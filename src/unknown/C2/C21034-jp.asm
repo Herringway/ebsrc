@@ -17,9 +17,9 @@ UNKNOWN_C21034: ;$C21034
 	CLC
 	ADC #.LOWORD(CHAR_STRUCT)
 	TAX
-	LDA a:.LOWORD(RAM)+66,X
+	LDA RAM+66,X
 	BNE @UNKNOWN1
-	LDA a:.LOWORD(RAM)+72,X
+	LDA RAM+72,X
 	BNE @UNKNOWN1
 	LDA a:char_struct::current_hp,X
 	CMP a:char_struct::current_hp_target,X
@@ -35,7 +35,7 @@ UNKNOWN_C21034: ;$C21034
 	INC
 	STA $0E
 @UNKNOWN3:
-	LDA .LOWORD(GAME_STATE)+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_count
 	AND #$00FF
 	STA $02
 	LDA $0E

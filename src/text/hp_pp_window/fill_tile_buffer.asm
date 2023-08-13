@@ -30,13 +30,13 @@ FILL_HP_PP_TILE_BUFFER: ;$C20DC5
 	CLC
 	ADC #.LOWORD(HPPP_WINDOW_BUFFER) + .SIZEOF(hp_pp_window_buffer::hp1) - (1 * 2)
 	TAX
-	LDA .LOWORD(HPPP_WINDOW_DIGIT_BUFFER) + 2
+	LDA HPPP_WINDOW_DIGIT_BUFFER + 2
 	AND #$00FF
 	STA $14
-	LDA .LOWORD(HPPP_WINDOW_DIGIT_BUFFER) + 1
+	LDA HPPP_WINDOW_DIGIT_BUFFER + 1
 	AND #$00FF
 	STA $04
-	LDA .LOWORD(HPPP_WINDOW_DIGIT_BUFFER)
+	LDA HPPP_WINDOW_DIGIT_BUFFER
 	AND #$00FF
 	STA $12
 	LDA $14
@@ -58,11 +58,11 @@ FILL_HP_PP_TILE_BUFFER: ;$C20DC5
 	CLC
 	ADC #$2600
 	STA $02
-	STA a:.LOWORD(RAM) + hp_pp_window_buffer::hp1,X
+	STA RAM + hp_pp_window_buffer::hp1,X
 	LDA $02
 	CLC
 	ADC #$0010
-	STA a:.LOWORD(RAM) + hp_pp_window_buffer::hp2,X
+	STA RAM + hp_pp_window_buffer::hp2,X
 	TXA
 	DEC
 	DEC
@@ -108,11 +108,11 @@ FILL_HP_PP_TILE_BUFFER: ;$C20DC5
 	ADC #$2400
 	LDX $10
 	STX $02
-	STA a:.LOWORD(RAM),X
+	STA RAM,X
 	CLC
 	ADC #$0010
 	LDX $02
-	STA a:.LOWORD(RAM) + hp_pp_window_buffer::hp2,X
+	STA RAM + hp_pp_window_buffer::hp2,X
 	LDA $02
 	DEC
 	DEC
@@ -159,7 +159,7 @@ FILL_HP_PP_TILE_BUFFER: ;$C20DC5
 	LDA $0E
 	TAX
 	PLA
-	STA a:.LOWORD(RAM) + hp_pp_window_buffer::hp1,X
+	STA RAM + hp_pp_window_buffer::hp1,X
 	LDA $0E
 	PHA
 	LDX $12
@@ -167,6 +167,6 @@ FILL_HP_PP_TILE_BUFFER: ;$C20DC5
 	CLC
 	ADC #$0010
 	PLX
-	STA a:.LOWORD(RAM) + hp_pp_window_buffer::hp2,X
+	STA RAM + hp_pp_window_buffer::hp2,X
 	PLD
 	RTS

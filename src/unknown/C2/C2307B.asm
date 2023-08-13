@@ -4,38 +4,38 @@ UNKNOWN_C2307B: ;$C2307B
 	RESERVE_STACK_SPACE_CLOBBER 18
 	LDX #.LOWORD(GAME_STATE) + game_state::party_npc_1
 	STX $10
-	LDA a:.LOWORD(RAM),X
+	LDA RAM,X
 	AND #$00FF
 	JSL REMOVE_CHAR_FROM_PARTY
 	LDY #.LOWORD(GAME_STATE) + game_state::party_npc_2
 	STY $0E
-	LDA a:.LOWORD(RAM),Y
+	LDA RAM,Y
 	AND #$00FF
 	JSL REMOVE_CHAR_FROM_PARTY
-	LDA .LOWORD(GAME_STATE)+game_state::party_npc_1_id_copy
+	LDA GAME_STATE+game_state::party_npc_1_id_copy
 	AND #$00FF
 	BEQ @UNKNOWN0
 	LDX $10
 	SEP #PROC_FLAGS::ACCUM8
-	STA a:.LOWORD(RAM),X
+	STA RAM,X
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF
 	JSL ADD_CHAR_TO_PARTY
-	LDA .LOWORD(GAME_STATE) + game_state::party_npc_1_hp_copy
-	STA .LOWORD(GAME_STATE)+game_state::party_npc_1_hp
-	LDA .LOWORD(GAME_STATE) + game_state::party_npc_2_id_copy
+	LDA GAME_STATE + game_state::party_npc_1_hp_copy
+	STA GAME_STATE+game_state::party_npc_1_hp
+	LDA GAME_STATE + game_state::party_npc_2_id_copy
 	AND #$00FF
 	BEQ @UNKNOWN0
 	LDY $0E
 	SEP #PROC_FLAGS::ACCUM8
-	STA a:.LOWORD(RAM),Y
+	STA RAM,Y
 	REP #PROC_FLAGS::ACCUM8
 	AND #$00FF
 	JSL ADD_CHAR_TO_PARTY
-	LDA .LOWORD(GAME_STATE) + game_state::party_npc_2_hp_copy
-	STA .LOWORD(GAME_STATE)+game_state::party_npc_2_hp
+	LDA GAME_STATE + game_state::party_npc_2_hp_copy
+	STA GAME_STATE+game_state::party_npc_2_hp
 @UNKNOWN0:
-	MOVE_INT .LOWORD(GAME_STATE)+game_state::wallet_backup, $06
-	MOVE_INT $06, .LOWORD(GAME_STATE)+game_state::money_carried
+	MOVE_INT GAME_STATE+game_state::wallet_backup, $06
+	MOVE_INT $06, GAME_STATE+game_state::money_carried
 	PLD
 	RTL

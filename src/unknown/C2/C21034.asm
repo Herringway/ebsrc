@@ -6,7 +6,7 @@ UNKNOWN_C21034: ;$C21034
 	STY $0E
 	BRA @UNKNOWN3
 @UNKNOWN0:
-	LDA .LOWORD(GAME_STATE) + game_state::party_members,Y
+	LDA GAME_STATE + game_state::party_members,Y
 	AND #$00FF
 	DEC
 	LDY #.SIZEOF(char_struct)
@@ -32,7 +32,7 @@ UNKNOWN_C21034: ;$C21034
 	INY
 	STY $0E
 @UNKNOWN3:
-	LDA .LOWORD(GAME_STATE)+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_count
 	AND #$00FF
 	STA $02
 	TYA

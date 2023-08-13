@@ -7,7 +7,7 @@ RESET_HPPP_ROLLING: ;$C20F9A
 	BRA @UNKNOWN4
 @UNKNOWN0:
 	LDX $02
-	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
+	LDA GAME_STATE + game_state::party_members,X
 	AND #$00FF
 	DEC
 	LDY #.SIZEOF(char_struct)
@@ -32,12 +32,12 @@ RESET_HPPP_ROLLING: ;$C20F9A
 	CLC
 	ADC #char_struct::current_hp_target
 	TAX
-	LDA a:.LOWORD(RAM),X
+	LDA RAM,X
 	STA $04
 	LDA $0E
 	CMP $04
 	BLTEQ @UNKNOWN2
-	STA a:.LOWORD(RAM),X
+	STA RAM,X
 @UNKNOWN2:
 	LDA a:char_struct::current_pp_fraction,Y
 	BEQ @UNKNOWN3
@@ -47,16 +47,16 @@ RESET_HPPP_ROLLING: ;$C20F9A
 	CLC
 	ADC #$004D
 	TAX
-	LDA a:.LOWORD(RAM),X
+	LDA RAM,X
 	STA $04
 	LDA $0E
 	CMP $04
 	BLTEQ @UNKNOWN3
-	STA a:.LOWORD(RAM),X
+	STA RAM,X
 @UNKNOWN3:
 	INC $02
 @UNKNOWN4:
-	LDA .LOWORD(GAME_STATE)+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_count
 	AND #$00FF
 	STA $04
 	LDA $02
@@ -64,7 +64,7 @@ RESET_HPPP_ROLLING: ;$C20F9A
 	BCCL @UNKNOWN0
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0001
-	STA .LOWORD(UNKNOWN_7E9696)
+	STA UNKNOWN_7E9696
 	REP #PROC_FLAGS::ACCUM8
 	PLD
 	RTL

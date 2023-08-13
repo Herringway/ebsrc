@@ -3,13 +3,13 @@
 ANIMATE_PALETTE: ;$C0030F
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
 	RESERVE_STACK_SPACE_CLOBBER 16
-	LDA .LOWORD(OVERWORLD_PALETTE_ANIM) + overworld_palette_anim::timer
+	LDA OVERWORLD_PALETTE_ANIM + overworld_palette_anim::timer
 	DEC
-	STA .LOWORD(OVERWORLD_PALETTE_ANIM) + overworld_palette_anim::timer
+	STA OVERWORLD_PALETTE_ANIM + overworld_palette_anim::timer
 	BNE @UNKNOWN1
 	LDX #.LOWORD(OVERWORLD_PALETTE_ANIM) + overworld_palette_anim::index
 	STX $0E
-	LDA a:.LOWORD(RAM),X
+	LDA RAM,X
 	ASL
 .IF .DEFINED(JPN)
 	CLC
@@ -18,16 +18,16 @@ ANIMATE_PALETTE: ;$C0030F
 	LDA a:overworld_palette_anim::delays,X
 .ELSE
 	TAX
-	LDA .LOWORD(OVERWORLD_PALETTE_ANIM) + overworld_palette_anim::delays,X
+	LDA OVERWORLD_PALETTE_ANIM + overworld_palette_anim::delays,X
 .ENDIF
 	BNE @UNKNOWN0
 	LDA #$0000
 	LDX $0E
-	STA a:.LOWORD(RAM),X
+	STA RAM,X
 @UNKNOWN0:
 	LDX #.LOWORD(OVERWORLD_PALETTE_ANIM) + overworld_palette_anim::index
 	STX $0E
-	LDA a:.LOWORD(RAM),X
+	LDA RAM,X
 	ASL
 .IF .DEFINED(JPN)
 	CLC
@@ -36,16 +36,16 @@ ANIMATE_PALETTE: ;$C0030F
 	LDA a:overworld_palette_anim::delays,X
 .ELSE
 	TAX
-	LDA .LOWORD(OVERWORLD_PALETTE_ANIM) + overworld_palette_anim::delays,X
+	LDA OVERWORLD_PALETTE_ANIM + overworld_palette_anim::delays,X
 .ENDIF
-	STA .LOWORD(OVERWORLD_PALETTE_ANIM) + overworld_palette_anim::timer
+	STA OVERWORLD_PALETTE_ANIM + overworld_palette_anim::timer
 	LDX $0E
-	LDA a:.LOWORD(RAM),X
+	LDA RAM,X
 	JSL UNKNOWN_C0A1F2
 	LDX $0E
-	LDA a:.LOWORD(RAM),X
+	LDA RAM,X
 	INC
-	STA a:.LOWORD(RAM),X
+	STA RAM,X
 @UNKNOWN1:
 	PLD
 	RTL

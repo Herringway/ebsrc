@@ -27,7 +27,7 @@ REDUCE_PP_AMTPERCENT: ;$C18FBA
 	LDA $02
 	STA $10
 @UNKNOWN1:
-	LDA .LOWORD(GAME_STATE)+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_count
 	AND #$00FF
 	PHA
 	LDA $02

@@ -5,7 +5,7 @@ UNKNOWN_C4334A: ;$C4334A
 	STA $02
 	ASL
 	TAX
-	LDA .LOWORD(GAME_STATE)+game_state::leader_x_coord
+	LDA GAME_STATE+game_state::leader_x_coord
 	LSR
 	LSR
 	LSR
@@ -15,7 +15,7 @@ UNKNOWN_C4334A: ;$C4334A
 	LDA $02
 	CMP #$0004
 	BNE @UNKNOWN0
-	LDA .LOWORD(GAME_STATE)+game_state::leader_y_coord
+	LDA GAME_STATE+game_state::leader_y_coord
 	INC
 	LSR
 	LSR
@@ -25,7 +25,7 @@ UNKNOWN_C4334A: ;$C4334A
 	STA $04
 	BRA @UNKNOWN1
 @UNKNOWN0:
-	LDA .LOWORD(GAME_STATE)+game_state::leader_y_coord
+	LDA GAME_STATE+game_state::leader_y_coord
 	LSR
 	LSR
 	LSR
@@ -35,7 +35,7 @@ UNKNOWN_C4334A: ;$C4334A
 @UNKNOWN1:
 	LDA $02
 	STA $0E
-	LDY .LOWORD(GAME_STATE)+game_state::current_party_members
+	LDY GAME_STATE+game_state::current_party_members
 	LDA $04
 	ASL
 	ASL
@@ -98,12 +98,12 @@ UNKNOWN_C4334A: ;$C4334A
 	ADC $06
 	STA $06
 	LDA $5DBE
-	STA .LOWORD(UNKNOWN_7E5DDC)
+	STA UNKNOWN_7E5DDC
 	MOVE_INT $06, $0A
 	DEREFERENCE_PTR_TO $0A, $06
-	MOVE_INT $06, .LOWORD(UNKNOWN_7E5DDE)
+	MOVE_INT $06, UNKNOWN_7E5DDE
 	LDA #$FFFE
-	STA .LOWORD(CURRENT_TPT_ENTRY)
+	STA CURRENT_TPT_ENTRY
 @UNKNOWN5:
 	PLD
 	RTL

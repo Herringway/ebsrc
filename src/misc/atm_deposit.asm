@@ -5,7 +5,7 @@ DEPOSIT_INTO_ATM: ;$C2281D
 	MOVE_INT $20, $06
 	MOVE_INT $06, $0E
 	MOVE_INT $0E, $06
-	MOVE_INT .LOWORD(GAME_STATE)+game_state::bank_balance, $0A
+	MOVE_INT GAME_STATE+game_state::bank_balance, $0A
 	CLC
 	ADD_INT_ASSIGN $0A, $06
 	MOVE_INT_CONSTANT ATM_ACCOUNT_LIMIT, $06
@@ -17,8 +17,8 @@ DEPOSIT_INTO_ATM: ;$C2281D
 	BRANCHGTS @UNKNOWN2
 	MOVE_INT $0A, $06
 @UNKNOWN2:
-	MOVE_INT $06, .LOWORD(GAME_STATE)+game_state::bank_balance
-	MOVE_INT .LOWORD(GAME_STATE)+game_state::bank_balance, $06
+	MOVE_INT $06, GAME_STATE+game_state::bank_balance
+	MOVE_INT GAME_STATE+game_state::bank_balance, $06
 	SEC
 	SUB_INT_ASSIGN $0A, $06
 	MOVE_INT $0E, $06

@@ -5,10 +5,10 @@ IS_VALID_ITEM_TRANSFORMATION: ;$C48ECE
 	ASL
 	ASL
 	TAX
-	LDA .LOWORD(LOADED_TIMED_ITEM_TRANSFORMATIONS) + loaded_timed_item_transformation::transformation_countdown,X
+	LDA LOADED_TIMED_ITEM_TRANSFORMATIONS + loaded_timed_item_transformation::transformation_countdown,X
 	AND #$00FF
 	BNE @UNKNOWN0
-	LDA .LOWORD(LOADED_TIMED_ITEM_TRANSFORMATIONS) + loaded_timed_item_transformation::sfx_frequency,X
+	LDA LOADED_TIMED_ITEM_TRANSFORMATIONS + loaded_timed_item_transformation::sfx_frequency,X
 	AND #$00FF
 	BEQ @UNKNOWN1
 @UNKNOWN0:

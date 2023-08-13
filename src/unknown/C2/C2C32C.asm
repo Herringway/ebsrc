@@ -6,12 +6,12 @@ UNKNOWN_C2C32C: ;$C2C32C
 	LDA #.LOWORD(BATTLERS_TABLE) + (.SIZEOF(battler) * 8) + battler::sprite_x
 	STA $02
 	LDX $02
-	LDA a:.LOWORD(RAM),X
+	LDA RAM,X
 	AND #$00FF
 	STA $10
 	LDY #.LOWORD(BATTLERS_TABLE) + (.SIZEOF(battler) * 8) + battler::sprite_y
 	STY $0E
-	LDA a:.LOWORD(RAM),Y
+	LDA RAM,Y
 	AND #$00FF
 	STA $04
 	LDX #.LOWORD(BATTLERS_TABLE) + (.SIZEOF(battler) * 8)
@@ -20,14 +20,14 @@ UNKNOWN_C2C32C: ;$C2C32C
 	LDA $10
 	SEP #PROC_FLAGS::ACCUM8
 	LDX $02
-	STA a:.LOWORD(RAM),X
+	STA RAM,X
 	REP #PROC_FLAGS::ACCUM8
 	LDA $04
 	SEP #PROC_FLAGS::ACCUM8
 	LDY $0E
-	STA a:.LOWORD(RAM),Y
+	STA RAM,Y
 	LDA #$0001
-	STA .LOWORD(BATTLERS_TABLE) + (.SIZEOF(battler) * 8) + battler::has_taken_turn
+	STA BATTLERS_TABLE + (.SIZEOF(battler) * 8) + battler::has_taken_turn
 	REP #PROC_FLAGS::ACCUM8
 	PLD
 	RTS

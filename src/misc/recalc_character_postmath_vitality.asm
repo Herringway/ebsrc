@@ -6,8 +6,8 @@ RECALC_CHARACTER_POSTMATH_VITALITY: ;$C21D65
 	JSL MULT168
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	LDA .LOWORD(CHAR_STRUCT)+char_struct::base_vitality,X
+	LDA CHAR_STRUCT+char_struct::base_vitality,X
 	CLC
-	ADC .LOWORD(CHAR_STRUCT)+char_struct::boosted_vitality,X
-	STA .LOWORD(CHAR_STRUCT)+char_struct::vitality,X
+	ADC CHAR_STRUCT+char_struct::boosted_vitality,X
+	STA CHAR_STRUCT+char_struct::vitality,X
 	RTL

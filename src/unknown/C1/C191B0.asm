@@ -5,19 +5,19 @@ UNKNOWN_C191B0: ;$C191B0
 	TAX
 	DEX
 	SEP #PROC_FLAGS::ACCUM8
-	LDA .LOWORD(GAME_STATE)+game_state::escargo_express_items,X
+	LDA GAME_STATE+game_state::escargo_express_items,X
 	STA $01
 	BRA @UNKNOWN1
 @UNKNOWN0:
 	SEP #PROC_FLAGS::ACCUM8
 	LDA $00
-	STA .LOWORD(GAME_STATE)+game_state::escargo_express_items,X
+	STA GAME_STATE+game_state::escargo_express_items,X
 	REP #PROC_FLAGS::ACCUM8
 	LDA $0E
 	TAX
 @UNKNOWN1:
 	SEP #PROC_FLAGS::ACCUM8
-	LDA .LOWORD(GAME_STATE)+game_state::escargo_express_items+1,X
+	LDA GAME_STATE+game_state::escargo_express_items+1,X
 	STA $00
 	REP #PROC_FLAGS::ACCUM8
 	LDA $00
@@ -30,7 +30,7 @@ UNKNOWN_C191B0: ;$C191B0
 	BCC @UNKNOWN0
 @UNKNOWN2:
 	SEP #PROC_FLAGS::ACCUM8
-	STZ .LOWORD(GAME_STATE)+game_state::escargo_express_items,X
+	STZ GAME_STATE+game_state::escargo_express_items,X
 	REP #PROC_FLAGS::ACCUM8
 	LDA $01
 	AND #$00FF

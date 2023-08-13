@@ -13,7 +13,7 @@ FIND_TARGETTABLE_NPC: ;$C23F6C
 	BRA @UNKNOWN6
 @UNKNOWN1:
 	TAX
-	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
+	LDA GAME_STATE + game_state::party_members,X
 	AND #$00FF
 	TAY
 	STY $0E
@@ -33,12 +33,12 @@ FIND_TARGETTABLE_NPC: ;$C23F6C
 	LDY #.SIZEOF(battler)
 	JSL MULT168
 	TAX
-	LDA .LOWORD(BATTLERS_TABLE)+battler::consciousness,X
+	LDA BATTLERS_TABLE+battler::consciousness,X
 	AND #$00FF
 	BEQ @UNKNOWN3
 	LDY $0E
 	STY $02
-	LDA .LOWORD(BATTLERS_TABLE)+battler::npc_id,X
+	LDA BATTLERS_TABLE+battler::npc_id,X
 	AND #$00FF
 	CMP $02
 	BNE @UNKNOWN3

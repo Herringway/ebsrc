@@ -11,17 +11,17 @@ UNKNOWN_C0546B: ;$C0546B
 	CLC
 	ADC #.LOWORD(GAME_STATE)
 	TAX
-	LDA a:.LOWORD(RAM) + game_state::unknown96,X
+	LDA RAM + game_state::unknown96,X
 	AND #$00FF
 	CLC
 	SBC #$0004
 	BRANCHGTS @UNKNOWN3
-	LDA a:.LOWORD(RAM) + game_state::player_controlled_party_members,X
+	LDA RAM + game_state::player_controlled_party_members,X
 	AND #$00FF
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA .LOWORD(CHAR_STRUCT)+char_struct::level,X
+	LDA CHAR_STRUCT+char_struct::level,X
 	AND #$00FF
 	STA $02
 	LDY $10
@@ -35,7 +35,7 @@ UNKNOWN_C0546B: ;$C0546B
 	INC
 	STA $0E
 @UNKNOWN4:
-	LDA .LOWORD(GAME_STATE)+game_state::party_count
+	LDA GAME_STATE+game_state::party_count
 	AND #$00FF
 	STA $02
 	LDA $0E

@@ -9,7 +9,7 @@ UNKNOWN_C0369B: ;$C0369B
 	CPY #$0005
 	BCC @UNKNOWN1
 @UNKNOWN0:
-	LDA .LOWORD(GAME_STATE) + game_state::unknown96,X
+	LDA GAME_STATE + game_state::unknown96,X
 	AND #$00FF
 	BEQ @UNKNOWN5
 	AND #$00FF
@@ -21,7 +21,7 @@ UNKNOWN_C0369B: ;$C0369B
 	STX $18
 	BRA @UNKNOWN0
 @UNKNOWN1:
-	LDA .LOWORD(GAME_STATE) + game_state::unknown96,X
+	LDA GAME_STATE + game_state::unknown96,X
 	AND #$00FF
 	BEQ @UNKNOWN5
 	AND #$00FF
@@ -38,11 +38,11 @@ UNKNOWN_C0369B: ;$C0369B
 	BGT @UNKNOWN5
 	ASL
 	TAX
-	LDA .LOWORD(ENTITY_SCRIPT_VAR1_TABLE),X
+	LDA ENTITY_SCRIPT_VAR1_TABLE,X
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA .LOWORD(CHAR_STRUCT)+char_struct::afflictions,X
+	LDA CHAR_STRUCT+char_struct::afflictions,X
 	AND #$00FF
 	CMP #$0001
 	BEQ @UNKNOWN5
@@ -52,7 +52,7 @@ UNKNOWN_C0369B: ;$C0369B
 	BRA @UNKNOWN1
 @UNKNOWN5:
 	LDX $18
-	LDA .LOWORD(GAME_STATE) + game_state::unknown96,X
+	LDA GAME_STATE + game_state::unknown96,X
 	AND #$00FF
 	BEQ @UNKNOWN8
 	LDA #$0005
@@ -70,7 +70,7 @@ UNKNOWN_C0369B: ;$C0369B
 	STA $02
 	LDX $02
 	SEP #PROC_FLAGS::ACCUM8
-	LDA a:.LOWORD(RAM) + game_state::unknown96,X
+	LDA RAM + game_state::unknown96,X
 	LDY #game_state::unknown96
 	STA ($12),Y
 	REP #PROC_FLAGS::ACCUM8
@@ -80,12 +80,12 @@ UNKNOWN_C0369B: ;$C0369B
 	LDA $04
 	ASL
 	TAX
-	LDA .LOWORD(GAME_STATE) + game_state::unknownA2,X
+	LDA GAME_STATE + game_state::unknownA2,X
 	PLX
-	STA .LOWORD(GAME_STATE) + game_state::unknownA2,X
+	STA GAME_STATE + game_state::unknownA2,X
 	LDX $02
 	SEP #PROC_FLAGS::ACCUM8
-	LDA a:.LOWORD(RAM)+game_state::player_controlled_party_members,X
+	LDA RAM+game_state::player_controlled_party_members,X
 	LDY #game_state::player_controlled_party_members
 	STA ($12),Y
 	REP #PROC_FLAGS::ACCUM8
@@ -103,21 +103,21 @@ UNKNOWN_C0369B: ;$C0369B
 	LDY $1A
 	TYA
 	SEP #PROC_FLAGS::ACCUM8
-	STA .LOWORD(GAME_STATE) + game_state::unknown96,X
+	STA GAME_STATE + game_state::unknown96,X
 	REP #PROC_FLAGS::ACCUM8
 	LDA #.LOWORD(GAME_STATE) + game_state::party_count
 	PHA
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	LDA a:.LOWORD(RAM),X
+	LDA RAM,X
 	INC
 	PLX
-	STA a:.LOWORD(RAM),X
+	STA RAM,X
 	REP #PROC_FLAGS::ACCUM8
 	TYA
 	DEC
 	STA $12
-	STA .LOWORD(NEW_ENTITY_VAR0)
+	STA NEW_ENTITY_VAR0
 	LDA $12
 	OPTIMIZED_MULT $04, .SIZEOF(character_initial_entity_entry)
 	CLC
@@ -127,7 +127,7 @@ UNKNOWN_C0369B: ;$C0369B
 	STA $1A
 	ASL
 	TAX
-	LDA .LOWORD(ENTITY_SCRIPT_TABLE),X
+	LDA ENTITY_SCRIPT_TABLE,X
 	CMP #$FFFF
 	BEQ @UNKNOWN9
 	INC $1A
@@ -137,32 +137,32 @@ UNKNOWN_C0369B: ;$C0369B
 	ASL
 	TAX
 	LDA $1A
-	STA .LOWORD(GAME_STATE) + game_state::unknownA2,X
+	STA GAME_STATE + game_state::unknownA2,X
 	LDA $1A
-	STA .LOWORD(NEW_ENTITY_VAR1)
+	STA NEW_ENTITY_VAR1
 	SEC
 	SBC #$0018
-	STA .LOWORD(NEW_ENTITY_VAR1)
+	STA NEW_ENTITY_VAR1
 	SEP #PROC_FLAGS::ACCUM8
-	LDA .LOWORD(NEW_ENTITY_VAR1)
+	LDA NEW_ENTITY_VAR1
 	LDX $18
-	STA .LOWORD(GAME_STATE)+game_state::player_controlled_party_members,X
+	STA GAME_STATE+game_state::player_controlled_party_members,X
 	REP #PROC_FLAGS::ACCUM8
-	LDA .LOWORD(GAME_STATE)+game_state::party_count
+	LDA GAME_STATE+game_state::party_count
 	AND #$00FF
 	CMP #$0001
 	BNE @UNKNOWN10
-	LDA .LOWORD(NEW_ENTITY_VAR1)
+	LDA NEW_ENTITY_VAR1
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA .LOWORD(GAME_STATE) + game_state::unknown88
-	STA .LOWORD(CHAR_STRUCT)+char_struct::position_index,X
+	LDA GAME_STATE + game_state::unknown88
+	STA CHAR_STRUCT+char_struct::position_index,X
 	BRA @UNKNOWN13
 @UNKNOWN10:
 	CPX #$0000
 	BNE @UNKNOWN11
-	LDA .LOWORD(GAME_STATE) + game_state::unknown88
+	LDA GAME_STATE + game_state::unknown88
 	STA $16
 	BRA @UNKNOWN12
 @UNKNOWN11:
@@ -170,28 +170,28 @@ UNKNOWN_C0369B: ;$C0369B
 	DEC
 	ASL
 	TAX
-	LDA .LOWORD(GAME_STATE) + game_state::unknownA2,X
+	LDA GAME_STATE + game_state::unknownA2,X
 	ASL
 	TAX
-	LDA .LOWORD(ENTITY_SCRIPT_VAR1_TABLE),X
+	LDA ENTITY_SCRIPT_VAR1_TABLE,X
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA .LOWORD(CHAR_STRUCT)+char_struct::position_index,X
+	LDA CHAR_STRUCT+char_struct::position_index,X
 	STA $16
 @UNKNOWN12:
-	LDA .LOWORD(NEW_ENTITY_VAR1)
+	LDA NEW_ENTITY_VAR1
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
 	LDA $16
-	STA .LOWORD(CHAR_STRUCT)+char_struct::position_index,X
+	STA CHAR_STRUCT+char_struct::position_index,X
 @UNKNOWN13:
-	LDA .LOWORD(NEW_ENTITY_VAR1)
+	LDA NEW_ENTITY_VAR1
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA .LOWORD(CHAR_STRUCT)+char_struct::position_index,X
+	LDA CHAR_STRUCT+char_struct::position_index,X
 	BEQ @UNKNOWN14
 	TAX
 	DEX
@@ -202,11 +202,11 @@ UNKNOWN_C0369B: ;$C0369B
 	TXA
 	OPTIMIZED_MULT $04, .SIZEOF(player_position_buffer_entry)
 	TAX
-	LDA .LOWORD(PLAYER_POSITION_BUFFER) + player_position_buffer_entry::x_coord,X
+	LDA PLAYER_POSITION_BUFFER + player_position_buffer_entry::x_coord,X
 	STA $04
-	LDA .LOWORD(PLAYER_POSITION_BUFFER) + player_position_buffer_entry::y_coord,X
+	LDA PLAYER_POSITION_BUFFER + player_position_buffer_entry::y_coord,X
 	STA $02
-	LDA .LOWORD(GAME_STATE) + game_state::unknown92
+	LDA GAME_STATE + game_state::unknown92
 	CMP #$0003
 	BEQ @UNKNOWN16
 	LDA $12
@@ -250,15 +250,15 @@ UNKNOWN_C0369B: ;$C0369B
 	STX $14
 	LDA $04
 	SEC
-	SBC a:.LOWORD(BG1_X_POS)
-	STA .LOWORD(ENTITY_SCREEN_X_TABLE),X
+	SBC BG1_X_POS
+	STA ENTITY_SCREEN_X_TABLE,X
 	LDA $02
 	SEC
-	SBC a:.LOWORD(BG1_Y_POS)
-	STA .LOWORD(ENTITY_SCREEN_Y_TABLE),X
+	SBC BG1_Y_POS
+	STA ENTITY_SCREEN_Y_TABLE,X
 	LDY #.LOWORD(GAME_STATE) + game_state::current_party_members
 	STY $18
-	LDA .LOWORD(GAME_STATE) + game_state::unknown96
+	LDA GAME_STATE + game_state::unknown96
 	AND #$00FF
 	DEC
 	OPTIMIZED_MULT $04, .SIZEOF(character_initial_entity_entry)
@@ -268,20 +268,20 @@ UNKNOWN_C0369B: ;$C0369B
 	ADC $06
 	STA $06
 	LDA [$06]
-	STA a:.LOWORD(RAM),Y
+	STA RAM,Y
 	JSL UNKNOWN_C09CD7
 	JSL UNKNOWN_C032EC
-	LDA .LOWORD(GAME_STATE) + game_state::unknownA2
+	LDA GAME_STATE + game_state::unknownA2
 	LDY $18
-	STA a:.LOWORD(RAM),Y
+	STA RAM,Y
 	JSL UPDATE_PARTY
 	LDA $04
-	STA .LOWORD(ENTITY_PREPARED_X_COORDINATE)
+	STA ENTITY_PREPARED_X_COORDINATE
 	LDA $02
-	STA .LOWORD(ENTITY_PREPARED_Y_COORDINATE)
+	STA ENTITY_PREPARED_Y_COORDINATE
 	LDX $14
-	LDA .LOWORD(ENTITY_DIRECTIONS),X
-	STA .LOWORD(ENTITY_PREPARED_DIRECTION)
+	LDA ENTITY_DIRECTIONS,X
+	STA ENTITY_PREPARED_DIRECTION
 	LDA $1A
 	PLD
 	RTL

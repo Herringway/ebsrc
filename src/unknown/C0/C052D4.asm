@@ -5,15 +5,15 @@ UNKNOWN_C052D4: ;$C052D4
 	STA $28
 	LDA #$00FF
 	STA $26
-	STA .LOWORD(GAME_STATE) + game_state::unknown88
-	LDA .LOWORD(GAME_STATE)+game_state::leader_x_coord
+	STA GAME_STATE + game_state::unknown88
+	LDA GAME_STATE+game_state::leader_x_coord
 	STA $24
-	LDA .LOWORD(GAME_STATE)+game_state::leader_y_coord
+	LDA GAME_STATE+game_state::leader_y_coord
 	STA $22
-	LDA .LOWORD(GAME_STATE)+game_state::trodden_tile_type
+	LDA GAME_STATE+game_state::trodden_tile_type
 	STA $04
 	STA $20
-	LDA .LOWORD(GAME_STATE)+game_state::walking_style
+	LDA GAME_STATE+game_state::walking_style
 	STA $1E
 	LDA $28
 	INC
@@ -24,25 +24,25 @@ UNKNOWN_C052D4: ;$C052D4
 	STA $02
 	LDY #.LOWORD(GAME_STATE) + game_state::unknown80
 	STY $1C
-	MOVE_INT_YPTRSRC a:.LOWORD(RAM), $06
+	MOVE_INT_YPTRSRC RAM, $06
 	MOVE_INT $06, $0E
 	LDX $04
 	LDA $02
-	JSR a:.LOWORD(ADJUST_POSITION_HORIZONTAL)
+	JSR ADJUST_POSITION_HORIZONTAL
 	LDY $1C
-	MOVE_INT_YPTRSRC a:.LOWORD(RAM), $0A
+	MOVE_INT_YPTRSRC RAM, $0A
 	SEC
 	SUB_INT_ASSIGN $06, $0A
 	MOVE_INT $06, $12
 	LDY #.LOWORD(GAME_STATE) + game_state::unknown84
 	STY $1C
-	MOVE_INT_YPTRSRC a:.LOWORD(RAM), $06
+	MOVE_INT_YPTRSRC RAM, $06
 	MOVE_INT $06, $0E
 	LDX $04
 	LDA $02
-	JSR a:.LOWORD(ADJUST_POSITION_VERTICAL)
+	JSR ADJUST_POSITION_VERTICAL
 	LDY $1C
-	MOVE_INT_YPTRSRC a:.LOWORD(RAM), $0A
+	MOVE_INT_YPTRSRC RAM, $0A
 	SEC
 	SUB_INT_ASSIGN $06, $0A
 	MOVE_INT $06, $16
@@ -101,7 +101,7 @@ UNKNOWN_C052D4: ;$C052D4
 	LDA a:game_state::player_controlled_party_members,X
 .ELSE
 	TAX
-	LDA .LOWORD(GAME_STATE)+game_state::player_controlled_party_members,X
+	LDA GAME_STATE+game_state::player_controlled_party_members,X
 .ENDIF
 	AND #$00FF
 	LDY #.SIZEOF(char_struct)
@@ -110,10 +110,10 @@ UNKNOWN_C052D4: ;$C052D4
 	ADC #.LOWORD(CHAR_STRUCT)
 	TAY
 	LDA $26
-	STA a:.LOWORD(RAM)+char_struct::position_index,Y
+	STA RAM+char_struct::position_index,Y
 	LDA #$FFFF
-	STA a:.LOWORD(RAM)+char_struct::unknown63 + 2,Y
-	STA a:.LOWORD(RAM)+char_struct::unknown53 + 2,Y
+	STA RAM+char_struct::unknown63 + 2,Y
+	STA RAM+char_struct::unknown53 + 2,Y
 	LDA $1A
 	ASL
 	STA $02
@@ -126,28 +126,28 @@ UNKNOWN_C052D4: ;$C052D4
 	ADC #.LOWORD(GAME_STATE) + game_state::unknownA2
 .ENDIF
 	TAY
-	LDA a:.LOWORD(RAM),Y
+	LDA RAM,Y
 	ASL
 	PHA
 	LDX $1C
 	LDA a:player_position_buffer_entry::x_coord,X
 	PLX
-	STA .LOWORD(ENTITY_ABS_X_TABLE),X
-	LDA a:.LOWORD(RAM),Y
+	STA ENTITY_ABS_X_TABLE,X
+	LDA RAM,Y
 	ASL
 	PHA
 	LDX $1C
 	LDA a:player_position_buffer_entry::y_coord,X
 	PLX
-	STA .LOWORD(ENTITY_ABS_Y_TABLE),X
+	STA ENTITY_ABS_Y_TABLE,X
 	LDX $1C
 	LDA a:player_position_buffer_entry::direction,X
 	LDX $02
-	STA .LOWORD(ENTITY_DIRECTIONS),X
+	STA ENTITY_DIRECTIONS,X
 	LDX $1C
 	LDA a:player_position_buffer_entry::tile_flags,X
 	LDX $02
-	STA .LOWORD(ENTITY_SURFACE_FLAGS),X
+	STA ENTITY_SURFACE_FLAGS,X
 	LDA $26
 	SEC
 	SBC #$0010
@@ -162,7 +162,7 @@ UNKNOWN_C052D4: ;$C052D4
 	INC
 	STA $1A
 @UNKNOWN3:
-	LDA .LOWORD(GAME_STATE)+game_state::party_count
+	LDA GAME_STATE+game_state::party_count
 	AND #$00FF
 	STA $02
 	LDA $1A

@@ -30,7 +30,7 @@ SET_PP: ;$C27191
 	TAX
 	LDY $10
 	TYA
-	STA .LOWORD(CHAR_STRUCT)+char_struct::current_pp_target,X
+	STA CHAR_STRUCT+char_struct::current_pp_target,X
 	BRA @UNKNOWN3
 @UNKNOWN1:
 	TYA

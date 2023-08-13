@@ -4,18 +4,18 @@ UNKNOWN_C2DAE3: ;$C2DAE3
 	RESERVE_STACK_SPACE_CLOBBER 15
 	LDX #.LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::distortion_styles
 	SEP #PROC_FLAGS::ACCUM8
-	LDA a:.LOWORD(RAM),X
+	LDA RAM,X
 	STA $0E
 	LDY #.LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::distortion_styles + 3
-	LDA a:.LOWORD(RAM),Y
-	STA a:.LOWORD(RAM),X
-	STZ .LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::distortion_styles + 1
+	LDA RAM,Y
+	STA RAM,X
+	STZ LOADED_BG_DATA_LAYER1 + loaded_bg_data::distortion_styles + 1
 	REP #PROC_FLAGS::ACCUM8
 	LDA #$0001
-	STA .LOWORD(LOADED_BG_DATA_LAYER1) + loaded_bg_data::distortion_duration_left
+	STA LOADED_BG_DATA_LAYER1 + loaded_bg_data::distortion_duration_left
 	SEP #PROC_FLAGS::ACCUM8
 	LDA $0E
-	STA a:.LOWORD(RAM),Y
+	STA RAM,Y
 	REP #PROC_FLAGS::ACCUM8
 	PLD
 	RTL

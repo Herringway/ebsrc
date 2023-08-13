@@ -27,7 +27,7 @@ REMOVE_CHAR_FROM_PARTY: ;$C229BB
 	LDA $0E
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	LDA .LOWORD(GAME_STATE) + game_state::party_members + 1,X
+	LDA GAME_STATE + game_state::party_members + 1,X
 	PLX
 	STA a:game_state::party_members,X
 	REP #PROC_FLAGS::ACCUM8
@@ -64,7 +64,7 @@ REMOVE_CHAR_FROM_PARTY: ;$C229BB
 	STA $0E
 @UNKNOWN7:
 	STA $02
-	LDA .LOWORD(GAME_STATE)+game_state::party_count
+	LDA GAME_STATE+game_state::party_count
 	AND #$00FF
 	CLC
 	SBC $02

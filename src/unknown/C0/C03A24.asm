@@ -4,8 +4,8 @@ UNKNOWN_C03A24: ;$C03A24
 	RESERVE_STACK_SPACE_CLOBBER 16
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0000
-	STA .LOWORD(GAME_STATE)+game_state::player_controlled_party_count
-	STA .LOWORD(GAME_STATE)+game_state::party_count
+	STA GAME_STATE+game_state::player_controlled_party_count
+	STA GAME_STATE+game_state::party_count
 	REP #PROC_FLAGS::ACCUM8
 	LDA #$0000
 	STA $0E
@@ -15,13 +15,13 @@ UNKNOWN_C03A24: ;$C03A24
 	ADC #.LOWORD(GAME_STATE)
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	STZ a:.LOWORD(RAM)+game_state::unknown96,X
-	STZ a:.LOWORD(RAM)+game_state::player_controlled_party_members,X
+	STZ RAM+game_state::unknown96,X
+	STZ RAM+game_state::player_controlled_party_members,X
 	REP #PROC_FLAGS::ACCUM8
 	LDA $0E
 	ASL
 	TAX
-	STZ .LOWORD(GAME_STATE) + game_state::unknownA2,X
+	STZ GAME_STATE + game_state::unknownA2,X
 	LDA $0E
 	INC
 	STA $0E
@@ -29,12 +29,12 @@ UNKNOWN_C03A24: ;$C03A24
 	CMP #$0006
 	BCC @UNKNOWN0
 	LDA #$0001
-	STA .LOWORD(UNKNOWN_7E5D7E)
+	STA UNKNOWN_7E5D7E
 	LDX #$0000
 	STX $0E
 	BRA @UNKNOWN3
 @UNKNOWN2:
-	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
+	LDA GAME_STATE + game_state::party_members,X
 	AND #$00FF
 	BEQ @UNKNOWN4
 	AND #$00FF
@@ -46,10 +46,10 @@ UNKNOWN_C03A24: ;$C03A24
 	CPX #$0006
 	BCC @UNKNOWN2
 @UNKNOWN4:
-	STZ .LOWORD(UNKNOWN_7E5D7E)
-	LDA .LOWORD(GAME_STATE) + game_state::unknown92
+	STZ UNKNOWN_7E5D7E
+	LDA GAME_STATE + game_state::unknown92
 	ASL
-	STA .LOWORD(FOOTSTEP_SOUND_ID)
-	STZ .LOWORD(FOOTSTEP_SOUND_ID_OVERRIDE)
+	STA FOOTSTEP_SOUND_ID
+	STZ FOOTSTEP_SOUND_ID_OVERRIDE
 	PLD
 	RTL

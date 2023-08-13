@@ -6,8 +6,8 @@ RECALC_CHARACTER_POSTMATH_IQ: ;$C21D7D
 	JSL MULT168
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	LDA .LOWORD(CHAR_STRUCT)+char_struct::base_iq,X
+	LDA CHAR_STRUCT+char_struct::base_iq,X
 	CLC
-	ADC .LOWORD(CHAR_STRUCT)+char_struct::boosted_iq,X
-	STA .LOWORD(CHAR_STRUCT)+char_struct::iq,X
+	ADC CHAR_STRUCT+char_struct::boosted_iq,X
+	STA CHAR_STRUCT+char_struct::iq,X
 	RTL

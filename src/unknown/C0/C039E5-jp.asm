@@ -22,10 +22,10 @@ UNKNOWN_C039E5: ;$C039E5
 	STA $0E
 	ASL
 	TAX
-	LDA .LOWORD(GAME_STATE)+game_state::leader_x_coord
-	STA .LOWORD(ENTITY_ABS_X_TABLE),X
-	LDA .LOWORD(GAME_STATE)+game_state::leader_y_coord
-	STA .LOWORD(ENTITY_ABS_Y_TABLE),X
+	LDA GAME_STATE+game_state::leader_x_coord
+	STA ENTITY_ABS_X_TABLE,X
+	LDA GAME_STATE+game_state::leader_y_coord
+	STA ENTITY_ABS_Y_TABLE,X
 	LDA $0E
 	JSL UNKNOWN_C0A254
 @UNKNOWN1:

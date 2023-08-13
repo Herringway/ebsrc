@@ -9,7 +9,7 @@ UNKNOWN_C4608C: ;$C4608C
 	AND #$00FF
 	CMP #$00FF
 	BNE @UNKNOWN0
-	LDA .LOWORD(GAME_STATE)+game_state::current_party_members
+	LDA GAME_STATE+game_state::current_party_members
 	BRA @UNKNOWN4
 @UNKNOWN0:
 	LDA #$0000

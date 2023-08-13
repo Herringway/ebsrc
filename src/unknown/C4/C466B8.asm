@@ -1,6 +1,6 @@
 
 UNKNOWN_C466B8: ;$C466B8
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
-	STZ .LOWORD(GAME_STATE) + game_state::unknown90
-	STZ .LOWORD(GAME_STATE) + game_state::unknownB0
+	STZ GAME_STATE + game_state::unknown90
+	STZ GAME_STATE + game_state::unknownB0
 	RTL

@@ -12,7 +12,7 @@ AUTOHEALING: ;$C4A0CF
 	BRA @UNKNOWN3
 @UNKNOWN0:
 	LDX $02
-	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
+	LDA GAME_STATE + game_state::party_members,X
 	AND #$00FF
 	TAY
 	STY $10
@@ -26,7 +26,7 @@ AUTOHEALING: ;$C4A0CF
 	JSL MULT168
 	TAX
 	STX $0E
-	LDA .LOWORD(CHAR_STRUCT)+char_struct::unknown94,X
+	LDA CHAR_STRUCT+char_struct::unknown94,X
 	AND #$00FF
 	BNE @UNKNOWN2
 	TXA
@@ -35,12 +35,12 @@ AUTOHEALING: ;$C4A0CF
 	CLC
 	ADC $14
 	TAX
-	LDA a:.LOWORD(RAM),X
+	LDA RAM,X
 	AND #$00FF
 	CMP $16
 	BNE @UNKNOWN2
 	LDX $0E
-	LDA .LOWORD(CHAR_STRUCT)+char_struct::current_hp_target,X
+	LDA CHAR_STRUCT+char_struct::current_hp_target,X
 	CMP $12
 	BCS @UNKNOWN2
 	STA $12
@@ -61,7 +61,7 @@ AUTOHEALING: ;$C4A0CF
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0001
-	STA .LOWORD(CHAR_STRUCT)+char_struct::unknown94,X
+	STA CHAR_STRUCT+char_struct::unknown94,X
 @UNKNOWN4:
 	REP #PROC_FLAGS::ACCUM8
 	LDA $04

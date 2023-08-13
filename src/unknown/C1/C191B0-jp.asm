@@ -29,7 +29,7 @@ UNKNOWN_C191B0: ;$C191B0
 @UNKNOWN1:
 	LDX $10
 	SEP #PROC_FLAGS::ACCUM8
-	LDA .LOWORD(GAME_STATE)+game_state::escargo_express_items+1,X
+	LDA GAME_STATE+game_state::escargo_express_items+1,X
 	STA $00
 	REP #PROC_FLAGS::ACCUM8
 	LDA $00

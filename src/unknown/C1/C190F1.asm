@@ -7,7 +7,7 @@ UNKNOWN_C190F1: ;$C190F1
 	LDX #$0000
 	BRA @UNKNOWN2
 @UNKNOWN0:
-	LDA .LOWORD(GAME_STATE) + game_state::unknownB6,X
+	LDA GAME_STATE + game_state::unknownB6,X
 	AND #$00FF
 	BEQ @UNKNOWN1
 	LDA $0E
@@ -21,7 +21,7 @@ UNKNOWN_C190F1: ;$C190F1
 	LDX #$0000
 	BRA @UNKNOWN5
 @UNKNOWN3:
-	LDA .LOWORD(GAME_STATE)+game_state::escargo_express_items,X
+	LDA GAME_STATE+game_state::escargo_express_items,X
 	AND #$00FF
 	BNE @UNKNOWN4
 	LDA #$0000

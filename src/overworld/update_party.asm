@@ -15,7 +15,7 @@ UPDATE_PARTY: ;$C034D6
 	@PARTY_COUNT = $4C ;short
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
 	RESERVE_STACK_SPACE_CLOBBER 78
-	LDA .LOWORD(GAME_STATE)+game_state::party_count
+	LDA GAME_STATE+game_state::party_count
 	AND #$00FF
 	STA @PARTY_COUNT
 	LDA #$0000
@@ -26,12 +26,12 @@ UPDATE_PARTY: ;$C034D6
 	PHA
 	LDA @LOCAL11
 	TAX
-	LDA .LOWORD(GAME_STATE)+game_state::player_controlled_party_members,X
+	LDA GAME_STATE+game_state::player_controlled_party_members,X
 	AND #$00FF
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA .LOWORD(CHAR_STRUCT)+char_struct::position_index,X
+	LDA CHAR_STRUCT+char_struct::position_index,X
 	PLX
 	STA @LOCAL1,X
 	LDA @LOCAL11
@@ -44,7 +44,7 @@ UPDATE_PARTY: ;$C034D6
 	STY @LOCAL10
 	BRA @UNKNOWN6
 @UNKNOWN2:
-	LDA .LOWORD(GAME_STATE) + game_state::unknown96,Y
+	LDA GAME_STATE + game_state::unknown96,Y
 	AND #$00FF
 	STA @LOCAL9
 	CMP #$0005
@@ -57,14 +57,14 @@ UPDATE_PARTY: ;$C034D6
 	TYA
 	ASL
 	TAX
-	LDA .LOWORD(GAME_STATE) + game_state::unknownA2,X
+	LDA GAME_STATE + game_state::unknownA2,X
 	ASL
 	TAX
-	LDA .LOWORD(ENTITY_SCRIPT_VAR1_TABLE),X
+	LDA ENTITY_SCRIPT_VAR1_TABLE,X
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA .LOWORD(CHAR_STRUCT)+char_struct::afflictions,X
+	LDA CHAR_STRUCT+char_struct::afflictions,X
 	AND #$00FF
 	TAX
 	CPX #$0001
@@ -83,9 +83,9 @@ UPDATE_PARTY: ;$C034D6
 	TAX
 	LDA @LOCAL9
 	STA @LOCAL2,X
-	LDA .LOWORD(GAME_STATE) + game_state::unknownA2,X
+	LDA GAME_STATE + game_state::unknownA2,X
 	STA @LOCAL3,X
-	LDA .LOWORD(GAME_STATE) + game_state::player_controlled_party_members,Y
+	LDA GAME_STATE + game_state::player_controlled_party_members,Y
 	AND #$00FF
 	STA @LOCAL4,X
 	INY
@@ -108,7 +108,7 @@ UPDATE_PARTY: ;$C034D6
 	CLC
 	ADC $02
 	TAY
-	LDA a:.LOWORD(RAM),Y
+	LDA RAM,Y
 	STA @LOCAL9
 	LDA $02
 	STA $04
@@ -120,22 +120,22 @@ UPDATE_PARTY: ;$C034D6
 	CLC
 	ADC $04
 	TAX
-	LDA a:.LOWORD(RAM),X
+	LDA RAM,X
 	STA @LOCAL11
 	LDA @LOCAL9
 	CMP @LOCAL11
 	BLTEQ @UNKNOWN9
 	LDA @LOCAL11
-	STA a:.LOWORD(RAM),Y
+	STA RAM,Y
 	LDA @LOCAL9
-	STA a:.LOWORD(RAM),X
+	STA RAM,X
 	TDC
 	CLC
 	ADC #@LOCAL3
 	CLC
 	ADC $02
 	TAY
-	LDA a:.LOWORD(RAM),Y
+	LDA RAM,Y
 	STA @LOCAL6
 	TDC
 	CLC
@@ -143,17 +143,17 @@ UPDATE_PARTY: ;$C034D6
 	CLC
 	ADC $04
 	TAX
-	LDA a:.LOWORD(RAM),X
-	STA a:.LOWORD(RAM),Y
+	LDA RAM,X
+	STA RAM,Y
 	LDA @LOCAL6
-	STA a:.LOWORD(RAM),X
+	STA RAM,X
 	TDC
 	CLC
 	ADC #@LOCAL4
 	CLC
 	ADC $02
 	TAY
-	LDA a:.LOWORD(RAM),Y
+	LDA RAM,Y
 	STA @LOCAL11
 	TDC
 	CLC
@@ -161,10 +161,10 @@ UPDATE_PARTY: ;$C034D6
 	CLC
 	ADC $04
 	TAX
-	LDA a:.LOWORD(RAM),X
-	STA a:.LOWORD(RAM),Y
+	LDA RAM,X
+	STA RAM,Y
 	LDA @LOCAL11
-	STA a:.LOWORD(RAM),X
+	STA RAM,X
 @UNKNOWN9:
 	INC @LOCAL7
 @UNKNOWN10:
@@ -191,7 +191,7 @@ UPDATE_PARTY: ;$C034D6
 	LDX $04
 	SEP #PROC_FLAGS::ACCUM8
 	LDA @LOCAL2,X
-	STA a:.LOWORD(RAM) + game_state::unknown96,Y
+	STA RAM + game_state::unknown96,Y
 	REP #PROC_FLAGS::ACCUM8
 	LDA $04
 	CLC
@@ -201,7 +201,7 @@ UPDATE_PARTY: ;$C034D6
 	LDX $04
 	LDA @LOCAL3,X
 	LDX @LOCAL5
-	STA a:.LOWORD(RAM),X
+	STA RAM,X
 	TDC
 	CLC
 	ADC #@LOCAL4
@@ -210,32 +210,32 @@ UPDATE_PARTY: ;$C034D6
 	STA $02
 	LDX $02
 	SEP #PROC_FLAGS::ACCUM8
-	LDA a:.LOWORD(RAM),X
-	STA a:.LOWORD(RAM) + game_state::player_controlled_party_members,Y
+	LDA RAM,X
+	STA RAM + game_state::player_controlled_party_members,Y
 	LDX $02
 	REP #PROC_FLAGS::ACCUM8
-	LDA a:.LOWORD(RAM),X
+	LDA RAM,X
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	PHA
 	LDX $04
 	LDA @LOCAL1,X
 	PLX
-	STA .LOWORD(CHAR_STRUCT)+char_struct::position_index,X
+	STA CHAR_STRUCT+char_struct::position_index,X
 	LDX @LOCAL5
-	LDA a:.LOWORD(RAM),X
+	LDA RAM,X
 	ASL
 	TAX
 	LDA $04
-	STA .LOWORD(ENTITY_SCRIPT_VAR5_TABLE),X
+	STA ENTITY_SCRIPT_VAR5_TABLE,X
 	LDA @LOCAL9
 	INC
 	STA @LOCAL9
 @UNKNOWN15:
 	CMP @PARTY_COUNT
 	BCC @UNKNOWN14
-	LDA .LOWORD(GAME_STATE) +game_state::unknownA2
-	STA .LOWORD(GAME_STATE)+game_state::current_party_members
+	LDA GAME_STATE +game_state::unknownA2
+	STA GAME_STATE+game_state::current_party_members
 	JSL UNKNOWN_C032EC
 	JSL UNKNOWN_C02C3E
 	JSL UNKNOWN_C47F87

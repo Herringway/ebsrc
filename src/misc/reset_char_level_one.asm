@@ -12,20 +12,20 @@ RESET_CHAR_LEVEL_ONE: ;$C1D8D0
 	TAY
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #STARTING_LEVEL
-	STA .LOWORD(CHAR_STRUCT)+char_struct::level,Y
+	STA CHAR_STRUCT+char_struct::level,Y
 	LDA #STARTING_STATS
-	STA .LOWORD(CHAR_STRUCT)+char_struct::base_offense,Y
-	STA .LOWORD(CHAR_STRUCT)+char_struct::base_defense,Y
-	STA .LOWORD(CHAR_STRUCT)+char_struct::base_speed,Y
-	STA .LOWORD(CHAR_STRUCT)+char_struct::base_guts,Y
-	STA .LOWORD(CHAR_STRUCT)+char_struct::base_luck,Y
-	STA .LOWORD(CHAR_STRUCT)+char_struct::base_vitality,Y
-	STA .LOWORD(CHAR_STRUCT)+char_struct::base_iq,Y
+	STA CHAR_STRUCT+char_struct::base_offense,Y
+	STA CHAR_STRUCT+char_struct::base_defense,Y
+	STA CHAR_STRUCT+char_struct::base_speed,Y
+	STA CHAR_STRUCT+char_struct::base_guts,Y
+	STA CHAR_STRUCT+char_struct::base_luck,Y
+	STA CHAR_STRUCT+char_struct::base_vitality,Y
+	STA CHAR_STRUCT+char_struct::base_iq,Y
 	REP #PROC_FLAGS::ACCUM8
 	LDA #STARTING_HP
-	STA .LOWORD(CHAR_STRUCT)+char_struct::max_hp,Y
-	STA .LOWORD(CHAR_STRUCT)+char_struct::current_hp_target,Y
-	STA .LOWORD(CHAR_STRUCT)+char_struct::current_hp,Y
+	STA CHAR_STRUCT+char_struct::max_hp,Y
+	STA CHAR_STRUCT+char_struct::current_hp_target,Y
+	STA CHAR_STRUCT+char_struct::current_hp,Y
 	CPX #$0002
 	BEQ @UNKNOWN0
 	LDA #STARTING_PP
@@ -40,9 +40,9 @@ RESET_CHAR_LEVEL_ONE: ;$C1D8D0
 	JSL MULT168
 	TAY
 	LDA $10
-	STA .LOWORD(CHAR_STRUCT)+char_struct::max_pp,Y
-	STA .LOWORD(CHAR_STRUCT)+char_struct::current_pp_target,Y
-	STA .LOWORD(CHAR_STRUCT)+char_struct::current_pp,Y
+	STA CHAR_STRUCT+char_struct::max_pp,Y
+	STA CHAR_STRUCT+char_struct::current_pp_target,Y
+	STA CHAR_STRUCT+char_struct::current_pp,Y
 	TXY
 	INY
 	STY $0E
@@ -77,7 +77,7 @@ RESET_CHAR_LEVEL_ONE: ;$C1D8D0
 	LDX #$0000
 	LDY $0E
 	TYA
-	JSR a:.LOWORD(LEVEL_UP_CHAR)
+	JSR LEVEL_UP_CHAR
 @UNKNOWN3:
 	REP #PROC_FLAGS::ACCUM8
 	LDA $02
@@ -97,7 +97,7 @@ RESET_CHAR_LEVEL_ONE: ;$C1D8D0
 	LOADPTR EXP_TABLE, $0A
 	LDA $0E
 	TAX
-	LDA .LOWORD(CHAR_STRUCT)+char_struct::level,X
+	LDA CHAR_STRUCT+char_struct::level,X
 	AND #$00FF
 	OPTIMIZED_MULT $04, 4
 	STA $02
@@ -115,7 +115,7 @@ RESET_CHAR_LEVEL_ONE: ;$C1D8D0
 	CLC
 	ADC #.LOWORD(CHAR_STRUCT) + char_struct::exp
 	TAY
-	MOVE_INT_YPTRDEST $06, a:.LOWORD(RAM)
+	MOVE_INT_YPTRDEST $06, RAM
 @UNKNOWN4:
 	PLD
 	RTS

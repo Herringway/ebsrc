@@ -27,16 +27,16 @@ AUTOLIFEUP: ;$C4A15D
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA .LOWORD(CHAR_STRUCT)+char_struct::unknown94,X
+	LDA CHAR_STRUCT+char_struct::unknown94,X
 	AND #$00FF
 	BNE @UNKNOWN2
-	LDA .LOWORD(CHAR_STRUCT)+char_struct::afflictions,X
+	LDA CHAR_STRUCT+char_struct::afflictions,X
 	AND #$00FF
 	CMP #$0001
 	BEQ @UNKNOWN2
-	LDA .LOWORD(CHAR_STRUCT)+char_struct::current_hp_target,X
+	LDA CHAR_STRUCT+char_struct::current_hp_target,X
 	STA $0E
-	LDA .LOWORD(CHAR_STRUCT)+char_struct::max_hp,X
+	LDA CHAR_STRUCT+char_struct::max_hp,X
 	LSR
 	LSR
 	STA $02
@@ -67,7 +67,7 @@ AUTOLIFEUP: ;$C4A15D
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0001
-	STA .LOWORD(CHAR_STRUCT)+char_struct::unknown94,X
+	STA CHAR_STRUCT+char_struct::unknown94,X
 @UNKNOWN4:
 	REP #PROC_FLAGS::ACCUM8
 	LDA $04

@@ -11,7 +11,7 @@ UNKNOWN_C03E25: ;$C03E25
 	LDA $0E
 	STA $02
 	INC $02
-	LDA .LOWORD(GAME_STATE) + game_state::unknown96,X
+	LDA GAME_STATE + game_state::unknown96,X
 	AND #$00FF
 	CMP $02
 	BNE @UNKNOWN0
@@ -21,7 +21,7 @@ UNKNOWN_C03E25: ;$C03E25
 	BRA @UNKNOWN3
 @UNKNOWN2:
 	DEX
-	LDA .LOWORD(GAME_STATE) + game_state::unknown96,X
+	LDA GAME_STATE + game_state::unknown96,X
 	AND #$00FF
 @UNKNOWN3:
 	PLD

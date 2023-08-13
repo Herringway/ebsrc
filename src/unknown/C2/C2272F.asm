@@ -8,13 +8,13 @@ UNKNOWN_C2272F: ;$C2272F
 	STY $0E
 	BRA @UNKNOWN2
 @UNKNOWN0:
-	LDA .LOWORD(GAME_STATE) + game_state::unknown96,Y
+	LDA GAME_STATE + game_state::unknown96,Y
 	AND #$00FF
 	DEC
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA .LOWORD(CHAR_STRUCT)+char_struct::afflictions,X
+	LDA CHAR_STRUCT+char_struct::afflictions,X
 	AND #$00FF
 	TAX
 	CPX #$0001
@@ -29,7 +29,7 @@ UNKNOWN_C2272F: ;$C2272F
 	INY
 	STY $0E
 @UNKNOWN2:
-	LDA .LOWORD(GAME_STATE)+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_count
 	AND #$00FF
 	STA $02
 	TYA

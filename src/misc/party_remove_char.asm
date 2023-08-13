@@ -8,15 +8,15 @@ REMOVE_CHAR_FROM_PARTY: ;$C229BB
 	BRA @UNKNOWN7
 @UNKNOWN0:
 	STY $02
-	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
+	LDA GAME_STATE + game_state::party_members,X
 	AND #$00FF
 	CMP $02
 	BNE @UNKNOWN6
 	BRA @UNKNOWN2
 @UNKNOWN1:
 	SEP #PROC_FLAGS::ACCUM8
-	LDA .LOWORD(GAME_STATE) + game_state::party_members + 1,X
-	STA .LOWORD(GAME_STATE) + game_state::party_members,X
+	LDA GAME_STATE + game_state::party_members + 1,X
+	STA GAME_STATE + game_state::party_members,X
 	INX
 @UNKNOWN2:
 	STX $02
@@ -27,7 +27,7 @@ REMOVE_CHAR_FROM_PARTY: ;$C229BB
 	BRANCHGTS @UNKNOWN1
 	DEX
 	SEP #PROC_FLAGS::ACCUM8
-	STZ .LOWORD(GAME_STATE) + game_state::party_members,X
+	STZ GAME_STATE + game_state::party_members,X
 	REP #PROC_FLAGS::ACCUM8
 	TYA
 	JSL UNKNOWN_C03903
@@ -41,7 +41,7 @@ REMOVE_CHAR_FROM_PARTY: ;$C229BB
 	INX
 @UNKNOWN7:
 	STX $02
-	LDA .LOWORD(GAME_STATE)+game_state::party_count
+	LDA GAME_STATE+game_state::party_count
 	AND #$00FF
 	CLC
 	SBC $02

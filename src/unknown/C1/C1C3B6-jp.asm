@@ -19,7 +19,7 @@ UNKNOWN_C1C3B6: ;$C1C3B6
 	LDA a:game_state::party_members,X
 	AND #$00FF
 	LDX $0E
-	JSR a:.LOWORD(UNKNOWN_C1C32A)
+	JSR UNKNOWN_C1C32A
 	CMP #$0000
 	BEQ @UNKNOWN1
 	INC $04
@@ -28,7 +28,7 @@ UNKNOWN_C1C3B6: ;$C1C3B6
 	LDA $02
 	STA $10
 @UNKNOWN2:
-	LDA .LOWORD(GAME_STATE)+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_count
 	AND #$00FF
 	PHA
 	LDA $02

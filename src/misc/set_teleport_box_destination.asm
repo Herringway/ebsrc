@@ -2,10 +2,10 @@
 SET_TELEPORT_BOX_DESTINATION: ;$C230F3
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
 	SEP #PROC_FLAGS::ACCUM8
-	STA .LOWORD(GAME_STATE) + game_state::unknownC3
+	STA GAME_STATE + game_state::unknownC3
 	REP #PROC_FLAGS::ACCUM8
-	LDA .LOWORD(GAME_STATE)+game_state::leader_x_coord
-	STA .LOWORD(RESPAWN_X)
-	LDA .LOWORD(GAME_STATE)+game_state::leader_y_coord
-	STA .LOWORD(RESPAWN_Y)
+	LDA GAME_STATE+game_state::leader_x_coord
+	STA RESPAWN_X
+	LDA GAME_STATE+game_state::leader_y_coord
+	STA RESPAWN_Y
 	RTL

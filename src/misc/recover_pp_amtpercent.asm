@@ -17,7 +17,7 @@ RECOVER_PP_AMTPERCENT: ;$C19010
 	LDA $10
 	STA $02
 	LDX $02
-	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
+	LDA GAME_STATE + game_state::party_members,X
 	AND #$00FF
 	LDX $0E
 	JSL UNKNOWN_C3ED98
@@ -25,7 +25,7 @@ RECOVER_PP_AMTPERCENT: ;$C19010
 	LDA $02
 	STA $10
 @UNKNOWN1:
-	LDA .LOWORD(GAME_STATE)+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_count
 	AND #$00FF
 	PHA
 	LDA $02

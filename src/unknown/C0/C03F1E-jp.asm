@@ -2,21 +2,21 @@
 UNKNOWN_C03F1E: ;$C03F1E
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
 	RESERVE_STACK_SPACE_CLOBBER 14
-	STZ .LOWORD(GAME_STATE) + game_state::unknown88
+	STZ GAME_STATE + game_state::unknown88
 	LDX #.LOWORD(PLAYER_POSITION_BUFFER)
 	LDY #$0002
 @UNKNOWN0:
-	LDA .LOWORD(GAME_STATE)+game_state::leader_x_coord
+	LDA GAME_STATE+game_state::leader_x_coord
 	STA a:player_position_buffer_entry::x_coord,X
-	LDA .LOWORD(GAME_STATE)+game_state::leader_y_coord
+	LDA GAME_STATE+game_state::leader_y_coord
 	STA a:player_position_buffer_entry::y_coord,X
-	LDA .LOWORD(GAME_STATE)+game_state::leader_direction
+	LDA GAME_STATE+game_state::leader_direction
 	STA a:player_position_buffer_entry::direction,X
-	LDA .LOWORD(GAME_STATE)+game_state::walking_style
+	LDA GAME_STATE+game_state::walking_style
 	STA a:player_position_buffer_entry::walking_style,X
-	LDA .LOWORD(GAME_STATE)+game_state::trodden_tile_type
+	LDA GAME_STATE+game_state::trodden_tile_type
 	STA a:player_position_buffer_entry::tile_flags,X
-	STZ .LOWORD(MISC_DEBUG_FLAGS)
+	STZ MISC_DEBUG_FLAGS
 	STZ a:player_position_buffer_entry::unknown10,X
 	TXA
 	CLC
@@ -35,7 +35,7 @@ UNKNOWN_C03F1E: ;$C03F1E
 	AND #$00FF
 	ASL
 	TAX
-	LDA .LOWORD(CHOSEN_FOUR_PTRS),X
+	LDA CHOSEN_FOUR_PTRS,X
 	TAX
 	STZ a:char_struct::position_index,X
 	LDA #$FFFF
@@ -49,17 +49,17 @@ UNKNOWN_C03F1E: ;$C03F1E
 	LDA a:game_state::unknownA2,X
 	ASL
 	TAX
-	LDA .LOWORD(GAME_STATE)+game_state::leader_x_coord
-	STA .LOWORD(ENTITY_ABS_X_TABLE),X
-	LDA .LOWORD(GAME_STATE)+game_state::leader_y_coord
-	STA .LOWORD(ENTITY_ABS_Y_TABLE),X
-	LDA .LOWORD(GAME_STATE)+game_state::leader_direction
-	STA .LOWORD(ENTITY_DIRECTIONS),X
-	LDA .LOWORD(GAME_STATE)+game_state::trodden_tile_type
-	STA .LOWORD(ENTITY_SURFACE_FLAGS),X
+	LDA GAME_STATE+game_state::leader_x_coord
+	STA ENTITY_ABS_X_TABLE,X
+	LDA GAME_STATE+game_state::leader_y_coord
+	STA ENTITY_ABS_Y_TABLE,X
+	LDA GAME_STATE+game_state::leader_direction
+	STA ENTITY_DIRECTIONS,X
+	LDA GAME_STATE+game_state::trodden_tile_type
+	STA ENTITY_SURFACE_FLAGS,X
 	INY
 @UNKNOWN2:
-	LDA .LOWORD(GAME_STATE)+game_state::party_count
+	LDA GAME_STATE+game_state::party_count
 	AND #$00FF
 	STA $02
 	TYA

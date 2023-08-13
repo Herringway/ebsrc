@@ -11,7 +11,7 @@ LOAD_WINDOW_GFX: ;$C47C3F
 	LDA #$0000
 	JSL MEMSET24
 	.A16
-	LDA .LOWORD(GAME_STATE)+game_state::text_flavour
+	LDA GAME_STATE+game_state::text_flavour
 	AND #$00FF
 	DEC
 	OPTIMIZED_MULT $04, 3

@@ -4,9 +4,9 @@ UNKNOWN_EF0C3D: ;$EF0C3D
 	RESERVE_STACK_SPACE_CLOBBER 14
 	LDA #$0003
 	JSL LOAD_GAME_SLOT
-	LDA .LOWORD(GAME_STATE)+game_state::leader_x_coord
+	LDA GAME_STATE+game_state::leader_x_coord
 	STA $04
-	LDA .LOWORD(GAME_STATE)+game_state::leader_y_coord
+	LDA GAME_STATE+game_state::leader_y_coord
 	STA $02
 	LDX #$0001
 	TXA
@@ -17,7 +17,7 @@ UNKNOWN_EF0C3D: ;$EF0C3D
 	LDX $02
 	LDA $04
 	JSL LOAD_MAP_AT_POSITION
-	LDY .LOWORD(GAME_STATE)+game_state::leader_direction
+	LDY GAME_STATE+game_state::leader_direction
 	LDX $02
 	LDA $04
 	JSL UNKNOWN_C03FA9

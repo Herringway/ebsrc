@@ -44,11 +44,11 @@ UNKNOWN_C2FEF9: ;$C2FEF9
 @UNKNOWN1:
 	ASL
 	TAX
-	LDA .LOWORD(CUR_TEXT_PAL),X
+	LDA CUR_TEXT_PAL,X
 	LSR
 	LSR ;divide entire colour by two. normally, this would cause the lower two bits of each channel to bleed into the next, but...
 	AND #(7 << 10) +(7 << 5) + 7 ;we keep only the bottom 3 bits of each colour channel. combined, this just darkens the colour.
-	STA .LOWORD(CUR_MAP_PAL) + (BPP4PALETTE_SIZE * 2),X
+	STA CUR_MAP_PAL + (BPP4PALETTE_SIZE * 2),X
 	LDA $12
 	INC
 	STA $12

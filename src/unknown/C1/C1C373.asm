@@ -10,10 +10,10 @@ UNKNOWN_C1C373: ;$C1C373
 	LDX #$0001
 	STX $0E
 	LDX $02
-	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
+	LDA GAME_STATE + game_state::party_members,X
 	AND #$00FF
 	LDX $0E
-	JSR a:.LOWORD(UNKNOWN_C1C32A)
+	JSR UNKNOWN_C1C32A
 	CMP #$0000
 	BEQ @UNKNOWN1
 	LDA $02
@@ -22,7 +22,7 @@ UNKNOWN_C1C373: ;$C1C373
 @UNKNOWN1:
 	INC $02
 @UNKNOWN2:
-	LDA .LOWORD(GAME_STATE)+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_count
 	AND #$00FF
 	STA $04
 	LDA $02

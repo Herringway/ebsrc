@@ -21,7 +21,7 @@ UNKNOWN_C2654C: ;$C2654C
 	ASL
 	TAX
 	LDA #$5D70 ; RGB (16, 11, 23), a kind of purple
-	STA .LOWORD(CUR_TEXT_PAL),X
+	STA CUR_TEXT_PAL,X
 	LDA $1A
 	INC
 	STA $1A
@@ -55,7 +55,7 @@ UNKNOWN_C2654C: ;$C2654C
 	BRA @UNKNOWN9
 @UNKNOWN6:
 	LDX $02
-	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
+	LDA GAME_STATE + game_state::party_members,X
 	AND #$00FF
 	TAX
 	CPX #$0001
@@ -73,16 +73,16 @@ UNKNOWN_C2654C: ;$C2654C
 	CLC
 	ADC #.LOWORD(CHAR_STRUCT) + char_struct::current_pp_target
 	TAY
-	LDA a:.LOWORD(RAM),Y
+	LDA RAM,Y
 	CLC
 	ADC #$0014
 	TAX
 	STX $16
 	TXA
-	STA a:.LOWORD(RAM),Y
+	STA RAM,Y
 	LDA $18
 	TAX
-	LDA .LOWORD(CHAR_STRUCT)+char_struct::max_pp,X
+	LDA CHAR_STRUCT+char_struct::max_pp,X
 	STA $18
 	STA $04
 	LDX $16
@@ -90,7 +90,7 @@ UNKNOWN_C2654C: ;$C2654C
 	CMP $04
 	BLTEQ @UNKNOWN8
 	LDA $18
-	STA a:.LOWORD(RAM),Y
+	STA RAM,Y
 @UNKNOWN8:
 	INC $02
 @UNKNOWN9:

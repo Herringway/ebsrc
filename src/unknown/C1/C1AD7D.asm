@@ -2,8 +2,8 @@
 UNKNOWN_C1AD7D: ;$C1AD7D
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
 	RESERVE_STACK_SPACE_CLOBBER 16
-	LDX .LOWORD(GAME_STATE)+game_state::leader_y_coord
-	LDA .LOWORD(GAME_STATE)+game_state::leader_x_coord
+	LDX GAME_STATE+game_state::leader_y_coord
+	LDA GAME_STATE+game_state::leader_x_coord
 	JSL LOAD_SECTOR_ATTRS
 	TAX
 	STX $0E

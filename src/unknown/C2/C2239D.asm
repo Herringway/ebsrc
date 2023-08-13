@@ -8,7 +8,7 @@ UNKNOWN_C2239D: ;$C2239D
 @UNKNOWN0:
 	LDA $0E
 	STA $02
-	LDA .LOWORD(GAME_STATE) + game_state::party_members,X
+	LDA GAME_STATE + game_state::party_members,X
 	AND #$00FF
 	CMP $02
 	BNE @UNKNOWN1
@@ -18,7 +18,7 @@ UNKNOWN_C2239D: ;$C2239D
 	INX
 @UNKNOWN2:
 	STX $02
-	LDA .LOWORD(GAME_STATE)+game_state::party_count
+	LDA GAME_STATE+game_state::party_count
 	AND #$00FF
 	CLC
 	SBC $02
