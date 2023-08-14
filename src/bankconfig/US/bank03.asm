@@ -3,6 +3,16 @@
 .INCLUDE "common.asm"
 .INCLUDE "config.asm"
 .INCLUDE "structs.asm"
+.INCLUDE "symbols/bank00.inc.asm"
+.INCLUDE "symbols/bank01.inc.asm"
+.INCLUDE "symbols/bank02.inc.asm"
+.INCLUDE "symbols/bank03.inc.asm"
+.INCLUDE "symbols/bank04.inc.asm"
+.INCLUDE "symbols/bank2f.inc.asm"
+.INCLUDE "symbols/globals.inc.asm"
+.INCLUDE "symbols/misc.inc.asm"
+.INCLUDE "symbols/sram.inc.asm"
+.INCLUDE "symbols/text.inc.asm"
 
 SPRITE_GROUP_PALETTES: ;$C30000
 	BINARY "overworld_sprites/0.pal"

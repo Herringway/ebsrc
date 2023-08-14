@@ -1,6 +1,11 @@
 .SEGMENT "BANK0F"
 .INCLUDE "common.asm"
 .INCLUDE "config.asm"
+.INCLUDE "symbols/audiopacks.inc.asm"
+.INCLUDE "symbols/doors.inc.asm"
+.INCLUDE "symbols/map.inc.asm"
+.INCLUDE "symbols/misc.inc.asm"
+.INCLUDE "symbols/text.inc.asm"
 
 .INCLUDE "data/map/door_data.asm"
 

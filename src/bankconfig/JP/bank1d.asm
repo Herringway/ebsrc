@@ -1,5 +1,6 @@
 .SEGMENT "BANK1D"
 .INCLUDE "common.asm"
+.INCLUDE "symbols/map.inc.asm"
 
 MAP_DATA_TILE_SET_GRAPHICS_0: ;$DD0000
 	BINARY "maps/gfx/0.gfx.lzhal"

@@ -1,5 +1,6 @@
 .SEGMENT "BANK13"
 .INCLUDE "common.asm"
+.INCLUDE "symbols/overworld_sprites.inc.asm"
 
 OVERWORLD_SPRITES_BANK3:
 SPRITE_0354:

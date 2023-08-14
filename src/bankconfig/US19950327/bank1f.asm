@@ -1,5 +1,7 @@
 .SEGMENT "BANK1F"
 .INCLUDE "common.asm"
+.INCLUDE "symbols/audiopacks.inc.asm"
+.INCLUDE "symbols/map.inc.asm"
 
 MAP_DATA_TILE_SET_GRAPHICS_12: ;$DF0000
 	BINARY "maps/gfx/12.gfx.lzhal"

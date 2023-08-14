@@ -1,5 +1,7 @@
 .SEGMENT "BANK20"
 .INCLUDE "common.asm"
+.INCLUDE "symbols/map.inc.asm"
+.INCLUDE "symbols/misc.inc.asm"
 
 ;???
 COMPRESSED_SRAM: ;$E009B4

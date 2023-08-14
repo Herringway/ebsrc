@@ -3,7 +3,7 @@
 .INCLUDE "enums.asm"
 .INCLUDE "hardware.asm"
 .INCLUDE "structs.asm"
-.INCLUDE "symbols.asm"
+.INCLUDE "symbols/globals.inc.asm"
 
 RAM: ;For pointers.
 UNKNOWN_7E0000:

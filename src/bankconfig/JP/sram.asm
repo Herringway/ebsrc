@@ -2,7 +2,7 @@
 .INCLUDE "config.asm"
 .INCLUDE "enums.asm"
 .INCLUDE "structs.asm"
-.INCLUDE "symbols.asm"
+.INCLUDE "symbols/sram.inc.asm"
 
 SRAM: ;For pointers.
 

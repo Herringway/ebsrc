@@ -1,5 +1,6 @@
 .SEGMENT "BANK08"
 .INCLUDE "common.asm"
+.INCLUDE "symbols/text.inc.asm"
 
 ;$C80000
 .INCLUDE "bin/US/text_data/E02TWSN0.ebtxt"

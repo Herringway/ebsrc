@@ -2,6 +2,16 @@
 .INCLUDE "common.asm"
 .INCLUDE "config.asm"
 .INCLUDE "structs.asm"
+.INCLUDE "symbols/bank00.inc.asm"
+.INCLUDE "symbols/bank01.inc.asm"
+.INCLUDE "symbols/bank02.inc.asm"
+.INCLUDE "symbols/bank04.inc.asm"
+.INCLUDE "symbols/bank2f.inc.asm"
+.INCLUDE "symbols/audiopacks.inc.asm"
+.INCLUDE "symbols/globals.inc.asm"
+.INCLUDE "symbols/map.inc.asm"
+.INCLUDE "symbols/overworld_sprites.inc.asm"
+.INCLUDE "symbols/sram.inc.asm"
 
 AUDIO_PACK_23: ;$EF0000
         AUDIOPACK "audiopacks/23.ebm"

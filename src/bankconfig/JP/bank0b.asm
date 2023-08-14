@@ -1,5 +1,6 @@
 .SEGMENT "BANK0B"
 .INCLUDE "common.asm"
+.INCLUDE "symbols/battle_bgs.inc.asm"
 
 BATTLE_BACKGROUND_ARR_43: ;$CB0000
 	BINARY "battle_bgs/arrangements/43.arr.lzhal"

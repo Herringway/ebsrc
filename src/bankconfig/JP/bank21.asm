@@ -3,6 +3,10 @@
 .INCLUDE "config.asm"
 .INCLUDE "structs.asm"
 .INCLUDE "flyovermacros.asm"
+.INCLUDE "symbols/bank00.inc.asm"
+.INCLUDE "symbols/bank01.inc.asm"
+.INCLUDE "symbols/globals.inc.asm"
+.INCLUDE "symbols/misc.inc.asm"
 
 UNKNOWN_E10000: ;$E10000
 	BINARY "E10000.bin"

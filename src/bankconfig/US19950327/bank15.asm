@@ -2,6 +2,11 @@
 .INCLUDE "common.asm"
 .INCLUDE "config.asm"
 .INCLUDE "structs.asm"
+.INCLUDE "symbols/bank01.inc.asm"
+.INCLUDE "symbols/bank02.inc.asm"
+.INCLUDE "symbols/misc.inc.asm"
+.INCLUDE "symbols/overworld_sprites.inc.asm"
+.INCLUDE "symbols/text.inc.asm"
 
 SPRITE_GROUP_TONY_IN_BED:
 SPRITE_1028:

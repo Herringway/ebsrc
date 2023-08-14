@@ -1,5 +1,6 @@
 .SEGMENT "BANK2E"
 .INCLUDE "common.asm"
+.INCLUDE "symbols/audiopacks.inc.asm"
 
 AUDIO_PACK_136: ;$EE0000
 	AUDIOPACK "audiopacks/136.ebm"

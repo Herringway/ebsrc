@@ -1,5 +1,8 @@
 .SEGMENT "BANK09"
 .INCLUDE "common.asm"
+.INCLUDE "symbols/bank2f.inc.asm"
+.INCLUDE "symbols/misc.inc.asm"
+.INCLUDE "symbols/text.inc.asm"
 
 ; $C90000
 .INCLUDE "bin/JP/text_data/EGLOBAL.ebtxt"

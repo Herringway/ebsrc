@@ -1,5 +1,8 @@
 .SEGMENT "BANK18"
 .INCLUDE "common.asm"
+.INCLUDE "symbols/audiopacks.inc.asm"
+.INCLUDE "symbols/map.inc.asm"
+.INCLUDE "symbols/misc.inc.asm"
 
 .INCLUDE "data/map/tile_collision_data.asm"
 

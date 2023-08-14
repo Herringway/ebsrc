@@ -1,5 +1,7 @@
 .SEGMENT "BANK20"
 .INCLUDE "common.asm"
+.INCLUDE "symbols/audiopacks.inc.asm"
+.INCLUDE "symbols/misc.inc.asm"
 
 TEXT_WINDOW_GFX: ;$E00000
 	BINARY "graphics/text_window.gfx.lzhal"

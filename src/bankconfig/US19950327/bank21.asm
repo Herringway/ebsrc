@@ -3,6 +3,11 @@
 .INCLUDE "config.asm"
 .INCLUDE "structs.asm"
 .INCLUDE "flyovermacros.asm"
+.INCLUDE "symbols/bank00.inc.asm"
+.INCLUDE "symbols/bank01.inc.asm"
+.INCLUDE "symbols/audiopacks.inc.asm"
+.INCLUDE "symbols/globals.inc.asm"
+.INCLUDE "symbols/misc.inc.asm"
 
 COFFEE_SEQUENCE_TEXT: ;$E10000
 	.INCLUDE "bin/US19950327/coffee.flyover"

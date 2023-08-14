@@ -1,5 +1,6 @@
 .SEGMENT "BANK14"
 .INCLUDE "common.asm"
+.INCLUDE "symbols/overworld_sprites.inc.asm"
 
 OVERWORLD_SPRITES_BANK4:
 SPRITE_GROUP_RICH_POKEY:

@@ -1,5 +1,7 @@
 .SEGMENT "BANK1B"
 .INCLUDE "common.asm"
+.INCLUDE "symbols/audiopacks.inc.asm"
+.INCLUDE "symbols/map.inc.asm"
 
 MAP_DATA_TILE_ARRANGEMENT_8: ;$DB0000
 	BINARY "maps/arrangements/8.arr.lzhal"
