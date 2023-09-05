@@ -60,6 +60,34 @@ endmacro
 
 ; SFX macros
 
+macro SFXHEADERTYPE2(val, val2, val3, val4, val5)
+	DB <val>, <val2>, <val3>, <val4>, <val5>
+endmacro
+
+macro SFXHEADERTYPE4(val, val2, val3, val4)
+	DB <val>, <val2>, <val3>, <val4>
+endmacro
+
+macro SFXHEADERTYPE6(val, val2, val3, val4)
+	DB <val>, <val2>, <val3>, <val4>
+endmacro
+
+macro SFXHEADERTYPE10(val, val2, val3, val4)
+	DB <val>, <val2>, <val3>, <val4>
+endmacro
+
+macro SFXHEADERTYPE12(val, val2, val3, val4)
+	DB <val>, <val2>, <val3>, <val4>
+endmacro
+
+macro SFXHEADERTYPE14(val, val2, val3, val4)
+	DB <val>, <val2>, <val3>, <val4>
+endmacro
+
+macro SFXHEADERTYPE16(val, val2, val3, val4, val5, val6)
+	DB <val>, <val2>, <val3>, <val4>, <val5>, <val6>
+endmacro
+
 macro SFXNOTE(val)
 	DB <val>
 endmacro
