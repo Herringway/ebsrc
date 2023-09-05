@@ -65,5 +65,8 @@ extractjp:
 %.o: %.asm
 	ca65 $(CA65FLAGS) -o "$@" "$<"
 
+%.spc700.bin: %.spc700.s
+	spcasm -f plain "$<" "$@"
+
 %.bin: %.uncompressed
 	inhal -n $< $@
