@@ -1328,7 +1328,7 @@
 
 .INCLUDE "system/saves/check_save_corruption.asm"
 
-.INCLUDE "system/saves/save_game_block-jp.asm"
+.INCLUDE "system/saves/save_game_block.asm"
 
 .INCLUDE "system/saves/save_game_slot.asm"
 
