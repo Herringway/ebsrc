@@ -5,7 +5,6 @@
 .INCLUDE "structs.asm"
 .INCLUDE "symbols/globals.inc.asm"
 
-RAM: ;For pointers.
 UNKNOWN_7E0000:
 	.RES 1
 UNKNOWN_7E0001:

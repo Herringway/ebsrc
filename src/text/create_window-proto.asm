@@ -13,13 +13,13 @@ CREATE_WINDOW: ;$C104EE
 	ADC #.LOWORD(WINDOW_EXISTENCE_TABLE)
 	TAX
 	STX $12
-	LDA RAM,X
+	LDA __BSS_START__,X
 	CMP #$FFFF
 	BEQ @UNKNOWN0
 	STY CURRENT_FOCUS_WINDOW
 	JSR UNKNOWN_C11383
 	LDX $12
-	LDA RAM,X
+	LDA __BSS_START__,X
 	LDY #.SIZEOF(window_stats)
 	JSL MULT168
 	CLC
@@ -163,42 +163,42 @@ CREATE_WINDOW: ;$C104EE
 	CLC
 	ADC #window_stats::working_memory
 	TAY
-	MOVE_INT_YPTRSRC RAM, $06
+	MOVE_INT_YPTRSRC __BSS_START__, $06
 	TXA
 	CLC
 	ADC #window_stats::working_memory
 	TAY
-	MOVE_INT_YPTRDEST $06, RAM
+	MOVE_INT_YPTRDEST $06, __BSS_START__
 	LDA $02
 	CLC
 	ADC #window_stats::argument_memory
 	TAY
-	MOVE_INT_YPTRSRC RAM, $06
+	MOVE_INT_YPTRSRC __BSS_START__, $06
 	TXA
 	CLC
 	ADC #window_stats::argument_memory
 	TAY
-	MOVE_INT_YPTRDEST $06, RAM
+	MOVE_INT_YPTRDEST $06, __BSS_START__
 	LDA $02
 	CLC
 	ADC #window_stats::working_memory_storage
 	TAY
-	MOVE_INT_YPTRSRC RAM, $06
+	MOVE_INT_YPTRSRC __BSS_START__, $06
 	TXA
 	CLC
 	ADC #window_stats::working_memory_storage
 	TAY
-	MOVE_INT_YPTRDEST $06, RAM
+	MOVE_INT_YPTRDEST $06, __BSS_START__
 	LDA $02
 	CLC
 	ADC #window_stats::argument_memory_storage
 	TAY
-	MOVE_INT_YPTRSRC RAM, $06
+	MOVE_INT_YPTRSRC __BSS_START__, $06
 	TXA
 	CLC
 	ADC #window_stats::argument_memory_storage
 	TAY
-	MOVE_INT_YPTRDEST $06, RAM
+	MOVE_INT_YPTRDEST $06, __BSS_START__
 	LDX $02
 	LDA a:window_stats::secondary_memory,X
 	LDX $10
@@ -222,7 +222,7 @@ CREATE_WINDOW: ;$C104EE
 	CLC
 	ADC #window_stats::cursor_move_callback
 	TAY
-	MOVE_INT_YPTRDEST $06, RAM
+	MOVE_INT_YPTRDEST $06, __BSS_START__
 	LDY a:window_stats::tilemap_address,X
 	STY $0E
 	LDY a:window_stats::height,X
@@ -232,13 +232,13 @@ CREATE_WINDOW: ;$C104EE
 	BRA @UNKNOWN11
 @UNKNOWN9:
 	LDY $0E
-	LDA RAM,Y
+	LDA __BSS_START__,Y
 	BEQ @UNKNOWN10
 	JSL FREE_TILE_SAFE
 @UNKNOWN10:
 	LDA #$0040
 	LDY $0E
-	STA RAM,Y
+	STA __BSS_START__,Y
 	INY
 	INY
 	STY $0E

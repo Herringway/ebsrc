@@ -305,7 +305,7 @@ CALL_FOR_HELP_COMMON: ;$C2BD5E
 	ADC #battler::consciousness
 	TAY
 	STY $14
-	LDA RAM,Y
+	LDA __BSS_START__,Y
 	AND #$00FF
 	CMP #$0001
 	BNE @UNKNOWN23
@@ -328,7 +328,7 @@ CALL_FOR_HELP_COMMON: ;$C2BD5E
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0000
 	LDY $14 ;battler::consciousness
-	STA RAM,Y
+	STA __BSS_START__,Y
 	LDX $12
 	REP #PROC_FLAGS::ACCUM8
 	LDA a:battler::sprite_x,X

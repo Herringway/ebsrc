@@ -5,8 +5,8 @@ INCREMENT_SECONDARY_MEMORY: ;$C1042E
 	CLC
 	ADC #window_stats::secondary_memory
 	TAX
-	LDA RAM,X
-	LDA RAM,X
+	LDA __BSS_START__,X
+	LDA __BSS_START__,X
 	INC
-	STA RAM,X
+	STA __BSS_START__,X
 	RTS

@@ -42,7 +42,7 @@ UNKNOWN_C4343E: ;$C4343E
 	ADC #game_state::unknown96
 	TAX
 	STX $0E
-	LDA RAM,X
+	LDA __BSS_START__,X
 	AND #$00FF
 	BNE @UNKNOWN5
 	STY $04
@@ -60,7 +60,7 @@ UNKNOWN_C4343E: ;$C4343E
 	.A16
 	LDA $12
 	TAX
-	LDA RAM+game_state::player_controlled_party_members,X
+	LDA __BSS_START__+game_state::player_controlled_party_members,X
 	AND #$00FF
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
@@ -69,7 +69,7 @@ UNKNOWN_C4343E: ;$C4343E
 	STA $12
 	STA UNKNOWN_7E4DC6
 	LDX $0E
-	LDA RAM,X
+	LDA __BSS_START__,X
 	AND #$00FF
 	TAX
 	STX $0E

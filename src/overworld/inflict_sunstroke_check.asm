@@ -17,14 +17,14 @@ INFLICT_SUNSTROKE_CHECK: ;$C20000
 	CLC
 	ADC #.LOWORD(GAME_STATE)
 	TAY
-	LDA RAM + game_state::unknown96,Y
+	LDA __BSS_START__ + game_state::unknown96,Y
 	AND #$00FF
 	BEQL @UNKNOWN11
 	AND #$00FF
 	CLC
 	SBC #$0004
 	BRANCHGTS @UNKNOWN11
-	LDA RAM+game_state::player_controlled_party_members,Y
+	LDA __BSS_START__+game_state::player_controlled_party_members,Y
 	AND #$00FF
 	ASL
 	TAX

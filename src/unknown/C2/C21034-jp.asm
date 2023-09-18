@@ -17,9 +17,9 @@ UNKNOWN_C21034: ;$C21034
 	CLC
 	ADC #.LOWORD(CHAR_STRUCT)
 	TAX
-	LDA RAM+66,X
+	LDA __BSS_START__+66,X
 	BNE @UNKNOWN1
-	LDA RAM+72,X
+	LDA __BSS_START__+72,X
 	BNE @UNKNOWN1
 	LDA a:char_struct::current_hp,X
 	CMP a:char_struct::current_hp_target,X

@@ -11,12 +11,12 @@ UNKNOWN_C0546B: ;$C0546B
 	CLC
 	ADC #.LOWORD(GAME_STATE)
 	TAX
-	LDA RAM + game_state::unknown96,X
+	LDA __BSS_START__ + game_state::unknown96,X
 	AND #$00FF
 	CLC
 	SBC #$0004
 	BRANCHGTS @UNKNOWN3
-	LDA RAM + game_state::player_controlled_party_members,X
+	LDA __BSS_START__ + game_state::player_controlled_party_members,X
 	AND #$00FF
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168

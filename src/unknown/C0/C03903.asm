@@ -35,7 +35,7 @@ UNKNOWN_C03903: ;$C03903
 	SEP #PROC_FLAGS::ACCUM8
 	LDA GAME_STATE + game_state::unknown96 + 1,X
 	LDX $0E
-	STA RAM + game_state::unknown96,X
+	STA __BSS_START__ + game_state::unknown96,X
 	REP #PROC_FLAGS::ACCUM8
 	LDA $10
 	ASL
@@ -49,7 +49,7 @@ UNKNOWN_C03903: ;$C03903
 	SEP #PROC_FLAGS::ACCUM8
 	LDA GAME_STATE + game_state::unknown9D,X
 	LDX $0E
-	STA RAM + game_state::player_controlled_party_members,X
+	STA __BSS_START__ + game_state::player_controlled_party_members,X
 	REP #PROC_FLAGS::ACCUM8
 	LDA $10
 	INC
@@ -77,18 +77,18 @@ UNKNOWN_C03903: ;$C03903
 	CLC
 	ADC $04
 	TAX
-	LDA RAM,X
+	LDA __BSS_START__,X
 	PLX
-	STA RAM,X
+	STA __BSS_START__,X
 @UNKNOWN6:
 	LDA $10
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
 	STZ GAME_STATE + game_state::unknown96,X
 	LDX #.LOWORD(GAME_STATE)+game_state::party_count
-	LDA RAM,X
+	LDA __BSS_START__,X
 	DEC
-	STA RAM,X
+	STA __BSS_START__,X
 	REP #PROC_FLAGS::ACCUM8
 	LDA $02
 	ASL

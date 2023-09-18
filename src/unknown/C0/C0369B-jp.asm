@@ -83,7 +83,7 @@ UNKNOWN_C0369B: ;$C0369B
 	STA $02
 	LDX $02
 	SEP #PROC_FLAGS::ACCUM8
-	LDA RAM + game_state::unknown96,X
+	LDA __BSS_START__ + game_state::unknown96,X
 	LDY #game_state::unknown96
 	STA ($12),Y
 	REP #PROC_FLAGS::ACCUM8
@@ -102,7 +102,7 @@ UNKNOWN_C0369B: ;$C0369B
 	STA a:game_state::unknownA2,X
 	LDX $02
 	SEP #PROC_FLAGS::ACCUM8
-	LDA RAM+game_state::player_controlled_party_members,X
+	LDA __BSS_START__+game_state::player_controlled_party_members,X
 	LDY #game_state::player_controlled_party_members
 	STA ($12),Y
 	REP #PROC_FLAGS::ACCUM8
@@ -131,10 +131,10 @@ UNKNOWN_C0369B: ;$C0369B
 	PHA
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	LDA RAM,X
+	LDA __BSS_START__,X
 	INC
 	PLX
-	STA RAM,X
+	STA __BSS_START__,X
 	REP #PROC_FLAGS::ACCUM8
 	TYA
 	DEC
@@ -300,12 +300,12 @@ UNKNOWN_C0369B: ;$C0369B
 	ADC $06
 	STA $06
 	LDA [$06]
-	STA RAM,Y
+	STA __BSS_START__,Y
 	JSL UNKNOWN_C09CD7
 	JSL UNKNOWN_C032EC
 	LDA GAME_STATE + game_state::unknownA2
 	LDY $18
-	STA RAM,Y
+	STA __BSS_START__,Y
 	JSL UPDATE_PARTY
 	LDA $04
 	STA ENTITY_PREPARED_X_COORDINATE

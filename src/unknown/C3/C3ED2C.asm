@@ -30,14 +30,14 @@ UNKNOWN_C3ED2C: ;$C3ED2C
 	CLC
 	ADC #.LOWORD(CHAR_STRUCT) + char_struct::current_pp_target
 	TAX
-	LDA RAM,X
+	LDA __BSS_START__,X
 	SEC
 	SBC $02
-	STA RAM,X
+	STA __BSS_START__,X
 	CMP CHAR_STRUCT+char_struct::max_pp,Y
 	BLTEQ @UNKNOWN1
 	LDA #$0000
-	STA RAM,X
+	STA __BSS_START__,X
 @UNKNOWN1:
 	PLD
 	RTL

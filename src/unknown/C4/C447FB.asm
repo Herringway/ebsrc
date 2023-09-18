@@ -24,7 +24,7 @@ UNKNOWN_C447FB: ;$C447FB
 	AND #$0007
 	STA $04
 	LDX $14
-	LDA RAM + window_stats::text_x,X
+	LDA __BSS_START__ + window_stats::text_x,X
 	DEC
 	ASL
 	ASL
@@ -36,7 +36,7 @@ UNKNOWN_C447FB: ;$C447FB
 	CLC
 	ADC $02
 	STA $02
-	LDA RAM + window_stats::width,X
+	LDA __BSS_START__ + window_stats::width,X
 	ASL
 	ASL
 	ASL

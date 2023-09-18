@@ -7,22 +7,22 @@ TRANSFER_ACTIVE_MEM_STORAGE: ;$C10324
 	CLC
 	ADC #window_stats::working_memory
 	TAY
-	MOVE_INT_YPTRSRC RAM, $06
+	MOVE_INT_YPTRSRC __BSS_START__, $06
 	LDA $0E
 	CLC
 	ADC #window_stats::working_memory_storage
 	TAY
-	MOVE_INT_YPTRDEST $06, RAM
+	MOVE_INT_YPTRDEST $06, __BSS_START__
 	LDA $0E
 	CLC
 	ADC #window_stats::argument_memory
 	TAY
-	MOVE_INT_YPTRSRC RAM, $06
+	MOVE_INT_YPTRSRC __BSS_START__, $06
 	LDA $0E
 	CLC
 	ADC #window_stats::argument_memory_storage
 	TAY
-	MOVE_INT_YPTRDEST $06, RAM
+	MOVE_INT_YPTRDEST $06, __BSS_START__
 	LDA $0E
 	PHA
 	TAX

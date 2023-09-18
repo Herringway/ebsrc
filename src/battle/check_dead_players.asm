@@ -37,12 +37,12 @@ CHECK_DEAD_PLAYERS: ;$C2BB18
 	LDX $02
 	LDA a:char_struct::current_hp,X
 	LDX $12
-	STA RAM,X
+	STA __BSS_START__,X
 	LDX $02
 	LDA a:char_struct::current_pp,X
 	STA BATTLERS_TABLE+battler::pp,Y
 	LDX $12
-	LDA RAM,X
+	LDA __BSS_START__,X
 	BNE @UNKNOWN4
 	LDA BATTLERS_TABLE+battler::afflictions,Y
 	AND #$00FF
@@ -100,7 +100,7 @@ CHECK_DEAD_PLAYERS: ;$C2BB18
 	ADC $02
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	LDA RAM,X
+	LDA __BSS_START__,X
 	PLX
 	STA a:char_struct::afflictions,X
 	LDX $12
@@ -115,12 +115,12 @@ CHECK_DEAD_PLAYERS: ;$C2BB18
 	CLC
 	ADC #char_struct::afflictions + 4
 	TAX
-	LDA RAM,X
+	LDA __BSS_START__,X
 	AND #$00FF
 	BEQ @UNKNOWN7
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0001
-	STA RAM,X
+	STA __BSS_START__,X
 @UNKNOWN7:
 	JSL UPDATE_PARTY
 @UNKNOWN8:

@@ -82,7 +82,7 @@ CHOOSE_TARGET: ;$C24477
 	INX
 	INX
 	STX $0E
-	LDA RAM,X ;battler.current_action
+	LDA __BSS_START__,X ;battler.current_action
 	OPTIMIZED_MULT $04, 12
 	INC
 	MOVE_INTX $06, $0A
@@ -107,9 +107,9 @@ CHOOSE_TARGET: ;$C24477
 	ADC #battler::action_targetting
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	LDA RAM,X
+	LDA __BSS_START__,X
 	ORA #$0001
-	STA RAM,X
+	STA __BSS_START__,X
 	LDX $02
 	REP #PROC_FLAGS::ACCUM8
 	LDA a:battler::ally_or_enemy,X
@@ -143,9 +143,9 @@ CHOOSE_TARGET: ;$C24477
 	ADC #battler::action_targetting
 	TAY
 	SEP #PROC_FLAGS::ACCUM8
-	LDA RAM,Y
+	LDA __BSS_START__,Y
 	ORA #$0001
-	STA RAM,Y
+	STA __BSS_START__,Y
 	LDX $02
 	REP #PROC_FLAGS::ACCUM8
 	LDA a:battler::ally_or_enemy,X
@@ -153,7 +153,7 @@ CHOOSE_TARGET: ;$C24477
 	CMP #$0001
 	BNE @UNKNOWN18
 	LDX $0E
-	LDA RAM,X ;battler.current_action
+	LDA __BSS_START__,X ;battler.current_action
 	OPTIMIZED_MULT $04, 12
 	CLC
 	ADC $06
@@ -192,7 +192,7 @@ CHOOSE_TARGET: ;$C24477
 	BRA @UNKNOWN16
 @UNKNOWN18:
 	LDX $0E
-	LDA RAM,X ;battler.current_action
+	LDA __BSS_START__,X ;battler.current_action
 	OPTIMIZED_MULT $04, 12
 	CLC
 	ADC $06
@@ -228,9 +228,9 @@ CHOOSE_TARGET: ;$C24477
 	ADC #battler::action_targetting
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	LDA RAM,X
+	LDA __BSS_START__,X
 	ORA #$0002
-	STA RAM,X
+	STA __BSS_START__,X
 	LDX $02
 	REP #PROC_FLAGS::ACCUM8
 	LDA a:battler::ally_or_enemy,X
@@ -273,9 +273,9 @@ CHOOSE_TARGET: ;$C24477
 	ADC #battler::action_targetting
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	LDA RAM,X
+	LDA __BSS_START__,X
 	ORA #$0004
-	STA RAM,X
+	STA __BSS_START__,X
 	LDA #$0001
 	LDX $02
 	STA a:battler::current_target,X

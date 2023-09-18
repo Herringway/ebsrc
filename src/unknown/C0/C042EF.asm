@@ -25,7 +25,7 @@ UNKNOWN_C042EF: ;$C042EF
 	LDA #.LOWORD(GAME_STATE) + game_state::current_party_members
 	STA $02
 	LDX $02
-	LDA RAM,X
+	LDA __BSS_START__,X
 	TAY
 	LDX $04
 	LDA $14
@@ -44,7 +44,7 @@ UNKNOWN_C042EF: ;$C042EF
 	LDA $1A
 	STA $0E
 	LDX $02
-	LDA RAM,X
+	LDA __BSS_START__,X
 	TAY
 	LDX $04
 	LDA $14

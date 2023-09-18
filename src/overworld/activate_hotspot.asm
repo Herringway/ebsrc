@@ -80,7 +80,7 @@ ACTIVATE_HOTSPOT: ;$C072CF
 	CLC
 	ADC #active_hotspot::pointer
 	TAY
-	MOVE_INT_YPTRDEST $0A, RAM
+	MOVE_INT_YPTRDEST $0A, __BSS_START__
 	LDA $1A
 	DEC
 	STA $12
@@ -89,11 +89,11 @@ ACTIVATE_HOTSPOT: ;$C072CF
 	TAY
 	TXA
 	SEP #PROC_FLAGS::ACCUM8
-	STA RAM + game_state::active_hotspot_modes,Y
+	STA __BSS_START__ + game_state::active_hotspot_modes,Y
 	REP #PROC_FLAGS::ACCUM8
 	LDA $1C
 	SEP #PROC_FLAGS::ACCUM8
-	STA RAM+game_state::active_hotspot_ids,Y
+	STA __BSS_START__+game_state::active_hotspot_ids,Y
 	REP #PROC_FLAGS::ACCUM8
 	LDA $12
 	ASL
@@ -107,6 +107,6 @@ ACTIVATE_HOTSPOT: ;$C072CF
 	ADC #.LOWORD(GAME_STATE) + game_state::active_hotspot_pointers
 .ENDIF
 	TAY
-	MOVE_INT_YPTRDEST $0A, RAM
+	MOVE_INT_YPTRDEST $0A, __BSS_START__
 	PLD
 	RTL

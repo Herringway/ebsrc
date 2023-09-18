@@ -13,11 +13,11 @@ CALC_DAMAGE: ;$C27EAF
 	LDA #$0000
 	JMP @RETURN
 @UNKNOWN0:
-	LDA RAM + battler::ally_or_enemy,Y
+	LDA __BSS_START__ + battler::ally_or_enemy,Y
 	AND #$00FF
 	CMP #$0001
 	BNE @UNKNOWN2
-	LDA RAM + battler::id,Y
+	LDA __BSS_START__ + battler::id,Y
 	CMP #ENEMY::GIYGAS_2
 	BNE @UNKNOWN2
 	LDA #$0001
@@ -33,13 +33,13 @@ CALC_DAMAGE: ;$C27EAF
 	ADC #.LOWORD(BATTLERS_TABLE)
 	TAX
 	STX CURRENT_TARGET
-	LDA RAM + battler::consciousness,X
+	LDA __BSS_START__ + battler::consciousness,X
 	AND #$00FF
 	BEQ @UNKNOWN1
-	LDA RAM + battler::npc_id,X
+	LDA __BSS_START__ + battler::npc_id,X
 	AND #$00FF
 	BNE @UNKNOWN1
-	LDA RAM + battler::afflictions + STATUS_GROUP::PERSISTENT_EASYHEAL,X
+	LDA __BSS_START__ + battler::afflictions + STATUS_GROUP::PERSISTENT_EASYHEAL,X
 	AND #$00FF
 	TAX
 	CPX #STATUS_0::UNCONSCIOUS
@@ -57,12 +57,12 @@ CALC_DAMAGE: ;$C27EAF
 	JSR WAIT
 @UNKNOWN2:
 	LDY $1C
-	LDA RAM + battler::hp_target,Y
+	LDA __BSS_START__ + battler::hp_target,Y
 	STA $02
-	LDA RAM + battler::ally_or_enemy,Y
+	LDA __BSS_START__ + battler::ally_or_enemy,Y
 	AND #$00FF
 	BEQ @UNKNOWN3
-	LDA RAM + battler::id,Y
+	LDA __BSS_START__ + battler::id,Y
 	CMP #ENEMY::MASTER_BELCH_1
 	BEQ @UNKNOWN4
 	CMP #ENEMY::MASTER_BELCH_3
@@ -81,16 +81,16 @@ CALC_DAMAGE: ;$C27EAF
 	JSR REDUCE_HP
 @UNKNOWN4:
 	LDY $1C
-	LDA RAM + battler::ally_or_enemy,Y
+	LDA __BSS_START__ + battler::ally_or_enemy,Y
 	AND #$00FF
 	BNE @UNKNOWN8
-	LDA RAM + battler::hp_target,Y
+	LDA __BSS_START__ + battler::hp_target,Y
 	BNE @UNKNOWN7
 	LDA $02
 	CMP #$0001
 	BLTEQ @UNKNOWN7
 	LDX CURRENT_ATTACKER
-	LDA RAM + battler::guts,X
+	LDA __BSS_START__ + battler::guts,X
 	CMP #GUTS_FLOOR_FOR_SMAAAASH_CHANCE
 	BCS @UNKNOWN5
 	LDX #GUTS_FLOOR_FOR_SMAAAASH_CHANCE
@@ -123,11 +123,11 @@ CALC_DAMAGE: ;$C27EAF
 	JSR SET_HP
 @UNKNOWN8:
 	LDY $1C
-	LDA RAM + battler::ally_or_enemy,Y
+	LDA __BSS_START__ + battler::ally_or_enemy,Y
 	AND #$00FF
 	CMP #$0001
 	BNE @UNKNOWN12
-	LDA RAM + battler::id,Y
+	LDA __BSS_START__ + battler::id,Y
 	CMP #ENEMY::GIYGAS_3
 	BEQ @UNKNOWN9
 	CMP #ENEMY::GIYGAS_4
@@ -142,7 +142,7 @@ CALC_DAMAGE: ;$C27EAF
 @UNKNOWN10:
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$0015
-	STA RAM + 72,Y
+	STA __BSS_START__ + 72,Y
 	REP #PROC_FLAGS::ACCUM8
 	LDA UNKNOWN_7EAA8E
 	BEQ @UNKNOWN11
@@ -159,7 +159,7 @@ CALC_DAMAGE: ;$C27EAF
 	JSL DISPLAY_TEXT_WAIT
 	JMP @UNKNOWN20
 @UNKNOWN12:
-	LDA RAM + battler::npc_id,Y
+	LDA __BSS_START__ + battler::npc_id,Y
 	AND #$00FF
 	BNE @UNKNOWN16
 	LDA HP_PP_BOX_BLINK_DURATION
@@ -170,7 +170,7 @@ CALC_DAMAGE: ;$C27EAF
 	STA $16
 	BRA @UNKNOWN15
 @UNKNOWN13:
-	LDA RAM + battler::id,Y
+	LDA __BSS_START__ + battler::id,Y
 	STA $02
 	LDA $16
 	CLC
@@ -191,7 +191,7 @@ CALC_DAMAGE: ;$C27EAF
 	CMP #$0006
 	BCC @UNKNOWN13
 @UNKNOWN16:
-	LDA RAM + battler::hp_target,Y
+	LDA __BSS_START__ + battler::hp_target,Y
 	BNE @TARGET_SURVIVED
 	LDA #DAMAGE_TAKEN_SCREEN_SHAKE_DURATION_MORTAL
 	STA VERTICAL_SHAKE_DURATION

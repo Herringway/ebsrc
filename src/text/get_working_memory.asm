@@ -6,7 +6,7 @@ GET_WORKING_MEMORY: ;$C1040A
 	CLC
 	ADC #window_stats::working_memory
 	TAY
-	MOVE_INT_YPTRSRC RAM, $06
+	MOVE_INT_YPTRSRC __BSS_START__, $06
 	MOVE_INT $06, $14
 	PLD
 	RTS

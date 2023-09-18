@@ -58,11 +58,11 @@ FILL_HP_PP_TILE_BUFFER: ;$C20DC5
 	CLC
 	ADC #$2600
 	STA $02
-	STA RAM + hp_pp_window_buffer::hp1,X
+	STA __BSS_START__ + hp_pp_window_buffer::hp1,X
 	LDA $02
 	CLC
 	ADC #$0010
-	STA RAM + hp_pp_window_buffer::hp2,X
+	STA __BSS_START__ + hp_pp_window_buffer::hp2,X
 	TXA
 	DEC
 	DEC
@@ -108,11 +108,11 @@ FILL_HP_PP_TILE_BUFFER: ;$C20DC5
 	ADC #$2400
 	LDX $10
 	STX $02
-	STA RAM,X
+	STA __BSS_START__,X
 	CLC
 	ADC #$0010
 	LDX $02
-	STA RAM + hp_pp_window_buffer::hp2,X
+	STA __BSS_START__ + hp_pp_window_buffer::hp2,X
 	LDA $02
 	DEC
 	DEC
@@ -159,7 +159,7 @@ FILL_HP_PP_TILE_BUFFER: ;$C20DC5
 	LDA $0E
 	TAX
 	PLA
-	STA RAM + hp_pp_window_buffer::hp1,X
+	STA __BSS_START__ + hp_pp_window_buffer::hp1,X
 	LDA $0E
 	PHA
 	LDX $12
@@ -167,6 +167,6 @@ FILL_HP_PP_TILE_BUFFER: ;$C20DC5
 	CLC
 	ADC #$0010
 	PLX
-	STA RAM + hp_pp_window_buffer::hp2,X
+	STA __BSS_START__ + hp_pp_window_buffer::hp2,X
 	PLD
 	RTS

@@ -36,22 +36,22 @@ UNKNOWN_C113D1: ;$C113D1
 	CLC
 	ADC #window_stats::current_option
 	TAX
-	LDA RAM,X
+	LDA __BSS_START__,X
 	CMP #$FFFF
 	BNE @UNKNOWN2
 	LDA #$FFFF
 	STA a:menu_option::previous,Y
 	LDA $10
-	STA RAM,X
+	STA __BSS_START__,X
 	BRA @UNKNOWN3
 @UNKNOWN2:
 	LDA $02
 	CLC
 	ADC #window_stats::option_count
 	TAX
-	LDA RAM,X
+	LDA __BSS_START__,X
 	STA a:menu_option::previous,Y
-	LDA RAM,X
+	LDA __BSS_START__,X
 	OPTIMIZED_MULT $04, .SIZEOF(menu_option)
 	TAX
 	LDA $10
@@ -82,7 +82,7 @@ UNKNOWN_C113D1: ;$C113D1
 @UNKNOWN4:
 	SEP #PROC_FLAGS::ACCUM8
 	LDA [$06]
-	STA RAM,X
+	STA __BSS_START__,X
 	INX
 	LDA [$06]
 	REP #PROC_FLAGS::ACCUM8

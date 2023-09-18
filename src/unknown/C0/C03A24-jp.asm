@@ -15,8 +15,8 @@ UNKNOWN_C03A24: ;$C03A24
 	ADC #.LOWORD(GAME_STATE)
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	STZ RAM+game_state::unknown96,X
-	STZ RAM+game_state::player_controlled_party_members,X
+	STZ __BSS_START__+game_state::unknown96,X
+	STZ __BSS_START__+game_state::player_controlled_party_members,X
 	REP #PROC_FLAGS::ACCUM8
 	LDA $0E
 	ASL
