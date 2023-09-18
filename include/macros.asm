@@ -9,8 +9,7 @@
     @VIRTUAL08 := $08
     @VIRTUAL0A := $0A
     @VIRTUAL0C := $0C
-    @VIRTUAL0E := $0E
-    @STACKSIZE .SET 16
+    @STACKSIZE .SET 14
 .ENDMACRO
 
 .MACRO STACK_RESERVE_VARS
@@ -21,6 +20,32 @@
     @CANCLOBBERACCUM .SET 1
     @REGISTERPARAMS .SET 0
     STACK_RESERVE_VIRTUAL_REGISTERS
+.ENDMACRO
+
+.MACRO STACK_DECLARE_RETURN addr, num, label
+    .IFNBLANK label
+        .IDENT(.SPRINTF ("@%s", label)):= addr
+    .ELSE
+        @RETURNVAL := addr
+    .ENDIF
+.ENDMACRO
+
+.MACRO STACK_RESERVE_RETURN size, label
+    .IF size > 2 ;smaller values are returned by register
+        STACK_DECLARE_RETURN @STACKSIZE + 6, label
+    .ENDIF
+.ENDMACRO
+
+.MACRO STACK_RESERVE_RETURN_INT8 label
+    STACK_RESERVE_RETURN 1, label
+.ENDMACRO
+
+.MACRO STACK_RESERVE_RETURN_INT16 label
+    STACK_RESERVE_RETURN 2, label
+.ENDMACRO
+
+.MACRO STACK_RESERVE_RETURN_INT32 label
+    STACK_RESERVE_RETURN 4, label
 .ENDMACRO
 
 .MACRO STACK_DECLARE_VAR addr, num, label
@@ -631,6 +656,13 @@
     LDA src
     CMP dest
     :
+.ENDMACRO
+
+.MACRO CMP32ALT src, dest
+    LDA src
+    SBC dest
+    LDA src + 2
+    SBC dest + 2
 .ENDMACRO
 
 .MACRO BLTEQ dest
