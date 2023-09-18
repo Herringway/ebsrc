@@ -1312,7 +1312,7 @@
 
 .INCLUDE "data/unknown/EF05A6.asm"
 
-.INCLUDE "system/saves/erase_save_block-jp.asm"
+.INCLUDE "system/saves/erase_save_block.asm"
 
 .INCLUDE "system/saves/check_block_signature.asm"
 
