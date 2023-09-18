@@ -174,9 +174,11 @@
     .IF .DEFINED(JPN)
         SPACE = $20
         ZERO = $30
+        A_ = $40
     .ELSE
         SPACE = $50
         ZERO = $60
+        A_ = $70
     .ENDIF
 .ENDENUM
 

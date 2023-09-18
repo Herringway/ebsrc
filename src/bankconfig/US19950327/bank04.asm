@@ -385,7 +385,7 @@
 
 .INCLUDE "unknown/C4/C438A5.asm"
 
-.INCLUDE "text/print_newline-proto.asm"
+.INCLUDE "text/print_newline.asm"
 
 .INCLUDE "data/text/name_entry_grid_character_offset_table.asm"
 

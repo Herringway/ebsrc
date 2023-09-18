@@ -105,7 +105,7 @@
 
 .INCLUDE "misc/decrease_wallet_balance.asm"
 
-.INCLUDE "text/get_party_character_name-jp.asm"
+.INCLUDE "text/get_party_character_name.asm"
 
 .INCLUDE "unknown/C2/C22351.asm"
 
@@ -167,7 +167,7 @@
 
 .INCLUDE "text/fix_attacker_name-jp.asm"
 
-.INCLUDE "text/fix_target_name-jp.asm"
+.INCLUDE "text/fix_target_name.asm"
 
 .INCLUDE "unknown/C2/C23E32.asm"
 

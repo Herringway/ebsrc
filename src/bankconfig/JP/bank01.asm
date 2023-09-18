@@ -98,7 +98,7 @@
 
 .INCLUDE "text/show_hppp_windows-jp.asm"
 
-.INCLUDE "text/hide_hppp_windows-jp.asm"
+.INCLUDE "text/hide_hppp_windows.asm"
 
 .INCLUDE "unknown/C4/C436D7-jp.asm"
 
@@ -114,7 +114,7 @@
 
 .INCLUDE "unknown/C4/C438A5-jp.asm"
 
-.INCLUDE "text/print_newline-jp.asm"
+.INCLUDE "text/print_newline.asm"
 
 .INCLUDE "text/ccs/clear_line-jp.asm"
 
@@ -142,7 +142,7 @@
 
 .INCLUDE "unknown/C1/C10FEA.asm"
 
-.INCLUDE "text/num_select_prompt-jp.asm"
+.INCLUDE "text/num_select_prompt.asm"
 
 .INCLUDE "unknown/C1/C1134B.asm"
 
@@ -236,7 +236,7 @@
 
 .INCLUDE "overworld/open_menu-jp.asm"
 
-.INCLUDE "text/open_hppp_display-jp.asm"
+.INCLUDE "text/open_hppp_display.asm"
 
 .INCLUDE "overworld/show_town_map.asm"
 
