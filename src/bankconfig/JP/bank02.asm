@@ -31,7 +31,7 @@
 
 .INCLUDE "unknown/C2/C2038B.asm"
 
-.INCLUDE "text/hp_pp_window/draw-jp.asm"
+.INCLUDE "text/hp_pp_window/draw.asm"
 
 .INCLUDE "unknown/C2/C2077D.asm"
 

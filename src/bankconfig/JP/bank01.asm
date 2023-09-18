@@ -28,7 +28,7 @@
 
 .INCLUDE "text/clear_instant_printing.asm"
 
-.INCLUDE "text/set_instant_printing-jp.asm"
+.INCLUDE "text/set_instant_printing.asm"
 
 .INCLUDE "unknown/C3/C3E4EF-jp.asm"
 
@@ -96,7 +96,7 @@
 
 .INCLUDE "battle/enemy_flashing_on.asm"
 
-.INCLUDE "text/show_hppp_windows-jp.asm"
+.INCLUDE "text/show_hppp_windows.asm"
 
 .INCLUDE "text/hide_hppp_windows.asm"
 
