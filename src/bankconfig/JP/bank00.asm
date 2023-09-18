@@ -1332,7 +1332,7 @@
 
 .INCLUDE "system/saves/save_game_slot.asm"
 
-.INCLUDE "system/saves/load_game_slot-jp.asm"
+.INCLUDE "system/saves/load_game_slot.asm"
 
 .INCLUDE "system/saves/check_sram_integrity.asm"
 
