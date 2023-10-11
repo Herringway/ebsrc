@@ -2,6 +2,7 @@
 .INCLUDE "hardware.asm"
 .INCLUDE "enums.asm"
 .SMART
+.FEATURE long_jsr_jmp_rts
 
 .FEATURE STRING_ESCAPES
 
