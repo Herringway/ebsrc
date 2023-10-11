@@ -7,7 +7,7 @@ all: earthbound
 %: s.%
 %: SCCS/s.%
 
-CA65FLAGS = -t none --cpu 65816 --bin-include-dir src --include-dir src --include-dir include
+CA65FLAGS = -t none --cpu 65816 --feature long_jsr_jmp_rts --bin-include-dir src --include-dir src --include-dir include
 LD65FLAGS = -C snes.cfg
 
 .PHONY: earthbound proto19950327 mother2 depsjp depsusa depsusaproto extract extractproto extractjp
