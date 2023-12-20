@@ -49,9 +49,10 @@ earthbound.sfc: $(patsubst %.asm, %.o, $(USSRCS))
 earthbound-1995-03-27.sfc: $(patsubst %.asm, %.o, $(USPROTOSRCS))
 	ld65 $(LD65FLAGS) --mapfile "earthbound-1995-03-27.map" -o "$@" $^
 
-depsjp: $(JPSRCS:.asm=.dep)
-depsusa: $(USSRCS:.asm=.dep)
-depsusaproto: $(USPROTOSRCS:.asm=.dep)
+# ca65 requires all bin files to be present for generating .dep files, so make sure they're present first
+depsjp: src/spc700/main.spc700.bin $(JPSRCS:.asm=.dep)
+depsusa: src/spc700/main.spc700.bin $(USSRCS:.asm=.dep)
+depsusaproto: src/spc700/main.spc700.bin $(USPROTOSRCS:.asm=.dep)
 
 extract:
 	ebbinex "earthbound.yml" "donor.sfc"
