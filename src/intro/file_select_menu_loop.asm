@@ -250,7 +250,7 @@ FILE_MENU_LOOP: ;$C1F805
 	STA $04
 	LDY $04
 	LDX #.LOWORD(GAME_STATE) + game_state::favourite_thing + 4 ; part after 'PSI ' prefix
-	LDA #.SIZEOF(game_state::favourite_thing)
+	LDA #.SIZEOF(game_state::favourite_thing) - 6
 	JSR NAME_A_CHARACTER
 	CMP #$0000
 	BEQ @UNKNOWN29
