@@ -269,8 +269,6 @@
 
 .INCLUDE "data/events/scripts/859.asm"
 
-.INCLUDE "data/events/C427A1.asm"
-
 .INCLUDE "data/events/C427E0.asm"
 
 .INCLUDE "data/events/C42802.asm"
