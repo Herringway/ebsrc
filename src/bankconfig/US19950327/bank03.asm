@@ -2172,4 +2172,4 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "data/unused_for_sale_sign_sprite_table.asm"
 
-.INCLUDE "unknown/C3/C3FDC5-proto.asm"
+.INCLUDE "system/antipiracy/final_antipiracy_check-proto.asm"
