@@ -13,3 +13,4 @@ bin
 *.map
 *.cmd
 *.spc700.bin
+*.lst

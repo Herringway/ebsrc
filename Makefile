@@ -37,7 +37,7 @@ USSRCS = $(wildcard $(USSRCDIR)/*.asm)
 USPROTOSRCS = $(wildcard $(USPROTOSRCDIR)/*.asm)
 
 %.dep: %.asm
-	ca65 $(CA65FLAGS) --create-dep "$@" "$<"
+	ca65 $(CA65FLAGS) --listing "$(patsubst %.dep,%.lst,$@)"  --create-dep "$@" "$<"
 
 
 mother2.sfc: $(patsubst %.asm, %.o, $(JPSRCS))
@@ -64,7 +64,7 @@ extractjp:
 	ebbinex "mother2.yml" "donorm2.sfc"
 
 %.o: %.asm
-	ca65 $(CA65FLAGS) -o "$@" "$<"
+	ca65 $(CA65FLAGS) --listing "$(patsubst %.o,%.lst,$@)" -o "$@" "$<"
 
 %.spc700.bin: %.spc700.s
 	spcasm -f plain "$<" "$@"
