@@ -1,5 +1,5 @@
 
-COSINE: ;$C0B400
+COSINE:
 	PHA
 	TXA
 	SEC

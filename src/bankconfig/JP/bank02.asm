@@ -19,13 +19,13 @@
 
 .INCLUDE "data/unknown/C200B9.asm"
 
-.INCLUDE "unknown/C2/C200D9-jp.asm"
+.INCLUDE "unknown/C2/C200D9.asm"
 
 .INCLUDE "unknown/C2/C20266.asm"
 
 .INCLUDE "unknown/C2/C20293.asm"
 
-.INCLUDE "unknown/C2/C202AC-jp.asm"
+.INCLUDE "unknown/C2/C202AC.asm"
 
 .INCLUDE "text/set_window_title.asm"
 
@@ -41,7 +41,7 @@
 
 .INCLUDE "unknown/C2/C2087C.asm"
 
-.INCLUDE "unknown/C2/C208B8-jp.asm"
+.INCLUDE "unknown/C2/C208B8.asm"
 
 .INCLUDE "unknown/C2/C20A20.asm"
 
@@ -61,13 +61,13 @@
 
 .INCLUDE "unknown/C2/C20F58.asm"
 
-.INCLUDE "misc/reset_hppp_rolling-jp.asm"
+.INCLUDE "misc/reset_hppp_rolling.asm"
 
-.INCLUDE "unknown/C2/C21034-jp.asm"
+.INCLUDE "unknown/C2/C21034.asm"
 
 .INCLUDE "unknown/C2/C2108C.asm"
 
-.INCLUDE "misc/hp_pp_roller-jp.asm"
+.INCLUDE "misc/hp_pp_roller.asm"
 
 .INCLUDE "text/update_hppp_meter_tiles.asm"
 
@@ -81,17 +81,17 @@
 
 .INCLUDE "audio/play_sound_and_unknown.asm"
 
-.INCLUDE "unknown/C2/C216DB-jp.asm"
+.INCLUDE "unknown/C2/C216DB.asm"
 
-.INCLUDE "misc/recalc_character_postmath_offense-jp.asm"
+.INCLUDE "misc/recalc_character_postmath_offense.asm"
 
-.INCLUDE "misc/recalc_character_postmath_defense-jp.asm"
+.INCLUDE "misc/recalc_character_postmath_defense.asm"
 
-.INCLUDE "misc/recalc_character_postmath_speed-jp.asm"
+.INCLUDE "misc/recalc_character_postmath_speed.asm"
 
-.INCLUDE "misc/recalc_character_postmath_guts-jp.asm"
+.INCLUDE "misc/recalc_character_postmath_guts.asm"
 
-.INCLUDE "misc/recalc_character_postmath_luck-jp.asm"
+.INCLUDE "misc/recalc_character_postmath_luck.asm"
 
 .INCLUDE "misc/recalc_character_postmath_vitality.asm"
 
@@ -109,7 +109,7 @@
 
 .INCLUDE "unknown/C2/C22351.asm"
 
-.INCLUDE "unknown/C2/C2239D-jp.asm"
+.INCLUDE "unknown/C2/C2239D.asm"
 
 .INCLUDE "unknown/C2/C223D9.asm"
 
@@ -131,11 +131,11 @@
 
 .INCLUDE "unknown/C2/C226E6.asm"
 
-.INCLUDE "unknown/C2/C226F0-jp.asm"
+.INCLUDE "unknown/C2/C226F0.asm"
 
-.INCLUDE "unknown/C2/C2272F-jp.asm"
+.INCLUDE "unknown/C2/C2272F.asm"
 
-.INCLUDE "unknown/C2/C2277C-jp.asm"
+.INCLUDE "unknown/C2/C2277C.asm"
 
 .INCLUDE "misc/learn_special_psi.asm"
 
@@ -163,17 +163,17 @@
 
 .INCLUDE "battle/menu_handler-jp.asm"
 
-.INCLUDE "text/copy_enemy_name-jp.asm"
+.INCLUDE "text/copy_enemy_name.asm"
 
-.INCLUDE "text/fix_attacker_name-jp.asm"
+.INCLUDE "text/fix_attacker_name.asm"
 
 .INCLUDE "text/fix_target_name.asm"
 
 .INCLUDE "unknown/C2/C23E32.asm"
 
-.INCLUDE "unknown/C2/C23E8A-jp.asm"
+.INCLUDE "unknown/C2/C23E8A.asm"
 
-.INCLUDE "battle/find_targettable_npc-jp.asm"
+.INCLUDE "battle/find_targettable_npc.asm"
 
 .INCLUDE "battle/get_shield_targetting.asm"
 
@@ -183,13 +183,13 @@
 
 .INCLUDE "battle/remove_status_untargettable_targets.asm"
 
-.INCLUDE "battle/find_stealable_items-jp.asm"
+.INCLUDE "battle/find_stealable_items.asm"
 
 .INCLUDE "battle/select_stealable_item.asm"
 
 .INCLUDE "unknown/C2/C24348.asm"
 
-.INCLUDE "unknown/C2/C2437E-jp.asm"
+.INCLUDE "unknown/C2/C2437E.asm"
 
 .INCLUDE "unknown/C2/C24434.asm"
 
@@ -197,15 +197,15 @@
 
 .INCLUDE "unknown/C2/C24703.asm"
 
-.INCLUDE "battle/main_battle_routine-jp.asm"
+.INCLUDE "battle/main_battle_routine.asm"
 
 .INCLUDE "unknown/C2/C26189.asm"
 
-.INCLUDE "battle/instant_win_handler-jp.asm"
+.INCLUDE "battle/instant_win_handler.asm"
 
-.INCLUDE "unknown/C2/C2654C-jp.asm"
+.INCLUDE "unknown/C2/C2654C.asm"
 
-.INCLUDE "battle/instant_win_check-jp.asm"
+.INCLUDE "battle/instant_win_check.asm"
 
 .INCLUDE "battle/get_battle_action_type.asm"
 
@@ -249,7 +249,7 @@
 
 .INCLUDE "battle/remove_dead_targetting.asm"
 
-.INCLUDE "battle/set_hp-jp.asm"
+.INCLUDE "battle/set_hp.asm"
 
 .INCLUDE "battle/set_pp.asm"
 
@@ -263,9 +263,9 @@
 
 .INCLUDE "battle/recover_pp.asm"
 
-.INCLUDE "battle/revive_target-jp.asm"
+.INCLUDE "battle/revive_target.asm"
 
-.INCLUDE "battle/ko_target-jp.asm"
+.INCLUDE "battle/ko_target.asm"
 
 .INCLUDE "battle/success_luck80.asm"
 
@@ -283,7 +283,7 @@
 
 .INCLUDE "battle/swap_attacker_with_target.asm"
 
-.INCLUDE "battle/calc_damage-jp.asm"
+.INCLUDE "battle/calc_damage.asm"
 
 .INCLUDE "battle/calc_damage_reduction.asm"
 
@@ -313,7 +313,7 @@
 
 .INCLUDE "battle/actions/steal.asm"
 
-.INCLUDE "battle/actions/freeze_time-jp.asm"
+.INCLUDE "battle/actions/freeze_time.asm"
 
 .INCLUDE "battle/actions/diamondize.asm"
 
@@ -395,7 +395,7 @@
 
 .INCLUDE "battle/actions/enemy_extend.asm"
 
-.INCLUDE "battle/actions/master_barf_death-jp.asm"
+.INCLUDE "battle/actions/master_barf_death.asm"
 
 .INCLUDE "battle/psi_shield_nullify.asm"
 
@@ -431,7 +431,7 @@
 
 .INCLUDE "battle/actions/psi_freeze_omega.asm"
 
-.INCLUDE "battle/actions/psi_thunder_common-jp.asm"
+.INCLUDE "battle/actions/psi_thunder_common.asm"
 
 .INCLUDE "battle/actions/psi_thunder_alpha.asm"
 
@@ -575,7 +575,7 @@
 
 .INCLUDE "battle/actions/handbag_strap.asm"
 
-.INCLUDE "battle/actions/bomb_common-jp.asm"
+.INCLUDE "battle/actions/bomb_common.asm"
 
 .INCLUDE "battle/actions/bomb.asm"
 
@@ -629,7 +629,7 @@
 
 .INCLUDE "battle/actions/pray_rending_sound.asm"
 
-.INCLUDE "battle/actions/pray-jp.asm"
+.INCLUDE "battle/actions/pray.asm"
 
 .INCLUDE "battle/copy_mirror_data.asm"
 
@@ -637,17 +637,17 @@
 
 .INCLUDE "battle/apply_condiment.asm"
 
-.INCLUDE "battle/eat_food-jp.asm"
+.INCLUDE "battle/eat_food.asm"
 
 .INCLUDE "battle/calc_psi_damage_modifiers.asm"
 
 .INCLUDE "battle/calc_psi_resistance_modifiers.asm"
 
-.INCLUDE "unknown/C2/C2B66A-jp.asm"
+.INCLUDE "unknown/C2/C2B66A.asm"
 
-.INCLUDE "battle/init_enemy_stats-jp.asm"
+.INCLUDE "battle/init_enemy_stats.asm"
 
-.INCLUDE "battle/init_player_stats-jp.asm"
+.INCLUDE "battle/init_player_stats.asm"
 
 .INCLUDE "battle/count_chars.asm"
 
@@ -671,7 +671,7 @@
 
 .INCLUDE "battle/actions/fly_honey.asm"
 
-.INCLUDE "unknown/C2/C2C21F-jp.asm"
+.INCLUDE "unknown/C2/C2C21F.asm"
 
 .INCLUDE "unknown/C2/C2C32C.asm"
 
@@ -707,7 +707,7 @@
 
 .INCLUDE "battle/load_enemy_battle_sprites.asm"
 
-.INCLUDE "misc/battlebgs/generate_frame-jp.asm"
+.INCLUDE "misc/battlebgs/generate_frame.asm"
 
 .INCLUDE "unknown/C2/C2CFE5.asm"
 
@@ -723,7 +723,7 @@
 
 .INCLUDE "unknown/C2/C2DE0F.asm"
 
-.INCLUDE "unknown/C2/C2DE96-jp.asm"
+.INCLUDE "unknown/C2/C2DE96.asm"
 
 .INCLUDE "unknown/C2/C2DF2E.asm"
 
@@ -733,7 +733,7 @@
 
 .INCLUDE "battle/show_psi_animation-jp.asm"
 
-.INCLUDE "unknown/C2/C2E6B3-jp.asm"
+.INCLUDE "unknown/C2/C2E6B3.asm"
 
 .INCLUDE "unknown/C2/C2E8C4.asm"
 
@@ -751,9 +751,9 @@
 
 .INCLUDE "unknown/C2/C2EACF.asm"
 
-.INCLUDE "battle/load_battle_sprite-jp.asm"
+.INCLUDE "battle/load_battle_sprite.asm"
 
-.INCLUDE "unknown/C2/C2EEE7-jp.asm"
+.INCLUDE "unknown/C2/C2EEE7.asm"
 
 .INCLUDE "battle/get_battle_sprite_width.asm"
 
@@ -763,7 +763,7 @@
 
 .INCLUDE "unknown/C2/C2F0D1.asm"
 
-.INCLUDE "unknown/C2/C2F121-jp.asm"
+.INCLUDE "unknown/C2/C2F121.asm"
 
 .INCLUDE "battle/render_battle_sprite_row.asm"
 

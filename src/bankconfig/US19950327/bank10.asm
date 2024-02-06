@@ -23,5 +23,5 @@
 
 .INCLUDE "data/map/battle_groups_table.asm"
 
-AUDIO_PACK_139: ;$D0DFB4
+AUDIO_PACK_139:
 	AUDIOPACK "audiopacks/139.ebm"

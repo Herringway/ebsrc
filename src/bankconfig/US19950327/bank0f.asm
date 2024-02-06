@@ -23,8 +23,8 @@
 
 .INCLUDE "data/map/npc_config.asm"
 
-AUDIO_PACK_94: ;$CFF2B5
+AUDIO_PACK_94:
 	AUDIOPACK "audiopacks/94.ebm"
 
-AUDIO_PACK_96: ;$CFFF38
+AUDIO_PACK_96:
 	AUDIOPACK "audiopacks/96.ebm"

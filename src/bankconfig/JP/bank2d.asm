@@ -2,77 +2,77 @@
 .INCLUDE "common.asm"
 .INCLUDE "symbols/audiopacks.inc.asm"
 
-AUDIO_PACK_140: ;$ED0000
+AUDIO_PACK_140:
         AUDIOPACK "audiopacks/140.ebm"
 
-AUDIO_PACK_94: ;$ED0D67
+AUDIO_PACK_94:
         AUDIOPACK "audiopacks/94.ebm"
 
-AUDIO_PACK_65: ;$ED19EA
+AUDIO_PACK_65:
         AUDIOPACK "audiopacks/65.ebm"
 
-AUDIO_PACK_62: ;$ED2663
+AUDIO_PACK_62:
         AUDIOPACK "audiopacks/62.ebm"
 
-AUDIO_PACK_58: ;$ED32C5
+AUDIO_PACK_58:
         AUDIOPACK "audiopacks/58.ebm"
 
-AUDIO_PACK_133: ;$ED3E77
+AUDIO_PACK_133:
         AUDIOPACK "audiopacks/133.ebm"
 
-AUDIO_PACK_97: ;$ED4A15
+AUDIO_PACK_97:
         AUDIOPACK "audiopacks/97.ebm"
 
-AUDIO_PACK_55: ;$ED558E
+AUDIO_PACK_55:
         AUDIOPACK "audiopacks/55.ebm"
 
-AUDIO_PACK_106: ;$ED60C5
+AUDIO_PACK_106:
         AUDIOPACK "audiopacks/106.ebm"
 
-AUDIO_PACK_123: ;$ED6BEE
+AUDIO_PACK_123:
         AUDIOPACK "audiopacks/123.ebm"
 
-AUDIO_PACK_25: ;$ED765F
+AUDIO_PACK_25:
         AUDIOPACK "audiopacks/25.ebm"
 
-AUDIO_PACK_15: ;$ED80AF
+AUDIO_PACK_15:
         AUDIOPACK "audiopacks/15.ebm"
 
-AUDIO_PACK_157: ;$ED8AD6
+AUDIO_PACK_157:
         AUDIOPACK "audiopacks/157.ebm"
 
-AUDIO_PACK_121: ;$ED94F2
+AUDIO_PACK_121:
         AUDIOPACK "audiopacks/121.ebm"
 
-AUDIO_PACK_87: ;$ED9EF9
+AUDIO_PACK_87:
         AUDIOPACK "audiopacks/87.ebm"
 
-AUDIO_PACK_132: ;$EDA8F8
+AUDIO_PACK_132:
         AUDIOPACK "audiopacks/132.ebm"
 
-AUDIO_PACK_116: ;$EDB2F1
+AUDIO_PACK_116:
         AUDIOPACK "audiopacks/116.ebm"
 
-AUDIO_PACK_71: ;$EDBCE9
+AUDIO_PACK_71:
         AUDIOPACK "audiopacks/71.ebm"
 
-AUDIO_PACK_34: ;$EDC6AD
+AUDIO_PACK_34:
         AUDIOPACK "audiopacks/34.ebm"
 
-AUDIO_PACK_61: ;$EDD04B
+AUDIO_PACK_61:
         AUDIOPACK "audiopacks/61.ebm"
 
-AUDIO_PACK_119: ;$EDD97D
+AUDIO_PACK_119:
         AUDIOPACK "audiopacks/119.ebm"
 
-AUDIO_PACK_141: ;$EDE284
+AUDIO_PACK_141:
         AUDIOPACK "audiopacks/141.ebm"
 
-AUDIO_PACK_48: ;$EDEB53
+AUDIO_PACK_48:
         AUDIOPACK "audiopacks/48.ebm"
 
-AUDIO_PACK_39: ;$EDF38F
+AUDIO_PACK_39:
         AUDIOPACK "audiopacks/39.ebm"
 
-AUDIO_PACK_127: ;$EDFBC7
+AUDIO_PACK_127:
         AUDIOPACK "audiopacks/127.ebm"

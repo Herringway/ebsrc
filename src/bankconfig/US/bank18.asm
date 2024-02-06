@@ -27,20 +27,20 @@
 .INCLUDE "data/map/tile_collision_pointers_18.asm"
 .INCLUDE "data/map/tile_collision_pointers_19.asm"
 
-ANTI_PIRACY_NOTICE_ARRANGEMENT: ;$D8F05E
+ANTI_PIRACY_NOTICE_ARRANGEMENT:
 	BINARY "errors/antipiracy.arr.lzhal"
 
-ANTI_PIRACY_NOTICE_GRAPHICS: ;$D8F20D
+ANTI_PIRACY_NOTICE_GRAPHICS:
 	BINARY "errors/antipiracy.gfx.lzhal"
 
-WARNING_PALETTE: ;$D8F3BE
+WARNING_PALETTE:
 	BINARY "errors/shared.pal"
 
-FAULTY_GAME_PAK_ARRANGEMENT: ;$D8F3C6
+FAULTY_GAME_PAK_ARRANGEMENT:
 	BINARY "errors/faulty.arr.lzhal"
 
-FAULTY_GAME_PAK_GRAPHICS: ;$D8F5C4
+FAULTY_GAME_PAK_GRAPHICS:
 	BINARY "errors/faulty.gfx.lzhal"
 
-AUDIO_PACK_61: ;$D8F6B7
+AUDIO_PACK_61:
 	AUDIOPACK "audiopacks/61.ebm"

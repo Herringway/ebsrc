@@ -3,143 +3,143 @@
 .INCLUDE "symbols/audiopacks.inc.asm"
 .INCLUDE "symbols/misc.inc.asm"
 
-ANIMATIONDATA_CARPAINTER_LIGHTNING_REFLECT: ;$CC0000
+ANIMATIONDATA_CARPAINTER_LIGHTNING_REFLECT:
 	BINARY "graphics/animations/lightning_reflect.anim.lzhal"
 
-ANIMATIONDATA_CARPAINTER_LIGHTNING_STRIKE: ;$CC17CB
+ANIMATIONDATA_CARPAINTER_LIGHTNING_STRIKE:
 	BINARY "graphics/animations/lightning_strike.anim.lzhal"
 
-ANIMATIONDATA_STARMAN_JR_TELEPORT: ;$CC1F5C
+ANIMATIONDATA_STARMAN_JR_TELEPORT:
 	BINARY "graphics/animations/starman_jr_teleport.anim.lzhal"
 
-ANIMATIONDATA_BOOM: ;$CC22D8
+ANIMATIONDATA_BOOM:
 	BINARY "graphics/animations/boom.anim.lzhal"
 
-ANIMATIONDATA_ZOMBIES: ;$CC2C89
+ANIMATIONDATA_ZOMBIES:
 	BINARY "graphics/animations/zombies.anim.lzhal"
 
-ANIMATIONDATA_THE_END: ;$CC2CE1
+ANIMATIONDATA_THE_END:
 	BINARY "graphics/animations/the_end.anim.lzhal"
 
 .INCLUDE "data/animation_sequence_pointers.asm"
 
-PSI_ARRANGEMENT_20: ;$CC2E19
+PSI_ARRANGEMENT_20:
 	BINARY "psianims/arrangements/20.arr.lzhal"
 
-PSI_ARRANGEMENT_31: ;$CC4057
+PSI_ARRANGEMENT_31:
 	BINARY "psianims/arrangements/31.arr.lzhal"
 
-PSI_ARRANGEMENT_19: ;$CC4D53
+PSI_ARRANGEMENT_19:
 	BINARY "psianims/arrangements/19.arr.lzhal"
 
-PSI_ARRANGEMENT_21: ;$CC597B
+PSI_ARRANGEMENT_21:
 	BINARY "psianims/arrangements/21.arr.lzhal"
 
-PSI_ARRANGEMENT_13: ;$CC6390
+PSI_ARRANGEMENT_13:
 	BINARY "psianims/arrangements/13.arr.lzhal"
 
-PSI_ARRANGEMENT_23: ;$CC6D77
+PSI_ARRANGEMENT_23:
 	BINARY "psianims/arrangements/23.arr.lzhal"
 
-PSI_ARRANGEMENT_18: ;$CC760B
+PSI_ARRANGEMENT_18:
 	BINARY "psianims/arrangements/18.arr.lzhal"
 
-PSI_ARRANGEMENT_8: ;$CC7E9E
+PSI_ARRANGEMENT_8:
 	BINARY "psianims/arrangements/8.arr.lzhal"
 
-PSI_ARRANGEMENT_30: ;$CC8629
+PSI_ARRANGEMENT_30:
 	BINARY "psianims/arrangements/30.arr.lzhal"
 
-PSI_ARRANGEMENT_29: ;$CC8D86
+PSI_ARRANGEMENT_29:
 	BINARY "psianims/arrangements/29.arr.lzhal"
 
-PSI_ARRANGEMENT_28: ;$CC94DF
+PSI_ARRANGEMENT_28:
 	BINARY "psianims/arrangements/28.arr.lzhal"
 
-PSI_ARRANGEMENT_25: ;$CC9B45
+PSI_ARRANGEMENT_25:
 	BINARY "psianims/arrangements/25.arr.lzhal"
 
-PSI_ARRANGEMENT_26: ;$CCA12C
+PSI_ARRANGEMENT_26:
 	BINARY "psianims/arrangements/26.arr.lzhal"
 
-PSI_ARRANGEMENT_9: ;$CCA6B9
+PSI_ARRANGEMENT_9:
 	BINARY "psianims/arrangements/9.arr.lzhal"
 
-PSI_ANIM_GFX_SET_1: ;$CCAC25
+PSI_ANIM_GFX_SET_1:
 	BINARY "psianims/gfx/0.gfx.lzhal"
 
-PSI_ARRANGEMENT_5: ;$CCB12F
+PSI_ARRANGEMENT_5:
 	BINARY "psianims/arrangements/5.arr.lzhal"
 
-PSI_ANIM_GFX_SET_2: ;$CCB613
+PSI_ANIM_GFX_SET_2:
 	BINARY "psianims/gfx/1.gfx.lzhal"
 
-PSI_ARRANGEMENT_3: ;$CCBAC7
+PSI_ARRANGEMENT_3:
 	BINARY "psianims/arrangements/3.arr.lzhal"
 
-PSI_ARRANGEMENT_7: ;$CCBF2D
+PSI_ARRANGEMENT_7:
 	BINARY "psianims/arrangements/7.arr.lzhal"
 
-PSI_ARRANGEMENT_0: ;$CCC32F
+PSI_ARRANGEMENT_0:
 	BINARY "psianims/arrangements/0.arr.lzhal"
 
-PSI_ARRANGEMENT_6: ;$CCC701
+PSI_ARRANGEMENT_6:
 	BINARY "psianims/arrangements/6.arr.lzhal"
 
-PSI_ARRANGEMENT_17: ;$CCCAAD
+PSI_ARRANGEMENT_17:
 	BINARY "psianims/arrangements/17.arr.lzhal"
 
-PSI_ARRANGEMENT_33: ;$CCCE57
+PSI_ARRANGEMENT_33:
 	BINARY "psianims/arrangements/33.arr.lzhal"
 
-PSI_ARRANGEMENT_22: ;$CCD1C7
+PSI_ARRANGEMENT_22:
 	BINARY "psianims/arrangements/22.arr.lzhal"
 
-PSI_ARRANGEMENT_12: ;$CCD4FB
+PSI_ARRANGEMENT_12:
 	BINARY "psianims/arrangements/12.arr.lzhal"
 
-PSI_ARRANGEMENT_2: ;$CCD820
+PSI_ARRANGEMENT_2:
 	BINARY "psianims/arrangements/2.arr.lzhal"
 
-PSI_ANIM_GFX_SET_3: ;$CCDB27
+PSI_ANIM_GFX_SET_3:
 	BINARY "psianims/gfx/2.gfx.lzhal"
 
-PSI_ARRANGEMENT_1: ;$CCDDF9
+PSI_ARRANGEMENT_1:
 	BINARY "psianims/arrangements/1.arr.lzhal"
 
-PSI_ARRANGEMENT_24: ;$CCE0A1
+PSI_ARRANGEMENT_24:
 	BINARY "psianims/arrangements/24.arr.lzhal"
 
-PSI_ANIM_GFX_SET_4: ;$CCE31D
+PSI_ANIM_GFX_SET_4:
 	BINARY "psianims/gfx/3.gfx.lzhal"
 
-PSI_ARRANGEMENT_16: ;$CCE56D
+PSI_ARRANGEMENT_16:
 	BINARY "psianims/arrangements/16.arr.lzhal"
 
-PSI_ARRANGEMENT_15: ;$CCE78B
+PSI_ARRANGEMENT_15:
 	BINARY "psianims/arrangements/15.arr.lzhal"
 
-PSI_ARRANGEMENT_11: ;$CCE96C
+PSI_ARRANGEMENT_11:
 	BINARY "psianims/arrangements/11.arr.lzhal"
 
-PSI_ARRANGEMENT_14: ;$CCEB3F
+PSI_ARRANGEMENT_14:
 	BINARY "psianims/arrangements/14.arr.lzhal"
 
-PSI_ARRANGEMENT_32: ;$CCED0E
+PSI_ARRANGEMENT_32:
 	BINARY "psianims/arrangements/32.arr.lzhal"
 
-PSI_ARRANGEMENT_27: ;$CCEEB4
+PSI_ARRANGEMENT_27:
 	BINARY "psianims/arrangements/27.arr.lzhal"
 
 .INCLUDE "data/psi_anim_cfg.asm"
 
-PSI_ARRANGEMENT_4: ;$CCF1E5
+PSI_ARRANGEMENT_4:
 	BINARY "psianims/arrangements/4.arr.lzhal"
 
-PSI_ARRANGEMENT_10: ;$CCF358
+PSI_ARRANGEMENT_10:
 	BINARY "psianims/arrangements/10.arr.lzhal"
 
-PSI_ANIM_PALETTES: ;$CCF47F
+PSI_ANIM_PALETTES:
 	BINARY "psianims/palettes/00.pal"
 	BINARY "psianims/palettes/01.pal"
 	BINARY "psianims/palettes/02.pal"
@@ -177,5 +177,5 @@ PSI_ANIM_PALETTES: ;$CCF47F
 
 .INCLUDE "data/psi_anim_pointers.asm"
 
-AUDIO_PACK_141: ;$ED3A9C
+AUDIO_PACK_141:
 	AUDIOPACK "audiopacks/141.ebm"

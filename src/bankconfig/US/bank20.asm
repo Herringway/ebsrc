@@ -3,22 +3,22 @@
 .INCLUDE "symbols/audiopacks.inc.asm"
 .INCLUDE "symbols/misc.inc.asm"
 
-TEXT_WINDOW_GFX: ;$E00000
+TEXT_WINDOW_GFX:
 	BINARY "graphics/text_window.gfx.lzhal"
 
-FLAVOURED_TEXT_GFX: ;$E00754
+FLAVOURED_TEXT_GFX:
 	BINARY "graphics/flavoured_text.gfx.lzhal"
 
-MOTHER2_ROMAJI_FONT: ;$E007A0
+MOTHER2_ROMAJI_FONT:
 	BINARY "fonts/romaji.gfx"
 
-COMPRESSED_SRAM: ;$E009B4
+COMPRESSED_SRAM:
 	BINARY "mystery_sram.bin.lzhal"
 
-MRSATURN_FONT_DATA: ;$E01359
+MRSATURN_FONT_DATA:
 	BINARY "fonts/mrsaturn.bin"
 
-MRSATURN_FONT_GFX: ;$E013B9
+MRSATURN_FONT_GFX:
 	BINARY "fonts/mrsaturn.gfx"
 
 .INCLUDE "data/text_window_properties.asm"
@@ -29,26 +29,26 @@ MRSATURN_FONT_GFX: ;$E013B9
 
 .INCLUDE "data/map/town_map_gfx_pointers.asm"
 
-TOWN_MAP_ONETT: ;$E021A8
+TOWN_MAP_ONETT:
 	BINARY "town_maps/0.bin.lzhal"
 
-TOWN_MAP_TWOSON: ;$E04920
+TOWN_MAP_TWOSON:
 	BINARY "town_maps/1.bin.lzhal"
 
-TOWN_MAP_THREED: ;$E06721
+TOWN_MAP_THREED:
 	BINARY "town_maps/2.bin.lzhal"
 
-TOWN_MAP_FOURSIDE: ;$E08379
+TOWN_MAP_FOURSIDE:
 	BINARY "town_maps/3.bin.lzhal"
 
-TOWN_MAP_SCARABA: ;$E0ADB4
+TOWN_MAP_SCARABA:
 	BINARY "town_maps/4.bin.lzhal"
 
-TOWN_MAP_SUMMERS: ;$E0C7F1
+TOWN_MAP_SUMMERS:
 	BINARY "town_maps/5.bin.lzhal"
 
-AUDIO_PACK_110: ;$E0ED03
+AUDIO_PACK_110:
 	AUDIOPACK "audiopacks/110.ebm"
 
-AUDIO_PACK_6: ;$E0FCE1
+AUDIO_PACK_6:
 	AUDIOPACK "audiopacks/6.ebm"

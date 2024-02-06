@@ -2,23 +2,22 @@
 .INCLUDE "common.asm"
 .INCLUDE "symbols/text.inc.asm"
 
-; $C50000
 .INCLUDE "bin/JP/text_data/EEVENT0.ebtxt"
-; $C5173E
+
 .INCLUDE "bin/JP/text_data/EEVENT1.ebtxt"
-; $C538A0
+
 .INCLUDE "bin/JP/text_data/EEVENT2.ebtxt"
-; $C553E5
+
 .INCLUDE "bin/JP/text_data/EEVENT3.ebtxt"
-; $C56E35
+
 .INCLUDE "bin/JP/text_data/E18MGKT.ebtxt"
-; $C57DF5
+
 .INCLUDE "bin/JP/text_data/E17PAST.ebtxt"
-; $C58000
+
 .INCLUDE "bin/JP/text_data/E01ONET0.ebtxt"
-; $C59FFC
+
 .INCLUDE "bin/JP/text_data/E01ONET1.ebtxt"
-; $C5C2DB
+
 .INCLUDE "bin/JP/text_data/E01ONET2.ebtxt"
-; $C5E584
+
 .INCLUDE "bin/JP/text_data/E03HAPPY.ebtxt"

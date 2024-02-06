@@ -1,3 +1,3 @@
 
-DMA_FLAGS: ;$C0AE16
+DMA_FLAGS:
 	.BYTE $01, $02, $04, $08, $10, $20, $40

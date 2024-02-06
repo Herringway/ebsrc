@@ -75,56 +75,54 @@
 
 .INCLUDE "data/unknown/EF4A40.asm"
 
-;$EF3E05
 .INCLUDE "bin/US19950327/text_data/EBATTLE6.ebtxt"
-;$EF4699
+
 .INCLUDE "bin/US19950327/text_data/EBATTLE5.ebtxt"
-;$EF4EEB
+
 .INCLUDE "bin/US19950327/text_data/E07GPFT.ebtxt"
-;$EF572E
+
 .INCLUDE "bin/US19950327/text_data/EBATTLE4.ebtxt"
-;$EF5D9F
+
 .INCLUDE "bin/US19950327/text_data/EBATTLE2.ebtxt"
-;$EF63C2
+
 .INCLUDE "bin/US19950327/text_data/EBATTLE0.ebtxt"
-;$EF6982
+
 .INCLUDE "bin/US19950327/text_data/EBATTLE3.ebtxt"
-;$EF6F39
+
 .INCLUDE "bin/US19950327/text_data/EBATTLE9.ebtxt"
-;$EF74B7
+
 .INCLUDE "bin/US19950327/text_data/EBATTLE8.ebtxt"
-;$EF7A26
+
 .INCLUDE "bin/US19950327/text_data/EBATTLE1.ebtxt"
-;$EF7EE3
+
 .INCLUDE "bin/US19950327/text_data/EGOODS2.ebtxt"
-;$EF82EB
+
 .INCLUDE "bin/US19950327/text_data/UNKNOWN_EFA2FA.ebtxt"
 
 .INCLUDE "data/command_window_text.asm"
 
 .INCLUDE "data/status_window_text.asm"
 
-NAME_INPUT_WINDOW_SELECTION_LAYOUT_0: ;$EFA460
+NAME_INPUT_WINDOW_SELECTION_LAYOUT_0:
 	BINARY "name_input_layouts/0.bin"
 
-NAME_INPUT_WINDOW_SELECTION_LAYOUT_1: ;$EFA4E3
+NAME_INPUT_WINDOW_SELECTION_LAYOUT_1:
 	BINARY "name_input_layouts/1.bin"
 
-NAME_INPUT_WINDOW_SELECTION_LAYOUT_2: ;$EFA566
+NAME_INPUT_WINDOW_SELECTION_LAYOUT_2:
 	BINARY "name_input_layouts/2.bin"
 
-NAME_INPUT_WINDOW_SELECTION_LAYOUT_3: ;$EFA5E9
+NAME_INPUT_WINDOW_SELECTION_LAYOUT_3:
 	BINARY "name_input_layouts/3.bin"
 
-NAME_INPUT_WINDOW_SELECTION_LAYOUT_4: ;$EFA66C
+NAME_INPUT_WINDOW_SELECTION_LAYOUT_4:
 	BINARY "name_input_layouts/4.bin"
 
-NAME_INPUT_WINDOW_SELECTION_LAYOUT_5: ;$EFA6A7
+NAME_INPUT_WINDOW_SELECTION_LAYOUT_5:
 	BINARY "name_input_layouts/5.bin"
 
 .INCLUDE "data/name_input_window_selection_layout_pointers.asm"
 
-;$EF86DC
 .INCLUDE "bin/US19950327/text_data/UNKNOWN7.ebtxt"
 
 .INCLUDE "data/map/per_sector_town_map_data.asm"
@@ -217,14 +215,14 @@ NAME_INPUT_WINDOW_SELECTION_LAYOUT_5: ;$EFA6A7
 
 .INCLUDE "data/unknown/EFEB3D.asm"
 
-DEBUG_MENU_FONT: ;$EFCB61
+DEBUG_MENU_FONT:
 	BINARY "fonts/debug.gfx"
 
 .INCLUDE "data/unknown/EFEF70.asm"
 
 .INCLUDE "data/unknown/EFEF9F.asm"
 
-KIRBY: ;$EFCFA8
+KIRBY:
 	BINARY "kirby.gfx"
 
 .INCLUDE "data/unknown/EFF0D7.asm"

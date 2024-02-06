@@ -367,7 +367,7 @@
 
 .INCLUDE "unknown/C3/C3E6F8-proto.asm"
 
-.INCLUDE "unknown/C4/C43573-proto.asm"
+.INCLUDE "unknown/C4/C43573.asm"
 
 .INCLUDE "unknown/C4/C435E4.asm"
 
@@ -411,13 +411,13 @@
 
 .INCLUDE "unknown/C4/C43DDB.asm"
 
-.INCLUDE "unknown/C4/C43E31-proto.asm"
+.INCLUDE "unknown/C4/C43E31.asm"
 
 .INCLUDE "unknown/C4/C43EF8.asm"
 
 .INCLUDE "unknown/C4/C43F53.asm"
 
-.INCLUDE "unknown/C4/C43F77-proto.asm"
+.INCLUDE "unknown/C4/C43F77.asm"
 
 .INCLUDE "text/get_character_at_cursor_position.asm"
 
@@ -455,7 +455,7 @@
 
 .INCLUDE "text/free_tile_safe.asm"
 
-.INCLUDE "unknown/C4/C44E61.asm" ;C44EA9
+.INCLUDE "unknown/C4/C44E61.asm"
 
 .INCLUDE "unknown/C4/C44FF3.asm"
 
@@ -751,7 +751,7 @@
 
 .INCLUDE "unknown/C4/C4827B.asm"
 
-.INCLUDE "unknown/C4/C4838A-proto.asm"
+.INCLUDE "unknown/C4/C4838A.asm"
 
 .INCLUDE "unknown/C4/C4880C.asm"
 
@@ -845,7 +845,7 @@
 
 .INCLUDE "unknown/C4/C49D16.asm"
 
-.INCLUDE "unknown/C4/C49D1E-proto.asm"
+.INCLUDE "unknown/C4/C49D1E.asm"
 
 .INCLUDE "text/coffee_tea_scene.asm"
 
@@ -1029,7 +1029,7 @@
 
 .INCLUDE "unknown/C4/C4D989.asm"
 
-.INCLUDE "intro/init_intro-proto.asm"
+.INCLUDE "intro/init_intro.asm"
 
 .INCLUDE "unknown/C4/C4DCF6.asm"
 

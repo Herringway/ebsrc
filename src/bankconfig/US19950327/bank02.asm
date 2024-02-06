@@ -19,7 +19,7 @@
 
 .INCLUDE "data/unknown/C200B9.asm"
 
-.INCLUDE "unknown/C2/C200D9-proto.asm"
+.INCLUDE "unknown/C2/C200D9.asm"
 
 .INCLUDE "unknown/C2/C20266.asm"
 

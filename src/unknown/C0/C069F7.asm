@@ -1,5 +1,5 @@
 
-UNKNOWN_C069F7: ;$C069F7
+UNKNOWN_C069F7:
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
 	LDX GAME_STATE+game_state::leader_y_coord
 	LDA GAME_STATE+game_state::leader_x_coord

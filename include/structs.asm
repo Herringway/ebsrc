@@ -1,4 +1,12 @@
 
+.STRUCT nothing
+.ENDSTRUCT
+
+.STRUCT fixed_point
+	fraction .word ;0
+	integer .word ;2
+.ENDSTRUCT
+
 .STRUCT coords
 	x_coord .word ;0
 	y_coord .word ;2
@@ -125,7 +133,7 @@
 	active_hotspot_modes .byte 2 ;200
 	active_hotspot_ids .byte 2 ;202
 	active_hotspot_pointers .byte 2 * 4 ;204
-	saved_photo_states .byte 32 * .SIZEOF(photo_state) ;212
+	saved_photo_states .byte NUM_PHOTOS * .SIZEOF(photo_state) ;212
 	timer .dword ;468
 	text_flavour .byte ;472
 .ENDSTRUCT
@@ -275,10 +283,9 @@
 	type .byte ;0
 	sprite .word ;1
 	direction .byte ;3
-	event_script .byte ;4
-	.byte ;5
+	event_script .word ;4
 	event_flag .word ;6
-	.byte ;8
+	appearance_style .byte ;8
 	text_pointer .dword ;9
 	.UNION ;13
 		item .byte
@@ -312,12 +319,17 @@
 	cost .word ;26
 	flags .byte ;28
 	effect .word ;29
-	strength .byte ;31
-	epi .byte ;32
-	ep .byte ;33
-	special .byte ;34
+	params .dword ;31
 	help_text .dword ;35
 .ENDSTRUCT
+
+.STRUCT item_parameters
+	strength .byte ;0
+	epi .byte ;1
+	ep .byte ;2
+	special .byte ;3
+.ENDSTRUCT
+
 
 .STRUCT photographer_config_entry_object
 	tile_x .word ;0
@@ -342,12 +354,33 @@
 .STRUCT sprite_grouping
 	height .byte ;0
 	width .byte ;1
-	.byte ;2
+	size .byte ;2
 	palette .byte ;3
-	.byte 4 ;4
+	hitbox_width_ud .byte ;4
+	hitbox_height_ud .byte ;5
+	hitbox_width_lr .byte ;6
+	hitbox_height_lr .byte ;7
 	spritebank .byte ;8
 	;The number of sprite pointers varies.
 	spritepointerarray .word ;9
+.ENDSTRUCT
+
+.STRUCT sprite_placement
+	id .word ;0
+	x_coord .byte ;2
+	y_coord .byte ;3
+.ENDSTRUCT
+
+.STRUCT enemy_placement
+	event_flag .word ;0
+	spawn_chance .byte ;2
+	spawn_chance_alt .byte ;3
+	groups .tag nothing ;4
+.ENDSTRUCT
+
+.STRUCT enemy_group
+	slots .byte ;0
+	group .word ;1
 .ENDSTRUCT
 
 .STRUCT battle_entry_ptr_entry
@@ -470,21 +503,36 @@
 	distortion_compression_acceleration .word ;117
 .ENDSTRUCT
 
+.STRUCT oval_window
+	duration .byte ;0
+	unused .byte ;1
+	centre_x .word ;2
+	centre_y .word ;4
+	initial_width .word ;6
+	initial_height .word ;8
+	centre_x_add .word ;10
+	centre_y_add .word ;12
+	width_velocity .word ;14
+	height_velocity .word ;16
+	width_acceleration .word ;18
+	height_acceleration .word ;20
+.ENDSTRUCT
+
 .STRUCT save_header
-	unknown0 .byte 28
+	signature .byte 28
 	checksum .word ;28
 	checksum_complement .word ;30
 .ENDSTRUCT
 
 .STRUCT movement_speeds
-	up .dword ;0
-	up_right .dword ;4
-	right .dword ;8
-	down_right .dword ;12
-	down .dword ;16
-	down_left .dword ;20
-	left .dword ;24
-	up_left .dword ;28
+	up .tag fixed_point ;0
+	up_right .tag fixed_point ;4
+	right .tag fixed_point ;8
+	down_right .tag fixed_point ;12
+	down .tag fixed_point ;16
+	down_left .tag fixed_point ;20
+	left .tag fixed_point ;24
+	up_left .tag fixed_point ;28
 .ENDSTRUCT
 
 .STRUCT queued_interaction
@@ -537,15 +585,26 @@
 
 .STRUCT spritemap
 	y_offset .byte ;0
-	tile .word ;1
+	.UNION
+		nextmap .word ;1
+		.STRUCT
+			tile .byte ;1
+			flags .byte ;2
+		.ENDSTRUCT
+	.ENDUNION
 	x_offset .byte ;3
-	bits .byte ;4
+	special_flags .byte ;4
+.ENDSTRUCT
+
+.STRUCT pathfinder_coords
+	y_coord .word ;0
+	x_coord .word ;2
 .ENDSTRUCT
 
 .STRUCT pathfinder
 	from_offscreen .word ;0
-	unknown_hitbox .dword ;2
-	origin .dword ;6
+	unknown_hitbox .tag pathfinder_coords ;2
+	origin .tag pathfinder_coords ;6
 	unknown10 .word ;10
 	unknown12 .word ;12
 	unknown14 .word ;14
@@ -558,7 +617,7 @@
 	targets .dword 8 ;124
 	target_count .word ;156
 	pathfinder_count .word ;158
-	pathfinders .byte .SIZEOF(pathfinder) * 8 ;160
+	pathfinders .tag pathfinder 8 ;160
 .ENDSTRUCT
 
 .STRUCT player_position_buffer_entry
@@ -603,6 +662,13 @@
 	x2 .word ;6
 	y2 .word ;8
 	pointer .dword ;10
+.ENDSTRUCT
+
+.STRUCT predefined_hotspot
+	x1 .word ;0
+	y1 .word ;2
+	x2 .word ;4
+	y2 .word ;6
 .ENDSTRUCT
 
 .STRUCT screen_transition_config
@@ -657,4 +723,101 @@
 	textptr .dword ;0
 	unknown4 .word ;4
 	saved_text_attributes .byte .SIZEOF(window_text_attributes_copy) ;6
+.ENDSTRUCT
+
+.STRUCT battle_group_entry
+	count .byte ;0
+	id .word ;1
+.ENDSTRUCT
+
+.STRUCT psi_ability
+	name .byte ;0
+	level .byte ;1
+	category .byte ;2
+	usability .byte ;3
+	battle_action .word ;4
+	ness_level .byte ;6
+	paula_level .byte ;7
+	poo_level .byte ;8
+	menu_x .byte ;9
+	menu_y .byte ;10
+	text .dword ;11
+.ENDSTRUCT
+
+.STRUCT naming_screen_entity
+	sprite .word ;0
+	script .word ;2
+.ENDSTRUCT
+
+.STRUCT initial_stats
+	unknown0 .word ;0
+	unknown2 .word ;2
+	money .word ;4
+	level .word ;6
+	exp .word ;8
+	items .byte 10 ;10
+.ENDSTRUCT
+
+.STRUCT overworld_task
+	frames_left .word ;0
+	function .dword ;2
+.ENDSTRUCT
+
+.STRUCT sound_stone_playback_state
+	state .word ;0
+	unknown2 .word ;2
+	unknown4 .word ;4
+	orbit_sprite_frame .word ;6
+	orbit_sprite_position_1 .word ;8
+	orbit_sprite_position_2 .word ;10
+	unknown12 .word ;12
+.ENDSTRUCT
+
+.STRUCT save_block
+	header .tag save_header ;0
+	game_state .tag game_state ;32
+	party_characters .tag char_struct 6 ;504
+	event_flags .byte EVENT_FLAG_COUNT / 8 ;1068
+	.byte 1280 - (.SIZEOF(game_state) + .SIZEOF(char_struct) * 6 + (EVENT_FLAG_COUNT / 8) + 32) ;1196 - padding
+.ENDSTRUCT
+
+.STRUCT floating_sprite
+	sprite .word ;0
+	unknown2 .byte ;2
+	unknown3 .byte ;3
+	unknown4 .byte ;4
+.ENDSTRUCT
+
+.STRUCT map_tile_event
+	event_flag .word ;0
+	count .word ;2
+	block_pairs .tag nothing ;4 - flexible array member, int pairs
+.ENDSTRUCT
+
+.STRUCT telephone_contact
+.IF .DEFINED(JPN)
+	label .byte 10 ;0
+.ELSE
+	label .byte 25 ;0
+.ENDIF
+	event_flag .word ;10/25
+	text .dword ;12/27
+.ENDSTRUCT
+
+.STRUCT text_renderer_state
+	pixels_rendered .word ;0
+	upper_vram_position .word ;2
+	lower_vram_position .word ;4
+.ENDSTRUCT
+
+.STRUCT timed_delivery
+	sprite .word ;0
+	event_flag .word ;2
+	unknown4 .word ;4
+	unknown6 .word ;6
+	delivery_time .word ;8
+	text_pointer_1 .byte 3 ;10
+	text_pointer_2 .byte 3 ;13
+	enter_speed .word ;16
+	exit_speed .word ;18
 .ENDSTRUCT

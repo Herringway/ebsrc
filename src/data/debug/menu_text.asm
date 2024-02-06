@@ -1,6 +1,6 @@
 
 ; Some of this was left untranslated and remains in the same form as in Mother 2.
-DEBUG_MENU_TEXT: ;$C3E874
+DEBUG_MENU_TEXT:
 	.IF .DEFINED(JPN)
 		.DEFINE OPTIONLENGTH 9
 		PADDEDASCII "\xD9\xBF\xD3", OPTIONLENGTH ;フラグ

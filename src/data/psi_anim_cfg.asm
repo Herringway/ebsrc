@@ -1,5 +1,5 @@
 
-PSI_ANIM_CFG: ;$CCF04D
+PSI_ANIM_CFG:
 	.WORD .LOWORD(PSI_ANIM_GFX_SET_3)
 	.BYTE $05 ;Frame Duration (1/60th of a second)
 	.BYTE $03 ;Palette Duration (1/60th of a second)

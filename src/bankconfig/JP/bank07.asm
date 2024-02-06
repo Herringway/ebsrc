@@ -2,41 +2,41 @@
 .INCLUDE "common.asm"
 .INCLUDE "symbols/text.inc.asm"
 
-; $C70000
+
 .INCLUDE "bin/JP/text_data/EBATTLE0.ebtxt"
-; $C705C6
+
 .INCLUDE "bin/JP/text_data/EBATTLE1.ebtxt"
-; $C709D1
+
 .INCLUDE "bin/JP/text_data/EBATTLE2.ebtxt"
-; $C70EE8
+
 .INCLUDE "bin/JP/text_data/EBATTLE3.ebtxt"
-; $C713F7
+
 .INCLUDE "bin/JP/text_data/EGOODS0.ebtxt"
-; $C71817
+
 .INCLUDE "bin/JP/text_data/EGOODS1.ebtxt"
-; $C71DE9
+
 .INCLUDE "bin/JP/text_data/EGOODS2.ebtxt"
-; $C72174
+
 .INCLUDE "bin/JP/text_data/EGOODS3.ebtxt"
-; $C7282A
+
 .INCLUDE "bin/JP/text_data/EGOODS4.ebtxt"
-; $C72955
+
 .INCLUDE "bin/JP/text_data/EBATTLE4.ebtxt"
-; $C72F0A
+
 .INCLUDE "bin/JP/text_data/EBATTLE5.ebtxt"
-; $C73648
+
 .INCLUDE "bin/JP/text_data/EBATTLE6.ebtxt"
-; $C73D69
+
 .INCLUDE "bin/JP/text_data/EBATTLE7.ebtxt"
-; $C7466E
+
 .INCLUDE "bin/JP/text_data/EBATTLE8.ebtxt"
-; $C74B49
+
 .INCLUDE "bin/JP/text_data/EBATTLE9.ebtxt"
-; $C750C8
+
 .INCLUDE "bin/JP/text_data/E06WINS.ebtxt"
-; $C7772E
+
 .INCLUDE "bin/JP/text_data/E16DKFD.ebtxt"
-; $C78000
+
 .INCLUDE "bin/JP/text_data/ESHOP2.ebtxt"
-; $C7C43F
+
 .INCLUDE "bin/JP/text_data/EDEBUG.ebtxt"

@@ -14,7 +14,7 @@
 .INCLUDE "symbols/sram.inc.asm"
 .INCLUDE "symbols/text.inc.asm"
 
-SPRITE_GROUP_PALETTES: ;$C30000
+SPRITE_GROUP_PALETTES:
 	BINARY "overworld_sprites/0.pal"
 	BINARY "overworld_sprites/1.pal"
 	BINARY "overworld_sprites/2.pal"
@@ -2060,7 +2060,7 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "unknown/C3/C3EAD0.asm"
 
-.INCLUDE "unknown/C3/C3EB1C-jp.asm"
+.INCLUDE "unknown/C3/C3EB1C.asm"
 
 .INCLUDE "unknown/C3/C3EBCA.asm"
 
@@ -2072,7 +2072,7 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "unknown/C3/C3ED98.asm"
 
-.INCLUDE "unknown/C3/C3EE14-jp.asm"
+.INCLUDE "unknown/C3/C3EE14.asm"
 
 .INCLUDE "unknown/C3/C3EE4D.asm"
 
@@ -2092,7 +2092,7 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "data/psi_target_text.asm"
 
-.INCLUDE "unknown/C3/C3F1EC-jp.asm"
+.INCLUDE "unknown/C3/C3F1EC.asm"
 
 .INCLUDE "data/unknown/C3F2B1.asm"
 
@@ -2100,7 +2100,7 @@ SPRITE_GROUP_PALETTES: ;$C30000
 
 .INCLUDE "unknown/EF/EF02C4.asm"
 
-.INCLUDE "unknown/EF/EF031E-jp.asm"
+.INCLUDE "unknown/EF/EF031E.asm"
 
 .INCLUDE "data/playable_character_graphics_table.asm"
 

@@ -1,5 +1,5 @@
 
-UNKNOWN_C3F0B0: ;$C3F0B0
+UNKNOWN_C3F0B0:
 	.WORD $0001 ;Unconscious
 	.WORD $0001 ;Diamondized
 	.WORD $0000 ;Paralyzed

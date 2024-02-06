@@ -2,17 +2,17 @@
 .INCLUDE "common.asm"
 .INCLUDE "symbols/audiopacks.inc.asm"
 
-AUDIO_PACK_50: ;$E50000
+AUDIO_PACK_50:
 	AUDIOPACK "audiopacks/50.ebm"
 
-AUDIO_PACK_92: ;$E54C4A
+AUDIO_PACK_92:
 	AUDIOPACK "audiopacks/92.ebm"
 
-AUDIO_PACK_56: ;$E5954E
+AUDIO_PACK_56:
 	AUDIOPACK "audiopacks/56.ebm"
 
-AUDIO_PACK_122: ;$E5DD32
+AUDIO_PACK_122:
 	AUDIOPACK "audiopacks/122.ebm"
 
-AUDIO_PACK_166: ;$E5FF38
+AUDIO_PACK_166:
 	AUDIOPACK "audiopacks/166.ebm"

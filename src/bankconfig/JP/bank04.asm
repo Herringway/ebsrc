@@ -345,9 +345,9 @@
 
 .INCLUDE "unknown/C4/C43344.asm"
 
-.INCLUDE "unknown/C4/C4334A-jp.asm"
+.INCLUDE "unknown/C4/C4334A.asm"
 
-.INCLUDE "unknown/C4/C4343E-jp.asm"
+.INCLUDE "unknown/C4/C4343E.asm"
 
 .INCLUDE "data/item_use_menu_strings.asm"
 
@@ -365,11 +365,11 @@
 
 .INCLUDE "misc/find_item_in_inventory.asm"
 
-.INCLUDE "misc/find_item_in_inventory2-jp.asm"
+.INCLUDE "misc/find_item_in_inventory2.asm"
 
 .INCLUDE "misc/find_inventory_space.asm"
 
-.INCLUDE "misc/find_inventory_space2-jp.asm"
+.INCLUDE "misc/find_inventory_space2.asm"
 
 .INCLUDE "misc/change_equipped_weapon.asm"
 
@@ -395,11 +395,11 @@
 
 .INCLUDE "data/homesickness_probabilities.asm"
 
-.INCLUDE "unknown/C4/C45C90-jp.asm"
+.INCLUDE "unknown/C4/C45C90.asm"
 
-.INCLUDE "unknown/C4/C45DDD-jp.asm"
+.INCLUDE "unknown/C4/C45DDD.asm"
 
-.INCLUDE "unknown/C4/C45E96-jp.asm"
+.INCLUDE "unknown/C4/C45E96.asm"
 
 .INCLUDE "misc/check_if_psi_known.asm"
 
@@ -439,11 +439,11 @@
 
 .INCLUDE "unknown/C4/C46363.asm"
 
-.INCLUDE "unknown/C4/C46397-jp.asm"
+.INCLUDE "unknown/C4/C46397.asm"
 
-.INCLUDE "unknown/C4/C463F4-jp.asm"
+.INCLUDE "unknown/C4/C463F4.asm"
 
-.INCLUDE "unknown/C4/C4645A-jp.asm"
+.INCLUDE "unknown/C4/C4645A.asm"
 
 .INCLUDE "overworld/create_prepared_entity_npc.asm"
 
@@ -455,13 +455,13 @@
 
 .INCLUDE "unknown/C4/C46579.asm"
 
-.INCLUDE "unknown/C4/C46594-jp.asm"
+.INCLUDE "unknown/C4/C46594.asm"
 
 .INCLUDE "unknown/C4/C465FB.asm"
 
 .INCLUDE "unknown/C4/C46616.asm"
 
-.INCLUDE "unknown/C4/C46631-jp.asm"
+.INCLUDE "unknown/C4/C46631.asm"
 
 .INCLUDE "unknown/C4/C46698.asm"
 
@@ -473,9 +473,9 @@
 
 .INCLUDE "unknown/C4/C466F0.asm"
 
-.INCLUDE "unknown/C4/C46712-jp.asm"
+.INCLUDE "unknown/C4/C46712.asm"
 
-.INCLUDE "unknown/C4/C4675C-jp.asm"
+.INCLUDE "unknown/C4/C4675C.asm"
 
 .INCLUDE "unknown/C4/C467B4.asm"
 
@@ -625,7 +625,7 @@
 
 .INCLUDE "unknown/C4/C47A6B.asm"
 
-.INCLUDE "unknown/C4/C47A9E-jp.asm"
+.INCLUDE "unknown/C4/C47A9E.asm"
 
 .INCLUDE "unknown/C4/C47B77-jp.asm"
 
@@ -645,7 +645,7 @@
 
 .INCLUDE "unknown/C4/C48B2C.asm"
 
-.INCLUDE "unknown/C4/C48B3B-jp.asm"
+.INCLUDE "unknown/C4/C48B3B.asm"
 
 .INCLUDE "unknown/C4/C48BDA.asm"
 
@@ -725,7 +725,7 @@
 
 .INCLUDE "unknown/C4/C49D16-jp.asm"
 
-.INCLUDE "unknown/C4/C49D1E-proto.asm"
+.INCLUDE "unknown/C4/C49D1E.asm"
 
 .INCLUDE "text/coffee_tea_scene-jp.asm"
 
@@ -737,9 +737,9 @@
 
 .INCLUDE "data/battle/dead_targettable_actions.asm"
 
-.INCLUDE "battle/autohealing-jp.asm"
+.INCLUDE "battle/autohealing.asm"
 
-.INCLUDE "battle/autolifeup-jp.asm"
+.INCLUDE "battle/autolifeup.asm"
 
 .INCLUDE "data/battle/battle_window_sizes.asm"
 
@@ -843,7 +843,7 @@
 
 .INCLUDE "data/text/file_select_text.asm"
 
-.INCLUDE "unknown/C4/C4C2DE-jp.asm"
+.INCLUDE "unknown/C4/C4C2DE.asm"
 
 .INCLUDE "unknown/C4/C4C45F-jp.asm"
 
@@ -901,7 +901,7 @@
 
 .INCLUDE "unknown/C4/C4D744.asm"
 
-.INCLUDE "intro/display_animated_naming_sprite-jp.asm"
+.INCLUDE "intro/display_animated_naming_sprite.asm"
 
 .INCLUDE "unknown/C4/C4D830.asm"
 
@@ -909,7 +909,7 @@
 
 .INCLUDE "unknown/C4/C4D989-jp.asm"
 
-.INCLUDE "intro/init_intro-jp.asm"
+.INCLUDE "intro/init_intro.asm"
 
 .INCLUDE "unknown/C4/C4DCF6.asm"
 
@@ -1001,9 +1001,9 @@
 
 .INCLUDE "unknown/EF/EF0E8A.asm"
 
-.INCLUDE "unknown/EF/EF0EAD-jp.asm"
+.INCLUDE "unknown/EF/EF0EAD.asm"
 
-.INCLUDE "unknown/EF/EF0EE8-jp.asm"
+.INCLUDE "unknown/EF/EF0EE8.asm"
 
 .INCLUDE "unknown/EF/EF0F60-jp.asm"
 

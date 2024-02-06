@@ -444,7 +444,7 @@ SPRITE_GROUP_RICH_POKEY_HEAD:
 SPRITE_1145:
 	BINARY "overworld_sprites/1145.gfx"
 
-UNKNOWN_D545C0: ;$D545C0
+UNKNOWN_D545C0:
 	.REPEAT $2A40
 		.BYTE 0 ;It's empty.
 	.ENDREPEAT
@@ -467,7 +467,7 @@ UNKNOWN_D545C0: ;$D545C0
 
 .INCLUDE "data/exp_table.asm"
 
-.INCLUDE "data/battle/enemies-jp.asm" ;D59DDA
+.INCLUDE "data/battle/enemies-jp.asm"
 
 .INCLUDE "data/stats_growth_vars.asm"
 

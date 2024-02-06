@@ -3,20 +3,20 @@
 .INCLUDE "symbols/audiopacks.inc.asm"
 .INCLUDE "symbols/map.inc.asm"
 
-MAP_DATA_TILE_ARRANGEMENT_1: ;$D90000
+MAP_DATA_TILE_ARRANGEMENT_1:
 	BINARY "maps/arrangements/1.arr.lzhal"
 
-MAP_DATA_TILE_ARRANGEMENT_2: ;$D934E9
+MAP_DATA_TILE_ARRANGEMENT_2:
 	BINARY "maps/arrangements/2.arr.lzhal"
 
-MAP_DATA_TILE_ARRANGEMENT_3: ;$D968AB
+MAP_DATA_TILE_ARRANGEMENT_3:
 	BINARY "maps/arrangements/3.arr.lzhal"
 
-MAP_DATA_TILE_ARRANGEMENT_4: ;$D98DD5
+MAP_DATA_TILE_ARRANGEMENT_4:
 	BINARY "maps/arrangements/4.arr.lzhal"
 
-MAP_DATA_TILE_SET_GRAPHICS_13: ;$D9CE52
+MAP_DATA_TILE_SET_GRAPHICS_13:
 	BINARY "maps/gfx/13.gfx.lzhal"
 
-AUDIO_PACK_45: ;$D9FC18
+AUDIO_PACK_45:
 	AUDIOPACK "audiopacks/45.ebm"

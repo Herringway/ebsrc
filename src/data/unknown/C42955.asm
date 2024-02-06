@@ -1,6 +1,6 @@
 
 ; Unknown bitmasks
-UNKNOWN_C42955: ;$C42955
+UNKNOWN_C42955:
 	.WORD $8080
 	.WORD $4040
 	.WORD $2020

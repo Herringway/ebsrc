@@ -1,6 +1,6 @@
 
 ;Bit flags for something (See UNKNOWN_C41DB6)
-UNKNOWN_C41EC9: ;$C41EC9
+UNKNOWN_C41EC9:
 	.WORD $F0F0
 	.WORD $F8F8
 	.WORD $FCFC

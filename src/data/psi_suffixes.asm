@@ -1,5 +1,5 @@
 ; Can't use unicode, unfortunately.
-PSI_SUFFIXES: ;$C3F112
+PSI_SUFFIXES:
 .IF .DEFINED(JPN)
 	ASCIIZ "\x2A" ;α
 	ASCIIZ "\x2B" ;β

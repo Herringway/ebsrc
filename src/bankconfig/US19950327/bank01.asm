@@ -70,7 +70,7 @@
 
 .INCLUDE "text/get_text_y.asm"
 
-.INCLUDE "text/create_window-proto.asm"
+.INCLUDE "text/create_window.asm"
 
 .INCLUDE "unknown/C1/C1078D.asm"
 
@@ -114,7 +114,7 @@
 
 .INCLUDE "unknown/EF/EF0115.asm"
 
-.INCLUDE "text/print_letter-proto.asm"
+.INCLUDE "text/print_letter.asm"
 
 .INCLUDE "unknown/C1/C10D60.asm"
 
@@ -168,8 +168,7 @@
 
 .INCLUDE "text/move_cursor.asm"
 
-;C11A6A
-.INCLUDE "text/selection_menu-proto.asm"
+.INCLUDE "text/selection_menu.asm"
 
 .INCLUDE "unknown/C1/C11F5A.asm"
 
@@ -183,9 +182,9 @@
 
 .INCLUDE "unknown/C1/C12070.asm"
 
-.INCLUDE "unknown/C1/C120D6-proto.asm"
+.INCLUDE "unknown/C1/C120D6.asm"
 
-.INCLUDE "unknown/C1/C121B8-proto.asm"
+.INCLUDE "unknown/C1/C121B8.asm"
 
 .INCLUDE "unknown/C1/C12362.asm"
 
@@ -373,7 +372,7 @@
 
 .INCLUDE "text/ccs/unknown_1F_60.asm"
 
-.INCLUDE "text/ccs/show_character_inventory-proto.asm"
+.INCLUDE "text/ccs/show_character_inventory.asm"
 
 .INCLUDE "text/ccs/unknown_18_08.asm"
 
@@ -617,7 +616,7 @@
 
 .INCLUDE "unknown/C1/C191F8.asm"
 
-.INCLUDE "unknown/C1/C19216-proto.asm"
+.INCLUDE "unknown/C1/C19216.asm"
 
 .INCLUDE "unknown/C1/C19249.asm"
 
@@ -723,15 +722,15 @@
 
 .INCLUDE "unknown/C1/C1C8BC.asm"
 
-.INCLUDE "unknown/C1/C1CA06-proto.asm"
+.INCLUDE "unknown/C1/C1CA06.asm"
 
-.INCLUDE "unknown/C1/C1CA72-proto.asm"
+.INCLUDE "unknown/C1/C1CA72-jp.asm"
 
 .INCLUDE "unknown/C1/C1CAF5.asm"
 
 .INCLUDE "unknown/C1/C1CB7F.asm"
 
-.INCLUDE "battle/battle_psi_menu-proto.asm"
+.INCLUDE "battle/battle_psi_menu.asm"
 
 .INCLUDE "unknown/C1/C1CE85.asm"
 
@@ -841,7 +840,7 @@
 
 .INCLUDE "intro/file_select/open_flavour_menu.asm"
 
-.INCLUDE "intro/file_select_menu_loop-proto.asm"
+.INCLUDE "intro/file_select_menu_loop.asm"
 
 .INCLUDE "unknown/C1/C1FF2C.asm"
 

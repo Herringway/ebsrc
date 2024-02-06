@@ -842,5 +842,5 @@
 
 .INCLUDE "system/antipiracy/sram_check_routine_checksum.asm"
 
-SRAM_CHECK_ROUTINE_CHECKSUM_VALUE: ;$C1FFEF
+SRAM_CHECK_ROUTINE_CHECKSUM_VALUE:
 	.WORD $2AD8

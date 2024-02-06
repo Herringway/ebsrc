@@ -2,35 +2,34 @@
 .INCLUDE "common.asm"
 .INCLUDE "symbols/text.inc.asm"
 
-;$C90000
 .INCLUDE "bin/US19950327/text_data/EEVENT3.ebtxt"
-;$C91BB4
+
 .INCLUDE "bin/US19950327/text_data/E02TWSN2.ebtxt"
-;$C9374F
+
 .INCLUDE "bin/US19950327/text_data/EEVENT0.ebtxt"
-;$C95146
+
 .INCLUDE "bin/US19950327/text_data/E03HAPPY.ebtxt"
-;$C96A73
+
 .INCLUDE "bin/US19950327/text_data/E19MOON.ebtxt"
-;$C97849
+
 .INCLUDE "bin/US19950327/text_data/EGOODS1.ebtxt"
 
 .SEGMENT "BANK09B"
-;$C98000
+
 .INCLUDE "bin/US19950327/text_data/UNKNOWN_C9992F.ebtxt"
-;$C998DF
+
 .INCLUDE "bin/US19950327/text_data/E08DOSEI.ebtxt"
-;$C9B04F
+
 .INCLUDE "bin/US19950327/text_data/EEVENT5.ebtxt"
-;$C9C75C
+
 .INCLUDE "bin/US19950327/text_data/E12RAMA.ebtxt"
-;$C9D483
+
 .INCLUDE "bin/US19950327/text_data/E14MAKYO.ebtxt"
-;$C9DF08
+
 .INCLUDE "bin/US19950327/text_data/EBATTLE7.ebtxt"
-;$C9E968
+
 .INCLUDE "bin/US19950327/text_data/EEXPLPSI.ebtxt"
-;$C9F32F
+
 .INCLUDE "bin/US19950327/text_data/E16DKFD.ebtxt"
-;$C9FCAE
+
 .INCLUDE "bin/US19950327/text_data/E17PAST.ebtxt"

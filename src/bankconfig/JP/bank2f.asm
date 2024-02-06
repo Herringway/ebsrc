@@ -13,124 +13,124 @@
 .INCLUDE "symbols/overworld_sprites.inc.asm"
 .INCLUDE "symbols/sram.inc.asm"
 
-AUDIO_PACK_23: ;$EF0000
+AUDIO_PACK_23:
         AUDIOPACK "audiopacks/23.ebm"
 
-AUDIO_PACK_11: ;$EF041F
+AUDIO_PACK_11:
         AUDIOPACK "audiopacks/11.ebm"
 
-AUDIO_PACK_142: ;$EF0832
+AUDIO_PACK_142:
         AUDIOPACK "audiopacks/142.ebm"
 
-AUDIO_PACK_160: ;$EF0C43
+AUDIO_PACK_160:
         AUDIOPACK "audiopacks/160.ebm"
 
-AUDIO_PACK_101: ;$EF104E
+AUDIO_PACK_101:
         AUDIOPACK "audiopacks/101.ebm"
 
-AUDIO_PACK_103: ;$EF144A
+AUDIO_PACK_103:
         AUDIOPACK "audiopacks/103.ebm"
 
-AUDIO_PACK_51: ;$EF1843
+AUDIO_PACK_51:
         AUDIOPACK "audiopacks/51.ebm"
 
-AUDIO_PACK_18: ;$EF1BFD
+AUDIO_PACK_18:
         AUDIOPACK "audiopacks/18.ebm"
 
-AUDIO_PACK_29: ;$EF1F72
+AUDIO_PACK_29:
         AUDIOPACK "audiopacks/29.ebm"
 
-AUDIO_PACK_93: ;$EF22D4
+AUDIO_PACK_93:
         AUDIOPACK "audiopacks/93.ebm"
 
-AUDIO_PACK_95: ;$EF2635
+AUDIO_PACK_95:
         AUDIOPACK "audiopacks/95.ebm"
 
-AUDIO_PACK_164: ;$EF2987
+AUDIO_PACK_164:
         AUDIOPACK "audiopacks/164.ebm"
 
-AUDIO_PACK_151: ;$EF2CC7
+AUDIO_PACK_151:
         AUDIOPACK "audiopacks/151.ebm"
 
-AUDIO_PACK_143: ;$EF2FF2
+AUDIO_PACK_143:
         AUDIOPACK "audiopacks/143.ebm"
 
-AUDIO_PACK_12: ;$EF32E9
+AUDIO_PACK_12:
         AUDIOPACK "audiopacks/12.ebm"
 
-AUDIO_PACK_135: ;$EF35B7
+AUDIO_PACK_135:
         AUDIOPACK "audiopacks/135.ebm"
 
-AUDIO_PACK_83: ;$EF3868
+AUDIO_PACK_83:
         AUDIOPACK "audiopacks/83.ebm"
 
-AUDIO_PACK_88: ;$EF3B0F
+AUDIO_PACK_88:
         AUDIOPACK "audiopacks/88.ebm"
 
-AUDIO_PACK_155: ;$EF3DA6
+AUDIO_PACK_155:
         AUDIOPACK "audiopacks/155.ebm"
 
-AUDIO_PACK_31: ;$EF400D
+AUDIO_PACK_31:
         AUDIOPACK "audiopacks/31.ebm"
 
-AUDIO_PACK_129: ;$EF4270
+AUDIO_PACK_129:
         AUDIOPACK "audiopacks/129.ebm"
 
-AUDIO_PACK_22: ;$EF44D0
+AUDIO_PACK_22:
         AUDIOPACK "audiopacks/22.ebm"
 
-AUDIO_PACK_17: ;$EF4727
+AUDIO_PACK_17:
         AUDIOPACK "audiopacks/17.ebm"
 
-AUDIO_PACK_91: ;$EF4978
+AUDIO_PACK_91:
         AUDIOPACK "audiopacks/91.ebm"
 
-AUDIO_PACK_81: ;$EF4BC2
+AUDIO_PACK_81:
         AUDIOPACK "audiopacks/81.ebm"
 
-AUDIO_PACK_147: ;$EF4DE6
+AUDIO_PACK_147:
         AUDIOPACK "audiopacks/147.ebm"
 
-AUDIO_PACK_152: ;$EF5005
+AUDIO_PACK_152:
         AUDIOPACK "audiopacks/152.ebm"
 
-AUDIO_PACK_159: ;$EF51FF
+AUDIO_PACK_159:
         AUDIOPACK "audiopacks/159.ebm"
 
-AUDIO_PACK_49: ;$EF5392
+AUDIO_PACK_49:
         AUDIOPACK "audiopacks/49.ebm"
 
-AUDIO_PACK_9: ;$EF5516
+AUDIO_PACK_9:
         AUDIOPACK "audiopacks/9.ebm"
 
-AUDIO_PACK_145: ;$EF5691
+AUDIO_PACK_145:
         AUDIOPACK "audiopacks/145.ebm"
 
-AUDIO_PACK_69: ;$EF57E8
+AUDIO_PACK_69:
         AUDIOPACK "audiopacks/69.ebm"
 
-AUDIO_PACK_167: ;$EF593C
+AUDIO_PACK_167:
         AUDIOPACK "audiopacks/167.ebm"
 
-AUDIO_PACK_130: ;$EF5A83
+AUDIO_PACK_130:
         AUDIOPACK "audiopacks/130.ebm"
 
-AUDIO_PACK_168: ;$EF5BC0
+AUDIO_PACK_168:
         AUDIOPACK "audiopacks/168.ebm"
 
-AUDIO_PACK_75: ;$EF5CF4
+AUDIO_PACK_75:
         AUDIOPACK "audiopacks/75.ebm"
 
-AUDIO_PACK_137: ;$EF5E1E
+AUDIO_PACK_137:
         AUDIOPACK "audiopacks/137.ebm"
 
-AUDIO_PACK_59: ;$EF5F47
+AUDIO_PACK_59:
         AUDIOPACK "audiopacks/59.ebm"
 
-AUDIO_PACK_41: ;$EF6049
+AUDIO_PACK_41:
         AUDIOPACK "audiopacks/41.ebm"
 
-AUDIO_PACK_7: ;$EF614B
+AUDIO_PACK_7:
         AUDIOPACK "audiopacks/7.ebm"
 
 .INCLUDE "data/map/tileset_table.asm"
@@ -209,7 +209,7 @@ AUDIO_PACK_7: ;$EF614B
 
 .INCLUDE "data/debug/menu_option_strings.asm"
 
-.INCLUDE "unknown/EF/EFD95E-jp.asm"
+.INCLUDE "unknown/EF/EFD95E.asm"
 
 .INCLUDE "unknown/EF/EFD9F3.asm"
 
@@ -281,14 +281,14 @@ AUDIO_PACK_7: ;$EF614B
 
 .INCLUDE "data/unknown/EFEB3D.asm"
 
-DEBUG_MENU_FONT: ;$EFEB70
+DEBUG_MENU_FONT:
 	BINARY "fonts/debug.gfx"
 
 .INCLUDE "data/unknown/EFEF70.asm"
 
 .INCLUDE "data/unknown/EFEF9F.asm"
 
-KIRBY: ;$EFEFB7
+KIRBY:
 	BINARY "kirby.gfx"
 
 .INCLUDE "data/unknown/EFF0D7.asm"

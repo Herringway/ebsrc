@@ -2,23 +2,22 @@
 .INCLUDE "common.asm"
 .INCLUDE "symbols/text.inc.asm"
 
-;$C70000
 .INCLUDE "bin/US19950327/text_data/E01ONET2.ebtxt"
-;$C72514
+
 .INCLUDE "bin/US19950327/text_data/E01ONET1.ebtxt"
-;$C749B3
+
 .INCLUDE "bin/US19950327/text_data/E01ONET0.ebtxt"
-;$C76D20
+
 .INCLUDE "bin/US19950327/text_data/E18MGKT.ebtxt"
-;$C77BAB
+
 .INCLUDE "bin/US19950327/text_data/EGOODS0.ebtxt"
 
 .SEGMENT "BANK07B"
-;$C78000
+
 .INCLUDE "bin/US19950327/text_data/EEVENT1.ebtxt"
-;$C7A260
+
 .INCLUDE "bin/US19950327/text_data/EEVENT4.ebtxt"
-;$C7C4A0
+
 .INCLUDE "bin/US19950327/text_data/ESYSTEM.ebtxt"
-;$C7E64F
+
 .INCLUDE "bin/US19950327/text_data/E02TWSN1.ebtxt"

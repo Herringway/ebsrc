@@ -152,13 +152,13 @@
 
 .INCLUDE "unknown/C0/C0369B-jp.asm"
 
-.INCLUDE "unknown/C0/C03903-jp.asm"
+.INCLUDE "unknown/C0/C03903.asm"
 
-.INCLUDE "unknown/C0/C039E5-jp.asm"
+.INCLUDE "unknown/C0/C039E5.asm"
 
-.INCLUDE "unknown/C0/C03A24-jp.asm"
+.INCLUDE "unknown/C0/C03A24.asm"
 
-.INCLUDE "unknown/C0/C03A94-jp.asm"
+.INCLUDE "unknown/C0/C03A94.asm"
 
 .INCLUDE "unknown/C0/C03C25.asm"
 
@@ -208,7 +208,7 @@
 
 .INCLUDE "unknown/C0/C0476D.asm"
 
-.INCLUDE "unknown/C0/C047CF-jp.asm"
+.INCLUDE "unknown/C0/C047CF.asm"
 
 .INCLUDE "unknown/C0/C048D3-jp.asm"
 
@@ -223,8 +223,6 @@
 .INCLUDE "unknown/C0/C04C45.asm"
 
 .INCLUDE "unknown/C0/C04D78.asm"
-
-;.INCLUDE "unknown/C0/C04EF0.asm"
 
 .INCLUDE "unknown/C0/C04F47.asm"
 
@@ -356,7 +354,7 @@
 
 .INCLUDE "unknown/C0/C0705F.asm"
 
-.INCLUDE "unknown/C0/C070CB-jp.asm"
+.INCLUDE "unknown/C0/C070CB.asm"
 
 .INCLUDE "overworld/disable_hotspot.asm"
 
@@ -364,7 +362,7 @@
 
 .INCLUDE "overworld/activate_hotspot.asm"
 
-.INCLUDE "unknown/C0/C073C0-jp.asm"
+.INCLUDE "unknown/C0/C073C0.asm"
 
 .INCLUDE "unknown/C0/C07477.asm"
 
@@ -376,7 +374,7 @@
 
 .INCLUDE "unknown/C0/C076C8.asm"
 
-.INCLUDE "unknown/C0/C07716-jp.asm"
+.INCLUDE "unknown/C0/C07716.asm"
 
 .INCLUDE "unknown/C0/C0777A.asm"
 
@@ -1096,8 +1094,6 @@
 
 .INCLUDE "unknown/C0/C0B67F.asm"
 
-.INCLUDE "unknown/C0/C0B706.asm"
-
 .INCLUDE "battle/init_overworld.asm"
 
 .INCLUDE "system/main.asm"
@@ -1108,7 +1104,7 @@
 
 .INCLUDE "unknown/C0/C0BA35.asm"
 
-.INCLUDE "misc/find_path_to_party-jp.asm"
+.INCLUDE "misc/find_path_to_party.asm"
 
 .INCLUDE "unknown/C0/C0BD96.asm"
 
@@ -1228,7 +1224,7 @@
 
 .INCLUDE "overworld/set_teleport_state.asm"
 
-.INCLUDE "unknown/C0/C0DD79-jp.asm"
+.INCLUDE "unknown/C0/C0DD79.asm"
 
 .INCLUDE "unknown/C0/C0DE16.asm"
 
@@ -1248,7 +1244,7 @@
 
 .INCLUDE "unknown/C0/C0E28F.asm"
 
-.INCLUDE "unknown/C0/C0E3C1-jp.asm"
+.INCLUDE "unknown/C0/C0E3C1.asm"
 
 .INCLUDE "unknown/C0/C0E44D.asm"
 
@@ -1258,13 +1254,13 @@
 
 .INCLUDE "unknown/C0/C0E674.asm"
 
-.INCLUDE "unknown/C0/C0E6FE-jp.asm"
+.INCLUDE "unknown/C0/C0E6FE.asm"
 
 .INCLUDE "unknown/C0/C0E776.asm"
 
 .INCLUDE "unknown/C0/C0E815.asm"
 
-.INCLUDE "unknown/C0/C0E897-jp.asm"
+.INCLUDE "unknown/C0/C0E897.asm"
 
 .INCLUDE "unknown/C0/C0E979.asm"
 

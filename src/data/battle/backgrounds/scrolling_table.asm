@@ -1,6 +1,6 @@
 
 	;Duration, Horizontal movement, Vertical movement, Horizontal acceleration, Vertical acceleration
-BG_SCROLLING_TABLE: ;$CAF258
+BG_SCROLLING_TABLE:
 	.WORD $0000, $0000, $0000, $0000, $0000
 	.WORD $00B4, $FF00, $0100, $0000, $0000
 	.WORD $00B4, $0100, $0100, $0000, $0000

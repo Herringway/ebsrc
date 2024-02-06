@@ -14,7 +14,7 @@
 .INCLUDE "symbols/sram.inc.asm"
 .INCLUDE "symbols/text.inc.asm"
 
-SPRITE_GROUP_PALETTES: ;$C30000
+SPRITE_GROUP_PALETTES:
 	BINARY "overworld_sprites/0.pal"
 	BINARY "overworld_sprites/1.pal"
 	BINARY "overworld_sprites/2.pal"

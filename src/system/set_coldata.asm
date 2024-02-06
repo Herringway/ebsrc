@@ -1,7 +1,7 @@
 
 
 ; void setColData(char red, char green, char blue)
-SET_COLDATA: ;$C0B01A
+SET_COLDATA:
 	SEP #PROC_FLAGS::ACCUM8
 	AND #$001F
 	ORA #$0020

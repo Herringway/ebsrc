@@ -1,6 +1,6 @@
 
 ;This only appears to be used when first adding characters, not when moving between areas?
-CHARACTER_INITIAL_ENTITY_DATA: ;$C3E012
+CHARACTER_INITIAL_ENTITY_DATA:
 	.WORD OVERWORLD_SPRITE::NESS ;Normal overworld sprite
 	.WORD OVERWORLD_SPRITE::LIL_NESS ;Lost Underworld sprite
 	.WORD EVENT_SCRIPT::EVENT_002

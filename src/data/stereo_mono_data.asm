@@ -1,4 +1,4 @@
 
-STEREO_MONO_DATA: ;$C0AC2C
+STEREO_MONO_DATA:
 	.BYTE $01, $00, $31, $04, $00, $00, $00
 	.BYTE $01, $00, $31, $04, $01, $00, $00

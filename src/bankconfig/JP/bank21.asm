@@ -8,139 +8,138 @@
 .INCLUDE "symbols/globals.inc.asm"
 .INCLUDE "symbols/misc.inc.asm"
 
-UNKNOWN_E10000: ;$E10000
+UNKNOWN_E10000:
 	BINARY "E10000.bin"
 
 
-COFFEE_SEQUENCE_TEXT: ;$E10000
+COFFEE_SEQUENCE_TEXT:
 	.INCLUDE "bin/JP/coffee.flyover"
 
-TEA_SEQUENCE_TEXT: ;$E10652
+TEA_SEQUENCE_TEXT:
 	.INCLUDE "bin/JP/tea.flyover"
 
-;$E10B86
 	.INCLUDE "bin/JP/flyovers.flyover"
 
-UNKNOWN_E1213E: ;$E1213E
+UNKNOWN_E1213E:
 	BINARY "E1213E.bin"
 
-UNKNOWN_E12381: ;$E12381
+UNKNOWN_E12381:
 	BINARY "E12381.bin"
 
 .INCLUDE "data/photographer_cfg.asm"
 
-COMPRESSED_PALETTE_UNKNOWN: ;$E1374A
+COMPRESSED_PALETTE_UNKNOWN:
 	BINARY "unknown_palette.pal.lzhal"
 
 .INCLUDE "data/credits-jp.asm"
 
 .INCLUDE "unknown/E1/E14DE8.asm"
 
-APE_ARRANGEMENT: ;$E14EC1
+APE_ARRANGEMENT:
 	BINARY "intro/logos/ape.arr.lzhal"
 
-APE_GRAPHICS: ;$E14F2A
+APE_GRAPHICS:
 	BINARY "intro/logos/ape.gfx.lzhal"
 
-APE_PALETTE: ;$E15130
+APE_PALETTE:
 	BINARY "intro/logos/ape.pal.lzhal"
 
-HALKEN_ARRANGEMENT: ;$E15174
+HALKEN_ARRANGEMENT:
 	BINARY "intro/logos/halken.arr.lzhal"
 
-HALKEN_GRAPHICS: ;$E151E8
+HALKEN_GRAPHICS:
 	BINARY "intro/logos/halken.gfx.lzhal"
 
-HALKEN_PALETTE: ;$E153B8
+HALKEN_PALETTE:
 	BINARY "intro/logos/halken.pal.lzhal"
 
-NINTENDO_ARRANGEMENT: ;$E15455
+NINTENDO_ARRANGEMENT:
 	BINARY "intro/logos/nintendo.arr.lzhal"
 
-NINTENDO_GRAPHICS: ;$E1549E
+NINTENDO_GRAPHICS:
 	BINARY "intro/logos/nintendo.gfx.lzhal"
 
-NINTENDO_PALETTE: ;$E1558F
+NINTENDO_PALETTE:
 	BINARY "intro/logos/nintendo.pal.lzhal"
 
-GAS_STATION_ARRANGEMENT: ;$E155D3
+GAS_STATION_ARRANGEMENT:
 	BINARY "intro/gas_station.arr.lzhal"
 
-GAS_STATION_GRAPHICS: ;$E15B33
+GAS_STATION_GRAPHICS:
 	BINARY "intro/gas_station.gfx.lzhal"
 
-GAS_STATION_PALETTE: ;$E1A9B7
+GAS_STATION_PALETTE:
 	BINARY "intro/gas_station.pal.lzhal"
 
-GAS_STATION_PALETTE_2: ;$E1AA5D
+GAS_STATION_PALETTE_2:
 	BINARY "intro/gas_station2.pal.lzhal"
 
-UNKNOWN_ARRANGEMENT_9DE1: ;$E19DE1
+UNKNOWN_ARRANGEMENT_9DE1:
 	BINARY "intro/unknown.arr.lzhal"
 
-TITLE_SCREEN_GRAPHICS: ;$E1B211
+TITLE_SCREEN_GRAPHICS:
 	BINARY "intro/title_screen.gfx.lzhal"
 
-UNKNOWN_ARRANGEMENT_B18C: ;$E19DE1
+UNKNOWN_ARRANGEMENT_B18C:
 	BINARY "intro/unknown2.arr.lzhal"
 
-TITLE_SCREEN_ARRANGEMENT: ;$E1AF7D
+TITLE_SCREEN_ARRANGEMENT:
 	BINARY "intro/title_screen.arr.lzhal"
 
-UNKNOWN_E1C6E5: ;$E1C6E5
+UNKNOWN_E1C6E5:
 	BINARY "intro/title_screen_letters.gfx.lzhal"
 
-UNKNOWN_E1C291: ;$E1C291
+UNKNOWN_E1C291:
 	BINARY "unknown3.bin.lzhal"
 
-PRODUCED_ITOI_ARRANGEMENT: ;$E1AADF
+PRODUCED_ITOI_ARRANGEMENT:
 	BINARY "intro/attract/produced_by_itoi.arr.lzhal"
 
-PRODUCED_ITOI_GRAPHICS: ;$E1AB4B
+PRODUCED_ITOI_GRAPHICS:
 	BINARY "intro/attract/produced_by_itoi.gfx.lzhal"
 
-NINTENDO_PRESENTATION_ARRANGEMENT: ;$E1AD01
+NINTENDO_PRESENTATION_ARRANGEMENT:
 	BINARY "intro/attract/nintendo_presentation.arr.lzhal"
 
-NINTENDO_PRESENTATION_GRAPHICS: ;$E1AD4E
+NINTENDO_PRESENTATION_GRAPHICS:
 	BINARY "intro/attract/nintendo_presentation.gfx.lzhal"
 
-NINTENDO_ITOI_PALETTE: ;$E1AE6F
+NINTENDO_ITOI_PALETTE:
 	BINARY "intro/attract/nintendo_itoi.pal.lzhal"
 
 .INCLUDE "data/unknown/E1CE08.asm"
 
-UNKNOWN_E1CFAF: ;$E1CCAB
+UNKNOWN_E1CFAF:
 	BINARY "E1CFAF.gfx.lzhal"
 
 UNKNOWN_E1D4F4:
 	BINARY "E1D4F4.pal.lzhal"
 
-UNKNOWN_E1D5E8: ;$E1D2E4
+UNKNOWN_E1D5E8:
 	BINARY "E1D5E8.arr.lzhal"
 
-CAST_NAMES_GFX: ;$E1D835
+CAST_NAMES_GFX:
 	BINARY "ending/cast_names.gfx.lzhal"
 
 .INCLUDE "data/unknown/E1D815.asm"
 
-UNKNOWN_E1E4E6: ;$E1E4E6
+UNKNOWN_E1E4E6:
 	BINARY "ending/cast_names.pal.lzhal"
 
-STAFF_CREDITS_FONT_GRAPHICS: ;$E1E528
+STAFF_CREDITS_FONT_GRAPHICS:
 	BINARY "ending/credits_font.gfx.lzhal"
 
-STAFF_CREDITS_FONT_PALETTE: ;$E1E914
+STAFF_CREDITS_FONT_PALETTE:
 	BINARY "ending/credits_font.pal"
 
 .INCLUDE "data/unknown/E1E924.asm"
 
 .INCLUDE "data/unknown/E1E94A.asm"
 
-TOWN_MAP_LABEL_GFX: ;$E1EA50
+TOWN_MAP_LABEL_GFX:
 	BINARY "town_maps/label.gfx.lzhal"
 
-TOWN_MAP_ICON_PALETTE: ;$E1F1C3
+TOWN_MAP_ICON_PALETTE:
 	BINARY "town_maps/icon.pal"
 
 .INCLUDE "data/unknown/E1F203-jp.asm"

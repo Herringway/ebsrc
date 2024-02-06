@@ -3,7 +3,7 @@
 ; CC 01 - Stores XXXX to [$ACCUM + $88]
 ; CC 02 - Returns XXXX
 ; CC 03 - Jumps to XXXX
-UNKNOWN_C0AD56: ;$C0AD56
+UNKNOWN_C0AD56:
 	CLC
 	ADC $88
 	TAX

@@ -1,5 +1,5 @@
 ;battle sprite offsets in buffer?
-UNKNOWN_C3F871: ;$C3F871
+UNKNOWN_C3F871:
 	.WORD $0000
 	.WORD $0080
 	.WORD $0100

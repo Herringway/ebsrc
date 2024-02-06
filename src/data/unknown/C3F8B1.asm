@@ -1,5 +1,5 @@
 ;battle sprite tile arrangements?
-UNKNOWN_C3F8B1: ;$C3F8B1
+UNKNOWN_C3F8B1:
 	.WORD $0000
 	.WORD $0004
 	.WORD $0008

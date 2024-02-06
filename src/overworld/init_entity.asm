@@ -1,7 +1,7 @@
 
 ;  Initializes an entity along with other entity vars
 ; A = actipn script, X,Y = coordinates
-INIT_ENTITY_WIPE: ;$C092F5
+INIT_ENTITY_WIPE:
 	PHA
 	STZ NEW_ENTITY_POS_Z
 	STZ NEW_ENTITY_VAR0
@@ -20,7 +20,7 @@ INIT_ENTITY_WIPE: ;$C092F5
 	PLA
 ; Initializes an entity
 ;A = action script, X,Y = coordinates
-INIT_ENTITY: ;$C09321
+INIT_ENTITY:
 	PHA
 	PHY
 	PHX
@@ -150,5 +150,5 @@ UNKNOWN_C092F5_UNKNOWN4:
 	TYA
 	LSR
 	CLC
-MOVEMENT_NOP: ;$C0943B
+MOVEMENT_NOP:
 	RTL

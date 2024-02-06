@@ -1,5 +1,36 @@
 .INCLUDE "textmacros.asm"
 
+.MACRO BEGIN_C_FUNCTION_COMMON
+    REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
+    @STACKSIZE .SET 0
+    @STACKVARCOUNT .SET 0
+    @PARAMSIZE .SET 0
+    @PARAMCOUNT .SET 0
+    @CANCLOBBERACCUM .SET 1
+    @REGISTERPARAMS .SET 0
+.ENDMACRO
+
+.MACRO BEGIN_C_FUNCTION
+    BEGIN_C_FUNCTION_COMMON
+    @LONGFUNC := 0
+.ENDMACRO
+
+.MACRO BEGIN_C_FUNCTION_FAR
+    BEGIN_C_FUNCTION_COMMON
+    @LONGFUNC := 1
+.ENDMACRO
+
+.MACRO END_C_FUNCTION
+    .IF @STACKSIZE > 0
+        PLD
+    .ENDIF
+    .IF @LONGFUNC = 0
+        RTS
+    .ELSE
+        RTL
+    .ENDIF
+.ENDMACRO
+
 .MACRO STACK_RESERVE_VIRTUAL_REGISTERS
     @VIRTUAL00 := $00
     @VIRTUAL01 := $01
@@ -92,17 +123,14 @@
     @PARAMSIZE .SET @PARAMSIZE + size
 .ENDMACRO
 
+; apparently allocated on the stack, even though it can fit in a register. likely to avoid complications due to the 8-bit index flag affecting both X and Y
 .MACRO STACK_RESERVE_PARAM_INT8 label
-    .IF @REGISTERPARAMS < 3
-        @CANCLOBBERACCUM .SET 0
-        @REGISTERPARAMS .SET @REGISTERPARAMS + 1
-    .ELSE
-        STACK_RESERVE_PARAM 1, label
-    .ENDIF
+    STACK_RESERVE_PARAM 1, label
 .ENDMACRO
 
 .MACRO STACK_RESERVE_PARAM_INT16 label
     .IF @REGISTERPARAMS < 3
+        @PARAMCOUNT .SET @PARAMCOUNT + 1
         @CANCLOBBERACCUM .SET 0
         @REGISTERPARAMS .SET @REGISTERPARAMS + 1
     .ELSE
@@ -115,10 +143,17 @@
 .ENDMACRO
 
 .MACRO END_STACK_VARS
-    .IF @CANCLOBBERACCUM
-        RESERVE_STACK_SPACE_CLOBBER @STACKSIZE
-    .ELSE
-        RESERVE_STACK_SPACE @STACKSIZE
+    .IF @STACKSIZE > 0
+        PHD
+        .IF !@CANCLOBBERACCUM
+            PHA
+        .ENDIF
+        TDC
+        ADC #$FFFF - @STACKSIZE + 1
+        TCD
+        .IF !@CANCLOBBERACCUM
+            PLA
+        .ENDIF
     .ENDIF
 .ENDMACRO
 
@@ -128,22 +163,6 @@
 
 .MACRO AUDIOPACK file
     BINARY file
-.ENDMACRO
-
-.MACRO RESERVE_STACK_SPACE size
-    PHD
-    PHA
-    TDC
-    ADC #$FFFF - size + 1
-    TCD
-    PLA
-.ENDMACRO
-
-.MACRO RESERVE_STACK_SPACE_CLOBBER size
-    PHD
-    TDC
-    ADC #$FFFF - size + 1
-    TCD
 .ENDMACRO
 
 .macro PTR3 addr
@@ -194,14 +213,35 @@
 .endmacro
 
 .ENUM CHAR
+    JZERO_UNDERLINED = $10
+    EQUIPPED = $22
+    JZERO = $30
     .IF .DEFINED(JPN)
         SPACE = $20
-        ZERO = $30
-        A_ = $40
+        ZERO = JZERO
+        ONE = ZERO + 1
+        COLON = $5B
+        BULLET = $40
+        PLACEHOLDER = $5C
+        A_ = $41
+        I = $49
+        K = $4B
+        P = $50
+        S_ = $53
+        NESS_PLACEHOLDER = $3E
     .ELSE
         SPACE = $50
+        DOLLAR = $54
         ZERO = $60
-        A_ = $70
+        ONE = ZERO + 1
+        COLON = $6A
+        BULLET = $70
+        A_ = $71
+        I = $79
+        K = $7B
+        P = $80
+        S_ = $83
+        NESS_PLACEHOLDER = $AC
     .ENDIF
 .ENDENUM
 
@@ -274,7 +314,7 @@
         .elseif .strat(str, i) = '@'
             .BYTE $70
         .elseif .strat(str, i) = 'A'
-            .BYTE $71
+            .BYTE CHAR::A_
         .elseif .strat(str, i) = 'B'
             .BYTE $72
         .elseif .strat(str, i) = 'C'
@@ -421,11 +461,36 @@
     .BYTE $00
 .ENDMACRO
 
+.DEFINE RGBVAL(r, g, b) ((b << 10) | (g << 5) | r)
+
 .MACRO RGB red, green, blue
     .assert red < 32, error, "Red out of range"
     .assert green < 32, error, "Green out of range"
     .assert blue < 32, error, "Blue out of range"
     .WORD (blue<<10) | (green<<5) | red
+.ENDMACRO
+
+.DEFINE TILEMAP_COORDS(x_, y_) x_ + y_ * 32
+
+.MACRO OPTIMIZED_ADD amount
+    .IF amount = 0
+    .ELSEIF amount = 1
+        INC
+    .ELSEIF amount = 2
+        INC
+        INC
+    .ELSEIF amount = 3
+        INC
+        INC
+        INC
+    .ELSEIF amount = 4
+        INC
+        INC
+        INC
+        INC
+    .ELSE
+        ADC #amount
+    .ENDIF
 .ENDMACRO
 
 .MACRO OPTIMIZED_MULT scratch, amount
@@ -626,6 +691,14 @@
         STA scratch
         ASL
         ADC scratch
+        ASL
+        ASL
+        ASL
+        ASL
+        ASL
+    .ELSEIF amount = 128
+        ASL
+        ASL
         ASL
         ASL
         ASL
@@ -1069,6 +1142,7 @@
         LDA #unk
     .ENDIF
     JSL PREPARE_VRAM_COPY
+    .A16
 .ENDMACRO
 
 .MACRO COPY_TO_VRAM1OFFSET src, dest, size, offset, unk
@@ -1081,6 +1155,7 @@
     SEP #PROC_FLAGS::ACCUM8
     LDA #unk
     JSL PREPARE_VRAM_COPY
+    .A16
 .ENDMACRO
 
 .MACRO COPY_TO_VRAM2 src, dest, size, unk
@@ -1096,6 +1171,7 @@
         LDA #unk
     .ENDIF
     JSL PREPARE_VRAM_COPY_ENTRY_B
+    .A16
 .ENDMACRO
 
 .MACRO COPY_TO_VRAM3COMMON dest, size, unk
@@ -1112,6 +1188,7 @@
         LDA #unk
     .ENDIF
     JSL TRANSFER_TO_VRAM
+    .A16
 .ENDMACRO
 
 .MACRO COPY_TO_VRAM3 src, dest, size, unk
@@ -1175,8 +1252,40 @@
 .MACRO STZ_BADOPT dest
     .IF .DEFINED(JPN)
         LDA #$00
+    .ENDIF
+    STZ_BADOPT2 dest
+.ENDMACRO
+
+.MACRO STZ_BADOPT2 dest
+    .IF .DEFINED(JPN)
         STA dest
     .ELSE
         STZ dest
+    .ENDIF
+.ENDMACRO
+
+.MACRO LDA_STRUCT_MEMBER struct, field
+    .IF .DEFINED(JPN)
+        CLC
+        ADC #.LOWORD(struct)
+        TAX
+        LDA a:field,X
+    .ELSE
+        TAX
+        LDA struct + field,X
+    .ENDIF
+.ENDMACRO
+
+.MACRO LDA8_STRUCT_MEMBER struct, field
+    .IF .DEFINED(JPN)
+        CLC
+        ADC #.LOWORD(struct)
+        TAX
+        SEP #PROC_FLAGS::ACCUM8
+        LDA a:field,X
+    .ELSE
+        TAX
+        SEP #PROC_FLAGS::ACCUM8
+        LDA struct + field,X
     .ENDIF
 .ENDMACRO
