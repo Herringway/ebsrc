@@ -31,7 +31,7 @@ UPDATE_PARTY:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA CHAR_STRUCT+char_struct::position_index,X
+	LDA PARTY_CHARACTERS+char_struct::position_index,X
 	PLX
 	STA @LOCAL00,X
 	LDA @LOCAL08
@@ -71,7 +71,7 @@ UPDATE_PARTY:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA CHAR_STRUCT+char_struct::afflictions,X
+	LDA PARTY_CHARACTERS+char_struct::afflictions,X
 	AND #$00FF
 	TAY
 	CPY #1
@@ -245,7 +245,7 @@ UPDATE_PARTY:
 	LDX @VIRTUAL02
 	LDA @LOCAL00,X
 	PLX
-	STA CHAR_STRUCT+char_struct::position_index,X
+	STA PARTY_CHARACTERS+char_struct::position_index,X
 	LDX @LOCAL08
 	LDA __BSS_START__,X
 	ASL

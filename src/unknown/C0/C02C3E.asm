@@ -6,7 +6,7 @@ UNKNOWN_C02C3E:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)+char_struct::afflictions
+	ADC #.LOWORD(PARTY_CHARACTERS)+char_struct::afflictions
 	TAX
 	LDA __BSS_START__+1,X
 	AND #$00FF

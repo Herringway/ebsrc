@@ -18,20 +18,20 @@ RESET_CHAR_LEVEL_ONE:
 	TAY
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #STARTING_LEVEL
-	STA CHAR_STRUCT+char_struct::level,Y
+	STA PARTY_CHARACTERS+char_struct::level,Y
 	LDA #STARTING_STATS
-	STA CHAR_STRUCT+char_struct::base_offense,Y
-	STA CHAR_STRUCT+char_struct::base_defense,Y
-	STA CHAR_STRUCT+char_struct::base_speed,Y
-	STA CHAR_STRUCT+char_struct::base_guts,Y
-	STA CHAR_STRUCT+char_struct::base_luck,Y
-	STA CHAR_STRUCT+char_struct::base_vitality,Y
-	STA CHAR_STRUCT+char_struct::base_iq,Y
+	STA PARTY_CHARACTERS+char_struct::base_offense,Y
+	STA PARTY_CHARACTERS+char_struct::base_defense,Y
+	STA PARTY_CHARACTERS+char_struct::base_speed,Y
+	STA PARTY_CHARACTERS+char_struct::base_guts,Y
+	STA PARTY_CHARACTERS+char_struct::base_luck,Y
+	STA PARTY_CHARACTERS+char_struct::base_vitality,Y
+	STA PARTY_CHARACTERS+char_struct::base_iq,Y
 	REP #PROC_FLAGS::ACCUM8
 	LDA #STARTING_HP
-	STA CHAR_STRUCT+char_struct::max_hp,Y
-	STA CHAR_STRUCT+char_struct::current_hp_target,Y
-	STA CHAR_STRUCT+char_struct::current_hp,Y
+	STA PARTY_CHARACTERS+char_struct::max_hp,Y
+	STA PARTY_CHARACTERS+char_struct::current_hp_target,Y
+	STA PARTY_CHARACTERS+char_struct::current_hp,Y
 	CPX #2
 	BEQ @UNKNOWN0
 	LDA #STARTING_PP
@@ -46,9 +46,9 @@ RESET_CHAR_LEVEL_ONE:
 	JSL MULT168
 	TAY
 	LDA @LOCAL01
-	STA CHAR_STRUCT+char_struct::max_pp,Y
-	STA CHAR_STRUCT+char_struct::current_pp_target,Y
-	STA CHAR_STRUCT+char_struct::current_pp,Y
+	STA PARTY_CHARACTERS+char_struct::max_pp,Y
+	STA PARTY_CHARACTERS+char_struct::current_pp_target,Y
+	STA PARTY_CHARACTERS+char_struct::current_pp,Y
 	TXY
 	INY
 	STY @LOCAL00
@@ -103,7 +103,7 @@ RESET_CHAR_LEVEL_ONE:
 	LOADPTR EXP_TABLE, @VIRTUAL0A
 	LDA @LOCAL00
 	TAX
-	LDA CHAR_STRUCT+char_struct::level,X
+	LDA PARTY_CHARACTERS+char_struct::level,X
 	AND #$00FF
 	OPTIMIZED_MULT @VIRTUAL04, 4
 	STA @VIRTUAL02
@@ -119,7 +119,7 @@ RESET_CHAR_LEVEL_ONE:
 	DEREFERENCE_PTR_TO @VIRTUAL0A, @VIRTUAL06
 	LDA @LOCAL00
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT) + char_struct::exp
+	ADC #.LOWORD(PARTY_CHARACTERS) + char_struct::exp
 	TAY
 	MOVE_INT_YPTRDEST @VIRTUAL06, __BSS_START__
 @UNKNOWN4:

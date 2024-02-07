@@ -43,12 +43,12 @@ AUTOHEALING:
 	JSL MULT168
 	TAX
 	STX @LOCAL00
-	LDA CHAR_STRUCT+char_struct::unknown94,X
+	LDA PARTY_CHARACTERS+char_struct::unknown94,X
 	AND #$00FF
 	BNE @UNKNOWN2
 	TXA
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT) + char_struct::afflictions
+	ADC #.LOWORD(PARTY_CHARACTERS) + char_struct::afflictions
 	CLC
 	ADC @LOCAL03
 	TAX
@@ -57,7 +57,7 @@ AUTOHEALING:
 	CMP @LOCAL04
 	BNE @UNKNOWN2
 	LDX @LOCAL00
-	LDA CHAR_STRUCT+char_struct::current_hp_target,X
+	LDA PARTY_CHARACTERS+char_struct::current_hp_target,X
 	CMP @LOCAL02
 	BCS @UNKNOWN2
 	STA @LOCAL02
@@ -78,7 +78,7 @@ AUTOHEALING:
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$01
-	STA CHAR_STRUCT+char_struct::unknown94,X
+	STA PARTY_CHARACTERS+char_struct::unknown94,X
 @UNKNOWN4:
 	REP #PROC_FLAGS::ACCUM8
 	LDA @VIRTUAL04

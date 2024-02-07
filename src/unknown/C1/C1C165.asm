@@ -9,7 +9,7 @@ UNKNOWN_C1C165:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)+char_struct::afflictions
+	ADC #.LOWORD(PARTY_CHARACTERS)+char_struct::afflictions
 	TAY
 	LDX #0
 	BRA @UNKNOWN3

@@ -14,14 +14,14 @@ UNKNOWN_C436D7:
 	STX @LOCAL02
 	ASL
 	TAX
-	LDY WINDOW_EXISTENCE_TABLE,X
+	LDY OPEN_WINDOW_TABLE,X
 	STY @LOCAL01
 	TYA
 	LDY #.SIZEOF(window_stats)
 	JSL MULT168
 	PHA
 	TAX
-	LDY WINDOW_STATS_TABLE+window_stats::width,X
+	LDY WINDOW_STATS+window_stats::width,X
 	LDX @LOCAL02
 	TXA
 	JSL MULT16
@@ -29,7 +29,7 @@ UNKNOWN_C436D7:
 	ASL
 	PLX
 	CLC
-	ADC WINDOW_STATS_TABLE+window_stats::tilemap_address,X
+	ADC WINDOW_STATS+window_stats::tilemap_address,X
 	TAX
 	STX @LOCAL00
 	LDA #0
@@ -51,7 +51,7 @@ UNKNOWN_C436D7:
 	LDY #.SIZEOF(window_stats)
 	JSL MULT168
 	TAX
-	LDA WINDOW_STATS_TABLE+window_stats::width,X
+	LDA WINDOW_STATS+window_stats::width,X
 	ASL
 	STA @VIRTUAL02
 	LDA @LOCAL02

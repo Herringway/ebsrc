@@ -14,7 +14,7 @@ UNKNOWN_C20ABC:
 	BEQL @UNKNOWN2
 	ASL
 	CLC
-	ADC #.LOWORD(WINDOW_EXISTENCE_TABLE)
+	ADC #.LOWORD(OPEN_WINDOW_TABLE)
 	TAX
 	LDA __BSS_START__,X
 	CMP #$FFFF
@@ -27,48 +27,48 @@ UNKNOWN_C20ABC:
 	TAX
 	LDY @LOCAL01
 	LDA a:window_text_attributes_copy::text_x,Y
-	STA WINDOW_STATS_TABLE+window_stats::text_x,X
+	STA WINDOW_STATS+window_stats::text_x,X
 	LDA CURRENT_FOCUS_WINDOW
 	ASL
 	TAX
-	LDA WINDOW_EXISTENCE_TABLE,X
+	LDA OPEN_WINDOW_TABLE,X
 	LDY #.SIZEOF(window_stats)
 	JSL MULT168
 	TAX
 	LDY @LOCAL01
 	LDA a:window_text_attributes_copy::text_y,Y
-	STA WINDOW_STATS_TABLE+window_stats::text_y,X
+	STA WINDOW_STATS+window_stats::text_y,X
 	LDA CURRENT_FOCUS_WINDOW
 	ASL
 	TAX
-	LDA WINDOW_EXISTENCE_TABLE,X
+	LDA OPEN_WINDOW_TABLE,X
 	LDY #.SIZEOF(window_stats)
 	JSL MULT168
 	TAX
 	LDY @LOCAL01
 	SEP #PROC_FLAGS::ACCUM8
 	LDA a:window_text_attributes_copy::number_padding,Y
-	STA WINDOW_STATS_TABLE+window_stats::number_padding,X
+	STA WINDOW_STATS+window_stats::number_padding,X
 	REP #PROC_FLAGS::ACCUM8
 	LDA CURRENT_FOCUS_WINDOW
 	ASL
 	TAX
-	LDA WINDOW_EXISTENCE_TABLE,X
+	LDA OPEN_WINDOW_TABLE,X
 	LDY #.SIZEOF(window_stats)
 	JSL MULT168
 	TAX
 	LDY @LOCAL01
 	LDA a:window_text_attributes_copy::curr_tile_attributes,Y
-	STA WINDOW_STATS_TABLE+window_stats::curr_tile_attributes,X
+	STA WINDOW_STATS+window_stats::curr_tile_attributes,X
 	LDA CURRENT_FOCUS_WINDOW
 	ASL
 	TAX
-	LDA WINDOW_EXISTENCE_TABLE,X
+	LDA OPEN_WINDOW_TABLE,X
 	LDY #.SIZEOF(window_stats)
 	JSL MULT168
 	TAX
 	LDY @LOCAL01
 	LDA a:window_text_attributes_copy::font,Y
-	STA WINDOW_STATS_TABLE+window_stats::font,X
+	STA WINDOW_STATS+window_stats::font,X
 @UNKNOWN2:
 	END_C_FUNCTION

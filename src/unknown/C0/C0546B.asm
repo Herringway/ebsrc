@@ -25,7 +25,7 @@ UNKNOWN_C0546B:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA CHAR_STRUCT+char_struct::level,X
+	LDA PARTY_CHARACTERS+char_struct::level,X
 	AND #$00FF
 	STA @VIRTUAL02
 	LDY @LOCAL01

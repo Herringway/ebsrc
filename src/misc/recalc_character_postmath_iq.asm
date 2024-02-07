@@ -8,8 +8,8 @@ RECALC_CHARACTER_POSTMATH_IQ:
 	JSL MULT168
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	LDA CHAR_STRUCT+char_struct::base_iq,X
+	LDA PARTY_CHARACTERS+char_struct::base_iq,X
 	CLC
-	ADC CHAR_STRUCT+char_struct::boosted_iq,X
-	STA CHAR_STRUCT+char_struct::iq,X
+	ADC PARTY_CHARACTERS+char_struct::boosted_iq,X
+	STA PARTY_CHARACTERS+char_struct::iq,X
 	END_C_FUNCTION

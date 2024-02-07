@@ -30,7 +30,7 @@ UNKNOWN_C22351:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)+char_struct::items
+	ADC #.LOWORD(PARTY_CHARACTERS)+char_struct::items
 	CLC
 	ADC @VIRTUAL02
 	TAX

@@ -61,7 +61,7 @@ UNKNOWN_C0369B:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA CHAR_STRUCT+char_struct::afflictions,X
+	LDA PARTY_CHARACTERS+char_struct::afflictions,X
 	AND #$00FF
 	CMP #1
 	BEQ @UNKNOWN5
@@ -195,7 +195,7 @@ UNKNOWN_C0369B:
 	JSL MULT168
 	TAX
 	LDA GAME_STATE + game_state::unknown88
-	STA CHAR_STRUCT+char_struct::position_index,X
+	STA PARTY_CHARACTERS+char_struct::position_index,X
 	BRA @UNKNOWN13
 @UNKNOWN10:
 	LDX @LOCAL05
@@ -217,7 +217,7 @@ UNKNOWN_C0369B:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA CHAR_STRUCT+char_struct::position_index,X
+	LDA PARTY_CHARACTERS+char_struct::position_index,X
 	STA @LOCAL04
 @UNKNOWN12:
 	LDA NEW_ENTITY_VAR1
@@ -225,13 +225,13 @@ UNKNOWN_C0369B:
 	JSL MULT168
 	TAX
 	LDA @LOCAL04
-	STA CHAR_STRUCT+char_struct::position_index,X
+	STA PARTY_CHARACTERS+char_struct::position_index,X
 @UNKNOWN13:
 	LDA NEW_ENTITY_VAR1
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA CHAR_STRUCT+char_struct::position_index,X
+	LDA PARTY_CHARACTERS+char_struct::position_index,X
 	BEQ @UNKNOWN14
 	TAX
 	DEX

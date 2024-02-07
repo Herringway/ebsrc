@@ -13,14 +13,14 @@ UNKNOWN_C437B8:
 	STA @LOCAL05
 	ASL
 	TAX
-	LDA WINDOW_EXISTENCE_TABLE,X
+	LDA OPEN_WINDOW_TABLE,X
 	STA @VIRTUAL04
 	LDY #.SIZEOF(window_stats)
 	JSL MULT168
 	TAX
-	LDA WINDOW_STATS_TABLE + window_stats::tilemap_address,X
+	LDA WINDOW_STATS + window_stats::tilemap_address,X
 	STA @LOCAL04
-	LDA WINDOW_STATS_TABLE + window_stats::width,X
+	LDA WINDOW_STATS + window_stats::width,X
 	ASL
 	ASL
 	STA @VIRTUAL02
@@ -57,10 +57,10 @@ UNKNOWN_C437B8:
 	LDY #.SIZEOF(window_stats)
 	JSL MULT168
 	STA @LOCAL04
-	LDY #.LOWORD(WINDOW_STATS_TABLE) + window_stats::height
+	LDY #.LOWORD(WINDOW_STATS) + window_stats::height
 	LDA (@LOCAL04),Y
 	STA @LOCAL00
-	LDY #.LOWORD(WINDOW_STATS_TABLE) + window_stats::width
+	LDY #.LOWORD(WINDOW_STATS) + window_stats::width
 	LDA (@LOCAL04),Y
 	TAY
 	LDA @LOCAL00

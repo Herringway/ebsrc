@@ -38,16 +38,16 @@ AUTOLIFEUP:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA CHAR_STRUCT+char_struct::unknown94,X
+	LDA PARTY_CHARACTERS+char_struct::unknown94,X
 	AND #$00FF
 	BNE @UNKNOWN2
-	LDA CHAR_STRUCT+char_struct::afflictions,X
+	LDA PARTY_CHARACTERS+char_struct::afflictions,X
 	AND #$00FF
 	CMP #STATUS_0::UNCONSCIOUS
 	BEQ @UNKNOWN2
-	LDA CHAR_STRUCT+char_struct::current_hp_target,X
+	LDA PARTY_CHARACTERS+char_struct::current_hp_target,X
 	STA @LOCAL00
-	LDA CHAR_STRUCT+char_struct::max_hp,X
+	LDA PARTY_CHARACTERS+char_struct::max_hp,X
 	LSR
 	LSR
 	STA @VIRTUAL02
@@ -78,7 +78,7 @@ AUTOLIFEUP:
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$01
-	STA CHAR_STRUCT+char_struct::unknown94,X
+	STA PARTY_CHARACTERS+char_struct::unknown94,X
 @UNKNOWN4:
 	REP #PROC_FLAGS::ACCUM8
 	LDA @VIRTUAL04

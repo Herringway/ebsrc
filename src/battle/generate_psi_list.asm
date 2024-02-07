@@ -204,7 +204,7 @@ GENERATE_PSI_LIST:
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
 	LDA @VIRTUAL00
-	CMP CHAR_STRUCT+char_struct::level,X
+	CMP PARTY_CHARACTERS+char_struct::level,X
 	BGTL @UNKNOWN16
 	LDY #psi_ability::category
 	LDA [@VIRTUAL06],Y

@@ -43,7 +43,7 @@ INFLICT_STATUS_NONBATTLE:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT) + char_struct::afflictions
+	ADC #.LOWORD(PARTY_CHARACTERS) + char_struct::afflictions
 	CLC
 	ADC @VIRTUAL02
 	TAX

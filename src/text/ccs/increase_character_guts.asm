@@ -29,7 +29,7 @@ CC_1E_0B:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)+char_struct::boosted_guts
+	ADC #.LOWORD(PARTY_CHARACTERS)+char_struct::boosted_guts
 	TAY
 	LDA @LOCAL00
 	SEP #PROC_FLAGS::ACCUM8

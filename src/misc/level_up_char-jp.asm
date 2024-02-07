@@ -23,7 +23,7 @@ LEVEL_UP_CHAR:
 	JSL MULT168
 	STA @LOCAL05
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)+char_struct::level
+	ADC #.LOWORD(PARTY_CHARACTERS)+char_struct::level
 	STA @VIRTUAL02
 	LDX @VIRTUAL02
 	SEP #PROC_FLAGS::ACCUM8
@@ -46,7 +46,7 @@ LEVEL_UP_CHAR:
 	LDX #4
 	LDA @LOCAL05
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)
+	ADC #.LOWORD(PARTY_CHARACTERS)
 	JSR UNKNOWN_C1ACA1
 	LDX @VIRTUAL02
 	SEP #PROC_FLAGS::ACCUM8
@@ -64,7 +64,7 @@ LEVEL_UP_CHAR:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)+char_struct::base_offense
+	ADC #.LOWORD(PARTY_CHARACTERS)+char_struct::base_offense
 	STA @VIRTUAL02
 	LDY @LOCAL06
 	TYA
@@ -116,7 +116,7 @@ LEVEL_UP_CHAR:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)+char_struct::base_defense
+	ADC #.LOWORD(PARTY_CHARACTERS)+char_struct::base_defense
 	STA @VIRTUAL02
 	LDY @LOCAL06
 	TYA
@@ -169,7 +169,7 @@ LEVEL_UP_CHAR:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)+char_struct::base_speed
+	ADC #.LOWORD(PARTY_CHARACTERS)+char_struct::base_speed
 	STA @VIRTUAL02
 	LDY @LOCAL06
 	TYA
@@ -223,7 +223,7 @@ LEVEL_UP_CHAR:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)+char_struct::base_guts
+	ADC #.LOWORD(PARTY_CHARACTERS)+char_struct::base_guts
 	STA @VIRTUAL02
 	LDY @LOCAL06
 	TYA
@@ -282,7 +282,7 @@ LEVEL_UP_CHAR:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA CHAR_STRUCT+char_struct::base_vitality,X
+	LDA PARTY_CHARACTERS+char_struct::base_vitality,X
 	AND #$00FF
 	DEC
 	DEC
@@ -325,7 +325,7 @@ LEVEL_UP_CHAR:
 	JSL MULT168
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	LDA CHAR_STRUCT+char_struct::base_vitality,X
+	LDA PARTY_CHARACTERS+char_struct::base_vitality,X
 	STA @LOCAL00+1
 	REP #PROC_FLAGS::ACCUM8
 	LDA @LOCAL03
@@ -341,7 +341,7 @@ LEVEL_UP_CHAR:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)+char_struct::base_vitality
+	ADC #.LOWORD(PARTY_CHARACTERS)+char_struct::base_vitality
 	TAX
 	LDA @VIRTUAL02
 	SEP #PROC_FLAGS::ACCUM8
@@ -372,7 +372,7 @@ LEVEL_UP_CHAR:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA CHAR_STRUCT+char_struct::base_iq,X
+	LDA PARTY_CHARACTERS+char_struct::base_iq,X
 	AND #$00FF
 	DEC
 	DEC
@@ -411,7 +411,7 @@ LEVEL_UP_CHAR:
 	JSL MULT168
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	LDA CHAR_STRUCT+char_struct::base_iq,X
+	LDA PARTY_CHARACTERS+char_struct::base_iq,X
 	STA @LOCAL00+1
 	REP #PROC_FLAGS::ACCUM8
 	LDA @LOCAL03
@@ -427,7 +427,7 @@ LEVEL_UP_CHAR:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)+char_struct::base_iq
+	ADC #.LOWORD(PARTY_CHARACTERS)+char_struct::base_iq
 	TAX
 	LDA @VIRTUAL02
 	SEP #PROC_FLAGS::ACCUM8
@@ -454,7 +454,7 @@ LEVEL_UP_CHAR:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)+char_struct::base_luck
+	ADC #.LOWORD(PARTY_CHARACTERS)+char_struct::base_luck
 	STA @VIRTUAL02
 	LDY @LOCAL06
 	TYA
@@ -508,11 +508,11 @@ LEVEL_UP_CHAR:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA CHAR_STRUCT+char_struct::vitality,X
+	LDA PARTY_CHARACTERS+char_struct::vitality,X
 	AND #$00FF
 	OPTIMIZED_MULT @VIRTUAL04, 15
 	SEC
-	SBC CHAR_STRUCT+char_struct::max_hp,X
+	SBC PARTY_CHARACTERS+char_struct::max_hp,X
 	STA @LOCAL02
 	CLC
 	SBC #1
@@ -533,7 +533,7 @@ LEVEL_UP_CHAR:
 	JSL MULT168
 	STA @LOCAL02
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)+char_struct::max_hp
+	ADC #.LOWORD(PARTY_CHARACTERS)+char_struct::max_hp
 	TAX
 	LDA __BSS_START__,X
 	CLC
@@ -541,7 +541,7 @@ LEVEL_UP_CHAR:
 	STA __BSS_START__,X
 	LDA @LOCAL02
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)+char_struct::current_hp_target
+	ADC #.LOWORD(PARTY_CHARACTERS)+char_struct::current_hp_target
 	TAX
 	LDA __BSS_START__,X
 	CLC
@@ -568,7 +568,7 @@ LEVEL_UP_CHAR:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA CHAR_STRUCT+char_struct::iq,X
+	LDA PARTY_CHARACTERS+char_struct::iq,X
 	AND #$00FF
 	ASL
 	BRA @UNKNOWN45
@@ -578,7 +578,7 @@ LEVEL_UP_CHAR:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA CHAR_STRUCT+char_struct::iq,X
+	LDA PARTY_CHARACTERS+char_struct::iq,X
 	AND #$00FF
 @UNKNOWN45:
 	STA @LOCAL01
@@ -590,7 +590,7 @@ LEVEL_UP_CHAR:
 	LDA @LOCAL01
 	OPTIMIZED_MULT @VIRTUAL04, 5
 	SEC
-	SBC CHAR_STRUCT+char_struct::max_pp,X
+	SBC PARTY_CHARACTERS+char_struct::max_pp,X
 	STA @LOCAL02
 	CLC
 	SBC #1
@@ -614,7 +614,7 @@ LEVEL_UP_CHAR:
 	STA @LOCAL02
 	LDA @VIRTUAL02
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)+char_struct::max_pp
+	ADC #.LOWORD(PARTY_CHARACTERS)+char_struct::max_pp
 	TAX
 	LDA @LOCAL01
 	STA @VIRTUAL02
@@ -625,7 +625,7 @@ LEVEL_UP_CHAR:
 	LDA @LOCAL02
 	STA @VIRTUAL02
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)+char_struct::current_pp_target
+	ADC #.LOWORD(PARTY_CHARACTERS)+char_struct::current_pp_target
 	TAX
 	LDA @LOCAL01
 	STA @VIRTUAL02

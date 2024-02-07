@@ -16,7 +16,7 @@ UNKNOWN_C3E4EF:
 	LDY #.SIZEOF(window_stats)
 	JSL MULT168
 	TAX
-	LDA WINDOW_STATS_TABLE + window_stats::id,X
+	LDA WINDOW_STATS + window_stats::id,X
 	CMP #.LOWORD(-1)
 	BNE @UNKNOWN1
 	LDA @LOCAL00

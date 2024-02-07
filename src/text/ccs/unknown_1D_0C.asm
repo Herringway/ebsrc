@@ -64,7 +64,7 @@ CC_1D_0C:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)+char_struct::items
+	ADC #.LOWORD(PARTY_CHARACTERS)+char_struct::items
 	PLY
 	STY @VIRTUAL02
 	CLC

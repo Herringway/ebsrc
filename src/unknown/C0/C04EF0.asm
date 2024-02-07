@@ -12,7 +12,7 @@ UNKNOWN_C04EF0:
 	TAX
 	LDA CHOSEN_FOUR_PTRS,X
 	TAX
-	STX UNKNOWN_7E4DC6
+	STX CURRENT_PARTY_MEMBER_TICK
 	LDA __BSS_START__ + char_struct::position_index,X
 	OPTIMIZED_MULT $04, .SIZEOF(player_position_buffer_entry)
 	CLC

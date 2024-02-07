@@ -246,8 +246,8 @@
 .ENDSTRUCT
 
 .STRUCT window_stats
-	prev .word ;0 - index into WINDOW_STATS_TABLE
-	next .word ;2 - index into WINDOW_STATS_TABLE
+	prev .word ;0 - index into WINDOW_STATS
+	next .word ;2 - index into WINDOW_STATS
 	id .word ;4
 	window_x .word ;6
 	window_y .word ;8
@@ -543,12 +543,12 @@
 	.ENDUNION
 .ENDSTRUCT
 
-.STRUCT unknown_A97D
-	unknown0 .byte 1 ;0
-	unknown1 .byte 1 ;1
-	unknown2 .byte 2 ;2
-	unknown4 .byte 1 ;4
-	unknown5 .byte 1 ;5
+.STRUCT battle_menu_selection
+	user .byte ;0
+	param1 .byte ;1
+	selected_action .word ;2
+	targetting .byte ;4
+	selected_target .byte ;5
 .ENDSTRUCT
 
 .STRUCT overworld_palette_anim
@@ -820,4 +820,40 @@
 	text_pointer_2 .byte 3 ;13
 	enter_speed .word ;16
 	exit_speed .word ;18
+.ENDSTRUCT
+
+.STRUCT fade_parameters
+	step .byte ;0
+	delay .byte ;1
+.ENDSTRUCT
+
+.STRUCT queued_dma
+	mode .byte ;0
+	size .word ;1
+	src .byte 3 ;3
+	dest .word ;6
+.ENDSTRUCT
+
+.STRUCT psi_animation_state
+	time_until_next_frame .byte ;0
+	frame_hold_frames .byte ;1
+	total_frames .byte ;2
+	frame_data .dword ;3
+	palette_animation_lower_index .byte ;7
+	palette_animation_upper_index .byte ;8
+	palette_animation_current_index .byte ;9
+	palette_animation_frames .byte ;10
+	palette_animation_time_until_next_frame .byte ;11
+	palette .word 16 ;12
+	displayed_palette .word ;44
+	enemy_colour_change_start_frames_left .word ;46
+	enemy_colour_change_frames_left .word ;48
+	enemy_colour_change_red .word ;50
+	enemy_colour_change_green .word ;52
+	enemy_colour_change_blue .word ;54
+.ENDSTRUCT
+
+.STRUCT queued_entity_creation
+	sprite .word ;0
+	script .word ;2
 .ENDSTRUCT

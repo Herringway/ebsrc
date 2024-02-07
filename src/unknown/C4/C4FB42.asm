@@ -7,7 +7,7 @@ UNKNOWN_C4FB42:
 	END_STACK_VARS
 	STA @LOCAL00
 	LDA #.LOWORD(-1)
-	STA UNKNOWN_7EB547
+	STA SEQUENCE_PACK_MASK
 	LDA @LOCAL00
 .IF .DEFINED(JPN)
 	CLC ;mother 2's audio pack addresses are relative to the first bank audio packs are stored in, for some reason

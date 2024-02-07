@@ -25,7 +25,7 @@ UNKNOWN_C2277C:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA CHAR_STRUCT+char_struct::afflictions,X
+	LDA PARTY_CHARACTERS+char_struct::afflictions,X
 	AND #$00FF
 	TAX
 	CPX #1

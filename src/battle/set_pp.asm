@@ -35,7 +35,7 @@ SET_PP:
 	TAX
 	LDY @LOCAL01
 	TYA
-	STA CHAR_STRUCT+char_struct::current_pp_target,X
+	STA PARTY_CHARACTERS+char_struct::current_pp_target,X
 	BRA @UNKNOWN3
 @UNKNOWN1:
 	TYA

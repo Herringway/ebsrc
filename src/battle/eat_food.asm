@@ -22,7 +22,7 @@ EAT_FOOD:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA CHAR_STRUCT+char_struct::afflictions,X
+	LDA PARTY_CHARACTERS+char_struct::afflictions,X
 	AND #$00FF
 	CMP #STATUS_0::UNCONSCIOUS
 	BNE @UNKNOWN0
@@ -163,7 +163,7 @@ EAT_FOOD:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)+char_struct::boosted_iq
+	ADC #.LOWORD(PARTY_CHARACTERS)+char_struct::boosted_iq
 	PHA
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
@@ -203,7 +203,7 @@ EAT_FOOD:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)+char_struct::boosted_guts
+	ADC #.LOWORD(PARTY_CHARACTERS)+char_struct::boosted_guts
 	PHA
 	LDY @LOCAL02
 	SEP #PROC_FLAGS::INDEX8
@@ -247,7 +247,7 @@ EAT_FOOD:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)+char_struct::boosted_speed
+	ADC #.LOWORD(PARTY_CHARACTERS)+char_struct::boosted_speed
 	PHA
 	LDY @LOCAL02
 	SEP #PROC_FLAGS::INDEX8
@@ -295,7 +295,7 @@ EAT_FOOD:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)+char_struct::boosted_vitality
+	ADC #.LOWORD(PARTY_CHARACTERS)+char_struct::boosted_vitality
 	PHA
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
@@ -335,7 +335,7 @@ EAT_FOOD:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)+char_struct::boosted_luck
+	ADC #.LOWORD(PARTY_CHARACTERS)+char_struct::boosted_luck
 	PHA
 	LDY @LOCAL02
 	SEP #PROC_FLAGS::INDEX8

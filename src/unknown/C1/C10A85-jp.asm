@@ -18,7 +18,7 @@ UNKNOWN_C10A85:
 	STA @LOCAL03
 	ASL
 	TAX
-	LDA WINDOW_EXISTENCE_TABLE,X
+	LDA OPEN_WINDOW_TABLE,X
 	STA @LOCAL02
 	CMP #.LOWORD(-1)
 	BEQL @UNKNOWN10
@@ -26,14 +26,14 @@ UNKNOWN_C10A85:
 	LDY #.SIZEOF(window_stats)
 	JSL MULT168
 	TAX
-	LDY WINDOW_STATS_TABLE + window_stats::text_x,X
+	LDY WINDOW_STATS + window_stats::text_x,X
 	STY @LOCAL01
-	LDA WINDOW_STATS_TABLE + window_stats::text_y,X
+	LDA WINDOW_STATS + window_stats::text_y,X
 	STA @VIRTUAL04
 	TYA
-	CMP WINDOW_STATS_TABLE + window_stats::width,X
+	CMP WINDOW_STATS + window_stats::width,X
 	BNE @UNKNOWN3
-	LDA WINDOW_STATS_TABLE + window_stats::height,X
+	LDA WINDOW_STATS + window_stats::height,X
 	LSR
 	DEC
 	STA @VIRTUAL02
@@ -78,13 +78,13 @@ UNKNOWN_C10A85:
 	TYA
 	ASL
 	STA @VIRTUAL02
-	LDY WINDOW_STATS_TABLE + window_stats::width,X
+	LDY WINDOW_STATS + window_stats::width,X
 	LDA @VIRTUAL04
 	JSL MULT16
 	ASL
 	ASL
 	CLC
-	ADC WINDOW_STATS_TABLE + window_stats::tilemap_address,X
+	ADC WINDOW_STATS + window_stats::tilemap_address,X
 	CLC
 	ADC @VIRTUAL02
 	STA @LOCAL00
@@ -120,7 +120,7 @@ UNKNOWN_C10A85:
 	LDY #.SIZEOF(window_stats)
 	JSL MULT168
 	TAX
-	LDA WINDOW_STATS_TABLE+window_stats::width,X
+	LDA WINDOW_STATS+window_stats::width,X
 	ASL
 	STA @VIRTUAL02
 	LDA @LOCAL00
@@ -142,8 +142,8 @@ UNKNOWN_C10A85:
 	TAX
 	LDY @LOCAL01
 	TYA
-	STA WINDOW_STATS_TABLE+window_stats::text_x,X
+	STA WINDOW_STATS+window_stats::text_x,X
 	LDA @VIRTUAL04
-	STA WINDOW_STATS_TABLE+window_stats::text_y,X
+	STA WINDOW_STATS+window_stats::text_y,X
 @UNKNOWN10:
 	END_C_FUNCTION

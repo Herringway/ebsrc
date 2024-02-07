@@ -21,7 +21,7 @@ UNKNOWN_C3EC8B:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA CHAR_STRUCT+char_struct::max_hp,X
+	LDA PARTY_CHARACTERS+char_struct::max_hp,X
 	STORE_INT1632 @VIRTUAL06
 	JSL MULT32
 	MOVE_INT_CONSTANT 100, @VIRTUAL0A
@@ -34,7 +34,7 @@ UNKNOWN_C3EC8B:
 	JSL MULT168
 	STA @LOCAL02
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT) + char_struct::current_hp_target
+	ADC #.LOWORD(PARTY_CHARACTERS) + char_struct::current_hp_target
 	TAX
 	LDA __BSS_START__,X
 	CLC
@@ -42,7 +42,7 @@ UNKNOWN_C3EC8B:
 	STA __BSS_START__,X
 	LDA @LOCAL02
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT) + char_struct::current_hp
+	ADC #.LOWORD(PARTY_CHARACTERS) + char_struct::current_hp
 	TAX
 	LDA __BSS_START__,X
 	BNE @UNKNOWN2
@@ -54,12 +54,12 @@ UNKNOWN_C3EC8B:
 	JSL MULT168
 	STA @LOCAL01
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT) + char_struct::current_hp_target
+	ADC #.LOWORD(PARTY_CHARACTERS) + char_struct::current_hp_target
 	TAX
 	STX @LOCAL00
 	LDA @LOCAL01
 	TAX
-	LDA CHAR_STRUCT+char_struct::max_hp,X
+	LDA PARTY_CHARACTERS+char_struct::max_hp,X
 	STA @LOCAL02
 	STA @VIRTUAL02
 	LDX @LOCAL00

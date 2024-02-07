@@ -1,5 +1,5 @@
 
-; A: unknown_A97D*
+; A: battle_menu_selection*
 BATTLE_PSI_MENU:
 	BEGIN_C_FUNCTION
 	STACK_RESERVE_VARS
@@ -78,7 +78,7 @@ BATTLE_PSI_MENU:
 	LDA @LOCAL06
 	STA @VIRTUAL04
 	LDX @VIRTUAL04
-	LDA a:unknown_A97D::unknown0,X
+	LDA a:battle_menu_selection::user,X
 	AND #$00FF
 	TAX
 	LDA @VIRTUAL02
@@ -120,7 +120,7 @@ BATTLE_PSI_MENU:
 	LDA @LOCAL06
 	STA @VIRTUAL04
 	LDX @VIRTUAL04
-	LDA a:unknown_A97D::unknown0,X
+	LDA a:battle_menu_selection::user,X
 	AND #$00FF
 	DEC
 	LDY #.SIZEOF(char_struct)
@@ -136,7 +136,7 @@ BATTLE_PSI_MENU:
 	STA @VIRTUAL0A
 	LDA [@VIRTUAL0A]
 	AND #$00FF
-	CMP CHAR_STRUCT+char_struct::current_pp_target,X
+	CMP PARTY_CHARACTERS+char_struct::current_pp_target,X
 	BLTEQ @UNKNOWN8
 	CREATE_WINDOW_NEAR #WINDOW::TEXT_BATTLE
 	LDA #$0002
@@ -205,7 +205,7 @@ BATTLE_PSI_MENU:
 	LDA @LOCAL06
 	STA @VIRTUAL04
 	LDX @VIRTUAL04
-	LDA a:unknown_A97D::unknown0,X
+	LDA a:battle_menu_selection::user,X
 	AND #$00FF
 	TAX
 	LDA [@VIRTUAL06]
@@ -248,7 +248,7 @@ BATTLE_PSI_MENU:
 	SEP #PROC_FLAGS::ACCUM8
 	LDX @LOCAL06
 	STX @VIRTUAL04
-	STA a:unknown_A97D::unknown1,X
+	STA a:battle_menu_selection::param1,X
 	REP #PROC_FLAGS::ACCUM8
 	TYA
 	OPTIMIZED_MULT @VIRTUAL04, 15
@@ -260,7 +260,7 @@ BATTLE_PSI_MENU:
 	LDA f:PSI_ABILITY_TABLE,X
 	LDX @LOCAL06
 	STX @VIRTUAL04
-	STA a:unknown_A97D::unknown2,X
+	STA a:battle_menu_selection::selected_action,X
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$08
 	PHA
@@ -273,13 +273,13 @@ BATTLE_PSI_MENU:
 	SEP #PROC_FLAGS::ACCUM8
 	REP #PROC_FLAGS::INDEX8
 	LDX @VIRTUAL04
-	STA a:unknown_A97D::unknown4,X
+	STA a:battle_menu_selection::targetting,X
 	LDX @LOCAL02
 	REP #PROC_FLAGS::ACCUM8
 	TXA
 	SEP #PROC_FLAGS::ACCUM8
 	LDX @VIRTUAL04
-	STA a:unknown_A97D::unknown5,X
+	STA a:battle_menu_selection::selected_target,X
 	REP #PROC_FLAGS::ACCUM8
 	LDA #$0001
 	STA @VIRTUAL02

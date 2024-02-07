@@ -88,7 +88,7 @@ UNKNOWN_C03903:
 	BCC @UNKNOWN4
 	CPY #0
 	BNE @UNKNOWN6
-	LDA #.LOWORD(CHAR_STRUCT)+char_struct::position_index
+	LDA #.LOWORD(PARTY_CHARACTERS)+char_struct::position_index
 	STA @VIRTUAL04
 	LDA GAME_STATE+game_state::player_controlled_party_members
 	AND #$00FF

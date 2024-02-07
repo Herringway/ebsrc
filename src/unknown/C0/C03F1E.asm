@@ -17,7 +17,7 @@ UNKNOWN_C03F1E:
 	STA a:player_position_buffer_entry::walking_style,X
 	LDA GAME_STATE+game_state::trodden_tile_type
 	STA a:player_position_buffer_entry::tile_flags,X
-	STZ MISC_DEBUG_FLAGS
+	STZ PLAYER_MOVEMENT_FLAGS
 	STZ a:player_position_buffer_entry::unknown10,X
 	TXA
 	CLC

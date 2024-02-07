@@ -26,7 +26,7 @@ UNKNOWN_C226F0:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA CHAR_STRUCT+char_struct::afflictions,X
+	LDA PARTY_CHARACTERS+char_struct::afflictions,X
 	AND #$00FF
 	CMP #1
 	BEQ @UNKNOWN2

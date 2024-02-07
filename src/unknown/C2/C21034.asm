@@ -27,7 +27,7 @@ UNKNOWN_C21034:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT)
+	ADC #.LOWORD(PARTY_CHARACTERS)
 	TAX
 	LDA a:char_struct::current_hp_fraction,X
 	BNE @UNKNOWN1

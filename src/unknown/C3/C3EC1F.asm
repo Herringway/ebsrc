@@ -19,7 +19,7 @@ UNKNOWN_C3EC1F:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA CHAR_STRUCT+char_struct::max_hp,X
+	LDA PARTY_CHARACTERS+char_struct::max_hp,X
 	STORE_INT1632 @VIRTUAL06
 	JSL MULT32
 	MOVE_INT_CONSTANT 100, @VIRTUAL0A
@@ -32,13 +32,13 @@ UNKNOWN_C3EC1F:
 	JSL MULT168
 	TAY
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT) + char_struct::current_hp_target
+	ADC #.LOWORD(PARTY_CHARACTERS) + char_struct::current_hp_target
 	TAX
 	LDA __BSS_START__,X
 	SEC
 	SBC @VIRTUAL02
 	STA __BSS_START__,X
-	CMP CHAR_STRUCT+char_struct::max_hp,Y
+	CMP PARTY_CHARACTERS+char_struct::max_hp,Y
 	BLTEQ @UNKNOWN1
 	LDA #0
 	STA __BSS_START__,X

@@ -8,8 +8,8 @@ RECALC_CHARACTER_POSTMATH_VITALITY:
 	JSL MULT168
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	LDA CHAR_STRUCT+char_struct::base_vitality,X
+	LDA PARTY_CHARACTERS+char_struct::base_vitality,X
 	CLC
-	ADC CHAR_STRUCT+char_struct::boosted_vitality,X
-	STA CHAR_STRUCT+char_struct::vitality,X
+	ADC PARTY_CHARACTERS+char_struct::boosted_vitality,X
+	STA PARTY_CHARACTERS+char_struct::vitality,X
 	END_C_FUNCTION

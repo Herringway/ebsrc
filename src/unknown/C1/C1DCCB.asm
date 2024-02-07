@@ -29,17 +29,17 @@ UNKNOWN_C1DCCB:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAY
-	LDA CHAR_STRUCT+char_struct::current_hp_target,Y
-	STA CHAR_STRUCT+char_struct::current_hp,Y
-	LDA CHAR_STRUCT+char_struct::current_pp_target,Y
-	STA CHAR_STRUCT+char_struct::current_pp,Y
+	LDA PARTY_CHARACTERS+char_struct::current_hp_target,Y
+	STA PARTY_CHARACTERS+char_struct::current_hp,Y
+	LDA PARTY_CHARACTERS+char_struct::current_pp_target,Y
+	STA PARTY_CHARACTERS+char_struct::current_pp,Y
 	SEP #PROC_FLAGS::ACCUM8
 	STZ_BADOPT @LOCAL00
 	LDX #7
 	REP #PROC_FLAGS::ACCUM8
 	TYA
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT) + char_struct::afflictions
+	ADC #.LOWORD(PARTY_CHARACTERS) + char_struct::afflictions
 	JSL MEMSET16
 	INC @VIRTUAL02
 @UNKNOWN1:

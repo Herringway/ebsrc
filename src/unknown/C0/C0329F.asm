@@ -13,7 +13,7 @@ UNKNOWN_C0329F:
 	JSL MULT168
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	STZ CHAR_STRUCT + char_struct::afflictions,X
+	STZ PARTY_CHARACTERS + char_struct::afflictions,X
 	REP #PROC_FLAGS::ACCUM8
 	LDA #1
 	STA @LOCAL00
@@ -25,7 +25,7 @@ UNKNOWN_C0329F:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	CLC
-	ADC #.LOWORD(CHAR_STRUCT) + char_struct::afflictions
+	ADC #.LOWORD(PARTY_CHARACTERS) + char_struct::afflictions
 	CLC
 	ADC @VIRTUAL02
 	TAX
