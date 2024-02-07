@@ -33,21 +33,33 @@ endif
 
 
 JPSRCS = $(wildcard $(JPSRCDIR)/*.asm)
+JPOBJS = $(patsubst %.asm, %.o, $(JPSRCS))
 USSRCS = $(wildcard $(USSRCDIR)/*.asm)
+USOBJS = $(patsubst %.asm, %.o, $(USSRCS))
 USPROTOSRCS = $(wildcard $(USPROTOSRCDIR)/*.asm)
+USPROTOOBJS = $(patsubst %.asm, %.o, $(USPROTOSRCS))
 
 %.dep: %.asm
 	ca65 $(CA65FLAGS) --listing "$(patsubst %.dep,%.lst,$@)"  --create-dep "$@" "$<"
 
 
-mother2.sfc: $(patsubst %.asm, %.o, $(JPSRCS))
-	ld65 $(LD65FLAGS) --mapfile "mother2.map" -o "$@" $^
+mother2.sfc: $(JPOBJS)
+	ld65 $(LD65FLAGS) --mapfile "$(patsubst %.sfc,%.map,$@)" -o "$@" $^
 
-earthbound.sfc: $(patsubst %.asm, %.o, $(USSRCS))
-	ld65 $(LD65FLAGS) --mapfile "earthbound.map" -o "$@" $^
+earthbound.sfc: $(USOBJS)
+	ld65 $(LD65FLAGS) --mapfile "$(patsubst %.sfc,%.map,$@)" -o "$@" $^
 
-earthbound-1995-03-27.sfc: $(patsubst %.asm, %.o, $(USPROTOSRCS))
-	ld65 $(LD65FLAGS) --mapfile "earthbound-1995-03-27.map" -o "$@" $^
+earthbound-1995-03-27.sfc: $(USPROTOOBJS)
+	ld65 $(LD65FLAGS) --mapfile "$(patsubst %.sfc,%.map,$@)" -o "$@" $^
+
+mother2.dbg: $(JPOBJS)
+	ld65 $(LD65FLAGS) --dbgfile "$@" $^
+
+earthbound.dbg: $(USOBJS)
+	ld65 $(LD65FLAGS) --dbgfile "$@" $^
+
+earthbound-1995-03-27.dbg: $(USPROTOOBJS)
+	ld65 $(LD65FLAGS) --dbgfile "$@" $^
 
 # ca65 requires all bin files to be present for generating .dep files, so make sure they're present first
 depsjp: src/spc700/main.spc700.bin $(JPSRCS:.asm=.dep)
