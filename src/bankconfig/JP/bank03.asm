@@ -2144,6 +2144,6 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/unused_for_sale_sign_sprite_table.asm"
 
-.INCLUDE "unknown/C3/C3FDC5.asm"
+.INCLUDE "system/antipiracy/final_battle_antipiracy_check.asm"
 
 .INCLUDE "data/antipiracy_checksum_2.asm"
