@@ -10,7 +10,8 @@ all: earthbound
 CA65FLAGS = -t none --cpu 65816 --bin-include-dir src --include-dir src --include-dir include
 LD65FLAGS = -C snes.cfg
 
-.PHONY: earthbound proto19950327 mother2 depsjp depsusa depsusaproto extract extractproto extractjp
+.PHONY: all earthbound proto19950327 mother2 depsjp depsusa depsusaproto extract extractproto extractjp \
+        clean cleanjp cleanusa cleanusaproto cleancommon distclean distcleanjp distcleanusa distcleanusaproto
 
 JPSRCDIR = src/bankconfig/JP
 USSRCDIR = src/bankconfig/US
@@ -26,7 +27,8 @@ include $(wildcard $(JPSRCDIR)/*.dep)
 else ifeq ($(MAKECMDGOALS),proto19950327)
 CA65FLAGS += -D USA -D PROTOTYPE19950327
 include $(wildcard $(USPROTOSRCDIR)/*.dep)
-else
+else ifneq ($(if $(MAKECMDGOALS),$(filter all earthbound,$(MAKECMDGOALS)),itsthedefaulttarget),)
+# This will trigger if there is no specified make target (= build the default), or if the target is all/earthbound
 CA65FLAGS += -D USA
 include $(wildcard $(USSRCDIR)/*.dep)
 endif
@@ -83,3 +85,29 @@ extractjp:
 
 %.bin: %.uncompressed
 	inhal -n $< $@
+
+clean: cleanjp cleanusa cleanusaproto
+
+cleanjp: cleancommon
+	$(RM) $(JPSRCDIR)/*.o $(JPSRCDIR)/*.lst mother2.sfc mother2.dbg mother2.sfc.map
+
+cleanusa: cleancommon
+	$(RM) $(USSRCDIR)/*.o $(USSRCDIR)/*.lst earthbound.sfc earthbound.dbg earthbound.sfc.map
+
+cleanusaproto: cleancommon
+	$(RM) $(USPROTOSRCDIR)/*.o $(USPROTOSRCDIR)/*.lst earthbound-1995-03-27.sfc \
+        earthbound-1995-03-27.dbg earthbound-1995-03-27.sfc.map
+
+cleancommon:
+	$(RM) src/spc700/main.spc700.bin
+
+distclean: distcleanjp distcleanusa distcleanusaproto
+
+distcleanjp: cleanjp
+	$(RM) $(JPSRCDIR)/*.dep
+
+distcleanusa: cleanusa
+	$(RM) $(USSRCDIR)/*.dep
+
+distcleanusaproto: cleanusaproto
+	$(RM) $(USPROTOSRCDIR)/*.dep
