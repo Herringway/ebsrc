@@ -26,7 +26,10 @@ include $(wildcard $(JPSRCDIR)/*.dep)
 else ifeq ($(MAKECMDGOALS),proto19950327)
 CA65FLAGS += -D USA -D PROTOTYPE19950327
 include $(wildcard $(USPROTOSRCDIR)/*.dep)
-else
+else ifneq ($(if $(MAKECMDGOALS),$(filter all earthbound,$(MAKECMDGOALS)),itsthedefaulttarget),)
+# The above ifneq condition will trigger if either
+# - MAKECMDGOALS is empty (there is no specified make target, so build the default target), or
+# - the target is all/earthbound
 CA65FLAGS += -D USA
 include $(wildcard $(USSRCDIR)/*.dep)
 endif
