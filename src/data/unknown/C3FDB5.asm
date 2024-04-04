@@ -1,5 +1,5 @@
 
-; Used as Y param for UNKNOWN_C4E583 and A param for UNKNOWN_C4EA9C
+; Used as Y param for RENDER_CAST_NAME_TEXT and A param for PREPARE_CAST_NAME_TILEMAP
 ; A buffer offset of some sort?
 UNKNOWN_C3FDB5:
 	.WORD $0180

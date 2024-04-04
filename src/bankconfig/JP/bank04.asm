@@ -645,17 +645,17 @@
 
 .INCLUDE "unknown/C4/C48B2C.asm"
 
-.INCLUDE "unknown/C4/C48B3B.asm"
+.INCLUDE "overworld/actionscript/make_party_look_at_active_entity.asm"
 
-.INCLUDE "unknown/C4/C48BDA.asm"
+.INCLUDE "overworld/actionscript/animated_background_callback.asm"
 
-.INCLUDE "unknown/C4/C48BE1.asm"
+.INCLUDE "overworld/actionscript/simple_screen_position_callback.asm"
 
-.INCLUDE "unknown/C4/C48C02.asm"
+.INCLUDE "overworld/actionscript/simple_screen_position_callback_offset.asm"
 
-.INCLUDE "unknown/C4/C48C2B.asm"
+.INCLUDE "overworld/actionscript/centre_screen_on_entity_callback.asm"
 
-.INCLUDE "unknown/C4/C48C3E.asm"
+.INCLUDE "overworld/actionscript/centre_screen_on_entity_callback_offset.asm"
 
 .INCLUDE "data/unknown/C48C59.asm"
 
@@ -681,9 +681,9 @@
 
 .INCLUDE "overworld/get_distance_to_magic_truffle.asm"
 
-.INCLUDE "unknown/C4/C491EE.asm"
+.INCLUDE "system/get_colour_fade_slope.asm"
 
-.INCLUDE "unknown/C4/C49208.asm"
+.INCLUDE "overworld/initialize_map_palette_fade.asm"
 
 .INCLUDE "unknown/C4/C492D2.asm"
 
@@ -937,47 +937,47 @@
 
 .INCLUDE "overworld/test_your_sanctuary_display.asm"
 
-.INCLUDE "unknown/C4/C4E369-jp.asm"
+.INCLUDE "ending/load_cast_scene-jp.asm"
 
 .INCLUDE "unknown/C4/C4B721-jp.asm"
 
-.INCLUDE "unknown/C4/C4E369_.asm"
+.INCLUDE "unknown/C4/C4B8E2-jp.asm"
 
-.INCLUDE "unknown/C4/C4E4DA.asm"
+.INCLUDE "ending/set_cast_scroll_threshold.asm"
 
-.INCLUDE "unknown/C4/C4E4F9.asm"
+.INCLUDE "ending/check_cast_scroll_threshold.asm"
 
-.INCLUDE "unknown/C4/C4E51E.asm"
+.INCLUDE "ending/handle_cast_scrolling.asm"
 
-.INCLUDE "unknown/C4/C4EA9C-jp.asm"
+.INCLUDE "ending/prepare_cast_name_tilemap-jp.asm"
 
-.INCLUDE "unknown/C4/C4EB04-jp.asm"
+.INCLUDE "ending/copy_cast_name_tilemap-jp.asm"
 
-.INCLUDE "unknown/C4/C4EBAD-jp.asm"
+.INCLUDE "ending/print_cast_name-jp.asm"
 
-.INCLUDE "unknown/C4/C4EC05.asm"
+.INCLUDE "ending/print_cast_name_party.asm"
 
-.INCLUDE "unknown/C4/C4EC52.asm"
+.INCLUDE "ending/print_cast_name_entity_var0.asm"
 
-.INCLUDE "unknown/C4/C4EC6E.asm"
+.INCLUDE "ending/upload_special_cast_palette.asm"
 
-.INCLUDE "unknown/C4/C4ECAD.asm"
+.INCLUDE "ending/create_entity_at_v01_plus_bg3y.asm"
 
-.INCLUDE "unknown/C4/C4ECE7.asm"
+.INCLUDE "ending/is_entity_still_on_cast_screen.asm"
 
-.INCLUDE "unknown/C4/C4ED0E.asm"
+.INCLUDE "ending/play_cast_scene.asm"
 
-.INCLUDE "unknown/C4/C4EFC4.asm"
+.INCLUDE "ending/enqueue_credits_dma.asm"
 
-.INCLUDE "unknown/C4/C4F01D.asm"
+.INCLUDE "ending/process_credits_dma_queue.asm"
 
-.INCLUDE "unknown/C4/C4F07D.asm"
+.INCLUDE "ending/initialize_credits_scene.asm"
 
-.INCLUDE "unknown/C4/C4F264.asm"
+.INCLUDE "ending/try_rendering_photograph.asm"
 
 .INCLUDE "ending/count_photo_flags.asm"
 
-.INCLUDE "unknown/C4/C4F46F.asm"
+.INCLUDE "ending/slide_credits_photograph.asm"
 
 .INCLUDE "ending/play_credits.asm"
 
@@ -1015,14 +1015,14 @@
 
 .INCLUDE "data/music/pack_pointer_table.asm"
 
-.INCLUDE "unknown/C4/C4FB42.asm"
+.INCLUDE "audio/get_audio_bank.asm"
 
-.INCLUDE "audio/initialize_spc700.asm"
+.INCLUDE "audio/initialize_music_subsystem.asm"
 
 .INCLUDE "audio/change_music.asm"
 
-.INCLUDE "unknown/C4/C4FD18.asm"
+.INCLUDE "audio/set_num_channels.asm"
 
-.INCLUDE "overworld/set_boundary_behavior.asm"
+.INCLUDE "overworld/set_auto_sector_music_changes.asm"
 
 .INCLUDE "data/events/scripts/000.asm"

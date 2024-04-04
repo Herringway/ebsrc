@@ -30,21 +30,21 @@
 
 .INCLUDE "system/animate_palette.asm"
 
-.INCLUDE "unknown/C0/C0035B.asm"
+.INCLUDE "unused/C0035B.asm"
 
 .INCLUDE "system/get_colour_average.asm"
 
-.INCLUDE "unknown/C0/C00434.asm"
+.INCLUDE "overworld/adjust_single_colour.asm"
 
-.INCLUDE "unknown/C0/C00480.asm"
+.INCLUDE "overworld/adjust_sprite_palettes_by_average.asm"
 
-.INCLUDE "unknown/C0/C005E7.asm"
+.INCLUDE "overworld/prepare_average_for_sprite_palettes.asm"
 
 .INCLUDE "overworld/load_tile_collision.asm"
 
-.INCLUDE "unknown/C0/C0067E.asm"
+.INCLUDE "overworld/replace_block.asm"
 
-.INCLUDE "unknown/C0/C006F2.asm"
+.INCLUDE "overworld/load_map_block_event_changes.asm"
 
 .INCLUDE "overworld/load_special_sprite_palette.asm"
 
@@ -54,9 +54,9 @@
 
 .INCLUDE "overworld/load_sector_attributes.asm"
 
-.INCLUDE "unknown/C0/C00AC5.asm"
+.INCLUDE "overworld/load_map_row.asm"
 
-.INCLUDE "unknown/C0/C00BDC.asm"
+.INCLUDE "overworld/load_map_column.asm"
 
 .INCLUDE "overworld/load_collision_row.asm"
 
@@ -1304,9 +1304,9 @@
 
 .INCLUDE "intro/gas_station.asm"
 
-.INCLUDE "unknown/C0/C0F3B2.asm"
+.INCLUDE "intro/load_gas_station_flash_palette.asm"
 
-.INCLUDE "unknown/C0/C0F3E8.asm"
+.INCLUDE "intro/load_gas_station_palette.asm"
 
 .INCLUDE "data/sram_signature.asm"
 
@@ -1342,7 +1342,7 @@
 
 .INCLUDE "unknown/EF/EF0C3D.asm"
 
-.INCLUDE "unknown/C0/C0F41E-proto.asm"
+.INCLUDE "ending/credits_scroll_frame-proto.asm"
 
 .SEGMENT "HEADER"
 snes_header:
