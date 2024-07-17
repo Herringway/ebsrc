@@ -1,16 +1,3 @@
-*.o
-*.sfc
 bin
-*.dep
-*.bak
-*.sym
-*.ips
-*.srm
-*.cht
-*.png
-*.bso.txt
-*.dbg
-*.map
 *.cmd
-*.spc700.bin
-*.lst
+build/
