@@ -1,0 +1,14 @@
+
+DEBUG_CURSOR_SPRITEMAP:
+	.WORD .LOWORD(@UNKNOWN0)
+@UNKNOWN0:
+	.BYTE $F4, $00, $30, $F4, $00
+	.BYTE $F4, $01, $30, $FC, $00
+	.BYTE $F4, $02, $30, $04, $00
+	.BYTE $FC, $03, $30, $F4, $00
+	.BYTE $FC, $04, $30, $FC, $00
+	.BYTE $FC, $05, $30, $04, $00
+	.BYTE $04, $06, $30, $F4, $00
+	.BYTE $04, $07, $30, $FC, $00
+	.BYTE $04, $08, $30, $04, $80
+	.BYTE $00

@@ -2140,7 +2140,9 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/unknown/C3F8F1.asm"
 
-.INCLUDE "data/unknown/C3F951.asm"
+.INCLUDE "data/enemy_psi_colours.asm"
+
+.INCLUDE "data/misc_swirl_colours.asm"
 
 .INCLUDE "unknown/C3/C3F981.asm"
 
@@ -2148,23 +2150,21 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "unknown/C3/C3FB09.asm"
 
-.INCLUDE "data/unknown/C3FB1F.asm"
+.INCLUDE "data/hp_meter_speeds.asm"
 
 .INCLUDE "data/text/name_registry_request_string.asm"
 
-.INCLUDE "data/unknown/C3FB45.asm"
+.INCLUDE "data/text/consonant_vowel_transliteration_pairs.asm"
 
-.INCLUDE "data/unknown/C3FC49.asm"
-
-.INCLUDE "data/unknown/C3FD2D.asm"
+.INCLUDE "data/naming_screen_entities.asm"
 
 .INCLUDE "data/file_select_summary_party_sprite_config.asm"
 
 .INCLUDE "data/attract_mode_text_pointers.asm"
 
-.INCLUDE "data/unknown/C3FDB5.asm"
+.INCLUDE "data/text/party_member_cast_tile_ids.asm"
 
-.INCLUDE "data/unused_for_sale_sign_sprite_table.asm"
+.INCLUDE "data/for_sale_sign_sprite_table.asm"
 
 .INCLUDE "system/antipiracy/final_battle_antipiracy_check.asm"
 

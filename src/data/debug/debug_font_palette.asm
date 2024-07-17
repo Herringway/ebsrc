@@ -1,0 +1,17 @@
+
+DEBUG_FONT_PALETTE:
+	RGB 0, 0, 0
+	RGB 0, 31, 31
+	RGB 31, 31, 6
+	RGB 31, 6, 6
+
+	RGB 0, 0, 0
+	RGB 26, 0, 26
+	RGB 11, 11, 31
+	RGB 6, 31, 6
+
+	RGB 0, 0, 0
+	RGB 0, 0, 26
+	RGB 31, 16, 0
+	RGB 31, 21, 21
+

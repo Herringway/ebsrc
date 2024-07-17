@@ -157,7 +157,7 @@
 
 .INCLUDE "unknown/EF/EFE175.asm"
 
-.INCLUDE "system/debug/load_kirby_sprite.asm"
+.INCLUDE "system/debug/load_debug_cursor_graphics.asm"
 
 .INCLUDE "system/debug/handle_cursor_movement.asm"
 
@@ -200,14 +200,14 @@
 .INCLUDE "data/unknown/EFEB3D.asm"
 
 DEBUG_MENU_FONT:
-	BINARY "fonts/debug.gfx"
+	LOCALEBINARY "fonts/debug.gfx"
 
 .INCLUDE "data/unknown/EFEF70.asm"
 
-.INCLUDE "data/unknown/EFEF9F.asm"
+.INCLUDE "data/debug/debug_font_palette.asm"
 
-KIRBY:
-	BINARY "kirby.gfx"
+DEBUG_CURSOR_GRAPHICS:
+	LOCALEBINARY "debug_cursor.gfx"
 
 .INCLUDE "data/unknown/EFF0D7.asm"
 
@@ -215,10 +215,10 @@ KIRBY:
 
 .INCLUDE "data/unknown_version_string.asm"
 
-.INCLUDE "data/unknown/EFF3DB.asm"
+.INCLUDE "data/unused/EFF3DB.asm"
 
-.INCLUDE "data/unknown/EFF511.asm"
+.INCLUDE "data/unused/EFF511.asm"
 
-.INCLUDE "data/unknown/EFF53B.asm"
+.INCLUDE "data/unused/EFF53B.asm"
 
-.INCLUDE "data/unknown/EFF5BB.asm"
+.INCLUDE "data/debug/debug_cursor_spritemap.asm"

@@ -12571,7 +12571,7 @@ dumpEntries:
   extension: gfx
   compressed: false
 - subdir: ''
-  name: kirby
+  name: debug_cursor
   offset: 0x2FCFA8
   size: 288
   extension: gfx
