@@ -1921,6 +1921,12 @@ dumpEntries:
   extension: ebtxt
   compressed: false
 - subdir: text_data
+  name: 'KEYBOARD'
+  offset: 0x2FA460
+  size: 627
+  extension: ebtxt
+  compressed: false
+- subdir: text_data
   name: 'UNKNOWN_EFA2FA'
   offset: 0x2FA2FA
   size: 128
@@ -12558,42 +12564,6 @@ dumpEntries:
   size: 128
   extension: gfx
   compressed: false
-- subdir: name_input_layouts
-  name: '0'
-  offset: 0x2FA460
-  size: 131
-  extension: bin
-  compressed: false
-- subdir: name_input_layouts
-  name: '1'
-  offset: 0x2FA4E3
-  size: 131
-  extension: bin
-  compressed: false
-- subdir: name_input_layouts
-  name: '2'
-  offset: 0x2FA566
-  size: 131
-  extension: bin
-  compressed: false
-- subdir: name_input_layouts
-  name: '3'
-  offset: 0x2FA5E9
-  size: 131
-  extension: bin
-  compressed: false
-- subdir: name_input_layouts
-  name: '4'
-  offset: 0x2FA66C
-  size: 59
-  extension: bin
-  compressed: false
-- subdir: name_input_layouts
-  name: '5'
-  offset: 0x2FA6A7
-  size: 44
-  extension: bin
-  compressed: false
 - subdir: fonts
   name: debug
   offset: 0x2FEB5F
@@ -19804,6 +19774,13 @@ renameLabels:
     0x18F6: TEXT_DOOR_022
   UNKNOWN_EFA2FA:
     0x0: TEXT_UNKNOWN_UNKNOWN_EFA2FA_000000
+  KEYBOARD:
+    0x0: NAME_INPUT_WINDOW_SELECTION_LAYOUT_0
+    0x83: NAME_INPUT_WINDOW_SELECTION_LAYOUT_1
+    0x106: NAME_INPUT_WINDOW_SELECTION_LAYOUT_2
+    0x189: NAME_INPUT_WINDOW_SELECTION_LAYOUT_3
+    0x20C: NAME_INPUT_WINDOW_SELECTION_LAYOUT_4
+    0x247: NAME_INPUT_WINDOW_SELECTION_LAYOUT_5
 compressedTextStrings:
 - '                '
 - ' in the '

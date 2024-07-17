@@ -199,23 +199,7 @@
 
 .INCLUDE "data/status_window_text.asm"
 
-NAME_INPUT_WINDOW_SELECTION_LAYOUT_0:
-	BINARY "name_input_layouts/0.bin"
-
-NAME_INPUT_WINDOW_SELECTION_LAYOUT_1:
-	BINARY "name_input_layouts/1.bin"
-
-NAME_INPUT_WINDOW_SELECTION_LAYOUT_2:
-	BINARY "name_input_layouts/2.bin"
-
-NAME_INPUT_WINDOW_SELECTION_LAYOUT_3:
-	BINARY "name_input_layouts/3.bin"
-
-NAME_INPUT_WINDOW_SELECTION_LAYOUT_4:
-	BINARY "name_input_layouts/4.bin"
-
-NAME_INPUT_WINDOW_SELECTION_LAYOUT_5:
-	BINARY "name_input_layouts/5.bin"
+.INCLUDE "bin/US/text_data/KEYBOARD.ebtxt"
 
 .INCLUDE "data/name_input_window_selection_layout_pointers.asm"
 

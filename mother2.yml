@@ -342,6 +342,12 @@ dumpEntries:
   size: 37
   extension: ebtxt
   compressed: false
+- subdir: text_data
+  name: 'KEYBOARD'
+  offset: 0x09DDD8
+  size: 1164
+  extension: ebtxt
+  compressed: false
 - subdir: audiopacks
   name: '0'
   offset: 0x2277F0
@@ -12540,42 +12546,6 @@ dumpEntries:
   size: 128
   extension: gfx
   compressed: false
-- subdir: name_input_layouts
-  name: '0'
-  offset: 0x9DDD8
-  size: 219
-  extension: bin
-  compressed: false
-- subdir: name_input_layouts
-  name: '1'
-  offset: 0x9DEB3
-  size: 219
-  extension: bin
-  compressed: false
-- subdir: name_input_layouts
-  name: '2'
-  offset: 0x9DF8E
-  size: 189
-  extension: bin
-  compressed: false
-- subdir: name_input_layouts
-  name: '3'
-  offset: 0x9E04B
-  size: 195
-  extension: bin
-  compressed: false
-- subdir: name_input_layouts
-  name: '4'
-  offset: 0x9E10E
-  size: 195
-  extension: bin
-  compressed: false
-- subdir: name_input_layouts
-  name: '5'
-  offset: 0x9E1D1
-  size: 147
-  extension: bin
-  compressed: false
 - subdir: fonts
   name: debug
   offset: 0x2FD48A
@@ -19978,6 +19948,13 @@ renameLabels:
     0x16FE: TEXT_DOOR_367
     0x1702: TEXT_DOOR_711
     0x1706: TEXT_DOOR_022
+  KEYBOARD:
+    0x0: NAME_INPUT_WINDOW_SELECTION_LAYOUT_0
+    0xDB: NAME_INPUT_WINDOW_SELECTION_LAYOUT_1
+    0x1B6: NAME_INPUT_WINDOW_SELECTION_LAYOUT_2
+    0x273: NAME_INPUT_WINDOW_SELECTION_LAYOUT_3
+    0x336: NAME_INPUT_WINDOW_SELECTION_LAYOUT_4
+    0x3F9: NAME_INPUT_WINDOW_SELECTION_LAYOUT_5
 defaultDumpPath: src/bin/JP/
 romIdentifier: 'MOTHER-2             '
 dontUseTextTable: true

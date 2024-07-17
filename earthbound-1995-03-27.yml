@@ -1926,6 +1926,12 @@ dumpEntries:
   size: 128
   extension: ebtxt
   compressed: false
+- subdir: text_data
+  name: 'KEYBOARD'
+  offset: 0x2F8451
+  size: 627
+  extension: ebtxt
+  compressed: false
 - subdir: battle_bgs/graphics
   name: '63'
   offset: 0xA0000
@@ -12558,42 +12564,6 @@ dumpEntries:
   size: 128
   extension: gfx
   compressed: false
-- subdir: name_input_layouts
-  name: '0'
-  offset: 0x2F8451
-  size: 131
-  extension: bin
-  compressed: false
-- subdir: name_input_layouts
-  name: '1'
-  offset: 0x2F84D4
-  size: 131
-  extension: bin
-  compressed: false
-- subdir: name_input_layouts
-  name: '2'
-  offset: 0x2F8557
-  size: 131
-  extension: bin
-  compressed: false
-- subdir: name_input_layouts
-  name: '3'
-  offset: 0x2F85DA
-  size: 131
-  extension: bin
-  compressed: false
-- subdir: name_input_layouts
-  name: '4'
-  offset: 0x2F865D
-  size: 59
-  extension: bin
-  compressed: false
-- subdir: name_input_layouts
-  name: '5'
-  offset: 0x2F8698
-  size: 44
-  extension: bin
-  compressed: false
 - subdir: fonts
   name: debug
   offset: 0x2FCB50
@@ -19759,6 +19729,13 @@ renameLabels:
     0x18DE: TEXT_DOOR_022
   UNKNOWN_EFA2FA:
     0x0000: TEXT_UNKNOWN_UNKNOWN_EFA2FA_000000
+  KEYBOARD:
+    0x0: NAME_INPUT_WINDOW_SELECTION_LAYOUT_0
+    0x83: NAME_INPUT_WINDOW_SELECTION_LAYOUT_1
+    0x106: NAME_INPUT_WINDOW_SELECTION_LAYOUT_2
+    0x189: NAME_INPUT_WINDOW_SELECTION_LAYOUT_3
+    0x20C: NAME_INPUT_WINDOW_SELECTION_LAYOUT_4
+    0x247: NAME_INPUT_WINDOW_SELECTION_LAYOUT_5
 compressedTextStrings:
 - ' in the '
 - '                '
