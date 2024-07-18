@@ -15,14 +15,14 @@
 .INCLUDE "symbols/text.inc.asm"
 
 SPRITE_GROUP_PALETTES:
-	BINARY "overworld_sprites/0.pal"
-	BINARY "overworld_sprites/1.pal"
-	BINARY "overworld_sprites/2.pal"
-	BINARY "overworld_sprites/3.pal"
-	BINARY "overworld_sprites/4.pal"
-	BINARY "overworld_sprites/5.pal"
-	BINARY "overworld_sprites/6.pal"
-	BINARY "overworld_sprites/7.pal"
+	BINARY "overworld_sprites/palettes/0.pal"
+	BINARY "overworld_sprites/palettes/1.pal"
+	BINARY "overworld_sprites/palettes/2.pal"
+	BINARY "overworld_sprites/palettes/3.pal"
+	BINARY "overworld_sprites/palettes/4.pal"
+	BINARY "overworld_sprites/palettes/5.pal"
+	BINARY "overworld_sprites/palettes/6.pal"
+	BINARY "overworld_sprites/palettes/7.pal"
 
 .INCLUDE "system/display_antipiracy_screen.asm"
 

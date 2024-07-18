@@ -18,28 +18,28 @@ TEA_SEQUENCE_TEXT:
 	.INCLUDE "bin/US19950327/flyovers.flyover"
 
 MAIN_FONT_DATA:
-	BINARY "fonts/main.bin"
+	LOCALEBINARY "fonts/main.bin"
 
 MAIN_FONT_GFX:
-	BINARY "fonts/main.gfx"
+	LOCALEBINARY "fonts/main.gfx"
 
 BATTLE_FONT_DATA:
-	BINARY "fonts/battle.bin"
+	LOCALEBINARY "fonts/battle.bin"
 
 BATTLE_FONT_GFX:
-	BINARY "fonts/battle.gfx"
+	LOCALEBINARY "fonts/battle.gfx"
 
 TINY_FONT_DATA:
-	BINARY "fonts/tiny.bin"
+	LOCALEBINARY "fonts/tiny.bin"
 
 TINY_FONT_GFX:
-	BINARY "fonts/tiny.gfx"
+	LOCALEBINARY "fonts/tiny.gfx"
 
 LARGE_FONT_DATA:
-	BINARY "fonts/large.bin"
+	LOCALEBINARY "fonts/large.bin"
 
 LARGE_FONT_GFX:
-	BINARY "fonts/large.gfx"
+	LOCALEBINARY "fonts/large.gfx"
 
 .INCLUDE "data/cast_sequence_formatting.asm"
 
@@ -71,19 +71,19 @@ HALKEN_PALETTE:
 	BINARY "intro/logos/halken.pal.lzhal"
 
 NINTENDO_ARRANGEMENT:
-	BINARY "intro/logos/nintendo.arr.lzhal"
+	LOCALEBINARY "intro/logos/nintendo.arr.lzhal"
 
 NINTENDO_GRAPHICS:
-	BINARY "intro/logos/nintendo.gfx.lzhal"
+	LOCALEBINARY "intro/logos/nintendo.gfx.lzhal"
 
 NINTENDO_PALETTE:
 	BINARY "intro/logos/nintendo.pal.lzhal"
 
 GAS_STATION_ARRANGEMENT:
-	BINARY "intro/gas_station.arr.lzhal"
+	LOCALEBINARY "intro/gas_station.arr.lzhal"
 
 GAS_STATION_GRAPHICS:
-	BINARY "intro/gas_station.gfx.lzhal"
+	LOCALEBINARY "intro/gas_station.gfx.lzhal"
 
 GAS_STATION_PALETTE:
 	BINARY "intro/gas_station.pal.lzhal"
@@ -107,25 +107,25 @@ NINTENDO_ITOI_PALETTE:
 	BINARY "intro/attract/nintendo_itoi.pal.lzhal"
 
 UNKNOWN_E1AE7C:
-	BINARY "E1AE7C.bin.lzhal"
+	LOCALEBINARY "E1AE7C.bin.lzhal"
 
 UNKNOWN_E1AE83:
-	BINARY "E1AE83.bin.lzhal"
+	LOCALEBINARY "E1AE83.bin.lzhal"
 
 UNKNOWN_E1AEFD:
-	BINARY "E1AEFD.bin.lzhal"
+	LOCALEBINARY "E1AEFD.bin.lzhal"
 
 TITLE_SCREEN_ARRANGEMENT:
-	BINARY "intro/title_screen.arr.lzhal"
+	LOCALEBINARY "intro/title_screen.arr.lzhal"
 
 TITLE_SCREEN_GRAPHICS:
-	BINARY "intro/title_screen.gfx.lzhal"
+	LOCALEBINARY "intro/title_screen.gfx.lzhal"
 
 UNKNOWN_E1C6E5:
-	BINARY "intro/title_screen_letters.gfx.lzhal"
+	LOCALEBINARY "intro/title_screen_letters.gfx.lzhal"
 
 TITLE_SCREEN_PALETTE:
-	BINARY "intro/title_screen.pal.lzhal"
+	LOCALEBINARY "intro/title_screen.pal.lzhal"
 
 .INCLUDE "data/unknown/E1CE08.asm"
 
@@ -139,18 +139,18 @@ UNKNOWN_E1D5E8:
 	BINARY "E1D5E8.arr.lzhal"
 
 UNKNOWN_E1D6E1:
-	BINARY "E1D6E1.gfx.lzhal"
+	LOCALEBINARY "E1D6E1.gfx.lzhal"
 
 UNKNOWN_E1D815:
-	BINARY "ending/cast_names.bin"
+	LOCALEBINARY "ending/cast_names.bin"
 
 CAST_NAMES_GFX:
-	BINARY "ending/cast_names.gfx.lzhal"
+	LOCALEBINARY "ending/cast_names.gfx.lzhal"
 
 .INCLUDE "data/unknown/E1E4E6.asm"
 
 STAFF_CREDITS_FONT_GRAPHICS:
-	BINARY "ending/credits_font.gfx.lzhal"
+	LOCALEBINARY "ending/credits_font.gfx.lzhal"
 
 STAFF_CREDITS_FONT_PALETTE:
 	BINARY "ending/credits_font.pal"
@@ -160,7 +160,7 @@ STAFF_CREDITS_FONT_PALETTE:
 .INCLUDE "data/unknown/E1E94A.asm"
 
 TOWN_MAP_LABEL_GFX:
-	BINARY "town_maps/label.gfx.lzhal"
+	LOCALEBINARY "town_maps/label.gfx.lzhal"
 
 TOWN_MAP_ICON_PALETTE:
 	BINARY "town_maps/icon.pal"

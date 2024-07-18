@@ -19,7 +19,7 @@ ANIMATIONDATA_ZOMBIES:
 	BINARY "graphics/animations/zombies.anim.lzhal"
 
 ANIMATIONDATA_THE_END:
-	BINARY "graphics/animations/the_end.anim.lzhal"
+	LOCALEBINARY "graphics/animations/the_end.anim.lzhal"
 
 .INCLUDE "data/animation_sequence_pointers.asm"
 

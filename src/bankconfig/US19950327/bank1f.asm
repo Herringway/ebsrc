@@ -4,13 +4,13 @@
 .INCLUDE "symbols/map.inc.asm"
 
 MAP_DATA_TILE_SET_GRAPHICS_12:
-	BINARY "maps/gfx/12.gfx.lzhal"
+	LOCALEBINARY "maps/gfx/12.gfx.lzhal"
 
 MAP_DATA_TILE_SET_GRAPHICS_16:
 	BINARY "maps/gfx/16.gfx.lzhal"
 
 MAP_DATA_TILE_SET_GRAPHICS_17:
-	BINARY "maps/gfx/17.gfx.lzhal"
+	LOCALEBINARY "maps/gfx/17.gfx.lzhal"
 
 MAP_DATA_TILE_SET_GRAPHICS_18:
 	BINARY "maps/gfx/18.gfx.lzhal"
@@ -19,7 +19,7 @@ MAP_DATA_TILE_SET_GRAPHICS_19:
 	BINARY "maps/gfx/19.gfx.lzhal"
 
 MAP_DATA_TILE_SET_GRAPHICS_15:
-	BINARY "maps/gfx/15.gfx.lzhal"
+	LOCALEBINARY "maps/gfx/15.gfx.lzhal"
 
 MAP_DATA_TILE_ANIMATION_GFX_0:
 	BINARY "maps/anim_gfx/0.gfx.lzhal"

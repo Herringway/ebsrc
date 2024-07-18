@@ -120,7 +120,7 @@ BATTLE_SPRITE_81:
 	BINARY "battle_sprites/81.gfx.lzhal"
 
 BATTLE_SPRITE_62:
-	BINARY "battle_sprites/62.gfx.lzhal"
+	LOCALEBINARY "battle_sprites/62.gfx.lzhal"
 
 BATTLE_SPRITE_93:
 	BINARY "battle_sprites/93.gfx.lzhal"
@@ -165,4 +165,4 @@ BATTLE_SPRITE_30:
 	BINARY "battle_sprites/30.gfx.lzhal"
 
 BATTLE_SPRITE_23:
-	BINARY "battle_sprites/23.gfx.lzhal"
+	LOCALEBINARY "battle_sprites/23.gfx.lzhal"

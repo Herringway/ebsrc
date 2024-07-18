@@ -15,7 +15,7 @@
 .INCLUDE "symbols/map.inc.asm"
 .INCLUDE "symbols/misc.inc.asm"
 .INCLUDE "symbols/text.inc.asm"
-.INCLUDE "bin/US/flyovers.symbols.asm"
+.INCLUDE "bin/JP/flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C40000.asm"
 

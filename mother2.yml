@@ -1,348 +1,348 @@
 ---
 dumpEntries:
-- subdir: text_data
+- subdir: JP/text_data
   name: EEVENT0
   offset: 0x50000
   size: 5950
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EEVENT1
   offset: 0x5173E
   size: 8546
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EEVENT2
   offset: 0x538A0
   size: 6981
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EEVENT3
   offset: 0x553E5
   size: 6736
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E18MGKT
   offset: 0x56E35
   size: 4032
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E17PAST
   offset: 0x57DF5
   size: 523
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E01ONET0
   offset: 0x58000
   size: 8188
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E01ONET1
   offset: 0x59FFC
   size: 8927
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E01ONET2
   offset: 0x5C2DB
   size: 8873
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E03HAPPY
   offset: 0x5E584
   size: 6345
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: ESHOP1
   offset: 0x60000
   size: 24256
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E05THRK
   offset: 0x65EC0
   size: 8512
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E02TWSN0
   offset: 0x68000
   size: 7746
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E02TWSN1
   offset: 0x69E42
   size: 6003
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E02TWSN2
   offset: 0x6B5B5
   size: 6994
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E09DSRT
   offset: 0x6D107
   size: 10879
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EBATTLE0
   offset: 0x70000
   size: 1478
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EBATTLE1
   offset: 0x705C6
   size: 1035
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EBATTLE2
   offset: 0x709D1
   size: 1303
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EBATTLE3
   offset: 0x70EE8
   size: 1295
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EGOODS0
   offset: 0x713F7
   size: 1056
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EGOODS1
   offset: 0x71817
   size: 1490
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EGOODS2
   offset: 0x71DE9
   size: 907
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EGOODS3
   offset: 0x72174
   size: 1718
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EGOODS4
   offset: 0x7282A
   size: 299
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EBATTLE4
   offset: 0x72955
   size: 1461
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EBATTLE5
   offset: 0x72F0A
   size: 1854
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EBATTLE6
   offset: 0x73648
   size: 1825
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EBATTLE7
   offset: 0x73D69
   size: 2309
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EBATTLE8
   offset: 0x7466E
   size: 1243
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EBATTLE9
   offset: 0x74B49
   size: 1407
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E06WINS
   offset: 0x750C8
   size: 9830
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E16DKFD
   offset: 0x7772E
   size: 2258
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: ESHOP2
   offset: 0x78000
   size: 17471
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EDEBUG
   offset: 0x7C43F
   size: 14290
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E10FOUR0
   offset: 0x80000
   size: 9305
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E10FOUR1
   offset: 0x82459
   size: 7977
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EEVENT4
   offset: 0x84382
   size: 7975
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EEVENT5
   offset: 0x862A9
   size: 5837
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E04GRFD
   offset: 0x87976
   size: 1674
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: ENEWS
   offset: 0x88000
   size: 7436
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EHINT
   offset: 0x89D0C
   size: 8896
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EEXPLPSI
   offset: 0x8BFCC
   size: 2261
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EEXPLGDS
   offset: 0x8C8A1
   size: 10060
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E13SKRB
   offset: 0x8EFED
   size: 3825
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EGLOBAL
   offset: 0x90000
   size: 9633
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: ESYSTEM
   offset: 0x925A1
   size: 7122
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E11SUMS
   offset: 0x94173
   size: 7032
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: EBGMESS
   offset: 0x95CEB
   size: 6857
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E07GPFT
   offset: 0x977B4
   size: 2124
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: UNKNOWN_C9992F
   offset: 0x98000
   size: 5895
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E08DOSEI
   offset: 0x99707
   size: 5144
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E19MOON
   offset: 0x9AB1F
   size: 3580
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E12RAMA
   offset: 0x9B91B
   size: 3414
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E15GUMI
   offset: 0x9C671
   size: 3236
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: E14MAKYO
   offset: 0x9D315
   size: 2587
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: UNKNOWN7
   offset: 0x9E27C
   size: 37
   extension: ebtxt
   compressed: false
-- subdir: text_data
+- subdir: JP/text_data
   name: 'KEYBOARD'
   offset: 0x09DDD8
   size: 1164
@@ -1488,25 +1488,25 @@ dumpEntries:
   size: 13800
   extension: arr
   compressed: true
-- subdir: maps/arrangements
+- subdir: JP/maps/arrangements
   name: '1'
   offset: 0x190000
   size: 13549
   extension: arr
   compressed: true
-- subdir: maps/arrangements
+- subdir: JP/maps/arrangements
   name: '2'
   offset: 0x1934ED
   size: 13242
   extension: arr
   compressed: true
-- subdir: maps/arrangements
+- subdir: JP/maps/arrangements
   name: '3'
   offset: 0x1968A7
   size: 9524
   extension: arr
   compressed: true
-- subdir: maps/arrangements
+- subdir: JP/maps/arrangements
   name: '4'
   offset: 0x198DDB
   size: 16502
@@ -1524,7 +1524,7 @@ dumpEntries:
   size: 15201
   extension: arr
   compressed: true
-- subdir: maps/arrangements
+- subdir: JP/maps/arrangements
   name: '7'
   offset: 0x1A4EA3
   size: 11787
@@ -1542,19 +1542,19 @@ dumpEntries:
   size: 15038
   extension: arr
   compressed: true
-- subdir: maps/arrangements
+- subdir: JP/maps/arrangements
   name: '10'
   offset: 0x1B920E
   size: 13492
   extension: arr
   compressed: true
-- subdir: maps/arrangements
+- subdir: JP/maps/arrangements
   name: '11'
   offset: 0x1BC6C2
   size: 11282
   extension: arr
   compressed: true
-- subdir: maps/arrangements
+- subdir: JP/maps/arrangements
   name: '12'
   offset: 0x1C0000
   size: 8135
@@ -1584,7 +1584,7 @@ dumpEntries:
   size: 6819
   extension: arr
   compressed: true
-- subdir: maps/arrangements
+- subdir: JP/maps/arrangements
   name: '17'
   offset: 0x1B7C22
   size: 5612
@@ -1608,31 +1608,31 @@ dumpEntries:
   size: 12948
   extension: gfx
   compressed: true
-- subdir: maps/gfx
+- subdir: JP/maps/gfx
   name: '1'
   offset: 0x1D3294
   size: 11395
   extension: gfx
   compressed: true
-- subdir: maps/gfx
+- subdir: JP/maps/gfx
   name: '2'
   offset: 0x1E747E
   size: 11345
   extension: gfx
   compressed: true
-- subdir: maps/gfx
+- subdir: JP/maps/gfx
   name: '3'
   offset: 0x1D89A2
   size: 11825
   extension: gfx
   compressed: true
-- subdir: maps/gfx
+- subdir: JP/maps/gfx
   name: '4'
   offset: 0x1DB7D3
   size: 10183
   extension: gfx
   compressed: true
-- subdir: maps/gfx
+- subdir: JP/maps/gfx
   name: '5'
   offset: 0x1DDF9A
   size: 8079
@@ -1662,19 +1662,19 @@ dumpEntries:
   size: 10891
   extension: gfx
   compressed: true
-- subdir: maps/gfx
+- subdir: JP/maps/gfx
   name: '10'
   offset: 0x1EA0CF
   size: 11576
   extension: gfx
   compressed: true
-- subdir: maps/gfx
+- subdir: JP/maps/gfx
   name: '11'
   offset: 0x1ECE07
   size: 8835
   extension: gfx
   compressed: true
-- subdir: maps/gfx
+- subdir: JP/maps/gfx
   name: '12'
   offset: 0x1F0000
   size: 10522
@@ -1692,7 +1692,7 @@ dumpEntries:
   size: 9748
   extension: gfx
   compressed: true
-- subdir: maps/gfx
+- subdir: JP/maps/gfx
   name: '15'
   offset: 0x1F9F1E
   size: 8944
@@ -1704,7 +1704,7 @@ dumpEntries:
   size: 10226
   extension: gfx
   compressed: true
-- subdir: maps/gfx
+- subdir: JP/maps/gfx
   name: '17'
   offset: 0x1F510C
   size: 6819
@@ -1726,193 +1726,193 @@ dumpEntries:
   name: '0'
   offset: 0x1A7CAE
   size: 768
-  extension: bin
+  extension: pal
   compressed: false
-- subdir: maps/palettes
+- subdir: JP/maps/palettes
   name: '1'
   offset: 0x1A7FAE
   size: 576
-  extension: bin
+  extension: pal
   compressed: false
-- subdir: maps/palettes
+- subdir: JP/maps/palettes
   name: '2'
   offset: 0x1A81EE
   size: 768
-  extension: bin
+  extension: pal
   compressed: false
-- subdir: maps/palettes
+- subdir: JP/maps/palettes
   name: '3'
   offset: 0x1A84EE
   size: 384
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: maps/palettes
   name: '4'
   offset: 0x1A866E
   size: 384
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: maps/palettes
   name: '5'
   offset: 0x1A87EE
   size: 768
-  extension: bin
+  extension: pal
   compressed: false
-- subdir: maps/palettes
+- subdir: JP/maps/palettes
   name: '6'
   offset: 0x1A8AEE
   size: 1344
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: maps/palettes
   name: '7'
   offset: 0x1A902E
   size: 192
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: maps/palettes
   name: '8'
   offset: 0x1A90EE
   size: 384
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: maps/palettes
   name: '9'
   offset: 0x1A926E
   size: 1152
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: maps/palettes
   name: '10'
   offset: 0x1A96EE
   size: 1536
-  extension: bin
+  extension: pal
   compressed: false
-- subdir: maps/palettes
+- subdir: JP/maps/palettes
   name: '11'
   offset: 0x1A9CEE
   size: 1536
-  extension: bin
+  extension: pal
   compressed: false
-- subdir: maps/palettes
+- subdir: JP/maps/palettes
   name: '12'
   offset: 0x1AA2EE
   size: 1536
-  extension: bin
+  extension: pal
   compressed: false
-- subdir: maps/palettes
+- subdir: JP/maps/palettes
   name: '13'
   offset: 0x1AA8EE
   size: 768
-  extension: bin
+  extension: pal
   compressed: false
-- subdir: maps/palettes
+- subdir: JP/maps/palettes
   name: '14'
   offset: 0x1AABEE
   size: 1536
-  extension: bin
+  extension: pal
   compressed: false
-- subdir: maps/palettes
+- subdir: JP/maps/palettes
   name: '15'
   offset: 0x1AB1EE
   size: 1536
-  extension: bin
+  extension: pal
   compressed: false
-- subdir: maps/palettes
+- subdir: JP/maps/palettes
   name: '16'
   offset: 0x1AB7EE
   size: 768
-  extension: bin
+  extension: pal
   compressed: false
-- subdir: maps/palettes
+- subdir: JP/maps/palettes
   name: '17'
   offset: 0x1ABAEE
   size: 1536
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: maps/palettes
   name: '18'
   offset: 0x1AC0EE
   size: 192
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: maps/palettes
   name: '19'
   offset: 0x1AC1AE
   size: 1344
-  extension: bin
+  extension: pal
   compressed: false
-- subdir: maps/palettes
+- subdir: JP/maps/palettes
   name: '20'
   offset: 0x1AC6EE
   size: 1536
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: maps/palettes
   name: '21'
   offset: 0x1ACCEE
   size: 960
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: maps/palettes
   name: '22'
   offset: 0x1AD0AE
   size: 960
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: maps/palettes
   name: '23'
   offset: 0x1AD46E
   size: 768
-  extension: bin
+  extension: pal
   compressed: false
-- subdir: maps/palettes
+- subdir: JP/maps/palettes
   name: '24'
   offset: 0x1AD76E
   size: 960
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: maps/palettes
   name: '25'
   offset: 0x1ADB2E
   size: 1536
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: maps/palettes
   name: '26'
   offset: 0x1AE12E
   size: 1152
-  extension: bin
+  extension: pal
   compressed: false
-- subdir: maps/palettes
+- subdir: JP/maps/palettes
   name: '27'
   offset: 0x1AE5AE
   size: 960
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: maps/palettes
   name: '28'
   offset: 0x1AE96E
   size: 1152
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: maps/palettes
   name: '29'
   offset: 0x1AEDEE
   size: 1152
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: maps/palettes
   name: '30'
   offset: 0x1AF26E
   size: 576
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: maps/palettes
   name: '31'
   offset: 0x1AF4AE
   size: 1536
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: battle_bgs/arrangements
   name: '0'
@@ -4296,7 +4296,7 @@ dumpEntries:
   size: 879
   extension: gfx
   compressed: true
-- subdir: battle_sprites
+- subdir: JP/battle_sprites
   name: '62'
   offset: 0xDCCCF
   size: 853
@@ -4386,7 +4386,7 @@ dumpEntries:
   size: 781
   extension: gfx
   compressed: true
-- subdir: battle_sprites
+- subdir: JP/battle_sprites
   name: '23'
   offset: 0xDFC73
   size: 779
@@ -5670,6877 +5670,6877 @@ dumpEntries:
   size: 11
   extension: swirl
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0000'
   offset: 0x110000
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0001'
   offset: 0x110300
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0002'
   offset: 0x110600
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0003'
   offset: 0x110900
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0004'
   offset: 0x110C00
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0005'
   offset: 0x110F00
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0006'
   offset: 0x111200
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0007'
   offset: 0x111500
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0008
   offset: 0x111800
   size: 1536
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0009
   offset: 0x111E00
   size: 1536
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0010'
   offset: 0x112400
   size: 1536
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0011'
   offset: 0x112A00
   size: 1536
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0012'
   offset: 0x113000
   size: 1536
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0013'
   offset: 0x113600
   size: 1536
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0014'
   offset: 0x113C00
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0015'
   offset: 0x113F00
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0016'
   offset: 0x114200
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0017'
   offset: 0x114500
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0018
   offset: 0x114800
   size: 2560
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0019
   offset: 0x115200
   size: 2048
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0020'
   offset: 0x115A00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0021'
   offset: 0x115C00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0022'
   offset: 0x115E00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0023'
   offset: 0x116000
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0024'
   offset: 0x116200
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0025'
   offset: 0x116400
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0026'
   offset: 0x116600
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0027'
   offset: 0x116800
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0028
   offset: 0x116A00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0029
   offset: 0x116C00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0030'
   offset: 0x116E00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0031'
   offset: 0x117000
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0032'
   offset: 0x117200
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0033'
   offset: 0x117400
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0034'
   offset: 0x117600
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0035'
   offset: 0x117800
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0036'
   offset: 0x117A00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0037'
   offset: 0x117C00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0038
   offset: 0x117E00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0039
   offset: 0x118000
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0040'
   offset: 0x118200
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0041'
   offset: 0x118400
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0042'
   offset: 0x118600
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0043'
   offset: 0x118800
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0044'
   offset: 0x118A00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0045'
   offset: 0x118C00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0046'
   offset: 0x118E00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0047'
   offset: 0x119000
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0048
   offset: 0x119200
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0049
   offset: 0x119400
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0050'
   offset: 0x119600
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0051'
   offset: 0x119800
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0052'
   offset: 0x119A00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0053'
   offset: 0x119C00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0054'
   offset: 0x119E00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0055'
   offset: 0x11A000
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0056'
   offset: 0x11A200
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0057'
   offset: 0x11A400
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0058
   offset: 0x11A600
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0059
   offset: 0x11A800
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0060'
   offset: 0x11AA00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0061'
   offset: 0x11AC00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0062'
   offset: 0x11AE00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0063'
   offset: 0x11B000
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0064'
   offset: 0x11B200
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0065'
   offset: 0x11B400
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0066'
   offset: 0x11B600
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0067'
   offset: 0x11B800
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0068
   offset: 0x11BA00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0069
   offset: 0x11BAC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0070'
   offset: 0x11BB80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0071'
   offset: 0x11BC40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0072'
   offset: 0x11BD00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0073'
   offset: 0x11BDC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0074'
   offset: 0x11BE80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0075'
   offset: 0x11BF40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0076'
   offset: 0x11C000
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0077'
   offset: 0x11C0C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0078
   offset: 0x11C180
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0079
   offset: 0x11C240
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0080
   offset: 0x11C300
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0081
   offset: 0x11C3C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0082
   offset: 0x11C480
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0083
   offset: 0x11C540
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0084
   offset: 0x11C600
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0085
   offset: 0x11C6C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0086
   offset: 0x11C780
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0087
   offset: 0x11C840
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0088
   offset: 0x11C900
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0089
   offset: 0x11C9C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0090
   offset: 0x11CA80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0091
   offset: 0x11CB40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0092
   offset: 0x11CC00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0093
   offset: 0x11CCC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0094
   offset: 0x11CD80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0095
   offset: 0x11CE40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0096
   offset: 0x11CF00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0097
   offset: 0x11CFC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0098
   offset: 0x11D080
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0099
   offset: 0x11D140
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0100'
   offset: 0x11D200
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0101'
   offset: 0x11D2C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0102'
   offset: 0x11D380
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0103'
   offset: 0x11D440
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0104'
   offset: 0x11D500
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0105'
   offset: 0x11D800
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0106'
   offset: 0x11DB00
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0107'
   offset: 0x11DE00
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0108
   offset: 0x11E100
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0109
   offset: 0x11E400
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0110'
   offset: 0x11E700
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0111'
   offset: 0x11EA00
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0112'
   offset: 0x11ED00
   size: 1536
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0113'
   offset: 0x11F300
   size: 1536
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0114'
   offset: 0x11F900
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0115'
   offset: 0x11F9C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0116'
   offset: 0x11FA80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0117'
   offset: 0x11FB40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0118
   offset: 0x11FC00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0119
   offset: 0x11FCC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0120'
   offset: 0x11FD80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0121'
   offset: 0x11FE40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0122'
   offset: 0x11FF00
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0123'
   offset: 0x120000
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0124'
   offset: 0x1200C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0125'
   offset: 0x120180
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0126'
   offset: 0x120240
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0127'
   offset: 0x120300
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0128
   offset: 0x1203C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0129
   offset: 0x120480
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0130'
   offset: 0x120540
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0131'
   offset: 0x120600
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0132'
   offset: 0x1206C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0133'
   offset: 0x120780
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0134'
   offset: 0x120840
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0135'
   offset: 0x120900
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0136'
   offset: 0x1209C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0137'
   offset: 0x120A80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0138
   offset: 0x120B40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0139
   offset: 0x120C00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0140'
   offset: 0x120CC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0141'
   offset: 0x120D80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0142'
   offset: 0x120E40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0143'
   offset: 0x120F00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0144'
   offset: 0x120FC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0145'
   offset: 0x121080
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0146'
   offset: 0x121140
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0147'
   offset: 0x121200
   size: 1152
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0148
   offset: 0x121680
   size: 1152
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0149
   offset: 0x121B00
   size: 1152
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0150'
   offset: 0x121F80
   size: 288
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0151'
   offset: 0x1220A0
   size: 288
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0152'
   offset: 0x1221C0
   size: 288
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0153'
   offset: 0x1222E0
   size: 288
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0154'
   offset: 0x122400
   size: 288
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0155'
   offset: 0x122520
   size: 288
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0156'
   offset: 0x122640
   size: 288
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0157'
   offset: 0x122760
   size: 288
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0158
   offset: 0x122880
   size: 288
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0159
   offset: 0x1229A0
   size: 288
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0160'
   offset: 0x122AC0
   size: 288
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0161'
   offset: 0x122BE0
   size: 288
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0162'
   offset: 0x122D00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0163'
   offset: 0x122F00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0164'
   offset: 0x123100
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0165'
   offset: 0x123300
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0166'
   offset: 0x123500
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0167'
   offset: 0x123700
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0168
   offset: 0x123900
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0169
   offset: 0x123B00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0170'
   offset: 0x123D00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0171'
   offset: 0x123F00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0172'
   offset: 0x124100
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0173'
   offset: 0x124300
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0174'
   offset: 0x124500
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0175'
   offset: 0x124700
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0176'
   offset: 0x124900
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0177'
   offset: 0x124B00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0178
   offset: 0x124D00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0179
   offset: 0x124F00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0180
   offset: 0x125100
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0181
   offset: 0x125300
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0182
   offset: 0x125500
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0183
   offset: 0x125700
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0184
   offset: 0x125900
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0185
   offset: 0x125B00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0186
   offset: 0x125D00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0187
   offset: 0x125F00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0188
   offset: 0x126100
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0189
   offset: 0x126300
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0190
   offset: 0x126500
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0191
   offset: 0x126700
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0192
   offset: 0x126900
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0193
   offset: 0x126B00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0194
   offset: 0x126D00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0195
   offset: 0x126F00
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0196
   offset: 0x127100
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0197
   offset: 0x1271C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0198
   offset: 0x127280
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0199
   offset: 0x127340
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0200'
   offset: 0x127400
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0201'
   offset: 0x1274C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0202'
   offset: 0x127580
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0203'
   offset: 0x127640
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0204'
   offset: 0x127700
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0205'
   offset: 0x1277C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0206'
   offset: 0x127880
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0207'
   offset: 0x127940
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0208
   offset: 0x127A00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0209
   offset: 0x127AC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0210'
   offset: 0x127B80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0211'
   offset: 0x127C40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0212'
   offset: 0x127D00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0213'
   offset: 0x127DC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0214'
   offset: 0x127E80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0215'
   offset: 0x127F40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0216'
   offset: 0x128000
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0217'
   offset: 0x1280C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0218
   offset: 0x128180
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0219
   offset: 0x128240
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0220'
   offset: 0x128300
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0221'
   offset: 0x1283C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0222'
   offset: 0x128480
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0223'
   offset: 0x128540
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0224'
   offset: 0x128600
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0225'
   offset: 0x1286C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0226'
   offset: 0x128780
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0227'
   offset: 0x128A80
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0228
   offset: 0x128D80
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0229
   offset: 0x128E80
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0230'
   offset: 0x128F80
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0231'
   offset: 0x129080
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0232'
   offset: 0x129380
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0233'
   offset: 0x129480
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0234'
   offset: 0x129580
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0235'
   offset: 0x129680
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0236'
   offset: 0x129980
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0237'
   offset: 0x129C80
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0238
   offset: 0x129F80
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0239
   offset: 0x12A080
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0240'
   offset: 0x12A180
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0241'
   offset: 0x12A280
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0242'
   offset: 0x12A580
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0243'
   offset: 0x12A880
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0244'
   offset: 0x12AB80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0245'
   offset: 0x12AC40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0246'
   offset: 0x12AD00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0247'
   offset: 0x12ADC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0248
   offset: 0x12AE80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0249
   offset: 0x12AF40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0250'
   offset: 0x12B000
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0251'
   offset: 0x12B0C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0252'
   offset: 0x12B180
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0253'
   offset: 0x12B480
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0254'
   offset: 0x12B540
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0255'
   offset: 0x12B600
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0256'
   offset: 0x12B6C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0257'
   offset: 0x12B780
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0258
   offset: 0x12B840
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0259
   offset: 0x12B900
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0260'
   offset: 0x12B9C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0261'
   offset: 0x12BA80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0262'
   offset: 0x12BB40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0263'
   offset: 0x12BC00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0264'
   offset: 0x12BCC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0265'
   offset: 0x12BD80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0266'
   offset: 0x12BE40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0267'
   offset: 0x12BF00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0268
   offset: 0x12BFC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0269
   offset: 0x12C080
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0270'
   offset: 0x12C140
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0271'
   offset: 0x12C200
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0272'
   offset: 0x12C2C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0273'
   offset: 0x12C380
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0274'
   offset: 0x12C440
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0275'
   offset: 0x12C500
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0276'
   offset: 0x12C5C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0277'
   offset: 0x12C680
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0278
   offset: 0x12C740
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0279
   offset: 0x12C800
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0280
   offset: 0x12C8C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0281
   offset: 0x12C980
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0282
   offset: 0x12CA40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0283
   offset: 0x12CB00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0284
   offset: 0x12CBC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0285
   offset: 0x12CC80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0286
   offset: 0x12CD40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0287
   offset: 0x12CE00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0288
   offset: 0x12CEC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0289
   offset: 0x12CF80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0290
   offset: 0x12D040
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0291
   offset: 0x12D100
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0292
   offset: 0x12D1C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0293
   offset: 0x12D280
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0294
   offset: 0x12D340
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0295
   offset: 0x12D400
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0296
   offset: 0x12D4C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0297
   offset: 0x12D580
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0298
   offset: 0x12D640
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0299
   offset: 0x12D700
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0300'
   offset: 0x12D7C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0301'
   offset: 0x12D880
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0302'
   offset: 0x12D940
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0303'
   offset: 0x12DA00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0304'
   offset: 0x12DAC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0305'
   offset: 0x12DB80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0306'
   offset: 0x12DC40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0307'
   offset: 0x12DD00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0308
   offset: 0x12DDC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0309
   offset: 0x12DE80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0310'
   offset: 0x12DF40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0311'
   offset: 0x12E000
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0312'
   offset: 0x12E0C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0313'
   offset: 0x12E180
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0314'
   offset: 0x12E240
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0315'
   offset: 0x12E300
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0316'
   offset: 0x12E3C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0317'
   offset: 0x12E480
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0318
   offset: 0x12E540
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0319
   offset: 0x12E600
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0320'
   offset: 0x12E6C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0321'
   offset: 0x12E780
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0322'
   offset: 0x12E840
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0323'
   offset: 0x12E900
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0324'
   offset: 0x12E9C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0325'
   offset: 0x12EA80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0326'
   offset: 0x12EB40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0327'
   offset: 0x12EC00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0328
   offset: 0x12ECC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0329
   offset: 0x12ED80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0330'
   offset: 0x12EE40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0331'
   offset: 0x12EF00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0332'
   offset: 0x12EFC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0333'
   offset: 0x12F080
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0334'
   offset: 0x12F140
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0335'
   offset: 0x12F200
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0336'
   offset: 0x12F2C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0337'
   offset: 0x12F380
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0338
   offset: 0x12F440
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0339
   offset: 0x12F500
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0340'
   offset: 0x12F5C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0341'
   offset: 0x12F680
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0342'
   offset: 0x12F740
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0343'
   offset: 0x12F800
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0344'
   offset: 0x12F8C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0345'
   offset: 0x12F980
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0346'
   offset: 0x12FA40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0347'
   offset: 0x12FB00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0348
   offset: 0x12FBC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0349
   offset: 0x12FC80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0350'
   offset: 0x12FD40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0351'
   offset: 0x12FE00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0352'
   offset: 0x12FEC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0353'
   offset: 0x12FF80
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0354'
   offset: 0x130000
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0355'
   offset: 0x1300C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0356'
   offset: 0x130180
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0357'
   offset: 0x130240
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0358
   offset: 0x130300
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0359
   offset: 0x1303C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0360'
   offset: 0x130480
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0361'
   offset: 0x130540
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0362'
   offset: 0x130600
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0363'
   offset: 0x1306C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0364'
   offset: 0x130780
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0365'
   offset: 0x130840
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0366'
   offset: 0x130900
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0367'
   offset: 0x1309C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0368
   offset: 0x130A80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0369
   offset: 0x130B40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0370'
   offset: 0x130C00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0371'
   offset: 0x130CC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0372'
   offset: 0x130D80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0373'
   offset: 0x130E40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0374'
   offset: 0x130F00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0375'
   offset: 0x130FC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0376'
   offset: 0x131080
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0377'
   offset: 0x131140
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0378
   offset: 0x131200
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0379
   offset: 0x1312C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0380
   offset: 0x131380
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0381
   offset: 0x131440
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0382
   offset: 0x131500
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0383
   offset: 0x1315C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0384
   offset: 0x131680
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0385
   offset: 0x131740
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0386
   offset: 0x131800
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0387
   offset: 0x1318C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0388
   offset: 0x131980
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0389
   offset: 0x131A40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0390
   offset: 0x131B00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0391
   offset: 0x131BC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0392
   offset: 0x131C80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0393
   offset: 0x131D40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0394
   offset: 0x131E00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0395
   offset: 0x131EC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0396
   offset: 0x131F80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0397
   offset: 0x132040
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0398
   offset: 0x132100
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0399
   offset: 0x1321C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0400'
   offset: 0x132280
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0401'
   offset: 0x132340
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0402'
   offset: 0x132400
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0403'
   offset: 0x1324C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0404'
   offset: 0x132580
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0405'
   offset: 0x132640
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0406'
   offset: 0x132700
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0407'
   offset: 0x1327C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0408
   offset: 0x132880
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0409
   offset: 0x132940
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0410'
   offset: 0x132A00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0411'
   offset: 0x132AC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0412'
   offset: 0x132B80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0413'
   offset: 0x132C40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0414'
   offset: 0x132D00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0415'
   offset: 0x132DC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0416'
   offset: 0x132E80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0417'
   offset: 0x132F40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0418
   offset: 0x133000
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0419
   offset: 0x1330C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0420'
   offset: 0x133180
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0421'
   offset: 0x133240
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0422'
   offset: 0x133300
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0423'
   offset: 0x1333C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0424'
   offset: 0x133480
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0425'
   offset: 0x133540
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0426'
   offset: 0x133600
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0427'
   offset: 0x1336C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0428
   offset: 0x133780
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0429
   offset: 0x133840
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0430'
   offset: 0x133900
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0431'
   offset: 0x1339C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0432'
   offset: 0x133A80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0433'
   offset: 0x133B40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0434'
   offset: 0x133C00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0435'
   offset: 0x133CC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0436'
   offset: 0x133D80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0437'
   offset: 0x133E40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0438
   offset: 0x133F00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0439
   offset: 0x133FC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0440'
   offset: 0x134080
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0441'
   offset: 0x134140
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0442'
   offset: 0x134200
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0443'
   offset: 0x1342C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0444'
   offset: 0x134380
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0445'
   offset: 0x134440
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0446'
   offset: 0x134500
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0447'
   offset: 0x1345C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0448
   offset: 0x134680
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0449
   offset: 0x134740
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0450'
   offset: 0x134800
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0451'
   offset: 0x1348C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0452'
   offset: 0x134980
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0453'
   offset: 0x134A40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0454'
   offset: 0x134B00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0455'
   offset: 0x134BC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0456'
   offset: 0x134C80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0457'
   offset: 0x134D40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0458
   offset: 0x134E00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0459
   offset: 0x134EC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0460'
   offset: 0x134F80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0461'
   offset: 0x135040
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0462'
   offset: 0x135100
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0463'
   offset: 0x1351C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0464'
   offset: 0x135280
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0465'
   offset: 0x135340
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0466'
   offset: 0x135400
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0467'
   offset: 0x1354C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0468
   offset: 0x135580
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0469
   offset: 0x135640
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0470'
   offset: 0x135700
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0471'
   offset: 0x1357C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0472'
   offset: 0x135880
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0473'
   offset: 0x135940
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0474'
   offset: 0x135A00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0475'
   offset: 0x135AC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0476'
   offset: 0x135B80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0477'
   offset: 0x135C40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0478
   offset: 0x135D00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0479
   offset: 0x135DC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0480
   offset: 0x135E80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0481
   offset: 0x135F40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0482
   offset: 0x136000
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0483
   offset: 0x1360C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0484
   offset: 0x136180
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0485
   offset: 0x136240
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0486
   offset: 0x136300
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0487
   offset: 0x1363C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0488
   offset: 0x136480
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0489
   offset: 0x136540
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0490
   offset: 0x136600
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0491
   offset: 0x1366C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0492
   offset: 0x136780
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0493
   offset: 0x136840
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0494
   offset: 0x136900
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0495
   offset: 0x1369C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0496
   offset: 0x136A80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0497
   offset: 0x136B40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0498
   offset: 0x136C00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0499
   offset: 0x136CC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0500'
   offset: 0x136D80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0501'
   offset: 0x136E40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0502'
   offset: 0x136F00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0503'
   offset: 0x136FC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0504'
   offset: 0x137080
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0505'
   offset: 0x137140
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0506'
   offset: 0x137200
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0507'
   offset: 0x1372C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0508
   offset: 0x137380
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0509
   offset: 0x137440
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0510'
   offset: 0x137500
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0511'
   offset: 0x1375C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0512'
   offset: 0x137680
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0513'
   offset: 0x137740
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0514'
   offset: 0x137800
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0515'
   offset: 0x1378C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0516'
   offset: 0x137980
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0517'
   offset: 0x137A40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0518
   offset: 0x137B00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0519
   offset: 0x137BC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0520'
   offset: 0x137C80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0521'
   offset: 0x137D40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0522'
   offset: 0x137E00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0523'
   offset: 0x137EC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0524'
   offset: 0x137F80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0525'
   offset: 0x138040
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0526'
   offset: 0x138100
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0527'
   offset: 0x1381C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0528
   offset: 0x138280
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0529
   offset: 0x138340
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0530'
   offset: 0x138400
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0531'
   offset: 0x1384C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0532'
   offset: 0x138580
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0533'
   offset: 0x138640
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0534'
   offset: 0x138700
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0535'
   offset: 0x1387C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0536'
   offset: 0x138880
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0537'
   offset: 0x138940
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0538
   offset: 0x138A00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0539
   offset: 0x138AC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0540'
   offset: 0x138B80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0541'
   offset: 0x138C40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0542'
   offset: 0x138D00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0543'
   offset: 0x138DC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0544'
   offset: 0x138E80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0545'
   offset: 0x138F40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0546'
   offset: 0x139000
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0547'
   offset: 0x1390C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0548
   offset: 0x139180
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0549
   offset: 0x139240
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0550'
   offset: 0x139300
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0551'
   offset: 0x1393C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0552'
   offset: 0x139480
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0553'
   offset: 0x139540
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0554'
   offset: 0x139600
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0555'
   offset: 0x1396C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0556'
   offset: 0x139780
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0557'
   offset: 0x139840
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0558
   offset: 0x139900
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0559
   offset: 0x1399C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0560'
   offset: 0x139A80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0561'
   offset: 0x139B40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0562'
   offset: 0x139C00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0563'
   offset: 0x139CC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0564'
   offset: 0x139D80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0565'
   offset: 0x139E40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0566'
   offset: 0x139F00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0567'
   offset: 0x139FC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0568
   offset: 0x13A080
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0569
   offset: 0x13A140
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0570'
   offset: 0x13A200
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0571'
   offset: 0x13A2C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0572'
   offset: 0x13A380
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0573'
   offset: 0x13A440
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0574'
   offset: 0x13A500
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0575'
   offset: 0x13A5C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0576'
   offset: 0x13A680
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0577'
   offset: 0x13A740
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0578
   offset: 0x13A800
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0579
   offset: 0x13A8C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0580
   offset: 0x13A980
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0581
   offset: 0x13AA40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0582
   offset: 0x13AB00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0583
   offset: 0x13ABC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0584
   offset: 0x13AC80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0585
   offset: 0x13AD40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0586
   offset: 0x13AE00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0587
   offset: 0x13AEC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0588
   offset: 0x13AF80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0589
   offset: 0x13B040
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0590
   offset: 0x13B100
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0591
   offset: 0x13B1C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0592
   offset: 0x13B280
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0593
   offset: 0x13B340
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0594
   offset: 0x13B400
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0595
   offset: 0x13B4C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0596
   offset: 0x13B580
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0597
   offset: 0x13B640
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0598
   offset: 0x13B700
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0599
   offset: 0x13B7C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0600'
   offset: 0x13B880
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0601'
   offset: 0x13B940
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0602'
   offset: 0x13BA00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0603'
   offset: 0x13BAC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0604'
   offset: 0x13BB80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0605'
   offset: 0x13BC40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0606'
   offset: 0x13BD00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0607'
   offset: 0x13BDC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0608
   offset: 0x13BE80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0609
   offset: 0x13BF40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0610'
   offset: 0x13C000
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0611'
   offset: 0x13C0C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0612'
   offset: 0x13C180
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0613'
   offset: 0x13C240
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0614'
   offset: 0x13C300
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0615'
   offset: 0x13C3C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0616'
   offset: 0x13C480
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0617'
   offset: 0x13C540
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0618
   offset: 0x13C600
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0619
   offset: 0x13C6C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0620'
   offset: 0x13C780
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0621'
   offset: 0x13C840
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0622'
   offset: 0x13C900
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0623'
   offset: 0x13C9C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0624'
   offset: 0x13CA80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0625'
   offset: 0x13CB40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0626'
   offset: 0x13CC00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0627'
   offset: 0x13CCC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0628
   offset: 0x13CD80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0629
   offset: 0x13CE40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0630'
   offset: 0x13CF00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0631'
   offset: 0x13CFC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0632'
   offset: 0x13D080
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0633'
   offset: 0x13D140
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0634'
   offset: 0x13D200
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0635'
   offset: 0x13D2C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0636'
   offset: 0x13D380
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0637'
   offset: 0x13D440
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0638
   offset: 0x13D500
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0639
   offset: 0x13D5C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0640'
   offset: 0x13D680
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0641'
   offset: 0x13D740
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0642'
   offset: 0x13D800
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0643'
   offset: 0x13D8C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0644'
   offset: 0x13D980
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0645'
   offset: 0x13DA40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0646'
   offset: 0x13DB00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0647'
   offset: 0x13DBC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0648
   offset: 0x13DC80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0649
   offset: 0x13DD40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0650'
   offset: 0x13DE00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0651'
   offset: 0x13DEC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0652'
   offset: 0x13DF80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0653'
   offset: 0x13E040
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0654'
   offset: 0x13E100
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0655'
   offset: 0x13E1C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0656'
   offset: 0x13E280
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0657'
   offset: 0x13E340
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0658
   offset: 0x13E400
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0659
   offset: 0x13E4C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0660'
   offset: 0x13E580
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0661'
   offset: 0x13E640
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0662'
   offset: 0x13E700
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0663'
   offset: 0x13E7C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0664'
   offset: 0x13E880
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0665'
   offset: 0x13E940
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0666'
   offset: 0x13EA00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0667'
   offset: 0x13EAC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0668
   offset: 0x13EB80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0669
   offset: 0x13EC40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0670'
   offset: 0x13ED00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0671'
   offset: 0x13EDC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0672'
   offset: 0x13EE80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0673'
   offset: 0x13EF40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0674'
   offset: 0x13F000
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0675'
   offset: 0x13F0C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0676'
   offset: 0x13F180
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0677'
   offset: 0x13F240
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0678
   offset: 0x13F300
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0679
   offset: 0x13F3C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0680
   offset: 0x13F480
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0681
   offset: 0x13F540
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0682
   offset: 0x13F600
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0683
   offset: 0x13F6C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0684
   offset: 0x13F780
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0685
   offset: 0x13F840
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0686
   offset: 0x13F900
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0687
   offset: 0x13F9C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0688
   offset: 0x13FA80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0689
   offset: 0x13FB40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0690
   offset: 0x13FC00
   size: 768
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0691
   offset: 0x13FF00
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0692
   offset: 0x13FF80
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0693
   offset: 0x140000
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0694
   offset: 0x1400C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0695
   offset: 0x140180
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0696
   offset: 0x140240
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0697
   offset: 0x140300
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0698
   offset: 0x1403C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0699
   offset: 0x140480
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0700'
   offset: 0x140540
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0701'
   offset: 0x140600
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0702'
   offset: 0x1406C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0703'
   offset: 0x140780
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0704'
   offset: 0x140840
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0705'
   offset: 0x140900
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0706'
   offset: 0x1409C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0707'
   offset: 0x140A80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0708
   offset: 0x140B40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0709
   offset: 0x140C00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0710'
   offset: 0x140CC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0711'
   offset: 0x140D80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0712'
   offset: 0x140E40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0713'
   offset: 0x140F00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0714'
   offset: 0x140FC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0715'
   offset: 0x141080
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '0716'
   offset: 0x141140
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0717'
   offset: 0x141200
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0718
   offset: 0x1412C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0719
   offset: 0x141380
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0720'
   offset: 0x141440
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0721'
   offset: 0x141500
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0722'
   offset: 0x1415C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0723'
   offset: 0x141680
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0724'
   offset: 0x141740
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0725'
   offset: 0x141800
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0726'
   offset: 0x1418C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0727'
   offset: 0x141980
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0728
   offset: 0x141A40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0729
   offset: 0x141B00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0730'
   offset: 0x141BC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0731'
   offset: 0x141C80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0732'
   offset: 0x141D40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0733'
   offset: 0x141E00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0734'
   offset: 0x141EC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0735'
   offset: 0x141F80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0736'
   offset: 0x142040
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0737'
   offset: 0x142100
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0738
   offset: 0x1421C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0739
   offset: 0x142280
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0740'
   offset: 0x142340
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0741'
   offset: 0x142400
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0742'
   offset: 0x1424C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0743'
   offset: 0x142580
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0744'
   offset: 0x142640
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0745'
   offset: 0x142700
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0746'
   offset: 0x1427C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0747'
   offset: 0x142880
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0748
   offset: 0x142940
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0749
   offset: 0x142A00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0750'
   offset: 0x142AC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0751'
   offset: 0x142B80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0752'
   offset: 0x142C40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0753'
   offset: 0x142D00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0754'
   offset: 0x142DC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0755'
   offset: 0x142E80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0756'
   offset: 0x142F40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0757'
   offset: 0x143000
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0758
   offset: 0x1430C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0759
   offset: 0x143180
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0760'
   offset: 0x143240
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0761'
   offset: 0x143300
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0762'
   offset: 0x1433C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0763'
   offset: 0x143480
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0764'
   offset: 0x143540
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0765'
   offset: 0x143600
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0766'
   offset: 0x1436C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0767'
   offset: 0x143780
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0768
   offset: 0x143840
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0769
   offset: 0x143900
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0770'
   offset: 0x1439C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0771'
   offset: 0x143A80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0772'
   offset: 0x143B40
   size: 288
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0773'
   offset: 0x143C60
   size: 288
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0774'
   offset: 0x143D80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0775'
   offset: 0x143E40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0776'
   offset: 0x143F00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '0777'
   offset: 0x143FC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0778
   offset: 0x144080
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0779
   offset: 0x144140
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0780
   offset: 0x144200
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0781
   offset: 0x1442C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0782
   offset: 0x144380
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0783
   offset: 0x144440
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0784
   offset: 0x144500
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0785
   offset: 0x1445C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0786
   offset: 0x144680
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0787
   offset: 0x144880
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0788
   offset: 0x144A80
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0789
   offset: 0x144C80
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0790
   offset: 0x144D80
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0791
   offset: 0x144E80
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0792
   offset: 0x145080
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0793
   offset: 0x145280
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0794
   offset: 0x145480
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0795
   offset: 0x145500
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0796
   offset: 0x145580
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0797
   offset: 0x145600
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0798
   offset: 0x145680
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0799
   offset: 0x145880
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0800
   offset: 0x145980
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0801
   offset: 0x145A80
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0802
   offset: 0x145C80
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0803
   offset: 0x145E80
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0804
   offset: 0x146080
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0805
   offset: 0x146280
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0806
   offset: 0x146480
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0807
   offset: 0x146680
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0808
   offset: 0x146880
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0809
   offset: 0x146A80
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0810
   offset: 0x146C80
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0811
   offset: 0x146D80
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0812
   offset: 0x146E80
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0813
   offset: 0x146F00
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0814
   offset: 0x146F80
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0815
   offset: 0x147000
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0816
   offset: 0x147080
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0817
   offset: 0x147180
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0818
   offset: 0x147280
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0819
   offset: 0x147300
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0820
   offset: 0x147380
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0821
   offset: 0x147400
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0822
   offset: 0x147480
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0823
   offset: 0x147500
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0824
   offset: 0x147580
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0825
   offset: 0x147600
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0826
   offset: 0x147680
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0827
   offset: 0x147880
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0828
   offset: 0x147900
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0829
   offset: 0x147980
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0830
   offset: 0x147A00
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0831
   offset: 0x147A80
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0832
   offset: 0x147B00
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0833
   offset: 0x147B80
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0834
   offset: 0x147C00
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0835
   offset: 0x147C80
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0836
   offset: 0x147D00
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0837
   offset: 0x147D80
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0838
   offset: 0x147E00
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0839
   offset: 0x147E80
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0840
   offset: 0x147F00
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0841
   offset: 0x147F80
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0842
   offset: 0x148000
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0843
   offset: 0x148080
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0844
   offset: 0x148100
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0845
   offset: 0x148180
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0846
   offset: 0x148200
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0847
   offset: 0x148280
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0848
   offset: 0x148300
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0849
   offset: 0x148380
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0850
   offset: 0x148400
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0851
   offset: 0x148480
   size: 512
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0852
   offset: 0x148680
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0853
   offset: 0x148700
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0854
   offset: 0x148780
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0855
   offset: 0x148800
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0856
   offset: 0x148880
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0857
   offset: 0x148900
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0858
   offset: 0x148980
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0859
   offset: 0x148A00
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0860
   offset: 0x148A80
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0861
   offset: 0x148B00
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0862
   offset: 0x148B80
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0863
   offset: 0x148C00
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0864
   offset: 0x148C80
   size: 480
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0865
   offset: 0x148E60
   size: 384
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0866
   offset: 0x148FE0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0867
   offset: 0x149060
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0868
   offset: 0x1490E0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0869
   offset: 0x149160
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0870
   offset: 0x149220
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0871
   offset: 0x1492E0
   size: 384
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0872
   offset: 0x149460
   size: 384
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0873
   offset: 0x1495E0
   size: 384
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0874
   offset: 0x149760
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0875
   offset: 0x149820
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0876
   offset: 0x1498E0
   size: 384
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0877
   offset: 0x149A60
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0878
   offset: 0x149B20
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0879
   offset: 0x149BE0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0880
   offset: 0x149CA0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0881
   offset: 0x149D60
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0882
   offset: 0x149DE0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0883
   offset: 0x149E60
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0884
   offset: 0x149EE0
   size: 384
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0885
   offset: 0x14A060
   size: 384
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0886
   offset: 0x14A1E0
   size: 384
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0887
   offset: 0x14A360
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0888
   offset: 0x14A3E0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0889
   offset: 0x14A460
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0890
   offset: 0x14A4E0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0891
   offset: 0x14A5A0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0892
   offset: 0x14A660
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0893
   offset: 0x14A720
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0894
   offset: 0x14A7E0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0895
   offset: 0x14A8A0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0896
   offset: 0x14A960
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: 0897
   offset: 0x14AA20
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0898
   offset: 0x14AAE0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0899
   offset: 0x14ABA0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0900
   offset: 0x14AC60
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0901
   offset: 0x14AD20
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0902
   offset: 0x14ADE0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0903
   offset: 0x14AEA0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0904
   offset: 0x14AF60
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0905
   offset: 0x14B020
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0906
   offset: 0x14B0E0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0907
   offset: 0x14B1A0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0908
   offset: 0x14B260
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0909
   offset: 0x14B2E0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0910
   offset: 0x14B360
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0911
   offset: 0x14B3E0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0912
   offset: 0x14B460
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0913
   offset: 0x14B4E0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0914
   offset: 0x14B560
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0915
   offset: 0x14B5E0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0916
   offset: 0x14B660
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0917
   offset: 0x14B6E0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0918
   offset: 0x14B760
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0919
   offset: 0x14B7E0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0920
   offset: 0x14B860
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0921
   offset: 0x14B8E0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0922
   offset: 0x14B960
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0923
   offset: 0x14B9E0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0924
   offset: 0x14BA60
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0925
   offset: 0x14BAE0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0926
   offset: 0x14BB60
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0927
   offset: 0x14BC20
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0928
   offset: 0x14BCE0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0929
   offset: 0x14BDA0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0930
   offset: 0x14BE60
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0931
   offset: 0x14BF20
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0932
   offset: 0x14BFE0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0933
   offset: 0x14C0A0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0934
   offset: 0x14C160
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0935
   offset: 0x14C220
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0936
   offset: 0x14C2E0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0937
   offset: 0x14C360
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0938
   offset: 0x14C3E0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0939
   offset: 0x14C460
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0940
   offset: 0x14C520
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0941
   offset: 0x14C5E0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0942
   offset: 0x14C6A0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0943
   offset: 0x14C760
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0944
   offset: 0x14C820
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0945
   offset: 0x14C8E0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0946
   offset: 0x14C9A0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0947
   offset: 0x14CA60
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0948
   offset: 0x14CB20
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0949
   offset: 0x14CBE0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0950
   offset: 0x14CCA0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0951
   offset: 0x14CD60
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0952
   offset: 0x14CE20
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0953
   offset: 0x14CEE0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0954
   offset: 0x14CFA0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0955
   offset: 0x14D060
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0956
   offset: 0x14D120
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0957
   offset: 0x14D1E0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0958
   offset: 0x14D2A0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0959
   offset: 0x14D360
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0960
   offset: 0x14D420
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0961
   offset: 0x14D4E0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0962
   offset: 0x14D5A0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0963
   offset: 0x14D660
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0964
   offset: 0x14D6E0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0965
   offset: 0x14D760
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0966
   offset: 0x14D7E0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0967
   offset: 0x14D860
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0968
   offset: 0x14D8E0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0969
   offset: 0x14D960
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0970
   offset: 0x14DA20
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0971
   offset: 0x14DAE0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0972
   offset: 0x14DBA0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0973
   offset: 0x14DC60
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0974
   offset: 0x14DD20
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0975
   offset: 0x14DDE0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0976
   offset: 0x14DEA0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0977
   offset: 0x14DF60
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0978
   offset: 0x14DFE0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0979
   offset: 0x14E060
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0980
   offset: 0x14E0E0
   size: 288
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0981
   offset: 0x14E200
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0982
   offset: 0x14E280
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0983
   offset: 0x14E300
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0984
   offset: 0x14E380
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0985
   offset: 0x14E400
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0986
   offset: 0x14E480
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0987
   offset: 0x14E500
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0988
   offset: 0x14E600
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0989
   offset: 0x14E680
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0990
   offset: 0x14E700
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0991
   offset: 0x14E800
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0992
   offset: 0x14E880
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0993
   offset: 0x14E900
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0994
   offset: 0x14E980
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0995
   offset: 0x14EA00
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0996
   offset: 0x14EA80
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0997
   offset: 0x14EB00
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0998
   offset: 0x14EB80
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: 0999
   offset: 0x14EC00
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1000'
   offset: 0x14ED00
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1001'
   offset: 0x14ED80
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1002'
   offset: 0x14EE00
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1003'
   offset: 0x14EF00
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1004'
   offset: 0x14F000
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1005'
   offset: 0x14F080
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1006'
   offset: 0x14F100
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1007'
   offset: 0x14F200
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1008'
   offset: 0x14F300
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1009'
   offset: 0x14F400
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '1010'
   offset: 0x14F480
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1011'
   offset: 0x14F500
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1012'
   offset: 0x14F580
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1013'
   offset: 0x14F600
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1014'
   offset: 0x14F680
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1015'
   offset: 0x14F700
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1016'
   offset: 0x14F780
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1017'
   offset: 0x14F800
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1018'
   offset: 0x14F880
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1019'
   offset: 0x14F900
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1020'
   offset: 0x14FA00
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1021'
   offset: 0x14FB00
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1022'
   offset: 0x14FC00
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1023'
   offset: 0x14FD00
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1024'
   offset: 0x14FE00
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1025'
   offset: 0x14FE80
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1026'
   offset: 0x14FF00
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1027'
   offset: 0x14FF80
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1028'
   offset: 0x150000
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1029'
   offset: 0x150100
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1030'
   offset: 0x150180
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1031'
   offset: 0x150200
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1032'
   offset: 0x150280
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1033'
   offset: 0x150300
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1034'
   offset: 0x150380
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1035'
   offset: 0x150400
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1036'
   offset: 0x150480
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1037'
   offset: 0x150500
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1038'
   offset: 0x150580
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1039'
   offset: 0x150600
   size: 256
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1040'
   offset: 0x150700
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1041'
   offset: 0x150780
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1042'
   offset: 0x150800
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1043'
   offset: 0x150880
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1044'
   offset: 0x150900
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1045'
   offset: 0x150980
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1046'
   offset: 0x150A00
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1047'
   offset: 0x150A80
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1048'
   offset: 0x150B00
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1049'
   offset: 0x150B80
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1050'
   offset: 0x150C00
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1051'
   offset: 0x150C80
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1052'
   offset: 0x150D00
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1053'
   offset: 0x150D80
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1054'
   offset: 0x150E00
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1055'
   offset: 0x150E80
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1056'
   offset: 0x150F00
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1057'
   offset: 0x150F80
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1058'
   offset: 0x151000
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1059'
   offset: 0x151080
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1060'
   offset: 0x151100
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1061'
   offset: 0x151180
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1062'
   offset: 0x151200
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1063'
   offset: 0x151280
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1064'
   offset: 0x151300
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1065'
   offset: 0x151380
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1066'
   offset: 0x151400
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1067'
   offset: 0x1514C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1068'
   offset: 0x151580
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1069'
   offset: 0x151640
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1070'
   offset: 0x151700
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '1071'
   offset: 0x1517C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1072'
   offset: 0x151880
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1073'
   offset: 0x151940
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1074'
   offset: 0x151A00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1075'
   offset: 0x151AC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1076'
   offset: 0x151B80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1077'
   offset: 0x151C40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1078'
   offset: 0x151D00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1079'
   offset: 0x151DC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '1080'
   offset: 0x151E80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '1081'
   offset: 0x151F40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '1082'
   offset: 0x152000
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1083'
   offset: 0x1520C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1084'
   offset: 0x152180
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1085'
   offset: 0x152240
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1086'
   offset: 0x152300
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1087'
   offset: 0x1523C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1088'
   offset: 0x152480
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1089'
   offset: 0x152540
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '1090'
   offset: 0x152600
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1091'
   offset: 0x1526C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1092'
   offset: 0x152780
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1093'
   offset: 0x152840
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1094'
   offset: 0x152900
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1095'
   offset: 0x1529C0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1096'
   offset: 0x152A80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1097'
   offset: 0x152B40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1098'
   offset: 0x152C00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '1099'
   offset: 0x152CC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1100'
   offset: 0x152D80
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1101'
   offset: 0x152E40
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1102'
   offset: 0x152F00
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1103'
   offset: 0x152FC0
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1104'
   offset: 0x153080
   size: 192
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1105'
   offset: 0x153140
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1106'
   offset: 0x1531C0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1107'
   offset: 0x153240
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1108'
   offset: 0x1532C0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1109'
   offset: 0x153340
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1110'
   offset: 0x1533C0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1111'
   offset: 0x153440
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1112'
   offset: 0x1534C0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1113'
   offset: 0x153540
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1114'
   offset: 0x1535C0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1115'
   offset: 0x153640
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1116'
   offset: 0x1536C0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1117'
   offset: 0x153740
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1118'
   offset: 0x1537C0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1119'
   offset: 0x153840
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1120'
   offset: 0x1538C0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1121'
   offset: 0x153940
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1122'
   offset: 0x1539C0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1123'
   offset: 0x153A40
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1124'
   offset: 0x153AC0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1125'
   offset: 0x153B40
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1126'
   offset: 0x153BC0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1127'
   offset: 0x153C40
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1128'
   offset: 0x153CC0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1129'
   offset: 0x153D40
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1130'
   offset: 0x153DC0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1131'
   offset: 0x153E40
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1132'
   offset: 0x153EC0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1133'
   offset: 0x153F40
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1134'
   offset: 0x153FC0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1135'
   offset: 0x154040
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1136'
   offset: 0x1540C0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1137'
   offset: 0x154140
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: JP/overworld_sprites/gfx
   name: '1138'
   offset: 0x1541C0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1139'
   offset: 0x154240
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1140'
   offset: 0x1542C0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1141'
   offset: 0x154340
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1142'
   offset: 0x1543C0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1143'
   offset: 0x154440
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1144'
   offset: 0x1544C0
   size: 128
   extension: gfx
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/gfx
   name: '1145'
   offset: 0x154540
   size: 128
@@ -12558,7 +12558,7 @@ dumpEntries:
   size: 288
   extension: gfx
   compressed: false
-- subdir: fonts
+- subdir: JP/fonts
   name: hppp
   offset: 0x20110E
   size: 3584
@@ -12588,7 +12588,7 @@ dumpEntries:
   size: 7681
   extension: bin
   compressed: true
-- subdir: town_maps
+- subdir: JP/town_maps
   name: '2'
   offset: 0x207676
   size: 7266
@@ -12600,7 +12600,7 @@ dumpEntries:
   size: 10811
   extension: bin
   compressed: true
-- subdir: town_maps
+- subdir: JP/town_maps
   name: '4'
   offset: 0x20BD13
   size: 6755
@@ -12612,43 +12612,43 @@ dumpEntries:
   size: 9490
   extension: bin
   compressed: true
-- subdir: ''
+- subdir: 'JP'
   name: coffee
   offset: 0x211602
   size: 1306
   extension: flyover
   compressed: false
-- subdir: ''
+- subdir: 'JP'
   name: tea
   offset: 0x211B1C
   size: 1385
   extension: flyover
   compressed: false
-- subdir: ''
+- subdir: 'JP'
   name: flyovers
   offset: 0x212085
   size: 185
   extension: flyover
   compressed: false
-- subdir: ''
+- subdir: 'JP'
   name: E10000
   offset: 0x210000
   size: 0x1602
   extension: bin
   compressed: false
-- subdir: ''
+- subdir: 'JP'
   name: E1213E
   offset: 0x21213E
   size: 0x243
   extension: bin
   compressed: false
-- subdir: ''
+- subdir: 'JP'
   name: E12381
   offset: 0x212381
   size: 0x60
   extension: bin
   compressed: false
-- subdir: fonts
+- subdir: JP/fonts
   name: unknown
   offset: 0x20209D
   size: 4096
@@ -12738,13 +12738,13 @@ dumpEntries:
   size: 157
   extension: pal
   compressed: true
-- subdir: intro/logos
+- subdir: JP/intro/logos
   name: nintendo
   offset: 0x2148AB
   size: 68
   extension: arr
   compressed: true
-- subdir: intro/logos
+- subdir: JP/intro/logos
   name: nintendo
   offset: 0x2148EF
   size: 201
@@ -12756,13 +12756,13 @@ dumpEntries:
   size: 68
   extension: pal
   compressed: true
-- subdir: intro
+- subdir: JP/intro
   name: gas_station
   offset: 0x2149FC
   size: 1362
   extension: arr
   compressed: true
-- subdir: intro
+- subdir: JP/intro
   name: gas_station
   offset: 0x214F4E
   size: 19819
@@ -12780,19 +12780,19 @@ dumpEntries:
   size: 130
   extension: pal
   compressed: true
-- subdir: intro
+- subdir: JP/intro
   name: unknown
   offset: 0x219DE1
   size: 703
   extension: arr
   compressed: true
-- subdir: intro
+- subdir: JP/intro
   name: unknown2
   offset: 0x21B18C
   size: 315
   extension: arr
   compressed: true
-- subdir: ''
+- subdir: 'JP'
   name: unknown3
   offset: 0x21C291
   size: 479
@@ -12828,13 +12828,13 @@ dumpEntries:
   size: 13
   extension: pal
   compressed: true
-- subdir: intro
+- subdir: JP/intro
   name: title_screen
   offset: 0x21B2C7
   size: 2106
   extension: arr
   compressed: true
-- subdir: intro
+- subdir: JP/intro
   name: title_screen
   offset: 0x21A0A0
   size: 4332
@@ -12846,49 +12846,49 @@ dumpEntries:
   size: 39
   extension: pal
   compressed: true
-- subdir: overworld_sprites
+- subdir: overworld_sprites/palettes
   name: '0'
   offset: 0x30000
   size: 32
   extension: pal
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/palettes
   name: '1'
   offset: 0x30020
   size: 32
   extension: pal
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/palettes
   name: '2'
   offset: 0x30040
   size: 32
   extension: pal
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/palettes
   name: '3'
   offset: 0x30060
   size: 32
   extension: pal
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/palettes
   name: '4'
   offset: 0x30080
   size: 32
   extension: pal
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/palettes
   name: '5'
   offset: 0x300A0
   size: 32
   extension: pal
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/palettes
   name: '6'
   offset: 0x300C0
   size: 32
   extension: pal
   compressed: false
-- subdir: overworld_sprites
+- subdir: overworld_sprites/palettes
   name: '7'
   offset: 0x300E0
   size: 32
@@ -12930,7 +12930,7 @@ dumpEntries:
   size: 88
   extension: anim
   compressed: true
-- subdir: graphics/animations
+- subdir: JP/graphics/animations
   name: the_end
   offset: 0xC2CE1
   size: 535
@@ -12940,207 +12940,207 @@ dumpEntries:
   name: '00'
   offset: 0xCF596
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '01'
   offset: 0xCF59E
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '02'
   offset: 0xCF5A6
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '03'
   offset: 0xCF5AE
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '04'
   offset: 0xCF5B6
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '05'
   offset: 0xCF5BE
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '06'
   offset: 0xCF5C6
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '07'
   offset: 0xCF5CE
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: 08
   offset: 0xCF5D6
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: 09
   offset: 0xCF5DE
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '10'
   offset: 0xCF5E6
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '11'
   offset: 0xCF5EE
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '12'
   offset: 0xCF5F6
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '13'
   offset: 0xCF5FE
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '14'
   offset: 0xCF606
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '15'
   offset: 0xCF60E
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '16'
   offset: 0xCF616
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '17'
   offset: 0xCF61E
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '18'
   offset: 0xCF626
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '19'
   offset: 0xCF62E
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '20'
   offset: 0xCF636
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '21'
   offset: 0xCF63E
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '22'
   offset: 0xCF646
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '23'
   offset: 0xCF64E
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '24'
   offset: 0xCF656
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '25'
   offset: 0xCF65E
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '26'
   offset: 0xCF666
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '27'
   offset: 0xCF66E
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '28'
   offset: 0xCF676
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '29'
   offset: 0xCF67E
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '30'
   offset: 0xCF686
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '31'
   offset: 0xCF68E
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '32'
   offset: 0xCF696
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
 - subdir: psianims/palettes
   name: '33'
   offset: 0xCF69E
   size: 8
-  extension: bin
+  extension: pal
   compressed: false
-- subdir: graphics
+- subdir: JP/graphics
   name: sound_stone
   offset: 0xEDD5D
   size: 6829
@@ -13158,7 +13158,7 @@ dumpEntries:
   size: 10240
   extension: bin
   compressed: false
-- subdir: maps/tiles
+- subdir: JP/maps/tiles
   name: chunk_03
   offset: 0x165000
   size: 12288
@@ -13188,7 +13188,7 @@ dumpEntries:
   size: 10240
   extension: bin
   compressed: false
-- subdir: maps/tiles
+- subdir: JP/maps/tiles
   name: chunk_08
   offset: 0x172800
   size: 10240
@@ -13206,13 +13206,13 @@ dumpEntries:
   size: 10240
   extension: bin
   compressed: false
-- subdir: errors
+- subdir: JP/errors
   name: antipiracy
   offset: 0x18F05E
   size: 728
   extension: arr
   compressed: true
-- subdir: errors
+- subdir: JP/errors
   name: antipiracy
   offset: 0x18F336
   size: 1432
@@ -13236,7 +13236,7 @@ dumpEntries:
   size: 243
   extension: gfx
   compressed: true
-- subdir: graphics
+- subdir: JP/graphics
   name: text_window
   offset: 0x200000
   size: 4290
@@ -13260,7 +13260,7 @@ dumpEntries:
   size: 2549
   extension: pal
   compressed: true
-- subdir: ending
+- subdir: JP/ending
   name: credits_font
   offset: 0x21D2CC
   size: 986
@@ -13272,7 +13272,7 @@ dumpEntries:
   size: 16
   extension: pal
   compressed: false
-- subdir: town_maps
+- subdir: JP/town_maps
   name: label
   offset: 0x21D7E2
   size: 1819
@@ -13284,7 +13284,7 @@ dumpEntries:
   size: 64
   extension: pal
   compressed: false
-- subdir: intro
+- subdir: JP/intro
   name: title_screen_letters
   offset: 0x21BB01
   size: 1936
@@ -13332,13 +13332,13 @@ dumpEntries:
   size: 128
   extension: bin
   compressed: true
-- subdir: ending
+- subdir: JP/ending
   name: cast_names
   offset: 0x21D28A
   size: 66
   extension: pal
   compressed: true
-- subdir: ending
+- subdir: JP/ending
   name: cast_names
   offset: 0x21D18C
   size: 222
@@ -19955,7 +19955,7 @@ renameLabels:
     0x273: NAME_INPUT_WINDOW_SELECTION_LAYOUT_3
     0x336: NAME_INPUT_WINDOW_SELECTION_LAYOUT_4
     0x3F9: NAME_INPUT_WINDOW_SELECTION_LAYOUT_5
-defaultDumpPath: src/bin/JP/
+defaultDumpPath: src/bin/
 romIdentifier: 'MOTHER-2             '
 dontUseTextTable: true
 multibyteFlyovers: true

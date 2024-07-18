@@ -6,7 +6,7 @@ MAP_DATA_TILE_TABLE_CHUNK_7:
 	BINARY "maps/tiles/chunk_07.bin"
 
 MAP_DATA_TILE_TABLE_CHUNK_8:
-	BINARY "maps/tiles/chunk_08.bin"
+	LOCALEBINARY "maps/tiles/chunk_08.bin"
 
 MAP_DATA_TILE_TABLE_CHUNK_9:
 	BINARY "maps/tiles/chunk_09.bin"

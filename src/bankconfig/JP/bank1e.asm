@@ -12,13 +12,13 @@ MAP_DATA_TILE_SET_GRAPHICS_8:
 	BINARY "maps/gfx/8.gfx.lzhal"
 
 MAP_DATA_TILE_SET_GRAPHICS_2:
-	BINARY "maps/gfx/2.gfx.lzhal"
+	LOCALEBINARY "maps/gfx/2.gfx.lzhal"
 
 MAP_DATA_TILE_SET_GRAPHICS_10:
-	BINARY "maps/gfx/10.gfx.lzhal"
+	LOCALEBINARY "maps/gfx/10.gfx.lzhal"
 
 MAP_DATA_TILE_SET_GRAPHICS_11:
-	BINARY "maps/gfx/11.gfx.lzhal"
+	LOCALEBINARY "maps/gfx/11.gfx.lzhal"
 
 MAP_DATA_TILE_ANIMATION_GFX_15:
 	BINARY "maps/anim_gfx/15.gfx.lzhal"

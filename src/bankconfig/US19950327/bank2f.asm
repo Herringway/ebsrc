@@ -200,14 +200,14 @@
 .INCLUDE "data/unknown/EFEB3D.asm"
 
 DEBUG_MENU_FONT:
-	LOCALEBINARY "fonts/debug.gfx"
+	BINARY "fonts/debug.gfx"
 
 .INCLUDE "data/unknown/EFEF70.asm"
 
 .INCLUDE "data/debug/debug_font_palette.asm"
 
 DEBUG_CURSOR_GRAPHICS:
-	LOCALEBINARY "debug_cursor.gfx"
+	BINARY "debug_cursor.gfx"
 
 .INCLUDE "data/unknown/EFF0D7.asm"
 

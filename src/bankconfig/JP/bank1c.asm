@@ -3,7 +3,7 @@
 .INCLUDE "symbols/map.inc.asm"
 
 MAP_DATA_TILE_ARRANGEMENT_12:
-	BINARY "maps/arrangements/12.arr.lzhal"
+	LOCALEBINARY "maps/arrangements/12.arr.lzhal"
 
 MAP_DATA_TILE_ARRANGEMENT_13:
 	BINARY "maps/arrangements/13.arr.lzhal"

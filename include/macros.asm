@@ -157,8 +157,20 @@
     .ENDIF
 .ENDMACRO
 
-.MACRO BINARY file
-    .INCBIN .SPRINTF("bin/%s/%s", LOCALE, file)
+.MACRO LOCALEBINARY file, offset, length
+    BINARY .SPRINTF("%s/%s", LOCALE, file), offset, length
+.ENDMACRO
+
+.MACRO BINARY file, offset, length
+    .IFNBLANK offset
+        .IFNBLANK length
+            .INCBIN .SPRINTF("bin/%s", file), offset, length
+        .ELSE
+            .INCBIN .SPRINTF("bin/%s", file), offset
+        .ENDIF
+    .ELSE
+        .INCBIN .SPRINTF("bin/%s", file)
+    .ENDIF
 .ENDMACRO
 
 .MACRO AUDIOPACK file

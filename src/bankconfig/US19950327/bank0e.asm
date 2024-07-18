@@ -465,7 +465,7 @@ SWIRL_PRIMARY_TABLE:
 	.BYTE $00, $00, $00, $00, $02, $00, $17, $00, $04, $17, $0F, $00, $03, $26, $16, $00, $04, $3C, $15, $00, $02, $51, $1C, $00, $03, $6D, $11, $00
 
 SOUND_STONE_GFX:
-	BINARY "graphics/sound_stone.gfx.lzhal"
+	LOCALEBINARY "graphics/sound_stone.gfx.lzhal"
 
 SOUND_STONE_PALETTE:
 	BINARY "sound_stone.pal"

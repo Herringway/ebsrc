@@ -13,13 +13,13 @@ MAP_DATA_TILE_ARRANGEMENT_16:
 	BINARY "maps/arrangements/16.arr.lzhal"
 
 MAP_DATA_TILE_ARRANGEMENT_17:
-	BINARY "maps/arrangements/17.arr.lzhal"
+	LOCALEBINARY "maps/arrangements/17.arr.lzhal"
 
 MAP_DATA_TILE_ARRANGEMENT_10:
-	BINARY "maps/arrangements/10.arr.lzhal"
+	LOCALEBINARY "maps/arrangements/10.arr.lzhal"
 
 MAP_DATA_TILE_ARRANGEMENT_11:
-	BINARY "maps/arrangements/11.arr.lzhal"
+	LOCALEBINARY "maps/arrangements/11.arr.lzhal"
 
 AUDIO_PACK_65:
 	AUDIOPACK "audiopacks/65.ebm"

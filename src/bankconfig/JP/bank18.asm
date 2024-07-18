@@ -27,10 +27,10 @@
 .INCLUDE "data/map/tile_collision_pointers_19.asm"
 
 ANTI_PIRACY_NOTICE_ARRANGEMENT:
-	BINARY "errors/antipiracy.arr.lzhal"
+	LOCALEBINARY "errors/antipiracy.arr.lzhal"
 
 ANTI_PIRACY_NOTICE_GRAPHICS:
-	BINARY "errors/antipiracy.gfx.lzhal"
+	LOCALEBINARY "errors/antipiracy.gfx.lzhal"
 
 WARNING_PALETTE:
 	BINARY "errors/shared.pal"
