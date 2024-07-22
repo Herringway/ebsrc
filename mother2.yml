@@ -297,7 +297,7 @@ dumpEntries:
 - subdir: JP/text_data
   name: E07GPFT
   offset: 0x977B4
-  size: 2124
+  size: 1969
   extension: ebtxt
   compressed: false
 - subdir: JP/text_data

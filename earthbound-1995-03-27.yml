@@ -13310,10 +13310,10 @@ dumpEntries:
   compressed: true
 - subdir: US19950327/ending
   name: cast_names
-  offset: 0x21D521
-  size: 32
-  extension: bin
-  compressed: false
+  offset: 0x21E2D8
+  size: 66
+  extension: pal
+  compressed: true
 - subdir: US19950327/ending
   name: cast_names
   offset: 0x21D541

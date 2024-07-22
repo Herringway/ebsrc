@@ -13,125 +13,46 @@
 .INCLUDE "symbols/overworld_sprites.inc.asm"
 .INCLUDE "symbols/sram.inc.asm"
 
-AUDIO_PACK_23:
-        AUDIOPACK "audiopacks/23.ebm"
-
-AUDIO_PACK_11:
-        AUDIOPACK "audiopacks/11.ebm"
-
-AUDIO_PACK_142:
-        AUDIOPACK "audiopacks/142.ebm"
-
-AUDIO_PACK_160:
-        AUDIOPACK "audiopacks/160.ebm"
-
-AUDIO_PACK_101:
-        AUDIOPACK "audiopacks/101.ebm"
-
-AUDIO_PACK_103:
-        AUDIOPACK "audiopacks/103.ebm"
-
-AUDIO_PACK_51:
-        AUDIOPACK "audiopacks/51.ebm"
-
-AUDIO_PACK_18:
-        AUDIOPACK "audiopacks/18.ebm"
-
-AUDIO_PACK_29:
-        AUDIOPACK "audiopacks/29.ebm"
-
-AUDIO_PACK_93:
-        AUDIOPACK "audiopacks/93.ebm"
-
-AUDIO_PACK_95:
-        AUDIOPACK "audiopacks/95.ebm"
-
-AUDIO_PACK_164:
-        AUDIOPACK "audiopacks/164.ebm"
-
-AUDIO_PACK_151:
-        AUDIOPACK "audiopacks/151.ebm"
-
-AUDIO_PACK_143:
-        AUDIOPACK "audiopacks/143.ebm"
-
-AUDIO_PACK_12:
-        AUDIOPACK "audiopacks/12.ebm"
-
-AUDIO_PACK_135:
-        AUDIOPACK "audiopacks/135.ebm"
-
-AUDIO_PACK_83:
-        AUDIOPACK "audiopacks/83.ebm"
-
-AUDIO_PACK_88:
-        AUDIOPACK "audiopacks/88.ebm"
-
-AUDIO_PACK_155:
-        AUDIOPACK "audiopacks/155.ebm"
-
-AUDIO_PACK_31:
-        AUDIOPACK "audiopacks/31.ebm"
-
-AUDIO_PACK_129:
-        AUDIOPACK "audiopacks/129.ebm"
-
-AUDIO_PACK_22:
-        AUDIOPACK "audiopacks/22.ebm"
-
-AUDIO_PACK_17:
-        AUDIOPACK "audiopacks/17.ebm"
-
-AUDIO_PACK_91:
-        AUDIOPACK "audiopacks/91.ebm"
-
-AUDIO_PACK_81:
-        AUDIOPACK "audiopacks/81.ebm"
-
-AUDIO_PACK_147:
-        AUDIOPACK "audiopacks/147.ebm"
-
-AUDIO_PACK_152:
-        AUDIOPACK "audiopacks/152.ebm"
-
-AUDIO_PACK_159:
-        AUDIOPACK "audiopacks/159.ebm"
-
-AUDIO_PACK_49:
-        AUDIOPACK "audiopacks/49.ebm"
-
-AUDIO_PACK_9:
-        AUDIOPACK "audiopacks/9.ebm"
-
-AUDIO_PACK_145:
-        AUDIOPACK "audiopacks/145.ebm"
-
-AUDIO_PACK_69:
-        AUDIOPACK "audiopacks/69.ebm"
-
-AUDIO_PACK_167:
-        AUDIOPACK "audiopacks/167.ebm"
-
-AUDIO_PACK_130:
-        AUDIOPACK "audiopacks/130.ebm"
-
-AUDIO_PACK_168:
-        AUDIOPACK "audiopacks/168.ebm"
-
-AUDIO_PACK_75:
-        AUDIOPACK "audiopacks/75.ebm"
-
-AUDIO_PACK_137:
-        AUDIOPACK "audiopacks/137.ebm"
-
-AUDIO_PACK_59:
-        AUDIOPACK "audiopacks/59.ebm"
-
-AUDIO_PACK_41:
-        AUDIOPACK "audiopacks/41.ebm"
-
-AUDIO_PACK_7:
-        AUDIOPACK "audiopacks/7.ebm"
+INSERT_AUDIO_PACK 23
+INSERT_AUDIO_PACK 11
+INSERT_AUDIO_PACK 142
+INSERT_AUDIO_PACK 160
+INSERT_AUDIO_PACK 101
+INSERT_AUDIO_PACK 103
+INSERT_AUDIO_PACK 51
+INSERT_AUDIO_PACK 18
+INSERT_AUDIO_PACK 29
+INSERT_AUDIO_PACK 93
+INSERT_AUDIO_PACK 95
+INSERT_AUDIO_PACK 164
+INSERT_AUDIO_PACK 151
+INSERT_AUDIO_PACK 143
+INSERT_AUDIO_PACK 12
+INSERT_AUDIO_PACK 135
+INSERT_AUDIO_PACK 83
+INSERT_AUDIO_PACK 88
+INSERT_AUDIO_PACK 155
+INSERT_AUDIO_PACK 31
+INSERT_AUDIO_PACK 129
+INSERT_AUDIO_PACK 22
+INSERT_AUDIO_PACK 17
+INSERT_AUDIO_PACK 91
+INSERT_AUDIO_PACK 81
+INSERT_AUDIO_PACK 147
+INSERT_AUDIO_PACK 152
+INSERT_AUDIO_PACK 159
+INSERT_AUDIO_PACK 49
+INSERT_AUDIO_PACK 9
+INSERT_AUDIO_PACK 145
+INSERT_AUDIO_PACK 69
+INSERT_AUDIO_PACK 167
+INSERT_AUDIO_PACK 130
+INSERT_AUDIO_PACK 168
+INSERT_AUDIO_PACK 75
+INSERT_AUDIO_PACK 137
+INSERT_AUDIO_PACK 59
+INSERT_AUDIO_PACK 41
+INSERT_AUDIO_PACK 7
 
 .INCLUDE "data/map/tileset_table.asm"
 

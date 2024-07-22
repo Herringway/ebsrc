@@ -167,43 +167,43 @@
 
 .INCLUDE "data/unknown/EF4A40.asm"
 
-.INCLUDE "bin/US/text_data/EEXPLPSI.ebtxt"
+LOCALEINCLUDE "text_data/EEXPLPSI.ebtxt"
 
-.INCLUDE "bin/US/text_data/E16DKFD.ebtxt"
+LOCALEINCLUDE "text_data/E16DKFD.ebtxt"
 
-.INCLUDE "bin/US/text_data/E07GPFT.ebtxt"
+LOCALEINCLUDE "text_data/E07GPFT.ebtxt"
 
-.INCLUDE "bin/US/text_data/EBATTLE5.ebtxt"
+LOCALEINCLUDE "text_data/EBATTLE5.ebtxt"
 
-.INCLUDE "bin/US/text_data/EBATTLE4.ebtxt"
+LOCALEINCLUDE "text_data/EBATTLE4.ebtxt"
 
-.INCLUDE "bin/US/text_data/EBATTLE8.ebtxt"
+LOCALEINCLUDE "text_data/EBATTLE8.ebtxt"
 
-.INCLUDE "bin/US/text_data/EBATTLE2.ebtxt"
+LOCALEINCLUDE "text_data/EBATTLE2.ebtxt"
 
-.INCLUDE "bin/US/text_data/EBATTLE0.ebtxt"
+LOCALEINCLUDE "text_data/EBATTLE0.ebtxt"
 
-.INCLUDE "bin/US/text_data/EBATTLE3.ebtxt"
+LOCALEINCLUDE "text_data/EBATTLE3.ebtxt"
 
-.INCLUDE "bin/US/text_data/EBATTLE9.ebtxt"
+LOCALEINCLUDE "text_data/EBATTLE9.ebtxt"
 
-.INCLUDE "bin/US/text_data/E04GRFD.ebtxt"
+LOCALEINCLUDE "text_data/E04GRFD.ebtxt"
 
-.INCLUDE "bin/US/text_data/EBATTLE1.ebtxt"
+LOCALEINCLUDE "text_data/EBATTLE1.ebtxt"
 
-.INCLUDE "bin/US/text_data/EGOODS2.ebtxt"
+LOCALEINCLUDE "text_data/EGOODS2.ebtxt"
 
-.INCLUDE "bin/US/text_data/UNKNOWN_EFA2FA.ebtxt"
+LOCALEINCLUDE "text_data/UNKNOWN_EFA2FA.ebtxt"
 
 .INCLUDE "data/command_window_text.asm"
 
 .INCLUDE "data/status_window_text.asm"
 
-.INCLUDE "bin/US/text_data/KEYBOARD.ebtxt"
+LOCALEINCLUDE "text_data/KEYBOARD.ebtxt"
 
 .INCLUDE "data/name_input_window_selection_layout_pointers.asm"
 
-.INCLUDE "bin/US/text_data/UNKNOWN7.ebtxt"
+LOCALEINCLUDE "text_data/UNKNOWN7.ebtxt"
 
 .INCLUDE "data/map/per_sector_town_map_data.asm"
 
