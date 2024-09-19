@@ -473,11 +473,11 @@ UNKNOWN_D545C0:
 .INCLUDE "data/exp_table.asm"
 
 .IF .DEFINED(JPN)
-.INCLUDE "data/battle/enemies-jp.asm"
+	.INCLUDE "data/battle/enemies-jp.asm"
 .ELSEIF .DEFINED(PROTOTYPE19950327)
-.INCLUDE "data/battle/enemies-proto.asm"
+	.INCLUDE "data/battle/enemies-proto.asm"
 .ELSE
-.INCLUDE "data/battle/enemies.asm"
+	.INCLUDE "data/battle/enemies.asm"
 .ENDIF
 
 .INCLUDE "data/stats_growth_vars.asm"
@@ -491,9 +491,9 @@ UNKNOWN_D545C0:
 .INCLUDE "data/timed_item_transformation_table.asm"
 
 .IF .DEFINED(JPN)
-.INCLUDE "data/dont_care_names-jp.asm"
+	.INCLUDE "data/dont_care_names-jp.asm"
 .ELSE
-.INCLUDE "data/dont_care_names.asm"
+	.INCLUDE "data/dont_care_names.asm"
 .ENDIF
 
 .INCLUDE "data/initial_stats.asm"
