@@ -450,8 +450,10 @@ UNKNOWN_D545C0:
 	.ELSE
 		@AMT = $A40
 	.ENDIF
+	; aligns to $7000 in mother 2, $5000 in earthbound?
+	; or is this all just blank, unreferenced 4BPP tiles? (all tile data totals to 276KB in EB, 284KB in M2?)
 	.REPEAT @AMT
-		.BYTE 0 ;It's empty.
+		.BYTE 0
 	.ENDREPEAT
 
 .INCLUDE "data/items.asm"
