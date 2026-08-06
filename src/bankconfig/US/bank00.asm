@@ -78,13 +78,13 @@
 
 .INCLUDE "unknown/C0/C01731.asm"
 
-.INCLUDE "unknown/C0/C017EA.asm"
+.INCLUDE "overworld/debug/map_viewer.asm"
 
 .INCLUDE "overworld/reload_map.asm"
 
 .INCLUDE "overworld/initialize_map.asm"
 
-.INCLUDE "unknown/C0/C019E2.asm"
+.INCLUDE "overworld/reload_map_current_location.asm"
 
 .INCLUDE "unknown/C0/C01A63.asm"
 
