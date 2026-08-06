@@ -69,7 +69,7 @@ COMPRESSED_PALETTE_UNKNOWN:
 	.INCLUDE "data/credits.asm"
 .ENDIF
 
-.INCLUDE "unknown/E1/E14DE8.asm"
+.INCLUDE "system/debug/debug_battler_info.asm"
 
 APE_ARRANGEMENT:
 	BINARY "intro/logos/ape.arr.lzhal"
