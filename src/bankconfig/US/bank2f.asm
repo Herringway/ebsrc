@@ -75,7 +75,7 @@
 
 .INCLUDE "system/saves/copy_save_slot.asm"
 
-.INCLUDE "unused/EF0C3D.asm"
+.INCLUDE "unused/load_save_3_and_spawn_player.asm"
 
 .INCLUDE "overworld/actionscript/delivery/get_entity_delivery_attempt_count.asm"
 
