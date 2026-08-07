@@ -122,21 +122,21 @@ INSERT_AUDIO_PACK 7
 
 .INCLUDE "data/debug/sound_menu_option_strings.asm"
 
-.INCLUDE "unknown/EF/EFD56F.asm"
+.INCLUDE "system/debug/render_debug_byte.asm"
 
-.INCLUDE "unknown/EF/EFD5D9-jp.asm"
+.INCLUDE "system/debug/reset_debug_sound_mode_menu-jp.asm"
 
-.INCLUDE "unknown/EF/EFD6D4.asm"
+.INCLUDE "system/debug/debug_sound_menu.asm"
 
 .INCLUDE "data/debug/menu_option_strings.asm"
 
-.INCLUDE "unknown/EF/EFD95E.asm"
+.INCLUDE "system/debug/load_debug_text_graphics.asm"
 
-.INCLUDE "unknown/EF/EFD9F3.asm"
+.INCLUDE "system/debug/load_debug_text_graphics_auto.asm"
 
-.INCLUDE "unknown/EF/EFDA05.asm"
+.INCLUDE "system/debug/init_debug_menu_screen"
 
-.INCLUDE "unknown/EF/EFDABD.asm"
+.INCLUDE "system/debug/render_debug_menu_string.asm"
 
 .INCLUDE "system/debug/display_menu_options.asm"
 
@@ -150,15 +150,15 @@ INSERT_AUDIO_PACK 7
 
 .INCLUDE "system/debug/display_view_character_debug_overlay.asm"
 
-.INCLUDE "unknown/EF/EFDF0B.asm"
+.INCLUDE "system/debug/get_attribute_tile_for.asm"
 
-.INCLUDE "unknown/EF/EFDFC4.asm"
+.INCLUDE "system/debug/render_attribute_row.asm"
 
-.INCLUDE "unknown/EF/EFE07C.asm"
+.INCLUDE "system/debug/render_attribute_column.asm"
 
-.INCLUDE "unknown/EF/EFE133.asm"
+.INCLUDE "system/debug/render_all_attribute_rows.asm"
 
-.INCLUDE "unknown/EF/EFE175-jp.asm"
+.INCLUDE "system/debug/debug_main-jp.asm"
 
 .INCLUDE "system/debug/load_debug_cursor_graphics.asm"
 
@@ -168,37 +168,37 @@ INSERT_AUDIO_PACK 7
 
 .INCLUDE "system/debug/load_menu.asm"
 
-.INCLUDE "unknown/EF/EFE6CF.asm"
+.INCLUDE "system/debug/is_debug_view_map_mode.asm"
 
-.INCLUDE "unknown/EF/EFE6E2.asm"
+.INCLUDE "system/debug/debug_view_map_limit_actionscript.asm"
 
-.INCLUDE "unknown/EF/EFE708.asm"
+.INCLUDE "system/debug/debug_try_cancelling_battle.asm"
 
 .INCLUDE "system/debug/check_view_character_mode.asm"
 
-.INCLUDE "unknown/EF/EFE759.asm"
+.INCLUDE "system/debug/debug_enemies_enabled.asm"
 
-.INCLUDE "unknown/EF/EFE771.asm"
+.INCLUDE "system/debug/save_replay_save_slot.asm"
 
 .INCLUDE "unknown/EF/EFE873.asm"
 
-.INCLUDE "unknown/EF/EFE895.asm"
+.INCLUDE "system/debug/store_persistent_replay_state.asm"
 
-.INCLUDE "unknown/EF/EFE8C7-jp.asm"
+.INCLUDE "system/debug/load_replay_save_slot-jp.asm"
 
 .INCLUDE "unknown/EF/EFEA23.asm"
 
-.INCLUDE "unknown/EF/EFEA4A.asm"
+.INCLUDE "system/debug/start_replay.asm"
 
-.INCLUDE "unknown/EF/EFEA9E.asm"
+.INCLUDE "system/debug/end_replay.asm"
 
 .INCLUDE "unknown/EF/EFEAA4.asm"
 
-.INCLUDE "unknown/EF/EFEAC8-jp.asm"
+.INCLUDE "system/debug/check_position_overlay_background-jp.asm"
 
 .INCLUDE "data/unknown/EFEB1D.asm"
 
-.INCLUDE "unknown/EF/EFEB2A.asm"
+.INCLUDE "system/debug/debug_clear_hdma.asm"
 
 .INCLUDE "data/unknown/EFEB3D.asm"
 
