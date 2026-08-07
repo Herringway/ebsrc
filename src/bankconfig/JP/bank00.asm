@@ -1336,7 +1336,7 @@
 
 .INCLUDE "system/saves/copy_save_slot.asm"
 
-.INCLUDE "unknown/EF/EF0C3D.asm"
+.INCLUDE "unused/load_save_3_and_spawn_player.asm"
 
 .INCLUDE "ending/credits_scroll_frame-jp.asm"
 
