@@ -2120,11 +2120,11 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/unknown/C3F2B1.asm"
 
-.INCLUDE "unknown/EF/EF027D.asm"
+.INCLUDE "overworld/actionscript/bubble_monkey_initialize.asm"
 
-.INCLUDE "unknown/EF/EF02C4.asm"
+.INCLUDE "overworld/pick_next_bubble_monkey_movement_mode.asm"
 
-.INCLUDE "unknown/EF/EF031E.asm"
+.INCLUDE "overworld/actionscript/bubble_monkey_tick.asm"
 
 .INCLUDE "data/playable_character_graphics_table.asm"
 
