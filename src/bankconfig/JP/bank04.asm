@@ -981,35 +981,35 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "ending/play_credits.asm"
 
-.INCLUDE "unknown/EF/EF0C87.asm"
+.INCLUDE "overworld/actionscript/delivery/get_entity_delivery_attempt_count.asm"
 
-.INCLUDE "unknown/EF/EF0C97.asm"
+.INCLUDE "overworld/actionscript/delivery/clear_entity_delivery_attempt_count.asm"
 
-.INCLUDE "unknown/EF/EF0CA7-proto.asm"
+.INCLUDE "overworld/actionscript/delivery/get_entity_has_delivery_attempts_left-proto.asm"
 
-.INCLUDE "unknown/EF/EF0D23.asm"
+.INCLUDE "overworld/actionscript/delivery/get_time_between_delivery_attempts.asm"
 
-.INCLUDE "unknown/EF/EF0D46.asm"
+.INCLUDE "overworld/actionscript/delivery/start_delivery_countdown.asm"
 
-.INCLUDE "unknown/EF/EF0D73.asm"
+.INCLUDE "overworld/actionscript/delivery/do_delivery_countdown.asm"
 
-.INCLUDE "unknown/EF/EF0D8D-jp.asm"
+.INCLUDE "overworld/actionscript/delivery/start_delivery_success_text-jp.asm"
 
-.INCLUDE "unknown/EF/EF0DFA-jp.asm"
+.INCLUDE "overworld/actionscript/delivery/start_delivery_fail_text-jp.asm"
 
-.INCLUDE "unknown/EF/EF0E67.asm"
+.INCLUDE "overworld/actionscript/delivery/get_delivery_enter_speed.asm"
 
-.INCLUDE "unknown/EF/EF0E8A.asm"
+.INCLUDE "overworld/actionscript/delivery/get_delivery_exit_speed.asm"
 
-.INCLUDE "unknown/EF/EF0EAD.asm"
+.INCLUDE "overworld/create_delivery_entity.asm"
 
-.INCLUDE "unknown/EF/EF0EE8.asm"
+.INCLUDE "overworld/respawn_delivery_entities.asm"
 
-.INCLUDE "unknown/EF/EF0F60-jp.asm"
+.INCLUDE "overworld/actionscript/delivery/check_delivery_eligibility-jp.asm"
 
-.INCLUDE "unknown/EF/EF0FDB.asm"
+.INCLUDE "overworld/actionscript/delivery/start_delivery.asm"
 
-.INCLUDE "unknown/EF/EF0FF6.asm"
+.INCLUDE "overworld/actionscript/delivery/finish_delivery.asm"
 
 .INCLUDE "data/music/dataset_table.asm"
 
