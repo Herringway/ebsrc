@@ -29,11 +29,11 @@
 
 .INCLUDE "text/print_new_line_if_needed.asm"
 
-.INCLUDE "audio/pause_music.asm"
+.INCLUDE "misc/stop_hp_pp_rolling.asm"
 
 .INCLUDE "misc/enable_half_hp_meter_speed.asm"
 
-.INCLUDE "audio/resume_music.asm"
+.INCLUDE "misc/resume_hp_pp_rolling.asm"
 
 .INCLUDE "overworld/actionscript/bubble_monkey_initialize.asm"
 
