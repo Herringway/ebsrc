@@ -108,35 +108,35 @@
 
 .INCLUDE "overworld/create_entity.asm"
 
-.INCLUDE "unknown/C0/C020F1.asm"
+.INCLUDE "overworld/actionscript/active_script_cleanup_self.asm"
 
-.INCLUDE "unknown/C0/C02140.asm"
+.INCLUDE "overworld/delete_overworld_entity.asm"
 
 .INCLUDE "unknown/C0/C02194.asm"
 
 .INCLUDE "unknown/C0/C021E6.asm"
 
-.INCLUDE "unknown/C0/C0222B.asm"
+.INCLUDE "overworld/try_spawn_npcs.asm"
 
-.INCLUDE "unknown/C0/C0255C.asm"
+.INCLUDE "overworld/spawn_npcs_row.asm"
 
-.INCLUDE "unknown/C0/C025CF.asm"
+.INCLUDE "overworld/spawn_npcs_column.asm"
 
-.INCLUDE "unknown/C0/C0263D.asm"
+.INCLUDE "overworld/get_encounter_group_id.asm"
 
-.INCLUDE "unknown/C0/C02668.asm"
+.INCLUDE "overworld/spawn_enemies_from_group.asm"
 
 .INCLUDE "overworld/spawn_horizontal.asm"
 
 .INCLUDE "overworld/spawn_vertical.asm"
 
-.INCLUDE "unknown/C0/C02C3E.asm"
+.INCLUDE "overworld/update_mushroomized_walking.asm"
 
 .INCLUDE "overworld/reset_mushroomized_walking.asm"
 
 .INCLUDE "overworld/mushroomization_movement_swap.asm"
 
-.INCLUDE "unknown/C0/C02D29.asm"
+.INCLUDE "overworld/clear_party.asm"
 
 .INCLUDE "overworld/adjust_position_horizontal.asm"
 
