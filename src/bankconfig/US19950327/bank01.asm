@@ -112,7 +112,7 @@
 
 .INCLUDE "unknown/C4/C437B8_redirect.asm"
 
-.INCLUDE "unknown/EF/EF0115.asm"
+.INCLUDE "text/remove_window_from_screen.asm"
 
 .INCLUDE "text/print_letter.asm"
 
@@ -204,7 +204,7 @@
 
 .INCLUDE "audio/pause_music.asm"
 
-.INCLUDE "unknown/EF/EF0262.asm"
+.INCLUDE "misc/enable_half_hp_meter_speed.asm"
 
 .INCLUDE "audio/resume_music.asm"
 
