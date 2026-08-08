@@ -734,7 +734,7 @@
 
 .INCLUDE "unknown/C1/C1CE85.asm"
 
-.INCLUDE "unknown/C1/C1CFC6.asm"
+.INCLUDE "battle/battle_select_item.asm"
 
 .INCLUDE "unknown/C1/C1D038.asm"
 
@@ -792,7 +792,7 @@
 
 .INCLUDE "text/selection_menu_redirect.asm"
 
-.INCLUDE "unknown/C1/C1CFC6_redirect.asm"
+.INCLUDE "battle/battle_select_item_redirect.asm"
 
 .INCLUDE "unknown/C1/C1242E_redirect.asm"
 
