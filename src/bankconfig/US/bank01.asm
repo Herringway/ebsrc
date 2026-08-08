@@ -106,7 +106,7 @@
 
 .INCLUDE "text/print_string_redirect.asm"
 
-.INCLUDE "unknown/C4/C437B8_redirect.asm"
+.INCLUDE "text/move_text_up_one_line_redirect.asm"
 
 .INCLUDE "text/print_letter.asm"
 
