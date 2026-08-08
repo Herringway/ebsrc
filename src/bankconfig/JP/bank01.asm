@@ -22,7 +22,7 @@
 
 .INCLUDE "text/set_text_sound_mode.asm"
 
-.INCLUDE "unknown/C3/C3E450.asm"
+.INCLUDE "text/update_flash_text_palette.asm"
 
 .INCLUDE "unknown/C1/C1004E.asm"
 
@@ -30,7 +30,7 @@
 
 .INCLUDE "text/set_instant_printing.asm"
 
-.INCLUDE "unknown/C3/C3E4EF.asm"
+.INCLUDE "text/find_free_window.asm"
 
 .INCLUDE "text/get_window_focus.asm"
 
@@ -84,7 +84,7 @@
 
 .INCLUDE "unknown/C1/C107AF-jp.asm"
 
-.INCLUDE "unknown/C3/C3E6F8-jp.asm"
+.INCLUDE "text/reset_active_party_member_hp_pp_window-jp.asm"
 
 .INCLUDE "unknown/C4/C43573.asm"
 
@@ -148,7 +148,7 @@
 
 .INCLUDE "unknown/C1/C11354.asm"
 
-.INCLUDE "unknown/C3/C3E7E3.asm"
+.INCLUDE "text/reset_window_menu.asm"
 
 .INCLUDE "unknown/C1/C11383.asm"
 
@@ -790,7 +790,7 @@
 
 .INCLUDE "unknown/C4/C43573_redirect.asm"
 
-.INCLUDE "unknown/C3/C3E6F8_redirect-jp.asm"
+.INCLUDE "text/reset_active_party_member_hp_pp_window_redirect-jp.asm"
 
 .INCLUDE "text/selection_menu_setup-jp.asm"
 
