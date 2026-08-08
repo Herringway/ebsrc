@@ -363,7 +363,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C43568.asm"
 
-.INCLUDE "unknown/C3/C3E6F8-proto.asm"
+.INCLUDE "text/reset_active_party_member_hp_pp_window-proto.asm"
 
 .INCLUDE "unknown/C4/C43573.asm"
 
