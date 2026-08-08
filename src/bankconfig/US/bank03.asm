@@ -2124,13 +2124,13 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "intro/show_title_screen.asm"
 
-.INCLUDE "unknown/C3/C3F5F9.asm"
+.INCLUDE "system/tilemap_update_upload_rows.asm"
 
 .INCLUDE "unknown/C3/C3F67D.asm"
 
-.INCLUDE "unknown/C3/C3F705.asm"
+.INCLUDE "system/tilemap_update_upload_tilemap.asm"
 
-.INCLUDE "unknown/C3/C3F7FB.asm"
+.INCLUDE "unused/C3F7FB.asm"
 
 .INCLUDE "data/unknown/C3F819.asm"
 
@@ -2144,11 +2144,11 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/misc_swirl_colours.asm"
 
-.INCLUDE "unknown/C3/C3F981.asm"
+.INCLUDE "battle/start_battle_animation.asm"
 
-.INCLUDE "unknown/C3/C3FAC9.asm"
+.INCLUDE "battle/start_enemy_or_ally_battle_animation.asm"
 
-.INCLUDE "unknown/C3/C3FB09.asm"
+.INCLUDE "battle/attacker_is_enemy.asm"
 
 .INCLUDE "data/hp_meter_speeds.asm"
 
