@@ -104,7 +104,7 @@
 
 .INCLUDE "unknown/C4/C43739-jp.asm"
 
-.INCLUDE "unknown/C4/C437B8-jp.asm"
+.INCLUDE "text/move_text_up_one_line-jp.asm"
 
 .INCLUDE "unknown/C1/C10A85-jp.asm"
 
