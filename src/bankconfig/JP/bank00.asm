@@ -146,7 +146,7 @@
 
 .INCLUDE "unknown/C0/C0329F.asm"
 
-.INCLUDE "unknown/C0/C032EC-jp.asm"
+.INCLUDE "overworld/update_party_npcs-jp.asm"
 
 .INCLUDE "overworld/update_party-jp.asm"
 
@@ -172,13 +172,13 @@
 
 .INCLUDE "unknown/C0/C03E25-jp.asm"
 
-.INCLUDE "unknown/C0/C03E5A-jp.asm"
+.INCLUDE "overworld/get_character_position_index-jp.asm"
 
 .INCLUDE "unknown/C0/C03E9D.asm"
 
 .INCLUDE "unknown/C0/C03EC3.asm"
 
-.INCLUDE "unknown/C0/C03F1E-jp.asm"
+.INCLUDE "overworld/move_party_to_leader_position-jp.asm"
 
 .INCLUDE "unknown/C0/C03FA9.asm"
 
@@ -210,7 +210,7 @@
 
 .INCLUDE "unknown/C0/C047CF.asm"
 
-.INCLUDE "unknown/C0/C048D3-jp.asm"
+.INCLUDE "overworld/handle_bicycle_movement-jp.asm"
 
 .INCLUDE "unknown/C0/C04A7B.asm"
 
@@ -346,7 +346,7 @@
 
 .INCLUDE "unknown/C0/C06E4A.asm"
 
-.INCLUDE "unknown/C0/C06E6E-jp.asm"
+.INCLUDE "overworld/interact_escalator-jp.asm"
 
 .INCLUDE "unknown/C0/C06F82.asm"
 
@@ -578,7 +578,7 @@
 
 .INCLUDE "unknown/C0/C09279.asm"
 
-.INCLUDE "unknown/C0/C0927C-jp.asm"
+.INCLUDE "overworld/init_entity_subsystem-jp.asm"
 
 .INCLUDE "overworld/init_entity.asm"
 
@@ -1276,7 +1276,7 @@
 
 .INCLUDE "unknown/C0/C0EBAA-jp.asm"
 
-.INCLUDE "unknown/C0/C0EBE0-jp.asm"
+.INCLUDE "intro/load_title_screen_graphics-jp.asm"
 
 .INCLUDE "unknown/C0/C0ED41-jp.asm"
 
