@@ -144,7 +144,7 @@
 
 .INCLUDE "unknown/C0/C0329F.asm"
 
-.INCLUDE "unknown/C0/C032EC.asm"
+.INCLUDE "overworld/update_party_npcs.asm"
 
 .INCLUDE "overworld/update_party.asm"
 
@@ -170,13 +170,13 @@
 
 .INCLUDE "unknown/C0/C03E25.asm"
 
-.INCLUDE "unknown/C0/C03E5A.asm"
+.INCLUDE "overworld/get_character_position_index.asm"
 
 .INCLUDE "unknown/C0/C03E9D.asm"
 
 .INCLUDE "unknown/C0/C03EC3.asm"
 
-.INCLUDE "unknown/C0/C03F1E.asm"
+.INCLUDE "overworld/move_party_to_leader_position.asm"
 
 .INCLUDE "unknown/C0/C03FA9.asm"
 
@@ -208,7 +208,7 @@
 
 .INCLUDE "unknown/C0/C047CF.asm"
 
-.INCLUDE "unknown/C0/C048D3.asm"
+.INCLUDE "overworld/handle_bicycle_movement.asm"
 
 .INCLUDE "unknown/C0/C04A7B.asm"
 
@@ -346,7 +346,7 @@
 
 .INCLUDE "unknown/C0/C06E4A.asm"
 
-.INCLUDE "unknown/C0/C06E6E.asm"
+.INCLUDE "overworld/interact_escalator.asm"
 
 .INCLUDE "unknown/C0/C06F82.asm"
 
@@ -582,7 +582,7 @@
 
 .INCLUDE "unknown/C0/C09279.asm"
 
-.INCLUDE "unknown/C0/C0927C.asm"
+.INCLUDE "overworld/init_entity_subsystem.asm"
 
 .INCLUDE "overworld/init_entity.asm"
 
@@ -1278,7 +1278,7 @@
 
 .INCLUDE "misc/teleport_mainloop.asm"
 
-.INCLUDE "unknown/C0/C0EBE0.asm"
+.INCLUDE "intro/load_title_screen_graphics.asm"
 
 .INCLUDE "unknown/C0/C0EC77.asm"
 
