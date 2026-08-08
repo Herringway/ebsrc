@@ -692,7 +692,7 @@
 
 .INCLUDE "overworld/use_item.asm"
 
-.INCLUDE "unknown/C1/C1B5B6-jp.asm"
+.INCLUDE "overworld/overworld_psi_menu-jp.asm"
 
 .INCLUDE "unknown/C1/C1BB06.asm"
 
@@ -814,7 +814,7 @@
 
 .INCLUDE "unknown/C1/C1E48D-jp.asm"
 
-.INCLUDE "unknown/C1/C1E4BE-jp.asm"
+.INCLUDE "text/input_dont_care_name-jp.asm"
 
 .INCLUDE "text/text_input_dialog-jp.asm"
 
