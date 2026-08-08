@@ -686,7 +686,7 @@
 
 .INCLUDE "overworld/use_item.asm"
 
-.INCLUDE "unknown/C1/C1B5B6-proto.asm"
+.INCLUDE "overworld/overworld_psi_menu-proto.asm"
 
 .INCLUDE "unknown/C1/C1BB06.asm"
 
@@ -808,7 +808,7 @@
 
 .INCLUDE "unknown/C1/C1E48D.asm"
 
-.INCLUDE "unknown/C1/C1E4BE-proto.asm"
+.INCLUDE "text/input_dont_care_name-proto.asm"
 
 .INCLUDE "text/text_input_dialog.asm"
 
