@@ -456,9 +456,9 @@
 
 .INCLUDE "system/set_inidisp.asm"
 
-.INCLUDE "unknown/C0/C087AB_redirect.asm"
+.INCLUDE "system/set_mosaic_fade_redirect.asm"
 
-.INCLUDE "unknown/C0/C087AB.asm"
+.INCLUDE "system/set_mosaic_fade.asm"
 
 .INCLUDE "system/fade_in_with_mosaic.asm"
 
@@ -842,9 +842,9 @@
 
 .INCLUDE "system/check_hardware.asm"
 
-.INCLUDE "unknown/C0/C0A156_redirect.asm"
+.INCLUDE "overworld/load_map_block_redirect.asm"
 
-.INCLUDE "unknown/C0/C0A156.asm"
+.INCLUDE "overworld/load_map_block.asm"
 
 .INCLUDE "data/unknown/C0A1AE.asm"
 
