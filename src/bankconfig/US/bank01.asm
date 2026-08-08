@@ -678,7 +678,7 @@
 
 .INCLUDE "overworld/use_item.asm"
 
-.INCLUDE "unknown/C1/C1B5B6.asm"
+.INCLUDE "overworld/overworld_psi_menu.asm"
 
 .INCLUDE "unknown/C1/C1BB06.asm"
 
@@ -800,7 +800,7 @@
 
 .INCLUDE "unknown/C1/C1E48D.asm"
 
-.INCLUDE "unknown/C1/C1E4BE.asm"
+.INCLUDE "text/input_dont_care_name.asm"
 
 .INCLUDE "text/text_input_dialog.asm"
 
