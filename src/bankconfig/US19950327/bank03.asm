@@ -2116,7 +2116,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/psi_target_text.asm"
 
-.INCLUDE "unknown/C3/C3F1EC.asm"
+.INCLUDE "misc/select_fixable_item.asm"
 
 .INCLUDE "data/unknown/C3F2B1.asm"
 
