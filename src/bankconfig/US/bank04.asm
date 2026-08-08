@@ -375,7 +375,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C43739.asm"
 
-.INCLUDE "unknown/C4/C437B8.asm"
+.INCLUDE "text/move_text_up_one_line.asm"
 
 .INCLUDE "unknown/C4/C43874.asm"
 
