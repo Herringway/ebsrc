@@ -176,7 +176,7 @@
 
 .INCLUDE "unknown/C0/C03EC3.asm"
 
-.INCLUDE "overworld/move_party_to_leader_position.asm"
+.INCLUDE "overworld/actionscript/move_party_to_leader_position.asm"
 
 .INCLUDE "unknown/C0/C03FA9.asm"
 
