@@ -411,7 +411,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "text/get_character_at_cursor_position.asm"
 
-.INCLUDE "unknown/C4/C440B5.asm"
+.INCLUDE "text/prefill_keyboard_input.asm"
 
 .INCLUDE "unknown/C4/C441B7.asm"
 
@@ -425,7 +425,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C447FB.asm"
 
-.INCLUDE "unknown/C4/C4487C.asm"
+.INCLUDE "text/print_words_onto_new_line.asm"
 
 .INCLUDE "unknown/C4/C44963.asm"
 
@@ -449,7 +449,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C44FF3.asm"
 
-.INCLUDE "unknown/C4/C4507A.asm"
+.INCLUDE "text/print_price.asm"
 
 .INCLUDE "unknown/C4/C451FA.asm"
 
@@ -833,7 +833,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C49CA8.asm"
 
-.INCLUDE "unknown/C4/C49CC3.asm"
+.INCLUDE "text/render_flyover_party_member_name.asm"
 
 .INCLUDE "unknown/C4/C49D16.asm"
 
