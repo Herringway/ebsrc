@@ -1230,7 +1230,7 @@
 
 .INCLUDE "overworld/teleport/psi_teleport_load_destination.asm"
 
-.INCLUDE "overworld/teleport/setup_teleportation_entites.asm"
+.INCLUDE "overworld/teleport/setup_teleporting_entites.asm"
 
 .INCLUDE "overworld/teleport/initialize_psi_teleportation.asm"
 
