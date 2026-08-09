@@ -1220,53 +1220,53 @@
 
 .INCLUDE "unknown/C0/C0DD0F.asm"
 
-.INCLUDE "unknown/C0/C0DD2C.asm"
+.INCLUDE "overworld/teleport/psi_teleport_wait_n_frames.asm"
 
-.INCLUDE "overworld/set_teleport_state.asm"
+.INCLUDE "overworld/teleport/set_teleport_state.asm"
 
-.INCLUDE "unknown/C0/C0DD79.asm"
+.INCLUDE "overworld/teleport/psi_teleport_load_destination.asm"
 
-.INCLUDE "unknown/C0/C0DE16.asm"
+.INCLUDE "overworld/teleport/setup_teleportation_entites.asm"
 
-.INCLUDE "unknown/C0/C0DE46.asm"
+.INCLUDE "overworld/teleport/initialize_psi_teleportation.asm"
 
-.INCLUDE "unknown/C0/C0DE7C.asm"
+.INCLUDE "overworld/teleport/psi_teleport_restore_control.asm"
 
-.INCLUDE "unknown/C0/C0DED9.asm"
+.INCLUDE "overworld/teleport/psi_teleport_check_collision.asm"
 
-.INCLUDE "unknown/C0/C0DF22.asm"
+.INCLUDE "overworld/teleport/psi_teleport_update_speed.asm"
 
 .INCLUDE "unknown/C0/C0E196.asm"
 
-.INCLUDE "unknown/C0/C0E214.asm"
+.INCLUDE "overworld/teleport/psi_teleport_get_position_index.asm"
 
-.INCLUDE "unknown/C0/C0E254.asm"
+.INCLUDE "overworld/teleport/psi_teleport_update_animation_speed.asm"
 
-.INCLUDE "unknown/C0/C0E28F.asm"
+.INCLUDE "overworld/teleport/psi_teleport_alpha_leader_tick.asm"
 
-.INCLUDE "unknown/C0/C0E3C1.asm"
+.INCLUDE "overworld/teleport/psi_teleport_follower_tick.asm"
 
-.INCLUDE "unknown/C0/C0E44D.asm"
+.INCLUDE "overworld/teleport/adjust_psi_teleport_beta_direction.asm"
 
-.INCLUDE "unknown/C0/C0E48A.asm"
+.INCLUDE "overworld/teleport/psi_teleport_beta_update_speed.asm"
 
-.INCLUDE "unknown/C0/C0E516.asm"
+.INCLUDE "overworld/teleport/psi_teleport_beta_leader_tick.asm"
 
-.INCLUDE "unknown/C0/C0E674.asm"
+.INCLUDE "overworld/teleport/psi_teleport_success_depart_leader_tick.asm"
 
 .INCLUDE "unknown/C0/C0E6FE.asm"
 
-.INCLUDE "unknown/C0/C0E776.asm"
+.INCLUDE "overworld/teleport/psi_teleport_success_arrive_leader_tick.asm"
 
-.INCLUDE "unknown/C0/C0E815.asm"
+.INCLUDE "overworld/teleport/psi_teleport_depart.asm"
 
-.INCLUDE "unknown/C0/C0E897.asm"
+.INCLUDE "overworld/teleport/psi_teleport_arrive.asm"
 
-.INCLUDE "unknown/C0/C0E979.asm"
+.INCLUDE "overworld/teleport/psi_teleport_fail_leader_tick.asm"
 
-.INCLUDE "unknown/C0/C0E97C.asm"
+.INCLUDE "overworld/teleport/psi_teleport_fail_follower_tick.asm"
 
-.INCLUDE "unknown/C0/C0E9BA.asm"
+.INCLUDE "overworld/teleport/psi_teleport_fail.asm"
 
 .INCLUDE "misc/teleport_freezeobjects.asm"
 
