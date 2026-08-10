@@ -583,23 +583,23 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C467E6.asm"
 
-.INCLUDE "unknown/C4/C4681A.asm"
+.INCLUDE "overworld/actionscript/trigger_talk_text.asm"
 
 .INCLUDE "unknown/C4/C46881.asm"
 
-.INCLUDE "unknown/C4/C468A9.asm"
+.INCLUDE "overworld/actionscript/get_pressed_buttons.asm"
 
-.INCLUDE "unknown/C4/C468AF.asm"
+.INCLUDE "overworld/actionscript/get_pad_state.asm"
 
-.INCLUDE "unknown/C4/C468B5.asm"
+.INCLUDE "overworld/actionscript/test_entity_right_of_x_coord.asm"
 
-.INCLUDE "unknown/C4/C468DC.asm"
+.INCLUDE "overworld/actionscript/test_entity_below_y_coord.asm"
 
-.INCLUDE "unknown/C4/C46903.asm"
+.INCLUDE "overworld/actionscript/test_y_coord_below_leader.asm"
 
-.INCLUDE "unknown/C4/C46914.asm"
+.INCLUDE "overworld/actionscript/get_default_direction.asm"
 
-.INCLUDE "unknown/C4/C46957.asm"
+.INCLUDE "overworld/actionscript/face_direction.asm"
 
 .INCLUDE "unknown/C4/C46984.asm"
 
@@ -607,7 +607,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "data/unknown/C46A5E.asm"
 
-.INCLUDE "unknown/C4/C46A6E.asm"
+.INCLUDE "overworld/actionscript/get_urdl_direction.asm"
 
 .INCLUDE "data/unknown/C46A7A.asm"
 
@@ -631,7 +631,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C46B51.asm"
 
-.INCLUDE "unknown/C4/C46B65.asm"
+.INCLUDE "overworld/actionscript/set_destination_party_leader.asm"
 
 .INCLUDE "unknown/C4/C46B79.asm"
 
@@ -663,7 +663,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "overworld/prepare_new_entity.asm"
 
-.INCLUDE "unknown/C4/C46E46.asm"
+.INCLUDE "overworld/actionscript/yield_to_text.asm"
 
 .INCLUDE "unknown/C4/C46E4F.asm"
 
@@ -689,9 +689,9 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C4733C.asm"
 
-.INCLUDE "unknown/C4/C4734C.asm"
+.INCLUDE "overworld/actionscript/rerender_row.asm"
 
-.INCLUDE "unknown/C4/C47369.asm"
+.INCLUDE "overworld/actionscript/reload_map_current_location.asm"
 
 .INCLUDE "system/load_background_animation.asm"
 
@@ -701,17 +701,17 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C4746B.asm"
 
-.INCLUDE "unknown/C4/C47499.asm"
+.INCLUDE "overworld/actionscript/do_all_palettes_fade_step.asm"
 
-.INCLUDE "unknown/C4/C474A8.asm"
+.INCLUDE "overworld/actionscript/set_screen_brightness.asm"
 
 .INCLUDE "data/unknown/C474F6.asm"
 
 .INCLUDE "unknown/C4/C47501.asm"
 
-.INCLUDE "unknown/C4/C476A5.asm"
+.INCLUDE "overworld/actionscript/enable_spotlight_1.asm"
 
-.INCLUDE "unknown/C4/C47705.asm"
+.INCLUDE "overworld/actionscript/enable_spotlight_2.asm"
 
 .INCLUDE "unknown/C4/C47765.asm"
 
@@ -725,7 +725,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C47A27.asm"
 
-.INCLUDE "unknown/C4/C47A6B.asm"
+.INCLUDE "overworld/actionscript/invert_y_position_relative.asm"
 
 .INCLUDE "unknown/C4/C47A9E.asm"
 
@@ -749,7 +749,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C48A6D.asm"
 
-.INCLUDE "unknown/C4/C48B2C.asm"
+.INCLUDE "overworld/actionscript/start_psi_teleport_tutorial.asm"
 
 .INCLUDE "overworld/actionscript/make_party_look_at_active_entity.asm"
 
@@ -813,9 +813,9 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C497C0.asm"
 
-.INCLUDE "unknown/C4/C4981F.asm"
+.INCLUDE "overworld/actionscript/clear_bg3_tilemap.asm"
 
-.INCLUDE "unknown/C4/C49841.asm"
+.INCLUDE "overworld/actionscript/open_prayer_window.asm"
 
 .INCLUDE "unknown/C4/C4984B.asm"
 
@@ -979,21 +979,21 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C4C91A.asm"
 
-.INCLUDE "unknown/C4/C4CB4F.asm"
+.INCLUDE "overworld/actionscript/clear_all_blinking.asm"
 
-.INCLUDE "unknown/C4/C4CB8F.asm"
+.INCLUDE "overworld/actionscript/blink_visible.asm"
 
-.INCLUDE "unknown/C4/C4CBE3.asm"
+.INCLUDE "overworld/actionscript/blink_invisible.asm"
 
 .INCLUDE "misc/null/C4CC2C.asm"
 
-.INCLUDE "unknown/C4/C4CC2F.asm"
+.INCLUDE "overworld/actionscript/h_stripe.asm"
 
-.INCLUDE "unknown/C4/C4CD44.asm"
+.INCLUDE "overworld/actionscript/v_stripe.asm"
 
-.INCLUDE "unknown/C4/C4CEB0.asm"
+.INCLUDE "overworld/actionscript/obj_fx_clear_dot_buffer.asm"
 
-.INCLUDE "unknown/C4/C4CED8.asm"
+.INCLUDE "overworld/actionscript/obj_fx_dots.asm"
 
 .INCLUDE "unknown/C4/C4D00F.asm"
 
