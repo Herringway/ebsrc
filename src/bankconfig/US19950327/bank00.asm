@@ -1100,15 +1100,15 @@
 
 .INCLUDE "system/game_init.asm"
 
-.INCLUDE "unknown/C0/C0B9BC.asm"
+.INCLUDE "overworld/path/setup_party_path_targets.asm"
 
-.INCLUDE "unknown/C0/C0BA35.asm"
+.INCLUDE "overworld/path/perform_entity_pathfinding.asm"
 
 .INCLUDE "overworld/path/find_path_to_party.asm"
 
-.INCLUDE "unknown/C0/C0BD96.asm"
+.INCLUDE "overworld/path/find_path_to_near_party_leader.asm"
 
-.INCLUDE "unknown/C0/C0BF72.asm"
+.INCLUDE "overworld/path/find_path_to_self.asm"
 
 .INCLUDE "unknown/C0/C0C0B4.asm"
 
