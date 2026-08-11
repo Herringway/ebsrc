@@ -823,23 +823,23 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C4B57D.asm"
 
-.INCLUDE "unknown/C4/C4B587.asm"
+.INCLUDE "overworld/path/sbrk.asm"
 
-.INCLUDE "unknown/C4/C4B595.asm"
+.INCLUDE "overworld/path/get_heap_size.asm"
 
-.INCLUDE "unknown/C4/C4B59F.asm"
+.INCLUDE "overworld/path/main.asm"
 
-.INCLUDE "unknown/C4/C4B7A5.asm"
+.INCLUDE "overworld/path/initialize_path_matrix.asm"
 
-.INCLUDE "unknown/C4/C4B859-jp.asm"
+.INCLUDE "overworld/path/initialize_pathers-jp.asm"
 
-.INCLUDE "unknown/C4/C4B923.asm"
+.INCLUDE "overworld/path/paint_path_matrix_pass_1.asm"
 
-.INCLUDE "unknown/C4/C4BAF6-jp.asm"
+.INCLUDE "overworld/path/paint_path_matrix_pass_2-jp.asm"
 
-.INCLUDE "unknown/C4/C4BD9A.asm"
+.INCLUDE "overworld/path/build_path_points.asm"
 
-.INCLUDE "unknown/C4/C4BF7F.asm"
+.INCLUDE "overworld/path/trim_redundancies.asm"
 
 .INCLUDE "data/text/file_select_text.asm"
 
