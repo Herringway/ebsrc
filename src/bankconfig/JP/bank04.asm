@@ -801,23 +801,23 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "overworld/load_overlay_sprites.asm"
 
-.INCLUDE "unknown/C4/C4B329.asm"
+.INCLUDE "overworld/manpu/adjust_manpu_positioning.asm"
 
-.INCLUDE "text/spawn_floating_sprite.asm"
+.INCLUDE "overworld/manpu/create_manpu.asm"
 
-.INCLUDE "unknown/C4/C4B4BE.asm"
+.INCLUDE "overworld/manpu/delete_manpu.asm"
 
-.INCLUDE "unknown/C4/C4B4FE.asm"
+.INCLUDE "overworld/manpu/create_manpu_by_party_member.asm"
 
-.INCLUDE "unknown/C4/C4B519.asm"
+.INCLUDE "overworld/manpu/delete_manpu_by_party_member.asm"
 
-.INCLUDE "unknown/C4/C4B524.asm"
+.INCLUDE "overworld/manpu/create_manpu_by_npc_id.asm"
 
-.INCLUDE "unknown/C4/C4B53F.asm"
+.INCLUDE "overworld/manpu/delete_manpu_by_npc_id.asm"
 
-.INCLUDE "unknown/C4/C4B54A.asm"
+.INCLUDE "overworld/manpu/create_manpu_by_sprite.asm"
 
-.INCLUDE "unknown/C4/C4B565.asm"
+.INCLUDE "overworld/manpu/delete_manpu_by_sprite.asm"
 
 .INCLUDE "unknown/C4/C4B570.asm"
 
