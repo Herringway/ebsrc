@@ -1104,7 +1104,7 @@
 
 .INCLUDE "unknown/C0/C0BA35.asm"
 
-.INCLUDE "misc/find_path_to_party.asm"
+.INCLUDE "overworld/path/find_path_to_party.asm"
 
 .INCLUDE "unknown/C0/C0BD96.asm"
 
