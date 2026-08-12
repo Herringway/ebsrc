@@ -82,7 +82,7 @@
 
 .INCLUDE "unknown/C1/C1078D.asm"
 
-.INCLUDE "unknown/C1/C107AF-jp.asm"
+.INCLUDE "text/draw_window-jp.asm"
 
 .INCLUDE "unknown/C3/C3E6F8-jp.asm"
 
@@ -106,7 +106,7 @@
 
 .INCLUDE "text/move_text_up_one_line-jp.asm"
 
-.INCLUDE "unknown/C1/C10A85-jp.asm"
+.INCLUDE "text/draw_tall_text_tile-jp.asm"
 
 .INCLUDE "text/draw_tall_text_tile_focused.asm"
 
@@ -156,7 +156,7 @@
 
 .INCLUDE "unknown/C1/C113D1.asm"
 
-.INCLUDE "unknown/C1/C114B1-jp.asm"
+.INCLUDE "text/create_new_menu_option_at_position-jp.asm"
 
 .INCLUDE "unknown/C1/C1153B.asm"
 
@@ -194,7 +194,7 @@
 
 .INCLUDE "unknown/C1/C120D6.asm"
 
-.INCLUDE "unknown/C1/C121B8-jp.asm"
+.INCLUDE "battle/pick_target_single-jp.asm"
 
 .INCLUDE "unknown/C1/C12362.asm"
 
@@ -618,7 +618,7 @@
 
 .INCLUDE "misc/escargo_express_move.asm"
 
-.INCLUDE "unknown/C1/C191B0-jp.asm"
+.INCLUDE "misc/escargo_express_remove-jp.asm"
 
 .INCLUDE "unknown/C1/C191F8.asm"
 
@@ -648,19 +648,19 @@
 
 .INCLUDE "unknown/C1/C19D49.asm"
 
-.INCLUDE "unknown/C1/C19DB5-jp.asm"
+.INCLUDE "text/item_store_selection-jp.asm"
 
 .INCLUDE "misc/get_item_type.asm"
 
-.INCLUDE "unknown/C1/C19F29-jp.asm"
+.INCLUDE "text/print_equipment-jp.asm"
 
-.INCLUDE "unknown/C1/C1A1D8-jp.asm"
+.INCLUDE "text/print_equipment_stats-jp.asm"
 
 .INCLUDE "unknown/C1/C1A778.asm"
 
-.INCLUDE "unknown/C1/C1A795-jp.asm"
+.INCLUDE "text/handle_equip_menu-jp.asm"
 
-.INCLUDE "unknown/C1/C1AA18-jp.asm"
+.INCLUDE "text/open_wallet_window-jp.asm"
 
 .INCLUDE "unknown/C1/C1AA5D-jp.asm"
 
@@ -832,9 +832,9 @@
 
 .INCLUDE "unknown/C1/C1F07E-jp.asm"
 
-.INCLUDE "unknown/C1/C1F14F-jp.asm"
+.INCLUDE "intro/file_select/handle_file_copy_menu-jp.asm"
 
-.INCLUDE "unknown/C1/C1F2A8-jp.asm"
+.INCLUDE "intro/file_select/handle_file_delete_menu-jp.asm"
 
 .INCLUDE "intro/file_select/open_text_speed_menu-jp.asm"
 
