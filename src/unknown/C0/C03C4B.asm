@@ -4,6 +4,6 @@ UNKNOWN_C03C4B:
 	LDY #$000C
 	LDX GAME_STATE+game_state::leader_y_coord
 	LDA GAME_STATE+game_state::leader_x_coord
-	JSL UNKNOWN_C05D8B
+	JSL GET_COLLISION_FLAGS
 	AND #$00C0
 	RTL
