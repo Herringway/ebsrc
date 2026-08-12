@@ -15,7 +15,7 @@ UNKNOWN_C03FA9:
 	STA GAME_STATE+game_state::leader_direction
 	LDY GAME_STATE+game_state::current_party_members
 	LDA @LOCAL00
-	JSL UNKNOWN_C05F33
+	JSL GET_SURFACE_FLAGS_HORIZONTAL
 	STA GAME_STATE+game_state::trodden_tile_type
 	LDA @VIRTUAL02
 	JSL UNKNOWN_C03A94
