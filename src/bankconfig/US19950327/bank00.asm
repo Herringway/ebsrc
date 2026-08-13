@@ -532,7 +532,7 @@
 
 .INCLUDE "data/dma_table.asm"
 
-.INCLUDE "data/unknown/C08FC2.asm"
+.INCLUDE "data/unknown/C08FE6.asm"
 
 .INCLUDE "system/math/mult8.asm"
 
@@ -700,15 +700,15 @@
 
 .INCLUDE "overworld/actionscript/script/0D.asm"
 
-.INCLUDE "data/unknown/C09ABD.asm"
+.INCLUDE "data/binop_pointers.asm"
 
-.INCLUDE "unknown/C0/C09AC5.asm"
+.INCLUDE "overworld/actionscript/binop_and.asm"
 
-.INCLUDE "unknown/C0/C09ACC.asm"
+.INCLUDE "overworld/actionscript/binop_or.asm"
 
-.INCLUDE "unknown/C0/C09AD3.asm"
+.INCLUDE "overworld/actionscript/binop_add.asm"
 
-.INCLUDE "unknown/C0/C09ADB.asm"
+.INCLUDE "overworld/actionscript/binop_xor.asm"
 
 .INCLUDE "overworld/actionscript/script/0E.asm"
 
