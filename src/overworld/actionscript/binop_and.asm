@@ -1,5 +1,5 @@
 
-UNKNOWN_C09AC5:
+BINOP_AND:
 	LDA ($8C)
 	AND $90
 	STA ($8C)
