@@ -1156,7 +1156,7 @@
 
 .INCLUDE "overworld/actionscript/get_direction_turned_randomly_left_or_right.asm"
 
-.INCLUDE "overworld/is_entity_onscreen.asm"
+.INCLUDE "overworld/actionscript/is_entity_onscreen.asm"
 
 .INCLUDE "overworld/is_entity_sprite_onscreen.asm"
 
