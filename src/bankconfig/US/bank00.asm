@@ -800,7 +800,7 @@
 
 .INCLUDE "overworld/actionscript/create_title_screen_entity.asm"
 
-.INCLUDE "unknown/C0/C09E79.asm"
+.INCLUDE "unused/C09E79.asm"
 
 .INCLUDE "unknown/C0/C09E98.asm"
 
