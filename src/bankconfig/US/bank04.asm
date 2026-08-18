@@ -17,9 +17,9 @@
 .INCLUDE "symbols/text.inc.asm"
 LOCALEINCLUDE "flyovers.symbols.asm"
 
-.INCLUDE "unknown/C4/C40000.asm"
+.INCLUDE "unused/set_inidisp.asm"
 
-.INCLUDE "unknown/C4/C40009.asm"
+.INCLUDE "unused/restore_inidisp.asm"
 
 .INCLUDE "overworld/actionscript/is_entity_onscreen_reset_animation.asm"
 
@@ -241,9 +241,9 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "system/enable_brightness_hdma.asm"
 
-.INCLUDE "unknown/C4/C42569.asm"
+.INCLUDE "unused/set_cgad_sub_to_51.asm"
 
-.INCLUDE "unknown/C4/C42574.asm"
+.INCLUDE "unused/set_cgad_sub_to_179.asm"
 
 .INCLUDE "system/disable_brightness_hdma.asm"
 
