@@ -180,13 +180,13 @@ INSERT_AUDIO_PACK 7
 
 .INCLUDE "system/debug/save_replay_save_slot.asm"
 
-.INCLUDE "unknown/EF/EFE873.asm"
+.INCLUDE "system/debug/restore_rng_and_frame_counter.asm"
 
 .INCLUDE "system/debug/store_persistent_replay_state.asm"
 
 .INCLUDE "system/debug/load_replay_save_slot-jp.asm"
 
-.INCLUDE "unknown/EF/EFEA23.asm"
+.INCLUDE "system/debug/backup_leader_position.asm"
 
 .INCLUDE "system/debug/start_replay.asm"
 
