@@ -210,7 +210,7 @@
 
 .INCLUDE "text/print_you_won.asm"
 
-.INCLUDE "unknown/C1/C12CCC.asm"
+.INCLUDE "unused/integer_to_string.asm"
 
 .INCLUDE "misc/stop_hp_pp_rolling.asm"
 
