@@ -184,9 +184,9 @@
 
 .INCLUDE "system/center_screen.asm"
 
-.INCLUDE "system/demos/set_auto_movement_demo.asm"
+.INCLUDE "system/demos/start_auto_movement_demo.asm"
 
-.INCLUDE "unknown/C0/C04049.asm"
+.INCLUDE "system/demos/stop_auto_movement_demo.asm"
 
 .INCLUDE "overworld/map_input_to_direction.asm"
 
@@ -792,7 +792,15 @@
 
 .INCLUDE "overworld/actionscript/clear_sprite_tick_callback.asm"
 
-.INCLUDE "unknown/C0/C09DAE.asm"
+.INCLUDE "unused/init_entity_extra_common.asm"
+
+.INCLUDE "unused/C09E0A.asm"
+
+.INCLUDE "unused/C09E18.asm"
+
+.INCLUDE "unused/C09E25.asm"
+
+.INCLUDE "unused/C09E3B.asm"
 
 .INCLUDE "overworld/actionscript/create_title_screen_entity.asm"
 
@@ -800,7 +808,7 @@
 
 .INCLUDE "unused/C09E8E.asm"
 
-.INCLUDE "unknown/C0/C09E98.asm"
+.INCLUDE "unused/C09E98.asm"
 
 .INCLUDE "unknown/C0/C09EAC.asm"
 
@@ -922,9 +930,9 @@
 
 .INCLUDE "overworld/actionscript/test_collision_enabled.asm"
 
-.INCLUDE "unknown/C0/C0A6C5.asm"
+.INCLUDE "overworld/actionscript/get_obstacle_flags.asm"
 
-.INCLUDE "unknown/C0/C0A6CB.asm"
+.INCLUDE "overworld/actionscript/get_pathfinding_state.asm"
 
 .INCLUDE "overworld/actionscript/disable_current_entity_collision.asm"
 
@@ -1218,7 +1226,7 @@
 
 .INCLUDE "overworld/schedule_overworld_task.asm"
 
-.INCLUDE "unknown/C0/C0DC38.asm"
+.INCLUDE "overworld/end_overworld_task.asm"
 
 .INCLUDE "overworld/process_overworld_tasks.asm"
 
