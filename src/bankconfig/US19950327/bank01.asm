@@ -12,7 +12,7 @@
 .INCLUDE "symbols/misc.inc.asm"
 .INCLUDE "symbols/text.inc.asm"
 
-.INCLUDE "unknown/C1/C10000.asm"
+.INCLUDE "text/hide_hppp_windows_redirect_alt.asm"
 
 .INCLUDE "text/display_interaction_text.asm"
 
@@ -200,7 +200,7 @@
 
 .INCLUDE "text/print_you_won.asm"
 
-.INCLUDE "unknown/C1/C12CCC.asm"
+.INCLUDE "unused/integer_to_string.asm"
 
 .INCLUDE "misc/stop_hp_pp_rolling.asm"
 
