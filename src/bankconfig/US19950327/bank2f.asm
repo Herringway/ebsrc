@@ -202,7 +202,7 @@ LOCALEINCLUDE "text_data/UNKNOWN7.ebtxt"
 DEBUG_MENU_FONT:
 	BINARY "fonts/debug.gfx"
 
-.INCLUDE "data/unknown/EFEF70.asm"
+.INCLUDE "data/unused/EFEF70.asm"
 
 .INCLUDE "data/debug/debug_font_palette.asm"
 
