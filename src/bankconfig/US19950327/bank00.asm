@@ -580,7 +580,7 @@
 
 .INCLUDE "system/math/asr32.asm"
 
-.INCLUDE "unknown/C0/C09279.asm"
+.INCLUDE "system/jump_to_loaded_pointer.asm"
 
 .INCLUDE "overworld/init_entity_subsystem.asm"
 
