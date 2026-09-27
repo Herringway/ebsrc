@@ -174,7 +174,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/294.asm"
 
-.INCLUDE "data/events/tasks/C31055.asm"
+.INCLUDE "data/events/tasks/darken_screen_kraken.asm"
 
 .INCLUDE "data/events/scripts/295.asm"
 
@@ -282,7 +282,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/346.asm"
 
-.INCLUDE "data/events/tasks/C31BD9.asm"
+.INCLUDE "data/events/tasks/spin_clockwise.asm"
 
 .INCLUDE "data/events/scripts/347.asm"
 
@@ -292,7 +292,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/351.asm"
 
-.INCLUDE "data/events/tasks/C31C90.asm"
+.INCLUDE "data/events/tasks/spin_clockwise_sanctuary.asm"
 
 .INCLUDE "data/events/scripts/352.asm"
 
@@ -482,7 +482,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/439.asm"
 
-.INCLUDE "data/events/tasks/C33549.asm"
+.INCLUDE "data/events/tasks/venus_spotlight.asm"
 
 .INCLUDE "data/events/scripts/440.asm"
 
@@ -692,7 +692,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/583.asm"
 
-.INCLUDE "data/events/tasks/C34E66.asm"
+.INCLUDE "data/events/tasks/elevator.asm"
 
 .INCLUDE "data/events/C34E73.asm"
 
@@ -710,7 +710,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/541.asm"
 
-.INCLUDE "data/events/tasks/C3504A.asm"
+.INCLUDE "data/events/tasks/force_facing_left.asm"
 
 .INCLUDE "data/events/scripts/542.asm"
 
@@ -906,7 +906,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/606.asm"
 
-.INCLUDE "data/events/tasks/C36E41.asm"
+.INCLUDE "data/events/tasks/maintain_angle.asm"
 
 .INCLUDE "data/events/scripts/607.asm"
 
@@ -1046,7 +1046,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/670.asm"
 
-.INCLUDE "data/events/tasks/C37CD8.asm"
+.INCLUDE "data/events/tasks/monkey_accelerate.asm"
 
 .INCLUDE "data/events/tasks/C37CEA.asm"
 
@@ -1142,7 +1142,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/706.asm"
 
-.INCLUDE "data/events/tasks/C38751.asm"
+.INCLUDE "data/events/tasks/screen_flash.asm"
 
 .INCLUDE "data/events/scripts/707.asm"
 
@@ -1462,6 +1462,8 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/008.asm"
 
+.INCLUDE "data/events/tasks/destroy_if_far.asm"
+
 .INCLUDE "data/events/scripts/861.asm"
 
 .INCLUDE "data/events/scripts/010+011.asm"
@@ -1512,13 +1514,13 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/023.asm"
 
-.INCLUDE "data/events/tasks/C3A6B1.asm"
+.INCLUDE "data/events/tasks/alternate_left_right_fast.asm"
 
 .INCLUDE "data/events/scripts/024.asm"
 
 .INCLUDE "data/events/scripts/025.asm"
 
-.INCLUDE "data/events/tasks/C3A76D.asm"
+.INCLUDE "data/events/tasks/alternate_left_right.asm"
 
 .INCLUDE "data/events/scripts/026.asm"
 
@@ -1880,7 +1882,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/tasks/C3C824.asm"
 
-.INCLUDE "data/events/tasks/C3C871.asm"
+.INCLUDE "data/events/tasks/unused/C3C871.asm"
 
 .INCLUDE "data/events/scripts/147.asm"
 
@@ -1922,7 +1924,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/tasks/C3CC94.asm"
 
-.INCLUDE "data/events/tasks/C3CCA8.asm"
+.INCLUDE "data/events/tasks/unused/C3CCA8.asm"
 
 .INCLUDE "data/events/scripts/161.asm"
 
