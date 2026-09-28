@@ -2052,7 +2052,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/454.asm"
 
-.INCLUDE "data/events/C3DBDB.asm"
+.INCLUDE "data/events/actionscript_bus.asm"
 
 .INCLUDE "data/events/scripts/455.asm"
 
