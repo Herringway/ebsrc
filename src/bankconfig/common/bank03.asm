@@ -648,7 +648,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/560.asm"
 
-.INCLUDE "data/events/C34B62.asm"
+.INCLUDE "data/events/actionscript_clockwise_spin.asm"
 
 .INCLUDE "data/events/scripts/564.asm"
 
@@ -774,7 +774,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/825.asm"
 
-.INCLUDE "data/events/C362C0.asm"
+.INCLUDE "data/events/cardinal_rotation.asm"
 
 .INCLUDE "data/events/scripts/826.asm"
 
@@ -1536,7 +1536,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/actionscript_move_in_direction.asm"
 
-.INCLUDE "data/events/C3AA2B.asm"
+.INCLUDE "data/events/actionscript_anim16_collision_check.asm"
 
 .INCLUDE "data/events/actionscript_anim8.asm"
 
@@ -1772,9 +1772,9 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/114.asm"
 
-.INCLUDE "data/events/C3BEA4.asm"
+.INCLUDE "data/events/tonzura_talk_to_poochyfud.asm"
 
-.INCLUDE "data/events/C3BED4.asm"
+.INCLUDE "data/events/tonzura_leave_chaos_theatre.asm"
 
 .INCLUDE "data/events/scripts/115.asm"
 
@@ -1798,7 +1798,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/472.asm"
 
-.INCLUDE "data/events/C3C143.asm"
+.INCLUDE "data/events/tonzura_enter_topolla_theatre.asm"
 
 .INCLUDE "data/events/scripts/473.asm"
 
@@ -1808,7 +1808,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/C3C1E0.asm"
 
-.INCLUDE "data/events/C3C20F.asm"
+.INCLUDE "data/events/tonzura_leave_topolla_theatre.asm"
 
 .INCLUDE "data/events/tasks/C3C227.asm"
 
@@ -1828,7 +1828,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/126.asm"
 
-.INCLUDE "data/events/C3C2EF.asm"
+.INCLUDE "data/events/tonzura_leave_monotoly.asm"
 
 .INCLUDE "data/events/scripts/127.asm"
 
@@ -1948,7 +1948,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/171.asm"
 
-.INCLUDE "data/events/C3D0A4.asm"
+.INCLUDE "data/events/cardinal_rotation_copy.asm"
 
 .INCLUDE "data/events/scripts/172.asm"
 
@@ -2046,7 +2046,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/219.asm"
 
-.INCLUDE "data/events/C3DB7A.asm"
+.INCLUDE "data/events/unused/C3DB7A.asm"
 
 .INCLUDE "data/events/scripts/453.asm"
 
