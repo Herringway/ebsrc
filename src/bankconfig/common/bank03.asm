@@ -1536,23 +1536,23 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/actionscript_move_in_direction.asm"
 
-.INCLUDE "data/events/actionscript_anim16_collision_check.asm"
+.INCLUDE "data/events/animation_frames/actionscript_anim16_collision_check.asm"
 
-.INCLUDE "data/events/actionscript_anim8.asm"
+.INCLUDE "data/events/animation_frames/actionscript_anim8.asm"
 
-.INCLUDE "data/events/actionscript_anim24.asm"
+.INCLUDE "data/events/animation_frames/actionscript_anim24.asm"
 
-.INCLUDE "data/events/actionscript_anim12.asm"
+.INCLUDE "data/events/animation_frames/actionscript_anim12.asm"
 
-.INCLUDE "data/events/actionscript_anim9.asm"
+.INCLUDE "data/events/animation_frames/actionscript_anim9.asm"
 
-.INCLUDE "data/events/actionscript_anim6.asm"
+.INCLUDE "data/events/animation_frames/actionscript_anim6.asm"
 
-.INCLUDE "data/events/actionscript_anim2.asm"
+.INCLUDE "data/events/animation_frames/actionscript_anim2.asm"
 
-.INCLUDE "data/events/actionscript_anim_var4.asm"
+.INCLUDE "data/events/animation_frames/actionscript_anim_var4.asm"
 
-.INCLUDE "data/events/actionscript_anim16.asm"
+.INCLUDE "data/events/animation_frames/actionscript_anim16.asm"
 
 .INCLUDE "data/events/actionscript_set_walking_speed_slow.asm"
 
@@ -1564,7 +1564,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/actionscript_set_walking_speed_extremely_fast.asm"
 
-.INCLUDE "data/events/actionscript_anim8_toggle.asm"
+.INCLUDE "data/events/animation_frames/actionscript_anim8_toggle.asm"
 
 .INCLUDE "data/events/actionscript_make_intangible.asm"
 
