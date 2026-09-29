@@ -43,11 +43,11 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "data/events/tasks/C40F18.asm"
 
-.INCLUDE "data/events/naming_screen_cleanup.asm"
+.INCLUDE "data/events/naming_screen/naming_screen_cleanup.asm"
 
-.INCLUDE "data/events/initialize_naming_screen_character.asm"
+.INCLUDE "data/events/naming_screen/initialize_naming_screen_character.asm"
 
-.INCLUDE "data/events/initialize_naming_screen_animation.asm"
+.INCLUDE "data/events/naming_screen/initialize_naming_screen_animation.asm"
 
 .INCLUDE "data/events/scripts/502.asm"
 
@@ -109,61 +109,61 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "data/events/scripts/534.asm"
 
-.INCLUDE "data/events/anim_naming_screen_ness.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_ness.asm"
 
-.INCLUDE "data/events/anim_naming_screen_ness_pose.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_ness_pose.asm"
 
-.INCLUDE "data/events/anim_naming_screen_ness_surprised.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_ness_surprised.asm"
 
-.INCLUDE "data/events/anim_naming_screen_ness_shadow.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_ness_shadow.asm"
 
-.INCLUDE "data/events/anim_naming_screen_ness_surprise_mark.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_ness_surprise_mark.asm"
 
-.INCLUDE "data/events/anim_naming_screen_paula.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_paula.asm"
 
-.INCLUDE "data/events/anim_naming_screen_paula_surprised.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_paula_surprised.asm"
 
-.INCLUDE "data/events/anim_naming_screen_paula_shadow.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_paula_shadow.asm"
 
-.INCLUDE "data/events/anim_naming_screen_paula_music_notes.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_paula_music_notes.asm"
 
-.INCLUDE "data/events/anim_naming_screen_jeff.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_jeff.asm"
 
-.INCLUDE "data/events/anim_naming_screen_jeff_surprise_mark.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_jeff_surprise_mark.asm"
 
-.INCLUDE "data/events/anim_naming_screen_jeff_sweat.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_jeff_sweat.asm"
 
-.INCLUDE "data/events/anim_naming_screen_jeff_lightbulb.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_jeff_lightbulb.asm"
 
-.INCLUDE "data/events/anim_naming_screen_poo_cloud.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_poo_cloud.asm"
 
-.INCLUDE "data/events/anim_naming_screen_poo_leaves.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_poo_leaves.asm"
 
-.INCLUDE "data/events/anim_naming_screen_poo_meditating.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_poo_meditating.asm"
 
-.INCLUDE "data/events/anim_naming_screen_poo.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_poo.asm"
 
-.INCLUDE "data/events/anim_naming_screen_poo_climbing.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_poo_climbing.asm"
 
-.INCLUDE "data/events/anim_naming_screen_ness_dog.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_ness_dog.asm"
 
-.INCLUDE "data/events/anim_naming_screen_dog.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_dog.asm"
 
-.INCLUDE "data/events/anim_naming_screen_dog_sleeping.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_dog_sleeping.asm"
 
-.INCLUDE "data/events/anim_naming_screen_favorite_food.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_favorite_food.asm"
 
-.INCLUDE "data/events/anim_naming_screen_favorite_food_leaves.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_favorite_food_leaves.asm"
 
-.INCLUDE "data/events/anim_naming_screen_plate.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_plate.asm"
 
-.INCLUDE "data/events/anim_naming_screen_plate_leaves.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_plate_leaves.asm"
 
-.INCLUDE "data/events/anim_naming_screen_favorite_thing.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_favorite_thing.asm"
 
-.INCLUDE "data/events/anim_naming_screen_favorite_thing_leaves.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_favorite_thing_leaves.asm"
 
-.INCLUDE "data/events/anim_naming_screen_twinkling_stars.asm"
+.INCLUDE "data/events/naming_screen/anim_naming_screen_twinkling_stars.asm"
 
 .INCLUDE "system/decomp.asm"
 
