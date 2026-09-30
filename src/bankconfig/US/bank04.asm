@@ -199,13 +199,13 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "data/events/scripts/860.asm"
 
-.INCLUDE "data/events/title_screen_common_init.asm"
+.INCLUDE "data/events/misc/title_screen_common_init.asm"
 
 .INCLUDE "data/events/tasks/title_screen_flash.asm"
 
 .INCLUDE "data/events/scripts/789.asm"
 
-.INCLUDE "data/events/animate_completed_title_screen.asm"
+.INCLUDE "data/events/misc/animate_completed_title_screen.asm"
 
 .INCLUDE "data/events/scripts/788.asm"
 
