@@ -148,7 +148,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/279+280+281+282+283_common.asm.asm"
 
-.INCLUDE "data/events/actionscript_cultist_circle.asm"
+.INCLUDE "data/events/enemies/actionscript_cultist_circle.asm"
 
 .INCLUDE "data/events/scripts/284.asm"
 
@@ -342,7 +342,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/368.asm"
 
-.INCLUDE "data/events/dance_chaos_theater.asm"
+.INCLUDE "data/events/tonzura/dance_chaos_theater.asm"
 
 .INCLUDE "data/events/scripts/365.asm"
 
@@ -464,15 +464,15 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/431+432+433+434.asm"
 
-.INCLUDE "data/events/dance_facing_down.asm"
+.INCLUDE "data/events/tonzura/dance_facing_down.asm"
 
-.INCLUDE "data/events/dance_facing_up.asm"
+.INCLUDE "data/events/tonzura/dance_facing_up.asm"
 
-.INCLUDE "data/events/dance_facing_left.asm"
+.INCLUDE "data/events/tonzura/dance_facing_left.asm"
 
-.INCLUDE "data/events/dance_facing_right.asm"
+.INCLUDE "data/events/tonzura/dance_facing_right.asm"
 
-.INCLUDE "data/events/runaway_five_spin_venus.asm"
+.INCLUDE "data/events/tonzura/venus_spin.asm"
 
 .INCLUDE "data/events/scripts/435.asm"
 
@@ -564,7 +564,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/495.asm"
 
-.INCLUDE "data/events/actionscript_leaves.asm"
+.INCLUDE "data/events/objects/actionscript_leaves.asm"
 
 .INCLUDE "data/events/tasks/C34233.asm"
 
@@ -596,7 +596,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/499.asm"
 
-.INCLUDE "data/events/actionscript_delivery.asm"
+.INCLUDE "data/events/delivery/actionscript_delivery.asm"
 
 .INCLUDE "data/events/tasks/C3447A.asm"
 
@@ -634,7 +634,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/556.asm"
 
-.INCLUDE "data/events/actionscript_return_from_past.asm"
+.INCLUDE "data/events/misc/actionscript_return_from_past.asm"
 
 .INCLUDE "data/events/scripts/563.asm"
 
@@ -648,7 +648,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/560.asm"
 
-.INCLUDE "data/events/actionscript_clockwise_spin.asm"
+.INCLUDE "data/events/misc/actionscript_clockwise_spin.asm"
 
 .INCLUDE "data/events/scripts/564.asm"
 
@@ -662,7 +662,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/569.asm"
 
-.INCLUDE "data/events/actionscript_presentbox_fall.asm"
+.INCLUDE "data/events/misc/actionscript_presentbox_fall.asm"
 
 .INCLUDE "data/events/scripts/570.asm"
 
@@ -726,7 +726,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/800.asm"
 
-.INCLUDE "data/events/wait_credits_tiles.asm"
+.INCLUDE "data/events/misc/wait_credits_tiles.asm"
 
 .INCLUDE "data/events/scripts/801.asm"
 
@@ -774,7 +774,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/825.asm"
 
-.INCLUDE "data/events/cardinal_rotation.asm"
+.INCLUDE "data/events/misc/cardinal_rotation.asm"
 
 .INCLUDE "data/events/scripts/826.asm"
 
@@ -854,7 +854,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/858.asm"
 
-.INCLUDE "data/events/actionscript_car.asm"
+.INCLUDE "data/events/objects/actionscript_car.asm"
 
 .INCLUDE "data/events/scripts/584.asm"
 
@@ -974,9 +974,9 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/637.asm"
 
-.INCLUDE "data/events/prayer_scene_turn_right_left.asm"
+.INCLUDE "data/events/misc/prayer_scene_turn_right_left.asm"
 
-.INCLUDE "data/events/prayer_scene_turn_left_right.asm"
+.INCLUDE "data/events/misc/prayer_scene_turn_left_right.asm"
 
 .INCLUDE "data/events/scripts/638.asm"
 
@@ -1060,7 +1060,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/672+673+674_common.asm"
 
-.INCLUDE "data/events/actionscript_geyser.asm"
+.INCLUDE "data/events/objects/actionscript_geyser.asm"
 
 .INCLUDE "data/events/tasks/C37EAE.asm"
 
@@ -1106,9 +1106,9 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/692.asm"
 
-.INCLUDE "data/events/slotbro_stop.asm"
+.INCLUDE "data/events/misc/slotbro_stop.asm"
 
-.INCLUDE "data/events/slotbro_determine_rotations.asm"
+.INCLUDE "data/events/misc/slotbro_determine_rotations.asm"
 
 .INCLUDE "data/events/scripts/693.asm"
 
@@ -1344,7 +1344,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/tasks/C39ABB.asm"
 
-.INCLUDE "data/events/actionscript_photo_spot.asm"
+.INCLUDE "data/events/misc/actionscript_photo_spot.asm"
 
 .INCLUDE "data/events/scripts/765.asm"
 
@@ -1362,7 +1362,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/772.asm"
 
-.INCLUDE "data/events/actionscript_wait_battle_finished.asm"
+.INCLUDE "data/events/misc/actionscript_wait_battle_finished.asm"
 
 .INCLUDE "data/events/scripts/773.asm"
 
@@ -1446,7 +1446,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/035.asm"
 
-.INCLUDE "data/events/fade_wait_script.asm"
+.INCLUDE "data/events/misc/fade_wait_script.asm"
 
 .INCLUDE "data/events/tasks/var0_animation.asm"
 
@@ -1488,19 +1488,19 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/C3A401.asm"
 
-.INCLUDE "data/events/actionscript_enemy_initialize.asm"
+.INCLUDE "data/events/enemies/actionscript_enemy_initialize.asm"
 
-.INCLUDE "data/events/actionscript_grounded_enemy_initialize.asm"
+.INCLUDE "data/events/enemies/actionscript_grounded_enemy_initialize.asm"
 
-.INCLUDE "data/events/actionscript_flying_enemy_initialize.asm"
+.INCLUDE "data/events/enemies/actionscript_flying_enemy_initialize.asm"
 
 .INCLUDE "data/events/tasks/enemy_battle_common.asm"
 
 .INCLUDE "data/events/tasks/enemy_flying_battle_common.asm"
 
-.INCLUDE "data/events/actionscript_handle_battle_cleanup.asm"
+.INCLUDE "data/events/enemies/actionscript_handle_battle_cleanup.asm"
 
-.INCLUDE "data/events/actionscript_delete_enemy.asm"
+.INCLUDE "data/events/enemies/actionscript_delete_enemy.asm"
 
 .INCLUDE "data/events/scripts/005.asm"
 
@@ -1534,7 +1534,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/031.asm"
 
-.INCLUDE "data/events/actionscript_move_in_direction.asm"
+.INCLUDE "data/events/misc/actionscript_move_in_direction.asm"
 
 .INCLUDE "data/events/animation_frames/actionscript_anim16_collision_check.asm"
 
@@ -1554,33 +1554,33 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/animation_frames/actionscript_anim16.asm"
 
-.INCLUDE "data/events/actionscript_set_walking_speed_slow.asm"
+.INCLUDE "data/events/animation_frames/actionscript_set_walking_speed_slow.asm"
 
-.INCLUDE "data/events/actionscript_set_walking_speed_normal.asm"
+.INCLUDE "data/events/animation_frames/actionscript_set_walking_speed_normal.asm"
 
-.INCLUDE "data/events/actionscript_set_walking_speed_fast.asm"
+.INCLUDE "data/events/animation_frames/actionscript_set_walking_speed_fast.asm"
 
-.INCLUDE "data/events/actionscript_set_walking_speed_very_fast.asm"
+.INCLUDE "data/events/animation_frames/actionscript_set_walking_speed_very_fast.asm"
 
-.INCLUDE "data/events/actionscript_set_walking_speed_extremely_fast.asm"
+.INCLUDE "data/events/animation_frames/actionscript_set_walking_speed_extremely_fast.asm"
 
 .INCLUDE "data/events/animation_frames/actionscript_anim8_toggle.asm"
 
-.INCLUDE "data/events/actionscript_make_intangible.asm"
+.INCLUDE "data/events/misc/actionscript_make_intangible.asm"
 
-.INCLUDE "data/events/actionscript_take_step_towards_destination.asm"
+.INCLUDE "data/events/misc/actionscript_take_step_towards_destination.asm"
 
-.INCLUDE "data/events/actionscript_move_to_location.asm"
+.INCLUDE "data/events/misc/actionscript_move_to_location.asm"
 
-.INCLUDE "data/events/actionscript_move_to_location_backwards.asm"
+.INCLUDE "data/events/misc/actionscript_move_to_location_backwards.asm"
 
-.INCLUDE "data/events/actionscript_wait_for_leader_approach.asm"
+.INCLUDE "data/events/misc/actionscript_wait_for_leader_approach.asm"
 
-.INCLUDE "data/events/actionscript_wait_for_leader_retreat.asm"
+.INCLUDE "data/events/misc/actionscript_wait_for_leader_retreat.asm"
 
-.INCLUDE "data/events/actionscript_wander_within_bounds.asm"
+.INCLUDE "data/events/misc/actionscript_wander_within_bounds.asm"
 
-.INCLUDE "data/events/wait_for_fade_end.asm"
+.INCLUDE "data/events/misc/wait_for_fade_end.asm"
 
 .INCLUDE "data/events/scripts/476.asm"
 
@@ -1672,7 +1672,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/072.asm"
 
-.INCLUDE "data/events/enter_vehicle.asm"
+.INCLUDE "data/events/vehicles/enter_vehicle.asm"
 
 .INCLUDE "data/events/scripts/073.asm"
 
@@ -1772,9 +1772,9 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/114.asm"
 
-.INCLUDE "data/events/tonzura_talk_to_poochyfud.asm"
+.INCLUDE "data/events/tonzura/tonzura_talk_to_poochyfud.asm"
 
-.INCLUDE "data/events/tonzura_leave_chaos_theatre.asm"
+.INCLUDE "data/events/tonzura/tonzura_leave_chaos_theatre.asm"
 
 .INCLUDE "data/events/scripts/115.asm"
 
@@ -1798,7 +1798,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/472.asm"
 
-.INCLUDE "data/events/tonzura_enter_topolla_theatre.asm"
+.INCLUDE "data/events/tonzura/tonzura_enter_topolla_theatre.asm"
 
 .INCLUDE "data/events/scripts/473.asm"
 
@@ -1808,7 +1808,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/C3C1E0.asm"
 
-.INCLUDE "data/events/tonzura_leave_topolla_theatre.asm"
+.INCLUDE "data/events/tonzura/tonzura_leave_topolla_theatre.asm"
 
 .INCLUDE "data/events/tasks/C3C227.asm"
 
@@ -1828,7 +1828,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/126.asm"
 
-.INCLUDE "data/events/tonzura_leave_monotoly.asm"
+.INCLUDE "data/events/tonzura/tonzura_leave_monotoly.asm"
 
 .INCLUDE "data/events/scripts/127.asm"
 
@@ -1898,9 +1898,9 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/unused/skywalker_script.asm"
 
-.INCLUDE "data/events/actionscript_move_left_in_sky.asm"
+.INCLUDE "data/events/vehicles/actionscript_move_left_in_sky.asm"
 
-.INCLUDE "data/events/actionscript_move_right_in_sky.asm"
+.INCLUDE "data/events/vehicles/actionscript_move_right_in_sky.asm"
 
 .INCLUDE "data/events/scripts/153.asm"
 
@@ -1948,7 +1948,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/171.asm"
 
-.INCLUDE "data/events/cardinal_rotation_copy.asm"
+.INCLUDE "data/events/misc/cardinal_rotation_copy.asm"
 
 .INCLUDE "data/events/scripts/172.asm"
 
@@ -2052,7 +2052,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/454.asm"
 
-.INCLUDE "data/events/actionscript_bus.asm"
+.INCLUDE "data/events/vehicles/actionscript_bus.asm"
 
 .INCLUDE "data/events/scripts/455.asm"
 
