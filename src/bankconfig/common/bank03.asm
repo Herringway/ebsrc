@@ -32,7 +32,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/ness_pajama_flag.asm"
 
-.INCLUDE "data/unknown/C30188.asm"
+.INCLUDE "data/unused/C30188.asm"
 
 .INCLUDE "data/events/scripts/221.asm"
 
@@ -2219,6 +2219,8 @@ SPRITE_GROUP_PALETTES:
 .INCLUDE "misc/null/C3EF23.asm"
 
 .INCLUDE "data/unknown/C3EF26.asm"
+
+.INCLUDE "data/unknown/C3F016.asm"
 
 .INCLUDE "data/font_pointer_table.asm"
 
