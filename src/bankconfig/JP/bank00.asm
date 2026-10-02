@@ -62,9 +62,9 @@
 
 .INCLUDE "overworld/load_collision_column.asm"
 
-.INCLUDE "unknown/C0/C00E16.asm"
+.INCLUDE "overworld/load_map_row_vram.asm"
 
-.INCLUDE "unknown/C0/C00FCB.asm"
+.INCLUDE "overworld/load_map_column_vram.asm"
 
 .INCLUDE "unknown/C0/C01181.asm"
 
