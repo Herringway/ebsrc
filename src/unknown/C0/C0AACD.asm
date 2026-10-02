@@ -1,4 +1,0 @@
-
-UNKNOWN_C0AACD:
-	LDX #$0002
-	RTL

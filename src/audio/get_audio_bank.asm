@@ -1,0 +1,16 @@
+
+GET_AUDIO_BANK:
+	BEGIN_C_FUNCTION
+	STACK_RESERVE_VARS
+	STACK_RESERVE_INT16
+	STACK_RESERVE_PARAM_INT16
+	END_STACK_VARS
+	STA @LOCAL00
+	LDA #.LOWORD(-1)
+	STA SEQUENCE_PACK_MASK
+	LDA @LOCAL00
+.IF .DEFINED(JPN)
+	CLC ;mother 2's audio pack addresses are relative to the first bank audio packs are stored in, for some reason
+	ADC #^AUDIO_PACK_108
+.ENDIF
+	END_C_FUNCTION

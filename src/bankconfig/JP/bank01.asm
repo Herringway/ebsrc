@@ -12,7 +12,7 @@
 .INCLUDE "symbols/misc.inc.asm"
 .INCLUDE "symbols/text.inc.asm"
 
-.INCLUDE "unknown/C1/C10004.asm"
+.INCLUDE "text/display_interaction_text.asm"
 
 .INCLUDE "text/enable_blinking_triangle.asm"
 
@@ -22,15 +22,15 @@
 
 .INCLUDE "text/set_text_sound_mode.asm"
 
-.INCLUDE "unknown/C3/C3E450.asm"
+.INCLUDE "text/update_flash_text_palette.asm"
 
-.INCLUDE "unknown/C1/C1004E.asm"
+.INCLUDE "system/finish_frame.asm"
 
 .INCLUDE "text/clear_instant_printing.asm"
 
 .INCLUDE "text/set_instant_printing.asm"
 
-.INCLUDE "unknown/C3/C3E4EF.asm"
+.INCLUDE "text/find_free_window.asm"
 
 .INCLUDE "text/get_window_focus.asm"
 
@@ -40,19 +40,19 @@
 
 .INCLUDE "text/close_focus_window.asm"
 
-.INCLUDE "unknown/C1/C1008E.asm"
+.INCLUDE "text/close_all_windows.asm"
 
 .INCLUDE "text/lock_input.asm"
 
 .INCLUDE "text/unlock_input.asm"
 
-.INCLUDE "unknown/C1/C100D6.asm"
+.INCLUDE "text/text_wait.asm"
 
-.INCLUDE "unknown/C1/C100FE.asm"
+.INCLUDE "text/text_wait_cancellable.asm"
 
 .INCLUDE "text/ccs/halt.asm"
 
-.INCLUDE "unknown/C1/C102D0.asm"
+.INCLUDE "text/wait_for_actionscript.asm"
 
 .INCLUDE "text/get_active_window_address.asm"
 
@@ -80,17 +80,17 @@
 
 .INCLUDE "text/create_window.asm"
 
-.INCLUDE "unknown/C1/C1078D.asm"
+.INCLUDE "text/hp_pp_window/upload_hp_pp_meter_area.asm"
 
-.INCLUDE "unknown/C1/C107AF-jp.asm"
+.INCLUDE "text/draw_window-jp.asm"
 
-.INCLUDE "unknown/C3/C3E6F8-jp.asm"
+.INCLUDE "text/hp_pp_window/reset_active_party_member_hp_pp_window-jp.asm"
 
-.INCLUDE "unknown/C4/C43573.asm"
+.INCLUDE "misc/swap_raised_hp_pp_window.asm"
 
-.INCLUDE "unknown/C4/C435E4.asm"
+.INCLUDE "battle/row_enemy_flashing_off.asm"
 
-.INCLUDE "unknown/C4/C43657.asm"
+.INCLUDE "battle/row_enemy_flashing_on.asm"
 
 .INCLUDE "battle/enemy_flashing_off.asm"
 
@@ -100,19 +100,19 @@
 
 .INCLUDE "text/hide_hppp_windows.asm"
 
-.INCLUDE "unknown/C4/C436D7.asm"
+.INCLUDE "text/clear_text_line.asm"
 
-.INCLUDE "unknown/C4/C43739-jp.asm"
+.INCLUDE "text/clear_current_text_line-jp.asm"
 
-.INCLUDE "unknown/C4/C437B8-jp.asm"
+.INCLUDE "text/move_text_up_one_line-jp.asm"
 
-.INCLUDE "unknown/C1/C10A85-jp.asm"
+.INCLUDE "text/draw_tall_text_tile-jp.asm"
 
-.INCLUDE "unknown/C1/C10BA1.asm"
+.INCLUDE "text/draw_tall_text_tile_focused.asm"
 
-.INCLUDE "unknown/C4/C43874.asm"
+.INCLUDE "text/move_text_cursor.asm"
 
-.INCLUDE "unknown/C4/C438A5.asm"
+.INCLUDE "text/move_current_text_cursor.asm"
 
 .INCLUDE "text/print_newline.asm"
 
@@ -120,85 +120,85 @@
 
 .INCLUDE "text/print_letter-jp.asm"
 
-.INCLUDE "unknown/C1/C10D60.asm"
+.INCLUDE "text/draw_tall_text_tile_focused_redraw.asm"
 
-.INCLUDE "unknown/C1/C10D7C.asm"
+.INCLUDE "text/split_decimal_by_digits.asm"
 
 .INCLUDE "text/print_number-jp.asm"
 
-.INCLUDE "unknown/C1/C11404.asm"
+.INCLUDE "unknown/mother2/C11404-jp.asm"
 
-.INCLUDE "unknown/C1/C10EB4.asm"
+.INCLUDE "text/set_current_window_padding.asm"
 
-.INCLUDE "unknown/C1/C10EE3.asm"
+.INCLUDE "text/print_special_graphics.asm"
 
 .INCLUDE "text/print_string-jp.asm"
 
-.INCLUDE "unknown/C1/C10F40.asm"
+.INCLUDE "text/clear_window.asm"
 
-.INCLUDE "unknown/C1/C10FA3.asm"
+.INCLUDE "text/clear_focus_window.asm"
 
 .INCLUDE "text/change_current_window_font.asm"
 
-.INCLUDE "unknown/C1/C10FEA.asm"
+.INCLUDE "text/window_set_text_color.asm"
 
 .INCLUDE "text/num_select_prompt.asm"
 
-.INCLUDE "unknown/C1/C1134B.asm"
+.INCLUDE "text/open_hp_and_wallet.asm"
 
-.INCLUDE "unknown/C1/C11354.asm"
+.INCLUDE "text/find_free_menu_option.asm"
 
-.INCLUDE "unknown/C3/C3E7E3.asm"
+.INCLUDE "text/reset_window_menu.asm"
 
-.INCLUDE "unknown/C1/C11383.asm"
+.INCLUDE "text/reset_current_window_menu.asm"
 
-.INCLUDE "unknown/C1/C1138D.asm"
+.INCLUDE "text/get_menu_option_count.asm"
 
-.INCLUDE "unknown/C1/C113D1.asm"
+.INCLUDE "text/create_new_menu_option_active.asm"
 
-.INCLUDE "unknown/C1/C114B1-jp.asm"
+.INCLUDE "text/create_new_menu_option_at_position-jp.asm"
 
-.INCLUDE "unknown/C1/C1153B.asm"
+.INCLUDE "text/create_new_menu_option_at_position_with_user_data.asm"
 
-.INCLUDE "unknown/C1/C11596.asm"
+.INCLUDE "text/create_new_menu_option_at_position_with_user_data_sfx.asm"
 
-.INCLUDE "unknown/C1/C115F4.asm"
+.INCLUDE "text/create_new_menu_option_with_user_data.asm"
 
 .INCLUDE "text/print_menu_items-jp.asm"
 
-.INCLUDE "unknown/C1/C117E2.asm"
+.INCLUDE "text/determine_string_length.asm"
 
-.INCLUDE "unknown/C4/C451FA-jp.asm"
+.INCLUDE "text/create_menu_option_table-jp.asm"
 
-.INCLUDE "unknown/C1/C1180D.asm"
+.INCLUDE "text/print_menu_option_table.asm"
 
-.INCLUDE "unknown/C1/C1181B.asm"
+.INCLUDE "text/print_menu_option_table_preselected.asm"
 
-.INCLUDE "unknown/C1/C11887.asm"
+.INCLUDE "text/print_menu_items_preselected.asm"
 
-.INCLUDE "text/move_cursor.asm"
+.INCLUDE "text/move_cursor_wrap.asm"
 
 .INCLUDE "text/selection_menu-jp.asm"
 
-.INCLUDE "unknown/C1/C11F5A.asm"
+.INCLUDE "text/set_menu_callback.asm"
 
-.INCLUDE "unknown/C1/C11F8A.asm"
+.INCLUDE "text/reset_menu_callback.asm"
 
-.INCLUDE "unknown/C1/C11FBC.asm"
+.INCLUDE "battle/get_battler_position_x.asm"
 
-.INCLUDE "unknown/C1/C11FD4.asm"
+.INCLUDE "battle/get_targetting_allowed.asm"
 
-.INCLUDE "unknown/C1/C12012.asm"
+.INCLUDE "battle/get_next_target_right.asm"
 
-.INCLUDE "unknown/C1/C12070.asm"
+.INCLUDE "battle/get_next_target_left.asm"
 
-.INCLUDE "unknown/C1/C120D6.asm"
+.INCLUDE "text/print_target_name.asm"
 
-.INCLUDE "unknown/C1/C121B8-jp.asm"
+.INCLUDE "battle/pick_target_single-jp.asm"
 
-.INCLUDE "unknown/C1/C12362.asm"
+.INCLUDE "battle/pick_target_row.asm"
 
-.INCLUDE "unknown/C1/C1242E.asm"
+.INCLUDE "battle/pick_target.asm"
 
 .INCLUDE "unknown/C1/C1244C-jp.asm"
 
@@ -206,23 +206,23 @@
 
 .INCLUDE "unknown/C1/C12BD5.asm"
 
-.INCLUDE "unknown/C1/C12BF3.asm"
+.INCLUDE "text/print_smaaaash.asm"
 
-.INCLUDE "unknown/C1/C12C36.asm"
+.INCLUDE "text/print_you_won.asm"
 
-.INCLUDE "unknown/C1/C12CCC.asm"
+.INCLUDE "unused/integer_to_string.asm"
 
 .INCLUDE "audio/pause_music.asm"
 
-.INCLUDE "unknown/EF/EF0262.asm"
+.INCLUDE "misc/enable_half_hp_meter_speed.asm"
 
 .INCLUDE "audio/resume_music.asm"
 
-.INCLUDE "unknown/C1/C12D17.asm"
+.INCLUDE "text/hp_pp_window/flipout.asm"
 
 .INCLUDE "text/window_tick-jp.asm"
 
-.INCLUDE "unknown/C1/C12E42.asm"
+.INCLUDE "text/window_tick_minimal.asm"
 
 .INCLUDE "system/debug/y_button_menu.asm"
 
@@ -230,11 +230,13 @@
 
 .INCLUDE "overworld/check.asm"
 
-.INCLUDE "unknown/C1/C1339E.asm"
+.INCLUDE "text/create_inventory_window.asm"
 
-.INCLUDE "unknown/C1/C133A7.asm"
+.INCLUDE "text/create_item_targetting_window.asm"
 
 .INCLUDE "overworld/open_menu-jp.asm"
+
+.INCLUDE "overworld/open_menu_check_talk.asm"
 
 .INCLUDE "text/open_hppp_display.asm"
 
@@ -248,15 +250,15 @@
 
 .INCLUDE "overworld/debug/y_button_goods.asm"
 
-.INCLUDE "unknown/C1/C14012.asm"
+.INCLUDE "text/push_peek_text_stack.asm"
 
-.INCLUDE "unknown/C1/C14049.asm"
+.INCLUDE "text/pop_text_stack.asm"
 
-.INCLUDE "unknown/C1/C14070.asm"
+.INCLUDE "text/eb_strcmp.asm"
 
 .INCLUDE "text/ccs/print_stat.asm"
 
-.INCLUDE "text/ccs/unknown_1C_09.asm"
+.INCLUDE "text/ccs/set_window_padding.asm"
 
 .INCLUDE "text/ccs/text_effects.asm"
 
@@ -376,13 +378,13 @@
 
 .INCLUDE "text/ccs/print_number.asm"
 
-.INCLUDE "text/ccs/unknown_1F_60.asm"
+.INCLUDE "text/ccs/pause_cancellable.asm"
 
 .INCLUDE "text/ccs/show_character_inventory.asm"
 
-.INCLUDE "text/ccs/unknown_18_08.asm"
+.INCLUDE "text/ccs/selection_menu_in_window_uncancellable.asm"
 
-.INCLUDE "text/ccs/unknown_18_09.asm"
+.INCLUDE "text/ccs/selection_menu_in_window.asm"
 
 .INCLUDE "text/ccs/print_money_amount.asm"
 
@@ -390,29 +392,29 @@
 
 .INCLUDE "text/ccs/take_item_from_character_2.asm"
 
-.INCLUDE "text/ccs/unknown_1D_10.asm"
+.INCLUDE "text/ccs/test_item_is_equipped.asm"
 
-.INCLUDE "text/ccs/unknown_1D_11.asm"
+.INCLUDE "text/ccs/test_item_is_equippable.asm"
 
 .INCLUDE "text/ccs/equip_character_from_inventory.asm"
 
-.INCLUDE "text/ccs/unknown_1D_12.asm"
+.INCLUDE "text/ccs/give_to_escargo_express.asm"
 
-.INCLUDE "text/ccs/unknown_1D_13.asm"
+.INCLUDE "text/ccs/take_from_escargo_express.asm"
 
 .INCLUDE "text/ccs/get_item_number.asm"
 
 .INCLUDE "text/ccs/test_has_enough_money.asm"
 
-.INCLUDE "text/ccs/unknown_19_1A.asm"
+.INCLUDE "text/ccs/get_escargo_express_item.asm"
 
-.INCLUDE "text/ccs/unknown_18_0D.asm"
+.INCLUDE "text/ccs/print_character_status.asm"
 
 .INCLUDE "text/ccs/print_vertical_strings.asm"
 
 .INCLUDE "text/ccs/set_argmem.asm"
 
-.INCLUDE "text/ccs/unknown_19_1B.asm"
+.INCLUDE "text/ccs/get_loaded_string_count.asm"
 
 .INCLUDE "text/ccs/learn_special_psi.asm"
 
@@ -426,11 +428,11 @@
 
 .INCLUDE "text/ccs/party_member_remove.asm"
 
-.INCLUDE "unknown/C1/C15FB1.asm"
+.INCLUDE "inventory/queue_item_for_delivery.asm"
 
-.INCLUDE "text/ccs/unknown_19_1C.asm"
+.INCLUDE "text/ccs/queue_delivery_pickup.asm"
 
-.INCLUDE "text/ccs/unknown_19_1D.asm"
+.INCLUDE "text/ccs/get_queued_delivery_pickup_item.asm"
 
 .INCLUDE "text/ccs/escargo_express_store.asm"
 
@@ -452,33 +454,33 @@
 
 .INCLUDE "text/ccs/set_party_direction.asm"
 
-.INCLUDE "text/ccs/set_tpt_direction.asm"
+.INCLUDE "text/ccs/set_npc_direction.asm"
 
-.INCLUDE "text/ccs/create_entity_tpt.asm"
+.INCLUDE "text/ccs/create_entity_npc.asm"
 
 .INCLUDE "text/ccs/dummy_1F_18.asm"
 
 .INCLUDE "text/ccs/dummy_1F_19.asm"
 
-.INCLUDE "text/ccs/create_floating_sprite_at_tpt_entity.asm"
+.INCLUDE "text/ccs/create_manpu_at_npc_entity.asm"
 
-.INCLUDE "text/ccs/delete_floating_sprite_at_tpt_entity.asm"
+.INCLUDE "text/ccs/delete_manpu_at_npc_entity.asm"
 
-.INCLUDE "text/ccs/create_floating_sprite_at_character.asm"
+.INCLUDE "text/ccs/create_manpu_at_character.asm"
 
-.INCLUDE "text/ccs/delete_floating_sprite_at_character.asm"
+.INCLUDE "text/ccs/delete_manpu_at_character.asm"
 
 .INCLUDE "text/ccs/set_map_palette.asm"
 
 .INCLUDE "text/ccs/create_entity_sprite.asm"
 
-.INCLUDE "text/ccs/delete_entity_tpt.asm"
+.INCLUDE "text/ccs/delete_entity_npc.asm"
 
 .INCLUDE "text/ccs/delete_entity_sprite.asm"
 
 .INCLUDE "text/ccs/get_direction_from_character_to_entity.asm"
 
-.INCLUDE "text/ccs/get_direction_from_tpt_entity_to_entity.asm"
+.INCLUDE "text/ccs/get_direction_from_npc_entity_to_entity.asm"
 
 .INCLUDE "text/ccs/enable_blinking_triangle.asm"
 
@@ -490,27 +492,27 @@
 
 .INCLUDE "text/ccs/set_player_movement_lock.asm"
 
-.INCLUDE "text/ccs/set_tpt_entity_delay.asm"
+.INCLUDE "text/ccs/set_npc_entity_delay.asm"
 
-.INCLUDE "text/ccs/unknown_1F_E7.asm"
+.INCLUDE "text/ccs/set_sprite_entity_delay.asm"
 
 .INCLUDE "text/ccs/set_player_movement_lock_if_camera_refocused.asm"
 
-.INCLUDE "text/ccs/unknown_1F_E9.asm"
+.INCLUDE "text/ccs/enable_npc_entity_movement.asm"
 
-.INCLUDE "text/ccs/unknown_1F_EA.asm"
+.INCLUDE "text/ccs/enable_sprite_entity_movement.asm"
 
 .INCLUDE "text/ccs/set_character_invisibility.asm"
 
 .INCLUDE "text/ccs/set_character_visibility.asm"
 
-.INCLUDE "text/ccs/teleport_party_to_tpt_entity.asm"
+.INCLUDE "text/ccs/teleport_party_to_npc_entity.asm"
 
-.INCLUDE "text/ccs/unknown_1F_EF.asm"
+.INCLUDE "text/ccs/teleport_party_to_sprite_entity.asm"
 
 .INCLUDE "text/ccs/screen_reload_pointer.asm"
 
-.INCLUDE "text/ccs/set_tpt_entity_movement.asm"
+.INCLUDE "text/ccs/set_npc_entity_movement.asm"
 
 .INCLUDE "text/ccs/set_sprite_entity_movement.asm"
 
@@ -520,7 +522,7 @@
 
 .INCLUDE "text/ccs/set_respawn_point.asm"
 
-.INCLUDE "text/ccs/unknown_1D_0C.asm"
+.INCLUDE "text/ccs/test_item_is_storable.asm"
 
 .INCLUDE "text/ccs/activate_hotspot.asm"
 
@@ -528,17 +530,17 @@
 
 .INCLUDE "text/ccs/toggle_text_printing_sound.asm"
 
-.INCLUDE "text/ccs/unknown_1D_24.asm"
+.INCLUDE "text/ccs/get_money_earned_since_last_call.asm"
 
-.INCLUDE "text/ccs/unknown_1F_40.asm"
+.INCLUDE "text/ccs/dummy_1F_40.asm"
 
 .INCLUDE "text/ccs/trigger_special_event.asm"
 
 .INCLUDE "text/ccs/trigger_photographer_event.asm"
 
-.INCLUDE "text/ccs/create_floating_sprite_at_sprite_entity.asm"
+.INCLUDE "text/ccs/create_manpu_at_sprite_entity.asm"
 
-.INCLUDE "text/ccs/delete_floating_sprite_at_sprite_entity.asm"
+.INCLUDE "text/ccs/delete_manpu_at_sprite_entity.asm"
 
 .INCLUDE "text/ccs/display_battle_animation.asm"
 
@@ -558,9 +560,9 @@
 
 .INCLUDE "text/ccs/increase_character_luck.asm"
 
-.INCLUDE "text/ccs/unknown_1D_23.asm"
+.INCLUDE "text/ccs/test_equipment_offensive_or_defensive.asm"
 
-.INCLUDE "text/ccs/unknown_19_27.asm"
+.INCLUDE "text/ccs/get_number_from_stat.asm"
 
 .INCLUDE "unknown/C1/C17796-jp.asm"
 
@@ -584,21 +586,21 @@
 
 .INCLUDE "text/ccs/tree_1F.asm"
 
-.INCLUDE "unknown/C1/C1866D.asm"
+.INCLUDE "text/initialize_display_text_state.asm"
 
-.INCLUDE "unknown/C1/C1869D.asm"
+.INCLUDE "text/cleanup_text_script.asm"
 
 .INCLUDE "text/display_text-jp.asm"
 
-.INCLUDE "misc/give_item_to_specific_character.asm"
+.INCLUDE "inventory/give_item_to_specific_character.asm"
 
-.INCLUDE "misc/give_item_to_character.asm"
+.INCLUDE "inventory/give_item_to_character.asm"
 
-.INCLUDE "misc/remove_item_from_inventory.asm"
+.INCLUDE "inventory/remove_item_from_inventory.asm"
 
-.INCLUDE "misc/take_item_from_specific_character.asm"
+.INCLUDE "inventory/take_item_from_specific_character.asm"
 
-.INCLUDE "misc/take_item_from_character.asm"
+.INCLUDE "inventory/take_item_from_character.asm"
 
 .INCLUDE "misc/reduce_hp_amtpercent.asm"
 
@@ -608,39 +610,39 @@
 
 .INCLUDE "misc/recover_pp_amtpercent.asm"
 
-.INCLUDE "misc/equip_item.asm"
+.INCLUDE "inventory/equip_item.asm"
 
-.INCLUDE "unknown/C1/C190E6.asm"
+.INCLUDE "text/get_party_member_index.asm"
 
 .INCLUDE "unknown/C1/C190F1-jp.asm"
 
-.INCLUDE "misc/escargo_express_store.asm"
+.INCLUDE "inventory/escargo_express_store.asm"
 
-.INCLUDE "misc/escargo_express_move.asm"
+.INCLUDE "inventory/escargo_express_move.asm"
 
-.INCLUDE "unknown/C1/C191B0-jp.asm"
+.INCLUDE "inventory/escargo_express_remove-jp.asm"
 
-.INCLUDE "unknown/C1/C191F8.asm"
+.INCLUDE "inventory/give_stored_item_to_character.asm"
 
-.INCLUDE "unknown/C1/C19216.asm"
+.INCLUDE "text/print_item_name.asm"
 
-.INCLUDE "unknown/C1/C19249.asm"
+.INCLUDE "text/display_stat.asm"
 
-.INCLUDE "unknown/C1/C1931B-jp.asm"
+.INCLUDE "text/display_character_name-jp.asm"
 
-.INCLUDE "unknown/C1/C193E7.asm"
+.INCLUDE "text/open_equip_select_menu.asm"
 
-.INCLUDE "unknown/C1/C19437.asm"
+.INCLUDE "text/close_equip_select_menu.asm"
 
-.INCLUDE "unknown/C1/C19441.asm"
+.INCLUDE "text/open_phone_menu.asm"
 
-.INCLUDE "unknown/C1/C1952F-jp.asm"
+.INCLUDE "text/print_all_stats-jp.asm"
 
-.INCLUDE "misc/inventory_get_item_name.asm"
+.INCLUDE "inventory/get_item_name.asm"
 
 .INCLUDE "unknown/C1/C19A11.asm"
 
-.INCLUDE "unknown/C1/C19A43-jp.asm"
+.INCLUDE "text/display_escargo_express_items-jp.asm"
 
 .INCLUDE "text/set_hppp_window_mode_item.asm"
 
@@ -648,51 +650,51 @@
 
 .INCLUDE "unknown/C1/C19D49.asm"
 
-.INCLUDE "unknown/C1/C19DB5-jp.asm"
+.INCLUDE "text/item_store_selection-jp.asm"
 
-.INCLUDE "misc/get_item_type.asm"
+.INCLUDE "inventory/get_item_type.asm"
 
-.INCLUDE "unknown/C1/C19F29-jp.asm"
+.INCLUDE "text/print_equipment-jp.asm"
 
-.INCLUDE "unknown/C1/C1A1D8-jp.asm"
+.INCLUDE "text/print_equipment_stats-jp.asm"
 
-.INCLUDE "unknown/C1/C1A778.asm"
+.INCLUDE "text/print_equipment_and_stats.asm"
 
-.INCLUDE "unknown/C1/C1A795-jp.asm"
+.INCLUDE "text/handle_equip_menu-jp.asm"
 
-.INCLUDE "unknown/C1/C1AA18-jp.asm"
+.INCLUDE "text/open_wallet_window-jp.asm"
 
 .INCLUDE "unknown/C1/C1AA5D-jp.asm"
 
-.INCLUDE "unknown/C1/C1AAFA.asm"
+.INCLUDE "overworld/teleport/select_psi_teleport_destination.asm"
 
-.INCLUDE "unknown/C1/C1AC00.asm"
+.INCLUDE "text/make_phone_call.asm"
 
-.INCLUDE "unknown/C1/C1AC4A.asm"
+.INCLUDE "text/set_battle_attacker_name.asm"
 
 .INCLUDE "battle/return_battle_attacker_address.asm"
 
-.INCLUDE "unknown/C1/C1ACA1.asm"
+.INCLUDE "text/set_battle_target_name.asm"
 
 .INCLUDE "battle/return_battle_target_address.asm"
 
-.INCLUDE "unknown/C1/C1ACF8.asm"
+.INCLUDE "battle/set_citem.asm"
 
-.INCLUDE "unknown/C1/C1AD02.asm"
+.INCLUDE "battle/get_citem.asm"
 
-.INCLUDE "unknown/C1/C1AD0A.asm"
+.INCLUDE "battle/set_cnum.asm"
 
-.INCLUDE "unknown/C1/C1AD26.asm"
+.INCLUDE "battle/get_cnum.asm"
 
-.INCLUDE "unknown/C1/C1AD42.asm"
+.INCLUDE "inventory/find_receive_item_npc.asm"
 
-.INCLUDE "unknown/C1/C1AD7D.asm"
+.INCLUDE "inventory/get_sector_usable_item.asm"
 
 .INCLUDE "battle/determine_targetting.asm"
 
-.INCLUDE "overworld/use_item.asm"
+.INCLUDE "inventory/overworld_use_item.asm"
 
-.INCLUDE "unknown/C1/C1B5B6-jp.asm"
+.INCLUDE "overworld/psi/overworld_psi_menu-jp.asm"
 
 .INCLUDE "unknown/C1/C1BB06.asm"
 
@@ -702,49 +704,49 @@
 
 .INCLUDE "overworld/attempt_homesickness.asm"
 
-.INCLUDE "overworld/get_off_bicycle.asm"
+.INCLUDE "overworld/get_off_bicycle_with_text.asm"
 
-.INCLUDE "unknown/C1/C1BEFC.asm"
+.INCLUDE "overworld/trigger_special_event.asm"
 
 .INCLUDE "unknown/C1/C1C046.asm"
 
-.INCLUDE "unknown/C1/C1C165.asm"
+.INCLUDE "overworld/psi/check_can_character_use_psi_status.asm"
 
-.INCLUDE "unknown/C1/C1C1BA.asm"
+.INCLUDE "overworld/psi/character_knows_psi_types.asm"
 
-.INCLUDE "unknown/C1/C1C32A.asm"
+.INCLUDE "overworld/psi/check_character_can_currently_use_psi_types.asm"
 
-.INCLUDE "unknown/C1/C1C367.asm"
+.INCLUDE "overworld/psi/psi_menu_valid_character.asm"
 
-.INCLUDE "unknown/C1/C1C373.asm"
+.INCLUDE "overworld/psi/get_first_party_member_with_psi.asm"
 
-.INCLUDE "unknown/C1/C1C3B6.asm"
+.INCLUDE "overworld/psi/get_party_member_count_with_psi.asm"
 
 .INCLUDE "text/get_psi_name.asm"
 
 .INCLUDE "battle/generate_psi_list.asm"
 
-.INCLUDE "unknown/C1/C1C853.asm"
+.INCLUDE "text/create_overworld_psi_menu_window.asm"
 
 .INCLUDE "unknown/C1/C1C8BC.asm"
 
-.INCLUDE "unknown/C1/C1CA06.asm"
+.INCLUDE "text/print_psi_name.asm"
 
 .INCLUDE "unknown/C1/C1CA72-jp.asm"
 
-.INCLUDE "unknown/C1/C1CAF5.asm"
+.INCLUDE "battle/prepare_battle_psi_menu_options.asm"
 
-.INCLUDE "unknown/C1/C1CB7F.asm"
+.INCLUDE "battle/character_knows_any_battle_psi_by_type.asm"
 
 .INCLUDE "battle/battle_psi_menu.asm"
 
-.INCLUDE "unknown/C1/C1CE85.asm"
+.INCLUDE "battle/battle_select_item_targetting.asm"
 
-.INCLUDE "unknown/C1/C1CFC6-jp.asm"
+.INCLUDE "battle/battle_select_item-jp.asm"
 
-.INCLUDE "unknown/C1/C1D038.asm"
+.INCLUDE "inventory/get_fixed_version_of_item.asm"
 
-.INCLUDE "unknown/C1/C1D08B.asm"
+.INCLUDE "misc/calculate_stat_gain.asm"
 
 .INCLUDE "misc/level_up_char-jp.asm"
 
@@ -752,7 +754,7 @@
 
 .INCLUDE "misc/gain_exp.asm"
 
-.INCLUDE "misc/find_condiment.asm"
+.INCLUDE "inventory/find_condiment.asm"
 
 .INCLUDE "overworld/show_hp_alert.asm"
 
@@ -760,7 +762,7 @@
 
 .INCLUDE "text/display_text_wait.asm"
 
-.INCLUDE "unknown/C1/C1DCCB.asm"
+.INCLUDE "text/display_in_battle_text.asm"
 
 .INCLUDE "text/show_hppp_windows_redirect.asm"
 
@@ -770,27 +772,27 @@
 
 .INCLUDE "text/set_window_focus_redirect.asm"
 
-.INCLUDE "unknown/C1/C10FA3_redirect.asm"
+.INCLUDE "text/clear_focus_window_redirect.asm"
 
 .INCLUDE "text/close_focus_window_redirect.asm"
 
-.INCLUDE "unknown/C1/C1DD5F.asm"
+.INCLUDE "text/close_all_windows_and_hp_pp.asm"
 
-.INCLUDE "unknown/C1/C1AC4A_redirect.asm"
+.INCLUDE "text/set_battle_attacker_name_redirect.asm"
 
-.INCLUDE "unknown/C1/C1ACA1_redirect.asm"
+.INCLUDE "text/set_battle_target_name_redirect.asm"
 
-.INCLUDE "unknown/C1/C1ACF8_redirect.asm"
+.INCLUDE "battle/set_citem_redirect.asm"
 
-.INCLUDE "unknown/C1/C1DD82.asm"
+.INCLUDE "battle/set_cnum_redirect.asm"
 
 .INCLUDE "unknown/C1/C1DD9F.asm"
 
-.INCLUDE "misc/remove_item_from_inventory_redirect.asm"
+.INCLUDE "inventory/remove_item_from_inventory_redirect.asm"
 
-.INCLUDE "unknown/C4/C43573_redirect.asm"
+.INCLUDE "misc/swap_raised_hp_pp_window_redirect.asm"
 
-.INCLUDE "unknown/C3/C3E6F8_redirect-jp.asm"
+.INCLUDE "text/reset_active_party_member_hp_pp_window_redirect-jp.asm"
 
 .INCLUDE "text/selection_menu_setup-jp.asm"
 
@@ -798,9 +800,9 @@
 
 .INCLUDE "text/selection_menu_redirect.asm"
 
-.INCLUDE "unknown/C1/C1CFC6_redirect.asm"
+.INCLUDE "battle/battle_select_item_redirect.asm"
 
-.INCLUDE "unknown/C1/C1242E_redirect.asm"
+.INCLUDE "battle/pick_target_redirect.asm"
 
 .INCLUDE "battle/battle_psi_menu_redirect.asm"
 
@@ -814,7 +816,7 @@
 
 .INCLUDE "unknown/C1/C1E48D-jp.asm"
 
-.INCLUDE "unknown/C1/C1E4BE-jp.asm"
+.INCLUDE "text/input_dont_care_name-jp.asm"
 
 .INCLUDE "text/text_input_dialog-jp.asm"
 
@@ -832,9 +834,9 @@
 
 .INCLUDE "unknown/C1/C1F07E-jp.asm"
 
-.INCLUDE "unknown/C1/C1F14F-jp.asm"
+.INCLUDE "intro/file_select/handle_file_copy_menu-jp.asm"
 
-.INCLUDE "unknown/C1/C1F2A8-jp.asm"
+.INCLUDE "intro/file_select/handle_file_delete_menu-jp.asm"
 
 .INCLUDE "intro/file_select/open_text_speed_menu-jp.asm"
 
@@ -844,7 +846,7 @@
 
 .INCLUDE "intro/file_select_menu_loop-jp.asm"
 
-.INCLUDE "unknown/C1/C1FF2C.asm"
+.INCLUDE "text/check_text_palette_reload_required.asm"
 
 .INCLUDE "unknown/C1/C1FF6B.asm"
 

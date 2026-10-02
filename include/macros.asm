@@ -157,12 +157,33 @@
     .ENDIF
 .ENDMACRO
 
-.MACRO BINARY file
-    .INCBIN .SPRINTF("bin/%s/%s", LOCALE, file)
+.MACRO LOCALEINCLUDE file
+    .INCLUDE .SPRINTF("bin/%s/%s", LOCALE, file)
+.ENDMACRO
+
+.MACRO LOCALEBINARY file, offset, length
+    BINARY .SPRINTF("%s/%s", LOCALE, file), offset, length
+.ENDMACRO
+
+.MACRO BINARY file, offset, length
+    .IFNBLANK offset
+        .IFNBLANK length
+            .INCBIN .SPRINTF("bin/%s", file), offset, length
+        .ELSE
+            .INCBIN .SPRINTF("bin/%s", file), offset
+        .ENDIF
+    .ELSE
+        .INCBIN .SPRINTF("bin/%s", file)
+    .ENDIF
 .ENDMACRO
 
 .MACRO AUDIOPACK file
     BINARY file
+.ENDMACRO
+
+.MACRO INSERT_AUDIO_PACK num
+    .IDENT (.SPRINTF("AUDIO_PACK_%d", num)):
+        AUDIOPACK .SPRINTF("audiopacks/%d.ebm", num)
 .ENDMACRO
 
 .macro PTR3 addr

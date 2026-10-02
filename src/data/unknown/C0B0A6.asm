@@ -1,3 +1,0 @@
-
-UNKNOWN_C0B0A6:
-	.BYTE $00, $0F, $F0, $FF

@@ -1,0 +1,4 @@
+
+SET_X_REGISTER_TO_4:
+	LDX #$0004
+	RTL

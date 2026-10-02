@@ -202,7 +202,7 @@ SCREEN_TRANSITION_CONFIG_TABLE:
 	.BYTE $00 ;Direction
 	.BYTE $00
 	.BYTE $00 ;Slide speed
-	.BYTE SFX::UNKNOWN12 ;Sound effect to play at beginning
+	.BYTE SFX::STAIRS ;Sound effect to play at beginning
 	.BYTE $14 ;Secondary duration
 	.BYTE $00 ;Secondary animation ID
 	.BYTE $00 ;Secondary animation flags

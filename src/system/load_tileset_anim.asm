@@ -54,9 +54,9 @@ LOAD_TILESET_ANIM:
 	ADC #.LOWORD(OVERWORLD_TILESET_ANIM)
 	TAX
 	MOVE_INT @VIRTUAL06, @VIRTUAL0A
-	LDA [@VIRTUAL0A] ;overworld_tileset_anim_entry::unknown0
+	LDA [@VIRTUAL0A] ;overworld_tileset_anim_entry::frame_count
 	AND #$00FF
-	STA a:overworld_tileset_anim::unknown0,X
+	STA a:overworld_tileset_anim::frame_count,X
 	SEP #PROC_FLAGS::ACCUM8
 	LDY #overworld_tileset_anim_entry::frame_delay
 	LDA [@VIRTUAL06],Y

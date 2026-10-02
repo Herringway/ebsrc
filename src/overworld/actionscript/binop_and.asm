@@ -1,0 +1,6 @@
+
+BINOP_AND:
+	LDA ($8C)
+	AND $90
+	STA ($8C)
+	RTS

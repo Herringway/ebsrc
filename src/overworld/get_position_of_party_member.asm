@@ -23,10 +23,10 @@ GET_POSITION_OF_PARTY_MEMBER:
 	CLC
 	ADC #.LOWORD(GAME_STATE)
 	TAX
-	LDA a:game_state::unknownA2,X
+	LDA a:game_state::party_entities,X
 .ELSE
 	TAX
-	LDA GAME_STATE + game_state::unknownA2,X
+	LDA GAME_STATE + game_state::party_entities,X
 .ENDIF
 	STA @LOCAL00
 	ASL
@@ -42,17 +42,17 @@ GET_POSITION_OF_PARTY_MEMBER:
 	CLC
 	ADC #.LOWORD(GAME_STATE)
 	TAX
-	LDA a:game_state::unknownA2,X
+	LDA a:game_state::party_entities,X
 .ELSE
 	TAX
-	LDA GAME_STATE + game_state::unknownA2,X
+	LDA GAME_STATE + game_state::party_entities,X
 .ENDIF
 	STA @LOCAL00
 	BRA @UNKNOWN1
 @UNKNOWN0:
 	TXA
 	SEP #PROC_FLAGS::ACCUM8
-	JSL UNKNOWN_C4608C
+	JSL FIND_ENTITY_BY_PARTY_MEMBER_ID
 	STA @LOCAL00
 @UNKNOWN1:
 	LDY @LOCAL02

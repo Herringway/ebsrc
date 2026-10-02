@@ -15,7 +15,7 @@ UNKNOWN_C190F1:
 	CLC
 	ADC #.LOWORD(GAME_STATE)
 	TAX
-	LDA a:game_state::unknownB6,X
+	LDA a:game_state::delivery_queue_item,X
 	AND #$00FF
 	BEQ @UNKNOWN1
 	LDX @LOCAL01

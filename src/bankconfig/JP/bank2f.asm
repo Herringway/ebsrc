@@ -13,125 +13,46 @@
 .INCLUDE "symbols/overworld_sprites.inc.asm"
 .INCLUDE "symbols/sram.inc.asm"
 
-AUDIO_PACK_23:
-        AUDIOPACK "audiopacks/23.ebm"
-
-AUDIO_PACK_11:
-        AUDIOPACK "audiopacks/11.ebm"
-
-AUDIO_PACK_142:
-        AUDIOPACK "audiopacks/142.ebm"
-
-AUDIO_PACK_160:
-        AUDIOPACK "audiopacks/160.ebm"
-
-AUDIO_PACK_101:
-        AUDIOPACK "audiopacks/101.ebm"
-
-AUDIO_PACK_103:
-        AUDIOPACK "audiopacks/103.ebm"
-
-AUDIO_PACK_51:
-        AUDIOPACK "audiopacks/51.ebm"
-
-AUDIO_PACK_18:
-        AUDIOPACK "audiopacks/18.ebm"
-
-AUDIO_PACK_29:
-        AUDIOPACK "audiopacks/29.ebm"
-
-AUDIO_PACK_93:
-        AUDIOPACK "audiopacks/93.ebm"
-
-AUDIO_PACK_95:
-        AUDIOPACK "audiopacks/95.ebm"
-
-AUDIO_PACK_164:
-        AUDIOPACK "audiopacks/164.ebm"
-
-AUDIO_PACK_151:
-        AUDIOPACK "audiopacks/151.ebm"
-
-AUDIO_PACK_143:
-        AUDIOPACK "audiopacks/143.ebm"
-
-AUDIO_PACK_12:
-        AUDIOPACK "audiopacks/12.ebm"
-
-AUDIO_PACK_135:
-        AUDIOPACK "audiopacks/135.ebm"
-
-AUDIO_PACK_83:
-        AUDIOPACK "audiopacks/83.ebm"
-
-AUDIO_PACK_88:
-        AUDIOPACK "audiopacks/88.ebm"
-
-AUDIO_PACK_155:
-        AUDIOPACK "audiopacks/155.ebm"
-
-AUDIO_PACK_31:
-        AUDIOPACK "audiopacks/31.ebm"
-
-AUDIO_PACK_129:
-        AUDIOPACK "audiopacks/129.ebm"
-
-AUDIO_PACK_22:
-        AUDIOPACK "audiopacks/22.ebm"
-
-AUDIO_PACK_17:
-        AUDIOPACK "audiopacks/17.ebm"
-
-AUDIO_PACK_91:
-        AUDIOPACK "audiopacks/91.ebm"
-
-AUDIO_PACK_81:
-        AUDIOPACK "audiopacks/81.ebm"
-
-AUDIO_PACK_147:
-        AUDIOPACK "audiopacks/147.ebm"
-
-AUDIO_PACK_152:
-        AUDIOPACK "audiopacks/152.ebm"
-
-AUDIO_PACK_159:
-        AUDIOPACK "audiopacks/159.ebm"
-
-AUDIO_PACK_49:
-        AUDIOPACK "audiopacks/49.ebm"
-
-AUDIO_PACK_9:
-        AUDIOPACK "audiopacks/9.ebm"
-
-AUDIO_PACK_145:
-        AUDIOPACK "audiopacks/145.ebm"
-
-AUDIO_PACK_69:
-        AUDIOPACK "audiopacks/69.ebm"
-
-AUDIO_PACK_167:
-        AUDIOPACK "audiopacks/167.ebm"
-
-AUDIO_PACK_130:
-        AUDIOPACK "audiopacks/130.ebm"
-
-AUDIO_PACK_168:
-        AUDIOPACK "audiopacks/168.ebm"
-
-AUDIO_PACK_75:
-        AUDIOPACK "audiopacks/75.ebm"
-
-AUDIO_PACK_137:
-        AUDIOPACK "audiopacks/137.ebm"
-
-AUDIO_PACK_59:
-        AUDIOPACK "audiopacks/59.ebm"
-
-AUDIO_PACK_41:
-        AUDIOPACK "audiopacks/41.ebm"
-
-AUDIO_PACK_7:
-        AUDIOPACK "audiopacks/7.ebm"
+INSERT_AUDIO_PACK 23
+INSERT_AUDIO_PACK 11
+INSERT_AUDIO_PACK 142
+INSERT_AUDIO_PACK 160
+INSERT_AUDIO_PACK 101
+INSERT_AUDIO_PACK 103
+INSERT_AUDIO_PACK 51
+INSERT_AUDIO_PACK 18
+INSERT_AUDIO_PACK 29
+INSERT_AUDIO_PACK 93
+INSERT_AUDIO_PACK 95
+INSERT_AUDIO_PACK 164
+INSERT_AUDIO_PACK 151
+INSERT_AUDIO_PACK 143
+INSERT_AUDIO_PACK 12
+INSERT_AUDIO_PACK 135
+INSERT_AUDIO_PACK 83
+INSERT_AUDIO_PACK 88
+INSERT_AUDIO_PACK 155
+INSERT_AUDIO_PACK 31
+INSERT_AUDIO_PACK 129
+INSERT_AUDIO_PACK 22
+INSERT_AUDIO_PACK 17
+INSERT_AUDIO_PACK 91
+INSERT_AUDIO_PACK 81
+INSERT_AUDIO_PACK 147
+INSERT_AUDIO_PACK 152
+INSERT_AUDIO_PACK 159
+INSERT_AUDIO_PACK 49
+INSERT_AUDIO_PACK 9
+INSERT_AUDIO_PACK 145
+INSERT_AUDIO_PACK 69
+INSERT_AUDIO_PACK 167
+INSERT_AUDIO_PACK 130
+INSERT_AUDIO_PACK 168
+INSERT_AUDIO_PACK 75
+INSERT_AUDIO_PACK 137
+INSERT_AUDIO_PACK 59
+INSERT_AUDIO_PACK 41
+INSERT_AUDIO_PACK 7
 
 .INCLUDE "data/map/tileset_table.asm"
 
@@ -191,7 +112,7 @@ AUDIO_PACK_7:
 
 .INCLUDE "data/sprite_grouping_data.asm"
 
-.INCLUDE "data/unknown/EF4A40.asm"
+.INCLUDE "data/sound_stone_orbit_sprite_distances.asm"
 
 
 
@@ -201,21 +122,21 @@ AUDIO_PACK_7:
 
 .INCLUDE "data/debug/sound_menu_option_strings.asm"
 
-.INCLUDE "unknown/EF/EFD56F.asm"
+.INCLUDE "system/debug/render_debug_byte.asm"
 
-.INCLUDE "unknown/EF/EFD5D9-jp.asm"
+.INCLUDE "system/debug/reset_debug_sound_mode_menu-jp.asm"
 
-.INCLUDE "unknown/EF/EFD6D4.asm"
+.INCLUDE "system/debug/debug_sound_menu.asm"
 
 .INCLUDE "data/debug/menu_option_strings.asm"
 
-.INCLUDE "unknown/EF/EFD95E.asm"
+.INCLUDE "system/debug/load_debug_text_graphics.asm"
 
-.INCLUDE "unknown/EF/EFD9F3.asm"
+.INCLUDE "system/debug/load_debug_text_graphics_auto.asm"
 
-.INCLUDE "unknown/EF/EFDA05.asm"
+.INCLUDE "system/debug/init_debug_menu_screen"
 
-.INCLUDE "unknown/EF/EFDABD.asm"
+.INCLUDE "system/debug/render_debug_menu_string.asm"
 
 .INCLUDE "system/debug/display_menu_options.asm"
 
@@ -229,17 +150,17 @@ AUDIO_PACK_7:
 
 .INCLUDE "system/debug/display_view_character_debug_overlay.asm"
 
-.INCLUDE "unknown/EF/EFDF0B.asm"
+.INCLUDE "system/debug/get_attribute_tile_for.asm"
 
-.INCLUDE "unknown/EF/EFDFC4.asm"
+.INCLUDE "system/debug/render_attribute_row.asm"
 
-.INCLUDE "unknown/EF/EFE07C.asm"
+.INCLUDE "system/debug/render_attribute_column.asm"
 
-.INCLUDE "unknown/EF/EFE133.asm"
+.INCLUDE "system/debug/render_all_attribute_rows.asm"
 
-.INCLUDE "unknown/EF/EFE175-jp.asm"
+.INCLUDE "system/debug/debug_main-jp.asm"
 
-.INCLUDE "system/debug/load_kirby_sprite.asm"
+.INCLUDE "system/debug/load_debug_cursor_graphics.asm"
 
 .INCLUDE "system/debug/handle_cursor_movement.asm"
 
@@ -247,60 +168,58 @@ AUDIO_PACK_7:
 
 .INCLUDE "system/debug/load_menu.asm"
 
-.INCLUDE "unknown/EF/EFE6CF.asm"
+.INCLUDE "system/debug/is_debug_view_map_mode.asm"
 
-.INCLUDE "unknown/EF/EFE6E2.asm"
+.INCLUDE "system/debug/debug_view_map_limit_actionscript.asm"
 
-.INCLUDE "unknown/EF/EFE708.asm"
+.INCLUDE "system/debug/debug_try_cancelling_battle.asm"
 
 .INCLUDE "system/debug/check_view_character_mode.asm"
 
-.INCLUDE "unknown/EF/EFE759.asm"
+.INCLUDE "system/debug/debug_enemies_enabled.asm"
 
-.INCLUDE "unknown/EF/EFE771.asm"
+.INCLUDE "system/debug/save_replay_save_slot.asm"
 
-.INCLUDE "unknown/EF/EFE873.asm"
+.INCLUDE "system/debug/restore_rng_and_frame_counter.asm"
 
-.INCLUDE "unknown/EF/EFE895.asm"
+.INCLUDE "system/debug/store_persistent_replay_state.asm"
 
-.INCLUDE "unknown/EF/EFE8C7-jp.asm"
+.INCLUDE "system/debug/load_replay_save_slot-jp.asm"
 
-.INCLUDE "unknown/EF/EFEA23.asm"
+.INCLUDE "system/debug/backup_leader_position.asm"
 
-.INCLUDE "unknown/EF/EFEA4A.asm"
+.INCLUDE "system/debug/start_replay.asm"
 
-.INCLUDE "unknown/EF/EFEA9E.asm"
+.INCLUDE "system/debug/end_replay.asm"
 
 .INCLUDE "unknown/EF/EFEAA4.asm"
 
-.INCLUDE "unknown/EF/EFEAC8-jp.asm"
+.INCLUDE "system/debug/check_position_overlay_background-jp.asm"
 
-.INCLUDE "data/unknown/EFEB1D.asm"
+.INCLUDE "data/check_position_overlay_background_hdma_table.asm"
 
-.INCLUDE "unknown/EF/EFEB2A.asm"
+.INCLUDE "system/debug/debug_clear_hdma.asm"
 
 .INCLUDE "data/unknown/EFEB3D.asm"
 
 DEBUG_MENU_FONT:
 	BINARY "fonts/debug.gfx"
 
-.INCLUDE "data/unknown/EFEF70.asm"
+.INCLUDE "data/unused/EFEF70.asm"
 
-.INCLUDE "data/unknown/EFEF9F.asm"
+.INCLUDE "data/debug/debug_font_palette.asm"
 
-KIRBY:
-	BINARY "kirby.gfx"
+DEBUG_CURSOR_GRAPHICS:
+	BINARY "debug_cursor.gfx"
 
-.INCLUDE "data/unknown/EFF0D7.asm"
+.INCLUDE "data/unused/EFF0D7.asm"
 
-.INCLUDE "data/unknown/EFF1BB.asm"
+.INCLUDE "data/graphics/debug_menu_palettes.asm"
 
 .INCLUDE "data/unknown_version_string.asm"
 
-.INCLUDE "data/unknown/EFF3DB.asm"
+.INCLUDE "data/unused/EFF3DB.asm"
 
-.INCLUDE "data/unknown/EFF511.asm"
+.INCLUDE "data/unused/EFF53B.asm"
 
-.INCLUDE "data/unknown/EFF53B.asm"
-
-.INCLUDE "data/unknown/EFF5BB.asm"
+.INCLUDE "data/debug/debug_cursor_spritemap.asm"

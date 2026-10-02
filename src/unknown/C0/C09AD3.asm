@@ -1,7 +1,0 @@
-
-UNKNOWN_C09AD3:
-	LDA ($8C)
-	CLC
-	ADC $90
-	STA ($8C)
-	RTS

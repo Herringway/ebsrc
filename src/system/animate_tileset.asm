@@ -28,7 +28,7 @@ ANIMATE_TILESET:
 	ADC #overworld_tileset_anim::destination_address2
 	TAX
 	LDA __BSS_START__,X
-	CMP (@LOCAL03) ;overworld_tileset_anim::unknown0
+	CMP (@LOCAL03) ;overworld_tileset_anim::frame_count
 	BNE @UNKNOWN2
 	LDA #0
 	STA __BSS_START__,X

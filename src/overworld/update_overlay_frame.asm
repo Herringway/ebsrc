@@ -1,0 +1,38 @@
+
+; Parses a [00 CC] [XX XX] style script.
+; CC 01 - Stores XXXX to [$ACCUM + $88]
+; CC 02 - Returns XXXX
+; CC 03 - Jumps to XXXX
+UPDATE_OVERLAY_FRAME:
+	CLC
+	ADC $88
+	TAX
+	LDY #$0000
+@NEXTCMD:
+	LDA [$02],Y
+	INY
+	INY
+	CMP #$0001
+	BNE @NOTCMD1
+	LDA [$02],Y
+	INY
+	INY
+	STA __BSS_START__,X
+	BRA @NEXTCMD
+@NOTCMD1:
+	CMP #$0003
+	BNE @CMD2
+	LDA [$02],Y
+	STA $02
+	LDY #$0000
+	BRA @NEXTCMD
+@CMD2:
+	LDA [$02],Y
+	INY
+	INY
+	STY $08
+	TAY
+	LDA $02
+	CLC
+	ADC $08
+	RTS
