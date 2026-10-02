@@ -58,7 +58,7 @@ TEA_SEQUENCE_TEXT:
 
 .INCLUDE "data/photographer_cfg.asm"
 
-COMPRESSED_PALETTE_UNKNOWN:
+PHOTOGRAPH_MAP_PALETTE:
 	BINARY "unknown_palette.pal.lzhal"
 
 .IF .DEFINED(JPN)
@@ -69,7 +69,7 @@ COMPRESSED_PALETTE_UNKNOWN:
 	.INCLUDE "data/credits.asm"
 .ENDIF
 
-.INCLUDE "unknown/E1/E14DE8.asm"
+.INCLUDE "system/debug/debug_battler_info.asm"
 
 APE_ARRANGEMENT:
 	BINARY "intro/logos/ape.arr.lzhal"
@@ -146,13 +146,13 @@ NINTENDO_ITOI_PALETTE:
 	BINARY "intro/attract/nintendo_itoi.pal.lzhal"
 
 .IF .DEFINED(USA)
-	UNKNOWN_E1AE7C:
+	TITLE_SCREEN_LETTER_PALETTE:
 		LOCALEBINARY "E1AE7C.bin.lzhal"
 
-	UNKNOWN_E1AE83:
+	TITLE_SCREEN_LETTER_SHIMMER_PALETTE:
 		LOCALEBINARY "E1AE83.bin.lzhal"
 
-	UNKNOWN_E1AEFD:
+	TITLE_SCREEN_LETTER_GLOW_PALETTE:
 		LOCALEBINARY "E1AEFD.bin.lzhal"
 
 	TITLE_SCREEN_ARRANGEMENT:
@@ -161,40 +161,42 @@ NINTENDO_ITOI_PALETTE:
 	TITLE_SCREEN_GRAPHICS:
 		LOCALEBINARY "intro/title_screen.gfx.lzhal"
 
-	UNKNOWN_E1C6E5:
+	TITLE_SCREEN_LETTERS:
 		LOCALEBINARY "intro/title_screen_letters.gfx.lzhal"
 
 	TITLE_SCREEN_PALETTE:
 		LOCALEBINARY "intro/title_screen.pal.lzhal"
 .ENDIF
 
-.INCLUDE "data/unknown/E1CE08.asm"
+.INCLUDE "data/graphics/title_screen_letter_spritemaps.asm"
 
-UNKNOWN_E1CFAF:
+.INCLUDE "data/graphics/title_screen_letter_spritemap_pointers.asm"
+
+GAME_OVER_TILES:
 	BINARY "E1CFAF.gfx.lzhal"
 
-UNKNOWN_E1D4F4:
+GAME_OVER_PALETTE:
 	BINARY "E1D4F4.pal.lzhal"
 
-UNKNOWN_E1D5E8:
+GAME_OVER_TILEMAP:
 	BINARY "E1D5E8.arr.lzhal"
 
 .IF .DEFINED(JPN)
 	CAST_NAMES_GFX:
 		LOCALEBINARY "ending/cast_names.gfx.lzhal"
 
-	.INCLUDE "data/unknown/E1D815.asm"
+	.INCLUDE "data/graphics/cast_text_palette.asm"
 .ELSE
-	UNKNOWN_E1D6E1:
+	SPECIAL_CAST_NAME_GRAPHICS:
 		LOCALEBINARY "E1D6E1.gfx.lzhal"
 
-	.INCLUDE "data/unknown/E1D815.asm"
+	.INCLUDE "data/graphics/cast_text_palette.asm"
 
 	CAST_NAMES_GFX:
 		LOCALEBINARY "ending/cast_names.gfx.lzhal"
 .ENDIF
 
-UNKNOWN_E1E4E6:
+CAST_NAME_PALETTE:
 	LOCALEBINARY "ending/cast_names.pal.lzhal"
 
 STAFF_CREDITS_FONT_GRAPHICS:
@@ -203,9 +205,11 @@ STAFF_CREDITS_FONT_GRAPHICS:
 STAFF_CREDITS_FONT_PALETTE:
 	BINARY "ending/credits_font.pal"
 
-.INCLUDE "data/unknown/E1E924.asm"
+.INCLUDE "data/unused/E1E924.asm"
 
-.INCLUDE "data/unknown/E1E94A.asm"
+.INCLUDE "data/binary/credits_photographer_border_palette.asm"
+
+.INCLUDE "data/binary/credits_photographer_border_tilemap.asm"
 
 TOWN_MAP_LABEL_GFX:
 	LOCALEBINARY "town_maps/label.gfx.lzhal"
@@ -214,14 +218,14 @@ TOWN_MAP_ICON_PALETTE:
 	BINARY "town_maps/icon.pal"
 
 .IF .DEFINED(JPN)
-	.INCLUDE "data/unknown/E1F203-jp.asm"
+	.INCLUDE "data/graphics/town_map_icon_spritemaps-jp.asm"
 .ELSE
-	.INCLUDE "data/unknown/E1F203.asm"
+	.INCLUDE "data/graphics/town_map_icon_spritemaps.asm"
 .ENDIF
 
-.INCLUDE "data/unknown/E1F44C.asm"
+.INCLUDE "data/graphics/town_map_icon_spritemap_pointers.asm"
 
-.INCLUDE "data/unknown/E1F47A.asm"
+.INCLUDE "data/graphics/blinking_town_map_icons.asm"
 
 .INCLUDE "data/map/town_map_icon_placement_pointer_table.asm"
 

@@ -1,0 +1,3 @@
+
+SPOTLIGHT_TAPER_RADII:
+	.BYTE $10, $10, $0F, $0F, $0E, $0D, $0C, $0B, $09, $06, $03

@@ -39,14 +39,14 @@ BATTLE_INIT_ENEMY_STATS:
 	STA a:battler::id,X
 	TYA
 	LDX @VIRTUAL02
-	STA a:battler::unknown76,X
+	STA a:battler::original_id,X
 	LDY #enemy_data::battle_sprite
 	LDA [@VIRTUAL06],Y
 	LDX @VIRTUAL02
 	STA a:battler::sprite,X
 	LDY @LOCAL01
 	TYA
-	JSL UNKNOWN_C2B66A
+	JSL GET_NEXT_AVAILABLE_ENEMY_LETTER
 	.A8
 	LDX @VIRTUAL02
 	STA a:battler::the_flag,X

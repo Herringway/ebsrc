@@ -1,0 +1,46 @@
+
+MOVE_CAMERA_TO_ENTITY:
+	BEGIN_C_FUNCTION
+	STACK_RESERVE_VARS
+	STACK_RESERVE_INT16
+	END_STACK_VARS
+	LDA #0
+	STA @VIRTUAL04
+	LDA CAMERA_FOCUS_ENTITY
+	ASL
+	TAX
+	LDY ENTITY_ABS_X_TABLE,X
+	LDA ENTITY_ABS_Y_TABLE,X
+	STA @LOCAL00
+	LDA ENTITY_ABS_X_FRACTION_TABLE,X
+	STA @VIRTUAL02
+	LDA ENTITY_ABS_Y_FRACTION_TABLE,X
+	TAX
+	CPY GAME_STATE+game_state::leader_x_coord
+	BNE @UNKNOWN0
+	LDA @LOCAL00
+	CMP GAME_STATE+game_state::leader_y_coord
+	BNE @UNKNOWN0
+	LDA @VIRTUAL02
+	CMP GAME_STATE + game_state::leader_x_coord_fraction
+	BNE @UNKNOWN0
+	CPX GAME_STATE + game_state::leader_y_coord_fraction
+	BEQ @UNKNOWN1
+@UNKNOWN0:
+	LDA #1
+	STA @VIRTUAL04
+@UNKNOWN1:
+	STY GAME_STATE+game_state::leader_x_coord
+	LDA @LOCAL00
+	STA GAME_STATE+game_state::leader_y_coord
+	LDA @VIRTUAL02
+	STA GAME_STATE + game_state::leader_x_coord_fraction
+	STX GAME_STATE + game_state::leader_y_coord_fraction
+	LDA CAMERA_FOCUS_ENTITY
+	ASL
+	TAX
+	LDA ENTITY_DIRECTIONS,X
+	STA GAME_STATE+game_state::leader_direction
+	LDA @VIRTUAL04
+	STA GAME_STATE + game_state::leader_has_moved
+	END_C_FUNCTION

@@ -33,7 +33,7 @@ FLAVOURED_TEXT_GFX:
 .IF .DEFINED(JPN)
 	MRSATURN_FONT_DATA:
 		LOCALEBINARY "fonts/unknown.gfx"
-.INCLUDE "data/unknown/E01FC8-jp.asm"
+.INCLUDE "data/graphics/last_text_palette-jp.asm"
 .ENDIF
 
 .INCLUDE "data/movement_text_string_palette.asm"

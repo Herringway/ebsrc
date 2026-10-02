@@ -19,33 +19,33 @@
 
 .INCLUDE "battle/enemy_flashing_on.asm"
 
-.INCLUDE "unknown/EF/EF00BB.asm"
+.INCLUDE "text/clear_text_tile_attributes.asm"
 
-.INCLUDE "unknown/EF/EF00E6.asm"
+.INCLUDE "text/set_text_tile_attributes.asm"
 
-.INCLUDE "unknown/EF/EF0115.asm"
+.INCLUDE "text/remove_window_from_screen.asm"
 
-.INCLUDE "unknown/EF/EF016F.asm"
+.INCLUDE "text/backup_menu_selection.asm"
 
-.INCLUDE "unknown/EF/EF01D2.asm"
+.INCLUDE "text/print_new_line_if_needed.asm"
 
-.INCLUDE "audio/pause_music.asm"
+.INCLUDE "misc/stop_hp_pp_rolling.asm"
 
-.INCLUDE "unknown/EF/EF0262.asm"
+.INCLUDE "misc/enable_half_hp_meter_speed.asm"
 
-.INCLUDE "audio/resume_music.asm"
+.INCLUDE "misc/resume_hp_pp_rolling.asm"
 
-.INCLUDE "unknown/EF/EF027D.asm"
+.INCLUDE "overworld/actionscript/bubble_monkey_initialize.asm"
 
-.INCLUDE "unknown/EF/EF02C4.asm"
+.INCLUDE "overworld/pick_next_bubble_monkey_movement_mode.asm"
 
-.INCLUDE "unknown/EF/EF031E.asm"
+.INCLUDE "overworld/actionscript/bubble_monkey_tick.asm"
 
-.INCLUDE "unknown/EF/EF04DC.asm"
+.INCLUDE "intro/cancel_title_screen_sequence.asm"
 
 .INCLUDE "data/sram_signature.asm"
 
-.INCLUDE "data/unknown/EF05A6.asm"
+.INCLUDE "data/sram_slot_bitmasks.asm"
 
 .INCLUDE "system/saves/erase_save_block.asm"
 
@@ -75,37 +75,37 @@
 
 .INCLUDE "system/saves/copy_save_slot.asm"
 
-.INCLUDE "unknown/EF/EF0C3D.asm"
+.INCLUDE "unused/load_save_3_and_spawn_player.asm"
 
-.INCLUDE "unknown/EF/EF0C87.asm"
+.INCLUDE "overworld/actionscript/delivery/get_entity_delivery_attempt_count.asm"
 
-.INCLUDE "unknown/EF/EF0C97.asm"
+.INCLUDE "overworld/actionscript/delivery/clear_entity_delivery_attempt_count.asm"
 
-.INCLUDE "unknown/EF/EF0CA7.asm"
+.INCLUDE "overworld/actionscript/delivery/get_entity_has_delivery_attempts_left.asm"
 
-.INCLUDE "unknown/EF/EF0D23.asm"
+.INCLUDE "overworld/actionscript/delivery/get_time_between_delivery_attempts.asm"
 
-.INCLUDE "unknown/EF/EF0D46.asm"
+.INCLUDE "overworld/actionscript/delivery/start_delivery_countdown.asm"
 
-.INCLUDE "unknown/EF/EF0D73.asm"
+.INCLUDE "overworld/actionscript/delivery/do_delivery_countdown.asm"
 
-.INCLUDE "unknown/EF/EF0D8D.asm"
+.INCLUDE "overworld/actionscript/delivery/start_delivery_success_text.asm"
 
-.INCLUDE "unknown/EF/EF0DFA.asm"
+.INCLUDE "overworld/actionscript/delivery/start_delivery_fail_text.asm"
 
-.INCLUDE "unknown/EF/EF0E67.asm"
+.INCLUDE "overworld/actionscript/delivery/get_delivery_enter_speed.asm"
 
-.INCLUDE "unknown/EF/EF0E8A.asm"
+.INCLUDE "overworld/actionscript/delivery/get_delivery_exit_speed.asm"
 
-.INCLUDE "unknown/EF/EF0EAD.asm"
+.INCLUDE "overworld/create_delivery_entity.asm"
 
-.INCLUDE "unknown/EF/EF0EE8.asm"
+.INCLUDE "overworld/respawn_delivery_entities.asm"
 
-.INCLUDE "unknown/EF/EF0F60.asm"
+.INCLUDE "overworld/actionscript/delivery/check_delivery_eligibility.asm"
 
-.INCLUDE "unknown/EF/EF0FDB.asm"
+.INCLUDE "overworld/actionscript/delivery/start_delivery.asm"
 
-.INCLUDE "unknown/EF/EF0FF6.asm"
+.INCLUDE "overworld/actionscript/delivery/finish_delivery.asm"
 
 .INCLUDE "data/map/tileset_table.asm"
 
@@ -165,7 +165,7 @@
 
 .INCLUDE "data/sprite_grouping_data.asm"
 
-.INCLUDE "data/unknown/EF4A40.asm"
+.INCLUDE "data/sound_stone_orbit_sprite_distances.asm"
 
 LOCALEINCLUDE "text_data/EEXPLPSI.ebtxt"
 
@@ -215,21 +215,21 @@ LOCALEINCLUDE "text_data/UNKNOWN7.ebtxt"
 
 .INCLUDE "data/debug/sound_menu_option_strings.asm"
 
-.INCLUDE "unknown/EF/EFD56F.asm"
+.INCLUDE "system/debug/render_debug_byte.asm"
 
-.INCLUDE "unknown/EF/EFD5D9.asm"
+.INCLUDE "system/debug/reset_debug_sound_mode_menu.asm"
 
-.INCLUDE "unknown/EF/EFD6D4.asm"
+.INCLUDE "system/debug/debug_sound_menu.asm"
 
 .INCLUDE "data/debug/menu_option_strings.asm"
 
-.INCLUDE "unknown/EF/EFD95E.asm"
+.INCLUDE "system/debug/load_debug_text_graphics.asm"
 
-.INCLUDE "unknown/EF/EFD9F3.asm"
+.INCLUDE "system/debug/load_debug_text_graphics_auto.asm"
 
-.INCLUDE "unknown/EF/EFDA05.asm"
+.INCLUDE "system/debug/init_debug_menu_screen"
 
-.INCLUDE "unknown/EF/EFDABD.asm"
+.INCLUDE "system/debug/render_debug_menu_string.asm"
 
 .INCLUDE "system/debug/display_menu_options.asm"
 
@@ -243,15 +243,15 @@ LOCALEINCLUDE "text_data/UNKNOWN7.ebtxt"
 
 .INCLUDE "system/debug/display_view_character_debug_overlay.asm"
 
-.INCLUDE "unknown/EF/EFDF0B.asm"
+.INCLUDE "system/debug/get_attribute_tile_for.asm"
 
-.INCLUDE "unknown/EF/EFDFC4.asm"
+.INCLUDE "system/debug/render_attribute_row.asm"
 
-.INCLUDE "unknown/EF/EFE07C.asm"
+.INCLUDE "system/debug/render_attribute_column.asm"
 
-.INCLUDE "unknown/EF/EFE133.asm"
+.INCLUDE "system/debug/render_all_attribute_rows.asm"
 
-.INCLUDE "unknown/EF/EFE175.asm"
+.INCLUDE "system/debug/debug_main.asm"
 
 .INCLUDE "system/debug/load_debug_cursor_graphics.asm"
 
@@ -261,59 +261,57 @@ LOCALEINCLUDE "text_data/UNKNOWN7.ebtxt"
 
 .INCLUDE "system/debug/load_menu.asm"
 
-.INCLUDE "unknown/EF/EFE6CF.asm"
+.INCLUDE "system/debug/is_debug_view_map_mode.asm"
 
-.INCLUDE "unknown/EF/EFE6E2.asm"
+.INCLUDE "system/debug/debug_view_map_limit_actionscript.asm"
 
-.INCLUDE "unknown/EF/EFE708.asm"
+.INCLUDE "system/debug/debug_try_cancelling_battle.asm"
 
 .INCLUDE "system/debug/check_view_character_mode.asm"
 
-.INCLUDE "unknown/EF/EFE759.asm"
+.INCLUDE "system/debug/debug_enemies_enabled.asm"
 
-.INCLUDE "unknown/EF/EFE771.asm"
+.INCLUDE "system/debug/save_replay_save_slot.asm"
 
-.INCLUDE "unknown/EF/EFE873.asm"
+.INCLUDE "system/debug/restore_rng_and_frame_counter.asm"
 
-.INCLUDE "unknown/EF/EFE895.asm"
+.INCLUDE "system/debug/store_persistent_replay_state.asm"
 
-.INCLUDE "unknown/EF/EFE8C7.asm"
+.INCLUDE "system/debug/load_replay_save_slot.asm"
 
-.INCLUDE "unknown/EF/EFEA23.asm"
+.INCLUDE "system/debug/backup_leader_position.asm"
 
-.INCLUDE "unknown/EF/EFEA4A.asm"
+.INCLUDE "system/debug/start_replay.asm"
 
-.INCLUDE "unknown/EF/EFEA9E.asm"
+.INCLUDE "system/debug/end_replay.asm"
 
 .INCLUDE "unknown/EF/EFEAA4.asm"
 
-.INCLUDE "unknown/EF/EFEAC8.asm"
+.INCLUDE "system/debug/check_position_overlay_background.asm"
 
-.INCLUDE "data/unknown/EFEB1D.asm"
+.INCLUDE "check_position_overlay_background_hdma_table.asm"
 
-.INCLUDE "unknown/EF/EFEB2A.asm"
+.INCLUDE "system/debug/debug_clear_hdma.asm"
 
 .INCLUDE "data/unknown/EFEB3D.asm"
 
 DEBUG_MENU_FONT:
 	BINARY "fonts/debug.gfx"
 
-.INCLUDE "data/unknown/EFEF70.asm"
+.INCLUDE "data/unused/EFEF70.asm"
 
 .INCLUDE "data/debug/debug_font_palette.asm"
 
 DEBUG_CURSOR_GRAPHICS:
 	BINARY "debug_cursor.gfx"
 
-.INCLUDE "data/unknown/EFF0D7.asm"
+.INCLUDE "data/unused/EFF0D7.asm"
 
-.INCLUDE "data/unknown/EFF1BB.asm"
+.INCLUDE "data/graphics/debug_menu_palettes.asm"
 
 .INCLUDE "data/unknown_version_string.asm"
 
 .INCLUDE "data/unused/EFF3DB.asm"
-
-.INCLUDE "data/unused/EFF511.asm"
 
 .INCLUDE "data/unused/EFF53B.asm"
 

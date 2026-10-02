@@ -1,0 +1,3 @@
+
+HDMA_DISABLE_MASKS:
+	.BYTE $FE, $FD, $FB, $F7, $EF, $DF, $BF, $7F

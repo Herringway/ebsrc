@@ -44,7 +44,7 @@ UPDATE_PARTY:
 	STY @LOCAL09
 	BRA @UNKNOWN6
 @UNKNOWN2:
-	LDA GAME_STATE + game_state::unknown96,Y
+	LDA GAME_STATE + game_state::party_member_index,Y
 	AND #$00FF
 	STA @LOCAL08
 	CMP #5
@@ -57,7 +57,7 @@ UPDATE_PARTY:
 	TYA
 	ASL
 	TAX
-	LDA GAME_STATE + game_state::unknownA2,X
+	LDA GAME_STATE + game_state::party_entities,X
 	ASL
 	TAX
 	LDA ENTITY_SCRIPT_VAR1_TABLE,X
@@ -83,7 +83,7 @@ UPDATE_PARTY:
 	TAX
 	LDA @LOCAL08
 	STA @LOCAL01,X
-	LDA GAME_STATE + game_state::unknownA2,X
+	LDA GAME_STATE + game_state::party_entities,X
 	STA @LOCAL02,X
 	LDA GAME_STATE + game_state::player_controlled_party_members,Y
 	AND #$00FF
@@ -191,11 +191,11 @@ UPDATE_PARTY:
 	LDX @VIRTUAL04
 	SEP #PROC_FLAGS::ACCUM8
 	LDA @LOCAL01,X
-	STA __BSS_START__ + game_state::unknown96,Y
+	STA __BSS_START__ + game_state::party_member_index,Y
 	REP #PROC_FLAGS::ACCUM8
 	LDA @VIRTUAL04
 	CLC
-	ADC #.LOWORD(GAME_STATE) + game_state::unknownA2
+	ADC #.LOWORD(GAME_STATE) + game_state::party_entities
 	TAX
 	STX @LOCAL04
 	LDX @VIRTUAL04
@@ -234,9 +234,9 @@ UPDATE_PARTY:
 @UNKNOWN15:
 	CMP @PARTY_COUNT
 	BCC @UNKNOWN14
-	LDA GAME_STATE +game_state::unknownA2
+	LDA GAME_STATE +game_state::party_entities
 	STA GAME_STATE+game_state::current_party_members
-	JSL UNKNOWN_C032EC
-	JSL UNKNOWN_C02C3E
-	JSL UNKNOWN_C47F87
+	JSL UPDATE_PARTY_NPCS
+	JSL UPDATE_MUSHROOMIZED_WALKING
+	JSL LOAD_TEXT_PALETTE
 	END_C_FUNCTION

@@ -1,3 +1,0 @@
-
-UNKNOWN_C0B3FF:
-	.BYTE $00

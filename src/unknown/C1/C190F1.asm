@@ -10,7 +10,7 @@ UNKNOWN_C190F1:
 	LDX #0
 	BRA @UNKNOWN2
 @UNKNOWN0:
-	LDA GAME_STATE + game_state::unknownB6,X
+	LDA GAME_STATE + game_state::delivery_queue_item,X
 	AND #$00FF
 	BEQ @UNKNOWN1
 	LDA @LOCAL00

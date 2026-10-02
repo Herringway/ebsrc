@@ -1,3 +1,0 @@
-
-UNKNOWN_C0AE44:
-	.BYTE $FE, $FD, $FB, $F7, $EF, $DF, $BF, $7F

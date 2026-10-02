@@ -17,7 +17,7 @@ UNKNOWN_C03A24:
 	ADC #.LOWORD(GAME_STATE)
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
-	STZ __BSS_START__+game_state::unknown96,X
+	STZ __BSS_START__+game_state::party_member_index,X
 	STZ __BSS_START__+game_state::player_controlled_party_members,X
 	REP #PROC_FLAGS::ACCUM8
 	LDA @LOCAL00
@@ -26,10 +26,10 @@ UNKNOWN_C03A24:
 	CLC
 	ADC #.LOWORD(GAME_STATE)
 	TAX
-	STZ a:game_state::unknownA2,X
+	STZ a:game_state::party_entities,X
 .ELSE
 	TAX
-	STZ GAME_STATE + game_state::unknownA2,X
+	STZ GAME_STATE + game_state::party_entities,X
 .ENDIF
 	LDA @LOCAL00
 	INC
@@ -55,7 +55,7 @@ UNKNOWN_C03A24:
 	AND #$00FF
 	BEQ @UNKNOWN4
 	AND #$00FF
-	JSL UNKNOWN_C0369B
+	JSL INCREMENT_PARTY_MEMBER_INDICES
 	LDX @LOCAL00
 	INX
 	STX @LOCAL00
@@ -64,7 +64,7 @@ UNKNOWN_C03A24:
 	BCC @UNKNOWN2
 @UNKNOWN4:
 	STZ UNREAD_7E5D7E
-	LDA GAME_STATE + game_state::unknown92
+	LDA GAME_STATE + game_state::special_game_state
 	ASL
 	STA FOOTSTEP_SOUND_ID
 	STZ FOOTSTEP_SOUND_ID_OVERRIDE
