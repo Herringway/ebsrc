@@ -10,7 +10,7 @@ all: earthbound
 SRCDIR = src/bankconfig
 BUILDDIR = build
 
-CA65FLAGS = -t none --cpu 65816 --bin-include-dir src --include-dir src --include-dir include --bin-include-dir $(BUILDDIR)
+CA65FLAGS = -t none --cpu 65816 --include-dir src --include-dir include --include-dir $(BUILDDIR) --bin-include-dir $(BUILDDIR)
 LD65FLAGS = -C snes.cfg
 
 JPID = JP
@@ -51,6 +51,11 @@ USOBJS = $(subst $(SRCDIR), $(BUILDDIR), $(patsubst %.asm, %.o, $(USSRCS)))
 USPROTOSRCS = $(wildcard $(SRCDIR)/$(USPROTOID)/*.asm)
 USPROTOOBJS = $(subst $(SRCDIR), $(BUILDDIR), $(patsubst %.asm, %.o, $(USPROTOSRCS)))
 
+rwildcard = $(wildcard $1) $(foreach d,$1,$(call rwildcard,$(addsuffix /$(notdir $d),$(wildcard $(dir $d)*))))
+
+YAMLFILES = $(call rwildcard, src/data/*.yaml)
+YAMLCOMPILED = $(subst src, $(BUILDDIR), $(patsubst %.yaml, %.asm, $(YAMLFILES)))
+
 $(BUILDDIR)/%.dep: $(SRCDIR)/%.asm
 	@$(call mkdir, $(@D))
 	ca65 $(CA65FLAGS) --listing "$(strip $(subst $(SRCDIR), $(BUILDDIR), $(patsubst %.dep,%.lst,$@)))" --create-dep "$(strip $(subst $(SRCDIR), $(BUILDDIR), $@))" -o "$(patsubst %.dep,%.o,$@)" "$<"
@@ -74,18 +79,20 @@ build/earthbound-1995-03-27.dbg: $(USPROTOOBJS)
 	ld65 $(LD65FLAGS) --dbgfile "$@" $^
 
 # ca65 requires all bin files to be present for generating .dep files, so make sure they're present first
-depsjp: $(BUILDDIR)/main.spc700.bin $(subst $(SRCDIR), $(BUILDDIR), $(JPSRCS:.asm=.dep))
-depsusa: $(BUILDDIR)/main.spc700.bin $(subst $(SRCDIR), $(BUILDDIR), $(USSRCS:.asm=.dep))
-depsusaproto: $(BUILDDIR)/main.spc700.bin $(subst $(SRCDIR), $(BUILDDIR), $(USPROTOSRCS:.asm=.dep))
+depsjp: $(YAMLCOMPILED) $(BUILDDIR)/main.spc700.bin $(subst $(SRCDIR), $(BUILDDIR), $(JPSRCS:.asm=.dep))
+depsusa: $(YAMLCOMPILED) $(BUILDDIR)/main.spc700.bin $(subst $(SRCDIR), $(BUILDDIR), $(USSRCS:.asm=.dep))
+depsusaproto: $(YAMLCOMPILED) $(BUILDDIR)/main.spc700.bin $(subst $(SRCDIR), $(BUILDDIR), $(USPROTOSRCS:.asm=.dep))
+
+extractall: extract extractproto extractjp
 
 extract:
-	ebbinex "earthbound.yml" "donor.sfc"
+	ebbinex "earthbound.yml" "build/donor.sfc"
 
 extractproto:
-	ebbinex "earthbound-1995-03-27.yml" "donor-1995-03-27.sfc"
+	ebbinex "earthbound-1995-03-27.yml" "build/donor-1995-03-27.sfc"
 
 extractjp:
-	ebbinex "mother2.yml" "donorm2.sfc"
+	ebbinex "mother2.yml" "build/donorm2.sfc"
 
 $(BUILDDIR)/%.o: $(SRCDIR)/%.asm
 	@$(call mkdir, $(@D))
@@ -96,3 +103,6 @@ $(BUILDDIR)/%.spc700.bin: src/spc700/%.spc700.s
 
 %.bin: %.uncompressed
 	inhal -n $< $@
+
+build/%.asm: src/%.yaml
+	yamlc -c charsets.yaml "$<" -o "$@"

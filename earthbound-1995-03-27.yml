@@ -20505,7 +20505,7 @@ compressedTextStrings:
 - '@Di'
 - ool
 - stu
-defaultDumpPath: src/bin/
+defaultDumpPath: build/data/
 romIdentifier: '01 95.03.27          '
 dontUseTextTable: false
 multibyteFlyovers: false

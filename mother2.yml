@@ -19955,7 +19955,7 @@ renameLabels:
     0x273: NAME_INPUT_WINDOW_SELECTION_LAYOUT_3
     0x336: NAME_INPUT_WINDOW_SELECTION_LAYOUT_4
     0x3F9: NAME_INPUT_WINDOW_SELECTION_LAYOUT_5
-defaultDumpPath: src/bin/
+defaultDumpPath: build/data/
 romIdentifier: 'MOTHER-2             '
 dontUseTextTable: true
 multibyteFlyovers: true

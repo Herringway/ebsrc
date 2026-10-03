@@ -20550,7 +20550,7 @@ compressedTextStrings:
 - '@Ky'
 - '@Ye'
 - spi
-defaultDumpPath: src/bin/
+defaultDumpPath: build/data/
 romIdentifier: 'EARTH BOUND          '
 dontUseTextTable: false
 multibyteFlyovers: false

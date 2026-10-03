@@ -158,7 +158,7 @@
 .ENDMACRO
 
 .MACRO LOCALEINCLUDE file
-    .INCLUDE .SPRINTF("bin/%s/%s", LOCALE, file)
+    .INCLUDE .SPRINTF("data/%s/%s", LOCALE, file)
 .ENDMACRO
 
 .MACRO LOCALEBINARY file, offset, length
@@ -168,12 +168,12 @@
 .MACRO BINARY file, offset, length
     .IFNBLANK offset
         .IFNBLANK length
-            .INCBIN .SPRINTF("bin/%s", file), offset, length
+            .INCBIN .SPRINTF("data/%s", file), offset, length
         .ELSE
-            .INCBIN .SPRINTF("bin/%s", file), offset
+            .INCBIN .SPRINTF("data/%s", file), offset
         .ENDIF
     .ELSE
-        .INCBIN .SPRINTF("bin/%s", file)
+        .INCBIN .SPRINTF("data/%s", file)
     .ENDIF
 .ENDMACRO
 
