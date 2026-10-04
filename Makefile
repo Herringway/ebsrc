@@ -101,7 +101,7 @@ $(BUILDDIR)/%.o: $(SRCDIR)/%.asm
 $(BUILDDIR)/%.spc700.bin: src/spc700/%.spc700.s
 	spcasm -f plain "$<" "$@"
 
-%.bin: %.uncompressed
+%.lzhal: %
 	inhal -n $< $@
 
 build/%.asm: src/%.yaml
