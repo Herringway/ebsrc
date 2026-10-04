@@ -1,6 +1,6 @@
 
-; unused function, possibly for debugging
-UNKNOWN_C017EA:
+; unused debug function
+MAP_VIEWER:
 	BEGIN_C_FUNCTION_FAR
 	STACK_RESERVE_VARS
 	STACK_RESERVE_INT16
