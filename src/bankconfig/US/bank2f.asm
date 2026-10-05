@@ -19,29 +19,29 @@
 
 .INCLUDE "battle/enemy_flashing_on.asm"
 
-.INCLUDE "unknown/EF/EF00BB.asm"
+.INCLUDE "text/clear_text_tile_attributes.asm"
 
-.INCLUDE "unknown/EF/EF00E6.asm"
+.INCLUDE "text/set_text_tile_attributes.asm"
 
-.INCLUDE "unknown/EF/EF0115.asm"
+.INCLUDE "text/remove_window_from_screen.asm"
 
-.INCLUDE "unknown/EF/EF016F.asm"
+.INCLUDE "text/backup_menu_selection.asm"
 
-.INCLUDE "unknown/EF/EF01D2.asm"
+.INCLUDE "text/print_new_line_if_needed.asm"
 
 .INCLUDE "audio/pause_music.asm"
 
-.INCLUDE "unknown/EF/EF0262.asm"
+.INCLUDE "misc/enable_half_hp_meter_speed.asm"
 
 .INCLUDE "audio/resume_music.asm"
 
-.INCLUDE "unknown/EF/EF027D.asm"
+.INCLUDE "overworld/actionscript/bubble_monkey_initialize.asm"
 
-.INCLUDE "unknown/EF/EF02C4.asm"
+.INCLUDE "overworld/pick_next_bubble_monkey_movement_mode.asm"
 
-.INCLUDE "unknown/EF/EF031E.asm"
+.INCLUDE "overworld/actionscript/bubble_monkey_tick.asm"
 
-.INCLUDE "unknown/EF/EF04DC.asm"
+.INCLUDE "intro/cancel_title_screen_sequence.asm"
 
 .INCLUDE "data/sram_signature.asm"
 
@@ -75,37 +75,37 @@
 
 .INCLUDE "system/saves/copy_save_slot.asm"
 
-.INCLUDE "unknown/EF/EF0C3D.asm"
+.INCLUDE "unused/EF0C3D.asm"
 
-.INCLUDE "unknown/EF/EF0C87.asm"
+.INCLUDE "overworld/actionscript/delivery/get_entity_delivery_attempt_count.asm"
 
-.INCLUDE "unknown/EF/EF0C97.asm"
+.INCLUDE "overworld/actionscript/delivery/clear_entity_delivery_attempt_count.asm"
 
-.INCLUDE "unknown/EF/EF0CA7.asm"
+.INCLUDE "overworld/actionscript/delivery/get_entity_has_delivery_attempts_left.asm"
 
-.INCLUDE "unknown/EF/EF0D23.asm"
+.INCLUDE "overworld/actionscript/delivery/get_time_between_delivery_attempts.asm"
 
-.INCLUDE "unknown/EF/EF0D46.asm"
+.INCLUDE "overworld/actionscript/delivery/start_delivery_countdown.asm"
 
-.INCLUDE "unknown/EF/EF0D73.asm"
+.INCLUDE "overworld/actionscript/delivery/do_delivery_countdown.asm"
 
-.INCLUDE "unknown/EF/EF0D8D.asm"
+.INCLUDE "overworld/actionscript/delivery/start_delivery_success_text.asm"
 
-.INCLUDE "unknown/EF/EF0DFA.asm"
+.INCLUDE "overworld/actionscript/delivery/start_delivery_fail_text.asm"
 
-.INCLUDE "unknown/EF/EF0E67.asm"
+.INCLUDE "overworld/actionscript/delivery/get_delivery_enter_speed.asm"
 
-.INCLUDE "unknown/EF/EF0E8A.asm"
+.INCLUDE "overworld/actionscript/delivery/get_delivery_exit_speed.asm"
 
-.INCLUDE "unknown/EF/EF0EAD.asm"
+.INCLUDE "overworld/create_delivery_entity.asm"
 
-.INCLUDE "unknown/EF/EF0EE8.asm"
+.INCLUDE "overworld/respawn_delivery_entities.asm"
 
-.INCLUDE "unknown/EF/EF0F60.asm"
+.INCLUDE "overworld/actionscript/delivery/check_delivery_eligibility.asm"
 
-.INCLUDE "unknown/EF/EF0FDB.asm"
+.INCLUDE "overworld/actionscript/delivery/start_delivery.asm"
 
-.INCLUDE "unknown/EF/EF0FF6.asm"
+.INCLUDE "overworld/actionscript/delivery/finish_delivery.asm"
 
 .INCLUDE "data/map/tileset_table.asm"
 
