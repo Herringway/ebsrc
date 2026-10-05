@@ -90,21 +90,21 @@
 
 .INCLUDE "overworld/initialize_misc_object_data.asm"
 
-.INCLUDE "unknown/C0/C01A86.asm"
+.INCLUDE "overworld/clear_sprite_table.asm"
 
 .INCLUDE "overworld/find_free_space_7E4682.asm"
 
-.INCLUDE "unknown/C0/C01B15.asm"
+.INCLUDE "system/free_spritemap.asm"
 
-.INCLUDE "unknown/C0/C01B96.asm"
+.INCLUDE "system/sprite_vram_table_overwrite.asm"
 
 .INCLUDE "system/alloc_sprite_mem.asm"
 
-.INCLUDE "unknown/C0/C01C52.asm"
+.INCLUDE "system/reserve_overworld_sprite_vram.asm"
 
-.INCLUDE "unknown/C0/C01D38.asm"
+.INCLUDE "system/prepare_spritemap.asm"
 
-.INCLUDE "unknown/C0/C01DED.asm"
+.INCLUDE "overworld/get_overworld_sprite_tile_size.asm"
 
 .INCLUDE "overworld/create_entity.asm"
 
