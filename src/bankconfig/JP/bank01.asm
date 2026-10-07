@@ -214,7 +214,7 @@
 
 .INCLUDE "audio/pause_music.asm"
 
-.INCLUDE "unknown/EF/EF0262.asm"
+.INCLUDE "misc/enable_half_hp_meter_speed.asm"
 
 .INCLUDE "audio/resume_music.asm"
 
