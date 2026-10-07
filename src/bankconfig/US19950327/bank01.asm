@@ -202,11 +202,11 @@
 
 .INCLUDE "unknown/C1/C12CCC.asm"
 
-.INCLUDE "audio/pause_music.asm"
+.INCLUDE "misc/stop_hp_pp_rolling.asm"
 
 .INCLUDE "misc/enable_half_hp_meter_speed.asm"
 
-.INCLUDE "audio/resume_music.asm"
+.INCLUDE "misc/resume_hp_pp_rolling.asm"
 
 .INCLUDE "unknown/C1/C12D17.asm"
 
