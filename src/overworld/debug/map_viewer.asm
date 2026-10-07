@@ -1,4 +1,5 @@
 
+; unused debug function
 MAP_VIEWER:
 	BEGIN_C_FUNCTION_FAR
 	STACK_RESERVE_VARS
