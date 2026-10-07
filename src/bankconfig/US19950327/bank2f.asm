@@ -131,7 +131,7 @@ LOCALEINCLUDE "text_data/UNKNOWN7.ebtxt"
 
 .INCLUDE "system/debug/load_debug_text_graphics_auto.asm"
 
-.INCLUDE "system/debug/init_debug_menu_screen"
+.INCLUDE "system/debug/init_debug_menu_screen.asm"
 
 .INCLUDE "system/debug/render_debug_menu_string.asm"
 
