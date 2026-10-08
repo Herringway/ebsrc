@@ -78,7 +78,7 @@
 
 .INCLUDE "unknown/C0/C01731.asm"
 
-.INCLUDE "unused/debug_map_viewer.asm"
+.INCLUDE "system/debug/map_viewer.asm"
 
 .INCLUDE "overworld/reload_map.asm"
 
