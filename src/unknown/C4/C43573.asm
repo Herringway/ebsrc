@@ -14,9 +14,9 @@ UNKNOWN_C43573:
 	CMP #.LOWORD(-1)
 	BEQ @UNKNOWN0
 .IF .DEFINED(PROTOTYPE19950327)
-	JSL UNKNOWN_C3E6F8 ; should be possible with JSR, but ca65 seems to be forcing absolute addressing for some reason...
+	JSL RESET_ACTIVE_PARTY_MEMBER_HP_PP_WINDOW ; should be possible with JSR, but ca65 seems to be forcing absolute addressing for some reason...
 .ELSE
-	JSR UNKNOWN_C3E6F8
+	JSR RESET_ACTIVE_PARTY_MEMBER_HP_PP_WINDOW
 .ENDIF
 @UNKNOWN0:
 	LDA @LOCAL00

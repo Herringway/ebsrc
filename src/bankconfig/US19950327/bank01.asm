@@ -784,7 +784,7 @@
 
 .INCLUDE "unknown/C4/C43573_redirect.asm"
 
-.INCLUDE "unknown/C3/C3E6F8_redirect.asm"
+.INCLUDE "text/reset_active_party_member_hp_pp_window_redirect.asm"
 
 .INCLUDE "text/selection_menu_setup.asm"
 

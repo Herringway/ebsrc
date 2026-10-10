@@ -2056,27 +2056,27 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "misc/check_item_equipped.asm"
 
-.INCLUDE "unknown/C3/C3E9F7.asm"
+.INCLUDE "misc/test_item_is_equipped.asm"
 
 .INCLUDE "unknown/C3/C3EAD0.asm"
 
-.INCLUDE "unknown/C3/C3EB1C.asm"
+.INCLUDE "overworld/clear_item_transformation.asm"
 
-.INCLUDE "unknown/C3/C3EBCA.asm"
+.INCLUDE "overworld/reinitialize_item_transformation.asm"
 
-.INCLUDE "unknown/C3/C3EC1F.asm"
+.INCLUDE "misc/reduce_party_member_hp.asm"
 
-.INCLUDE "unknown/C3/C3EC8B.asm"
+.INCLUDE "misc/increase_party_member_hp.asm"
 
-.INCLUDE "unknown/C3/C3ED2C.asm"
+.INCLUDE "misc/reduce_party_member_pp.asm"
 
-.INCLUDE "unknown/C3/C3ED98.asm"
+.INCLUDE "misc/increase_party_member_pp.asm"
 
-.INCLUDE "unknown/C3/C3EE14.asm"
+.INCLUDE "misc/can_character_equip.asm"
 
-.INCLUDE "unknown/C3/C3EE4D.asm"
+.INCLUDE "misc/full_party_update.asm"
 
-.INCLUDE "unknown/C3/C3EE7A.asm"
+.INCLUDE "misc/get_party_stat.asm"
 
 .INCLUDE "misc/null/C3EF23.asm"
 

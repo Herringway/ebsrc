@@ -2046,7 +2046,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/unknown/C3E44C.asm"
 
-.INCLUDE "unknown/C3/C3E450.asm"
+.INCLUDE "text/update_flash_text_palette.asm"
 
 .INCLUDE "text/clear_instant_printing.asm"
 
@@ -2054,15 +2054,15 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "text/window_tick_without_instant_printing.asm"
 
-.INCLUDE "unknown/C3/C3E4EF.asm"
+.INCLUDE "text/find_free_window.asm"
 
 .INCLUDE "text/close_window.asm"
 
-.INCLUDE "unknown/C3/C3E75D.asm"
+.INCLUDE "text/print_battler_article.asm"
 
 .INCLUDE "unknown/C2/C209A0.asm"
 
-.INCLUDE "unknown/C3/C3E7E3.asm"
+.INCLUDE "text/reset_window_menu.asm"
 
 .INCLUDE "data/unknown/C3E84E.asm"
 
@@ -2078,27 +2078,27 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "misc/check_item_equipped.asm"
 
-.INCLUDE "unknown/C3/C3E9F7.asm"
+.INCLUDE "misc/test_item_is_equipped.asm"
 
 .INCLUDE "unknown/C3/C3EAD0.asm"
 
-.INCLUDE "unknown/C3/C3EB1C.asm"
+.INCLUDE "overworld/clear_item_transformation.asm"
 
-.INCLUDE "unknown/C3/C3EBCA.asm"
+.INCLUDE "overworld/reinitialize_item_transformation.asm"
 
-.INCLUDE "unknown/C3/C3EC1F.asm"
+.INCLUDE "misc/reduce_party_member_hp.asm"
 
-.INCLUDE "unknown/C3/C3EC8B.asm"
+.INCLUDE "misc/increase_party_member_hp.asm"
 
-.INCLUDE "unknown/C3/C3ED2C.asm"
+.INCLUDE "misc/reduce_party_member_pp.asm"
 
-.INCLUDE "unknown/C3/C3ED98.asm"
+.INCLUDE "misc/increase_party_member_pp.asm"
 
-.INCLUDE "unknown/C3/C3EE14.asm"
+.INCLUDE "misc/can_character_equip.asm"
 
-.INCLUDE "unknown/C3/C3EE4D.asm"
+.INCLUDE "misc/full_party_update.asm"
 
-.INCLUDE "unknown/C3/C3EE7A.asm"
+.INCLUDE "misc/get_party_stat.asm"
 
 .INCLUDE "misc/null/C3EF23.asm"
 
