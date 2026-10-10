@@ -104,7 +104,7 @@
 
 .INCLUDE "unknown/C4/C43739-jp.asm"
 
-.INCLUDE "unknown/C4/C437B8-jp.asm"
+.INCLUDE "text/move_text_up_one_line-jp.asm"
 
 .INCLUDE "unknown/C1/C10A85-jp.asm"
 
@@ -692,7 +692,7 @@
 
 .INCLUDE "overworld/use_item.asm"
 
-.INCLUDE "unknown/C1/C1B5B6-jp.asm"
+.INCLUDE "overworld/overworld_psi_menu-jp.asm"
 
 .INCLUDE "unknown/C1/C1BB06.asm"
 
@@ -740,7 +740,7 @@
 
 .INCLUDE "unknown/C1/C1CE85.asm"
 
-.INCLUDE "unknown/C1/C1CFC6-jp.asm"
+.INCLUDE "battle/battle_select_item-jp.asm"
 
 .INCLUDE "unknown/C1/C1D038.asm"
 
@@ -798,7 +798,7 @@
 
 .INCLUDE "text/selection_menu_redirect.asm"
 
-.INCLUDE "unknown/C1/C1CFC6_redirect.asm"
+.INCLUDE "battle/battle_select_item_redirect.asm"
 
 .INCLUDE "unknown/C1/C1242E_redirect.asm"
 
@@ -814,7 +814,7 @@
 
 .INCLUDE "unknown/C1/C1E48D-jp.asm"
 
-.INCLUDE "unknown/C1/C1E4BE-jp.asm"
+.INCLUDE "text/input_dont_care_name-jp.asm"
 
 .INCLUDE "text/text_input_dialog-jp.asm"
 
