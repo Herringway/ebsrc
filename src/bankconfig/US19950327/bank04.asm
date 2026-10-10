@@ -433,7 +433,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C447FB.asm"
 
-.INCLUDE "text/print_words_onto_newline-proto.asm"
+.INCLUDE "text/print_words_onto_new_line-proto.asm"
 
 .INCLUDE "unknown/C4/C44963.asm"
 
