@@ -110,7 +110,7 @@
 
 .INCLUDE "text/print_string_redirect.asm"
 
-.INCLUDE "unknown/C4/C437B8_redirect.asm"
+.INCLUDE "text/move_text_up_one_line_redirect.asm"
 
 .INCLUDE "text/remove_window_from_screen.asm"
 
@@ -686,7 +686,7 @@
 
 .INCLUDE "overworld/use_item.asm"
 
-.INCLUDE "unknown/C1/C1B5B6-proto.asm"
+.INCLUDE "overworld/overworld_psi_menu-proto.asm"
 
 .INCLUDE "unknown/C1/C1BB06.asm"
 
@@ -734,7 +734,7 @@
 
 .INCLUDE "unknown/C1/C1CE85.asm"
 
-.INCLUDE "unknown/C1/C1CFC6.asm"
+.INCLUDE "battle/battle_select_item.asm"
 
 .INCLUDE "unknown/C1/C1D038.asm"
 
@@ -792,7 +792,7 @@
 
 .INCLUDE "text/selection_menu_redirect.asm"
 
-.INCLUDE "unknown/C1/C1CFC6_redirect.asm"
+.INCLUDE "battle/battle_select_item_redirect.asm"
 
 .INCLUDE "unknown/C1/C1242E_redirect.asm"
 
@@ -808,7 +808,7 @@
 
 .INCLUDE "unknown/C1/C1E48D.asm"
 
-.INCLUDE "unknown/C1/C1E4BE-proto.asm"
+.INCLUDE "text/input_dont_care_name-proto.asm"
 
 .INCLUDE "text/text_input_dialog.asm"
 

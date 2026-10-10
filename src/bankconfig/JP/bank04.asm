@@ -721,7 +721,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C49CA8-jp.asm"
 
-.INCLUDE "unknown/C4/C49CC3-jp.asm"
+.INCLUDE "text/render_flyover_party_member_name-jp.asm"
 
 .INCLUDE "unknown/C4/C49D16-jp.asm"
 
