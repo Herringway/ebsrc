@@ -43,7 +43,7 @@
 
 .INCLUDE "unknown/C2/C208B8.asm"
 
-.IF .DEFINED(USA) && !.DEFINED(PROTOTYPE19950327)
+.IF .DEFINED(USA) && (!.DEFINED(PROTOTYPE19950327))
     .INCLUDE "data/text/name_entry_grid_character_offset_table.asm"
   
     .INCLUDE "data/unknown/C20958.asm"
@@ -135,6 +135,7 @@
   .INCLUDE "inventory/get_item_subtype-jp.asm"
   
   .INCLUDE "inventory/get_item_subtype2-jp.asm"
+.ENDIF
 
 .INCLUDE "unknown/C2/C22562.asm"
 
@@ -187,7 +188,7 @@
 .IF .DEFINED(USA)
   .INCLUDE "battle/menu_handler.asm"
 .ELSE
-  .INCLUDE "battle/menu_handler.asm"
+  .INCLUDE "battle/menu_handler-jp.asm"
 .ENDIF
 
 .INCLUDE "text/copy_enemy_name.asm"
