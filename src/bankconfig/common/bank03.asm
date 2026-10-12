@@ -1346,7 +1346,9 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/scripts/003.asm"
 
-.INCLUDE "data/events/scripts/894.asm"
+.IF .DEFINED(USA)
+	.INCLUDE "data/events/scripts/894.asm"
+.ENDIF
 
 .INCLUDE "data/events/C3A09F.asm"
 
@@ -2032,7 +2034,11 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/unknown/C3E240.asm"
 
-.INCLUDE "data/text/window_configuration_table.asm"
+.IF .DEFINED(PROTOTYPE19950327)
+	.INCLUDE "data/text/window_configuration_table-proto.asm"
+.ELSE
+	.INCLUDE "data/text/window_configuration_table.asm"
+.ENDIF
 
 .INCLUDE "data/unknown/C3E3F8.asm"
 
@@ -2046,29 +2052,39 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/unknown/C3E44C.asm"
 
-.INCLUDE "unknown/C3/C3E450.asm"
-
-.INCLUDE "text/clear_instant_printing.asm"
-
-.INCLUDE "text/set_instant_printing.asm"
-
-.INCLUDE "text/window_tick_without_instant_printing.asm"
-
-.INCLUDE "unknown/C3/C3E4EF.asm"
-
-.INCLUDE "text/close_window.asm"
-
-.INCLUDE "unknown/C3/C3E6F8.asm"
-
-.INCLUDE "unknown/C3/C3E75D.asm"
-
-.INCLUDE "unknown/C3/C3E7E3.asm"
+.IF .DEFINED(USA)
+	.INCLUDE "unknown/C3/C3E450.asm"
+	
+	.INCLUDE "text/clear_instant_printing.asm"
+	
+	.INCLUDE "text/set_instant_printing.asm"
+	
+	.INCLUDE "text/window_tick_without_instant_printing.asm"
+	
+	.INCLUDE "unknown/C3/C3E4EF.asm"
+	
+	.INCLUDE "text/close_window.asm"
+	
+	.IF !.DEFINED(PROTOTYPE19950327)
+		.INCLUDE "unknown/C3/C3E6F8.asm"
+	.ENDIF
+	
+	.INCLUDE "unknown/C3/C3E75D.asm"
+	
+	.IF .DEFINED(PROTOTYPE19950327)
+		.INCLUDE "unknown/C2/C209A0.asm"
+	.ENDIF
+	
+	.INCLUDE "unknown/C3/C3E7E3.asm"
+.ENDIF
 
 .INCLUDE "data/unknown/C3E84E.asm"
 
 .INCLUDE "data/debug/menu_text.asm"
 
-.INCLUDE "data/debug/menu_element_spacing_data.asm"
+.IF .DEFINED(USA)
+	.INCLUDE "data/debug/menu_element_spacing_data.asm"
+.ENDIF
 
 .INCLUDE "data/debug/on_text.asm"
 
@@ -2120,9 +2136,23 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/unknown/C3F2B1.asm"
 
+.IF .DEFINED(JP) || .DEFINED(PROTOTYPE19950327)
+	.INCLUDE "overworld/actionscript/bubble_monkey_initialize.asm"
+	
+	.INCLUDE "overworld/pick_next_bubble_monkey_movement_mode.asm"
+	
+	.INCLUDE "overworld/actionscript/bubble_monkey_tick.asm"
+.ENDIF
+
 .INCLUDE "data/playable_character_graphics_table.asm"
 
-.INCLUDE "intro/show_title_screen.asm"
+.IF .DEFINED(USA)
+	.IF .DEFINED(PROTOTYPE19950327)
+		.INCLUDE "intro/show_title_screen-proto.asm"
+	.ELSE
+		.INCLUDE "intro/show_title_screen.asm"
+	.ENDIF
+.ENDIF
 
 .INCLUDE "system/tilemap_update_upload_rows.asm"
 
@@ -2162,10 +2192,16 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/attract_mode_text_pointers.asm"
 
-.INCLUDE "data/text/party_member_cast_tile_ids.asm"
+.IF .DEFINED(USA)
+	.INCLUDE "data/text/party_member_cast_tile_ids.asm"
+.ENDIF
 
 .INCLUDE "data/for_sale_sign_sprite_table.asm"
 
-.INCLUDE "system/antipiracy/final_battle_antipiracy_check.asm"
-
-.INCLUDE "data/antipiracy_checksum_2.asm"
+.IF .DEFINED(PROTOTYPE19950327)
+	.INCLUDE "system/antipiracy/final_battle_antipiracy_check-proto.asm"
+.ELSE
+	.INCLUDE "system/antipiracy/final_battle_antipiracy_check.asm"
+	
+	.INCLUDE "data/antipiracy_checksum_2.asm"
+.ENDIF
