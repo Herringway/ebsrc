@@ -779,7 +779,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "overworld/is_valid_item_transformation.asm"
 
-.INCLUDE "overworld/initialize_item_transformation.asm"
+.INCLUDE "overworld/initialize_item_transformation_entry.asm"
 
 .INCLUDE "unknown/C4/C48F98.asm"
 
