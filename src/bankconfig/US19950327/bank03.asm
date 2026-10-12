@@ -2080,7 +2080,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "unknown/C3/C3E9F7.asm"
 
-.INCLUDE "unknown/C3/C3EAD0.asm"
+.INCLUDE "overworld/initialize_item_transformation.asm"
 
 .INCLUDE "unknown/C3/C3EB1C.asm"
 
