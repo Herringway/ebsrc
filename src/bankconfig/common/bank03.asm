@@ -2065,7 +2065,7 @@ SPRITE_GROUP_PALETTES:
 	
 	.INCLUDE "text/close_window.asm"
 	
-	.IF !.DEFINED(PROTOTYPE19950327)
+	.IF (!.DEFINED(PROTOTYPE19950327))
 		.INCLUDE "unknown/C3/C3E6F8.asm"
 	.ENDIF
 	
@@ -2120,7 +2120,9 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/unknown/C3EF26.asm"
 
-.INCLUDE "data/font_pointer_table.asm"
+.IF .DEFINED(USA)
+	.INCLUDE "data/font_pointer_table.asm"
+.ENDIF
 
 .INCLUDE "data/psi_categories.asm"
 
@@ -2136,7 +2138,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/unknown/C3F2B1.asm"
 
-.IF .DEFINED(JP) || .DEFINED(PROTOTYPE19950327)
+.IF .DEFINED(JPN) || .DEFINED(PROTOTYPE19950327)
 	.INCLUDE "overworld/actionscript/bubble_monkey_initialize.asm"
 	
 	.INCLUDE "overworld/pick_next_bubble_monkey_movement_mode.asm"
