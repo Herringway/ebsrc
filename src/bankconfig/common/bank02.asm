@@ -43,13 +43,17 @@
 
 .INCLUDE "unknown/C2/C208B8.asm"
 
-.INCLUDE "data/text/name_entry_grid_character_offset_table.asm"
-
-.INCLUDE "data/unknown/C20958.asm"
-
-.INCLUDE "data/text/the.asm"
-
-.INCLUDE "unknown/C2/C209A0.asm"
+.IF .DEFINED(USA) && !.DEFINED(PROTOTYPE19950327)
+    .INCLUDE "data/text/name_entry_grid_character_offset_table.asm"
+  
+    .INCLUDE "data/unknown/C20958.asm"
+  
+    .INCLUDE "data/text/the.asm"
+  
+    .INCLUDE "unknown/C2/C209A0.asm"
+.ELSEIF .DEFINED(PROTOTYPE19950327)
+    .INCLUDE "data/text/the.asm"
+.ENDIF
 
 .INCLUDE "unknown/C2/C20A20.asm"
 
@@ -123,9 +127,14 @@
 
 .INCLUDE "unknown/C2/C22474.asm"
 
-.INCLUDE "inventory/get_item_subtype.asm"
-
-.INCLUDE "inventory/get_item_subtype2.asm"
+.IF .DEFINED(USA)
+  .INCLUDE "inventory/get_item_subtype.asm"
+  
+  .INCLUDE "inventory/get_item_subtype2.asm"
+.ELSE
+  .INCLUDE "inventory/get_item_subtype-jp.asm"
+  
+  .INCLUDE "inventory/get_item_subtype2-jp.asm"
 
 .INCLUDE "unknown/C2/C22562.asm"
 
@@ -151,9 +160,15 @@
 
 .INCLUDE "misc/atm_withdraw.asm"
 
-.INCLUDE "misc/party_add_char.asm"
-
-.INCLUDE "misc/party_remove_char.asm"
+.IF .DEFINED(USA)
+  .INCLUDE "misc/party_add_char.asm"
+  
+  .INCLUDE "misc/party_remove_char.asm"
+.ELSE
+  .INCLUDE "misc/party_add_char-jp.asm"
+  
+  .INCLUDE "misc/party_remove_char-jp.asm"
+.ENDIF
 
 .INCLUDE "misc/save_game.asm"
 
@@ -169,7 +184,11 @@
 
 .INCLUDE "data/battle/consolation_item_table.asm"
 
-.INCLUDE "battle/menu_handler.asm"
+.IF .DEFINED(USA)
+  .INCLUDE "battle/menu_handler.asm"
+.ELSE
+  .INCLUDE "battle/menu_handler.asm"
+.ENDIF
 
 .INCLUDE "text/copy_enemy_name.asm"
 
@@ -721,7 +740,11 @@
 
 .INCLUDE "unknown/C2/C2D0AC.asm"
 
-.INCLUDE "battle/load_battlebg.asm"
+.IF .DEFINED(USA)
+  .INCLUDE "battle/load_battlebg.asm"
+.ELSE
+  .INCLUDE "battle/load_battlebg-jp.asm"
+.ENDIF
 
 .INCLUDE "unknown/C2/C2DAE3.asm"
 
@@ -739,7 +762,11 @@
 
 .INCLUDE "unknown/C2/C2E0E7.asm"
 
-.INCLUDE "battle/show_psi_animation.asm"
+.IF .DEFINED(USA)
+  .INCLUDE "battle/show_psi_animation.asm"
+.ELSE
+  .INCLUDE "battle/show_psi_animation-jp.asm"
+.ENDIF
 
 .INCLUDE "unknown/C2/C2E6B3.asm"
 
@@ -795,4 +822,6 @@
 
 .INCLUDE "unknown/C2/C2FF9A.asm"
 
-.INCLUDE "data/events/scripts/000.asm"
+.IF .DEFINED(USA)
+  .INCLUDE "data/events/scripts/000.asm"
+.ENDIF
