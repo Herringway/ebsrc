@@ -40,7 +40,7 @@
 
 .INCLUDE "text/close_focus_window.asm"
 
-.INCLUDE "unknown/C1/C1008E.asm"
+.INCLUDE "text/close_all_windows.asm"
 
 .INCLUDE "text/lock_input.asm"
 
@@ -86,7 +86,7 @@
 
 .INCLUDE "unknown/C3/C3E6F8-jp.asm"
 
-.INCLUDE "unknown/C4/C43573.asm"
+.INCLUDE "misc/swap_raised_hp_pp_window.asm"
 
 .INCLUDE "unknown/C4/C435E4.asm"
 
@@ -108,7 +108,7 @@
 
 .INCLUDE "unknown/C1/C10A85-jp.asm"
 
-.INCLUDE "unknown/C1/C10BA1.asm"
+.INCLUDE "text/draw_tall_text_tile_focused.asm"
 
 .INCLUDE "unknown/C4/C43874.asm"
 
@@ -136,7 +136,7 @@
 
 .INCLUDE "unknown/C1/C10F40.asm"
 
-.INCLUDE "unknown/C1/C10FA3.asm"
+.INCLUDE "text/clear_focus_window.asm"
 
 .INCLUDE "text/change_current_window_font.asm"
 
@@ -152,7 +152,7 @@
 
 .INCLUDE "unknown/C1/C11383.asm"
 
-.INCLUDE "unknown/C1/C1138D.asm"
+.INCLUDE "text/get_menu_option_count.asm"
 
 .INCLUDE "unknown/C1/C113D1.asm"
 
@@ -198,7 +198,7 @@
 
 .INCLUDE "unknown/C1/C12362.asm"
 
-.INCLUDE "unknown/C1/C1242E.asm"
+.INCLUDE "battle/pick_target.asm"
 
 .INCLUDE "unknown/C1/C1244C-jp.asm"
 
@@ -668,15 +668,15 @@
 
 .INCLUDE "unknown/C1/C1AC00.asm"
 
-.INCLUDE "unknown/C1/C1AC4A.asm"
+.INCLUDE "text/set_battle_attacker_name.asm"
 
 .INCLUDE "battle/return_battle_attacker_address.asm"
 
-.INCLUDE "unknown/C1/C1ACA1.asm"
+.INCLUDE "text/set_battle_target_name.asm"
 
 .INCLUDE "battle/return_battle_target_address.asm"
 
-.INCLUDE "unknown/C1/C1ACF8.asm"
+.INCLUDE "battle/set_citem.asm"
 
 .INCLUDE "unknown/C1/C1AD02.asm"
 
@@ -770,17 +770,17 @@
 
 .INCLUDE "text/set_window_focus_redirect.asm"
 
-.INCLUDE "unknown/C1/C10FA3_redirect.asm"
+.INCLUDE "text/clear_focus_window_redirect.asm"
 
 .INCLUDE "text/close_focus_window_redirect.asm"
 
 .INCLUDE "unknown/C1/C1DD5F.asm"
 
-.INCLUDE "unknown/C1/C1AC4A_redirect.asm"
+.INCLUDE "text/set_battle_attacker_name_redirect.asm"
 
-.INCLUDE "unknown/C1/C1ACA1_redirect.asm"
+.INCLUDE "text/set_battle_target_name_redirect.asm"
 
-.INCLUDE "unknown/C1/C1ACF8_redirect.asm"
+.INCLUDE "battle/set_citem_redirect.asm"
 
 .INCLUDE "unknown/C1/C1DD82.asm"
 
@@ -788,7 +788,7 @@
 
 .INCLUDE "misc/remove_item_from_inventory_redirect.asm"
 
-.INCLUDE "unknown/C4/C43573_redirect.asm"
+.INCLUDE "misc/swap_raised_hp_pp_window_redirect.asm"
 
 .INCLUDE "unknown/C3/C3E6F8_redirect-jp.asm"
 
@@ -800,7 +800,7 @@
 
 .INCLUDE "battle/battle_select_item_redirect.asm"
 
-.INCLUDE "unknown/C1/C1242E_redirect.asm"
+.INCLUDE "battle/pick_target_redirect.asm"
 
 .INCLUDE "battle/battle_psi_menu_redirect.asm"
 
