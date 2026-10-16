@@ -884,7 +884,7 @@
 
 .INCLUDE "unknown/C0/C0A3A4.asm"
 
-.INCLUDE "unknown/C0/C0A443.asm"
+.INCLUDE "overworld/actionscript/update_entity_sprite.asm"
 
 .INCLUDE "unknown/C0/C0A56E.asm"
 
@@ -908,7 +908,7 @@
 
 .INCLUDE "overworld/actionscript/set_surface_flags.asm"
 
-.INCLUDE "unknown/C0/C0A685.asm"
+.INCLUDE "overworld/actionscript/set_movement_speed_constant.asm"
 
 .INCLUDE "unknown/C0/C0A691.asm"
 
@@ -944,9 +944,9 @@
 
 .INCLUDE "unknown/C0/C0A857.asm"
 
-.INCLUDE "unknown/C0/C0A864.asm"
+.INCLUDE "overworld/actionscript/move_entity_to_party_member.asm"
 
-.INCLUDE "unknown/C0/C0A86F.asm"
+.INCLUDE "overworld/actionscript/move_entity_to_sprite.asm"
 
 .INCLUDE "unknown/C0/C0A87A.asm"
 
@@ -1004,7 +1004,7 @@
 
 .INCLUDE "unknown/C0/C0AA3F.asm"
 
-.INCLUDE "unknown/C0/C0AA6E.asm"
+.INCLUDE "overworld/actionscript/update_sprite_direction.asm"
 
 .INCLUDE "unknown/C0/C0AAAC.asm"
 
