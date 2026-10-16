@@ -904,7 +904,7 @@
 
 .INCLUDE "overworld/actionscript/set_surface_flags.asm"
 
-.INCLUDE "unknown/C0/C0A685.asm"
+.INCLUDE "overworld/actionscript/set_movement_speed_constant.asm"
 
 .INCLUDE "unknown/C0/C0A691.asm"
 
