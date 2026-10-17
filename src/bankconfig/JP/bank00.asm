@@ -940,9 +940,9 @@
 
 .INCLUDE "unknown/C0/C0A857.asm"
 
-.INCLUDE "unknown/C0/C0A864.asm"
+.INCLUDE "overworld/actionscript/move_entity_to_party_member.asm"
 
-.INCLUDE "unknown/C0/C0A86F.asm"
+.INCLUDE "overworld/actionscript/move_entity_to_sprite.asm"
 
 .INCLUDE "unknown/C0/C0A87A.asm"
 
@@ -1000,7 +1000,7 @@
 
 .INCLUDE "unknown/C0/C0AA3F.asm"
 
-.INCLUDE "unknown/C0/C0AA6E.asm"
+.INCLUDE "overworld/actionscript/update_sprite_direction.asm"
 
 .INCLUDE "unknown/C0/C0AAAC.asm"
 
