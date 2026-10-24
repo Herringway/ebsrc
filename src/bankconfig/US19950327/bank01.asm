@@ -696,7 +696,7 @@
 
 .INCLUDE "overworld/attempt_homesickness.asm"
 
-.INCLUDE "overworld/get_off_bicycle.asm"
+.INCLUDE "overworld/get_off_bicycle_with_text.asm"
 
 .INCLUDE "unknown/C1/C1BEFC.asm"
 
