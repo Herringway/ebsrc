@@ -884,7 +884,7 @@
 
 .INCLUDE "unknown/C0/C0A3A4.asm"
 
-.INCLUDE "unknown/C0/C0A443.asm"
+.INCLUDE "overworld/actionscript/update_entity_sprite.asm"
 
 .INCLUDE "unknown/C0/C0A56E.asm"
 
