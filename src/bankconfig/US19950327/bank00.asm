@@ -166,7 +166,7 @@
 
 .INCLUDE "unknown/C0/C03CFD.asm"
 
-.INCLUDE "unknown/C0/C03DAA.asm"
+.INCLUDE "overworld/actionscript/initialize_party_member.asm"
 
 .INCLUDE "unknown/C0/C03E25.asm"
 
@@ -270,7 +270,7 @@
 
 .INCLUDE "unknown/C0/C05E3B.asm"
 
-.INCLUDE "unknown/C0/C05E76.asm"
+.INCLUDE "overworld/actionscript/get_active_entity_map_collision_prospective.asm"
 
 .INCLUDE "unknown/C0/C05E82.asm"
 
@@ -288,9 +288,9 @@
 
 .INCLUDE "unknown/C0/C06267.asm"
 
-.INCLUDE "unknown/C0/C06478.asm"
+.INCLUDE "overworld/actionscript/set_entity_to_entity_collision_prospective_enemy.asm"
 
-.INCLUDE "unknown/C0/C064A6.asm"
+.INCLUDE "overworld/actionscript/set_entity_to_entity_collision_prospective_npc.asm"
 
 .INCLUDE "unknown/C0/C064D4.asm"
 
@@ -790,7 +790,7 @@
 
 .INCLUDE "unknown/C0/C09DAE.asm"
 
-.INCLUDE "unknown/C0/C09E71.asm"
+.INCLUDE "overworld/actionscript/create_title_screen_entity.asm"
 
 .INCLUDE "unknown/C0/C09E79.asm"
 
@@ -808,7 +808,7 @@
 
 .INCLUDE "overworld/actionscript/choose_random.asm"
 
-.INCLUDE "unknown/C0/C09FA8.asm"
+.INCLUDE "overworld/actionscript/generate_random_angle.asm"
 
 .INCLUDE "overworld/actionscript/fade_in.asm"
 
@@ -898,9 +898,9 @@
 
 .INCLUDE "overworld/actionscript/set_direction.asm"
 
-.INCLUDE "unknown/C0/C0A66D.asm"
+.INCLUDE "overworld/actionscript/set_self_direction.asm"
 
-.INCLUDE "unknown/C0/C0A673.asm"
+.INCLUDE "overworld/actionscript/get_self_direction.asm"
 
 .INCLUDE "overworld/actionscript/set_surface_flags.asm"
 
@@ -934,7 +934,7 @@
 
 .INCLUDE "overworld/actionscript/clear_current_entity_collision2.asm"
 
-.INCLUDE "unknown/C0/C0A841.asm"
+.INCLUDE "overworld/actionscript/play_sfx.asm"
 
 .INCLUDE "unknown/C0/C0A84C.asm"
 
@@ -946,9 +946,9 @@
 
 .INCLUDE "unknown/C0/C0A87A.asm"
 
-.INCLUDE "unknown/C0/C0A88D.asm"
+.INCLUDE "overworld/actionscript/queue_interaction_talk_to.asm"
 
-.INCLUDE "unknown/C0/C0A8A0.asm"
+.INCLUDE "overworld/actionscript/display_text_now.asm"
 
 .INCLUDE "unknown/C0/C0A8B3.asm"
 
@@ -984,9 +984,9 @@
 
 .INCLUDE "battle/load_battlebg_movement.asm"
 
-.INCLUDE "unknown/C0/C0A98B.asm"
+.INCLUDE "overworld/actionscript/spawn_entity_at_self.asm"
 
-.INCLUDE "unknown/C0/C0A99F.asm"
+.INCLUDE "overworld/actionscript/create_entity_at_v01_plus_bg3y.asm"
 
 .INCLUDE "unknown/C0/C0A9B3.asm"
 
@@ -1202,7 +1202,7 @@
 
 .INCLUDE "unknown/C0/C0D7E0.asm"
 
-.INCLUDE "unknown/C0/C0D7F7.asm"
+.INCLUDE "overworld/actionscript/pathfinding_override.asm"
 
 .INCLUDE "unknown/C0/C0D98F.asm"
 
