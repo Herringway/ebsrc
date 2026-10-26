@@ -910,7 +910,7 @@
 
 .INCLUDE "unknown/C0/C0A697.asm"
 
-.INCLUDE "overworld/actionscript/sleep_until_cardinal_pixels_moved.asm.asm"
+.INCLUDE "overworld/actionscript/sleep_until_cardinal_pixels_moved.asm"
 
 .INCLUDE "overworld/actionscript/sleep_until_pixels_moved.asm"
 
