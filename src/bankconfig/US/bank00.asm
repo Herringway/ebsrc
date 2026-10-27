@@ -914,11 +914,11 @@
 
 .INCLUDE "unknown/C0/C0A697.asm"
 
-.INCLUDE "unknown/C0/C0A6A2.asm"
+.INCLUDE "overworld/actionscript/sleep_until_cardinal_pixels_moved.asm"
 
-.INCLUDE "unknown/C0/C0A6AD.asm"
+.INCLUDE "overworld/actionscript/sleep_until_pixels_moved.asm"
 
-.INCLUDE "unknown/C0/C0A6B8.asm"
+.INCLUDE "overworld/actionscript/test_collision_enabled.asm"
 
 .INCLUDE "unknown/C0/C0A6C5.asm"
 
@@ -940,31 +940,31 @@
 
 .INCLUDE "overworld/actionscript/play_sfx.asm"
 
-.INCLUDE "unknown/C0/C0A84C.asm"
+.INCLUDE "overworld/actionscript/get_event_flag.asm"
 
-.INCLUDE "unknown/C0/C0A857.asm"
+.INCLUDE "overworld/actionscript/set_event_flag.asm"
 
 .INCLUDE "overworld/actionscript/move_entity_to_party_member.asm"
 
 .INCLUDE "overworld/actionscript/move_entity_to_sprite.asm"
 
-.INCLUDE "unknown/C0/C0A87A.asm"
+.INCLUDE "overworld/actionscript/move_entity_to_location_bg1_relative.asm"
 
 .INCLUDE "overworld/actionscript/queue_interaction_talk_to.asm"
 
 .INCLUDE "overworld/actionscript/display_text_now.asm"
 
-.INCLUDE "unknown/C0/C0A8B3.asm"
+.INCLUDE "overworld/actionscript/copy_adjusted_xy_to_vars.asm"
 
-.INCLUDE "unknown/C0/C0A8C6.asm"
+.INCLUDE "overworld/actionscript/move_active_entity_towards_destination.asm"
 
-.INCLUDE "unknown/C0/C0A8D1.asm"
+.INCLUDE "overworld/actionscript/move_active_entity_towards_destination_face_opposite.asm"
 
-.INCLUDE "unknown/C0/C0A8DC.asm"
+.INCLUDE "overworld/actionscript/move_active_entity_towards_destination_no_dir_change.asm"
 
-.INCLUDE "unknown/C0/C0A8E7.asm"
+.INCLUDE "overworld/actionscript/spiral_movement.asm"
 
-.INCLUDE "unknown/C0/C0A8EF.asm"
+.INCLUDE "overworld/actionscript/spiral_movement_2.asm"
 
 .INCLUDE "overworld/actionscript/prepare_new_entity_at_self.asm"
 
@@ -974,17 +974,17 @@
 
 .INCLUDE "overworld/actionscript/prepare_new_entity.asm"
 
-.INCLUDE "unknown/C0/C0A92D.asm"
+.INCLUDE "overworld/actionscript/find_npc_location_for_active_entity.asm"
 
-.INCLUDE "unknown/C0/C0A938.asm"
+.INCLUDE "overworld/actionscript/find_sprite_location_for_active_entity.asm"
 
 .INCLUDE "overworld/actionscript/get_position_of_party_member.asm"
 
-.INCLUDE "unknown/C0/C0A94E.asm"
+.INCLUDE "overworld/actionscript/make_npc_look_at_active_entity.asm"
 
-.INCLUDE "unknown/C0/C0A959.asm"
+.INCLUDE "overworld/actionscript/make_sprite_look_at_active_entity.asm"
 
-.INCLUDE "unknown/C0/C0A964.asm"
+.INCLUDE "overworld/actionscript/set_entity_boundaries.asm"
 
 .INCLUDE "battle/load_battlebg_movement.asm"
 
@@ -992,29 +992,29 @@
 
 .INCLUDE "overworld/actionscript/create_entity_at_v01_plus_bg3y.asm"
 
-.INCLUDE "unknown/C0/C0A9B3.asm"
+.INCLUDE "overworld/actionscript/print_cast_name.asm"
 
-.INCLUDE "unknown/C0/C0A9CF.asm"
+.INCLUDE "overworld/actionscript/print_cast_name_party.asm"
 
-.INCLUDE "unknown/C0/C0A9EB.asm"
+.INCLUDE "overworld/actionscript/print_cast_name_entity_var0.asm"
 
 .INCLUDE "overworld/actionscript/fade_out_with_mosaic.asm"
 
-.INCLUDE "unknown/C0/C0AA23.asm"
+.INCLUDE "overworld/actionscript/enable_stage_hdma.asm"
 
-.INCLUDE "unknown/C0/C0AA3F.asm"
+.INCLUDE "overworld/actionscript/set_col_data_cgad_sub.asm"
 
 .INCLUDE "overworld/actionscript/update_sprite_direction.asm"
 
 .INCLUDE "unknown/C0/C0AAAC.asm"
 
-.INCLUDE "unknown/C0/C0AAB5.asm"
+.INCLUDE "overworld/actionscript/perform_palette_fade.asm"
 
 .INCLUDE "unknown/C0/C0AACD.asm"
 
 .INCLUDE "unknown/C0/C0AAD1.asm"
 
-.INCLUDE "unknown/C0/C0AAD5.asm"
+.INCLUDE "overworld/actionscript/jump_to_label_n_times.asm"
 
 .INCLUDE "unknown/C0/C0AAFD.asm"
 
