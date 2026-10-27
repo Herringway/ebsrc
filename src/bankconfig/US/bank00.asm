@@ -1002,7 +1002,7 @@
 
 .INCLUDE "overworld/actionscript/enable_stage_hdma.asm"
 
-.INCLUDE "overworld/actionscript/enable_stage_hdma.asm"
+.INCLUDE "overworld/actionscript/set_col_data_cgad_sub.asm"
 
 .INCLUDE "overworld/actionscript/update_sprite_direction.asm"
 
