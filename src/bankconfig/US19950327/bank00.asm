@@ -1160,7 +1160,7 @@
 
 .INCLUDE "unknown/C0/C0C808.asm"
 
-.INCLUDE "unknown/C0/C0C83B.asm"
+.INCLUDE "overworld/actionscript/move_direction.asm"
 
 .INCLUDE "unknown/C0/C0CA4E.asm"
 
@@ -1176,13 +1176,13 @@
 
 .INCLUDE "data/unknown/C0CF58.asm"
 
-.INCLUDE "unknown/C0/C0CF97.asm"
+.INCLUDE "overworld/actionscript/search_for_collision.asm"
 
-.INCLUDE "unknown/C0/C0D0D9.asm"
+.INCLUDE "overworld/actionscript/find_hiding_tile.asm"
 
 .INCLUDE "unknown/C0/C0D0E6.asm"
 
-.INCLUDE "unknown/C0/C0D15C.asm"
+.INCLUDE "overworld/actionscript/test_party_collision.asm"
 
 .INCLUDE "unknown/C0/C0D195.asm"
 
@@ -1196,9 +1196,9 @@
 
 .INCLUDE "unknown/C0/C0D77F.asm"
 
-.INCLUDE "unknown/C0/C0D7B3.asm"
+.INCLUDE "overworld/actionscript/backup_position.asm"
 
-.INCLUDE "unknown/C0/C0D7C7.asm"
+.INCLUDE "overworld/actionscript/restore_position_backup.asm"
 
 .INCLUDE "unknown/C0/C0D7E0.asm"
 
@@ -1208,7 +1208,7 @@
 
 .INCLUDE "unknown/C0/C0DA31.asm"
 
-.INCLUDE "unknown/C0/C0DB0F.asm"
+.INCLUDE "overworld/actionscript/draw_entities.asm"
 
 .INCLUDE "overworld/schedule_overworld_task.asm"
 
@@ -1288,7 +1288,7 @@
 
 .INCLUDE "unknown/C0/C0EE47.asm"
 
-.INCLUDE "unknown/C0/C0EE53.asm"
+.INCLUDE "overworld/actionscript/enable_drawing.asm"
 
 .INCLUDE "intro/logo_screen_load.asm"
 
