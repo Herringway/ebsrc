@@ -446,13 +446,13 @@
 
 .INCLUDE "text/ccs/dummy_1F_19.asm"
 
-.INCLUDE "text/ccs/create_floating_sprite_at_tpt_entity.asm"
+.INCLUDE "text/ccs/create_manpu_at_tpt_entity.asm"
 
-.INCLUDE "text/ccs/delete_floating_sprite_at_tpt_entity.asm"
+.INCLUDE "text/ccs/delete_manpu_at_tpt_entity.asm"
 
-.INCLUDE "text/ccs/create_floating_sprite_at_character.asm"
+.INCLUDE "text/ccs/create_manpu_at_character.asm"
 
-.INCLUDE "text/ccs/delete_floating_sprite_at_character.asm"
+.INCLUDE "text/ccs/delete_manpu_at_character.asm"
 
 .INCLUDE "text/ccs/set_map_palette.asm"
 
@@ -522,9 +522,9 @@
 
 .INCLUDE "text/ccs/trigger_photographer_event.asm"
 
-.INCLUDE "text/ccs/create_floating_sprite_at_sprite_entity.asm"
+.INCLUDE "text/ccs/create_manpu_at_sprite_entity.asm"
 
-.INCLUDE "text/ccs/delete_floating_sprite_at_sprite_entity.asm"
+.INCLUDE "text/ccs/delete_manpu_at_sprite_entity.asm"
 
 .INCLUDE "text/ccs/display_battle_animation.asm"
 

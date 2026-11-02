@@ -39,7 +39,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "data/unknown/C40BE8.asm"
 
-.INCLUDE "data/text/floating_sprite_table.asm"
+.INCLUDE "data/text/manpu_table.asm"
 
 .INCLUDE "data/events/scripts/785.asm"
 
@@ -913,45 +913,45 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "overworld/load_overlay_sprites.asm"
 
-.INCLUDE "unknown/C4/C4B329.asm"
+.INCLUDE "overworld/manpu/adjust_manpu_positioning.asm"
 
-.INCLUDE "text/spawn_floating_sprite.asm"
+.INCLUDE "overworld/manpu/create_manpu.asm"
 
-.INCLUDE "unknown/C4/C4B4BE.asm"
+.INCLUDE "overworld/manpu/delete_manpu.asm"
 
-.INCLUDE "unknown/C4/C4B4FE.asm"
+.INCLUDE "overworld/manpu/create_manpu_by_party_member.asm"
 
-.INCLUDE "unknown/C4/C4B519.asm"
+.INCLUDE "overworld/manpu/delete_manpu_by_party_member.asm"
 
-.INCLUDE "unknown/C4/C4B524.asm"
+.INCLUDE "overworld/manpu/create_manpu_by_npc_id.asm"
 
-.INCLUDE "unknown/C4/C4B53F.asm"
+.INCLUDE "overworld/manpu/delete_manpu_by_npc_id.asm"
 
-.INCLUDE "unknown/C4/C4B54A.asm"
+.INCLUDE "overworld/manpu/create_manpu_by_sprite.asm"
 
-.INCLUDE "unknown/C4/C4B565.asm"
+.INCLUDE "overworld/manpu/delete_manpu_by_sprite.asm"
 
 .INCLUDE "unknown/C4/C4B570.asm"
 
 .INCLUDE "unknown/C4/C4B57D.asm"
 
-.INCLUDE "unknown/C4/C4B587.asm"
+.INCLUDE "overworld/path/sbrk.asm"
 
-.INCLUDE "unknown/C4/C4B595.asm"
+.INCLUDE "overworld/path/get_heap_size.asm"
 
-.INCLUDE "unknown/C4/C4B59F.asm"
+.INCLUDE "overworld/path/main.asm"
 
-.INCLUDE "unknown/C4/C4B7A5.asm"
+.INCLUDE "overworld/path/initialize_path_matrix.asm"
 
-.INCLUDE "unknown/C4/C4B859.asm"
+.INCLUDE "overworld/path/initialize_pathers.asm"
 
-.INCLUDE "unknown/C4/C4B923.asm"
+.INCLUDE "overworld/path/paint_path_matrix_pass_1.asm"
 
-.INCLUDE "unknown/C4/C4BAF6.asm"
+.INCLUDE "overworld/path/paint_path_matrix_pass_2.asm"
 
-.INCLUDE "unknown/C4/C4BD9A.asm"
+.INCLUDE "overworld/path/build_path_points.asm"
 
-.INCLUDE "unknown/C4/C4BF7F.asm"
+.INCLUDE "overworld/path/trim_redundancies.asm"
 
 .INCLUDE "data/text/file_select_text.asm"
 
