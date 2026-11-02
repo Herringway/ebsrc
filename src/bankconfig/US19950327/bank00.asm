@@ -238,37 +238,37 @@
 
 .INCLUDE "unknown/C0/C0546B.asm"
 
-.INCLUDE "unknown/C0/C054C9.asm"
+.INCLUDE "overworld/collision/get_collision_at_loaded_tile.asm"
 
-.INCLUDE "unknown/C0/C05503.asm"
+.INCLUDE "overworld/collision/check_vertical_up_tile_collision.asm"
 
-.INCLUDE "unknown/C0/C0559C.asm"
+.INCLUDE "overworld/collision/check_vertical_down_tile_collision.asm"
 
-.INCLUDE "unknown/C0/C05639.asm"
+.INCLUDE "overworld/collision/check_horizontal_left_tile_collision.asm"
 
-.INCLUDE "unknown/C0/C056D0.asm"
+.INCLUDE "overworld/collision/check_horizontal_right_tile_collision.asm"
 
-.INCLUDE "unknown/C0/C05769.asm"
+.INCLUDE "overworld/collision/perform_collision_checks.asm"
 
-.INCLUDE "unknown/C0/C057E8.asm"
+.INCLUDE "overworld/collision/check_north_movement_map_collision.asm"
 
-.INCLUDE "unknown/C0/C0583C.asm"
+.INCLUDE "overworld/collision/check_south_movement_map_collision.asm"
 
-.INCLUDE "unknown/C0/C05890.asm"
+.INCLUDE "overworld/collision/check_west_movement_map_collision.asm"
 
-.INCLUDE "unknown/C0/C059EF.asm"
+.INCLUDE "overworld/collision/check_east_movement_map_collision.asm"
 
-.INCLUDE "unknown/C0/C05B4E.asm"
+.INCLUDE "overworld/collision/check_diagonal_movement_collision.asm"
 
-.INCLUDE "unknown/C0/C05B7B.asm"
+.INCLUDE "overworld/collision/check_movement_map_collision.asm"
 
-.INCLUDE "unknown/C0/C05CD7.asm"
+.INCLUDE "overworld/collision/get_movement_collision_flags.asm"
 
-.INCLUDE "unknown/C0/C05D8B.asm"
+.INCLUDE "overworld/collision/get_collision_flags.asm"
 
-.INCLUDE "unknown/C0/C05DE7.asm"
+.INCLUDE "overworld/collision/check_enemy_can_move.asm"
 
-.INCLUDE "unknown/C0/C05E3B.asm"
+.INCLUDE "overworld/collision/update_entity_collision.asm"
 
 .INCLUDE "overworld/actionscript/get_active_entity_map_collision_prospective.asm"
 
@@ -276,17 +276,17 @@
 
 .INCLUDE "unknown/C0/C05ECE.asm"
 
-.INCLUDE "unknown/C0/C05F33.asm"
+.INCLUDE "overworld/collision/get_surface_flags_horizontal.asm"
 
-.INCLUDE "unknown/C0/C05F82.asm"
+.INCLUDE "overworld/collision/get_surface_flags_vertical.asm"
 
 .INCLUDE "unknown/C0/C05FD1.asm"
 
-.INCLUDE "overworld/npc_collision_check.asm"
+.INCLUDE "overworld/collision/npc_collision_check.asm"
 
-.INCLUDE "unknown/C0/C0613C.asm"
+.INCLUDE "overworld/collision/npc_entity_collision_check.asm"
 
-.INCLUDE "unknown/C0/C06267.asm"
+.INCLUDE "overworld/collision/enemy_entity_collision_check.asm"
 
 .INCLUDE "overworld/actionscript/set_entity_to_entity_collision_prospective_enemy.asm"
 

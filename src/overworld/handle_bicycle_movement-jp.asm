@@ -117,7 +117,7 @@ HANDLE_BICYCLE_MOVEMENT:
 	LDY #24
 	LDX @LOCAL02 + fixed_point::integer
 	LDA @LOCAL01 + fixed_point::integer
-	JSL UNKNOWN_C05CD7
+	JSL GET_MOVEMENT_COLLISION_FLAGS
 	STA @VIRTUAL02
 	LDY GAME_STATE + game_state::current_party_members
 	LDX @LOCAL02 + fixed_point::integer
