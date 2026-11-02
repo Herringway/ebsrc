@@ -367,19 +367,19 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "misc/swap_raised_hp_pp_window.asm"
 
-.INCLUDE "unknown/C4/C435E4.asm"
+.INCLUDE "battle/row_enemy_flashing_off.asm"
 
-.INCLUDE "unknown/C4/C43657.asm"
+.INCLUDE "battle/row_enemy_flashing_on.asm"
 
-.INCLUDE "unknown/C4/C436D7.asm"
+.INCLUDE "text/clear_text_line.asm"
 
-.INCLUDE "unknown/C4/C43739.asm"
+.INCLUDE "text/clear_current_text_line.asm"
 
 .INCLUDE "text/move_text_up_one_line.asm"
 
-.INCLUDE "unknown/C4/C43874.asm"
+.INCLUDE "text/move_text_cursor.asm"
 
-.INCLUDE "unknown/C4/C438A5.asm"
+.INCLUDE "text/move_current_text_cursor.asm"
 
 .INCLUDE "text/print_newline.asm"
 
@@ -459,7 +459,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "text/print_price-proto.asm"
 
-.INCLUDE "unknown/C4/C451FA.asm"
+.INCLUDE "text/create_menu_option_table.asm"
 
 .INCLUDE "data/text/battle_to_text.asm"
 

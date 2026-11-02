@@ -100,7 +100,7 @@
 
 .INCLUDE "unknown/C1/C10C55.asm"
 
-.INCLUDE "unknown/C4/C438A5_redirect.asm"
+.INCLUDE "text/move_current_text_cursor_redirect.asm"
 
 .INCLUDE "text/print_newline_redirect.asm"
 

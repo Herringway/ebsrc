@@ -88,9 +88,9 @@
 
 .INCLUDE "misc/swap_raised_hp_pp_window.asm"
 
-.INCLUDE "unknown/C4/C435E4.asm"
+.INCLUDE "battle/row_enemy_flashing_off.asm"
 
-.INCLUDE "unknown/C4/C43657.asm"
+.INCLUDE "battle/row_enemy_flashing_on.asm"
 
 .INCLUDE "battle/enemy_flashing_off.asm"
 
@@ -100,9 +100,9 @@
 
 .INCLUDE "text/hide_hppp_windows.asm"
 
-.INCLUDE "unknown/C4/C436D7.asm"
+.INCLUDE "text/clear_text_line.asm"
 
-.INCLUDE "unknown/C4/C43739-jp.asm"
+.INCLUDE "text/clear_current_text_line-jp.asm"
 
 .INCLUDE "text/move_text_up_one_line-jp.asm"
 
@@ -110,9 +110,9 @@
 
 .INCLUDE "text/draw_tall_text_tile_focused.asm"
 
-.INCLUDE "unknown/C4/C43874.asm"
+.INCLUDE "text/move_text_cursor.asm"
 
-.INCLUDE "unknown/C4/C438A5.asm"
+.INCLUDE "text/move_current_text_cursor.asm"
 
 .INCLUDE "text/print_newline.asm"
 
@@ -168,7 +168,7 @@
 
 .INCLUDE "unknown/C1/C117E2.asm"
 
-.INCLUDE "unknown/C4/C451FA-jp.asm"
+.INCLUDE "text/create_menu_option_table-jp.asm"
 
 .INCLUDE "unknown/C1/C1180D.asm"
 
