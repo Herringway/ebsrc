@@ -781,7 +781,7 @@
 	.byte 1280 - (.SIZEOF(game_state) + .SIZEOF(char_struct) * 6 + (EVENT_FLAG_COUNT / 8) + 32) ;1196 - padding
 .ENDSTRUCT
 
-.STRUCT floating_sprite
+.STRUCT manpu
 	sprite .word ;0
 	unknown2 .byte ;2
 	unknown3 .byte ;3

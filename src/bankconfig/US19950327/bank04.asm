@@ -39,7 +39,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "data/unknown/C40BE8.asm"
 
-.INCLUDE "data/text/floating_sprite_table.asm"
+.INCLUDE "data/text/manpu_table.asm"
 
 .INCLUDE "data/events/scripts/785.asm"
 
