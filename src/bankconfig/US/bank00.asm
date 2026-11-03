@@ -274,9 +274,9 @@
 
 .INCLUDE "overworld/actionscript/get_active_entity_map_collision_prospective.asm"
 
-.INCLUDE "unknown/C0/C05E82.asm"
+.INCLUDE "overworld/actionscript/update_entity_enemy_collision.asm"
 
-.INCLUDE "unknown/C0/C05ECE.asm"
+.INCLUDE "overworld/actionscript/update_flying_entity_enemy_collision.asm"
 
 .INCLUDE "overworld/collision/get_surface_flags_horizontal.asm"
 
@@ -808,7 +808,7 @@
 
 .INCLUDE "unknown/C0/C09F3B.asm"
 
-.INCLUDE "unknown/C0/C09F71.asm"
+.INCLUDE "overworld/actionscript/restore_entity_callback_flags.asm"
 
 .INCLUDE "overworld/actionscript/choose_random.asm"
 
@@ -830,7 +830,7 @@
 
 .INCLUDE "unknown/C0/C0A055.asm"
 
-.INCLUDE "unknown/C0/C0A06C.asm"
+.INCLUDE "overworld/actionscript/move_relative_to_bg3.asm"
 
 .INCLUDE "unknown/C0/C0A089.asm"
 
@@ -896,7 +896,7 @@
 
 .INCLUDE "system/math/rand_0_7.asm"
 
-.INCLUDE "unknown/C0/C0A643.asm"
+.INCLUDE "overworld/actionscript/set_direction16.asm"
 
 .INCLUDE "overworld/actionscript/set_direction8.asm"
 
@@ -910,7 +910,7 @@
 
 .INCLUDE "overworld/actionscript/set_movement_speed_constant.asm"
 
-.INCLUDE "unknown/C0/C0A691.asm"
+.INCLUDE "overworld/actionscript/get_movement_speed.asm"
 
 .INCLUDE "unknown/C0/C0A697.asm"
 
@@ -1116,13 +1116,13 @@
 
 .INCLUDE "unknown/C0/C0C0B4.asm"
 
-.INCLUDE "unknown/C0/C0C19B.asm"
+.INCLUDE "overworld/actionscript/delivery/prepare_delivery_entrance_path.asm"
 
-.INCLUDE "unknown/C0/C0C251.asm"
+.INCLUDE "overworld/actionscript/delivery/prepare_delivery_exit_path.asm"
 
 .INCLUDE "unknown/C0/C0C30C.asm"
 
-.INCLUDE "unknown/C0/C0C353.asm"
+.INCLUDE "overworld/actionscript/update_active_gift_box_state.asm"
 
 .INCLUDE "unknown/C0/C0C35D.asm"
 
@@ -1130,9 +1130,9 @@
 
 .INCLUDE "unknown/C0/C0C3F9.asm"
 
-.INCLUDE "unknown/C0/C0C48F.asm"
+.INCLUDE "overworld/actionscript/test_party_leader_distance_far_intangibility.asm"
 
-.INCLUDE "unknown/C0/C0C4AF.asm"
+.INCLUDE "overworld/actionscript/test_party_leader_distance_close_intangibility.asm"
 
 .INCLUDE "data/unknown/C0C4CF.asm"
 
@@ -1146,7 +1146,7 @@
 
 .INCLUDE "unknown/C0/C0C615.asm"
 
-.INCLUDE "unknown/C0/C0C62B.asm"
+.INCLUDE "overworld/actionscript/get_angle_towards_destination_unless_weak.asm"
 
 .INCLUDE "overworld/actionscript/get_direction_rotated_clockwise.asm"
 
@@ -1170,7 +1170,7 @@
 
 .INCLUDE "unknown/C0/C0CBD3.asm"
 
-.INCLUDE "unknown/C0/C0CC11.asm"
+.INCLUDE "overworld/actionscript/sleep_until_destination_reached.asm"
 
 .INCLUDE "unknown/C0/C0CCCC.asm"
 
@@ -1194,9 +1194,9 @@
 
 .INCLUDE "unknown/C0/C0D4DE.asm"
 
-.INCLUDE "unknown/C0/C0D59B.asm"
+.INCLUDE "overworld/actionscript/test_battle_starting.asm"
 
-.INCLUDE "unknown/C0/C0D5B0.asm"
+.INCLUDE "overworld/actionscript/try_battle_start.asm"
 
 .INCLUDE "unknown/C0/C0D77F.asm"
 
@@ -1280,19 +1280,19 @@
 
 .INCLUDE "intro/load_title_screen_graphics.asm"
 
-.INCLUDE "unknown/C0/C0EC77.asm"
+.INCLUDE "overworld/actionscript/load_title_screen_palette_effect.asm"
 
-.INCLUDE "unknown/C0/C0ECB7.asm"
+.INCLUDE "overworld/actionscript/prepare_title_screen_fade_in.asm"
 
-.INCLUDE "unknown/C0/C0ED14.asm"
+.INCLUDE "ooverworld/actionscript/set_bg_palettes_white.asm"
 
-.INCLUDE "unknown/C0/C0ED39.asm"
+.INCLUDE "overworld/actionscript/set_bg_palettes_black.asm"
 
 .INCLUDE "overworld/actionscript/load_title_screen_palettes.asm"
 
-.INCLUDE "unknown/C0/C0EDD1.asm"
+.INCLUDE "overworld/actionscript/set_title_screen_actionscript_state.asm"
 
-.INCLUDE "unknown/C0/C0EDDA.asm"
+.INCLUDE "overworld/actionscript/rotate_loaded_palette.asm"
 
 .INCLUDE "unknown/C0/C0EE47.asm"
 
