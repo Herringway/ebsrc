@@ -1,7 +1,7 @@
 
 ; parses flyover script
-; void UNKNOWN_C49EC4(short id)
-UNKNOWN_C49EC4:
+; void RUN_FLYOVER(short id)
+RUN_FLYOVER:
 	BEGIN_C_FUNCTION_FAR
 	STACK_RESERVE_VARS
 	STACK_RESERVE_INT16
