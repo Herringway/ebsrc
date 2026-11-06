@@ -1284,7 +1284,7 @@
 
 .INCLUDE "overworld/actionscript/prepare_title_screen_fade_in.asm"
 
-.INCLUDE "ooverworld/actionscript/set_bg_palettes_white.asm"
+.INCLUDE "overworld/actionscript/set_bg_palettes_white.asm"
 
 .INCLUDE "overworld/actionscript/set_bg_palettes_black.asm"
 
