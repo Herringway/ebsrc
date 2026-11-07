@@ -86,7 +86,7 @@
 
 .INCLUDE "overworld/reload_map_current_location.asm"
 
-.INCLUDE "unknown/C0/C01A63.asm"
+.INCLUDE "overworld/rerender_row.asm"
 
 .INCLUDE "overworld/initialize_misc_object_data.asm"
 
@@ -1168,7 +1168,7 @@
 
 .INCLUDE "unknown/C0/C0CA4E.asm"
 
-.INCLUDE "unknown/C0/C0CBD3.asm"
+.INCLUDE "overworld/sleep_until_pixels_moved.asm"
 
 .INCLUDE "overworld/actionscript/sleep_until_destination_reached.asm"
 

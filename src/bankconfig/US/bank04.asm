@@ -229,7 +229,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "overworld/actionscript/elevator_initialization.asm"
 
-.INCLUDE "unknown/C4/C42439.asm"
+.INCLUDE "system/set_coldata_cgad_sub.asm"
 
 .INCLUDE "unknown/C4/C4245D.asm"
 
@@ -549,7 +549,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "overworld/create_prepared_entity_sprite.asm"
 
-.INCLUDE "unknown/C4/C46534.asm"
+.INCLUDE "overworld/spawn_entity_at_self.asm"
 
 .INCLUDE "unknown/C4/C4655E.asm"
 
@@ -571,7 +571,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C466C1.asm"
 
-.INCLUDE "unknown/C4/C466F0.asm"
+.INCLUDE "text/display_text_for_actionscript.asm"
 
 .INCLUDE "overworld/actionscript/prepare_party_for_tessie_trip.asm"
 
@@ -601,9 +601,9 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "overworld/actionscript/face_direction.asm"
 
-.INCLUDE "unknown/C4/C46984.asm"
+.INCLUDE "overworld/make_npc_look_at_active_entity.asm"
 
-.INCLUDE "unknown/C4/C469F1.asm"
+.INCLUDE "overworld/make_sprite_look_at_active_entity.asm"
 
 .INCLUDE "data/unknown/C46A5E.asm"
 
@@ -635,23 +635,23 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C46B79.asm"
 
-.INCLUDE "unknown/C4/C46B8D.asm"
+.INCLUDE "overworld/find_npc_location_for_active_entity.asm"
 
-.INCLUDE "unknown/C4/C46BBB.asm"
+.INCLUDE "overworld/find_sprite_location_for_active_entity.asm"
 
 .INCLUDE "overworld/get_position_of_party_member.asm"
 
 .INCLUDE "overworld/actionscript/copy_xy_to_vars.asm"
 
-.INCLUDE "unknown/C4/C46C5E.asm"
+.INCLUDE "overworld/copy_adjusted_xy_to_vars.asm"
 
 .INCLUDE "overworld/actionscript/copy_destination_to_location.asm"
 
-.INCLUDE "unknown/C4/C46C9B.asm"
+.INCLUDE "overworld/move_entity_to_party_member.asm"
 
-.INCLUDE "unknown/C4/C46CC7.asm"
+.INCLUDE "overworld/move_entity_to_sprite.asm"
 
-.INCLUDE "unknown/C4/C46CF5.asm"
+.INCLUDE "overworld/move_entity_to_location_bg1_relative.asm"
 
 .INCLUDE "overworld/actionscript/move_entity_to_random_top_of_screen.asm"
 
@@ -665,7 +665,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "overworld/actionscript/yield_to_text.asm"
 
-.INCLUDE "unknown/C4/C46E4F.asm"
+.INCLUDE "overworld/queue_interaction_talk_to.asm"
 
 .INCLUDE "overworld/actionscript/test_player_in_area.asm"
 
@@ -675,13 +675,13 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C47044.asm"
 
-.INCLUDE "unknown/C4/C47143.asm"
+.INCLUDE "overworld/move_active_entity_towards_destination.asm"
 
-.INCLUDE "unknown/C4/C47225.asm"
+.INCLUDE "overworld/set_entity_boundaries.asm"
 
 .INCLUDE "overworld/actionscript/direction_to_entity_boundaries.asm"
 
-.INCLUDE "unknown/C4/C472A8.asm"
+.INCLUDE "overworld/entity_spiral_movement.asm"
 
 .INCLUDE "overworld/actionscript/halve_y_speed.asm"
 
@@ -699,7 +699,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C473D0.asm"
 
-.INCLUDE "unknown/C4/C4746B.asm"
+.INCLUDE "system/do_all_palettes_fade_step.asm"
 
 .INCLUDE "overworld/actionscript/do_all_palettes_fade_step.asm"
 
@@ -707,13 +707,13 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "data/unknown/C474F6.asm"
 
-.INCLUDE "unknown/C4/C47501.asm"
+.INCLUDE "system/initialize_spotlight_window_hdma_table.asm"
 
 .INCLUDE "overworld/actionscript/enable_spotlight_1.asm"
 
 .INCLUDE "overworld/actionscript/enable_spotlight_2.asm"
 
-.INCLUDE "unknown/C4/C47765.asm"
+.INCLUDE "system/enable_stage_hdma.asm"
 
 .INCLUDE "unknown/C4/C47866.asm"
 
@@ -811,7 +811,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C4978E.asm"
 
-.INCLUDE "unknown/C4/C497C0.asm"
+.INCLUDE "system/perform_palette_fade.asm"
 
 .INCLUDE "overworld/actionscript/clear_bg3_tilemap.asm"
 
