@@ -35,7 +35,7 @@ PSI_TELEPORT_FOLLOWER_TICK:
 	LDA a:player_position_buffer_entry::walking_style,X
 	TAX
 	LDA @LOCAL01
-	JSL UNKNOWN_C07A56
+	JSL DO_PARTY_MOVEMENT_FRAME
 	LDX @VIRTUAL02
 	LDA a:player_position_buffer_entry::x_coord,X
 	LDX @LOCAL03
