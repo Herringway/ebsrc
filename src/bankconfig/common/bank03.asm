@@ -2090,13 +2090,13 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/debug/off_text.asm"
 
-.INCLUDE "misc/get_character_item.asm"
+.INCLUDE "inventory/get_character_item.asm"
 
-.INCLUDE "misc/check_item_equipped.asm"
+.INCLUDE "inventory/check_item_equipped.asm"
 
 .INCLUDE "unknown/C3/C3E9F7.asm"
 
-.INCLUDE "overworld/initialize_item_transformation.asm"
+.INCLUDE "inventory/initialize_item_transformation.asm"
 
 .INCLUDE "unknown/C3/C3EB1C.asm"
 
@@ -2134,7 +2134,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/psi_target_text.asm"
 
-.INCLUDE "misc/select_fixable_item.asm"
+.INCLUDE "inventory/select_fixable_item.asm"
 
 .INCLUDE "data/unknown/C3F2B1.asm"
 

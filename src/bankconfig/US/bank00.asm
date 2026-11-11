@@ -204,7 +204,7 @@
 
 .INCLUDE "overworld/handle_normal_movement.asm"
 
-.INCLUDE "overworld/move_camera_to_entity.asm"
+.INCLUDE "overworld/camera/move_camera_to_entity.asm"
 
 .INCLUDE "overworld/handle_escalator_movement.asm"
 
