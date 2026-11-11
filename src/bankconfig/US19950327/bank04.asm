@@ -415,7 +415,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C43F53.asm"
 
-.INCLUDE "text/print_letter.asm"
+.INCLUDE "unknown/C4/C43F77.asm"
 
 .INCLUDE "text/get_character_at_cursor_position.asm"
 
