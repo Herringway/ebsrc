@@ -119,7 +119,7 @@
 
 .INCLUDE "text/get_party_character_name.asm"
 
-.INCLUDE "unknown/C2/C22351.asm"
+.INCLUDE "inventory/get_inventory_count.asm"
 
 .INCLUDE "unknown/C2/C2239D.asm"
 
