@@ -19,29 +19,29 @@
 
 .INCLUDE "data/unknown/C200B9.asm"
 
-.INCLUDE "unknown/C2/C200D9.asm"
+.INCLUDE "text/initialize_text_system.asm"
 
-.INCLUDE "unknown/C2/C20266.asm"
+.INCLUDE "battle/draw_auto_fight_icon.asm"
 
-.INCLUDE "unknown/C2/C20293.asm"
+.INCLUDE "battle/clear_auto_fight_icon.asm"
 
-.INCLUDE "unknown/C2/C202AC.asm"
+.INCLUDE "text/allocate_rendered_window_title.asm"
 
 .INCLUDE "text/set_window_title.asm"
 
-.INCLUDE "unknown/C2/C2038B.asm"
+.INCLUDE "text/upload_full_text_tilemap.asm"
 
 .INCLUDE "text/hp_pp_window/draw.asm"
 
-.INCLUDE "unknown/C2/C2077D.asm"
+.INCLUDE "text/hp_pp_window/draw_multiple.asm"
 
-.INCLUDE "unknown/C2/C207B6.asm"
+.INCLUDE "text/hp_pp_window/show.asm"
 
 .INCLUDE "text/hp_pp_window/undraw.asm"
 
-.INCLUDE "unknown/C2/C2087C.asm"
+.INCLUDE "text/draw_open_windows.asm"
 
-.INCLUDE "unknown/C2/C208B8.asm"
+.INCLUDE "text/test_if_cursor_position.asm"
 
 .IF .DEFINED(USA) && (!.DEFINED(PROTOTYPE19950327))
     .INCLUDE "data/text/name_entry_grid_character_offset_table.asm"
@@ -55,9 +55,9 @@
     .INCLUDE "data/text/the.asm"
 .ENDIF
 
-.INCLUDE "unknown/C2/C20A20.asm"
+.INCLUDE "text/backup_current_window_text_attributes.asm"
 
-.INCLUDE "unknown/C2/C20ABC.asm"
+.INCLUDE "text/restore_current_window_text_attributes.asm"
 
 .INCLUDE "unknown/C2/C20B65.asm"
 
@@ -71,13 +71,13 @@
 
 .INCLUDE "text/hp_pp_window/fill_character_pp_tile_buffer.asm"
 
-.INCLUDE "unknown/C2/C20F58.asm"
+.INCLUDE "misc/get_hp_pp_meter_speed.asm"
 
 .INCLUDE "misc/reset_hppp_rolling.asm"
 
-.INCLUDE "unknown/C2/C21034.asm"
+.INCLUDE "misc/test_if_hppp_rolling_done.asm"
 
-.INCLUDE "unknown/C2/C2108C.asm"
+.INCLUDE "misc/try_ending_fast_hppp_rolling.asm"
 
 .INCLUDE "misc/hp_pp_roller.asm"
 
@@ -93,7 +93,7 @@
 
 .INCLUDE "audio/play_sound_and_unknown.asm"
 
-.INCLUDE "unknown/C2/C216DB.asm"
+.INCLUDE "inventory/update_party_teddy_bears.asm"
 
 .INCLUDE "misc/recalc_character_postmath_offense.asm"
 
@@ -119,7 +119,7 @@
 
 .INCLUDE "text/get_party_character_name.asm"
 
-.INCLUDE "unknown/C2/C22351.asm"
+.INCLUDE "inventory/get_inventory_count.asm"
 
 .INCLUDE "unknown/C2/C2239D.asm"
 
@@ -137,13 +137,13 @@
   .INCLUDE "inventory/get_item_subtype2-jp.asm"
 .ENDIF
 
-.INCLUDE "unknown/C2/C22562.asm"
+.INCLUDE "text/print_stats_with_new_weapon.asm"
 
-.INCLUDE "unknown/C2/C225AC.asm"
+.INCLUDE "text/print_stats_with_new_body_gear.asm"
 
-.INCLUDE "unknown/C2/C2260D.asm"
+.INCLUDE "text/print_stats_with_new_arms_gear.asm"
 
-.INCLUDE "unknown/C2/C22673.asm"
+.INCLUDE "text/print_stats_with_new_other_gear.asm"
 
 .INCLUDE "unknown/C2/C226C5.asm"
 
@@ -173,7 +173,7 @@
 
 .INCLUDE "misc/save_game.asm"
 
-.INCLUDE "unknown/C2/C22A3A.asm"
+.INCLUDE "inventory/move_item_to_party_member.asm"
 
 .INCLUDE "battle/init_scripted.asm"
 
@@ -197,7 +197,7 @@
 
 .INCLUDE "text/fix_target_name.asm"
 
-.INCLUDE "unknown/C2/C23E32.asm"
+.INCLUDE "battle/pick_next_target.asm"
 
 .INCLUDE "unknown/C2/C23E8A.asm"
 
@@ -207,7 +207,7 @@
 
 .INCLUDE "battle/feeling_strange_retargetting.asm"
 
-.INCLUDE "unknown/C2/C240A4.asm"
+.INCLUDE "battle/perform_action_on_all_targets.asm"
 
 .INCLUDE "battle/remove_status_untargettable_targets.asm"
 
@@ -215,7 +215,7 @@
 
 .INCLUDE "battle/select_stealable_item.asm"
 
-.INCLUDE "unknown/C2/C24348.asm"
+.INCLUDE "battle/test_item_theft_candidate.asm"
 
 .INCLUDE "unknown/C2/C2437E.asm"
 
@@ -223,7 +223,7 @@
 
 .INCLUDE "battle/choose_target.asm"
 
-.INCLUDE "unknown/C2/C24703.asm"
+.INCLUDE "battle/resolve_targetting.asm"
 
 .INCLUDE "battle/main_battle_routine.asm"
 
@@ -671,7 +671,7 @@
 
 .INCLUDE "battle/calc_psi_resistance_modifiers.asm"
 
-.INCLUDE "unknown/C2/C2B66A.asm"
+.INCLUDE "battle/get_next_available_enemy_letter.asm"
 
 .INCLUDE "battle/init_enemy_stats.asm"
 
@@ -683,11 +683,11 @@
 
 .INCLUDE "battle/reset_post_battle_stats.asm"
 
-.INCLUDE "unknown/C2/C2BCB9.asm"
+.INCLUDE "battle/lose_pp_status.asm"
 
 .INCLUDE "battle/lose_hp_status.asm"
 
-.INCLUDE "unknown/C2/C2BD13.asm"
+.INCLUDE "battle/get_total_battle_sprite_width.asm"
 
 .INCLUDE "battle/call_for_help_common.asm"
 
@@ -699,9 +699,9 @@
 
 .INCLUDE "battle/actions/fly_honey.asm"
 
-.INCLUDE "unknown/C2/C2C21F.asm"
+.INCLUDE "battle/switch_to_new_giygas_battle.asm"
 
-.INCLUDE "unknown/C2/C2C32C.asm"
+.INCLUDE "battle/giygas_transform_battler_8.asm"
 
 .INCLUDE "unknown/C2/C2C37A.asm"
 
@@ -747,21 +747,21 @@
   .INCLUDE "battle/load_battlebg-jp.asm"
 .ENDIF
 
-.INCLUDE "unknown/C2/C2DAE3.asm"
+.INCLUDE "battle/giygas_swap_death_distortion.asm"
 
 .INCLUDE "unknown/C2/C2DB14.asm"
 
-.INCLUDE "unknown/C2/C2DB3F.asm"
+.INCLUDE "battle/draw_battle_frame.asm"
 
-.INCLUDE "unknown/C2/C2DE0F.asm"
+.INCLUDE "battle/darken_animated_backgrounds.asm"
 
-.INCLUDE "unknown/C2/C2DE96.asm"
+.INCLUDE "battle/restore_animated_background_colour.asm"
 
-.INCLUDE "unknown/C2/C2DF2E.asm"
+.INCLUDE "battle/adjust_animated_background_brightness_single.asm"
 
-.INCLUDE "unknown/C2/C2E08E.asm"
+.INCLUDE "battle/adjust_animated_background_brightness_all.asm"
 
-.INCLUDE "unknown/C2/C2E0E7.asm"
+.INCLUDE "battle/clear_battle_effects.asm"
 
 .IF .DEFINED(USA)
   .INCLUDE "battle/show_psi_animation.asm"
@@ -785,41 +785,41 @@
 
 .INCLUDE "unknown/C2/C2EAAA.asm"
 
-.INCLUDE "unknown/C2/C2EACF.asm"
+.INCLUDE "battle/is_battle_animation_playing.asm"
 
 .INCLUDE "battle/load_battle_sprite.asm"
 
-.INCLUDE "unknown/C2/C2EEE7.asm"
+.INCLUDE "battle/upload_battle_sprites.asm"
 
 .INCLUDE "battle/get_battle_sprite_width.asm"
 
 .INCLUDE "battle/get_battle_sprite_height.asm"
 
-.INCLUDE "unknown/C2/C2F09F.asm"
+.INCLUDE "battle/get_battle_sprite_index.asm"
 
-.INCLUDE "unknown/C2/C2F0D1.asm"
+.INCLUDE "battle/cap_enemies_by_width.asm"
 
-.INCLUDE "unknown/C2/C2F121.asm"
+.INCLUDE "battle/set_initial_battle_sprite_positioning.asm"
 
 .INCLUDE "battle/render_battle_sprite_row.asm"
 
-.INCLUDE "unknown/C2/C2F8F9.asm"
+.INCLUDE "battle/draw_battle_sprites.asm"
 
-.INCLUDE "unknown/C2/C2F917.asm"
+.INCLUDE "battle/sort_battler_positions.asm"
 
-.INCLUDE "unknown/C2/C2FAD2.asm"
+.INCLUDE "battle/get_physical_targetting_allowed.asm"
 
-.INCLUDE "unknown/C2/C2FAD8.asm"
+.INCLUDE "battle/set_battle_sprite_palette_effect_speed.asm"
 
-.INCLUDE "unknown/C2/C2FADE.asm"
+.INCLUDE "battle/prepare_battle_sprite_palette_effect_tables.asm"
 
-.INCLUDE "unknown/C2/C2FB35.asm"
+.INCLUDE "battle/initialize_battle_sprite_palette_effect.asm"
 
 .INCLUDE "unknown/C2/C2FCA6.asm"
 
-.INCLUDE "unknown/C2/C2FD99.asm"
+.INCLUDE "battle/single_battle_sprite_palette_effect_frame.asm"
 
-.INCLUDE "unknown/C2/C2FEF9.asm"
+.INCLUDE "battle/set_enemy_palette_flash.asm"
 
 .INCLUDE "overworld/actionscript/test_in_big_area.asm"
 
