@@ -71,7 +71,7 @@
 
 .INCLUDE "text/hp_pp_window/fill_character_pp_tile_buffer.asm"
 
-.INCLUDE "misc/get_hppp_meter_speed.asm"
+.INCLUDE "misc/get_hp_pp_meter_speed.asm"
 
 .INCLUDE "misc/reset_hppp_rolling.asm"
 
@@ -87,13 +87,13 @@
 
 .INCLUDE "text/set_event_flag.asm"
 
-.INCLUDE "inventory/update_party_teddy_bears.asm"
+.INCLUDE "unknown/C2/C216AD.asm"
 
 .INCLUDE "audio/stop_music_redirect.asm"
 
 .INCLUDE "audio/play_sound_and_unknown.asm"
 
-.INCLUDE "inventory/get_inventory_count.asm"
+.INCLUDE "inventory/update_party_teddy_bears.asm"
 
 .INCLUDE "misc/recalc_character_postmath_offense.asm"
 
@@ -747,7 +747,7 @@
   .INCLUDE "battle/load_battlebg-jp.asm"
 .ENDIF
 
-.INCLUDE battle/giygas_swap_death_distortion.asm"
+.INCLUDE "battle/giygas_swap_death_distortion.asm"
 
 .INCLUDE "unknown/C2/C2DB14.asm"
 

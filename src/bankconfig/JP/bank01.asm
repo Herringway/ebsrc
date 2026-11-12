@@ -620,7 +620,7 @@
 
 .INCLUDE "misc/escargo_express_remove-jp.asm"
 
-.INCLUDE "misc/give_stored_item_to_character.asm"
+.INCLUDE "inventory/give_stored_item_to_character.asm"
 
 .INCLUDE "text/print_item_name.asm"
 
