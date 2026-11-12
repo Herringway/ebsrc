@@ -563,11 +563,11 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "overworld/enable_entity_by_character_or_party.asm"
 
-.INCLUDE "overworld/focus_camera_on_npc_id.asm"
+.INCLUDE "overworld/camera/focus_camera_on_npc_id.asm"
 
-.INCLUDE "overworld/focus_camera_on_sprite.asm"
+.INCLUDE "overworld/camera/focus_camera_on_sprite.asm"
 
-.INCLUDE "overworld/clear_camera_focus.asm"
+.INCLUDE "overworld/camera/clear_camera_focus.asm"
 
 .INCLUDE "overworld/spawn_travelling_photographer.asm"
 
