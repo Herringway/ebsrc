@@ -2066,7 +2066,7 @@ SPRITE_GROUP_PALETTES:
 	.INCLUDE "text/close_window.asm"
 	
 	.IF (!.DEFINED(PROTOTYPE19950327))
-		.INCLUDE "unknown/C3/C3E6F8.asm"
+		.INCLUDE "text/hp_pp_window/reset_active_party_member_hp_pp_window.asm"
 	.ENDIF
 	
 	.INCLUDE "text/print_battler_article.asm"

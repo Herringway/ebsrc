@@ -84,7 +84,7 @@
 
 .INCLUDE "text/draw_window-jp.asm"
 
-.INCLUDE "unknown/C3/C3E6F8-jp.asm"
+.INCLUDE "text/hp_pp_window/reset_active_party_member_hp_pp_window-jp.asm"
 
 .INCLUDE "misc/swap_raised_hp_pp_window.asm"
 
@@ -790,7 +790,7 @@
 
 .INCLUDE "misc/swap_raised_hp_pp_window_redirect.asm"
 
-.INCLUDE "unknown/C3/C3E6F8_redirect-jp.asm"
+.INCLUDE "text/hp_pp_window/reset_active_party_member_hp_pp_window_redirect-jp.asm"
 
 .INCLUDE "text/selection_menu_setup-jp.asm"
 
