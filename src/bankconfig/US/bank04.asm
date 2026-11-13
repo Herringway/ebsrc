@@ -543,7 +543,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "overworld/hide_character_or_party.asm"
 
-.INCLUDE "uoverworld/unhide_character_or_party.asm"
+.INCLUDE "overworld/unhide_character_or_party.asm"
 
 .INCLUDE "overworld/create_prepared_entity_npc.asm"
 
