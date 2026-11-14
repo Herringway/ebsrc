@@ -590,15 +590,15 @@
 
 .INCLUDE "text/display_text-jp.asm"
 
-.INCLUDE "misc/give_item_to_specific_character.asm"
+.INCLUDE "inventory/give_item_to_specific_character.asm"
 
-.INCLUDE "misc/give_item_to_character.asm"
+.INCLUDE "inventory/give_item_to_character.asm"
 
-.INCLUDE "misc/remove_item_from_inventory.asm"
+.INCLUDE "inventory/remove_item_from_inventory.asm"
 
-.INCLUDE "misc/take_item_from_specific_character.asm"
+.INCLUDE "inventory/take_item_from_specific_character.asm"
 
-.INCLUDE "misc/take_item_from_character.asm"
+.INCLUDE "inventory/take_item_from_character.asm"
 
 .INCLUDE "misc/reduce_hp_amtpercent.asm"
 
@@ -608,17 +608,17 @@
 
 .INCLUDE "misc/recover_pp_amtpercent.asm"
 
-.INCLUDE "misc/equip_item.asm"
+.INCLUDE "inventory/equip_item.asm"
 
 .INCLUDE "unknown/C1/C190E6.asm"
 
 .INCLUDE "unknown/C1/C190F1-jp.asm"
 
-.INCLUDE "misc/escargo_express_store.asm"
+.INCLUDE "inventory/escargo_express_store.asm"
 
-.INCLUDE "misc/escargo_express_move.asm"
+.INCLUDE "inventory/escargo_express_move.asm"
 
-.INCLUDE "misc/escargo_express_remove-jp.asm"
+.INCLUDE "inventory/escargo_express_remove-jp.asm"
 
 .INCLUDE "inventory/give_stored_item_to_character.asm"
 
@@ -636,7 +636,7 @@
 
 .INCLUDE "unknown/C1/C1952F-jp.asm"
 
-.INCLUDE "misc/inventory_get_item_name.asm"
+.INCLUDE "inventory/get_item_name.asm"
 
 .INCLUDE "unknown/C1/C19A11.asm"
 
@@ -650,7 +650,7 @@
 
 .INCLUDE "text/item_store_selection-jp.asm"
 
-.INCLUDE "misc/get_item_type.asm"
+.INCLUDE "inventory/get_item_type.asm"
 
 .INCLUDE "text/print_equipment-jp.asm"
 
@@ -690,7 +690,7 @@
 
 .INCLUDE "battle/determine_targetting.asm"
 
-.INCLUDE "overworld/use_item.asm"
+.INCLUDE "inventory/overworld_use_item.asm"
 
 .INCLUDE "overworld/overworld_psi_menu-jp.asm"
 
@@ -752,7 +752,7 @@
 
 .INCLUDE "misc/gain_exp.asm"
 
-.INCLUDE "misc/find_condiment.asm"
+.INCLUDE "inventory/find_condiment.asm"
 
 .INCLUDE "overworld/show_hp_alert.asm"
 
@@ -786,7 +786,7 @@
 
 .INCLUDE "unknown/C1/C1DD9F.asm"
 
-.INCLUDE "misc/remove_item_from_inventory_redirect.asm"
+.INCLUDE "inventory/remove_item_from_inventory_redirect.asm"
 
 .INCLUDE "misc/swap_raised_hp_pp_window_redirect.asm"
 

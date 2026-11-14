@@ -2090,9 +2090,9 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/debug/off_text.asm"
 
-.INCLUDE "misc/get_character_item.asm"
+.INCLUDE "inventory/get_character_item.asm"
 
-.INCLUDE "misc/check_item_equipped.asm"
+.INCLUDE "inventory/check_item_equipped.asm"
 
 .INCLUDE "inventory/test_item_is_equipped.asm"
 
@@ -2134,7 +2134,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/psi_target_text.asm"
 
-.INCLUDE "misc/select_fixable_item.asm"
+.INCLUDE "inventory/select_fixable_item.asm"
 
 .INCLUDE "data/unknown/C3F2B1.asm"
 
