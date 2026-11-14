@@ -471,21 +471,21 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "data/powers_of_two_8.asm"
 
-.INCLUDE "misc/find_item_in_inventory.asm"
+.INCLUDE "inventory/find_item_in_inventory.asm"
 
-.INCLUDE "misc/find_item_in_inventory2.asm"
+.INCLUDE "inventory/find_item_in_inventory2.asm"
 
-.INCLUDE "misc/find_inventory_space.asm"
+.INCLUDE "inventory/find_inventory_space.asm"
 
-.INCLUDE "misc/find_inventory_space2.asm"
+.INCLUDE "inventory/find_inventory_space2.asm"
 
-.INCLUDE "misc/change_equipped_weapon.asm"
+.INCLUDE "inventory/change_equipped_weapon.asm"
 
-.INCLUDE "misc/change_equipped_body.asm"
+.INCLUDE "inventory/change_equipped_body.asm"
 
-.INCLUDE "misc/change_equipped_arms.asm"
+.INCLUDE "inventory/change_equipped_arms.asm"
 
-.INCLUDE "misc/change_equipped_other.asm"
+.INCLUDE "inventory/change_equipped_other.asm"
 
 .INCLUDE "data/item_usable_flags.asm"
 
@@ -737,7 +737,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "overworld/actionscript/update_actionscript_animation_frame.asm"
 
-.INCLUDE "system/load_window_gfx.asm"
+.INCLUDE "system/prepare_window_graphics.asm"
 
 .INCLUDE "text/load_text_palette.asm"
 
@@ -783,13 +783,13 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C48E95.asm"
 
-.INCLUDE "overworld/is_valid_item_transformation.asm"
+.INCLUDE "inventory/is_valid_item_transformation.asm"
 
-.INCLUDE "overworld/initialize_item_transformation_entry.asm"
+.INCLUDE "inventory/initialize_item_transformation_entry.asm"
 
 .INCLUDE "inventory/remove_item_transformation_entry.asm"
 
-.INCLUDE "overworld/process_item_transformations.asm"
+.INCLUDE "inventory/process_item_transformations.asm"
 
 .INCLUDE "overworld/get_distance_to_magic_truffle.asm"
 

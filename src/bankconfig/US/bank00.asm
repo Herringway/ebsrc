@@ -204,17 +204,17 @@
 
 .INCLUDE "overworld/handle_normal_movement.asm"
 
-.INCLUDE "overworld/move_camera_to_entity.asm"
+.INCLUDE "overworld/camera/move_camera_to_entity.asm"
 
 .INCLUDE "overworld/handle_escalator_movement.asm"
 
 .INCLUDE "overworld/handle_bicycle_movement.asm"
 
-.INCLUDE "unknown/C0/C04A7B.asm"
+.INCLUDE "overworld/camera/restore_camera_mode.asm"
 
-.INCLUDE "unknown/C0/C04A88.asm"
+.INCLUDE "overworld/camera/switch_to_camera_mode_3.asm"
 
-.INCLUDE "unknown/C0/C04AAD.asm"
+.INCLUDE "overworld/camera/handle_camera_mode_3.asm"
 
 .INCLUDE "unknown/C0/C04B53.asm"
 
@@ -1272,11 +1272,11 @@
 
 .INCLUDE "overworld/teleport/psi_teleport_fail.asm"
 
-.INCLUDE "misc/teleport_freezeobjects.asm"
+.INCLUDE "overworld/teleport/teleport_freezeobjects.asm"
 
-.INCLUDE "misc/teleport_freezeobjects2.asm"
+.INCLUDE "overworld/teleport/teleport_freezeobjects2.asm"
 
-.INCLUDE "misc/teleport_mainloop.asm"
+.INCLUDE "overworld/teleport/teleport_mainloop.asm"
 
 .INCLUDE "intro/load_title_screen_graphics.asm"
 
