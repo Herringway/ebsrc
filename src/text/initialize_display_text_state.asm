@@ -15,7 +15,7 @@ INITIALIZE_DISPLAY_TEXT_STATE:
 	BRA @UNKNOWN1
 @UNKNOWN0:
 	TAX
-	STZ a:display_text_state::unknown4,X
+	STZ a:display_text_state::restore_window_attributes,X
 	TAY
 	MOVE_INT_YPTRDEST @VIRTUAL06, __BSS_START__
 	LDA @LOCAL00

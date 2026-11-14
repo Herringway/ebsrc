@@ -9,11 +9,11 @@ UNKNOWN_C190E6:
 	CLC
 	ADC #.LOWORD(GAME_STATE)
 	TAX
-	LDA a:game_state::unknown96,X
+	LDA a:game_state::party_member_index,X
 .ELSE
 	TAX
 	DEX
-	LDA GAME_STATE + game_state::unknown96,X
+	LDA GAME_STATE + game_state::party_member_index,X
 .ENDIF
 	AND #$00FF
 	END_C_FUNCTION

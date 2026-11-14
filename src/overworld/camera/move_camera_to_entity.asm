@@ -42,5 +42,5 @@ MOVE_CAMERA_TO_ENTITY:
 	LDA ENTITY_DIRECTIONS,X
 	STA GAME_STATE+game_state::leader_direction
 	LDA @VIRTUAL04
-	STA GAME_STATE + game_state::unknown90
+	STA GAME_STATE + game_state::leader_has_moved
 	END_C_FUNCTION

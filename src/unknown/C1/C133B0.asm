@@ -31,7 +31,7 @@ UNKNOWN_C133B0:
 	LDA @VIRTUAL02
 	CMP #2
 	BNE @UNKNOWN4
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	CMP #1
 	BNE @UNKNOWN4

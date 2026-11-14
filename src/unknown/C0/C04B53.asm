@@ -17,7 +17,7 @@ UNKNOWN_C04B53:
 	LDA AUTO_MOVEMENT_DIRECTION
 	STA @LOCAL01
 @UNKNOWN1:
-	LDA #.LOWORD(GAME_STATE) + game_state::unknownB0
+	LDA #.LOWORD(GAME_STATE) + game_state::camera_mode
 	STA @VIRTUAL02
 	LDX @VIRTUAL02
 	LDA __BSS_START__,X
@@ -62,7 +62,7 @@ UNKNOWN_C04B53:
 	CLC
 	ADD_INT_ASSIGN @VIRTUAL06, @VIRTUAL0A
 	MOVE_INT_YPTRDEST @VIRTUAL06, __BSS_START__
-	LDX #.LOWORD(GAME_STATE) + game_state::unknownB2
+	LDX #.LOWORD(GAME_STATE) + game_state::auto_scroll_frames
 	LDA __BSS_START__,X
 	DEC
 	STA __BSS_START__,X
@@ -70,11 +70,11 @@ UNKNOWN_C04B53:
 	LDA #0
 	LDX @VIRTUAL02
 	STA __BSS_START__,X
-	LDA GAME_STATE + game_state::unknownB4
+	LDA GAME_STATE + game_state::auto_scroll_original_walking_style
 	STA GAME_STATE+game_state::walking_style
 @UNKNOWN5:
 	LDA #1
-	STA GAME_STATE + game_state::unknown90
+	STA GAME_STATE + game_state::leader_has_moved
 	BRA @UNKNOWN8
 @UNKNOWN6:
 	JSR MOVE_CAMERA_TO_ENTITY

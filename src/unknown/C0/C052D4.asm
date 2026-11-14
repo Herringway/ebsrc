@@ -18,7 +18,7 @@ UNKNOWN_C052D4:
 	STA @LOCAL0A
 	LDA #$00FF
 	STA @LOCAL09
-	STA GAME_STATE + game_state::unknown88
+	STA GAME_STATE + game_state::leader_position_index
 	LDA GAME_STATE+game_state::leader_x_coord
 	STA @LOCAL08
 	LDA GAME_STATE+game_state::leader_y_coord
@@ -126,7 +126,7 @@ UNKNOWN_C052D4:
 	STA __BSS_START__+char_struct::position_index,Y
 	LDA #.LOWORD(-1)
 	STA __BSS_START__+char_struct::unknown63 + 2,Y
-	STA __BSS_START__+char_struct::unknown53 + 2,Y
+	STA __BSS_START__+char_struct::character_id + 2,Y
 	LDA @LOCAL03
 	ASL
 	STA @VIRTUAL02
@@ -134,9 +134,9 @@ UNKNOWN_C052D4:
 .IF .DEFINED(JPN)
 	ADC #.LOWORD(GAME_STATE)
 	CLC
-	ADC #game_state::unknownA2
+	ADC #game_state::party_entities
 .ELSE
-	ADC #.LOWORD(GAME_STATE) + game_state::unknownA2
+	ADC #.LOWORD(GAME_STATE) + game_state::party_entities
 .ENDIF
 	TAY
 	LDA __BSS_START__,Y

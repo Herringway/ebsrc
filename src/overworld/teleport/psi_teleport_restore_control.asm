@@ -31,7 +31,7 @@ PSI_TELEPORT_RESTORE_CONTROL:
 	STA __BSS_START__,X
 	LDA #.LOWORD(-1)
 	LDX CURRENT_PARTY_MEMBER_TICK
-	STA a:char_struct::unknown55,X
+	STA a:char_struct::last_walking_style,X
 	LDA CURRENT_PARTY_MEMBER_TICK
 	CLC
 	ADC #.SIZEOF(char_struct)

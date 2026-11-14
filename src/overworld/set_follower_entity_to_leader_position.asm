@@ -14,9 +14,9 @@ SET_FOLLOWER_ENTITY_TO_LEADER_POSITION:
 	CLC
 	ADC #.LOWORD(GAME_STATE)
 	TAX
-	LDA a:game_state::unknown96,X
+	LDA a:game_state::party_member_index,X
 .ELSE
-	LDA GAME_STATE+game_state::unknown96,Y
+	LDA GAME_STATE+game_state::party_member_index,Y
 .ENDIF
 	AND #$00FF
 	BEQ @UNKNOWN1
@@ -26,10 +26,10 @@ SET_FOLLOWER_ENTITY_TO_LEADER_POSITION:
 	CLC
 	ADC #.LOWORD(GAME_STATE)
 	TAX
-	LDA a:game_state::unknownA2,X
+	LDA a:game_state::party_entities,X
 .ELSE
 	TAX
-	LDA GAME_STATE+game_state::unknownA2,X
+	LDA GAME_STATE+game_state::party_entities,X
 .ENDIF
 	STA @LOCAL00
 	ASL

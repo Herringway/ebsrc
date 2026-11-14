@@ -16,10 +16,10 @@ UNKNOWN_C226F0:
 	CLC
 	ADC #.LOWORD(GAME_STATE)
 	TAX
-	LDA a:game_state::unknown96,X
+	LDA a:game_state::party_member_index,X
 .ELSE
 	TAX
-	LDA GAME_STATE + game_state::unknown96,X
+	LDA GAME_STATE + game_state::party_member_index,X
 .ENDIF
 	AND #$00FF
 	DEC
@@ -30,7 +30,7 @@ UNKNOWN_C226F0:
 	AND #$00FF
 	CMP #1
 	BEQ @UNKNOWN2
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	STA @VIRTUAL02
 	LDA @LOCAL00

@@ -22,7 +22,7 @@ UNKNOWN_C03E25:
 	CLC
 	ADC #.LOWORD(GAME_STATE)
 	TAX
-	LDA a:game_state::unknown96,X
+	LDA a:game_state::party_member_index,X
 	AND #$00FF
 	CMP @VIRTUAL02
 	BNE @UNKNOWN0
@@ -35,7 +35,7 @@ UNKNOWN_C03E25:
 	CLC
 	ADC #.LOWORD(GAME_STATE)
 	TAX
-	LDA a:game_state::unknown96,X
+	LDA a:game_state::party_member_index,X
 	AND #$00FF
 @UNKNOWN3:
 	END_C_FUNCTION

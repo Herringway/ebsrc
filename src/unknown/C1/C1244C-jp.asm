@@ -33,7 +33,7 @@ UNKNOWN_C1244C:
 	BNEL @UNKNOWN7
 	LDA #.LOWORD(WINDOW_TEXT_ATTRIBUTES_BACKUP)
 	JSL BACKUP_CURRENT_WINDOW_TEXT_ATTRIBUTES
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	CMP #1
 	BNE @UNKNOWN1
@@ -97,7 +97,7 @@ UNKNOWN_C1244C:
 	JSR CREATE_NEW_MENU_OPTION_AT_POSITION_WITH_USER_DATA
 	INC @VIRTUAL02
 @UNKNOWN4:
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	CLC
 	SBC @VIRTUAL02
@@ -330,7 +330,7 @@ UNKNOWN_C1244C:
 	STA @LOCAL05
 	JMP @UNKNOWN16
 @UNKNOWN33:
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	STA @LOCAL08
 	STX @VIRTUAL02

@@ -31,7 +31,7 @@ CHECK_DELIVERY_ELIGIBILITY:
 	LDA #TRUE
 	BRA @UNKNOWN9
 @UNKNOWN4:
-	LDA GAME_STATE+game_state::current_party_members
+	LDA GAME_STATE+game_state::first_party_member_entity
 	ASL
 	TAX
 	LDA ENTITY_SPRITEMAP_POINTER_HIGH,X

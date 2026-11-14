@@ -33,7 +33,7 @@ UNKNOWN_C1C373:
 @UNKNOWN1:
 	INC @VIRTUAL02
 @UNKNOWN2:
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	STA @VIRTUAL04
 	LDA @VIRTUAL02

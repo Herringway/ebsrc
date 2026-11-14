@@ -756,8 +756,8 @@ SAVED_COLOUR_AVERAGE_GREEN:
 	.RES 2
 SAVED_COLOUR_AVERAGE_BLUE:
 	.RES 2
-OVERWORLD_TILESET_ANIM:
-	.RES .SIZEOF(overworld_tileset_anim) * 8
+loaded_animated_tiles:
+	.RES .SIZEOF(loaded_animated_tiles) * 8
 OVERWORLD_PALETTE_ANIM:
 	.TAG overworld_palette_anim
 LOADED_ANIMATED_TILE_COUNT:
@@ -1576,8 +1576,8 @@ BATTLE_SPRITE_PALETTE_EFFECT_STEPS:
 	.RES 6 * 16 * 4
 BATTLE_SPRITE_PALETTE_EFFECT_SPEED:
 	.RES 2
-SOUND_STONE_PLAYBACK_STATE:
-	.RES .SIZEOF(sound_stone_playback_state) * 8
+sound_stone_melody_state:
+	.RES .SIZEOF(sound_stone_melody_state) * 8
 SOUND_STONE_SPRITEMAP_1:
 	.TAG spritemap
 SOUND_STONE_SPRITEMAP_2:

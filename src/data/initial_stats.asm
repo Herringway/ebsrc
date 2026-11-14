@@ -1,5 +1,5 @@
 
-INITIAL_STATS:
+character_initial_stats:
 	;Ness
 	.BYTE $F7, $03, $8A, $00
 	.WORD 20 ;money

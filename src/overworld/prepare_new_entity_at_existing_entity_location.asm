@@ -14,7 +14,7 @@ PREPARE_NEW_ENTITY_AT_EXISTING_ENTITY_LOCATION:
 	STX @LOCAL00
 	BRA @UNKNOWN2
 @UNKNOWN1:
-	LDX GAME_STATE+game_state::current_party_members
+	LDX GAME_STATE+game_state::first_party_member_entity
 	STX @LOCAL00
 @UNKNOWN2:
 	LDX @LOCAL00

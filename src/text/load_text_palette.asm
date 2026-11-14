@@ -4,7 +4,7 @@ LOAD_TEXT_PALETTE:
 	STACK_RESERVE_VARS
 	STACK_RESERVE_INT32
 	END_STACK_VARS
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	TAX
 	DEX

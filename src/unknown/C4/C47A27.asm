@@ -6,7 +6,7 @@ UNKNOWN_C47A27:
 	STACK_RESERVE_INT16
 	STACK_RESERVE_INT16
 	END_STACK_VARS
-	LDX GAME_STATE+game_state::current_party_members
+	LDX GAME_STATE+game_state::first_party_member_entity
 	STX @LOCAL02
 	LDA CURRENT_ENTITY_SLOT
 	ASL

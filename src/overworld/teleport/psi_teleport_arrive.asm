@@ -28,7 +28,7 @@ PSI_TELEPORT_ARRIVE:
 	JSL MULT168
 	TAX
 	LDA #.LOWORD(-1)
-	STA PARTY_CHARACTERS + char_struct::unknown55,X
+	STA PARTY_CHARACTERS + char_struct::last_walking_style,X
 	LDA @VIRTUAL02
 	CLC
 	ADC #24
@@ -40,10 +40,10 @@ PSI_TELEPORT_ARRIVE:
 	CLC
 	ADC #.LOWORD(GAME_STATE)
 	TAX
-	LDA a:game_state::unknown96,X
+	LDA a:game_state::party_member_index,X
 .ELSE
 	LDX @VIRTUAL02
-	LDA GAME_STATE + game_state::unknown96,X
+	LDA GAME_STATE + game_state::party_member_index,X
 .ENDIF
 	AND #$00FF
 	DEC

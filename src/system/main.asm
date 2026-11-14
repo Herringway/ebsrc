@@ -41,7 +41,7 @@ MAIN_LOOP:
 	INC INPUT_DISABLE_FRAME_COUNTER
 	JMP @UNKNOWN20
 @UNKNOWN1:
-	LDA GAME_STATE + game_state::unknownB0
+	LDA GAME_STATE + game_state::camera_mode
 	CMP #2
 	BEQL @UNKNOWN20
 	LDX GAME_STATE+game_state::walking_style

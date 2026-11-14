@@ -294,7 +294,7 @@ UNKNOWN_C0D19B:
 	CMP @LOCAL06
 	BNE @UNKNOWN30
 	LDX @LOCAL07
-	LDA a:pathfinding::pathfinders + pathfinder::unknown14,X
+	LDA a:pathfinding::pathfinders + pathfinder::initial_point_count,X
 	TAX
 	LDY @LOCAL03
 	STY @VIRTUAL02
@@ -329,7 +329,7 @@ UNKNOWN_C0D19B:
 	BEQ @UNKNOWN32
 	LDA @LOCAL03
 	TAX
-	STZ a:pathfinding::pathfinders + pathfinder::unknown14,X
+	STZ a:pathfinding::pathfinders + pathfinder::initial_point_count,X
 	LDX @LOCAL05
 	LDA __BSS_START__,X
 	ASL

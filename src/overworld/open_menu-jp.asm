@@ -35,7 +35,7 @@ OPEN_MENU_BUTTON:
 	LDA @VIRTUAL02
 	CMP #2
 	BNE @UNKNOWN4
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	CMP #1
 	BNE @UNKNOWN4
@@ -125,7 +125,7 @@ OPEN_MENU_BUTTON:
 @GOODS:
 	JSR OPEN_HP_AND_WALLET
 @UNKNOWN9:
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	CMP #1
 	BNE @GOODS_MANY_PARTY_MEMBERS
@@ -187,7 +187,7 @@ OPEN_MENU_BUTTON:
 	JSR CLOSE_EQUIP_SELECT_MENU
 	LDA @VIRTUAL02
 	BNE @GOODS_ITEM_SELECTED
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	CMP #1
 	BNEL @UNKNOWN9
@@ -449,7 +449,7 @@ OPEN_MENU_BUTTON:
 @EQUIP:
 	JSR OPEN_HP_AND_WALLET
 	JSR UNKNOWN_C1AA5D
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	CMP #1
 	BNEL @MAIN_PAUSE_MENU

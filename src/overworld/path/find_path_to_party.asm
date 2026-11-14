@@ -25,7 +25,7 @@ FIND_PATH_TO_PARTY:
 	@LOCAL0BALT := @LOCAL0B
 .ENDIF
 	STA @LOCAL0C
-	LDA GAME_STATE+game_state::current_party_members
+	LDA GAME_STATE+game_state::first_party_member_entity
 	STA @LOCAL0B
 	LDA #.LOWORD(PATHFINDING_STATE)
 	STA @LOCAL0A

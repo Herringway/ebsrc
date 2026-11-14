@@ -17,7 +17,7 @@ UNKNOWN_C1AA5D:
 	LDX @LOCAL02
 	TXA
 	JSL UNKNOWN_C1A778
-	LDA GAME_STATE + game_state::player_controlled_party_count
+	LDA GAME_STATE + game_state::player_controlled_party_member_count
 	AND #$00FF
 	CMP #1
 	BEQ @UNKNOWN2
@@ -44,7 +44,7 @@ UNKNOWN_C1AA5D:
 	BEQ @UNKNOWN4
 	TXA
 	JSR HANDLE_EQUIP_MENU
-	LDA GAME_STATE + game_state::player_controlled_party_count
+	LDA GAME_STATE + game_state::player_controlled_party_member_count
 	AND #$00FF
 	CMP #1
 	BNE @UNKNOWN0

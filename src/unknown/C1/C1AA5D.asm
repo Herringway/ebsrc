@@ -14,7 +14,7 @@ UNKNOWN_C1AA5D:
 	TAX
 	STX @LOCAL02
 @UNKNOWN0:
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	CMP #1
 	BNE @UNKNOWN1
@@ -22,7 +22,7 @@ UNKNOWN_C1AA5D:
 	TXA
 	JSL UNKNOWN_C1A778
 @UNKNOWN1:
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	CMP #1
 	BEQ @UNKNOWN2
@@ -49,7 +49,7 @@ UNKNOWN_C1AA5D:
 	BEQ @UNKNOWN4
 	TXA
 	JSR HANDLE_EQUIP_MENU
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	CMP #1
 	BNE @UNKNOWN0

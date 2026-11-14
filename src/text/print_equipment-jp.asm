@@ -16,7 +16,7 @@ PRINT_EQUIPMENT:
 	STA @LOCAL05
 	JSR SET_INSTANT_PRINTING
 	CREATE_WINDOW_NEAR #WINDOW::EQUIP_MENU
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	CMP #1
 	BEQ @UNKNOWN0

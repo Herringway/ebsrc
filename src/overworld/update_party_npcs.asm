@@ -26,7 +26,7 @@ UPDATE_PARTY_NPCS:
 @UNKNOWN3:
 	TYA
 	SEP #PROC_FLAGS::ACCUM8
-	STA GAME_STATE+game_state::player_controlled_party_count
+	STA GAME_STATE+game_state::player_controlled_party_member_count
 	REP #PROC_FLAGS::ACCUM8
 	LDA #.LOWORD(GAME_STATE)+game_state::party_npc_1
 	STA @VIRTUAL04

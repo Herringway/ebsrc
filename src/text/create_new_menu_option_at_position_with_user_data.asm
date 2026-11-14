@@ -36,6 +36,6 @@ CREATE_NEW_MENU_OPTION_AT_POSITION_WITH_USER_DATA:
 	LDA @VIRTUAL04
 	STA a:menu_option::userdata,X
 	LDA #2
-	STA a:menu_option::unknown0,X
+	STA a:menu_option::type,X
 	TXA
 	END_C_FUNCTION

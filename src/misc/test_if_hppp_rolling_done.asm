@@ -53,7 +53,7 @@ TEST_IF_HPPP_ROLLING_DONE:
 	STY @LOCAL00
 .ENDIF
 @UNKNOWN3:
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	STA @VIRTUAL02
 .IF .DEFINED(JPN)

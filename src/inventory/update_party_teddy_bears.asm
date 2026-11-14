@@ -117,7 +117,7 @@ UPDATE_PARTY_TEDDY_BEARS:
 	SEP #PROC_FLAGS::ACCUM8
 	INC @LOCAL04
 @UNKNOWN9:
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	CMP @LOCAL04
 	BGTL @UNKNOWN0
 	REP #PROC_FLAGS::ACCUM8

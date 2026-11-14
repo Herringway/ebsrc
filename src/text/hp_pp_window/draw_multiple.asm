@@ -26,7 +26,7 @@ DRAW_HP_PP_WINDOWS:
 	INX
 	STX @LOCAL00
 @UNKNOWN2:
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	STA @VIRTUAL02
 	TXA

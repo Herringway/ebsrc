@@ -13,7 +13,7 @@ SET_LEADER_POSITION:
 	STX GAME_STATE+game_state::leader_y_coord
 	LDA @VIRTUAL02
 	STA GAME_STATE+game_state::leader_direction
-	LDY GAME_STATE+game_state::current_party_members
+	LDY GAME_STATE+game_state::first_party_member_entity
 	LDA @LOCAL00
 	JSL GET_SURFACE_FLAGS_HORIZONTAL
 	STA GAME_STATE+game_state::trodden_tile_type

@@ -498,6 +498,6 @@ UNKNOWN_D545C0:
 	.INCLUDE "data/dont_care_names.asm"
 .ENDIF
 
-.INCLUDE "data/initial_stats.asm"
+.INCLUDE "data/character_initial_stats.asm"
 
 .INCLUDE "data/timed_delivery_table.asm"

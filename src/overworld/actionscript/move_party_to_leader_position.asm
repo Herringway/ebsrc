@@ -3,7 +3,7 @@ MOVE_PARTY_TO_LEADER_POSITION:
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
 	STACK_RESERVE_VARS
 	END_STACK_VARS
-	STZ GAME_STATE + game_state::unknown88
+	STZ GAME_STATE + game_state::leader_position_index
 	LDX #.LOWORD(PLAYER_POSITION_BUFFER)
 	LDY #$0002
 @UNKNOWN0:
@@ -36,12 +36,12 @@ MOVE_PARTY_TO_LEADER_POSITION:
 	TAX
 	STZ a:char_struct::position_index,X
 	LDA #$FFFF
-	STA a:char_struct::unknown65,X
-	STA a:char_struct::unknown55,X
+	STA a:char_struct::walking_style,X
+	STA a:char_struct::last_walking_style,X
 	TYA
 	ASL
 	TAX
-	LDA GAME_STATE + game_state::unknownA2,X
+	LDA GAME_STATE + game_state::party_entities,X
 	ASL
 	TAX
 	LDA GAME_STATE+game_state::leader_x_coord

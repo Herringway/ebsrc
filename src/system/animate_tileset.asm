@@ -7,34 +7,34 @@ ANIMATE_TILESET:
 	STACK_RESERVE_INT16
 	STACK_RESERVE_INT16
 	END_STACK_VARS
-	LDA #.LOWORD(OVERWORLD_TILESET_ANIM)
+	LDA #.LOWORD(loaded_animated_tiles)
 	STA @LOCAL03
 	STZ @LOCAL02
 	JMP @UNKNOWN4
 @UNKNOWN0:
 	LDA @LOCAL03
 	CLC
-	ADC #overworld_tileset_anim::frames_until_update
+	ADC #loaded_animated_tiles::frames_until_update
 	TAX
 	LDA __BSS_START__,X
 	DEC
 	STA __BSS_START__,X
 	BNEL @UNKNOWN3
-	LDY #overworld_tileset_anim::frame_delay
+	LDY #loaded_animated_tiles::frame_delay
 	LDA (@LOCAL03),Y
 	STA __BSS_START__,X
 	LDA @LOCAL03
 	CLC
-	ADC #overworld_tileset_anim::destination_address2
+	ADC #loaded_animated_tiles::destination_address2
 	TAX
 	LDA __BSS_START__,X
-	CMP (@LOCAL03) ;overworld_tileset_anim::unknown0
+	CMP (@LOCAL03) ;loaded_animated_tiles::frame_count
 	BNE @UNKNOWN2
 	LDA #0
 	STA __BSS_START__,X
-	LDY #overworld_tileset_anim::source_offset
+	LDY #loaded_animated_tiles::source_offset
 	LDA (@LOCAL03),Y
-	LDY #overworld_tileset_anim::source_offset2
+	LDY #loaded_animated_tiles::source_offset2
 	STA (@LOCAL03),Y
 @UNKNOWN2:
 	LDA @LOCAL03
@@ -43,9 +43,9 @@ ANIMATE_TILESET:
 	INC @VIRTUAL04
 	INC @VIRTUAL04
 	INC @VIRTUAL04
-	LDA @LOCAL03 ;overworld_tileset_anim::copy_size
+	LDA @LOCAL03 ;loaded_animated_tiles::copy_size
 	CLC
-	ADC #overworld_tileset_anim::source_offset2
+	ADC #loaded_animated_tiles::source_offset2
 	STA @VIRTUAL02
 	STA @LOCAL01
 	LOADPTR ANIMATED_TILESET_BUFFER, @VIRTUAL06
@@ -57,7 +57,7 @@ ANIMATE_TILESET:
 	STA @LOCAL00
 	LDA @VIRTUAL06+2
 	STA @LOCAL00+2
-	LDY #overworld_tileset_anim::destination_address
+	LDY #loaded_animated_tiles::destination_address
 	LDA (@LOCAL03),Y
 	TAY
 	LDX @VIRTUAL04
@@ -81,7 +81,7 @@ ANIMATE_TILESET:
 	STA __BSS_START__,X
 	LDA @LOCAL03
 	CLC
-	ADC #overworld_tileset_anim::destination_address2
+	ADC #loaded_animated_tiles::destination_address2
 	TAX
 	LDA __BSS_START__,X
 	INC
@@ -89,7 +89,7 @@ ANIMATE_TILESET:
 @UNKNOWN3:
 	LDA @LOCAL03
 	CLC
-	ADC #.SIZEOF(overworld_tileset_anim)
+	ADC #.SIZEOF(loaded_animated_tiles)
 	STA @LOCAL03
 	INC @LOCAL02
 @UNKNOWN4:

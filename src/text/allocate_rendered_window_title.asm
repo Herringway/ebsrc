@@ -22,7 +22,7 @@ UNKNOWN_ALLOCATE_RENDERED_WINDOW_TITLE:
 	CLC
 	ADC #window_stats::title
 	STA @VIRTUAL04
-	LDA a:window_stats::unknown59,Y
+	LDA a:window_stats::title_id,Y
 	AND #$00FF
 	BNE @UNKNOWN3
 	LDA #0
@@ -58,10 +58,10 @@ UNKNOWN_ALLOCATE_RENDERED_WINDOW_TITLE:
 	LDA @LOCAL01
 	SEP #PROC_FLAGS::ACCUM8
 	INC
-	STA a:window_stats::unknown59,Y
+	STA a:window_stats::title_id,Y
 @UNKNOWN3:
 	REP #PROC_FLAGS::ACCUM8
-	LDA a:window_stats::unknown59,Y
+	LDA a:window_stats::title_id,Y
 	AND #$00FF
 	DEC
 	ASL

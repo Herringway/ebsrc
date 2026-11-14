@@ -43,7 +43,7 @@ HIDE_HPPP_WINDOWS:
 	INY
 	STY @LOCAL00
 @UNKNOWN1:
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	STA @VIRTUAL02
 	TYA

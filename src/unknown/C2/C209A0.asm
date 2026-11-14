@@ -43,7 +43,7 @@ UNKNOWN_C209A0:
 	LDA @VIRTUAL02
 	BNE @UNKNOWN0
 	LDX @LOCAL01
-	LDA a:window_stats::unknown59,X
+	LDA a:window_stats::title_id,X
 	AND #$00FF
 	BEQ @UNKNOWN3
 	AND #$00FF
@@ -56,7 +56,7 @@ UNKNOWN_C209A0:
 	LDX @LOCAL01
 	SEP #PROC_FLAGS::ACCUM8
 	STZ a:window_stats::title,X
-	STZ a:window_stats::unknown59,X
+	STZ a:window_stats::title_id,X
 	LDA #1
 	STA REDRAW_ALL_WINDOWS
 	JSL UNKNOWN_C07C5B

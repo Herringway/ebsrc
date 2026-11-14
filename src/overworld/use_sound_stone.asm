@@ -78,25 +78,25 @@ USE_SOUND_STONE:
 	BEQ @UNKNOWN1
 	LDY @LOCAL0F
 	TYA
-	OPTIMIZED_MULT @VIRTUAL04, .SIZEOF(sound_stone_playback_state)
+	OPTIMIZED_MULT @VIRTUAL04, .SIZEOF(sound_stone_melody_state)
 	TAX
 	LDA #1
-	STA SOUND_STONE_PLAYBACK_STATE + sound_stone_playback_state::state,X
+	STA sound_stone_melody_state + sound_stone_melody_state::state,X
 	INC @LOCAL10
 	BRA @UNKNOWN2
 @UNKNOWN1:
 	LDY @LOCAL0F
 	TYA
-	OPTIMIZED_MULT @VIRTUAL04, .SIZEOF(sound_stone_playback_state)
+	OPTIMIZED_MULT @VIRTUAL04, .SIZEOF(sound_stone_melody_state)
 	TAX
-	STZ SOUND_STONE_PLAYBACK_STATE + sound_stone_playback_state::state,X
+	STZ sound_stone_melody_state + sound_stone_melody_state::state,X
 @UNKNOWN2:
 	TYA
-	OPTIMIZED_MULT @VIRTUAL04, .SIZEOF(sound_stone_playback_state)
+	OPTIMIZED_MULT @VIRTUAL04, .SIZEOF(sound_stone_melody_state)
 	TAX
 	LDA #1
-	STA SOUND_STONE_PLAYBACK_STATE + sound_stone_playback_state::unknown2,X
-	STZ SOUND_STONE_PLAYBACK_STATE + sound_stone_playback_state::orbit_sprite_frame,X
+	STA sound_stone_melody_state + sound_stone_melody_state::orbit_adjustment_frames_left,X
+	STZ sound_stone_melody_state + sound_stone_melody_state::orbit_sprite_frame,X
 	INY
 	STY @LOCAL0F
 @UNKNOWN3:
@@ -157,15 +157,15 @@ USE_SOUND_STONE:
 	CMP #8
 	BCS @UNKNOWN10
 	LDA @VIRTUAL02
-	OPTIMIZED_MULT @VIRTUAL04, .SIZEOF(sound_stone_playback_state)
+	OPTIMIZED_MULT @VIRTUAL04, .SIZEOF(sound_stone_melody_state)
 	CLC
-	ADC #.LOWORD(SOUND_STONE_PLAYBACK_STATE)
+	ADC #.LOWORD(sound_stone_melody_state)
 	TAX
-	LDA a:sound_stone_playback_state::state,X
+	LDA a:sound_stone_melody_state::state,X
 	CMP #2
 	BNE @UNKNOWN10
 	LDA #1
-	STA a:sound_stone_playback_state::state,X
+	STA a:sound_stone_melody_state::state,X
 @UNKNOWN10:
 	LDA @VIRTUAL02
 	CMP #8
@@ -175,9 +175,9 @@ USE_SOUND_STONE:
 	STA @LOCAL07
 	BRA @UNKNOWN12
 @UNKNOWN11:
-	OPTIMIZED_MULT @VIRTUAL04, .SIZEOF(sound_stone_playback_state)
+	OPTIMIZED_MULT @VIRTUAL04, .SIZEOF(sound_stone_melody_state)
 	TAX
-	LDA SOUND_STONE_PLAYBACK_STATE + sound_stone_playback_state::state,X
+	LDA sound_stone_melody_state + sound_stone_melody_state::state,X
 	BNE @UNKNOWN13
 	LDA @LOCAL07
 	INC
@@ -200,9 +200,9 @@ USE_SOUND_STONE:
 	STA @VIRTUAL02
 	STA @LOCAL09
 	LDA @VIRTUAL02
-	OPTIMIZED_MULT @VIRTUAL04, .SIZEOF(sound_stone_playback_state)
+	OPTIMIZED_MULT @VIRTUAL04, .SIZEOF(sound_stone_melody_state)
 	CLC
-	ADC #.LOWORD(SOUND_STONE_PLAYBACK_STATE) + sound_stone_playback_state::state
+	ADC #.LOWORD(sound_stone_melody_state) + sound_stone_melody_state::state
 	TAX
 	LDA __BSS_START__,X
 	BEQ @UNKNOWN15
@@ -256,10 +256,10 @@ USE_SOUND_STONE:
 	JMP @UNKNOWN27
 @UNKNOWN20:
 	LDA @LOCAL06
-	OPTIMIZED_MULT @VIRTUAL04, .SIZEOF(sound_stone_playback_state)
+	OPTIMIZED_MULT @VIRTUAL04, .SIZEOF(sound_stone_melody_state)
 	STA @LOCAL05
 	TAX
-	LDA SOUND_STONE_PLAYBACK_STATE + sound_stone_playback_state::state,X
+	LDA sound_stone_melody_state + sound_stone_melody_state::state,X
 	CMP #1
 	BEQ @UNKNOWN21
 	CMP #2
@@ -287,7 +287,7 @@ USE_SOUND_STONE:
 @UNKNOWN22:
 	LDA @LOCAL05
 	CLC
-	ADC #.LOWORD(SOUND_STONE_PLAYBACK_STATE) + sound_stone_playback_state::orbit_sprite_position_2
+	ADC #.LOWORD(sound_stone_melody_state) + sound_stone_melody_state::orbit_sprite_position_2
 	TAX
 	LDA __BSS_START__,X
 	CLC
@@ -295,7 +295,7 @@ USE_SOUND_STONE:
 	STA __BSS_START__,X
 	LDA @LOCAL05
 	CLC
-	ADC #.LOWORD(SOUND_STONE_PLAYBACK_STATE) + sound_stone_playback_state::unknown2
+	ADC #.LOWORD(sound_stone_melody_state) + sound_stone_melody_state::orbit_adjustment_frames_left
 	TAX
 	LDA __BSS_START__,X
 	TAY
@@ -307,7 +307,7 @@ USE_SOUND_STONE:
 	STA __BSS_START__,X
 	LDA @LOCAL05
 	CLC
-	ADC #.LOWORD(SOUND_STONE_PLAYBACK_STATE) + sound_stone_playback_state::orbit_sprite_frame
+	ADC #.LOWORD(sound_stone_melody_state) + sound_stone_melody_state::orbit_sprite_frame
 	TAX
 	STX @LOCAL07
 	LDA @LOCAL05
@@ -327,14 +327,14 @@ USE_SOUND_STONE:
 	LDA [@VIRTUAL06]
 	AND #$00FF
 	PLX
-	STA SOUND_STONE_PLAYBACK_STATE + sound_stone_playback_state::orbit_sprite_position_1,X
+	STA sound_stone_melody_state + sound_stone_melody_state::orbit_sprite_position_1,X
 	LDX @LOCAL07
 	LDA __BSS_START__,X
 	INC
 	STA __BSS_START__,X
 	LDA @LOCAL05
 	CLC
-	ADC #.LOWORD(SOUND_STONE_PLAYBACK_STATE) + sound_stone_playback_state::unknown4
+	ADC #.LOWORD(sound_stone_melody_state) + sound_stone_melody_state::unknown4
 	TAX
 	LDA __BSS_START__,X
 	STA @VIRTUAL02
@@ -344,7 +344,7 @@ USE_SOUND_STONE:
 	STA __BSS_START__,X
 @UNKNOWN23:
 	LDA @LOCAL06
-	OPTIMIZED_MULT @VIRTUAL04, .SIZEOF(sound_stone_playback_state)
+	OPTIMIZED_MULT @VIRTUAL04, .SIZEOF(sound_stone_melody_state)
 	STA @LOCAL07
 	PHA
 	LDX @LOCAL06
@@ -352,7 +352,7 @@ USE_SOUND_STONE:
 	LDA f:SOUND_STONE_UNKNOWN5,X
 	PLX
 	CLC
-	ADC SOUND_STONE_PLAYBACK_STATE + sound_stone_playback_state::unknown4,X
+	ADC sound_stone_melody_state + sound_stone_melody_state::unknown4,X
 	STA SOUND_STONE_SPRITEMAP_2 + spritemap::tile
 	LDX @LOCAL06
 	LDA f:SOUND_STONE_UNKNOWN6,X
@@ -363,7 +363,7 @@ USE_SOUND_STONE:
 	REP #PROC_FLAGS::ACCUM8
 	LDA @LOCAL07
 	CLC
-	ADC #.LOWORD(SOUND_STONE_PLAYBACK_STATE) + sound_stone_playback_state::orbit_sprite_position_1
+	ADC #.LOWORD(sound_stone_melody_state) + sound_stone_melody_state::orbit_sprite_position_1
 	STA @LOCAL04
 	LDA (@LOCAL04)
 	TAY
@@ -375,7 +375,7 @@ USE_SOUND_STONE:
 	STA @VIRTUAL0A
 	LDA @LOCAL07
 	CLC
-	ADC #.LOWORD(SOUND_STONE_PLAYBACK_STATE) + sound_stone_playback_state::orbit_sprite_position_2
+	ADC #.LOWORD(sound_stone_melody_state) + sound_stone_melody_state::orbit_sprite_position_2
 	STA @LOCAL03
 	LOADPTR SOUND_STONE_UNKNOWN2, @VIRTUAL06
 	LDA @LOCAL06

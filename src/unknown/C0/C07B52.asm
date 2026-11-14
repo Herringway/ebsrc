@@ -36,7 +36,7 @@ UNKNOWN_C07B52:
 	ADC #.LOWORD(PARTY_CHARACTERS)
 	TAX
 	STX CURRENT_PARTY_MEMBER_TICK
-	LDA GAME_STATE+game_state::current_party_members
+	LDA GAME_STATE+game_state::first_party_member_entity
 	CMP @LOCAL02
 	BEQ @UNKNOWN2
 	LDA a:char_struct::position_index,X

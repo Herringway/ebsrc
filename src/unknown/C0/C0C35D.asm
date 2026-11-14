@@ -1,5 +1,5 @@
 
 UNKNOWN_C0C35D:
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
-	LDA GAME_STATE + game_state::unknown90
+	LDA GAME_STATE + game_state::leader_has_moved
 	RTL

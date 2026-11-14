@@ -31,7 +31,7 @@ UNKNOWN_C042EF:
 	LDA #1
 	STA PLAYER_INTANGIBILITY_FRAMES
 @UNKNOWN0:
-	LDA #.LOWORD(GAME_STATE) + game_state::current_party_members
+	LDA #.LOWORD(GAME_STATE) + game_state::first_party_member_entity
 	STA @VIRTUAL02
 	LDX @VIRTUAL02
 	LDA __BSS_START__,X

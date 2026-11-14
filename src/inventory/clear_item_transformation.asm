@@ -90,7 +90,7 @@ CLEAR_ITEM_TRANSFORMATION:
 	INX
 	STX @LOCAL02
 @UNKNOWN10:
-	LDA GAME_STATE + game_state::player_controlled_party_count
+	LDA GAME_STATE + game_state::player_controlled_party_member_count
 	AND #$00FF
 	STA @VIRTUAL02
 	TXA

@@ -471,7 +471,7 @@ OVERWORLD_USE_ITEM:
 	STY @LOCAL06
 @UNKNOWN33:
 	STY @VIRTUAL02
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	CLC
 	SBC @VIRTUAL02

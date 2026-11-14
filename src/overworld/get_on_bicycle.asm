@@ -9,7 +9,7 @@ GET_ON_BICYCLE:
 	AND #$00FF
 	CMP #1
 	BNEL @UNKNOWN3
-	LDA GAME_STATE + game_state::unknown96
+	LDA GAME_STATE + game_state::party_member_index
 	AND #$00FF
 	CMP #1
 	BNEL @UNKNOWN3
@@ -21,11 +21,11 @@ GET_ON_BICYCLE:
 	LDA #24
 	JSL DELETE_OVERWORLD_ENTITY
 	LDA #6
-	STA GAME_STATE + game_state::unknown92
+	STA GAME_STATE + game_state::special_game_state
 	LDA #WALKING_STYLE::BICYCLE
 	STA GAME_STATE+game_state::walking_style
 	STZ PARTY_CHARACTERS+char_struct::position_index
-	STZ GAME_STATE + game_state::unknown88
+	STZ GAME_STATE + game_state::leader_position_index
 	STZ NEW_ENTITY_VAR0
 	STZ NEW_ENTITY_VAR1
 	LDA ENTITY_ABS_X_TABLE + (PARTY_LEADER_ENTITY_INDEX * 2)
@@ -50,7 +50,7 @@ GET_ON_BICYCLE:
 	LDA #0
 	JSL SET_AUTO_SECTOR_MUSIC_CHANGES
 	LDA #1
-	STA GAME_STATE + game_state::unknown90
+	STA GAME_STATE + game_state::leader_has_moved
 	STA UNREAD_7E5DBA
 	LDA #2
 	STA INPUT_DISABLE_FRAME_COUNTER

@@ -26,7 +26,7 @@ TRY_BATTLE_START:
 	CMP TOUCHED_ENEMY
 	BEQ @UNKNOWN8
 @UNKNOWN2:
-	LDA GAME_STATE + game_state::unknownB0
+	LDA GAME_STATE + game_state::camera_mode
 	CMP #2
 	BNE @UNKNOWN3
 	LDA #0

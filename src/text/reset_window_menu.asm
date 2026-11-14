@@ -33,7 +33,7 @@ RESET_WINDOW_MENU:
 	TAX
 @UNKNOWN0:
 	LDA #0
-	STA a:menu_option::unknown0,X
+	STA a:menu_option::type,X
 	LDA a:menu_option::next,X
 	CMP #.LOWORD(-1)
 	BEQ @UNKNOWN1
@@ -51,7 +51,7 @@ RESET_WINDOW_MENU:
 	STA a:window_stats::option_count,Y
 	STA a:window_stats::current_option,Y
 	LDA #1
-	STA a:window_stats::unknown49,Y
+	STA a:window_stats::menu_columns,Y
 	STA a:window_stats::menu_page_number,Y
 @UNKNOWN2:
 	END_C_FUNCTION

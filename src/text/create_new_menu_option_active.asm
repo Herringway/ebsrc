@@ -70,7 +70,7 @@ CREATE_NEW_MENU_OPTION_ACTIVE:
 .ENDIF
 	STA a:menu_option::next,Y
 	LDA #1
-	STA a:menu_option::unknown0,Y
+	STA a:menu_option::type,Y
 	TYA
 	CLC
 	ADC #menu_option::script

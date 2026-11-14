@@ -24,7 +24,7 @@ HANDLE_BICYCLE_MOVEMENT:
 	DEX
 	STX BATTLE_SWIRL_COUNTDOWN
 	BEQ @UNKNOWN0
-	LDY GAME_STATE+game_state::current_party_members
+	LDY GAME_STATE+game_state::first_party_member_entity
 	LDX GAME_STATE+game_state::leader_y_coord
 	LDA GAME_STATE+game_state::leader_x_coord
 	JSL NPC_COLLISION_CHECK
@@ -49,7 +49,7 @@ HANDLE_BICYCLE_MOVEMENT:
 	STY @LOCAL05
 	BRA @UNKNOWN4
 @UNKNOWN3:
-	LDY GAME_STATE+game_state::current_party_members
+	LDY GAME_STATE+game_state::first_party_member_entity
 	LDX GAME_STATE+game_state::leader_y_coord
 	LDA GAME_STATE+game_state::leader_x_coord
 	JSL NPC_COLLISION_CHECK
@@ -119,14 +119,14 @@ HANDLE_BICYCLE_MOVEMENT:
 	LDA @LOCAL01 + fixed_point::integer
 	JSL GET_MOVEMENT_COLLISION_FLAGS
 	STA @VIRTUAL02
-	LDY GAME_STATE + game_state::current_party_members
+	LDY GAME_STATE + game_state::first_party_member_entity
 	LDX @LOCAL02 + fixed_point::integer
 	LDA @LOCAL01 + fixed_point::integer
 	JSL NPC_COLLISION_CHECK
 	LDA ENTITY_COLLIDED_OBJECTS + 23 * 2
 	CMP #ENTITY_COLLISION_NO_OBJECT
 	BNE @UNKNOWN9
-	LDX #.LOWORD(GAME_STATE) + game_state::unknown90
+	LDX #.LOWORD(GAME_STATE) + game_state::leader_has_moved
 	LDA __BSS_START__,X
 	INC
 	STA __BSS_START__,X

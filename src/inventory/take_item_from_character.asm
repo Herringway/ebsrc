@@ -43,7 +43,7 @@ TAKE_ITEM_FROM_CHARACTER:
 	LDA @VIRTUAL02
 	STA @LOCAL01
 @UNKNOWN2:
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	PHA
 	LDA @VIRTUAL02

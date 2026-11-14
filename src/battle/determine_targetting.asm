@@ -149,7 +149,7 @@ DETERMINE_TARGETTING:
 	STA @VIRTUAL00
 	STA @LOCAL02
 	REP #PROC_FLAGS::ACCUM8
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	CMP #1
 	BEQ @ONLY_ONE_ALLY
@@ -180,7 +180,7 @@ DETERMINE_TARGETTING:
 	JSL COUNT_CHARS
 	DEC
 	JSL RAND_MOD
-	LDA8_STRUCT_MEMBER GAME_STATE, game_state::unknown96
+	LDA8_STRUCT_MEMBER GAME_STATE, game_state::party_member_index
 	STA @VIRTUAL01
 	BRA @RETURN
 @ALLY_ALL:

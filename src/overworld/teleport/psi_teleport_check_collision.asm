@@ -21,7 +21,7 @@ PSI_TELEPORT_CHECK_COLLISION:
 	LDA #0
 	BRA @UNKNOWN1
 @UNKNOWN0:
-	LDA #.LOWORD(GAME_STATE) + game_state::current_party_members
+	LDA #.LOWORD(GAME_STATE) + game_state::first_party_member_entity
 	STA @VIRTUAL02
 	LDX @VIRTUAL02
 	LDA __BSS_START__,X

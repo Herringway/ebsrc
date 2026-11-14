@@ -42,7 +42,7 @@ CREATE_MENU_OPTION_TABLE:
 	CMP #.LOWORD(-1)
 	BEQL @UNKNOWN24
 	LDA @LOCAL0B
-	LDY #window_stats::unknown49
+	LDY #window_stats::menu_columns
 	STA (@LOCAL0A),Y
 	LDA __BSS_START__,X
 	OPTIMIZED_MULT @VIRTUAL04, .SIZEOF(menu_option)

@@ -27,7 +27,7 @@ SWAP_RAISED_HP_PP_WINDOW:
 .ENDIF
 	OPTIMIZED_MULT @VIRTUAL04, 7
 	STA @VIRTUAL02
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	OPTIMIZED_MULT @VIRTUAL04, 7
 	PHA

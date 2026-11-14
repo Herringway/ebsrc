@@ -46,7 +46,7 @@ FIND_MAP_OBJECT:
 @UNKNOWN1:
 	LDA @TMP2
 	STA @LOCAL00
-	LDY GAME_STATE+game_state::current_party_members
+	LDY GAME_STATE+game_state::first_party_member_entity
 	LDA @TMP1
 	ASL
 	ASL

@@ -3,7 +3,7 @@ CLEANUP_TEXT_SCRIPT:
 	REP #PROC_FLAGS::ACCUM8 | PROC_FLAGS::INDEX8 | PROC_FLAGS::CARRY
 	TAX
 	BEQ @UNKNOWN0
-	LDA a:display_text_state::unknown4,X
+	LDA a:display_text_state::restore_window_attributes,X
 	BEQ @UNKNOWN0
 	TXA
 	CLC

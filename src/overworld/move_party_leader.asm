@@ -7,7 +7,7 @@ MOVE_PARTY_LEADER:
 	STACK_RESERVE_INT16
 	STACK_RESERVE_INT16
 	END_STACK_VARS
-	LDX #.LOWORD(GAME_STATE) + game_state::unknown90
+	LDX #.LOWORD(GAME_STATE) + game_state::leader_has_moved
 	LDA __BSS_START__,X
 	STA @LOCAL03
 	LDA #0
@@ -27,7 +27,7 @@ MOVE_PARTY_LEADER:
 	AND #$000F
 	BNEL @UNKNOWN10
 @UNKNOWN1:
-	LDA GAME_STATE+game_state::current_party_members
+	LDA GAME_STATE+game_state::first_party_member_entity
 	ASL
 	TAX
 	LDA ENTITY_SCRIPT_VAR1_TABLE,X
@@ -35,9 +35,9 @@ MOVE_PARTY_LEADER:
 	TAX
 	LDA CHOSEN_FOUR_PTRS,X
 	TAX
-	LDA GAME_STATE + game_state::unknown88
+	LDA GAME_STATE + game_state::leader_position_index
 	STA a:char_struct::position_index,X
-	LDA GAME_STATE + game_state::unknownB0
+	LDA GAME_STATE + game_state::camera_mode
 	BEQ @UNKNOWN2
 	JSR UNKNOWN_C04B53
 	BRA @UNKNOWN6
@@ -58,7 +58,7 @@ MOVE_PARTY_LEADER:
 @UNKNOWN5:
 	JSR HANDLE_NORMAL_MOVEMENT
 @UNKNOWN6:
-	LDA #.LOWORD(GAME_STATE) + game_state::unknown88
+	LDA #.LOWORD(GAME_STATE) + game_state::leader_position_index
 	STA @LOCAL03
 	LDA (@LOCAL03)
 	STA @LOCAL02
@@ -70,7 +70,7 @@ MOVE_PARTY_LEADER:
 	STA @VIRTUAL04
 	LDA #.LOWORD(GAME_STATE) + game_state::leader_y_coord
 	STA @VIRTUAL02
-	LDY GAME_STATE+game_state::current_party_members
+	LDY GAME_STATE+game_state::first_party_member_entity
 	LDX @VIRTUAL02
 	LDA __BSS_START__,X
 	TAX
@@ -80,7 +80,7 @@ MOVE_PARTY_LEADER:
 	LDX @LOCAL00
 	JSL GET_SURFACE_FLAGS_VERTICAL
 	STA GAME_STATE+game_state::trodden_tile_type
-	LDA GAME_STATE + game_state::unknown90
+	LDA GAME_STATE + game_state::leader_has_moved
 	BEQ @UNKNOWN7
 	LDX @VIRTUAL04
 	LDA __BSS_START__,X

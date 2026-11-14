@@ -39,7 +39,7 @@ REDUCE_HP_AMTPERCENT:
 	LDA @VIRTUAL02
 	STA @LOCAL01
 @UNKNOWN1:
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	PHA
 	LDA @VIRTUAL02

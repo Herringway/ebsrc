@@ -37,7 +37,7 @@ UNKNOWN_C0780F:
 	AND #$00FF
 	CMP #1
 	BNE @UNKNOWN3
-	LDA GAME_STATE + game_state::unknown92
+	LDA GAME_STATE + game_state::special_game_state
 	CMP #3
 	BEQ @UNKNOWN2
 	LDA #13
@@ -60,7 +60,7 @@ UNKNOWN_C0780F:
 	LDY #1
 	BRA @UNKNOWN8
 @UNKNOWN5:
-	LDA GAME_STATE + game_state::unknown92
+	LDA GAME_STATE + game_state::special_game_state
 	CMP #3
 	BEQ @UNKNOWN6
 	LDA #12
@@ -105,7 +105,7 @@ UNKNOWN_C0780F:
 @UNKNOWN10:
 	INC POSSESSED_PLAYER_COUNT
 @UNKNOWN11:
-	LDA GAME_STATE + game_state::unknown92
+	LDA GAME_STATE + game_state::special_game_state
 	CMP #6
 	BEQ @UNKNOWN12
 	CMP #4
@@ -116,7 +116,7 @@ UNKNOWN_C0780F:
 	JMP @UNKNOWN28
 @UNKNOWN13:
 	LDX @VIRTUAL04
-	LDA a:char_struct::unknown53,X
+	LDA a:char_struct::character_id,X
 	BNE @UNKNOWN14
 	LDA #6
 	JMP @UNKNOWN28
@@ -148,7 +148,7 @@ UNKNOWN_C0780F:
 @UNKNOWN18:
 	LDY #3
 @UNKNOWN19:
-	LDX GAME_STATE + game_state::unknown92
+	LDX GAME_STATE + game_state::special_game_state
 	CPX #3
 	BNE @UNKNOWN20
 	INY

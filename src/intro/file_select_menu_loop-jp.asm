@@ -413,14 +413,14 @@ FILE_MENU_LOOP:
 	INC @VIRTUAL04
 	LDA @VIRTUAL04
 	STA @LOCAL07
-	LOADPTR INITIAL_STATS, @VIRTUAL06
+	LOADPTR character_initial_stats, @VIRTUAL06
 	LDA @LOCAL03
-	OPTIMIZED_MULT @VIRTUAL04, .SIZEOF(initial_stats)
+	OPTIMIZED_MULT @VIRTUAL04, .SIZEOF(character_initial_stats)
 	STA @VIRTUAL02
 	LDY #0
 	LDA @VIRTUAL02
 	CLC
-	ADC #initial_stats::level
+	ADC #character_initial_stats::level
 	MOVE_INTX @VIRTUAL06, @VIRTUAL0A
 	CLC
 	ADC @VIRTUAL0A
@@ -432,7 +432,7 @@ FILE_MENU_LOOP:
 	JSR RESET_CHAR_LEVEL_ONE
 	LDA @VIRTUAL02
 	CLC
-	ADC #initial_stats::exp
+	ADC #character_initial_stats::exp
 	CLC
 	ADC @VIRTUAL06
 	STA @VIRTUAL06
@@ -475,18 +475,18 @@ FILE_MENU_LOOP:
 	REP #PROC_FLAGS::ACCUM8
 	TYA
 	JSL MEMSET16
-	LOADPTR INITIAL_STATS, @VIRTUAL06
+	LOADPTR character_initial_stats, @VIRTUAL06
 	LDA @LOCAL03
-	OPTIMIZED_MULT @VIRTUAL04, .SIZEOF(initial_stats)
+	OPTIMIZED_MULT @VIRTUAL04, .SIZEOF(character_initial_stats)
 	CLC
-	ADC #initial_stats::items
+	ADC #character_initial_stats::items
 	CLC
 	ADC @VIRTUAL06
 	STA @VIRTUAL06
 	STA @LOCAL00
 	LDA @VIRTUAL06+2
 	STA @LOCAL00+2
-	LDX #.SIZEOF(initial_stats::items)
+	LDX #.SIZEOF(character_initial_stats::items)
 	LDY @LOCAL07
 	TYA
 	JSL MEMCPY16
@@ -499,14 +499,14 @@ FILE_MENU_LOOP:
 	CLC
 	SBC @LOCAL03
 	JUMPGTS @UNKNOWN49
-	LOADPTR INITIAL_STATS, @VIRTUAL06
+	LOADPTR character_initial_stats, @VIRTUAL06
 	MOVE_INT @VIRTUAL06, @LOCAL02
-	LDY #initial_stats::money
+	LDY #character_initial_stats::money
 	LDA [@VIRTUAL06],Y
 	STORE_INT1632 @VIRTUAL06
 	MOVE_INT @VIRTUAL06, GAME_STATE+game_state::money_carried
 	MOVE_INT @LOCAL02, @VIRTUAL06
-	LDY #initial_stats::unknown2
+	LDY #character_initial_stats::unknown2
 	LDA [@VIRTUAL06],Y
 	OPTIMIZED_MULT @VIRTUAL04, 8
 	TAX

@@ -7,7 +7,7 @@ UNKNOWN_C0E196:
 	STACK_RESERVE_INT16
 	STACK_RESERVE_INT16
 	END_STACK_VARS
-	LDA #.LOWORD(GAME_STATE) + game_state::unknown88
+	LDA #.LOWORD(GAME_STATE) + game_state::leader_position_index
 	STA @VIRTUAL04
 	STA @LOCAL03
 	LDX @VIRTUAL04
@@ -27,7 +27,7 @@ UNKNOWN_C0E196:
 	LDA __BSS_START__,X
 	LDX @VIRTUAL02
 	STA a:player_position_buffer_entry::y_coord,X
-	LDY GAME_STATE+game_state::current_party_members
+	LDY GAME_STATE+game_state::first_party_member_entity
 	LDX @LOCAL01
 	LDA __BSS_START__,X
 	TAX

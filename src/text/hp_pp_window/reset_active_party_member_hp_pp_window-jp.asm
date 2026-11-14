@@ -9,7 +9,7 @@ RESET_ACTIVE_PARTY_MEMBER_HP_PP_WINDOW:
 	LDA BATTLE_MENU_CURRENT_CHARACTER_ID
 	OPTIMIZED_MULT @VIRTUAL04, 7
 	STA @VIRTUAL02
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	OPTIMIZED_MULT @VIRTUAL04, 7
 	PHA

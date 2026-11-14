@@ -18,10 +18,10 @@ GET_OFF_BICYCLE:
 @UNKNOWN1:
 	LDA #24
 	JSL DELETE_OVERWORLD_ENTITY
-	STZ GAME_STATE + game_state::unknown92
+	STZ GAME_STATE + game_state::special_game_state
 	STZ GAME_STATE+game_state::walking_style
 	STZ PARTY_CHARACTERS+char_struct::position_index
-	STZ GAME_STATE + game_state::unknown88
+	STZ GAME_STATE + game_state::leader_position_index
 	LDA PENDING_INTERACTIONS
 	BNE @UNKNOWN2
 	JSL OAM_CLEAR

@@ -17,7 +17,7 @@ UNKNOWN_C1952F:
 
 	DISPLAY_TEXT_PTR STATUS_WINDOW_TEXT
 
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	CMP #1
 	BEQ @UNKNOWN0

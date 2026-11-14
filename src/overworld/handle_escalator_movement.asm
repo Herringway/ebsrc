@@ -49,7 +49,7 @@ HANDLE_ESCALATOR_MOVEMENT:
 	LDA @LOCAL03
 	STA @VIRTUAL02
 	STA @LOCAL00
-	LDY GAME_STATE+game_state::current_party_members
+	LDY GAME_STATE+game_state::first_party_member_entity
 	LDX GAME_STATE+game_state::leader_y_coord
 	LDA GAME_STATE+game_state::leader_x_coord
 	JSL CHECK_MOVEMENT_MAP_COLLISION
@@ -107,6 +107,6 @@ HANDLE_ESCALATOR_MOVEMENT:
 	MOVE_INT_YPTRDEST @VIRTUAL06, __BSS_START__
 @UNKNOWN8:
 	LDA #1
-	STA GAME_STATE + game_state::unknown90
+	STA GAME_STATE + game_state::leader_has_moved
 @UNKNOWN9:
 	END_C_FUNCTION

@@ -19,7 +19,7 @@ UNKNOWN_C0369B:
 	CPY #5
 	BCC @UNKNOWN1
 @UNKNOWN0:
-	LDA GAME_STATE + game_state::unknown96,X
+	LDA GAME_STATE + game_state::party_member_index,X
 	AND #$00FF
 	BEQ @UNKNOWN5
 	AND #$00FF
@@ -31,7 +31,7 @@ UNKNOWN_C0369B:
 	STX @LOCAL05
 	BRA @UNKNOWN0
 @UNKNOWN1:
-	LDA GAME_STATE + game_state::unknown96,X
+	LDA GAME_STATE + game_state::party_member_index,X
 	AND #$00FF
 	BEQ @UNKNOWN5
 	AND #$00FF
@@ -62,7 +62,7 @@ UNKNOWN_C0369B:
 	BRA @UNKNOWN1
 @UNKNOWN5:
 	LDX @LOCAL05
-	LDA GAME_STATE + game_state::unknown96,X
+	LDA GAME_STATE + game_state::party_member_index,X
 	AND #$00FF
 	BEQ @UNKNOWN8
 	LDA #5
@@ -80,8 +80,8 @@ UNKNOWN_C0369B:
 	STA @VIRTUAL02
 	LDX @VIRTUAL02
 	SEP #PROC_FLAGS::ACCUM8
-	LDA __BSS_START__ + game_state::unknown96,X
-	LDY #game_state::unknown96
+	LDA __BSS_START__ + game_state::party_member_index,X
+	LDY #game_state::party_member_index
 	STA (@LOCAL02),Y
 	REP #PROC_FLAGS::ACCUM8
 	LDA @LOCAL03
@@ -90,9 +90,9 @@ UNKNOWN_C0369B:
 	LDA @VIRTUAL04
 	ASL
 	TAX
-	LDA GAME_STATE + game_state::unknownA2,X
+	LDA GAME_STATE + game_state::party_entities,X
 	PLX
-	STA GAME_STATE + game_state::unknownA2,X
+	STA GAME_STATE + game_state::party_entities,X
 	LDX @VIRTUAL02
 	SEP #PROC_FLAGS::ACCUM8
 	LDA __BSS_START__+game_state::player_controlled_party_members,X
@@ -113,7 +113,7 @@ UNKNOWN_C0369B:
 	LDY @LOCAL06
 	TYA
 	SEP #PROC_FLAGS::ACCUM8
-	STA GAME_STATE + game_state::unknown96,X
+	STA GAME_STATE + game_state::party_member_index,X
 	REP #PROC_FLAGS::ACCUM8
 	LDA #.LOWORD(GAME_STATE) + game_state::party_count
 	PHA
@@ -131,7 +131,7 @@ UNKNOWN_C0369B:
 	LDA @LOCAL02
 	OPTIMIZED_MULT @VIRTUAL04, .SIZEOF(character_initial_entity_entry)
 	CLC
-	ADC #character_initial_entity_entry::unknown6
+	ADC #character_initial_entity_entry::initial_entity_slot
 	TAX
 	LDA f:CHARACTER_INITIAL_ENTITY_DATA,X
 	STA @LOCAL06
@@ -147,7 +147,7 @@ UNKNOWN_C0369B:
 	ASL
 	TAX
 	LDA @LOCAL06
-	STA GAME_STATE + game_state::unknownA2,X
+	STA GAME_STATE + game_state::party_entities,X
 	LDA @LOCAL06
 	STA NEW_ENTITY_VAR1
 	SEC
@@ -166,13 +166,13 @@ UNKNOWN_C0369B:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA GAME_STATE + game_state::unknown88
+	LDA GAME_STATE + game_state::leader_position_index
 	STA PARTY_CHARACTERS+char_struct::position_index,X
 	BRA @UNKNOWN13
 @UNKNOWN10:
 	CPX #0
 	BNE @UNKNOWN11
-	LDA GAME_STATE + game_state::unknown88
+	LDA GAME_STATE + game_state::leader_position_index
 	STA @LOCAL04
 	BRA @UNKNOWN12
 @UNKNOWN11:
@@ -180,7 +180,7 @@ UNKNOWN_C0369B:
 	DEC
 	ASL
 	TAX
-	LDA GAME_STATE + game_state::unknownA2,X
+	LDA GAME_STATE + game_state::party_entities,X
 	ASL
 	TAX
 	LDA ENTITY_SCRIPT_VAR1_TABLE,X
@@ -216,7 +216,7 @@ UNKNOWN_C0369B:
 	STA @VIRTUAL04
 	LDA PLAYER_POSITION_BUFFER + player_position_buffer_entry::y_coord,X
 	STA @VIRTUAL02
-	LDA GAME_STATE + game_state::unknown92
+	LDA GAME_STATE + game_state::special_game_state
 	CMP #3
 	BEQ @UNKNOWN16
 	LDA @LOCAL02
@@ -250,7 +250,7 @@ UNKNOWN_C0369B:
 	CLC
 	ADC @VIRTUAL0A
 	STA @VIRTUAL0A
-	LDA [@VIRTUAL0A] ;character_initial_entity_entry::actionscript_id
+	LDA [@VIRTUAL0A] ;character_initial_entity_entry::actionscript
 	TAX
 	LDA @LOCAL05
 	JSL CREATE_ENTITY
@@ -266,14 +266,14 @@ UNKNOWN_C0369B:
 	SEC
 	SBC BG1_Y_POS
 	STA ENTITY_SCREEN_Y_TABLE,X
-	LDY #.LOWORD(GAME_STATE) + game_state::current_party_members
+	LDY #.LOWORD(GAME_STATE) + game_state::first_party_member_entity
 	STY @LOCAL05
-	LDA GAME_STATE + game_state::unknown96
+	LDA GAME_STATE + game_state::party_member_index
 	AND #$00FF
 	DEC
 	OPTIMIZED_MULT @VIRTUAL04, .SIZEOF(character_initial_entity_entry)
 	CLC
-	ADC #character_initial_entity_entry::unknown6
+	ADC #character_initial_entity_entry::initial_entity_slot
 	CLC
 	ADC @VIRTUAL06
 	STA @VIRTUAL06
@@ -281,7 +281,7 @@ UNKNOWN_C0369B:
 	STA __BSS_START__,Y
 	JSL UNKNOWN_C09CD7
 	JSL UPDATE_PARTY_NPCS
-	LDA GAME_STATE + game_state::unknownA2
+	LDA GAME_STATE + game_state::party_entities
 	LDY @LOCAL05
 	STA __BSS_START__,Y
 	JSL UPDATE_PARTY

@@ -13,7 +13,7 @@ FIND_NEARBY_TALKABLE_TPT_ENTRY:
 	STA @LOCAL01
 	CMP #.LOWORD(-1)
 	BEQ @UNKNOWN0
-	LDX #.LOWORD(GAME_STATE) + game_state::current_party_members
+	LDX #.LOWORD(GAME_STATE) + game_state::first_party_member_entity
 	STX @LOCAL00
 	LDA __BSS_START__,X
 	ASL

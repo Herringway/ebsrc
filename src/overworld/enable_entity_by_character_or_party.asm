@@ -34,10 +34,10 @@ ENABLE_ENTITY_BY_CHARACTER_OR_PARTY:
 	CLC
 	ADC #.LOWORD(GAME_STATE)
 	TAX
-	LDA a:game_state::unknownA2,X
+	LDA a:game_state::party_entities,X
 .ELSE
 	TAX
-	LDA GAME_STATE + game_state::unknownA2,X
+	LDA GAME_STATE + game_state::party_entities,X
 .ENDIF
 	ASL
 	CLC

@@ -66,7 +66,7 @@ RESET_HPPP_ROLLING:
 @UNKNOWN3:
 	INC @VIRTUAL02
 @UNKNOWN4:
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	STA @VIRTUAL04
 	LDA @VIRTUAL02

@@ -53,7 +53,7 @@ UPDATE_HPPP_METER_TILES:
 	CLC
 	ADC #96
 	STA @VIRTUAL02
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	OPTIMIZED_MULT @VIRTUAL04, 7
 	PHA

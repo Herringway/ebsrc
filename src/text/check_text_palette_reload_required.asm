@@ -2,7 +2,7 @@
 CHECK_TEXT_PALETTE_RELOAD_REQUIRED:
 	BEGIN_C_FUNCTION
 	END_STACK_VARS
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 .IF .DEFINED(JPN)
 	DEC

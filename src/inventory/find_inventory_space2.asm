@@ -38,7 +38,7 @@ FIND_INVENTORY_SPACE2:
 	INY
 	STY @LOCAL01
 @UNKNOWN2:
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	STA @VIRTUAL02
 	TYA

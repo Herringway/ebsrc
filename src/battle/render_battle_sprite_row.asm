@@ -41,7 +41,7 @@ RENDER_BATTLE_SPRITE_ROW:
 	BEQL @UNKNOWN11
 	LDA @VIRTUAL02
 	CLC
-	ADC #battler::unknown72
+	ADC #battler::sprite_blink_frames
 	TAX
 	LDA __BSS_START__,X
 	AND #$00FF
@@ -58,7 +58,7 @@ RENDER_BATTLE_SPRITE_ROW:
 @UNKNOWN6:
 	LDA @VIRTUAL02
 	CLC
-	ADC #battler::unknown73
+	ADC #battler::enemy_attack_flash_frames
 	TAX
 	LDA __BSS_START__,X
 	AND #$00FF
@@ -123,7 +123,7 @@ RENDER_BATTLE_SPRITE_ROW:
 	LDA ENEMY_TARGETTING_FLASHING
 	BEQ @UNKNOWN10
 	LDX @VIRTUAL02
-	LDA a:battler::unknown74,X
+	LDA a:battler::is_flashing,X
 	AND #$00FF
 	BEQ @UNKNOWN9
 	LDA FRAME_COUNTER

@@ -20,7 +20,7 @@ CC_1D_19:
 @ARG_IS_NONZERO:
 	MOVE_INT @VIRTUAL06, @VIRTUAL0A
 	SEP #PROC_FLAGS::ACCUM8
-	MOVE_INT832 GAME_STATE+game_state::player_controlled_party_count, @VIRTUAL06
+	MOVE_INT832 GAME_STATE+game_state::player_controlled_party_member_count, @VIRTUAL06
 	REP #PROC_FLAGS::ACCUM8
 	LDA @VIRTUAL06
 	CMP @VIRTUAL0A

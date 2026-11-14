@@ -133,7 +133,7 @@ SELECTION_MENU:
 @UNKNOWN8:
 	BEQ @UNKNOWN11
 	LDX @VIRTUAL04
-	LDA a:menu_option::unknown0,X
+	LDA a:menu_option::type,X
 	CMP #1
 	BNE @UNKNOWN9
 	LDA @LOCAL08
@@ -487,7 +487,7 @@ SELECTION_MENU:
 	LDY #window_stats::selected_option
 	STA (@LOCAL0A),Y
 	LDX @VIRTUAL04
-	LDA a:menu_option::unknown0,X
+	LDA a:menu_option::type,X
 	CMP #1
 	BNE @UNKNOWN29
 	LDA @LOCAL08

@@ -9,7 +9,7 @@ UNKNOWN_C04FFE:
 	STACK_RESERVE_INT16
 	STACK_RESERVE_RETURN_INT16
 	END_STACK_VARS
-	LDA GAME_STATE + game_state::unknownB0
+	LDA GAME_STATE + game_state::camera_mode
 	CMP #2
 	BNE @UNKNOWN0
 	LDA #1
@@ -191,7 +191,7 @@ UNKNOWN_C04FFE:
 	LDX CURRENT_PARTY_MEMBER_TICK
 	STZ a:char_struct::current_hp,X
 	LDX CURRENT_PARTY_MEMBER_TICK
-	LDA a:char_struct::unknown59,X
+	LDA a:char_struct::entity_slot,X
 	ASL
 	TAX
 	LDA #16
@@ -216,7 +216,7 @@ UNKNOWN_C04FFE:
 	CLC
 	ADC #.LOWORD(GAME_STATE)
 	TAX
-	LDA __BSS_START__+game_state::unknown96,X
+	LDA __BSS_START__+game_state::party_member_index,X
 	AND #$00FF
 	BEQ @UNKNOWN25
 	AND #$00FF

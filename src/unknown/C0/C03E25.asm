@@ -14,7 +14,7 @@ UNKNOWN_C03E25:
 	LDA @LOCAL00
 	STA @VIRTUAL02
 	INC @VIRTUAL02
-	LDA GAME_STATE + game_state::unknown96,X
+	LDA GAME_STATE + game_state::party_member_index,X
 	AND #$00FF
 	CMP @VIRTUAL02
 	BNE @UNKNOWN0
@@ -24,7 +24,7 @@ UNKNOWN_C03E25:
 	BRA @UNKNOWN3
 @UNKNOWN2:
 	DEX
-	LDA GAME_STATE + game_state::unknown96,X
+	LDA GAME_STATE + game_state::party_member_index,X
 	AND #$00FF
 @UNKNOWN3:
 	END_C_FUNCTION

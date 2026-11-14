@@ -38,7 +38,7 @@ AUTOLIFEUP:
 	LDY #.SIZEOF(char_struct)
 	JSL MULT168
 	TAX
-	LDA PARTY_CHARACTERS+char_struct::unknown94,X
+	LDA PARTY_CHARACTERS+char_struct::is_auto_healed,X
 	AND #$00FF
 	BNE @UNKNOWN2
 	LDA PARTY_CHARACTERS+char_struct::afflictions,X
@@ -78,7 +78,7 @@ AUTOLIFEUP:
 	TAX
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #$01
-	STA PARTY_CHARACTERS+char_struct::unknown94,X
+	STA PARTY_CHARACTERS+char_struct::is_auto_healed,X
 @UNKNOWN4:
 	REP #PROC_FLAGS::ACCUM8
 	LDA @VIRTUAL04

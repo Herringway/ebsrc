@@ -32,10 +32,10 @@ ACTIONSCRIPT_INITIALIZE_PARTY_MEMBER:
 	ADC #.LOWORD(PARTY_CHARACTERS)
 	TAX
 	LDA @VIRTUAL02
-	STA a:char_struct::unknown59,X
+	STA a:char_struct::entity_slot,X
 	LDY @LOCAL00
 	LDA ENTITY_SCRIPT_VAR0_TABLE,Y
-	STA a:char_struct::unknown53,X
+	STA a:char_struct::character_id,X
 	STZ a:char_struct::unknown57,X
 	LDA #.LOWORD(-1)
 	STA a:char_struct::unknown92,X
@@ -47,7 +47,7 @@ ACTIONSCRIPT_INITIALIZE_PARTY_MEMBER:
 	LDX @VIRTUAL04
 	STA __BSS_START__,X
 @UNKNOWN0:
-	LDA GAME_STATE + game_state::current_party_members
+	LDA GAME_STATE + game_state::first_party_member_entity
 	ASL
 	STA FOOTSTEP_SOUND_IGNORE_ENTITY
 	END_C_FUNCTION

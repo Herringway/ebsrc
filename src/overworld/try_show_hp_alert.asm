@@ -36,7 +36,7 @@ TRY_SHOW_HP_ALERT:
 	LDA HP_ALERT_SHOWN,X
 	BNE @UNKNOWN0
 	LDX @LOCAL00
-	LDA a:char_struct::unknown53,X
+	LDA a:char_struct::character_id,X
 	INC
 	JSL SHOW_HP_ALERT
 @UNKNOWN0:

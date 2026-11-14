@@ -56,7 +56,7 @@ PARTY_LEADER_TICK:
 @UNKNOWN7:
 	LDA DAD_PHONE_TIMER
 	BNE @UNKNOWN8
-	LDA GAME_STATE + game_state::unknownB0
+	LDA GAME_STATE + game_state::camera_mode
 	CMP #2
 	BEQ @UNKNOWN8
 	JSL LOAD_DAD_PHONE
@@ -64,10 +64,10 @@ PARTY_LEADER_TICK:
 	STZ POSSESSED_PLAYER_COUNT
 	LDA GAME_STATE+game_state::leader_direction
 	STA CURRENT_LEADER_DIRECTION
-	LDA GAME_STATE+game_state::current_party_members
+	LDA GAME_STATE+game_state::first_party_member_entity
 	ASL
 	STA CURRENT_LEADING_PARTY_MEMBER_ENTITY
-	LDA GAME_STATE + game_state::unknown90
+	LDA GAME_STATE + game_state::leader_has_moved
 	BEQ @UNKNOWN9
 	LDA #1
 	STA PLAYER_HAS_DONE_SOMETHING_THIS_FRAME

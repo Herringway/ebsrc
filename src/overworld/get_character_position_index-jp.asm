@@ -22,7 +22,7 @@ GET_CHARACTER_POSITION_INDEX:
 	CLC
 	ADC #.LOWORD(GAME_STATE)
 	TAX
-	LDA a:game_state::unknown96,X
+	LDA a:game_state::party_member_index,X
 	AND #$00FF
 	CMP @VIRTUAL02
 	BNE @UNKNOWN0
@@ -36,7 +36,7 @@ GET_CHARACTER_POSITION_INDEX:
 	CLC
 	ADC #.LOWORD(GAME_STATE)
 	TAX
-	LDA a:game_state::unknownA2,X
+	LDA a:game_state::party_entities,X
 	ASL
 	TAX
 	LDA ENTITY_SCRIPT_VAR1_TABLE,X

@@ -495,7 +495,7 @@ OVERWORLD_PSI_MENU:
 	STY @LOCAL06
 @UNKNOWN27:
 	STY @VIRTUAL02
-	LDA GAME_STATE+game_state::player_controlled_party_count
+	LDA GAME_STATE+game_state::player_controlled_party_member_count
 	AND #$00FF
 	CLC
 	SBC @VIRTUAL02

@@ -253,7 +253,7 @@ CREATE_WINDOW:
 	STA a:window_stats::option_count,X
 	STA a:window_stats::current_option,X
 	LDA #1
-	STA a:window_stats::unknown49,X
+	STA a:window_stats::menu_columns,X
 	STA a:window_stats::menu_page_number,X
 	MOVE_INT_CONSTANT NULL, @VIRTUAL06
 	TXA
@@ -295,7 +295,7 @@ CREATE_WINDOW:
 .IF .DEFINED(USA)
 	LDX @LOCAL01
 .ENDIF
-	LDA a:window_stats::unknown59,X
+	LDA a:window_stats::title_id,X
 	AND #$00FF
 	BEQ @UNKNOWN12
 	AND #$00FF
@@ -308,7 +308,7 @@ CREATE_WINDOW:
 	LDX @LOCAL01
 	SEP #PROC_FLAGS::ACCUM8
 	STZ a:window_stats::title,X
-	STZ a:window_stats::unknown59,X
+	STZ a:window_stats::title_id,X
 	JSL UNKNOWN_C45E96
 	SEP #PROC_FLAGS::ACCUM8
 	LDA #1
