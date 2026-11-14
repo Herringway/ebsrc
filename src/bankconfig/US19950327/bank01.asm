@@ -784,7 +784,7 @@
 
 .INCLUDE "misc/swap_raised_hp_pp_window_redirect.asm"
 
-.INCLUDE "unknown/C3/C3E6F8_redirect.asm"
+.INCLUDE "text/hp_pp_window/reset_active_party_member_hp_pp_window_redirect.asm"
 
 .INCLUDE "text/selection_menu_setup.asm"
 
