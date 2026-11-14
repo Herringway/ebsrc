@@ -1268,11 +1268,11 @@
 
 .INCLUDE "overworld/teleport/psi_teleport_fail.asm"
 
-.INCLUDE "misc/teleport_freezeobjects.asm"
+.INCLUDE "overworld/teleport/teleport_freezeobjects.asm"
 
-.INCLUDE "misc/teleport_freezeobjects2.asm"
+.INCLUDE "overworld/teleport/teleport_freezeobjects2.asm"
 
-.INCLUDE "misc/teleport_mainloop.asm"
+.INCLUDE "overworld/teleport/teleport_mainloop.asm"
 
 .INCLUDE "unknown/C0/C0EBAA-jp.asm"
 
