@@ -629,7 +629,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "overworld/actionscript/update_actionscript_animation_frame-jp.asm"
 
-.INCLUDE "system/load_window_gfx-jp.asm"
+.INCLUDE "system/prepare_window_graphics-jp.asm"
 
 .INCLUDE "text/load_text_palette-jp.asm"
 

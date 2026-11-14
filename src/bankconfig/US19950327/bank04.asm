@@ -737,7 +737,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "overworld/actionscript/update_actionscript_animation_frame.asm"
 
-.INCLUDE "system/load_window_gfx.asm"
+.INCLUDE "system/prepare_window_graphics.asm"
 
 .INCLUDE "text/load_text_palette.asm"
 
