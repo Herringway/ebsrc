@@ -1,0 +1,7 @@
+
+CLEAR_CAMERA_FOCUS:
+	BEGIN_C_FUNCTION_FAR
+	END_STACK_VARS
+	STZ GAME_STATE + game_state::unknown90
+	STZ GAME_STATE + game_state::unknownB0
+	END_C_FUNCTION
