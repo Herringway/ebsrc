@@ -10,7 +10,7 @@ SRAM: ;For pointers.
 SAVE_BASE:
 
 .ORG $316000
-UNKNOWN_316000:
+REPLAY_SRAM:
 	.RES .SIZEOF(game_state)
 UNKNOWN_3161D9:
 	.RES .SIZEOF(char_struct) * 6
