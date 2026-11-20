@@ -870,17 +870,17 @@
 
 .INCLUDE "overworld/party_member_update_screen_position.asm"
 
-.INCLUDE "data/unknown/C0A2AB.asm"
+.INCLUDE "data/party_slot_distance_cardinal.asm"
 
 .INCLUDE "overworld/party_get_distance_adjustment_up_down.asm"
 
 .INCLUDE "overworld/party_get_distance_adjustment_left_right.asm"
 
-.INCLUDE "data/unknown/C0A30B.asm"
+.INCLUDE "data/party_slot_distance_diagonal.asm"
 
 .INCLUDE "overworld/party_get_distance_adjustment_diagonal.asm"
 
-.INCLUDE "data/unknown/C0A350.asm"
+.INCLUDE "data/party_distance_adjustment_by_direction.asm"
 
 .INCLUDE "unknown/C0/C0A360.asm"
 
@@ -1054,13 +1054,13 @@
 
 .INCLUDE "data/dma_target_registers.asm"
 
-.INCLUDE "data/unknown/C0AE26.asm"
+.INCLUDE "data/animated_background_layer1_hdma_table_template.asm"
 
-.INCLUDE "data/unknown/C0AE2D.asm"
+.INCLUDE "data/animated_background_layer2_hdma_table_template.asm"
 
 .INCLUDE "unknown/C0/C0AE34.asm"
 
-.INCLUDE "data/unknown/C0AE44.asm"
+.INCLUDE "data/hdma_disable_masks.asm"
 
 .INCLUDE "misc/battlebgs/load_bg_offset_parameters.asm"
 
@@ -1070,7 +1070,7 @@
 
 .INCLUDE "unknown/C0/C0AFCD.asm"
 
-.INCLUDE "data/unknown/C0AFF1.asm"
+.INCLUDE "data/layer_config.asm"
 
 .INCLUDE "system/set_coldata.asm"
 
@@ -1078,7 +1078,7 @@
 
 .INCLUDE "system/set_window_mask.asm"
 
-.INCLUDE "data/unknown/C0B0A6.asm"
+.INCLUDE "data/window_mask_setting_presets.asm"
 
 .INCLUDE "unknown/C0/C0B0AA.asm"
 
@@ -1182,7 +1182,7 @@
 
 .INCLUDE "unknown/C0/C0CEBE.asm"
 
-.INCLUDE "data/unknown/C0CF58.asm"
+.INCLUDE "data/clockwise_spiral.asm"
 
 .INCLUDE "overworld/actionscript/search_for_collision.asm"
 
