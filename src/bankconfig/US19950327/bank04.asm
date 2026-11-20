@@ -385,7 +385,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "data/text/name_entry_grid_character_offset_table.asm"
 
-.INCLUDE "data/unknown/C20958.asm"
+.INCLUDE "data/reserved_bg2_tilemap.asm"
 
 .INCLUDE "data/text/locked_tiles.asm"
 
