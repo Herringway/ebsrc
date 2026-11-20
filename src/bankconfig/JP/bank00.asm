@@ -338,7 +338,11 @@
 
 .INCLUDE "overworld/door_transition.asm"
 
-.INCLUDE "data/unknown/C06E02.asm"
+.INCLUDE "data/map/escalator_entry_offsets_x.asm"
+
+.INCLUDE "data/map/escalator_exit_offsets_x.asm"
+
+.INCLUDE "data/map/stair_input_direction_map.asm"
 
 .INCLUDE "unknown/C0/C06E1A.asm"
 
