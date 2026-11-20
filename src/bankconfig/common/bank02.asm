@@ -17,7 +17,11 @@
 
 .INCLUDE "overworld/inflict_sunstroke_check.asm"
 
-.INCLUDE "data/unknown/C200B9.asm"
+.INCLUDE "data/map/collision_test_coord_diffs_x.asm"
+
+.INCLUDE "data/map/collision_test_coord_diffs_y.asm"
+
+.INCLUDE "data/map/diagonal_collision_masks.asm"
 
 .INCLUDE "text/initialize_text_system.asm"
 
@@ -46,7 +50,7 @@
 .IF .DEFINED(USA) && (!.DEFINED(PROTOTYPE19950327))
     .INCLUDE "data/text/name_entry_grid_character_offset_table.asm"
   
-    .INCLUDE "data/unknown/C20958.asm"
+    .INCLUDE "data/reserved_bg2_tilemap.asm"
   
     .INCLUDE "data/text/the.asm"
   
