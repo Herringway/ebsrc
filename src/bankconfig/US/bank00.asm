@@ -338,7 +338,11 @@
 
 .INCLUDE "overworld/door_transition.asm"
 
-.INCLUDE "data/unknown/C06E02.asm"
+.INCLUDE "data/map/escalator_entry_offsets_x.asm"
+
+.INCLUDE "data/map/escalator_exit_offsets_x.asm"
+
+.INCLUDE "data/map/stair_input_direction_map.asm"
 
 .INCLUDE "unknown/C0/C06E1A.asm"
 
@@ -536,7 +540,7 @@
 
 .INCLUDE "data/dma_table.asm"
 
-.INCLUDE "data/unknown/C08FC2.asm"
+.INCLUDE "data/unknown/C08FE6.asm"
 
 .INCLUDE "system/math/mult8.asm"
 
@@ -704,15 +708,15 @@
 
 .INCLUDE "overworld/actionscript/script/0D.asm"
 
-.INCLUDE "data/unknown/C09ABD.asm"
+.INCLUDE "data/binop_pointers.asm"
 
-.INCLUDE "unknown/C0/C09AC5.asm"
+.INCLUDE "overworld/actionscript/binop_and.asm"
 
-.INCLUDE "unknown/C0/C09ACC.asm"
+.INCLUDE "overworld/actionscript/binop_or.asm"
 
-.INCLUDE "unknown/C0/C09AD3.asm"
+.INCLUDE "overworld/actionscript/binop_add.asm"
 
-.INCLUDE "unknown/C0/C09ADB.asm"
+.INCLUDE "overworld/actionscript/binop_xor.asm"
 
 .INCLUDE "overworld/actionscript/script/0E.asm"
 
@@ -866,17 +870,17 @@
 
 .INCLUDE "overworld/party_member_update_screen_position.asm"
 
-.INCLUDE "data/unknown/C0A2AB.asm"
+.INCLUDE "data/party_slot_distance_cardinal.asm"
 
 .INCLUDE "overworld/party_get_distance_adjustment_up_down.asm"
 
 .INCLUDE "overworld/party_get_distance_adjustment_left_right.asm"
 
-.INCLUDE "data/unknown/C0A30B.asm"
+.INCLUDE "data/party_slot_distance_diagonal.asm"
 
 .INCLUDE "overworld/party_get_distance_adjustment_diagonal.asm"
 
-.INCLUDE "data/unknown/C0A350.asm"
+.INCLUDE "data/party_distance_adjustment_by_direction.asm"
 
 .INCLUDE "unknown/C0/C0A360.asm"
 
@@ -1050,13 +1054,13 @@
 
 .INCLUDE "data/dma_target_registers.asm"
 
-.INCLUDE "data/unknown/C0AE26.asm"
+.INCLUDE "data/animated_background_layer1_hdma_table_template.asm"
 
-.INCLUDE "data/unknown/C0AE2D.asm"
+.INCLUDE "data/animated_background_layer2_hdma_table_template.asm"
 
 .INCLUDE "unknown/C0/C0AE34.asm"
 
-.INCLUDE "data/unknown/C0AE44.asm"
+.INCLUDE "data/hdma_disable_masks.asm"
 
 .INCLUDE "misc/battlebgs/load_bg_offset_parameters.asm"
 
@@ -1066,7 +1070,7 @@
 
 .INCLUDE "unknown/C0/C0AFCD.asm"
 
-.INCLUDE "data/unknown/C0AFF1.asm"
+.INCLUDE "data/layer_config.asm"
 
 .INCLUDE "system/set_coldata.asm"
 
@@ -1074,7 +1078,7 @@
 
 .INCLUDE "system/set_window_mask.asm"
 
-.INCLUDE "data/unknown/C0B0A6.asm"
+.INCLUDE "data/window_mask_setting_presets.asm"
 
 .INCLUDE "unknown/C0/C0B0AA.asm"
 
@@ -1178,7 +1182,7 @@
 
 .INCLUDE "unknown/C0/C0CEBE.asm"
 
-.INCLUDE "data/unknown/C0CF58.asm"
+.INCLUDE "data/clockwise_spiral.asm"
 
 .INCLUDE "overworld/actionscript/search_for_collision.asm"
 
