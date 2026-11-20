@@ -1,7 +1,6 @@
 
-; Palettes used for (TODO: figure out what these are used for)
-; Seem to be related to attack types - physical, psi, other
-UNKNOWN_C3F8F1:
+; Palettes used for the brief sprite flash when an enemy is attacking
+ENEMY_USING_ATTACK_PALETTES:
 	RGB 0, 0, 0
 	RGB 27, 28, 29
 	RGB 27, 28, 29
