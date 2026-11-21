@@ -734,7 +734,7 @@
 
 .INCLUDE "battle/prepare_battle_psi_menu_options.asm"
 
-.INCLUDE "unknown/C1/C1CB7F.asm"
+.INCLUDE "battle/character_knows_any_battle_psi_by_type.asm"
 
 .INCLUDE "battle/battle_psi_menu.asm"
 
