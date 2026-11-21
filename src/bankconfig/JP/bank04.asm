@@ -659,17 +659,17 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "data/unknown/C48C59.asm"
 
-.INCLUDE "unknown/C4/C48C69.asm"
+.INCLUDE "system/demos/clear_auto_movement_demo.asm"
 
-.INCLUDE "unknown/C4/C48C97.asm"
+.INCLUDE "system/demos/record_auto_movement_demo_frame.asm"
 
 .INCLUDE "data/unknown/C48D38.asm"
 
-.INCLUDE "unknown/C4/C48D58-jp.asm"
+.INCLUDE "system/demos/record_auto_movement_demo-jp.asm"
 
-.INCLUDE "unknown/C4/C48E6B.asm"
+.INCLUDE "system/demos/record_auto_movement_demo_n_frames_direction.asm"
 
-.INCLUDE "unknown/C4/C48E95.asm"
+.INCLUDE "system/demos/finish_auto_movement_demo_and_start.asm"
 
 .INCLUDE "inventory/is_valid_item_transformation.asm"
 
