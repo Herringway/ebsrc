@@ -168,7 +168,9 @@ NINTENDO_ITOI_PALETTE:
 		LOCALEBINARY "intro/title_screen.pal.lzhal"
 .ENDIF
 
-.INCLUDE "data/unknown/E1CE08.asm"
+.INCLUDE "data/title_screen_letter_spritemaps.asm"
+
+.INCLUDE "data/title_screen_letter_spritemap_pointers.asm"
 
 UNKNOWN_E1CFAF:
 	BINARY "E1CFAF.gfx.lzhal"
@@ -183,7 +185,7 @@ UNKNOWN_E1D5E8:
 	CAST_NAMES_GFX:
 		LOCALEBINARY "ending/cast_names.gfx.lzhal"
 
-	.INCLUDE "data/unknown/E1D815.asm"
+	.INCLUDE "data/cast_text_palette.asm"
 .ELSE
 	UNKNOWN_E1D6E1:
 		LOCALEBINARY "E1D6E1.gfx.lzhal"
@@ -205,7 +207,7 @@ STAFF_CREDITS_FONT_PALETTE:
 
 .INCLUDE "data/unknown/E1E924.asm"
 
-.INCLUDE "data/unknown/E1E94A.asm"
+.INCLUDE "data/credits_photograph_border_tilemap.asm"
 
 TOWN_MAP_LABEL_GFX:
 	LOCALEBINARY "town_maps/label.gfx.lzhal"
@@ -221,7 +223,7 @@ TOWN_MAP_ICON_PALETTE:
 
 .INCLUDE "data/unknown/E1F44C.asm"
 
-.INCLUDE "data/unknown/E1F47A.asm"
+.INCLUDE "data/map/blinking_town_map_icons.asm"
 
 .INCLUDE "data/map/town_map_icon_placement_pointer_table.asm"
 
