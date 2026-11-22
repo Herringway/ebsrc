@@ -6,5 +6,5 @@ UNKNOWN_C46B41:
 	.WORD $0005
 	.WORD $0006
 	.WORD $0007
-	.WORD $0007
+	.WORD $0007 ;presumably a bug
 	.WORD $0001
