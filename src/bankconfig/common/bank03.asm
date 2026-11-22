@@ -2042,7 +2042,11 @@ SPRITE_GROUP_PALETTES:
 	.INCLUDE "data/text/window_configuration_table.asm"
 .ENDIF
 
-.INCLUDE "data/unknown/C3E3F8.asm"
+.INCLUDE "data/text/hppp_meter_label_tiles.asm"
+
+.INCLUDE "data/unknown/C3E400.asm"
+
+.INCLUDE "data/text/selection_cursor_tiles.asm"
 
 .INCLUDE "data/auto_battle_arrangement.asm"
 

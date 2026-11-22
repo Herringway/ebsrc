@@ -1314,7 +1314,7 @@
 
 .INCLUDE "data/sram_signature.asm"
 
-.INCLUDE "data/unknown/EF05A6.asm"
+.INCLUDE "data/sram_slot_bitmasks.asm"
 
 .INCLUDE "system/saves/erase_save_block.asm"
 

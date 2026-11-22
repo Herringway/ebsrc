@@ -1,0 +1,3 @@
+
+HPPP_METER_LABEL_TILES:
+	.BYTE $08, $09, $18, $19, $0A, $09, $1A, $19
