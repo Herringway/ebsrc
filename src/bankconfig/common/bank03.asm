@@ -1996,7 +1996,9 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/events/C3DFD4.asm"
 
-.INCLUDE "data/unknown/C3DFE8.asm"
+.INCLUDE "data/map/legal_delivery_area_types.asm"
+
+.INCLUDE "data/unused/C3DFF0.asm"
 
 .INCLUDE "data/map/character_initial_entity_data.asm"
 
@@ -2006,33 +2008,33 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/map/allowed_input_directions.asm"
 
-.INCLUDE "data/unknown/C3E148.asm"
+.INCLUDE "data/map/npc_search_x_offsets.asm"
 
-.INCLUDE "data/unknown/C3E158.asm"
+.INCLUDE "data/map/npc_search_y_offsets.asm"
 
-.INCLUDE "data/unknown/C3E168.asm"
+.INCLUDE "data/map/opposite_cardinals.asm"
 
 .INCLUDE "data/map/mushroomization_direction_remap_tables.asm"
 
-.INCLUDE "data/unknown/C3E1D8.asm"
+.INCLUDE "data/map/transition_directions.asm"
 
 .INCLUDE "data/unknown/C3E1E0.asm"
 
-.INCLUDE "data/unknown/C3E200.asm"
+.INCLUDE "data/map/staircase_entry_directions.asm"
 
-.INCLUDE "data/unknown/C3E208.asm"
+.INCLUDE "data/map/staircase_exit_directions.asm"
 
-.INCLUDE "data/unknown/C3E210.asm"
+.INCLUDE "data/map/staircase_start_offset_x.asm"
 
-.INCLUDE "data/unknown/C3E218.asm"
+.INCLUDE "data/map/staircase_start_offset_y.asm"
 
-.INCLUDE "data/unknown/C3E220.asm"
+.INCLUDE "data/map/staircase_end_offset_x.asm"
 
-.INCLUDE "data/unknown/C3E228.asm"
+.INCLUDE "data/map/staircase_end_offset_y.asm"
 
-.INCLUDE "data/unknown/C3E230.asm"
+.INCLUDE "data/map/interact_x_offsets.asm"
 
-.INCLUDE "data/unknown/C3E240.asm"
+.INCLUDE "data/map/interact_y_offsets.asm"
 
 .IF .DEFINED(PROTOTYPE19950327)
 	.INCLUDE "data/text/window_configuration_table-proto.asm"
@@ -2042,7 +2044,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/unknown/C3E3F8.asm"
 
-.INCLUDE "data/unknown/C3E40E.asm"
+.INCLUDE "data/auto_battle_arrangement.asm"
 
 .INCLUDE "data/text/blinking_triangle_tiles.asm"
 
@@ -2050,7 +2052,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/unknown/C3E41C_pointer_table.asm"
 
-.INCLUDE "data/unknown/C3E44C.asm"
+.INCLUDE "data/text/menu_next_label.asm"
 
 .IF .DEFINED(USA)
 	.INCLUDE "text/update_flash_text_palette.asm"
@@ -2078,7 +2080,9 @@ SPRITE_GROUP_PALETTES:
 	.INCLUDE "text/reset_window_menu.asm"
 .ENDIF
 
-.INCLUDE "data/unknown/C3E84E.asm"
+.INCLUDE "data/smaaaash_tiles.asm"
+
+.INCLUDE "data/you_won_tiles.asm"
 
 .INCLUDE "data/debug/menu_text.asm"
 
@@ -2126,7 +2130,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "data/psi_categories.asm"
 
-.INCLUDE "data/unknown/C3F0B0.asm"
+.INCLUDE "data/psi_blocking_statuses.asm"
 
 .INCLUDE "data/psi_suffixes.asm"
 
@@ -2136,7 +2140,7 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "inventory/select_fixable_item.asm"
 
-.INCLUDE "data/unknown/C3F2B1.asm"
+.INCLUDE "data/stat_growth_difference_factor.asm"
 
 .IF .DEFINED(JPN) || .DEFINED(PROTOTYPE19950327)
 	.INCLUDE "overworld/actionscript/bubble_monkey_initialize.asm"
@@ -2164,13 +2168,13 @@ SPRITE_GROUP_PALETTES:
 
 .INCLUDE "unused/C3F7FB.asm"
 
-.INCLUDE "data/unknown/C3F819.asm"
+.INCLUDE "data/to_be_cont_oval_close.asm"
 
-.INCLUDE "data/unknown/C3F871.asm"
+.INCLUDE "data/battle_spritemap_vram_mapping.asm"
 
-.INCLUDE "data/unknown/C3F8B1.asm"
+.INCLUDE "data/battle_spritemap_tile_mapping.asm"
 
-.INCLUDE "data/unknown/C3F8F1.asm"
+.INCLUDE "data/enemy_using_attack_palettes.asm"
 
 .INCLUDE "data/enemy_psi_colours.asm"
 
