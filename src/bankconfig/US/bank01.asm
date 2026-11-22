@@ -118,7 +118,7 @@
 
 .INCLUDE "text/set_current_window_padding.asm"
 
-.INCLUDE "unknown/C1/C10EE3.asm"
+.INCLUDE "text/print_special_graphics.asm"
 
 .INCLUDE "text/print_string.asm"
 
@@ -176,7 +176,7 @@
 
 .INCLUDE "battle/get_next_target_left.asm"
 
-.INCLUDE "unknown/C1/C120D6.asm"
+.INCLUDE "text/print_target_name.asm"
 
 .INCLUDE "battle/pick_target_single.asm"
 
@@ -190,9 +190,9 @@
 
 .INCLUDE "unknown/C1/C12BD5.asm"
 
-.INCLUDE "unknown/C1/C12BF3.asm"
+.INCLUDE "text/print_smaaaash.asm"
 
-.INCLUDE "unknown/C1/C12C36.asm"
+.INCLUDE "text/print_you_won.asm"
 
 .INCLUDE "unknown/C1/C12CCC.asm"
 
@@ -212,7 +212,7 @@
 
 .INCLUDE "unknown/C1/C133A7.asm"
 
-.INCLUDE "unknown/C1/C133B0.asm"
+.INCLUDE "text/populate_command_menu.asm"
 
 .INCLUDE "overworld/open_menu.asm"
 
@@ -412,7 +412,7 @@
 
 .INCLUDE "text/ccs/party_member_remove.asm"
 
-.INCLUDE "unknown/C1/C15FB1.asm"
+.INCLUDE "text/queue_item_for_delivery.asm"
 
 .INCLUDE "text/ccs/queue_delivery_pickup.asm"
 
@@ -620,7 +620,7 @@
 
 .INCLUDE "text/open_phone_menu.asm"
 
-.INCLUDE "unknown/C1/C1952F.asm"
+.INCLUDE "text/print_all_stats.asm"
 
 .INCLUDE "inventory/get_item_name.asm"
 
