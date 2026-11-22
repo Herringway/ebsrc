@@ -438,17 +438,17 @@
 
 .INCLUDE "text/ccs/set_party_direction.asm"
 
-.INCLUDE "text/ccs/set_tpt_direction.asm"
+.INCLUDE "text/ccs/set_npc_direction.asm"
 
-.INCLUDE "text/ccs/create_entity_tpt.asm"
+.INCLUDE "text/ccs/create_entity_npc.asm"
 
 .INCLUDE "text/ccs/dummy_1F_18.asm"
 
 .INCLUDE "text/ccs/dummy_1F_19.asm"
 
-.INCLUDE "text/ccs/create_manpu_at_tpt_entity.asm"
+.INCLUDE "text/ccs/create_manpu_at_npc_entity.asm"
 
-.INCLUDE "text/ccs/delete_manpu_at_tpt_entity.asm"
+.INCLUDE "text/ccs/delete_manpu_at_npc_entity.asm"
 
 .INCLUDE "text/ccs/create_manpu_at_character.asm"
 
@@ -458,13 +458,13 @@
 
 .INCLUDE "text/ccs/create_entity_sprite.asm"
 
-.INCLUDE "text/ccs/delete_entity_tpt.asm"
+.INCLUDE "text/ccs/delete_entity_npc.asm"
 
 .INCLUDE "text/ccs/delete_entity_sprite.asm"
 
 .INCLUDE "text/ccs/get_direction_from_character_to_entity.asm"
 
-.INCLUDE "text/ccs/get_direction_from_tpt_entity_to_entity.asm"
+.INCLUDE "text/ccs/get_direction_from_npc_entity_to_entity.asm"
 
 .INCLUDE "text/ccs/enable_blinking_triangle.asm"
 
@@ -476,7 +476,7 @@
 
 .INCLUDE "text/ccs/set_player_movement_lock.asm"
 
-.INCLUDE "text/ccs/set_tpt_entity_delay.asm"
+.INCLUDE "text/ccs/set_npc_entity_delay.asm"
 
 .INCLUDE "text/ccs/unknown_1F_E7.asm"
 
@@ -490,13 +490,13 @@
 
 .INCLUDE "text/ccs/set_character_visibility.asm"
 
-.INCLUDE "text/ccs/teleport_party_to_tpt_entity.asm"
+.INCLUDE "text/ccs/teleport_party_to_npc_entity.asm"
 
 .INCLUDE "text/ccs/unknown_1F_EF.asm"
 
 .INCLUDE "text/ccs/screen_reload_pointer.asm"
 
-.INCLUDE "text/ccs/set_tpt_entity_movement.asm"
+.INCLUDE "text/ccs/set_npc_entity_movement.asm"
 
 .INCLUDE "text/ccs/set_sprite_entity_movement.asm"
 
