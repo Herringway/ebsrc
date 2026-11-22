@@ -182,7 +182,7 @@
 
 .INCLUDE "system/center_screen.asm"
 
-.INCLUDE "unknown/C0/C0402B.asm"
+.INCLUDE "system/demos/set_auto_movement_demo.asm"
 
 .INCLUDE "unknown/C0/C04049.asm"
 
@@ -408,15 +408,15 @@
 
 .INCLUDE "system/test_sram_size.asm"
 
-.INCLUDE "unknown/C0/C083B8.asm"
+.INCLUDE "system/demos/demo_recording_end.asm"
 
-.INCLUDE "unknown/C0/C083C1.asm"
+.INCLUDE "system/demos/demo_recording_start.asm"
 
-.INCLUDE "unknown/C0/C083E3.asm"
+.INCLUDE "system/demos/demo_replay_start.asm"
 
 .INCLUDE "system/read_joypad.asm"
 
-.INCLUDE "unknown/C0/C08456.asm"
+.INCLUDE "system/demos/demo_record_buttons.asm"
 
 .INCLUDE "unknown/C0/C08496.asm"
 
@@ -986,7 +986,7 @@
 
 .INCLUDE "overworld/actionscript/set_entity_boundaries.asm"
 
-.INCLUDE "battle/load_battlebg_movement.asm"
+.INCLUDE "overworld/actionscript/load_battlebg.asm"
 
 .INCLUDE "overworld/actionscript/spawn_entity_at_self.asm"
 
@@ -1044,7 +1044,7 @@
 
 .INCLUDE "unknown/C0/C0AD9F.asm"
 
-.INCLUDE "misc/battlebgs/do_battlebg_dma.asm"
+.INCLUDE "battle/backgrounds/do_battlebg_dma.asm"
 
 .INCLUDE "data/dma_flags.asm"
 
@@ -1058,11 +1058,11 @@
 
 .INCLUDE "data/hdma_disable_masks.asm"
 
-.INCLUDE "misc/battlebgs/load_bg_offset_parameters.asm"
+.INCLUDE "battle/backgrounds/load_bg_offset_parameters.asm"
 
-.INCLUDE "misc/battlebgs/load_bg_offset_parameters2.asm"
+.INCLUDE "battle/backgrounds/load_bg_offset_parameters2.asm"
 
-.INCLUDE "misc/battlebgs/prepare_bg_offset_tables.asm"
+.INCLUDE "battle/backgrounds/prepare_bg_offset_tables.asm"
 
 .INCLUDE "unknown/C0/C0AFCD.asm"
 

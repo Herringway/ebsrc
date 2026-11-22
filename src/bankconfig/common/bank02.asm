@@ -739,16 +739,16 @@
 
 .INCLUDE "battle/load_enemy_battle_sprites.asm"
 
-.INCLUDE "misc/battlebgs/generate_frame.asm"
+.INCLUDE "battle/backgrounds/generate_frame.asm"
 
-.INCLUDE "unknown/C2/C2CFE5.asm"
+.INCLUDE "battle/backgrounds/load_background_animation_info.asm"
 
-.INCLUDE "unknown/C2/C2D0AC.asm"
+.INCLUDE "battle/backgrounds/update_letterbox_hdma_table.asm"
 
 .IF .DEFINED(USA)
-  .INCLUDE "battle/load_battlebg.asm"
+  .INCLUDE "battle/backgrounds/load_battlebg.asm"
 .ELSE
-  .INCLUDE "battle/load_battlebg-jp.asm"
+  .INCLUDE "battle/backgrounds/load_battlebg-jp.asm"
 .ENDIF
 
 .INCLUDE "battle/giygas_swap_death_distortion.asm"

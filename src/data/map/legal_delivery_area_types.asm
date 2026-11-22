@@ -1,0 +1,3 @@
+
+LEGAL_DELIVERY_AREA_TYPES:
+	.BYTE $01, $01, $01, $00, $01, $01, $00, $00
