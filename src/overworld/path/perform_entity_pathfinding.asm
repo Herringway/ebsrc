@@ -144,11 +144,11 @@ PERFORM_ENTITY_PATHFINDING:
 	ASL
 	STA @LOCAL08
 	LDX @LOCAL08
-	LDA f:UNKNOWN_C42AA7,X
+	LDA f:HITBOX_TILE_WIDTHS,X
 	LDX @LOCAL0C
 	STA a:pathfinding::pathfinders + pathfinder::unknown_hitbox + 2,X
 	LDX @LOCAL08
-	LDA f:UNKNOWN_C42AC9,X
+	LDA f:HITBOX_TILE_HEIGHTS,X
 	LDX @LOCAL0C
 	STA a:pathfinding::pathfinders + pathfinder::unknown_hitbox,X
 	LDX @LOCAL08
