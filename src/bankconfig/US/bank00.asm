@@ -216,7 +216,7 @@
 
 .INCLUDE "overworld/camera/handle_camera_mode_3.asm"
 
-.INCLUDE "unknown/C0/C04B53.asm"
+.INCLUDE "overworld/camera/handle_special_camera.asm"
 
 .INCLUDE "overworld/move_party_leader.asm"
 
