@@ -190,7 +190,7 @@ UNKNOWN_E1D5E8:
 	UNKNOWN_E1D6E1:
 		LOCALEBINARY "E1D6E1.gfx.lzhal"
 
-	.INCLUDE "data/unknown/E1D815.asm"
+	.INCLUDE "data/cast_text_palette.asm"
 
 	CAST_NAMES_GFX:
 		LOCALEBINARY "ending/cast_names.gfx.lzhal"
