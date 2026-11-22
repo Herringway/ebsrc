@@ -746,9 +746,9 @@
 .INCLUDE "battle/backgrounds/update_letterbox_hdma_table.asm"
 
 .IF .DEFINED(USA)
-  .INCLUDE "battle/load_battlebg.asm"
+  .INCLUDE "battle/backgrounds/load_battlebg.asm"
 .ELSE
-  .INCLUDE "battle/load_battlebg-jp.asm"
+  .INCLUDE "battle/backgrounds/load_battlebg-jp.asm"
 .ENDIF
 
 .INCLUDE "battle/giygas_swap_death_distortion.asm"
