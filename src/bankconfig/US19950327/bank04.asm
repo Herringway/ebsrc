@@ -37,7 +37,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "data/map/footstep_sound_table.asm"
 
-.INCLUDE "data/unknown/C40BE8.asm"
+.INCLUDE "data/blank_tiles.asm"
 
 .INCLUDE "data/text/manpu_table.asm"
 
@@ -189,9 +189,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "overworld/angle_to_vector.asm"
 
-.INCLUDE "data/unknown/C4205D.asm"
-
-.INCLUDE "data/unknown/C420BD.asm"
+.INCLUDE "data/angle_to_vector_sine_cosine_table.asm"
 
 .INCLUDE "system/math/multiply_with_divisor_256.asm"
 
@@ -283,7 +281,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "system/copy_pixel_column.asm"
 
-.INCLUDE "data/unknown/C42955.asm"
+.INCLUDE "data/pixel_plane_masks.asm"
 
 .INCLUDE "system/copy_pixel.asm"
 
@@ -291,19 +289,19 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "system/enable_letterbox_hdma.asm"
 
-.INCLUDE "data/unknown/C42A1F.asm"
+.INCLUDE "data/collision_widths.asm"
 
-.INCLUDE "data/unknown/C42A41.asm"
+.INCLUDE "data/collision_heights.asm"
 
-.INCLUDE "data/unknown/C42A63.asm"
+.INCLUDE "data/pixel_widths.asm"
 
 .INCLUDE "data/unknown/C42A85.asm"
 
-.INCLUDE "data/unknown/C42AA7.asm"
+.INCLUDE "data/hitbox_tile_widths.asm"
 
-.INCLUDE "data/unknown/C42AC9.asm"
+.INCLUDE "data/hitbox_tile_heights.asm"
 
-.INCLUDE "data/unknown/C42AEB.asm"
+.INCLUDE "data/collision_heights2.asm"
 
 .INCLUDE "data/unknown/C42B0D.asm"
 
@@ -343,9 +341,9 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "data/map/tile_table_chunks_table.asm"
 
-.INCLUDE "data/unknown/C42F8C.asm"
+.INCLUDE "data/overworld_sprite_vram_offsets.asm"
 
-.INCLUDE "data/unknown/C4303C.asm"
+.INCLUDE "data/overworld_sprite_oam_tile_numbers.asm"
 
 .INCLUDE "overworld/velocity_store.asm"
 
@@ -437,7 +435,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "text/load_window_graphics.asm"
 
-.INCLUDE "data/unknown/C44AD7.asm"
+.INCLUDE "data/used_bg2_tilemap_masks.asm"
 
 .INCLUDE "text/free_tile.asm"
 
@@ -611,13 +609,13 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "overworld/make_sprite_look_at_active_entity.asm"
 
-.INCLUDE "data/unknown/C46A5E.asm"
+.INCLUDE "data/direction_table_urdl.asm"
 
 .INCLUDE "overworld/actionscript/get_urdl_direction.asm"
 
-.INCLUDE "data/unknown/C46A7A.asm"
+.INCLUDE "data/direction_table_4lr.asm"
 
-.INCLUDE "data/unknown/C46A8A.asm"
+.INCLUDE "data/direction_table_4ud.asm"
 
 .INCLUDE "unknown/C4/C46A9A.asm"
 
@@ -633,7 +631,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C46B37.asm"
 
-.INCLUDE "data/unknown/C46B41.asm"
+.INCLUDE "data/direction_table_rotated_90.asm"
 
 .INCLUDE "unknown/C4/C46B51.asm"
 
@@ -711,7 +709,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "overworld/actionscript/set_screen_brightness.asm"
 
-.INCLUDE "data/unknown/C474F6.asm"
+.INCLUDE "data/spotlight_taper_radii.asm"
 
 .INCLUDE "system/initialize_spotlight_window_hdma_table.asm"
 
@@ -769,7 +767,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "overworld/actionscript/centre_screen_on_entity_callback_offset.asm"
 
-.INCLUDE "data/unknown/C48C59.asm"
+.INCLUDE "data/direction_to_button_map.asm"
 
 .INCLUDE "system/demos/clear_auto_movement_demo.asm"
 
@@ -877,11 +875,11 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C4A377.asm"
 
-.INCLUDE "data/unknown/C4A591.asm"
+.INCLUDE "data/vertical_shake_offsets.asm"
 
-.INCLUDE "data/unknown/C4A5CE.asm"
+.INCLUDE "data/oval_window_swirl.asm"
 
-.INCLUDE "data/unknown/C4A5FA.asm"
+.INCLUDE "data/evt_pray_oval_window_swirl.asm"
 
 .INCLUDE "data/unknown/C4A626.asm"
 
@@ -1035,7 +1033,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "intro/decomp_nintendo_presentation.asm"
 
-.INCLUDE "data/unknown/C4DE78.asm"
+.INCLUDE "data/map/your_sanctuary_locations.asm"
 
 .INCLUDE "overworld/initialize_your_sanctuary_display.asm"
 

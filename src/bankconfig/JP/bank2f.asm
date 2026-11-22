@@ -196,7 +196,7 @@ INSERT_AUDIO_PACK 7
 
 .INCLUDE "system/debug/check_position_overlay_background-jp.asm"
 
-.INCLUDE "data/unknown/EFEB1D.asm"
+.INCLUDE "data/check_position_overlay_background_hdma_table.asm"
 
 .INCLUDE "system/debug/debug_clear_hdma.asm"
 
@@ -214,7 +214,7 @@ DEBUG_CURSOR_GRAPHICS:
 
 .INCLUDE "data/unknown/EFF0D7.asm"
 
-.INCLUDE "data/unknown/EFF1BB.asm"
+.INCLUDE "data/debug_menu_palettes.asm"
 
 .INCLUDE "data/unknown_version_string.asm"
 
