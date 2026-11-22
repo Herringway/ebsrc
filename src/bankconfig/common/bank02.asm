@@ -54,7 +54,7 @@
   
     .INCLUDE "data/text/the.asm"
   
-    .INCLUDE "unknown/C2/C209A0.asm"
+    .INCLUDE "text/remove_window_from_screen_old.asm"
 .ELSEIF .DEFINED(PROTOTYPE19950327)
     .INCLUDE "data/text/the.asm"
 .ENDIF
@@ -125,11 +125,11 @@
 
 .INCLUDE "inventory/get_inventory_count.asm"
 
-.INCLUDE "unknown/C2/C2239D.asm"
+.INCLUDE "misc/test_if_party_member_present.asm"
 
-.INCLUDE "unknown/C2/C223D9.asm"
+.INCLUDE "text/get_status_icon.asm"
 
-.INCLUDE "unknown/C2/C22474.asm"
+.INCLUDE "text/get_status_name_palette.asm"
 
 .IF .DEFINED(USA)
   .INCLUDE "inventory/get_item_subtype.asm"
@@ -221,7 +221,7 @@
 
 .INCLUDE "battle/test_item_theft_candidate.asm"
 
-.INCLUDE "unknown/C2/C2437E.asm"
+.INCLUDE "battle/remove_used_item.asm"
 
 .INCLUDE "unknown/C2/C24434.asm"
 
@@ -231,7 +231,7 @@
 
 .INCLUDE "battle/main_battle_routine.asm"
 
-.INCLUDE "unknown/C2/C26189.asm"
+.INCLUDE "battle/fullscreen_colour_flags.asm"
 
 .INCLUDE "battle/instant_win_handler.asm"
 
@@ -707,11 +707,11 @@
 
 .INCLUDE "battle/giygas_transform_battler_8.asm"
 
-.INCLUDE "unknown/C2/C2C37A.asm"
+.INCLUDE "battle/giygas_text_new_phase.asm"
 
 .INCLUDE "battle/giygas_hurt_prayer.asm"
 
-.INCLUDE "unknown/C2/C2C41F.asm"
+.INCLUDE "battle/giygas_weak_text.asm"
 
 .INCLUDE "battle/actions/pokey_speech_1.asm"
 
@@ -775,19 +775,19 @@
 
 .INCLUDE "unknown/C2/C2E6B3.asm"
 
-.INCLUDE "unknown/C2/C2E8C4.asm"
+.INCLUDE "overworld/start_swirl_padded.asm"
 
 .INCLUDE "overworld/battle_swirl_sequence.asm"
 
 .INCLUDE "unknown/C2/C2E9C8.asm"
 
-.INCLUDE "unknown/C2/C2E9ED.asm"
+.INCLUDE "overworld/reset_oval_window.asm"
 
-.INCLUDE "unknown/C2/C2EA15.asm"
+.INCLUDE "overworld/open_oval_window.asm"
 
-.INCLUDE "unknown/C2/C2EA74.asm"
+.INCLUDE "overworld/close_oval_window.asm"
 
-.INCLUDE "unknown/C2/C2EAAA.asm"
+.INCLUDE "overworld/disable_oval_window.asm"
 
 .INCLUDE "battle/is_battle_animation_playing.asm"
 

@@ -39,7 +39,7 @@ MOVE_PARTY_LEADER:
 	STA a:char_struct::position_index,X
 	LDA GAME_STATE + game_state::unknownB0
 	BEQ @UNKNOWN2
-	JSR UNKNOWN_C04B53
+	JSR HANDLE_SPECIAL_CAMERA
 	BRA @UNKNOWN6
 @UNKNOWN2:
 	LDA GAME_STATE+game_state::walking_style

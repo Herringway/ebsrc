@@ -187,7 +187,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "data/unknown/C41FDF.asm"
 
-.INCLUDE "unknown/C4/C41FFF.asm"
+.INCLUDE "overworld/angle_to_vector.asm"
 
 .INCLUDE "data/unknown/C4205D.asm"
 
