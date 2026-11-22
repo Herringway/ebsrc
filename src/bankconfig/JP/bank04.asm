@@ -185,9 +185,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "overworld/angle_to_vector.asm"
 
-.INCLUDE "data/unknown/C4205D.asm"
-
-.INCLUDE "data/unknown/C420BD.asm"
+.INCLUDE "data/angle_to_vector_sine_cosine_table.asm"
 
 .INCLUDE "system/math/multiply_with_divisor_256.asm"
 
