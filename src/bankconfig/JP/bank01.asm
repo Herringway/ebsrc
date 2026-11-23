@@ -130,7 +130,7 @@
 
 .INCLUDE "text/set_current_window_padding.asm"
 
-.INCLUDE "unknown/C1/C10EE3.asm"
+.INCLUDE "text/print_special_graphics.asm"
 
 .INCLUDE "text/print_string-jp.asm"
 
@@ -192,7 +192,7 @@
 
 .INCLUDE "battle/get_next_target_left.asm"
 
-.INCLUDE "unknown/C1/C120D6.asm"
+.INCLUDE "text/print_target_name.asm"
 
 .INCLUDE "battle/pick_target_single-jp.asm"
 
@@ -206,9 +206,9 @@
 
 .INCLUDE "unknown/C1/C12BD5.asm"
 
-.INCLUDE "unknown/C1/C12BF3.asm"
+.INCLUDE "text/print_smaaaash.asm"
 
-.INCLUDE "unknown/C1/C12C36.asm"
+.INCLUDE "text/print_you_won.asm"
 
 .INCLUDE "unknown/C1/C12CCC.asm"
 
@@ -256,7 +256,7 @@
 
 .INCLUDE "text/ccs/print_stat.asm"
 
-.INCLUDE "text/ccs/unknown_1C_09.asm"
+.INCLUDE "text/ccs/set_window_padding.asm"
 
 .INCLUDE "text/ccs/text_effects.asm"
 
@@ -376,13 +376,13 @@
 
 .INCLUDE "text/ccs/print_number.asm"
 
-.INCLUDE "text/ccs/unknown_1F_60.asm"
+.INCLUDE "text/ccs/pause_cancellable.asm"
 
 .INCLUDE "text/ccs/show_character_inventory.asm"
 
-.INCLUDE "text/ccs/unknown_18_08.asm"
+.INCLUDE "text/ccs/selection_menu_in_window_uncancellable.asm"
 
-.INCLUDE "text/ccs/unknown_18_09.asm"
+.INCLUDE "text/ccs/selection_menu_in_window.asm"
 
 .INCLUDE "text/ccs/print_money_amount.asm"
 
@@ -390,29 +390,29 @@
 
 .INCLUDE "text/ccs/take_item_from_character_2.asm"
 
-.INCLUDE "text/ccs/unknown_1D_10.asm"
+.INCLUDE "text/ccs/test_item_is_equipped.asm"
 
-.INCLUDE "text/ccs/unknown_1D_11.asm"
+.INCLUDE "text/ccs/test_item_is_equippable.asm"
 
 .INCLUDE "text/ccs/equip_character_from_inventory.asm"
 
-.INCLUDE "text/ccs/unknown_1D_12.asm"
+.INCLUDE "text/ccs/give_to_escargo_express.asm"
 
-.INCLUDE "text/ccs/unknown_1D_13.asm"
+.INCLUDE "text/ccs/take_from_escargo_express.asm"
 
 .INCLUDE "text/ccs/get_item_number.asm"
 
 .INCLUDE "text/ccs/test_has_enough_money.asm"
 
-.INCLUDE "text/ccs/unknown_19_1A.asm"
+.INCLUDE "text/ccs/get_escargo_express_item.asm"
 
-.INCLUDE "text/ccs/unknown_18_0D.asm"
+.INCLUDE "text/ccs/print_character_status.asm"
 
 .INCLUDE "text/ccs/print_vertical_strings.asm"
 
 .INCLUDE "text/ccs/set_argmem.asm"
 
-.INCLUDE "text/ccs/unknown_19_1B.asm"
+.INCLUDE "text/ccs/get_loaded_string_count.asm"
 
 .INCLUDE "text/ccs/learn_special_psi.asm"
 
@@ -426,11 +426,11 @@
 
 .INCLUDE "text/ccs/party_member_remove.asm"
 
-.INCLUDE "unknown/C1/C15FB1.asm"
+.INCLUDE "text/queue_item_for_delivery.asm"
 
-.INCLUDE "text/ccs/unknown_19_1C.asm"
+.INCLUDE "text/ccs/queue_delivery_pickup.asm"
 
-.INCLUDE "text/ccs/unknown_19_1D.asm"
+.INCLUDE "text/ccs/get_queued_delivery_pickup_item.asm"
 
 .INCLUDE "text/ccs/escargo_express_store.asm"
 
@@ -492,13 +492,13 @@
 
 .INCLUDE "text/ccs/set_npc_entity_delay.asm"
 
-.INCLUDE "text/ccs/unknown_1F_E7.asm"
+.INCLUDE "text/ccs/set_sprite_entity_delay.asm"
 
 .INCLUDE "text/ccs/set_player_movement_lock_if_camera_refocused.asm"
 
-.INCLUDE "text/ccs/unknown_1F_E9.asm"
+.INCLUDE "text/ccs/enable_npc_entity_movement.asm"
 
-.INCLUDE "text/ccs/unknown_1F_EA.asm"
+.INCLUDE "text/ccs/enable_sprite_entity_movement.asm"
 
 .INCLUDE "text/ccs/set_character_invisibility.asm"
 
@@ -506,7 +506,7 @@
 
 .INCLUDE "text/ccs/teleport_party_to_npc_entity.asm"
 
-.INCLUDE "text/ccs/unknown_1F_EF.asm"
+.INCLUDE "text/ccs/teleport_party_to_sprite_entity.asm"
 
 .INCLUDE "text/ccs/screen_reload_pointer.asm"
 
@@ -520,7 +520,7 @@
 
 .INCLUDE "text/ccs/set_respawn_point.asm"
 
-.INCLUDE "text/ccs/unknown_1D_0C.asm"
+.INCLUDE "text/ccs/test_item_is_storable.asm"
 
 .INCLUDE "text/ccs/activate_hotspot.asm"
 
@@ -528,9 +528,9 @@
 
 .INCLUDE "text/ccs/toggle_text_printing_sound.asm"
 
-.INCLUDE "text/ccs/unknown_1D_24.asm"
+.INCLUDE "text/ccs/get_money_earned_since_last_call.asm"
 
-.INCLUDE "text/ccs/unknown_1F_40.asm"
+.INCLUDE "text/ccs/dummy_1F_40.asm"
 
 .INCLUDE "text/ccs/trigger_special_event.asm"
 
@@ -558,9 +558,9 @@
 
 .INCLUDE "text/ccs/increase_character_luck.asm"
 
-.INCLUDE "text/ccs/unknown_1D_23.asm"
+.INCLUDE "text/ccs/test_equipment_offensive_or_defensive.asm"
 
-.INCLUDE "text/ccs/unknown_19_27.asm"
+.INCLUDE "text/ccs/get_number_from_stat.asm"
 
 .INCLUDE "unknown/C1/C17796-jp.asm"
 
@@ -634,7 +634,7 @@
 
 .INCLUDE "text/open_phone_menu.asm"
 
-.INCLUDE "unknown/C1/C1952F-jp.asm"
+.INCLUDE "text/print_all_stats-jp.asm"
 
 .INCLUDE "inventory/get_item_name.asm"
 
