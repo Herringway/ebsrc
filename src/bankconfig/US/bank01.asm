@@ -694,17 +694,17 @@
 
 .INCLUDE "unknown/C1/C1C046.asm"
 
-.INCLUDE "unknown/C1/C1C165.asm"
+.INCLUDE "overworld/check_can_character_use_psi_status.asm"
 
-.INCLUDE "unknown/C1/C1C1BA.asm"
+.INCLUDE "overworld/character_knows_psi_types.asm"
 
-.INCLUDE "unknown/C1/C1C32A.asm"
+.INCLUDE "overworld/check_character_can_currently_use_psi_types.asm"
 
-.INCLUDE "unknown/C1/C1C367.asm"
+.INCLUDE "overworld/psi_menu_valid_character.asm"
 
-.INCLUDE "unknown/C1/C1C373.asm"
+.INCLUDE "overworld/get_first_party_member_with_psi.asm"
 
-.INCLUDE "unknown/C1/C1C3B6.asm"
+.INCLUDE "overworld/get_party_member_count_with_psi.asm"
 
 .INCLUDE "text/get_psi_name.asm"
 
