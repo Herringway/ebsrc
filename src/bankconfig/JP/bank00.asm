@@ -296,15 +296,15 @@
 
 .INCLUDE "unknown/C0/C064D4.asm"
 
-.INCLUDE "unknown/C0/C064E3.asm"
+.INCLUDE "overworld/queue_interaction.asm"
 
-.INCLUDE "unknown/C0/C06537.asm"
+.INCLUDE "overworld/get_last_queued_interaction_type.asm"
 
-.INCLUDE "unknown/C0/C0654E.asm"
+.INCLUDE "overworld/get_last_queued_interaction_pointer.asm"
 
-.INCLUDE "unknown/C0/C06578.asm"
+.INCLUDE "overworld/queue_entity_creation_request.asm"
 
-.INCLUDE "unknown/C0/C065A3.asm"
+.INCLUDE "overworld/process_entity_creation_requests.asm"
 
 .INCLUDE "unknown/C0/C065C2.asm"
 
@@ -386,7 +386,7 @@
 
 .INCLUDE "unknown/C0/C0780F.asm"
 
-.INCLUDE "unknown/C0/C079EC.asm"
+.INCLUDE "ending/get_credits_photograph_party_sprite.asm"
 
 .INCLUDE "unknown/C0/C07A31.asm"
 
@@ -394,7 +394,7 @@
 
 .INCLUDE "unknown/C0/C07B52.asm"
 
-.INCLUDE "unknown/C0/C07C5B.asm"
+.INCLUDE "overworld/party_intangibility_flash.asm"
 
 .SEGMENT "BANK00B"
 
@@ -420,7 +420,7 @@
 
 .INCLUDE "system/demos/demo_record_buttons.asm"
 
-.INCLUDE "unknown/C0/C08496.asm"
+.INCLUDE "system/update_pad_state.asm"
 
 .INCLUDE "system/process_sfx_queue.asm"
 
@@ -434,7 +434,7 @@
 
 .INCLUDE "unknown/C0/C08529.asm"
 
-.INCLUDE "unknown/C0/C0856B.asm"
+.INCLUDE "system/prepare_palette_upload.asm"
 
 .INCLUDE "unknown/C0/C08573.asm"
 
@@ -450,13 +450,13 @@
 
 .INCLUDE "system/enable_nmi_joypad.asm"
 
-.INCLUDE "unknown/C0/C08726.asm"
+.INCLUDE "system/prepare_for_immediate_dma.asm"
 
-.INCLUDE "unknown/C0/C08744.asm"
+.INCLUDE "system/set_force_blank.asm"
 
 .INCLUDE "system/wait_until_next_frame.asm"
 
-.INCLUDE "unknown/C0/C0878B.asm"
+.INCLUDE "system/wait_n_frames.asm"
 
 .INCLUDE "system/set_inidisp_far.asm"
 
@@ -502,7 +502,7 @@
 
 .INCLUDE "system/sprites/render_sprite_to_oam.asm"
 
-.INCLUDE "unknown/C0/C08D79.asm"
+.INCLUDE "system/set_bg_mode.asm"
 
 .INCLUDE "system/set_oam_size.asm"
 
@@ -824,11 +824,11 @@
 
 .INCLUDE "overworld/update_entity_position_3d_ignore_surface.asm"
 
-.INCLUDE "unknown/C0/C0A023.asm"
+.INCLUDE "system/update_screen_position_bg12d.asm"
 
-.INCLUDE "unknown/C0/C0A03A.asm"
+.INCLUDE "system/update_screen_position_bg13d.asm"
 
-.INCLUDE "unknown/C0/C0A055.asm"
+.INCLUDE "system/update_screen_position_bg32d.asm"
 
 .INCLUDE "overworld/actionscript/move_relative_to_bg3.asm"
 
@@ -854,7 +854,7 @@
 
 .INCLUDE "unknown/C0/C0A1CE.asm"
 
-.INCLUDE "unknown/C0/C0A1F2.asm"
+.INCLUDE "system/copy_map_palette_fade.asm"
 
 .INCLUDE "data/unknown/C0A20C.asm"
 
@@ -878,15 +878,15 @@
 
 .INCLUDE "data/party_distance_adjustment_by_direction.asm"
 
-.INCLUDE "unknown/C0/C0A360.asm"
+.INCLUDE "overworld/update_position_callback_pathfinding_enabled.asm"
 
-.INCLUDE "unknown/C0/C0A384.asm"
+.INCLUDE "overworld/update_position_callback_no_collision_update.asm"
 
 .INCLUDE "unknown/C0/C0A3A4.asm"
 
 .INCLUDE "overworld/actionscript/update_entity_sprite.asm"
 
-.INCLUDE "unknown/C0/C0A56E.asm"
+.INCLUDE "overworld/update_sprite_tile_row.asm"
 
 .INCLUDE "data/sprite_direction_mapping_4_direction.asm"
 
@@ -930,9 +930,9 @@
 
 .INCLUDE "unknown/C0/C0A6E3.asm"
 
-.INCLUDE "unknown/C0/C0A780.asm"
+.INCLUDE "overworld/update_entity_sprite_frame.asm"
 
-.INCLUDE "unknown/C0/C0A794.asm"
+.INCLUDE "overworld/update_entity_sprite_frame_current.asm"
 
 .INCLUDE "overworld/actionscript/disable_current_entity_collision2.asm"
 
@@ -1064,7 +1064,7 @@
 
 .INCLUDE "battle/backgrounds/prepare_bg_offset_tables.asm"
 
-.INCLUDE "unknown/C0/C0AFCD.asm"
+.INCLUDE "battle/backgrounds/set_layer_config.asm"
 
 .INCLUDE "data/layer_config.asm"
 
@@ -1080,9 +1080,9 @@
 
 .INCLUDE "unknown/C0/C0B0B8.asm"
 
-.INCLUDE "unknown/C0/C0B0EF.asm"
+.INCLUDE "overworld/enable_swirl_window_hdma.asm"
 
-.INCLUDE "unknown/C0/C0B149.asm"
+.INCLUDE "overworld/generate_swirl_hdma_table.asm"
 
 .INCLUDE "data/unknown/C0B2FF.asm"
 
@@ -1160,7 +1160,7 @@
 
 .INCLUDE "unknown/C0/C0C7AC.asm"
 
-.INCLUDE "unknown/C0/C0C7DB.asm"
+.INCLUDE "overworld/update_entity_surface_flags.asm"
 
 .INCLUDE "unknown/C0/C0C808.asm"
 
@@ -1222,7 +1222,7 @@
 
 .INCLUDE "overworld/load_dad_phone.asm"
 
-.INCLUDE "unknown/C0/C0DD0F.asm"
+.INCLUDE "overworld/wait_for_fade_to_finish.asm"
 
 .INCLUDE "overworld/teleport/psi_teleport_wait_n_frames.asm"
 
@@ -1240,7 +1240,7 @@
 
 .INCLUDE "overworld/teleport/psi_teleport_update_speed.asm"
 
-.INCLUDE "unknown/C0/C0E196.asm"
+.INCLUDE "overworld/teleport/write_party_leader_state_to_position_buffer.asm"
 
 .INCLUDE "overworld/teleport/psi_teleport_get_position_index.asm"
 
