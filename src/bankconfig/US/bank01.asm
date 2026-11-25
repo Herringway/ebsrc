@@ -160,7 +160,7 @@
 
 .INCLUDE "text/print_menu_items_preselected.asm"
 
-.INCLUDE "text/move_cursor.asm"
+.INCLUDE "text/move_cursor_wrap.asm"
 
 .INCLUDE "text/selection_menu.asm"
 
