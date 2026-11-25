@@ -484,13 +484,13 @@
 
 .INCLUDE "system/sprites/render_sprites_to_oam.asm"
 
-.INCLUDE "unknown/C0/C08C53.asm"
+.INCLUDE "system/sprites/null.asm"
 
 .INCLUDE "system/sprites/draw_sprite_redirect.asm"
 
 .INCLUDE "system/sprites/draw_sprite.asm"
 
-.INCLUDE "data/C08C58_jumps.asm"
+.INCLUDE "data/add_priority_x_sprite_pointers.asm"
 
 .INCLUDE "system/sprites/add_priority_0_sprite.asm"
 
