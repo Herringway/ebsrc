@@ -478,31 +478,31 @@
 
 .INCLUDE "unknown/C0/C0888B.asm"
 
-.INCLUDE "unknown/C0/C088A5.asm"
+.INCLUDE "system/sprites/set_spritemap_bank.asm"
 
 .INCLUDE "system/oam_clear.asm"
 
 .INCLUDE "unknown/C0/C08B19.asm"
 
-.INCLUDE "unknown/C0/C08B8E.asm"
+.INCLUDE "system/sprites/render_sprites_to_oam.asm"
 
-.INCLUDE "unknown/C0/C08C53.asm"
+.INCLUDE "system/sprites/null.asm"
 
-.INCLUDE "unknown/C0/C08C54.asm"
+.INCLUDE "system/sprites/draw_sprite_redirect.asm"
 
-.INCLUDE "unknown/C0/C08C58.asm"
+.INCLUDE "system/sprites/draw_sprite.asm"
 
-.INCLUDE "data/C08C58_jumps.asm"
+.INCLUDE "data/add_priority_x_sprite_pointers.asm"
 
-.INCLUDE "unknown/C0/C08C6D.asm"
+.INCLUDE "system/sprites/add_priority_0_sprite.asm"
 
-.INCLUDE "unknown/C0/C08C87.asm"
+.INCLUDE "system/sprites/add_priority_1_sprite.asm"
 
-.INCLUDE "unknown/C0/C08CA1.asm"
+.INCLUDE "system/sprites/add_priority_2_sprite.asm"
 
-.INCLUDE "unknown/C0/C08CBB.asm"
+.INCLUDE "system/sprites/add_priority_3_sprite.asm"
 
-.INCLUDE "unknown/C0/C08CD5.asm"
+.INCLUDE "system/sprites/render_sprite_to_oam.asm"
 
 .INCLUDE "unknown/C0/C08D79.asm"
 
