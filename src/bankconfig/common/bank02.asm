@@ -63,7 +63,7 @@
 
 .INCLUDE "text/restore_current_window_text_attributes.asm"
 
-.INCLUDE "unknown/C2/C20B65.asm"
+.INCLUDE "text/move_cursor.asm"
 
 .INCLUDE "text/hp_pp_window/separate_decimal_digits.asm"
 
