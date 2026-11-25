@@ -1226,7 +1226,7 @@
 
 .INCLUDE "overworld/load_dad_phone.asm"
 
-.INCLUDE "overworld/wait_for_fade_to_finish.asm"
+.INCLUDE "overworld/teleport/wait_for_fade_to_finish.asm"
 
 .INCLUDE "overworld/teleport/psi_teleport_wait_n_frames.asm"
 
