@@ -24,7 +24,7 @@
 
 .INCLUDE "text/update_flash_text_palette.asm"
 
-.INCLUDE "unknown/C1/C1004E.asm"
+.INCLUDE "system/finish_frame.asm"
 
 .INCLUDE "text/clear_instant_printing.asm"
 
@@ -52,7 +52,7 @@
 
 .INCLUDE "text/ccs/halt.asm"
 
-.INCLUDE "unknown/C1/C102D0.asm"
+.INCLUDE "text/wait_for_actionscript.asm"
 
 .INCLUDE "text/get_active_window_address.asm"
 
@@ -666,7 +666,7 @@
 
 .INCLUDE "overworld/teleport/select_psi_teleport_destination.asm"
 
-.INCLUDE "unknown/C1/C1AC00.asm"
+.INCLUDE "text/make_phone_call.asm"
 
 .INCLUDE "text/set_battle_attacker_name.asm"
 
