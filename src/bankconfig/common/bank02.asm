@@ -91,7 +91,7 @@
 
 .INCLUDE "text/set_event_flag.asm"
 
-.INCLUDE "unknown/C2/C216AD.asm"
+.INCLUDE "overworld/set_overworld_music_override.asm"
 
 .INCLUDE "audio/stop_music_redirect.asm"
 
@@ -203,7 +203,7 @@
 
 .INCLUDE "battle/pick_next_target.asm"
 
-.INCLUDE "unknown/C2/C23E8A.asm"
+.INCLUDE "text/prepare_suffixed_attacker_name.asm"
 
 .INCLUDE "battle/find_targettable_npc.asm"
 
@@ -773,13 +773,15 @@
   .INCLUDE "battle/show_psi_animation-jp.asm"
 .ENDIF
 
-.INCLUDE "unknown/C2/C2E6B3.asm"
+.INCLUDE "data/psi_animation_tile_flags.asm"
+
+.INCLUDE "battle/update_psi_animation_frame.asm"
 
 .INCLUDE "overworld/start_swirl_padded.asm"
 
 .INCLUDE "overworld/battle_swirl_sequence.asm"
 
-.INCLUDE "unknown/C2/C2E9C8.asm"
+.INCLUDE "overworld/oval_window_has_frames_left.asm"
 
 .INCLUDE "overworld/reset_oval_window.asm"
 
