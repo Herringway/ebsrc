@@ -224,9 +224,9 @@
 
 .INCLUDE "overworld/party_member_tick.asm"
 
-.INCLUDE "unknown/C0/C04F47.asm"
+.INCLUDE "overworld/restore_background_layers.asm"
 
-.INCLUDE "unknown/C0/C04F60.asm"
+.INCLUDE "overworld/red_flash.asm"
 
 .INCLUDE "overworld/try_show_hp_alert.asm"
 
@@ -838,7 +838,7 @@
 
 .INCLUDE "overworld/update_entity_position_absolute.asm"
 
-.INCLUDE "unknown/C0/C0A0CA.asm"
+.INCLUDE "overworld/actionscript/draw_entity.asm"
 
 .INCLUDE "unknown/C0/C0A0E3.asm"
 
