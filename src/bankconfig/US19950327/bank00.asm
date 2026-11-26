@@ -98,7 +98,7 @@
 
 .INCLUDE "unknown/C0/C01B96.asm"
 
-.INCLUDE "system/alloc_sprite_mem.asm"
+.INCLUDE "system/sprites/sprite_vram_table_overwrite.asm"
 
 .INCLUDE "unknown/C0/C01C52.asm"
 
