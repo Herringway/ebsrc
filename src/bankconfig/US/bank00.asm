@@ -482,7 +482,7 @@
 
 .INCLUDE "system/oam_clear.asm"
 
-.INCLUDE "unknown/C0/C08B19.asm"
+.INCLUDE "system/update_screen.asm"
 
 .INCLUDE "system/sprites/render_sprites_to_oam.asm"
 
