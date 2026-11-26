@@ -114,7 +114,7 @@
 
 .INCLUDE "text/remove_window_from_screen.asm"
 
-.INCLUDE "text/print_letter.asm"
+.INCLUDE "text/print_letter_vwf.asm"
 
 .INCLUDE "text/draw_tall_text_tile_focused_redraw.asm"
 
