@@ -92,7 +92,7 @@
 
 .INCLUDE "unknown/C0/C01A86.asm"
 
-.INCLUDE "overworld/find_free_space_7E4682.asm"
+.INCLUDE "system/sprites/find_free_spritemap.asm"
 
 .INCLUDE "unknown/C0/C01B15.asm"
 
