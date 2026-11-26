@@ -219,9 +219,9 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "system/set_coldata_cgad_sub.asm"
 
-.INCLUDE "unknown/C4/C4245D.asm"
+.INCLUDE "overworld/actionscript/rectangle_window_enable_hdma.asm"
 
-.INCLUDE "unknown/C4/C4248A.asm"
+.INCLUDE "overworld/actionscript/rectangle_window_disable_hdma.asm"
 
 .INCLUDE "system/set_window_brightness.asm"
 
@@ -337,7 +337,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "data/overworld_sprite_oam_tile_numbers.asm"
 
-.INCLUDE "unknown/C4/C432B1.asm"
+.INCLUDE "overworld/clear_party_status.asm"
 
 .INCLUDE "system/initialize_party_pointers.asm"
 
@@ -509,9 +509,9 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "data/direction_table_4ud.asm"
 
-.INCLUDE "unknown/C4/C46A9A.asm"
+.INCLUDE "overworld/actionscript/convert_8_direction_to_4_prefer_left_right.asm"
 
-.INCLUDE "unknown/C4/C46AA3.asm"
+.INCLUDE "overworld/actionscript/convert_8_direction_to_4_prefer_up_down.asm"
 
 .INCLUDE "unknown/C4/C46AAC.asm"
 
@@ -701,7 +701,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "system/finish_palette_fade.asm"
 
-.INCLUDE "unknown/C4/C4978E.asm"
+.INCLUDE "overworld/actionscript/backup_palettes.asm"
 
 .INCLUDE "system/perform_palette_fade.asm"
 
@@ -857,13 +857,13 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "overworld/spawn.asm"
 
-.INCLUDE "unknown/C4/C4C8A4.asm"
+.INCLUDE "overworld/clear_entity_fade_buffer.asm"
 
-.INCLUDE "unknown/C4/C4C8DB.asm"
+.INCLUDE "overworld/allocate_entity_fade_buffer.asm"
 
-.INCLUDE "unknown/C4/C4C8E9.asm"
+.INCLUDE "overworld/clear_entity_fade_entry.asm"
 
-.INCLUDE "unknown/C4/C4C91A.asm"
+.INCLUDE "overworld/initialize_entity_fade.asm"
 
 .INCLUDE "overworld/actionscript/clear_all_blinking.asm"
 
