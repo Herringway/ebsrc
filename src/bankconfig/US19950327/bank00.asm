@@ -1198,7 +1198,7 @@
 
 .INCLUDE "overworld/actionscript/test_party_collision.asm"
 
-.INCLUDE "unknown/C0/C0D195.asm"
+.INCLUDE "unused/C0D195.asm"
 
 .INCLUDE "unknown/C0/C0D19B.asm"
 
