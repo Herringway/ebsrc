@@ -810,9 +810,9 @@
 
 .INCLUDE "unused/C09E98.asm"
 
-.INCLUDE "unused/C09EAC.asm"
+.INCLUDE "unknown/C0/C09EAC.asm"
 
-.INCLUDE "unused/C09ECE.asm"
+.INCLUDE "unknown/C0/C09ECE.asm"
 
 .INCLUDE "overworld/test_entity_movement_active.asm"
 

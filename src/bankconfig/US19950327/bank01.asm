@@ -92,7 +92,7 @@
 
 .INCLUDE "text/close_all_windows_redirect.asm"
 
-.INCLUDE "unknown/C1/C10BFE.asm"
+.INCLUDE "text/create_new_menu_option_at_position_with_user_data_far.asm"
 
 .INCLUDE "text/get_menu_option_count_redirect.asm"
 

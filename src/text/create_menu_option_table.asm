@@ -351,7 +351,7 @@ CREATE_MENU_OPTION_TABLE:
 	DEY
 	LDX #0
 	TXA
-	JSL UNKNOWN_C10BFE
+	JSL CREATE_NEW_MENU_OPTION_AT_POSITION_WITH_USER_DATA_FAR
 	LDY #window_stats::option_count ; also .SIZEOF(menu_option) for the following multiplication
 	LDA (@LOCAL0A),Y
 	JSL MULT168
