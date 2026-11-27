@@ -224,9 +224,9 @@
 
 .INCLUDE "overworld/party_member_tick.asm"
 
-.INCLUDE "unknown/C0/C04F47.asm"
+.INCLUDE "overworld/restore_background_layers.asm"
 
-.INCLUDE "unknown/C0/C04F60.asm"
+.INCLUDE "overworld/red_flash.asm"
 
 .INCLUDE "overworld/try_show_hp_alert.asm"
 
@@ -480,7 +480,7 @@
 
 .INCLUDE "system/oam_clear.asm"
 
-.INCLUDE "unknown/C0/C08B19.asm"
+.INCLUDE "system/update_screen.asm"
 
 .INCLUDE "system/sprites/render_sprites_to_oam.asm"
 
@@ -838,7 +838,7 @@
 
 .INCLUDE "overworld/update_entity_position_absolute.asm"
 
-.INCLUDE "unknown/C0/C0A0CA.asm"
+.INCLUDE "overworld/actionscript/draw_entity.asm"
 
 .INCLUDE "unknown/C0/C0A0E3.asm"
 
@@ -1152,7 +1152,7 @@
 
 .INCLUDE "overworld/actionscript/get_direction_turned_randomly_left_or_right.asm"
 
-.INCLUDE "overworld/is_entity_onscreen.asm"
+.INCLUDE "overworld/actionscript/is_entity_onscreen.asm"
 
 .INCLUDE "overworld/is_entity_sprite_onscreen.asm"
 

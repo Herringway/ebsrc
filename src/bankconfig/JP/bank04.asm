@@ -239,13 +239,13 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "overworld/actionscript/darken_screen_2_window.asm"
 
-.INCLUDE "unknown/C4/C425CC.asm"
+.INCLUDE "overworld/actionscript/enable_spotlight_hdma1.asm"
 
-.INCLUDE "unknown/C4/C425F3.asm"
+.INCLUDE "overworld/actionscript/disable_spotlight_hdma1.asm"
 
-.INCLUDE "unknown/C4/C425FD.asm"
+.INCLUDE "overworld/actionscript/enable_spotlight_hdma2.asm"
 
-.INCLUDE "unknown/C4/C42624.asm"
+.INCLUDE "overworld/actionscript/disable_spotlight_hdma2.asm"
 
 .INCLUDE "system/background_slide_initialization.asm"
 
@@ -569,7 +569,7 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "unknown/C4/C46F7C.asm"
 
-.INCLUDE "unknown/C4/C47044.asm"
+.INCLUDE "overworld/actionscript/set_movement_from_angle.asm"
 
 .INCLUDE "overworld/move_active_entity_towards_destination.asm"
 
@@ -617,9 +617,9 @@ LOCALEINCLUDE "flyovers.symbols.asm"
 
 .INCLUDE "system/rectangle_window_configure-jp.asm"
 
-.INCLUDE "unknown/C4/C479E9.asm"
+.INCLUDE "overworld/actionscript/bunbuun_beam_configure.asm"
 
-.INCLUDE "unknown/C4/C47A27.asm"
+.INCLUDE "overworld/actionscript/elevator_configure.asm"
 
 .INCLUDE "overworld/actionscript/invert_y_position_relative.asm"
 
