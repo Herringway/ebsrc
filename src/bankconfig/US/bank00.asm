@@ -802,6 +802,8 @@
 
 .INCLUDE "unused/C09E79.asm"
 
+.INCLUDE "unused/C09E8E.asm"
+
 .INCLUDE "unknown/C0/C09E98.asm"
 
 .INCLUDE "unknown/C0/C09EAC.asm"
