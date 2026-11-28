@@ -95,7 +95,7 @@
 
 .INCLUDE "audio/stop_music_redirect.asm"
 
-.INCLUDE "audio/play_sound_and_unknown.asm"
+.INCLUDE "audio/play_sfx_and_tick_minimal.asm"
 
 .INCLUDE "inventory/update_party_teddy_bears.asm"
 
