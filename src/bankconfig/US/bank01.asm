@@ -12,7 +12,7 @@
 .INCLUDE "symbols/misc.inc.asm"
 .INCLUDE "symbols/text.inc.asm"
 
-.INCLUDE "unknown/C1/C10000.asm"
+.INCLUDE "text/hide_hppp_windows_redirect_alt.asm"
 
 .INCLUDE "text/display_interaction_text.asm"
 
@@ -88,7 +88,7 @@
 
 .INCLUDE "text/close_all_windows_redirect.asm"
 
-.INCLUDE "unknown/C1/C10BFE.asm"
+.INCLUDE "text/create_new_menu_option_at_position_with_user_data_far.asm"
 
 .INCLUDE "text/get_menu_option_count_redirect.asm"
 
@@ -194,7 +194,7 @@
 
 .INCLUDE "text/print_you_won.asm"
 
-.INCLUDE "unknown/C1/C12CCC.asm"
+.INCLUDE "unused/integer_to_string.asm"
 
 .INCLUDE "unknown/C1/C12D17.asm"
 
